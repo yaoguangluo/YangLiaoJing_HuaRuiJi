@@ -22,7 +22,7 @@ public class DecadeToPDS{
 	public static void main(String[] Args) {	
 		DecadeToPDS decadeToPDS= new DecadeToPDS();
 		decadeToPDS.init(decadeToPDS);
-		String decade= ""+ (int)(Math.random()*1000 % 256);//随便写一个数
+		int decade= (int)(Math.random()*1000 % 256);//随便写一个数
 		double pDE_KEY_rate= 0.25;//随便模拟一个0-1之间的概率钥匙，假设 0~0.5为酸，0.5~1 为碱；		
 		decadeToPDS.doPDS(decadeToPDS, decade, pDE_KEY_rate);
 	}
