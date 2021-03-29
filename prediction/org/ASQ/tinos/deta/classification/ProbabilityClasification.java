@@ -3,9 +3,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.tinos.deta.basic.RatioMatrix;
+import org.ASQ.tinos.deta.basic.RatioMatrix;
 //这个函数用于通过概率轭相似度来进行坐标分类
-//思想：贝叶斯  ， 数据挖掘绿皮书， 任课教授 ：卡拉森。
+//思想：贝叶斯
 //实现：罗瑶光
 public class ProbabilityClasification{
 	public static boolean predictionResult(RatioMatrix input, List<RatioMatrix> groups, double scale) {

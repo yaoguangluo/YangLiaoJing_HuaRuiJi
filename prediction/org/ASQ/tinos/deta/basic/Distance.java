@@ -1,7 +1,7 @@
 package org.ASQ.tinos.deta.basic;
 
-import org.tinos.deta.demension.Position2D;
-import org.tinos.deta.demension.Position3D;
+import org.ASQ.tinos.deta.demension.Position2D;
+import org.ASQ.tinos.deta.demension.Position3D;
 
 //Theory: 勾股定理
 //一种仅仅通过坐标差值叠加来计算距离向量的使用方法。

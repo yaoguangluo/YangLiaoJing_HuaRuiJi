@@ -3,8 +3,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.tinos.deta.demension.Position2D;
-import org.tinos.deta.demension.Position3D;
+
+import org.ASQ.tinos.deta.demension.Position2D;
+import org.ASQ.tinos.deta.demension.Position3D;
 //这个函数用于坐标融聚团的主要条件过滤。
 //思想：统计与概率论，立体几何，数据挖掘
 //实现：罗瑶光

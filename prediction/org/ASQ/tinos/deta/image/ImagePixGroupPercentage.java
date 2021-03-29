@@ -3,7 +3,8 @@ package org.ASQ.tinos.deta.image;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.tinos.deta.demension.Position2D;
+
+import org.ASQ.tinos.deta.demension.Position2D;
 
 public class ImagePixGroupPercentage{
 	//思想：统计与概率论
