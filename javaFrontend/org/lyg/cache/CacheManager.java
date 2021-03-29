@@ -1,7 +1,7 @@
 package org.lyg.cache;
 import java.util.*;
 
-import org.lyg.backend.cache.Cache;
+import org.lyg.cache.Cache;
 public class CacheManager {
 	@SuppressWarnings("rawtypes")
 	private static HashMap cacheMap = new HashMap();

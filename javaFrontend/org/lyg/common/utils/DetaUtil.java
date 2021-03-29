@@ -7,8 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.lyg.backend.cache.Cache;
-import org.lyg.backend.cache.CacheManager;
+import org.lyg.cache.Cache;
+import org.lyg.cache.CacheManager;
 
 public class DetaUtil {
 	public static void initDB(){

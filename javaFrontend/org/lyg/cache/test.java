@@ -1,6 +1,6 @@
 package org.lyg.cache;
-import org.lyg.backend.cache.Cache;
-import org.lyg.backend.cache.CacheManager;
+import org.lyg.cache.Cache;
+import org.lyg.cache.CacheManager;
 
 public class test {
 	public static void main(String[] args) { 
