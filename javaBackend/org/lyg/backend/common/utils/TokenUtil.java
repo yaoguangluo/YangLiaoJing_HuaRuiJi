@@ -1,8 +1,8 @@
 package org.lyg.backend.common.utils;
 
-import org.lyg.vpc.view.Token;
-import org.lyg.vpc.view.Usr;
-import org.lyg.vpc.view.UsrToken;
+import org.lyg.backend.vpc.view.Token;
+import org.lyg.backend.vpc.view.Usr;
+import org.lyg.backend.vpc.view.UsrToken;
 import java.util.Date;
 
 public class TokenUtil {

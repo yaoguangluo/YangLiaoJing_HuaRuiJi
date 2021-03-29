@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.Map;
 import org.json.JSONObject;
 import org.lyg.backend.common.maps.VtoV;
-import org.lyg.common.utils.DetaDBUtil;
+import org.lyg.backend.common.utils.DetaDBUtil;
 //import org.lyg.vpc.controller.factory.LoginDAO;
-import org.lyg.vpc.view.Usr;
-import org.lyg.vpc.view.UsrFull;
-import org.lyg.vpc.view.UsrToken;
+import org.lyg.backend.vpc.view.Usr;
+import org.lyg.backend.vpc.view.UsrFull;
+import org.lyg.backend.vpc.view.UsrToken;
 //import org.springframework.stereotype.Service;
 @SuppressWarnings({"unused", "deprecation"})
 //@Service

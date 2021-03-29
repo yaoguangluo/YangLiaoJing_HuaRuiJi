@@ -2,16 +2,17 @@ package org.lyg.backend.vpc.process.companyImpl;
 
 import java.io.FileNotFoundException;
 
+
 import java.io.IOException;
 import java.util.Date;
 import org.json.JSONObject;
-import org.lyg.common.utils.StringUtil;
-import org.lyg.common.utils.TokenUtil;
-import org.lyg.vpc.process.factoryImpl.LoginDAOImpl;
+import org.lyg.backend.common.utils.StringUtil;
+import org.lyg.backend.common.utils.TokenUtil;
+import org.lyg.backend.vpc.process.factoryImpl.LoginDAOImpl;
 //import org.lyg.vpc.controller.company.LoginService;
 //import org.lyg.vpc.controller.factory.LoginDAO;
-import org.lyg.vpc.view.Usr;
-import org.lyg.vpc.view.UsrToken;
+import org.lyg.backend.vpc.view.Usr;
+import org.lyg.backend.vpc.view.UsrToken;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Service;
 //@Service
