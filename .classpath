@@ -39,7 +39,6 @@
 	<classpathentry kind="src" path="sound"/>
 	<classpathentry kind="src" path="YLJ"/>
 	<classpathentry kind="src" path="TinGod"/>
-	<classpathentry kind="src" path="detaPaser"/>
 	<classpathentry kind="src" path="behaviorMap"/>
 	<classpathentry kind="src" path="emotionMap"/>
 	<classpathentry kind="src" path="neroMap"/>
