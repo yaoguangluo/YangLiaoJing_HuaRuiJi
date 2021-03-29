@@ -3,9 +3,9 @@ import java.util.Map;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.OCI.emotion.ortho.fhmm.EmotionMap;
-import org.lyg.common.maps.VtoV;
-import org.lyg.vpc.process.portImpl.RestLoginPortImpl;
-import org.lyg.vpc.process.portImpl.RestNLPPortImpl;
+import org.lyg.backend.common.maps.VtoV;
+import org.lyg.backend.vpc.process.portImpl.RestLoginPortImpl;
+import org.lyg.backend.vpc.process.portImpl.RestNLPPortImpl;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;
 	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) throws Exception {

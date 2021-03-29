@@ -1,4 +1,4 @@
-package org.lyg.cache;
+package org.lyg.backend.cache;
 import org.lyg.backend.cache.Cache;
 import org.lyg.backend.cache.CacheManager;
 
