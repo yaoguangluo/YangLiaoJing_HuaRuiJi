@@ -52,6 +52,7 @@
 	<classpathentry kind="src" path="testWordSegment"/>
 	<classpathentry kind="src" path="wordSegment"/>
 	<classpathentry kind="src" path="DP"/>
+	<classpathentry kind="src" path="java"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
