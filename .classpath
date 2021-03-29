@@ -48,8 +48,6 @@
 	<classpathentry kind="src" path="emotionMap"/>
 	<classpathentry kind="src" path="neroMap"/>
 	<classpathentry kind="src" path="sensingMap"/>
-	<classpathentry kind="src" path="testNeroMap"/>
-	<classpathentry kind="src" path="testWordSegment"/>
 	<classpathentry kind="src" path="wordSegment"/>
 	<classpathentry kind="src" path="DP"/>
 	<classpathentry kind="src" path="java"/>

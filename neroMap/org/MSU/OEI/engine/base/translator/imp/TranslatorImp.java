@@ -280,8 +280,8 @@ public class TranslatorImp implements Translator{
 							.contains(StableData.NLP_ZI_DAI) || verbals.get(i-StableData.INT_TWO).getPartOfSpeech()
 							.contains(StableData.NLP_ZI_MING))){
 						if(verbals.get(i-StableData.INT_TWO).getPartOfSpeech().contains(StableData.NLP_ZI_复)
-								||(verbals.get(i-StableData.INT_TWO).getPartOfSpeech().contains(StableData.NLP_ZI_单)
-										&&verbals.get(i-StableData.INT_TWO).getPartOfSpeech().contains(StableData.NLP_ZI_一))){
+							||(verbals.get(i-StableData.INT_TWO).getPartOfSpeech().contains(StableData.NLP_ZI_单)
+									&&verbals.get(i-StableData.INT_TWO).getPartOfSpeech().contains(StableData.NLP_ZI_一))){
 							if(verbals.get(i).getEnglish().contains(StableData.NLP_HAVE_HAS)) {
 								Verbal temp = verbals.get(i);
 								String english = temp.getEnglish().replace(StableData.NLP_HAVE_HAS, StableData.NLP_HAVE);
