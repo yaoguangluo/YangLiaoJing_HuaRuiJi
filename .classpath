@@ -50,7 +50,13 @@
 	<classpathentry kind="src" path="sensingMap"/>
 	<classpathentry kind="src" path="wordSegment"/>
 	<classpathentry kind="src" path="DP"/>
-	<classpathentry kind="src" path="java"/>
+	<classpathentry kind="src" path="Deta_VPCS_Frontend"/>
+	<classpathentry kind="src" path="DetaSrcBackend"/>
+	<classpathentry kind="src" path="DetaSrcFrontend"/>
+	<classpathentry kind="src" path="javaBackend"/>
+	<classpathentry kind="src" path="javaFrontend"/>
+	<classpathentry kind="src" path="resourcesBackend"/>
+	<classpathentry kind="src" path="resourcesFrontend"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
