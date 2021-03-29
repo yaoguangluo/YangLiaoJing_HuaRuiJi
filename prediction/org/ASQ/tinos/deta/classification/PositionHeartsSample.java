@@ -3,11 +3,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import org.ASQ.tinos.deta.basic.Distance;
-import org.ASQ.tinos.deta.basic.Euclid;
-import org.ASQ.tinos.deta.demension.Position2D;
-import org.ASQ.tinos.deta.demension.Position3D;
+import org.tinos.deta.basic.Distance;
+import org.tinos.deta.basic.Euclid;
+import org.tinos.deta.demension.Position2D;
+import org.tinos.deta.demension.Position3D;
 //这个函数用于坐标集团距离采样匹配输出
 //思想: 欧基里德 
 //实现：罗瑶光
@@ -20,8 +19,8 @@ public class PositionHeartsSample{
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position2D> AMV_MVS_VSQs= groups.get(mapKey);
-			Position2D heart= Euclid.findHeartPosition2D(AMV_MVS_VSQs);
+			List<Position2D> positions= groups.get(mapKey);
+			Position2D heart= Euclid.findHeartPosition2D(positions);
 			double distance= Distance.getDistance2D(inputHeart, heart);
 			if(true== isFirst) {
 				isFirst= false;
@@ -43,11 +42,11 @@ public class PositionHeartsSample{
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position2D> AMV_MVS_VSQs= groups.get(mapKey);
-			Position2D heart= Euclid.findHeartPosition2D(AMV_MVS_VSQs);
+			List<Position2D> positions= groups.get(mapKey);
+			Position2D heart= Euclid.findHeartPosition2D(positions);
 			double distance= Distance.getDistance2D(inputHeart, heart);
 			if(scale> distance) {
-				output.put(mapKey, AMV_MVS_VSQs);
+				output.put(mapKey, positions);
 			}
 		}
 		return output;	
@@ -61,8 +60,8 @@ public class PositionHeartsSample{
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position3D> AMV_MVS_VSQs= groups.get(mapKey);
-			Position3D heart= Euclid.findHeartPosition3D(AMV_MVS_VSQs);
+			List<Position3D> positions= groups.get(mapKey);
+			Position3D heart= Euclid.findHeartPosition3D(positions);
 			double distance= Distance.getDistance3D(inputHeart, heart);
 			if(true== isFirst) {
 				isFirst= false;
@@ -84,11 +83,11 @@ public class PositionHeartsSample{
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position3D> AMV_MVS_VSQs= groups.get(mapKey);
-			Position3D heart= Euclid.findHeartPosition3D(AMV_MVS_VSQs);
+			List<Position3D> positions= groups.get(mapKey);
+			Position3D heart= Euclid.findHeartPosition3D(positions);
 			double distance= Distance.getDistance3D(inputHeart, heart);
 			if(scale> distance) {
-				output.put(mapKey, AMV_MVS_VSQs);
+				output.put(mapKey, positions);
 			}
 		}
 		return output;	

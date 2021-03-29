@@ -1,7 +1,7 @@
 package org.ASQ.tinos.deta.ratio;
-import org.ASQ.tinos.deta.basic.ComputeSets;
-import org.ASQ.tinos.deta.demension.Position2D;
-import org.ASQ.tinos.deta.demension.Position3D;
+import org.tinos.deta.basic.ComputeSets;
+import org.tinos.deta.demension.Position2D;
+import org.tinos.deta.demension.Position3D;
 //Theory: Yaoguang.luo
 //一种仅仅通过坐标差值叠加来计算距离向量的使用方法。
 //Application: Yaoguang.luo

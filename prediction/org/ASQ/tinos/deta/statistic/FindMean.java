@@ -8,7 +8,7 @@ public class FindMean{
 	//ÊµÏÖ£ºÂÞÑþ¹â
 	public static double findMeanOfFilterDoubleArrayWithScale(double[] input, double filterScale, int sortRangeScale) {
 		int rangeScale= (int)(filterScale* input.length);
-		input= new LYG9DWithDoubleQuickSort4D().sort(input, sortRangeScale, 70);
+		input= new LYG4DWithDoubleQuickSort4D().sort(input, sortRangeScale);
 		double output= 0;
 		for(int i= rangeScale; i< input.length- rangeScale; i++) {
 			output+= input[i];

@@ -2,8 +2,7 @@ package org.ASQ.tinos.deta.PCA;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import org.ASQ.tinos.deta.basic.RatioMatrix;
+import org.tinos.deta.basic.RatioMatrix;
 //这个函数用于求模糊概率集平均值采样主要成份分析
 //思想：贝叶斯 模糊数学 统计于概率论
 //实现：罗瑶光
