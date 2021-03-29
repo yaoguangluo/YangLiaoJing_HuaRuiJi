@@ -38,11 +38,7 @@
 	<classpathentry kind="src" path="OPGL"/>
 	<classpathentry kind="src" path="sound"/>
 	<classpathentry kind="src" path="YLJ"/>
-	<classpathentry kind="src" path="medicine"/>
 	<classpathentry kind="src" path="TinGod"/>
-	<classpathentry kind="src" path="smallMedicine"/>
-	<classpathentry kind="src" path="neiWaiKe"/>
-	<classpathentry kind="src" path="PGMedicine"/>
 	<classpathentry kind="src" path="detaPaser"/>
 	<classpathentry kind="src" path="behaviorMap"/>
 	<classpathentry kind="src" path="emotionMap"/>
@@ -55,8 +51,6 @@
 	<classpathentry kind="src" path="DetaSrcFrontend"/>
 	<classpathentry kind="src" path="javaBackend"/>
 	<classpathentry kind="src" path="javaFrontend"/>
-	<classpathentry kind="src" path="resourcesBackend"/>
-	<classpathentry kind="src" path="resourcesFrontend"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
