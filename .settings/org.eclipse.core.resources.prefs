@@ -1,8 +1,17 @@
 eclipse.preferences.version=1
+encoding//DP/NLPProcessor/StopSymbol.java=UTF-8
+encoding//DP/NLPProcessor/TranditionChinese.java=UTF-8
 encoding//Listen/edu/cmu/sphinx/alignment/SimpleTokenizer.java=UTF-8
 encoding//Listen/edu/cmu/sphinx/alignment/USEnglishTokenizer.java=UTF-8
+encoding//bi/biProcessor/coAuthor.java=UTF-8
+encoding//bi/biProcessor/coAuthorForWord.java=UTF-8
 encoding//neroMap/org/MSU/OEI/engine/base/translator/imp/TranslatorImp.java=UTF-8
+encoding//src/ME/sample/poscc.lyg=UTF-8
+encoding//src/ME/sample/poscp.lyg=UTF-8
+encoding//src/ME/sample/xlx/coAuthorForWord.java=UTF-8
 encoding//wordSegment/org/ASQ/PSU/tinos/view/stable/StableData.java=UTF-8
+encoding/PGMedicine=UTF-8
 encoding/README.md=UTF-8
 encoding/bioDNA=UTF-8
+encoding/neiWaiKe=UTF-8
 encoding/wordSegment=UTF-8
