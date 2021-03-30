@@ -1,0 +1,763 @@
+Risk Modification Using Preventive Strategies to Reduce Cardiac Risk
+
+Perioperative Coronary Revascularization
+
+Currently, potential options for reducing perioperative cardiovascular risk include coronary artery revascularization and/or perioperative medical preventive therapies (Chap. 243). Prophylactic coronary revascularization with either coronary artery bypass grafting (CABG) or percutaneous coronary intervention (PCI) provides no short- or midterm survival benefit for patients without left main CAD or three-vessel CAD in the presence of poor left ventricular systolic function. Although PCI is associated with lower procedural risk than is CABG in the perioperative setting, the placement of a coronary artery stent in a short period of time prior to noncardiac surgery may increase the risk of bleeding during surgery if dual antiplatelet therapy (aspirin and thienopyridine) is administered or it increases the perioperative risk of myocardial infarction and cardiac death due to stent thrombosis if such therapy is withdrawn prematurely (Chap. 246). It is recommended that, if possible, noncardiac surgery be delayed 30每45 days after placement of a bare metal coronary stent and 365 days after a drug-eluting stent. For patients who must undergo noncardiac surgery early (> 14 days) after PCI, balloon angioplasty without stent placement appears to be a reasonable alternative because dual antiplatelet therapy is not necessary in such patients.
+
+Perioperative Medical Preventive Therapies
+
+Perioperative preventive medical therapy with -adrenergic antagonists, HMG-CoA reductase inhibitors (statins), and aspirin have the goal of reducing perioperative adrenergic stimulation, ischemia, and inflammation, which are triggered during the perioperative period.
+
+-Adrenergic Antagonists
+
+The use of perioperative beta blockade should be based on a thorough assessment of a patient's perioperative cardiac risk (RCRI  2). For patients with or without mild to moderate reactive airway disease, the cardioselective beta blocker of choice should be used and titrated to a target resting heart rate of 60每65 beats/minute. In intermediate- to high-risk patients without a long-term indication for beta blockers, the medications can be administered intravenously as a preoperative medication on the day of surgery, with a targeted heart rate of 60每65 beats/minute and continued for > 7 days (preferably 30 days) postoperatively. Intravenous preparations should be substituted for oral medication if patients are unable to take or absorb pills in the perioperative period. The results from the recent Perioperative Ischemic Evaluation (POISE) trial showed that although cardiac death, nonfatal myocardial infarction, or cardiac arrest was reduced in the patients who received metoprolol as compared to placebo, there was an increased incidence of mortality and stroke in the patients receiving metoprolol because of a high and rapid loading dose of metoprolol. The POISE trial highlights the importance for a clear risk and benefit assessment with careful initiation and titration to therapeutic efficacy of preoperative beta blockers in patients undergoing noncardiac surgery.
+
+The ACC/AHA guidelines recommend the following: (1) Beta blockers should be continued in high-risk patients who previously received these drugs and undergo vascular surgery, and they should be administered to high-risk patients identified by myocardial ischemia on preoperative assessment who are scheduled to undergo vascular surgery. (2) Beta blockers are probably recommended for high-risk patients defined by multiple clinical predictors who undergo intermediate- or high-risk procedures. They may be considered for intermediate-risk patients who undergo intermediate- or high-risk procedures and for low-risk patients who undergo vascular surgery.
+
+HMG-CoA Reductase Inhibitors (Statins)
+
+A number of prospective and retrospective studies support the perioperative prophylactic use of statins for reduction of cardiac complications in patients with established atherosclerosis. The Dutch Echocardiographic Cardiac Risk Evaluation Applying Stress Echocardiography (DECREASE)-IV study, in addition to confirming the benefit of perioperative bisoprolol in lowering the risk of cardiac death or myocardial infarction at 30 days, demonstrated a reduced trend in cardiac events in intermediate-risk patients undergoing noncardiac surgery who receive fluvastatin therapy. The use of perioperative statin therapy to reduce perioperative cardiac risk should, therefore, be considered in intermediate- or high-risk patients with atherosclerotic cardiovascular disease who are undergoing major noncardiac surgery.
+
+Angiotensin-Converting Enzyme (ACE) Inhibitors
+
+Evidence supports the discontinuation of ACE inhibitors and angiotensin receptor blockers for 24 hours prior to noncardiac surgery due to adverse circulatory effects after induction of anesthesia.
+
+Oral Antiplatelet Agents
+
+Evidence-based recommendations regarding perioperative use of aspirin and/or thienopyridine to reduce cardiac risk currently lack clarity. A substantial increase in perioperative bleeding and transfusion requirement in patients receiving dual antiplatelet therapy has been observed. The discontinuation of thienopyridine and aspirin for 5每7 days prior to major surgery to minimize the risk of perioperative bleeding and transfusion must be balanced with the potential increased risk of an acute coronary syndrome and of subacute stent thrombosis in patients with recent coronary stent implantation. If clinicians elect to withhold antiplatelet agents prior to surgery, they should be restarted as soon as possible postoperatively.
+
+Calcium Channel Blockers
+
+Evidence is lacking to support the use of calcium channel blockers as a prophylactic strategy to decrease perioperative risk in major noncardiac surgery.
+
+Preoperative Pulmonary Assessment
+
+Perioperative pulmonary complications occur frequently and lead to significant morbidity and mortality. The guidelines from the American College of Physicians recommend the following:
+
+All patients undergoing noncardiac surgery should be assessed for risk of pulmonary complications (Table 8-5).
+
+Patients undergoing emergency or prolonged (>3 h) surgery; aortic aneurysm repair; vascular surgery; major abdominal, thoracic, neuro, head, or neck surgery; and general anesthesia should be considered to be at higher risk for postoperative pulmonary complications.
+
+Patients at higher risk of pulmonary complications should receive deep breathing exercises and/or incentive spirometry as well as selective use of a nasogastric tube for postoperative nausea, vomiting, or symptomatic abdominal distention to reduce postoperative risk (Table 8-6).
+
+Routine preoperative spirometry and chest radiography are less helpful for predicting risk of postoperative pulmonary complications, but may be appropriate for patients with chronic obstructive pulmonary disease (COPD) or asthma.
+
+Pulmonary artery catheterization, total parenteral nutrition, and total enteral nutrition are not encouraged for postoperative pulmonary risk reduction.
+
+Table 8-5 Predisposing Risk Factors for Pulmonary Complications
+
+ 
+ 
+1. Upper respiratory tract infection: cough, dyspnea 
+2. Age >60 years 
+3. COPD 
+4. American Society of Anesthesiologists Class 2 
+5. Functionally dependent 
+6. Congestive heart failure 
+7. Serum albumin <3.5 g/dL 
+8. FEV1<2 L
+  
+9. MVV <50% of predicted 
+10. PEF <100 L or 50% predicted value 
+11. PCO245 mmHg
+  
+12. PO250 mmHg
+  
+ 
+
+
+Abbreviations: COPD, chronic obstructive pulmonary disease; FEV1, forced expiratory volume in one second; MVV, maximum voluntary ventilation; PEF, peak expiratory flow rate; PCO2, partial pressure of carbon dioxide; PO2, partial pressure of oxygen.
+
+Source: Modified from GW Smetana et al and from DN Mohr et al: Postgrad Med 100:247, 1996, with permission.
+ 
+Table 8-6 Risk Modification to Reduce Perioperative Pulmonary Complications
+
+ 
+ 
+Preoperatively 
+Cessation of smoking
+Training in proper breathing (incentive spirometry)
+Inhalation bronchodilator therapy
+Control of infection and secretion, when indicated
+Weight reduction, when appropriate
+ 
+Intraoperatively 
+Limited duration of anesthesia
+Select shorter acting neuromuscular blocking drugs when indicated
+Prevention of aspiration
+Maintenance of optimal bronchodilation
+ 
+Postoperatively 
+Continuation of preoperative measures, with particular attention to 
+inspiratory capacity maneuvers
+mobilization of secretions
+early ambulation
+encouragement of coughing
+selective use of a nasogastric tube
+adequate pain control without excessive narcotics 
+ 
+
+
+Source: From VA Lawrence et al and from WF Dunn, PD Scanlon, Mayo Clin Proc 68:371, 1993, with permission.
+ 
+
+Other Preoperative Pulmonary Risk-Modification Strategies
+
+Risk-modification strategies to reduce postoperative pulmonary complications should be implemented, particularly in higher-risk patients. Patients with cough or dyspnea preoperatively should be evaluated to determine the underlying cause of these symptoms. Patients who smoke should be counseled to quit for at least eight weeks prior to elective surgery. Patients with asthma or COPD can be given steroids and bronchodilators pre- and postoperatively to optimize pulmonary function. Bacterial pulmonary infection should be treated preoperatively.
+
+Diabetes Mellitus
+
+(See also Chap. 344) Many patients with diabetes mellitus have significant symptomatic or asymptomatic CAD and may have silent myocardial ischemia due to autonomic dysfunction. Evidence supports intensive perioperative glycemic control to achieve near-normal glucose levels (90每110 mg/dL) versus moderate glycemic control (120每200 mg/dL), using insulin infusion. This practice must be balanced against the risk of hypoglycemic complications. Oral hypoglycemic agonists should be held on the morning of operation. Perioperative hyperglycemia should be treated with intravenous infusion of short-acting insulin or subcutaneous sliding-scale insulin. Patients who are diet-controlled may proceed to surgery with close postoperative monitoring.
+
+Prophylaxis for Infective Endocarditis
+
+(See also Chap. 124) Perioperative prophylactic antibiotics should be administered to patients with congenital or valvular heart disease, prosthetic valves, mitral valve prolapse, or other cardiac abnormalities in accordance with ACC/AHA practice guidelines.
+
+Prophylaxis of Venous Thromboembolism
+
+(See also Chap. 262) Perioperative prophylaxis of venous thromboembolism should follow established guidelines of the American College of Chest Physicians. Aspirin is not supported as a single agent for thromboprophylaxis. Low-dose unfractionated heparin (5000 units subcutaneous bid), low-molecular weight heparin (e.g., enoxaparin 30 mg bid or 40 mg qd) or a pentasaccharide (fondaparinux 2.5 mg qd) for patients at moderate risk, and unfractionated heparin (5000 units subcutaneous tid) for patients at high risk. Graduated compression stockings and pneumatic compression devices are useful supplements to anticoagulant therapy.
+ 
+Further Readings
+
+Devereaux PJ et al: Effects of extended-release metoprolol succinate in patients undergoing non-cardiac surgery (POISE trial): a randomized controlled trial. Lancet 371:1839, 2008[PMID: 18479744] 
+
+ 
+Dunkelgruen M et al: Bisoprolol and fluvastatin for the reduction of perioperative cardiac mortality and myocardial infarction in intermediate-risk patients undergoing noncardiovascular surgery: a randomized controlled trial (DECREASE-IV). Ann Surg 249:921, 2009 
+
+ 
+Fleisher LA et al: ACC/AHA guideline for perioperative cardiovascular evaluation for noncardiac surgery: A report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Revise the 2002 Guidelines on Perioperative Cardiovascular Evaluation for Noncardiac Surgery). Circulation 116:1971, 2007[PMID: 17901356] 
+
+ 
+Geerts WH et al: Prevention of venous thromboembolism: The Seventh ACCP Conference on Antithrombotic and Thrombolytic Therapy. Chest 126:338S, 2004 
+
+ 
+Lipshutz AK, Gropper MA: Perioperative glycemic control: An evidence-based review. Anesthesiology 110:408, 2009[PMID: 19194167] 
+
+ 
+Lee TH et al: Derivation and prospective validation of a simple index for prediction of cardiac risk of major noncardiac surgery. Circulation 100:1043, 1999[PMID: 10477528] 
+
+ 
+Lindenauer PK et al: Perioperative beta-blocker therapy and mortality after major noncardiac surgery. N Engl J Med 353:349, 2005[PMID: 16049209] 
+
+ 
+Mcfalls EO et al: Coronary-artery revascularization before elective major vascular surgery. N Engl J Med 351:2795, 2004[PMID: 15625331] 
+
+ 
+Qaseem A et al: Risk assessment for and strategies to reduce perioperative pulmonary complications for patients undergoing noncardiothoracic surgery: A guideline from the American College of Physicians. Ann Intern Med 144:575, 2006[PMID: 16618955] 
+
+ 
+Smetana GW et al: Preoperative pulmonary risk stratification for noncardiothoracic surgery: Systematic review for the American College of Physicians. Ann Intern Med 144:581, 2006[PMID: 16618956] 
+ 
+ 
+
+^^
+Epidemiology
+
+In 2007, 2,423,712 individuals died in the United States (Table 9-1). Approximately 72% of all deaths occur in those >65 years of age. The epidemiology of mortality is similar in most developed countries; cardiovascular diseases and cancer are the predominant causes of death, a marked change since 1900, when heart disease caused ~8% of all deaths and cancer accounted for <4% of all deaths. In 2006, the year with the most recent available data, AIDS accounted for <1% of all U.S. deaths, although among those age 35每44, it remained one of the top five causes.
+
+Table 9-1 Ten Leading Causes of Death in the United States and Britain
+
+ 
+ 
+  United States Britain 
+Cause of Death Number of Deaths Percent of Total Number of Deaths Among People 65 Years of Age Number of Deaths Percent of Total 
+All deaths 2,423,712 100 1,759,423 538,254 100 
+Heart disease 616,067 25.4 510,542 129,009 24 
+Malignant neoplasms 562,875 23.2 387,515 135,955 25.3 
+Cerebrovascular diseases 135,952 5.6 117,010 57,808 10.7 
+Chronic lower respiratory diseases 127,924 5.1 106,845 27,905 5.2 
+Accidents 123,706 5.1 36,689 10,979 2 
+Alzheimer's disease 74,632 2.2 71,660 6316 1.2 
+Diabetes mellitus 71,382 2.9 52,351 34,477 6.4 
+Influenza and pneumonia 52,717 2.2 49,346 5055 0.9 
+Nephritis, nephritic syndrome, nephrosis 46,448 1.9 37,377 3287 0.6 
+Septicemia 34,828 1.4 26,201 2206 0.4 
+ 
+
+
+Source: National Center for Health Statistics (data for all age groups from 2007; for age >65, from 2006), http://www.cdc.gov/nchs; National Statistics (Great Britain, 2003), http://www.statistics.gov.uk. 
+ 
+
+It is estimated that in developed countries ~70% of all deaths are preceded by a disease or condition, making it reasonable to plan for dying in the foreseeable future. Cancer has served as the paradigm for terminal care, but it is not the only type of illness with a recognizable and predictable terminal phase. Since heart failure, chronic obstructive pulmonary disease (COPD), chronic liver failure, dementia, and many other conditions have recognizable terminal phases, a systematic approach to end-of-life care should be part of all medical specialties. Many patients with illness-related suffering also can benefit from palliative care regardless of prognosis. Ideally, palliative care should be considered part of comprehensive care for all patients. Reviews of the recent literature have found strong evidence that palliative care can be improved by coordination between caregivers, doctors, and patients for advance care planning, as well as dedicated teams of physicians, nurses, and other providers.
+
+The rapid increases in life expectancy in the United States over the last century have been accompanied by new difficulties facing individuals, families, and society as a whole in addressing the needs of an aging population. These challenges include both more complicated conditions and technologies to address them at the end of life. The development of technologies that can prolong life without restoring full health has led many Americans to seek out alternative end-of-life care settings and approaches that relieve suffering for those with terminal diseases. Over the last few decades in the United States, a significant change in the site of death has occurred that coincides with patient and family preferences. Nearly 60% of Americans died as inpatients in hospitals in 1980. By 2000, the trend was reversing, with ~40% of Americans dying as hospital inpatients (Fig. 9-1). This shift has been most dramatic for those dying from cancer and COPD and for younger and very old individuals. In the last decade, it has been associated with the increased use of hospice care; in 2008, approximately 39% of all decedents in the United States received such care. Cancer patients currently constitute ~38.3% of hospice users. About 79% of patients receiving hospice care die out of the hospital, and around 41% of those receiving hospice care die in a private residence. In addition, in 2008, for the first time, the American Board of Medical Specialties (ABMS) offered certification in hospice and palliative medicine. With shortening of hospital stays, many serious conditions are being treated at home or on an outpatient basis. Consequently, providing optimal palliative and end-of-life care requires ensuring that appropriate services are available in a variety of settings, including noninstitutional settings.
+
+Figure 9-1
+
+ 
+ 
+ 
+Graph showing trends in the site of death in the last two decades. , percentage of hospital inpatient deaths; , percentage of decedents enrolled in a hospice.
+ 
+ 
+ 
+Hospice and the Palliative Care Framework
+
+Central to this type of care is an interdisciplinary team approach that typically encompasses pain and symptom management, spiritual and psychological care for the patient, and support for family caregivers during the patients illness and the bereavement period.
+
+Terminally ill patients have a wide variety of advanced diseases, often with multiple symptoms that demand relief, and require noninvasive therapeutic regimens to be delivered in flexible care settings. Fundamental to ensuring quality palliative and end-of-life care is a focus on four broad domains: (1) physical symptoms; (2) psychological symptoms; (3) social needs that include interpersonal relationships, caregiving, and economic concerns; and (4) existential or spiritual needs.
+
+A comprehensive assessment screens for and evaluates needs in each of these four domains. Goals for care are established in discussions with the patient and/or family, based on the assessment in each of the domains. Interventions then are aimed at improving or managing symptoms and needs. Although physicians are responsible for certain interventions, especially technical ones, and for coordinating the interventions, they cannot be responsible for providing all of them. Since failing to address any one of the domains is likely to preclude a good death, a well-coordinated, effectively communicating interdisciplinary team takes on special importance in end-of-life care. Depending on the setting, critical members of the interdisciplinary team will include physicians, nurses, social workers, chaplains, nurses aides, physical therapists, bereavement counselors, and volunteers.
+
+Assessment and Care Planning
+
+Comprehensive Assessment
+
+Standardized methods for conducting a comprehensive assessment focus on evaluating the patients condition in all four domains affected by illness: physical, psychological, social, and spiritual. The assessment of physical and mental symptoms should follow a modified version of the traditional medical history and physical examination that emphasizes symptoms. Questions should aim at elucidating symptoms and discerning sources of suffering and gauging how much those symptoms interfere with the patients quality of life. Standardized assessment is critical. Currently, there are 21 symptom assessment instruments for cancer alone. Further research on and validation of these assessment tools, especially taking into account patient perspectives, could improve their effectiveness. Instruments with good psychometric properties that assess a wide range of symptoms include the Memorial Symptom Assessment Scale (MSAS), the Rotterdam Symptom Checklist, the Worthing Chemotherapy Questionnaire, and the Computerized Symptom Assessment Instrument. These instruments are long and may be useful for initial clinical or for research assessments. Shorter instruments are useful for patients whose performance status does not permit comprehensive assessments. Suitable shorter instruments include the Condensed Memorial Symptom Assessment Scale, the Edmonton Symptom Assessment System, the M.D. Anderson Symptom Assessment Inventory, and the Symptom Distress Scale. Using such instruments ensures that the assessment is comprehensive and does not focus only on pain and a few other physical symptoms. Invasive tests are best avoided in end-of-life care, and even minimally invasive tests should be evaluated carefully for their benefit-to-burden ratio for the patient. Aspects of the physical examination that are uncomfortable and unlikely to yield useful information can be omitted.
+
+Regarding social needs, health care providers should assess the status of important relationships, financial burdens, caregiving needs, and access to medical care. Relevant questions will include the following: How often is there someone to feel close to? How has this illness been for your family? How has it affected your relationships? How much help do you need with things like getting meals and getting around? How much trouble do you have getting the medical care you need? In the area of existential needs, providers should assess distress and the patients sense of being emotionally and existentially settled and of finding purpose or meaning. Helpful assessment questions can include the following: How much are you able to find meaning since your illness began? What things are most important to you at this stage? In addition, it can be helpful to ask how the patient perceives his or her care: How much do you feel your doctors and nurses respect you? How clear is the information from us about what to expect regarding your illness? How much do you feel that the medical care you are getting fits with your goals? If concern is detected in any of these areas, deeper evaluative questions are warranted.
+
+Communication
+
+Especially when an illness is life-threatening, there are many emotionally charged and potentially conflict-creating moments, collectively called "bad news" situations, in which empathic and effective communication skills are essential. Those moments include communicating with the patient and/or family about a terminal diagnosis, the patients prognosis, any treatment failures, deemphasizing efforts to cure and prolong life while focusing more on symptom management and palliation, advance care planning, and the patients death. Although these conversations can be difficult and lead to tension, research indicates that end-of-life discussions can lead to earlier hospice referrals rather than overly aggressive treatment, benefiting quality of life for patients and improving the bereavement process for families.
+
+Just as surgeons plan and prepare for major operations and investigators rehearse a presentation of research results, physicians and health care providers caring for patients with significant or advanced illness can develop a practiced approach to sharing important information and planning interventions. In addition, families identify as important both how well the physician was prepared to deliver bad news and the setting in which it was delivered. For instance, 27% of families making critical decisions for patients in an intensive care unit (ICU) desired better and more private physical space to communicate with physicians, and 48% found having clergy present reassuring.
+
+An organized and effective seven-step procedure for communicating bad news goes by the acronym P-SPIKES: (1) prepare for the discussion, (2) set up a suitable environment, (3) begin the discussion by finding out what the patient and/or family understand, (4) determine how they will comprehend new information best and how much they want to know, (5) provide needed new knowledge accordingly, (6) allow for emotional responses, and (7) share plans for the next steps in care. Table 9-2 provides a summary of these steps along with suggested phrases and underlying rationales for each one. Additional research that further considers the response of patients to systematic methods of delivering bad news could build the evidence base for even more effective communication procedures.
+
+Table 9-2 Elements of Communicating Bad News〞the P-SPIKES Approach
+
+ 
+ 
+Acronym Steps Aim of the Interaction Preparations, Questions, or Phrases 
+P Preparation Mentally prepare for the interaction with the patient and/or family. Review what information needs to be communicated.
+
+Plan how you will provide emotional support. 
+
+Rehearse key steps and phrases in the interaction.
+ 
+S Setting of the interaction Ensure the appropriate setting for a serious and potentially emotionally charged discussion. Ensure that patient, family, and appropriate social supports are present. 
+
+Devote sufficient time.
+
+Ensure privacy and prevent interruptions by people or beeper. 
+
+Bring a box of tissues.
+ 
+P Patient's perception and preparation Begin the discussion by establishing the baseline and whether the patient and family can grasp the information. 
+
+Ease tension by having the patient and family contribute.
+ Start with open-ended questions to encourage participation. 
+
+Possible phrases to use: 
+
+   What do you understand about your illness? 
+
+   When you first had symptom X, what did you think it might be? 
+
+   What did Dr. X tell you when he or she sent you here?
+
+   What do you think is going to happen?
+ 
+I Invitation and information needs Discover what information needs the patient and/or family have and what limits they want regarding the bad information. Possible phrases to use:
+
+   If this condition turns out to be something serious, do you want to know?
+
+   Would you like me to tell you all the details of your condition? If not, who would you like me to talk to?
+ 
+K Knowledge of the condition Provide the bad news or other information to the patient and/or family sensitively. Do not just dump the information on the patient and family.
+
+Check for patient and family understanding.
+
+Possible phrases to use:
+
+   I feel badly to have to tell you this, but... 
+
+   Unfortunately, the tests showed... 
+
+   I'm afraid the news is not good...
+ 
+E Empathy and exploration Identify the cause of the emotions〞e.g., poor prognosis. 
+
+Empathize with the patient and/or family's feelings.
+
+Explore by asking open-ended questions.
+ Strong feelings in reaction to bad news are normal. 
+
+Acknowledge what the patient and family are feeling. 
+
+Remind them such feelings are normal, even if frightening. 
+
+Give them time to respond. 
+
+Remind patient and family you won't abandon them. 
+
+Possible phrases to use:
+
+   I imagine this is very hard for you to hear. 
+
+   You look very upset.
+
+   Tell me how you are feeling. 
+
+   I wish the news were different.
+
+   We'll do whatever we can to help you.
+ 
+S Summary and planning Delineate for the patient and the family the next steps, including additional tests or interventions. It is the unknown and uncertain that can increase anxiety. 
+
+Recommend a schedule with goals and landmarks. Provide your rationale for the patient and/or family to accept (or reject). 
+
+If the patient and/or family are not ready to discuss the next steps, schedule a follow-up visit.
+ 
+ 
+
+
+Source: Adapted from Buckman. 
+ 
+
+Continuous Goal Assessment
+
+Major barriers to ensuring quality palliative and end-of-life care include difficulty providing an accurate prognosis and emotional resistance of patients and their families to accepting the implications of a poor prognosis. A practical solution to these barriers is to integrate palliative care with curative care regardless of prognosis. With this approach, palliative care no longer conveys the message of failure, having no more treatments, or "giving up hope." Fundamental to integrating palliative care with curative therapy is to include continuous goal assessment as part of the routine patient reassessment that occurs at most patient-physician encounters.
+
+Goals for care are numerous, ranging from cure of a specific disease, to prolonging life, to relief of a symptom, to delaying the course of an incurable disease, to adapting to progressive disability without disrupting the family, to finding peace of mind or personal meaning, to dying in a manner that leaves loved ones with positive memories. Discernment of goals for care can be approached through a seven-step protocol: (1) ensure that medical and other information is as complete as reasonably possible and is understood by all relevant parties (see above); (2) explore what the patient and/or family are hoping for while identifying relevant and realistic goals; (3) share all the options with the patient and family; (4) respond with empathy as they adjust to changing expectations; (5) make a plan, emphasizing what can be done toward achieving the realistic goals; (6) follow through with the plan; and (7) review and revise the plan periodically, considering at every encounter whether the goals of care should be reviewed with the patient and/or family. Each of these steps need not be followed in rote order, but together they provide a helpful framework for interactions with patients and their families about goals for care. It can be especially challenging if a patient or family member has difficulty letting go of an unrealistic goal. One strategy is to help them refocus on more realistic goals and also suggest that while hoping for the best, it is still prudent to plan for other outcomes as well.
+
+Advance Care Planning
+
+Practices
+
+Advance care planning is a process of planning for future medical care in case the patient becomes incapable of making medical decisions. A 2010 study of adults 60 or older who died between 2000 and 2006 found that 42% required decision-making about treatment in the final days of life but 70% lacked decision-making capacity. Among those lacking decision-making capacity, around one-third did not have advance planning directives. Ideally, such planning would occur before a health care crisis or the terminal phase of an illness. Unfortunately, diverse barriers prevent this. Although 80% of Americans endorse advance care planning and completing living wills, only 47% have actually done so. Most patients expect physicians to initiate advance care planning and will wait for physicians to broach the subject. Patients also wish to discuss advance care planning with their families. Yet patients with unrealistic expectations are significantly more likely to prefer aggressive treatments. Fewer than one-third of health care providers have completed advance care planning for themselves. Hence, a good first step is for health care providers to complete their own advance care planning. This makes providers aware of the critical choices in the process and the issues that are especially charged and allows them to tell their patients truthfully that they personally have done advance planning.
+
+Steps in effective advance care planning center on (1) introducing the topic, (2) structuring a discussion, (3) reviewing plans that have been discussed by the patient and family, (4) documenting the plans, (5) updating them periodically, and (6) implementing the advance care directives (Table 9-3). Two of the main barriers to advance care planning are problems in raising the topic and difficulty in structuring a succinct discussion. Raising the topic can be done efficiently as a routine matter, noting that it is recommended for all patients, analogous to purchasing insurance or estate planning. Many of the most difficult cases have involved unexpected, acute episodes of brain damage in young individuals.
+
+Table 9-3 Steps in Advance Care Planning
+
+ 
+ 
+Step Goals to be Achieved and Measures to Cover Useful Phrases or Points to Make 
+Introducing advance care planning Ask the patient what he or she knows about advance care planning and if he or she has already completed an advance care directive. 
+
+Indicate that you as a physician have completed advance care planning. 
+
+Indicate that you try to perform advance care planning with all patients regardless of prognosis.
+
+Explain the goals of the process as empowering the patient and ensuring that you and the proxy understand the patient's preferences. 
+
+Provide the patient relevant literature, including the advance care directive that you prefer to use. 
+
+Recommend the patient identify a proxy decision-maker who should attend the next meeting.
+ I'd like to talk with you about something I try to discuss with all my patients. Its called advance care planning. In fact, I feel that this is such an important topic that I have done this myself. Are you familiar with advance care planning or living wills? 
+
+Have you thought about the type of care you would want if you ever became too sick to speak for yourself? That is the purpose of advance care planning. 
+
+There is no change in health that we have not discussed. I am bringing this up now because it is sensible for everyone, no matter how well or ill, old or young. 
+
+Have many copies of advance care directives available, including in the waiting room, for patients and families. 
+
+Know resources for state-specific forms (available at www.nhpco.org).
+ 
+Structured discussion of scenarios and patient Affirm that the goal of the process is to follow the patient's wishes if the patient loses decision-making capacity. 
+
+Elicit the patient's overall goals related to health care. 
+
+Elicit the patient's preferences for specific interventions in a few salient and common scenarios. 
+
+Help the patient define the threshold for withdrawing and withholding interventions. 
+
+Define the patient's preference for the role of the proxy.
+ Use a structured worksheet with typical scenarios. 
+
+Begin the discussion with persistent vegetative state and consider other scenarios, such as recovery from an acute event with serious disability, asking the patient about his or her preferences regarding specific interventions, such as ventilators, artificial nutrition, and CPR, and then proceeding to less invasive interventions, such as blood transfusions and antibiotics.
+ 
+Review the patient's preferences After the patient has made choices of interventions, review them to ensure they are consistent and the proxy is aware of them.   
+Document the patient's preferences Formally complete the advance care directive and have a witness sign it. 
+
+Provide a copy for the patient and the proxy. 
+
+Insert a copy into the patient's medical record and summarize in a progress note.
+   
+Update the directive Periodically, and with major changes in health status, review the directive with the patient and make any modifications.   
+Apply the directive The directive goes into effect only when the patient becomes unable to make medical decisions for himself or herself. 
+
+Reread the directive to be sure about its content. 
+
+Discuss your proposed actions based on the directive with the proxy.
+   
+ 
+
+
+Abbreviation: CPR, cardiopulmonary resuscitation. 
+ 
+
+Structuring a focused discussion is a central communication skill. Identify the health care proxy and recommend his or her involvement in the process of advance care planning. Select a worksheet, preferably one that has been evaluated and demonstrated to produce reliable and valid expressions of patient preferences, and orient the patient and proxy to it. Such worksheets exist for both general and disease-specific situations. Discuss with the patient and proxy one scenario as an example to demonstrate how to think about the issues. It is often helpful to begin with a scenario in which the patient is likely to have settled preferences for care, such as being in a persistent vegetative state. Once the patients preferences for interventions in this scenario are determined, suggest that the patient and proxy discuss and complete the worksheet for the others. If appropriate, suggest that they involve other family members in the discussion. On a return visit, go over the patients preferences, checking and resolving any inconsistencies. After having the patient and proxy sign the document, place it in the medical chart and be sure that copies are provided to relevant family members and care sites. Since patients preferences can change, these documents have to be reviewed periodically.
+
+Types of Documents
+
+Advance care planning documents are of two broad types. The first includes living wills or instructional directives; these are advisory documents that describe the types of decisions that should direct care. Some are more specific, delineating different scenarios and interventions for the patient to choose from. Among these, some are for general use and others are designed for use by patients with a specific type of disease, such as cancer or HIV. Less specific directives can be general statements of not wanting life-sustaining interventions or forms that describe the values that should guide specific discussions about terminal care. The second type of advance directive allows the designation of a health care proxy (sometimes also referred to as a durable attorney for health care), who is an individual selected by the patient to make decisions. The choice is not either/or; a combined directive that includes a living will and designates a proxy is often used, and the directive should indicate clearly whether the specified patient preferences or the proxys choice takes precedence if they conflict. Some states have begun to put into practice a "Physician Orders for Life-Sustaining Treatment (POLST)" paradigm, which builds on communication between providers and patients to include guidance for end-of-life care in a color-coordinated form that follows the patient across treatment settings. The procedures for completing advance care planning documents vary according to state law.
+
+A potentially misleading distinction relates to statutory as opposed to advisory documents. Statutory documents are drafted to fulfill relevant state laws. Advisory documents are drafted to reflect the patients wishes. Both are legal, the first under state law and the latter under common or constitutional law.
+
+Legal Aspects
+
+As of 2006, 48 states and the District of Columbia had enacted living will legislation. Many states have their own statutory forms. Massachusetts and Michigan do not have living will laws, although both have health care proxy laws. In 25 states, the laws state that the living will is not valid if a woman is pregnant. However, like all other states except Alaska, these states have enacted durable power of attorney for health care laws that permit patients to designate a proxy decision-maker with authority to terminate life-sustaining treatments. Only in Alaska does the law prohibit proxies from terminating life-sustaining treatments. The health reform legislation, the Affordable Care Act of 2010, raised substantial controversy when early versions of the law included Medicare reimbursement for advance care planning consultations. These provisions were withdrawn over accusations that they would lead to the rationing of care for the elderly.
+
+The U.S. Supreme Court has ruled that patients have a constitutional right to decide about refusing and terminating medical interventions, including life-sustaining interventions, and that mentally incompetent patients can exercise this right by providing "clear and convincing evidence" of their preferences. Since advance care directives permit patients to provide such evidence, commentators agree that they are constitutionally protected. Most commentators believe that a state is required to honor any clear advance care directive whether or not it is written on an "official" form. Many states have enacted laws explicitly to honor out-of-state directives. If a patient is not using a statutory form, it may be advisable to attach a statutory form to the advance care directive being used. State-specific forms are readily available free of charge for health care providers and patients and families through the website of the National Hospice and Palliative Care Organization (http://www.nhpco.org).
+ 
+Interventions
+
+Physical Symptoms and Their Management
+
+Great emphasis has been placed on addressing dying patients pain. Some institutions have made pain assessment a fifth vital sign to emphasize its importance. This also has been advocated by large health care systems such as the Veterans Administration and accrediting bodies such as the Joint Commission on the Accreditation of Health Care Organizations (JCAHO). Although this embrace of pain as the fifth vital sign has been symbolically important, no data document that it has improved pain management practices. Although good palliative care requires good pain management, it also requires more. The frequency of symptoms varies by disease and other factors. The most common physical and psychological symptoms among all terminally ill patients include pain, fatigue, insomnia, anorexia, dyspnea, depression, anxiety, and nausea and vomiting. In the last days of life, terminal delirium is also common. Assessments of patients with advanced cancer have shown that patients experienced an average of 11.5 different physical and psychological symptoms (Table 9-4).
+
+Table 9-4 Common Physical and Psychological Symptoms of Terminally Ill Patients
+
+ 
+ 
+Physical Symptoms Psychological Symptoms 
+Pain
+
+Fatigue and weakness
+
+DyspneaInsomnia
+
+Dry mouth
+
+Anorexia
+
+Nausea and vomiting
+
+Constipation
+
+Cough
+
+Swelling of arms or legs
+
+Itching
+
+Diarrhea
+
+Dysphagia
+
+Dizziness
+
+Fecal and urinary incontinence
+
+Numbness/tingling in hands/feet
+ Anxiety
+
+Depression
+
+Hopelessness
+
+Meaninglessness
+
+Irritability
+
+Impaired concentration
+
+Confusion
+
+Delirium
+
+Loss of libido
+ 
+ 
+
+ 
+
+Evaluations to determine the etiology of these symptoms usually can be limited to the history and physical examination. In some cases, radiologic or other diagnostic examinations will provide sufficient benefit in directing optimal palliative care to warrant the risks, potential discomfort, and inconvenience, especially to a seriously ill patient. Only a few of the common symptoms that present difficult management issues will be addressed in this chapter. Additional information on the management of other symptoms, such as nausea and vomiting, insomnia, and diarrhea, can be found in Chaps. 39 and 81, Chap. 27, and Chap. 40, respectively.
+
+Pain
+
+Frequency
+
+The frequency of pain among terminally ill patients varies widely. Substantial pain occurs in 36每90% of patients with advanced cancer. In the SUPPORT study of hospitalized patients with diverse conditions and an estimated survival 6 months, 22% reported moderate to severe pain, and caregivers of those patients noted that 50% had similar levels of pain during the last few days of life. A meta-analysis found pain prevalence of 58每69% in studies that included patients characterized as having advanced, metastatic, or terminal cancer; 44每73% in studies that included patients characterized as undergoing cancer treatment; and 21每46% in studies that included posttreatment individuals.
+
+Etiology
+
+Nociceptive pain is the result of direct mechanical or chemical stimulation of nociceptors and normal neural signaling to the brain. It tends to be localized, aching, throbbing, and cramping. The classic example is bone metastases. Visceral pain is caused by nociceptors in gastrointestinal, respiratory, and other organ systems. It is a deep or colicky type of pain classically associated with pancreatitis, myocardial infarction, or tumor invasion of viscera. Neuropathic pain arises from disordered nerve signals. It is described by patients as burning, electrical, or shocklike pain. Classic examples are poststroke pain, tumor invasion of the brachial plexus, and herpetic neuralgia.
+
+Assessment
+
+Pain is a subjective experience. Depending on the patients circumstances, perspective, and physiologic condition, the same physical lesion or disease state can produce different levels of reported pain and need for pain relief. Systematic assessment includes eliciting the following: (1) type: throbbing, cramping, burning, etc.; (2) periodicity: continuous, with or without exacerbations, or incident; (3) location; (4) intensity; (5) modifying factors; (6) effects of treatments; (7) functional impact; and (8) impact on patient. Several validated pain assessment measures may be used, such as the Visual Analogue Scale, the Brief Pain Inventory, and the pain component of one of the more comprehensive symptom assessment instruments. Frequent reassessments are essential to assess the effects of interventions.
+
+Interventions
+
+Interventions for pain must be tailored to each individual, with the goal of preempting chronic pain and relieving breakthrough pain. At the end of life, there is rarely reason to doubt a patients report of pain. Pain medications are the cornerstone of management. If they are failing and nonpharmacologic interventions〞including radiotherapy and anesthetic or neurosurgical procedures such as peripheral nerve blocks or epidural medications〞are required, a pain consultation is appropriate.
+
+Pharmacologic interventions follow the World Health Organization three-step approach involving nonopioid analgesics, mild opioids, and strong opioids, with or without adjuvants (Chap. 11). Nonopioid analgesics, especially nonsteroidal anti-inflammatory drugs (NSAIDs), are the initial treatments for mild pain. They work primarily by inhibiting peripheral prostaglandins and reducing inflammation but also may have central nervous system (CNS) effects. They have a ceiling effect. Ibuprofen, up to 1600 mg/d qid, has a minimal risk of causing bleeding and renal impairment and is a good initial choice. In patients with a history of severe gastrointestinal (GI) or other bleeding, it should be avoided. In patients with a history of mild gastritis or gastroesophageal reflux disease (GERD), acid-lowering therapy such as a proton pump inhibitor should be used. Acetaminophen is an alternative in patients with a history of GI bleeding and can be used safely at up to 4 g/d qid. In patients with liver dysfunction due to metastases or other causes and in patients with heavy alcohol use, doses should be reduced.
+
+If nonopioid analgesics are insufficient, opioids should be introduced. They work by interacting with mu opioid receptors in the CNS to activate pain-inhibitory neurons; most are receptor antagonists. The mixed agonist/antagonist opioids useful for post-acute pain should not be used for the chronic pain in end-of-life care. Weak opioids such as codeine can be used initially. However, if they are escalated and fail to relieve pain, strong opioids such as morphine, 5每10 mg every 4 h, should be used. Nonopioid analgesics should be combined with opioids because they potentiate the effect of opioids.
+
+For continuous pain, opioids should be administered on a regular, around-the-clock basis consistent with their duration of analgesia. They should not be provided only when the patient experiences pain; the goal is to prevent patients from experiencing pain. Patients also should be provided rescue medication, such as liquid morphine, for breakthrough pain, generally at 20% of the baseline dose. Patients should be informed that using the rescue medication does not obviate the need to take the next standard dose of pain medication. If after 24 h the patients pain remains uncontrolled and recurs before the next dose, requiring the patient to utilize the rescue medication, the daily opioid dose can be increased by the total dose of rescue medications used by the patient, or by 50% for moderate pain and 100% for severe pain of the standing opioid daily dose.
+
+It is inappropriate to start with extended-release preparations. Instead, an initial focus on using short-acting preparations to determine how much is required in the first 24每48 h will allow clinicians to determine opioid needs. Once pain relief is obtained with short-acting preparations, one should switch to extended-release preparations. Even with a stable extended-release preparation regimen, the patient may have incident pain, such as during movement or dressing changes. Short-acting preparations should be taken before such predictable episodes. Although less common, patients may have "end-of-dose failure" with long-acting opioids, meaning that they develop pain after 8 h in the case of an every-12-h medication. In these cases, a trial of giving an every-12-h medication every 8 h is appropriate.
+
+Because of differences in opioid receptors, cross-tolerance among opioids is incomplete, and patients may experience different side effects with different opioids. Therefore, if a patient is not experiencing pain relief or is experiencing too many side effects, a change to another opioid preparation is appropriate. When switching, one should begin with 50每75% of the published equianalgesic dose of the new opioid.
+
+Unlike NSAIDs, opioids have no ceiling effect; therefore, there is no maximum dose no matter how many milligrams the patient is receiving. The appropriate dose is the dose needed to achieve pain relief. This is an important point for clinicians to explain to patients and families. Addiction or excessive respiratory depression is extremely unlikely in the terminally ill; fear of these side effects should neither prevent escalating opioid medications when the patient is experiencing insufficient pain relief nor justify using opioid antagonists.
+
+Opioid side effects should be anticipated and treated preemptively. Nearly all patients experience constipation that can be debilitating (see below). Failure to prevent constipation often results in noncompliance with opioid therapy. Methylnaltrexone is a drug that targets opioid-induced constipation by blocking peripheral opioid receptors but not central receptors for analgesia. In placebo-controlled trials, it has been shown to cause laxation within 24 h of administration. As with the use of opioids, about a third of patients using methylnaltrexone experience nausea and vomiting, but unlike constipation, tolerance develops, usually within a week. Therefore, when one is beginning opioids, an antiemetic such as metoclopramide or a serotonin antagonist often is prescribed prophylactically and stopped after 1 week. Olanzapine also has been shown to have antinausea properties and can be effective in countering delirium or anxiety, with the advantage of some weight gain.
+
+Drowsiness, a common side effect of opioids, also usually abates within a week. During this period, drowsiness can be treated with psychostimulants such as dextroamphetamine, methylphenidate, and modafinil. Modafinil has the advantage of everyday dosing. Pilot reports suggest that donepezil may also be helpful for opiate-induced drowsiness as well as relieving fatigue and anxiety. Metabolites of morphine and most opioids are cleared renally; doses may have to be adjusted for patients with renal failure.
+
+Seriously ill patients who require chronic pain relief rarely if ever become addicted. Suspicion of addiction should not be a reason to withhold pain medications from terminally ill patients. Patients and families may withhold prescribed opioids for fear of addiction or dependence. Physicians and health care providers should reassure patients and families that the patient will not become addicted to opioids if they are used as prescribed for pain relief; this fear should not prevent the patient from taking the medications around the clock. However, diversion of drugs for use by other family members or illicit sale may occur. It may be necessary to advise the patient and caregiver about secure storage of opioids. Contract writing with the patient and family can help. If that fails, transfer to a safe facility may be necessary.
+
+Tolerance is the need to increase medication dosage for the same pain relief without a change in disease. In the case of patients with advanced disease, the need for increasing opioid dosage for pain relief usually is caused by disease progression rather than tolerance. Physical dependence is indicated by symptoms from the abrupt withdrawal of opioids and should not be confused with addiction.
+
+Adjuvant analgesic medications are nonopioids that potentiate the analgesic effects of opioids. They are especially important in the management of neuropathic pain. Gabapentin, an anticonvulsant initially studied in the setting of herpetic neuralgia, is now the first-line treatment for neuropathic pain from a variety of causes. It is begun at 100每300 mg bid or tid, with 50每100% dose increments every 3 days. Usually 900每3600 mg/d in two or three doses is effective. The combination of gabapentin and nortriptyline may be more effective than gabapentin alone. One potential side effect of gabapentin to be aware of is confusion and drowsiness, especially in the elderly. Other effective adjuvant medications include pregabalin, which has the same mechanism of action as gabapentin but is absorbed more efficiently from the GI tract. Lamotrigine is a novel agent whose mechanism of action is unknown, but it has shown effectiveness. It is recommended to begin at 25每50 mg/d, increasing to 100 mg/d. Carbamazepine, a first-generation agent, has been proved effective in randomized trials for neuropathic pain. Other potentially effective anticonvulsant adjuvants include topiramate (25每50 mg qd or bid, rising to 100每300 mg/d) and oxcarbazepine (75每300 mg bid, rising to 1200 mg bid). Glucocorticoids, preferably dexamethasone given once a day, can be useful in reducing inflammation that causes pain while elevating mood, energy, and appetite. Its main side effects include confusion, sleep difficulties, and fluid retention. Glucocorticoids are especially effective for bone pain and abdominal pain from distention of the GI tract or liver. Other drugs, including clonidine and baclofen, can be effective in pain relief. These drugs are adjuvants and generally should be used in conjunction with〞not instead of〞opioids. Methadone, carefully dosed because of its unpredictable half-life in many patients, has activity at the N-methyl-d-aspartamate (NMDA) receptor and is useful for complex pain syndromes and neuropathic pain. It generally is reserved for cases in which first-line opioids (morphine, oxycodone, hydromorphone) are either ineffective or unavailable.
+
+Radiation therapy can treat bone pain from single metastatic lesions. Bone pain from multiple metastases can be amenable to radiopharmaceuticals such as strontium 89 and samarium 153. Bisphosphonates [such as pamidronate (90 mg every 4 weeks)] and calcitonin (200 IU intranasally once or twice a day) also provide relief from bone pain but have onset of action of days.
+
+Constipation
+
+Frequency
+
+Constipation is reported in up to 87% of patients requiring palliative care.
+
+Etiology
+
+Although hypercalcemia and other factors can cause constipation, it is most frequently a predictable consequence of the use of opioids for the relief of pain and dyspnea and of tricyclic antidepressants, from their anticholinergic effects, as well as of the inactivity and poor diet that are common among seriously ill patients. If untreated, constipation can cause substantial pain and vomiting and also is associated with confusion and delirium. Whenever opioids and other medications known to cause constipation are used, preemptive treatment for constipation should be instituted.
+
+Assessment
+
+The physician should establish the patients previous bowel habits, including the frequency, consistency, and volume. Abdominal and rectal examinations should be performed to exclude impaction or acute abdomen. A number of constipation assessment scales are available, although guidelines issued in the Journal of Palliative Medicine did not recommend them for routine practice. Four commonly used assessment scales are the Bristol Stool Form Scale, the Constipation Assessment Scale, the Constipation Visual Analogue Scale, and the Eton Scale Risk Assessment for Constipation. Radiographic assessments beyond a simple flat plate of the abdomen in cases in which obstruction is suspected are rarely necessary.
+
+Intervention
+
+Intervention to reestablish comfortable bowel habits and relieve pain and discomfort should be the goals of any measures to address constipation during end-of-life care. Although physical activity, adequate hydration, and dietary treatments with fiber can be helpful, each is limited in its effectiveness for most seriously ill patients, and fiber may exacerbate problems in the setting of dehydration and if impaired motility is the etiology. Fiber is contraindicated in the presence of opioid use. Stimulant and osmotic laxatives, stool softeners, fluids, and enemas are the mainstays of therapy (Table 9-5). In preventing constipation from opioids and other medications, a combination of a laxative and a stool softener (such as senna and docusate) should be used. If after several days of treatment a bowel movement has not occurred, a rectal examination to remove impacted stool and place a suppository is necessary. For patients with impending bowel obstruction or gastric stasis, octreotide to reduce secretions can be helpful. For patients in whom the suspected mechanism is dysmotility, metoclopramide can be helpful.
+
+Table 9-5 Medications for the Management of Constipation
+
+ 
+ 
+Intervention Dose Comment 
+Stimulant laxatives 
+
+   Prune juice 
+
+   Senna (Senokot) 
+
+   Bisacodyl
+ 120每240 mL/d 
+
+2每8 tablets PO bid 
+
+5每15 mg/d PO, PR
+ These agents directly stimulate peristalsis and may reduce colonic absorption of water. 
+
+Work in 6每12 h.
+ 
+Osmotic laxatives
+
+   Lactulose
+
+   Magnesium hydroxide (Milk of Magnesia) 
+
+   Magnesium citrate
+ 15每30 mL PO q4每8h 
+
+15每30 mL/d PO 
+
+125每250 mL/d PO
+ These agents are not absorbed. They attract and retain water in the gastrointestinal tract. 
+
+Lactulose may cause flatulence and bloating. 
+
+Lactulose works in 1 day, magnesium products in 6 h.
+ 
+Stool softeners 
+
+   Sodium docusate (Colace) 
+
+   Calcium docusate
+ 300每600 mg/d PO 
+
+300每600 mg/d PO
+ These agents work by increasing water secretion and as detergents, increasing water penetration into the stool. 
+
+Work in 1每3 days.
+ 
+Suppositories and enemas 
+
+   Bisacodyl
+
+   Sodium phosphate enema
+ 10每15 PR qd 
+
+PR qd
+ Fixed dose, 4.5 oz, Fleet's. 
+ 
+
+ 
+
+Nausea
+
+Frequency
+
+Up to 70% of patients with advanced cancer have nausea, defined as the subjective sensation of wanting to vomit.
+
+Etiology
+
+Nausea and vomiting are both caused by stimulation at one of four sites: the GI tract, the vestibular system, the chemoreceptor trigger zone (CTZ), and the cerebral cortex. Medical treatments for nausea are aimed at receptors at each of these sites: The GI tract contains mechanoreceptors, chemoreceptors, and 5-hydroxytryptamine type 3 (5-HT3) receptors; the vestibular system probably contains histamine and acetylcholine receptors; and the CTZ contains chemoreceptors, dopamine type 2 receptors, and 5-HT3 receptors. An example of nausea that most likely is mediated by the cortex is anticipatory nausea before a dose of chemotherapy or other noxious stimuli.
+
+Specific causes of nausea include metabolic changes (liver failure, uremia from renal failure, hypercalcemia), bowel obstruction, constipation, infection, GERD, vestibular disease, brain metastases, medications (including antibiotics, NSAIDs, proton pump inhibitors, opioids, and chemotherapy), and radiation therapy. Anxiety can also contribute to nausea.
+
+Intervention
+
+Medical treatment of nausea is directed at the anatomic and receptor-mediated cause that a careful history and physical examination reveals. When a single specific cause is not found, many advocate beginning treatment with a dopamine antagonist such as haloperidol or prochlorperazine. Prochlorperazine is usually more sedating than haloperidol. When decreased motility is suspected, metoclopramide can be an effective treatment. When inflammation of the GI tract is suspected, glucocorticoids such as dexamethasone are an appropriate treatment. For nausea that follows chemotherapy and radiation therapy, one of the 5-HT3 receptor antagonists (ondansetron, granisetron, dolasetron) is recommended. Clinicians should attempt prevention of postchemotherapy nausea rather than provide treatment after the fact. Current clinical guidelines recommend tailoring the strength of treatments to the specific emetic risk posed by a specific chemotherapy drug. When a vestibular cause (such as "motion sickness" or labyrinthitis) is suspected, antihistamines such as meclizine (whose primary side effect is drowsiness) or anticholinergics such as scopolamine can be effective. In anticipatory nausea, a benzodiazepine such as lorazepam is indicated. As with antihistamines, drowsiness and confusion are the main side effects.
+
+Dyspnea
+
+Frequency
+
+Dyspnea is a subjective experience of being short of breath. Nearly 75% of dying patients experience dyspnea at some point in their illness. Dyspnea is among the most distressing physical symptoms and can be even more distressing than pain.
+
+Assessment
+
+As with pain, dyspnea is a subjective experience that may not correlate with objective measures of PO2, PCO2, or respiratory rate. Consequently, measurements of oxygen saturation through pulse oximetry or blood gases are rarely helpful in guiding therapy. Despite the limitations of existing assessment methods, physicians should regularly assess and document patients experience of dyspnea and its intensity. Guidelines recommend visual or analogue dyspnea scales to assess the severity of symptoms and the effects of treatment. Potentially reversible or treatable causes of dyspnea include infection, pleural effusions, pulmonary emboli, pulmonary edema, asthma, and tumor encroachment on the airway. However, the risk-versus-benefit ratio of the diagnostic and therapeutic interventions for patients with little time left to live must be considered carefully before one undertakes diagnostic steps. Frequently, the specific etiology cannot be identified, and dyspnea is the consequence of progression of the underlying disease that cannot be treated. The anxiety caused by dyspnea and the choking sensation can significantly exacerbate the underlying dyspnea in a negatively reinforcing cycle.
+
+Interventions
+
+When reversible or treatable etiologies are diagnosed, they should be treated as long as the side effects of treatment, such as repeated drainage of effusions or anticoagulants, are less burdensome than the dyspnea itself. More aggressive treatments such as stenting a bronchial lesion may be warranted if it is clear that the dyspnea is due to tumor invasion at that site and if the patient and family understand the risks of such a procedure. Usually, treatment will be symptomatic (Table 9-6). A dyspnea scale and careful monitoring should guide dose adjustment. Low-dose opioids reduce the sensitivity of the central respiratory center and the sensation of dyspnea. If patients are not receiving opioids, weak opioids can be initiated; if patients are already receiving opioids, morphine or other strong opioids should be used. Controlled trials do not support the use of nebulized opioids for dyspnea at the end of life. Phenothiazines and chlorpromazine may be helpful when combined with opioids. Benzodiazepines can be helpful if anxiety is present but should be neither used as first-line therapy nor used alone in the treatment of dyspnea. If the patient has a history of COPD or asthma, inhaled bronchodilators and glucocorticoids may be helpful. If the patient has pulmonary edema due to heart failure, diuresis with a medication such as furosemide is indicated. Excess secretions can be dried with scopolamine, transdermally or intravenously. Oxygen can be used, although it may only be an expensive placebo. For some families and patients, oxygen is distressing; for others, it is reassuring. More general interventions that medical staff can do include sitting the patient upright, removing smoke or other irritants such as perfume, ensuring a supply of fresh air with sufficient humidity, and minimizing other factors that can increase anxiety.
+
+Table 9-6 Medications for the Management of Dyspnea
+
+ 
+ 
+Intervention Dose Comments 
+Weak opioids
+
+   Codeine (or codeine with 325 mg acetaminophen) 
+
+   Hydrocodone
+  
+
+30 mg PO q4h
+
+ 
+
+5 mg PO q4h
+ For patients with mild dyspnea 
+
+For opioid-na?ve patients
+ 
+Strong opioids
+
+   Morphine
+
+ 
+
+ 
+
+   Oxycodone
+
+   Hydromorphone
+  
+
+5每10 mg PO q4h 
+
+30每50% of baseline opioid dose q4h
+
+5每10 mg PO q4h
+
+1每2 mg PO q4h
+ For opioid-na?ve patients with moderate to severe dyspnea 
+
+For patients already taking opioids for pain or other symptoms
+ 
+Anxiolytics
+
+   Lorazepam
+
+ 
+
+   Clonazepam
+
+   Midazolam
+  
+
+0.5每2.0 mg PO/SL/IV qh then q4每6h
+
+0.25每2.0 mg PO q12h
+
+0.5 mg IV q15min
+ Give a dose every hour until the patient is relaxed, then provide a dose for maintenance 
+ 
+
+ 
+
+Fatigue
+
+Frequency
+
+More than 90% of terminally ill patients experience fatigue and/or weakness. Fatigue is one of the most commonly reported symptoms of cancer treatment as well as in the palliative care of multiple sclerosis, COPD, heart failure, and HIV. Fatigue frequently is cited as among the most distressing symptoms.
+
+Etiology
+
+The multiple causes of fatigue in the terminally ill can be categorized as resulting from the underlying disease; from disease-induced factors such as tumor necrosis factor and other cytokines; and from secondary factors such as dehydration, anemia, infection, hypothyroidism, and drug side effects. Apart from low caloric intake, loss of muscle mass and changes in muscle enzymes may play an important role in fatigue of terminal illness. The importance of changes in the CNS, especially the reticular activating system, have been hypothesized based on reports of fatigue in patients receiving cranial radiation, experiencing depression, or having chronic pain in the absence of cachexia or other physiologic changes. Finally, depression and other causes of psychological distress can contribute to fatigue.
+
+Assessment
+
+Fatigue is subjective; objective changes, even in body mass, may be absent. Consequently, assessment must rely on patient self-reporting. Scales used to measure fatigue, such as the Edmonton Functional Assessment Tool, the Fatigue Self-Report Scales, and the Rhoten Fatigue Scale, are usually appropriate for research rather than clinical purposes. In clinical practice, a simple performance assessment such as the Karnofsky Performance Status or the Eastern Cooperative Oncology Groups question "How much of the day does the patient spend in bed?" may be the best measure. In this 0每4 performance status assessment, 0 = normal activity; 1 = symptomatic without being bedridden; 2 = requiring some, but <50%, bed time; 3 = bedbound more than half the day; and 4 = bedbound all the time. Such a scale allows for assessment over time and correlates with overall disease severity and prognosis. A 2008 review by the European Association of Palliative Care also described several longer assessment tools with 9每20 items, including the Piper Fatigue Inventory, the Multidimensional Fatigue Inventory, and the Brief Fatigue Inventory (BFI).
+
+Interventions
+
+At the end of life, fatigue will not be "cured." The goal is to ameliorate it and help patients and families adjust expectations. Behavioral interventions should be utilized to avoid blaming the patient for inactivity and to educate both the family and the patient that the underlying disease causes physiologic changes that produce low energy levels. Understanding that the problem is physiologic and not psychological can help alter expectations regarding the patients level of physical activity. Practically, this may mean reducing routine activities such as housework and cooking or social events outside the house and making it acceptable to receive guests lying on a couch. At the same time, institution of exercise regimens and physical therapy can raise endorphins, reduce muscle wasting, and reduce the risk of depression. In addition, ensuring good hydration without worsening edema may help reduce fatigue. Discontinuing medications that worsen fatigue may help, including cardiac medications, benzodiazepines, certain antidepressants, or opioids if pain is well-controlled. As end-of-life care proceeds into its final stages, fatigue may protect patients from further suffering, and continued treatment could be detrimental.
+
+Only a few pharmacologic interventions target fatigue and weakness. Glucocorticoids can increase energy and enhance mood. Dexamethasone is preferred for its once-a-day dosing and minimal mineralocorticoid activity. Benefit, if any, usually is seen within the first month. Psychostimulants such as dextroamphetamine (5每10 mg PO) and methylphenidate (2.5每5 mg PO) may also enhance energy levels, although a randomized trial did not show methylphenidate beneficial compared with placebo in cancer fatigue. Doses should be given in the morning and at noon to minimize the risk of counterproductive insomnia. Modafinil, developed for narcolepsy, has shown some promise in the treatment of fatigue and has the advantage of once-daily dosing. Its precise role in fatigue at the end of life has not been determined. Anecdotal evidence suggests that l-carnitine may improve fatigue, depression, and sleep disruption.
+
+Psychological Symptoms and Their Management
+
+Depression
+
+Frequency
+
+Depression at the end of life presents an apparently paradoxical situation. Many people believe that depression is normal among seriously ill patients because they are dying. People frequently say, "Wouldnt you be depressed?" However, depression is not a necessary part of terminal illness and can contribute to needless suffering. Although sadness, anxiety, anger, and irritability are normal responses to a serious condition, they are typically of modest intensity and transient. Persistent sadness and anxiety and the physically disabling symptoms that they can lead to are abnormal and suggestive of major depression. Although as many as 75% of terminally ill patients experience depressive symptoms, <25% of terminally ill patients have major depression.
+
+Etiology
+
+Previous history of depression, family history of depression or bipolar disorder, and prior suicide attempts are associated with increased risk for depression among terminally ill patients. Other symptoms, such as pain and fatigue, are associated with higher rates of depression; uncontrolled pain can exacerbate depression, and depression can cause patients to be more distressed by pain. Many medications used in the terminal stages, including glucocorticoids, and some anticancer agents, such as tamoxifen, interleukin 2, interferon , and vincristine, also are associated with depression. Some terminal conditions, such as pancreatic cancer, certain strokes, and heart failure, have been reported to be associated with higher rates of depression, although this is controversial. Finally, depression may be attributable to grief over the loss of a role or function, social isolation, or loneliness.
+
+Assessment
+
+Diagnosing depression among seriously ill patients is complicated because many of the vegetative symptoms in the DSM-IV (Diagnostic and Statistical Manual of Mental Disorders) criteria for clinical depression〞insomnia, anorexia and weight loss, fatigue, decreased libido, and difficulty concentrating〞are associated with the dying process itself. The assessment of depression in seriously ill patients therefore should focus on the dysphoric mood, helplessness, hopelessness, and lack of interest and enjoyment and concentration in normal activities. The single questions "How often do you feel downhearted and blue?" (more than a good bit of the time or similar responses) and "Do you feel depressed most of the time?" are appropriate for screening.
+
+Certain conditions may be confused with depression. Endocrinopathies such as hypothyroidism and Cushings syndrome, electrolyte abnormalities such as hypercalcemia, and akathisia, especially from dopamine-blocking antiemetics such as metoclopramide and prochlorperazine, can mimic depression and should be excluded.
+
+Interventions
+
+Physicians must treat any physical symptom, such as pain, that may be causing or exacerbating depression. Fostering adaptation to the many losses that the patient is experiencing can also be helpful. Nonpharmacologic interventions, including group or individual psychological counseling, and behavioral therapies such as relaxation and imagery can be helpful, especially in combination with drug therapy.
+
+Pharmacologic interventions remain the core of therapy. The same medications are used to treat depression in terminally ill as in non-terminally ill patients. Psychostimulants may be preferred for patients with a poor prognosis or for those with fatigue or opioid-induced somnolence. Psychostimulants are comparatively fast acting, working within a few days instead of the weeks required for selective serotonin reuptake inhibitors (SSRIs). Dextroamphetamine or methylphenidate should be started at 2.5每5.0 mg in the morning and at noon, the same starting doses used for treating fatigue. The dose can be escalated up to 15 mg bid. Modafinil is started at 100 mg qd and can be increased to 200 mg if there is no effect at the lower dose. Pemoline is a nonamphetamine psychostimulant with minimal abuse potential. It is also effective as an antidepressant beginning at 18.75 mg in the morning and at noon. Because it can be absorbed through the buccal mucosa, it is preferred for patients with intestinal obstruction or dysphagia. If it is used for prolonged periods, liver function must be monitored. The psychostimulants can also be combined with more traditional antidepressants while waiting for the antidepressants to become effective and then tapered after a few weeks if necessary. Psychostimulants have side effects, particularly initial anxiety, insomnia, and rarely paranoia, which may necessitate lowering the dose or discontinuing treatment.
+
+Mirtazapine, an antagonist at the postsynaptic serotonin receptors, is a promising psychostimulant. It should be started at 7.5 mg before bed. It has sedating, antiemetic, and anxiolytic properties with few drug interactions. Its side effect of weight gain may be beneficial for seriously ill patients; it is available in orally disintegrating tablets.
+
+For patients with a prognosis of several months or longer, SSRIs, including fluoxetine, sertraline, paroxetine and citalopram, and serotonin-noradrenaline reuptake inhibitors such as venlafaxine, are the preferred treatment because of their efficacy and comparatively few side effects. Because low doses of these medications may be effective for seriously ill patients, one should use half the usual starting dose for healthy adults. The starting dose for fluoxetine is 10 mg once a day. In most cases, once-a-day dosing is possible. The choice of which SSRI to use should be driven by (1) the patients past success or failure with the specific medication and (2) the most favorable side-effect profile for that specific agent. For instance, for a patient in whom fatigue is a major symptom, a more activating SSRI (fluoxetine) would be appropriate. For a patient in whom anxiety and sleeplessness are major symptoms, a more sedating SSRI (paroxetine) would be appropriate.
+
+Atypical antidepressants are recommended only in selected circumstances, usually with the assistance of a specialty consultation. Trazodone can be an effective antidepressant but is sedating and can cause orthostatic hypotension and, rarely, priapism. Therefore, it should be used only when a sedating effect is desired and is often used for patients with insomnia, at a dose starting at 25 mg. In addition to its antidepressant effects, bupropion is energizing, making it useful for depressed patients who experience fatigue. However, it can cause seizures, preventing its use for patients with a risk of CNS neoplasms or terminal delirium. Finally, alprazolam, a benzodiazepine, starting at 0.25每1.0 mg tid, can be effective in seriously ill patients who have a combination of anxiety and depression. Although it is potent and works quickly, it has many drug interactions and may cause delirium, especially among very ill patients, because of its strong binding to the benzodiazepine每-aminobutyric acid (GABA) receptor complex.
+
+Unless used as adjuvants for the treatment of pain, tricyclic antidepressants are not recommended. Similarly, monoamine oxidase (MAO) inhibitors are not recommended because of their side effects and dangerous drug interactions.
+
+Delirium (see Chap. 25)
+
+Frequency
+
+In the weeks or months before death, delirium is uncommon, although it may be significantly underdiagnosed. However, delirium becomes relatively common in the hours and days immediately before death. Up to 85% of patients dying from cancer may experience terminal delirium.
+
+Etiology
+
+Delirium is a global cerebral dysfunction characterized by alterations in cognition and consciousness. It frequently is preceded by anxiety, changes in sleep patterns (especially reversal of day and night), and decreased attention. In contrast to dementia, delirium has an acute onset, is characterized by fluctuating consciousness and inattention, and is reversible, although reversibility may be more theoretical than real for patients near death. Delirium may occur in a patient with dementia; indeed, patients with dementia are more vulnerable to delirium.
+
+Causes of delirium include metabolic encephalopathy arising from liver or renal failure, hypoxemia, or infection; electrolyte imbalances such as hypercalcemia; paraneoplastic syndromes; dehydration; and primary brain tumors, brain metastases, or leptomeningeal spread of tumor. Commonly, among dying patients, delirium can be caused by side effects of treatments, including radiation for brain metastases, and medications, including opioids, glucocorticoids, anticholinergic drugs, antihistamines, antiemetics, benzodiazepines, and chemotherapeutic agents. The etiology may be multifactorial; e.g., dehydration may exacerbate opioid-induced delirium.
+
+Assessment
+
+Delirium should be recognized in any terminally ill patient with new onset of disorientation, impaired cognition, somnolence, fluctuating levels of consciousness, or delusions with or without agitation. Delirium must be distinguished from acute anxiety and depression as well as dementia. The central distinguishing feature is altered consciousness, which usually is not noted in anxiety, depression, and dementia. Although "hyperactive" delirium characterized by overt confusion and agitation is probably more common, patients also should be assessed for "hypoactive" delirium characterized by sleep-wake reversal and decreased alertness.
+
+In some cases, use of formal assessment tools such as the Mini-Mental Status Examination (which does not distinguish delirium from dementia) and the Delirium Rating Scale (which does distinguish delirium from dementia) may be helpful in distinguishing delirium from other processes. The patients list of medications must be evaluated carefully. Nonetheless, a reversible etiologic factor for delirium is found in fewer than half of terminally ill patients. Because most terminally ill patients experiencing delirium will be very close to death and may be at home, extensive diagnostic evaluations such as lumbar punctures and neuroradiologic examinations are usually inappropriate.
+
+Interventions
+
+One of the most important objectives of terminal care is to provide terminally ill patients the lucidity to say goodbye to the people they love. Delirium, especially with agitation during the final days, is distressing to family and caregivers. A strong determinant of bereavement difficulties is witnessing a difficult death. Thus, terminal delirium should be treated aggressively.
+
+At the first sign of delirium, such as day-night reversal with slight changes in mentation, the physician should let the family members know that it is time to be sure that everything they want to say has been said. The family should be informed that delirium is common just before death.
+
+If medications are suspected of being a cause of the delirium, unnecessary agents should be discontinued. Other potentially reversible causes, such as constipation, urinary retention, and metabolic abnormalities, should be treated. Supportive measures aimed at providing a familiar environment should be instituted, including restricting visits only to individuals with whom the patient is familiar and eliminating new experiences; orienting the patient, if possible, by providing a clock and calendar; and gently correcting the patients hallucinations or cognitive mistakes.
+
+Pharmacologic management focuses on the use of neuroleptics and, in the extreme, anesthetics (Table 9-7). Haloperidol remains first-line therapy. Usually, patients can be controlled with a low dose (1每3 mg/d), usually given every 6 h, although some may require as much as 20 mg/d. It can be administered PO, SC, or IV. IM injections should not be used, except when this is the only way to get a patient under control. Olanzapine, an atypical neuroleptic, has shown significant effectiveness in completely resolving delirium in cancer patients. It has other beneficial effects for terminally ill patients, including antinausea, antianxiety, and weight gain. It is useful for patients with longer anticipated life expectancy because it is less likely to cause dysphoria and has a lower risk of dystonic reactions. Also, because it is metabolized through multiple pathways, it can be used in patients with hepatic and renal dysfunction. Olanzapine has the disadvantage that it is available only orally and that it takes a week to reach steady state. The usual dose is 2.5每5 mg PO bid. Chlorpromazine (10每25 mg every 4每6 h) can be useful if sedation is desired and can be administered IV or PR in addition to PO. Dystonic reactions resulting from dopamine blockade are a side effect of neuroleptics, although they are reported to be rare when these drugs are used to treat terminal delirium. If patients develop dystonic reactions, benztropine should be administered. Neuroleptics may be combined with lorazepam to reduce agitation when the delirium is the result of alcohol or sedative withdrawal.
+
+Table 9-7 Medications for the Management of Delirium
+
+ 
+ 
