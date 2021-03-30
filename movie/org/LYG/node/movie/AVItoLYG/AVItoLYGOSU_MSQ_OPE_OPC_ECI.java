@@ -3,10 +3,11 @@ import java.io.IOException;
 
 
 
+
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 
-import org.LYG.node.movie.AVItoLYG.jp;
+//import org.LYG.node.movie.AVItoLYG.jp;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 import PEU.movieProcessorYLJ.LYGFileIO;
@@ -22,7 +23,8 @@ public class AVItoLYGOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI
 	public AVItoLYGOSU_MSQ_OPE_OPC_ECI()throws IOException
  	{	
  	}
-	public void run(final AVItoLYGOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException, UnsupportedAudioFileException
+	public void run(final AVItoLYGOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) 
+			throws IOException, UnsupportedAudioFileException
 	{		
 		 SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout = new LYGFileIO();
 		 jj = new jp(filepath ,filepathWAV,writefile, SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout);			

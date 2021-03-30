@@ -563,6 +563,14 @@ public class FMHMMListOneTimeImp implements FHMMList {
 				}
 			}
 		cReader.close();
+		cReaderKorea.close();
+		cReaderJapan.close();
+		cReaderTrandition.close();
+		cReaderEnglish.close();
+		cReaderPinYin.close();
+		cReaderRs.close();
+		cReaderAb.close();
+		
 		//trim
 		StableMaps.baDongCi.remove("");
 		StableMaps.daiCi.remove("");

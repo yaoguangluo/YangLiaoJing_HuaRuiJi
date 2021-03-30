@@ -39,7 +39,7 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import ME.sample.nk.dictionary;
+//import ME.sample.nk.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class xynk extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

@@ -1,5 +1,5 @@
 package imageProcessor;
-import imageProcessor.Reflection;
+//import imageProcessor.Reflection;
 public class Dilation{
 	int[][] kernel;
 	int[][] GetRegion;

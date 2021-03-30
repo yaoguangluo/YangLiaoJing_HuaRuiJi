@@ -39,7 +39,7 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import ME.sample.wkx.dictionary;
+//import ME.sample.wkx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class wkx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

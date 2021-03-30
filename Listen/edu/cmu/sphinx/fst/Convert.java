@@ -273,7 +273,7 @@ public class Convert {
             }
         }
         dis.close();
-
+        br.close();
         fst.setIsyms(Utils.toStringArray(isyms));
         fst.setOsyms(Utils.toStringArray(osyms));
 

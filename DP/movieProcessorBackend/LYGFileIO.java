@@ -155,6 +155,7 @@ public class LYGFileIO{
 			}	
 		}
 		is.close();
+		reader.close();
 	}
 
 	public void reset() {

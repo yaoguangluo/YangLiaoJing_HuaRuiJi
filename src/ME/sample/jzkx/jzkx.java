@@ -1,8 +1,5 @@
 package ME.sample.jzkx;
 import java.awt.Color;
-
-
-
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Font;
@@ -42,7 +39,7 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import ME.sample.jzkx.dictionary;
+//import ME.sample.jzkx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class jzkx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

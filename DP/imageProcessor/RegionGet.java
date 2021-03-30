@@ -1,6 +1,5 @@
 package imageProcessor;
-import imageProcessor.ReadWritePng;
-
+//import imageProcessor.ReadWritePng;
 import java.io.IOException;
 public class RegionGet {
 	int[] pix;

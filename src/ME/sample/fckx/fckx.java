@@ -38,7 +38,7 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import ME.sample.fckx.dictionary;
+//import ME.sample.fckx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import comp.jbutton.DetaButton;
 public class fckx extends Container implements MouseListener, KeyListener{

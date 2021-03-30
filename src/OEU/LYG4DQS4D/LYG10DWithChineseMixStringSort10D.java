@@ -458,6 +458,8 @@ public class LYG10DWithChineseMixStringSort10D{
 			for(String[] string:strings2D) {
 				System.out.println(string[1]);
 			}
+			cReaderc.close();
+			cReaderp.close();
 		}catch(Exception e) {
 
 		}

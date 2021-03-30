@@ -7,8 +7,6 @@ import java.util.HashMap;
 //20200314 集成了最新的小高峰过滤催化排序5代思想。
 //罗瑶光
 import java.util.Map;
-
-import ME.sample.App;
 public class LYG9DWithChineseMixStringSort9D{
 	Map<String, Boolean> find= new HashMap<>();
 	Map<String, String> pinyin;
@@ -368,6 +366,8 @@ public class LYG9DWithChineseMixStringSort9D{
     				}
     			}
     		}
+    		cReaderp.close();
+    		cReaderc.close();
     		//this.pinYin= map;
     		String[] string= new String[8];
     		string[0]= "ASD12SD1";

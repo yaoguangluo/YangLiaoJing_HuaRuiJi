@@ -48,6 +48,7 @@ public class NamesConversion {
 	
 	void buildPhoneConversion(String MMFfile) {
 		try  {
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(MMFfile));
 			String s;
 			for (;;) {
@@ -71,6 +72,7 @@ public class NamesConversion {
 	}
 	void buildWordConversion(String lexFile) {
 		try  {
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(lexFile));
 			String s;
 			for (;;) {
@@ -122,7 +124,9 @@ public class NamesConversion {
 	
 	void convertMMF(String MMFfile) {
 		try  {
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(MMFfile));
+			@SuppressWarnings("resource")
 			PrintWriter pf = new PrintWriter(new FileWriter(MMFfile+".conv"));
 			String s;
 			for (;;) {
@@ -148,7 +152,9 @@ public class NamesConversion {
 	
 	void convertWordGrammar(String gramFile) {
 		try  {
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(gramFile));
+			@SuppressWarnings("resource")
 			PrintWriter pf = new PrintWriter(new FileWriter(gramFile+".conv"));
 			String s;
 			// skip comments
@@ -269,7 +275,9 @@ public class NamesConversion {
 	
 	void convertLexicon(String lexFile) {
 		try  {
+			@SuppressWarnings("resource")
 			BufferedReader bf = new BufferedReader(new FileReader(lexFile));
+			@SuppressWarnings("resource")
 			PrintWriter pf = new PrintWriter(new FileWriter(lexFile+".conv"));
 			String s;
 			for (;;) {

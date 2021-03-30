@@ -253,6 +253,7 @@ public class GMMDiag {
 
 	public void loadHTK(String nom) {
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader fin = new BufferedReader(new FileReader(nom));
 			String s, s2;
 			StringTokenizer st;
@@ -311,6 +312,7 @@ public class GMMDiag {
 		String[] ss;
 		int ng = 0;
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader fin = new BufferedReader(new FileReader(nom));
 			for (;; ng++) {
 				s = fin.readLine();

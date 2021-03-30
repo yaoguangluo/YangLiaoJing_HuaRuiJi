@@ -226,6 +226,7 @@ public class HMMSet {
 
 	public void loadTiedList(String nomFich) {
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader f = new BufferedReader(new FileReader(nomFich));
 			String s;
 			String[] ss;

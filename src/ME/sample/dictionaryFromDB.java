@@ -189,6 +189,7 @@ public class dictionaryFromDB{
     				pinyin.put(words[0], words[1]);
     			}
     		}
+    		cReaderp.close();
 		}catch(Exception e) {
 
 		}		

@@ -40,7 +40,7 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import ME.sample.zyzdx.dictionary;
+//import ME.sample.zyzdx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class zyzdx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

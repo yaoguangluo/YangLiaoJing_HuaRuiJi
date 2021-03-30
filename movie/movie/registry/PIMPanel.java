@@ -11,7 +11,7 @@ import java.awt.*;
 
 import com.sun.media.ui.TabControl;
 
-import movie.registry.PerTypePanel;
+//import movie.registry.PerTypePanel;
 import jmapps.ui.*;
 
 

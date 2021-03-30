@@ -70,8 +70,9 @@ public class dictionary{
     				pinyin.put(words[0], words[1]);
     			}
     		}
+    		cReaderp.close();
 		}catch(Exception e) {
-
+			//
 		}		
 		Map<String, Object> dic_index= new HashMap<>();
 		Iterator<String> iter= dic_map.keySet().iterator();

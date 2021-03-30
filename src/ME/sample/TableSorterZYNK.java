@@ -126,6 +126,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     				map.put(words[0], words[1]);
     			}
     		}
+    		cReaderp.close();
     		InputStream inputStreamb= new App().getClass().getResourceAsStream(PathLinkFile.BiHuaCN_lyg);
     		BufferedReader cReaderb= new BufferedReader(new InputStreamReader(inputStreamb, "GBK"));
     		//index
@@ -137,6 +138,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     			}
     		}
     		this.pinYin= map;
+    		cReaderb.close();
     	}catch(Exception e) {
     		
     	}

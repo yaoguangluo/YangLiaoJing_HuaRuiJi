@@ -24,6 +24,7 @@ public class DetaJPanel extends JPanel implements MouseListener, KeyListener, Ac
 	 */
 	private static final long serialVersionUID= 1L;
 	public JTextPane jTextPane;
+	@SuppressWarnings("resource")
 	public DetaJPanel(App app) throws IOException{
 		this.setLayout(null);
 		this.setBounds(0, 0, 800, 600);

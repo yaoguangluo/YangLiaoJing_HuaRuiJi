@@ -1,7 +1,6 @@
 package imageProcessor;
 import java.io.IOException;
-
-import imageProcessor.Reflection;
+//import imageProcessor.Reflection;
 public class HitAndMiss{
 	int[][]kernel;
 	int[][]GetRegion;

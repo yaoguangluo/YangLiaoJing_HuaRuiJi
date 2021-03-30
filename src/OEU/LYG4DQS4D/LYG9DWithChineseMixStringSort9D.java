@@ -384,6 +384,8 @@ public class LYG9DWithChineseMixStringSort9D{
     		for(String string:strings) {
     			System.out.println(string);
     		}
+    		cReaderc.close();
+			cReaderp.close();
     	}catch(Exception e) {
     		
     	}
