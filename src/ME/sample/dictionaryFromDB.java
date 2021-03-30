@@ -62,6 +62,7 @@ public class dictionaryFromDB{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
 		Map<String, Object> map = null;
 		//for(int i=0; i<)
+		System.out.println("1");
 		String plsql= "setRoot:C:/DetaDB1;" + 
 				"baseName:ZYY;" + 
 				"tableName:zybc:select;" +

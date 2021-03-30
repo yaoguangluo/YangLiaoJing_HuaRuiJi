@@ -57,6 +57,7 @@ public class ExecPLSQLImp {
 				PLSQLCommandImp.processExec(acknowledge, output, mod);
 			}
 		}
+		System.out.println("1");
 		PLSQLCommandImp.processCheck(output.get("newCommand").toString(), output, mod);
 		return output;
 	}
