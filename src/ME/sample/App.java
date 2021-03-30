@@ -1,6 +1,5 @@
 package ME.sample;
 import java.awt.event.ActionEvent;
-
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -56,7 +55,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Point;
-import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
@@ -391,8 +389,6 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			text= new JTextPane();
 			jText= new JTextPane();
 			jxText= new JTextPane();
-			System.setProperty("java.library.path", new File("").getCanonicalPath() + "\node");
-			System.out.println(new File("").getCanonicalPath()+ "\node");
 			UIManager.put("ScrollBarUI", "OSI.OSU.OVQ.MSQ.GUI.platForm.UnicornScrollBarUI");	
 			jTabbedpane.setBounds(0, 60, 1345, 980);
 			tabNames= new ArrayList<>();

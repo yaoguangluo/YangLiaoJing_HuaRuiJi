@@ -2,6 +2,7 @@ package ME.sample;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -30,11 +31,11 @@ public class Frame{
 		cReader.close();
 		return outPut;
 	}
-	
 	public static App NE;
 	@SuppressWarnings({"deprecation"})
 	public static void main(String args[]) throws Exception{
-		
+		System.setProperty("java.library.path", new File("").getCanonicalPath() + "\\node");
+		System.out.println(new File("").getCanonicalPath()+ "\\node");
 		System.out.println(new GetDisk().getKey());	
 		//if(!new GetDisk().getKey().replaceAll(" ", "").contains("580307240")) {
 		try {
