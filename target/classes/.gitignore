@@ -1,8 +1,6 @@
-/DBconfig.zip
 /Data/
 /OSI/
 /SP/
-/biProcessor/
 /demo/
 /demo1/
 /gleem/
@@ -63,5 +61,6 @@
 /JMStudio.class
 /JavaSoundDetector.class
 /SimplePlayerApplet.class
+/biProcessor/
 /test.class
 /test1.class
