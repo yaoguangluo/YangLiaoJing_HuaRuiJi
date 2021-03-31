@@ -19,7 +19,9 @@
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 ###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 
-
+##### DNA 第三卷
+###### 源码:https://gitee.com/DetaChina/dna_-db
+###### 文档:https://github.com/yaoguangluo/DNA_DB_DOC_BACKUP/blob/main/DNA元基催化与肽计算%20第三卷20210328.pdf
 
 ### 华瑞集养疗经 资质：
 ###### 国商字第 40126364 号 (中华人民共和国 国家知识产权局)
