@@ -28,25 +28,24 @@
 	<classpathentry kind="src" path="DataPrediction"/>
 	<classpathentry kind="src" path="AILanguage"/>
 	<classpathentry kind="src" path="medReport"/>
-	<classpathentry kind="src" path="Listen"/>
+	<classpathentry kind="src" path="ListenCMU"/>
 	<classpathentry kind="src" path="suggest"/>
 	<classpathentry kind="src" path="NeroThemeETL"/>
 	<classpathentry kind="src" path="BussinessIntelligence"/>
 	<classpathentry kind="src" path="ImageDataProcessor"/>
-	<classpathentry kind="src" path="movie"/>
+	<classpathentry kind="src" path="MovieDataProcessor"/>
 	<classpathentry kind="src" path="OPGL"/>
 	<classpathentry kind="src" path="SoundDataProcessor"/>
 	<classpathentry kind="src" path="YLJDataProcessor"/>
 	<classpathentry kind="src" path="TinGodPDE"/>
-	<classpathentry kind="src" path="behaviorMap"/>
-	<classpathentry kind="src" path="emotionMap"/>
-	<classpathentry kind="src" path="neroMap"/>
-	<classpathentry kind="src" path="sensingMap"/>
-	<classpathentry kind="src" path="wordSegment"/>
+	<classpathentry kind="src" path="DetaParserBehaviorMap"/>
+	<classpathentry kind="src" path="DetaParserEmotionMap"/>
+	<classpathentry kind="src" path="DetaParserNeroMap"/>
+	<classpathentry kind="src" path="DetaParserSensingMap"/>
+	<classpathentry kind="src" path="DetaParserWordSegment"/>
 	<classpathentry kind="src" path="DetaDataProcessor"/>
-	<classpathentry kind="src" path="Deta_VPCS_Frontend"/>
-	<classpathentry kind="src" path="DetaSrcBackend"/>
-	<classpathentry kind="src" path="DetaSrcFrontend"/>
+	<classpathentry kind="src" path="DetaVPCSBackend"/>
+	<classpathentry kind="src" path="DetaVPCSFrontend"/>
 	<classpathentry kind="src" path="JavaBackend"/>
 	<classpathentry kind="src" path="JavaFrontend"/>
 	<classpathentry kind="src" path="MedicineETLNode"/>
