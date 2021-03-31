@@ -12,12 +12,12 @@
 
 ### 项目内容展示：
 ##### DNA 第一卷
-######
-######
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 
 ##### DNA 第二卷
-######
-######
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 
 
 
