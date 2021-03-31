@@ -109,7 +109,7 @@ import org.tinos.listen.ReadToWav;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.rest.medicine.RestMedicinePortImpl;
 
-import biProcessor.coAuthorForWord;
+import biProcessor.CoAuthorForWord;
 import comp.jbutton.DetaButton;
 import comp.jbutton.cfxButton;
 import comp.jslider.DetaSlider;
@@ -139,7 +139,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public AppHospital appHospital;
 	public AppConfig appConfig;
 	public Analyzer analyzer;
-	public coAuthorForWord app;
+	public CoAuthorForWord coAuthorForWord;
 	public Monitor m;
 	public JSlider look;
 	public Map<String, String> pos;
@@ -1617,7 +1617,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			this.jpanel7.keyReleased(null);
 		}
 		try {
-			app.bootClassificationMap(table.getValueAt(row, 2).toString(), false);
+			coAuthorForWord.bootClassificationMap(table.getValueAt(row, 2).toString(), false);
 		}catch(Exception e) {
 			this.validate();
 		}

@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
-import biProcessor.coAuthorForWord;
+import biProcessor.CoAuthorForWord;
 public class addZYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
@@ -21,9 +21,9 @@ public class addZYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_
 	}
 	public void view() throws Exception{
 		try {
-			coAuthorForWord app = null;
+			CoAuthorForWord app = null;
 			try {
-				app= new coAuthorForWord(u, analyzer, pos);
+				app= new CoAuthorForWord(u, analyzer, pos);
 				app.setSize(850, 400);
 				app.setVisible(true);
 				JFrame f= new JFrame();

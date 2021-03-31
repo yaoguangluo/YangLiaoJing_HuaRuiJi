@@ -33,7 +33,7 @@ import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
-public class coAuthorForWord extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener, GLEventListener { 
+public class CoAuthorForWord extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener, GLEventListener { 
 	public Boolean clicked = false;
 	public int mousex = 0;
 	public int mousey = 0;
@@ -109,7 +109,7 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	JOGLOBJShape shape=null;
 	public double t = 1.0d;
 	public String rootWord;  
-	public coAuthorForWord(App u, Analyzer analyzer
+	public CoAuthorForWord(App u, Analyzer analyzer
 			, Map<String, String> pos) throws HeadlessException, InterruptedException  {  
 		Thread.sleep(100);
 		rootWord="";
@@ -222,7 +222,7 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 		bhl.addActionListener( 
 				new ActionListener(){
 					public void actionPerformed(ActionEvent e){
-						String searchYaos= u.app.bootFlowerForest(rootWord, true);
+						String searchYaos= u.coAuthorForWord.bootFlowerForest(rootWord, true);
 						u.zhongYaoSearch(searchYaos, "", searchYaos);
 					}
 				});  
@@ -238,7 +238,7 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 		whh.addActionListener( 
 				new ActionListener(){
 					public void actionPerformed(ActionEvent e){
-						String searchYaos= u.app.bootFlowerSea(rootWord, true);
+						String searchYaos= u.coAuthorForWord.bootFlowerSea(rootWord, true);
 						u.zhongYaoSearch(searchYaos, "", searchYaos);
 					}
 				}); 
@@ -248,7 +248,7 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 					public void actionPerformed(ActionEvent e){
 						hook= !hook;
 						if(null== jframe) {
-							u.app.canvas.setSize(900, 750);
+							u.coAuthorForWord.canvas.setSize(900, 750);
 							jframe= new JFrame("药物观测");
 							jframe.setLayout(null);
 							jframe.setSize(900, 750);
@@ -258,29 +258,29 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 						//拿出来
 						if(hook) {
 							animator.stop();
-							u.app.canvas.setSize(900, 750);
-							jframe.add(u.app.canvas);
+							u.coAuthorForWord.canvas.setSize(900, 750);
+							jframe.add(u.coAuthorForWord.canvas);
 							jframe.setVisible(true);
-							u.app.canvas.validate();
-							u.app.validate();
+							u.coAuthorForWord.canvas.validate();
+							u.coAuthorForWord.validate();
 							jframe.validate();
 							animator.start();
 						}else {
 							animator.stop();
-							u.app.canvas.setSize(650, 310);
-							u.app.add(u.app.canvas);
+							u.coAuthorForWord.canvas.setSize(650, 310);
+							u.coAuthorForWord.add(u.coAuthorForWord.canvas);
 							jframe.setVisible(false);
-							u.app.canvas.validate();
-							u.app.validate();
-							u.app.xrot= 18.0f;  
-							u.app.yrot= 2.0f;  
-							u.app.zrot= 1.0f;  
-							u.app.trot= 6.0f;  
-							u.app.prot= 1.0f;  
-							u.app.lrot= -3.5f; 
-							u.app.brot= 1.0f; 
-							u.app.irot= 78.0f; 
-							u.app.srot= 0.7f;
+							u.coAuthorForWord.canvas.validate();
+							u.coAuthorForWord.validate();
+							u.coAuthorForWord.xrot= 18.0f;  
+							u.coAuthorForWord.yrot= 2.0f;  
+							u.coAuthorForWord.zrot= 1.0f;  
+							u.coAuthorForWord.trot= 6.0f;  
+							u.coAuthorForWord.prot= 1.0f;  
+							u.coAuthorForWord.lrot= -3.5f; 
+							u.coAuthorForWord.brot= 1.0f; 
+							u.coAuthorForWord.irot= 78.0f; 
+							u.coAuthorForWord.srot= 0.7f;
 							animator.start();
 						}
 					}
@@ -618,7 +618,7 @@ public class coAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	}  
 
 	public static void main(String[] args) throws HeadlessException, InterruptedException  {  
-		coAuthorForWord app= new coAuthorForWord(null, null, null);   
+		CoAuthorForWord app= new CoAuthorForWord(null, null, null);   
 		app.setSize(850, 700);
 		app.setVisible(true);
 		JFrame f = new JFrame();

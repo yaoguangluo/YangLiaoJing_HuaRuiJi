@@ -532,7 +532,7 @@ public class zynkx extends Container implements MouseListener, KeyListener{
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					u.app.bootDetaDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
+					u.coAuthorForWord.bootDetaDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();
@@ -639,7 +639,7 @@ public class zynkx extends Container implements MouseListener, KeyListener{
 					if(table.getValueAt(row, column).toString().isEmpty()) {
 						column= 3;
 					}
-					u.app.bootZynkJFlowerForest(table.getValueAt(row, 2).toString()
+					u.coAuthorForWord.bootZynkJFlowerForest(table.getValueAt(row, 2).toString()
 							, table.getValueAt(row, column).toString(), true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
@@ -788,7 +788,7 @@ public class zynkx extends Container implements MouseListener, KeyListener{
 					column= 3;
 				}
 				String zhongYaoFang= table.getValueAt(row, column).toString();
-				String searchYaos= this.u.app.bootZynkFlowerForest(table.getValueAt(row, 2).toString()
+				String searchYaos= this.u.coAuthorForWord.bootZynkFlowerForest(table.getValueAt(row, 2).toString()
 						, zhongYaoFang, true);
 				//(this.u.table.getValueAt(row, 2).toString(), false);
 				//

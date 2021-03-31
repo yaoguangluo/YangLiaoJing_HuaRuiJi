@@ -534,7 +534,7 @@ public class xysc extends Container implements MouseListener, KeyListener{
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-				    app.app.bootDetaDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
+				    app.coAuthorForWord.bootDetaDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();
@@ -678,7 +678,7 @@ public class xysc extends Container implements MouseListener, KeyListener{
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					app.app.bootDetaBingMingDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
+					app.coAuthorForWord.bootDetaBingMingDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();

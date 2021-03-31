@@ -8,7 +8,7 @@ import javax.swing.JScrollPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import biProcessor.coAuthorForWord;
+import biProcessor.CoAuthorForWord;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;
 	public Analyzer analyzer;
@@ -24,12 +24,12 @@ public class TaskMakeCoWorker extends Thread implements Runnable{
 	@Override
 	public void run() {
 		try {
-			u.app = new coAuthorForWord(u, analyzer, pos);
+			u.coAuthorForWord = new CoAuthorForWord(u, analyzer, pos);
 		} catch (HeadlessException | InterruptedException e) {
 			e.printStackTrace();
 		}
-		u.app.setBackground(Color.white);
-		JScrollPane jsp_bagua = new JScrollPane(u.app);
+		u.coAuthorForWord.setBackground(Color.white);
+		JScrollPane jsp_bagua = new JScrollPane(u.coAuthorForWord);
 		jsp_bagua.setBounds(695, 290 + 100 - 65 + 50 - 215+80, 750 - 130, 440-50);
 		jpanelFirstu.add(jsp_bagua);
 		jpanelFirstu.validate();

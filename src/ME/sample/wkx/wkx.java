@@ -555,7 +555,7 @@ public class wkx extends Container implements MouseListener, KeyListener{
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					u.app.bootDetaDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
+					u.coAuthorForWord.bootDetaDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();
@@ -700,7 +700,7 @@ public class wkx extends Container implements MouseListener, KeyListener{
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					u.app.bootDetaBingMingDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
+					u.coAuthorForWord.bootDetaBingMingDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();

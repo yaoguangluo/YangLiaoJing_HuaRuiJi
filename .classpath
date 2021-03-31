@@ -46,8 +46,8 @@
 	<classpathentry kind="src" path="DetaDataProcessor"/>
 	<classpathentry kind="src" path="DetaVPCSBackend"/>
 	<classpathentry kind="src" path="DetaVPCSFrontend"/>
-	<classpathentry kind="src" path="JavaBackend"/>
-	<classpathentry kind="src" path="JavaFrontend"/>
+	<classpathentry kind="src" path="JavaVPCSBackend"/>
+	<classpathentry kind="src" path="JavaVPCSFrontend"/>
 	<classpathentry kind="src" path="MedicineETLNode"/>
 	<classpathentry kind="src" path="NeiWaiKeETLNode"/>
 	<classpathentry kind="src" path="PGMedicineETLNode"/>

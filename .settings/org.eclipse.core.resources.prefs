@@ -26,4 +26,6 @@ encoding/DetaParserBehaviorMap=UTF-8
 encoding/DetaParserEmotionMap=UTF-8
 encoding/DetaParserNeroMap=UTF-8
 encoding/DetaParserWordSegment=UTF-8
+encoding/NeiWaiKeETLNode=UTF-8
 encoding/README.md=UTF-8
+encoding/SmallMedicineETLNode=UTF-8
