@@ -1,6 +1,7 @@
 /DBconfig.zip
 /OSI/
 /biProcessor/
+/org/
 /Data/
 /SP/
 /demo/
@@ -10,7 +11,7 @@
 /glredbook11/
 /glredbook12x/
 /glredbook1314/
-/org/
+/movie/
 /AVQ/
 /AVU/
 /DBPath/
@@ -38,7 +39,6 @@
 /main/
 /mapProcessor/
 /matrixProcessor/
-/movie/
 /movieProcessor/
 /movieProcessorBackend/
 /recode/
