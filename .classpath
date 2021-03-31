@@ -139,5 +139,6 @@
 	<classpathentry kind="lib" path="lib/weka-src.jar"/>
 	<classpathentry kind="lib" path="lib/weka.jar"/>
 	<classpathentry kind="lib" path="JACOB/jacob.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

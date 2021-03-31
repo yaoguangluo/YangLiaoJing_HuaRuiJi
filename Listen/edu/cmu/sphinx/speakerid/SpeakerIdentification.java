@@ -168,8 +168,7 @@ public class SpeakerIdentification {
      */
     public static double getBICValue(Array2DRowRealMatrix mat) {
         double ret = 0;
-        @SuppressWarnings("deprecation")
-		EigenDecomposition ed 
+        EigenDecomposition ed 
         = new EigenDecomposition(new Covariance(mat).getCovarianceMatrix(), ret);
         double[] re = ed.getRealEigenvalues();
         for (int i = 0; i < re.length; i++)
