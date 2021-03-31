@@ -11,7 +11,7 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 
 import OSQ.disk.GetDisk;
-public class Frame{
+public class HRJFrame{
 	public String getKey() throws IOException {
 		InputStream in= getClass().getResourceAsStream(PathLinkFile.key_txt);
 		BufferedReader cReader= new BufferedReader(new InputStreamReader(in));  
