@@ -15,7 +15,6 @@ import javax.swing.JButton;
 public class DetaButton extends JButton implements MouseListener, MouseMotionListener, MouseWheelListener{
 	private static final long serialVersionUID = 1L;
 	public BufferedImage bufferedImage;
-	
 	/**
 	 * Author Yaoguang Luo
 	 */
