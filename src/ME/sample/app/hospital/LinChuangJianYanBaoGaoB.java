@@ -17,11 +17,11 @@ import javax.swing.JTextPane;
 import ME.sample.App;
 import comp.jbutton.DetaButton;
 
-public class JianYanBaoGaoJPanel  extends JPanel implements MouseListener, KeyListener, ActionListener{
+public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, KeyListener, ActionListener{
 
 	private static final long serialVersionUID= 1L;
 	public JTextField Õï¶Ï½á¹û_box;
-	public JianYanBaoGaoJPanel(JTextPane name, App app){
+	public LinChuangJianYanBaoGaoB(JTextPane name, App app){
 		this.setLayout(null);
 		this.setBounds(0, 0, 1180, 610);
 		this.setBackground(Color.BLACK);

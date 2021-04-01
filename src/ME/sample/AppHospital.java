@@ -13,9 +13,8 @@ import java.awt.event.MouseListener;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
-
-import ME.sample.app.hospital.ChuanRanJiZhenJPanel;
-import ME.sample.app.hospital.JianYanBaoGaoJPanel;
+import ME.sample.app.hospital.LinChuangJianYanBaoGaoA;
+import ME.sample.app.hospital.LinChuangJianYanBaoGaoB;
 import ME.sample.app.hospital.XiYaoJPanel;
 import ME.sample.app.hospital.ZhongYaoJPanel;
 
@@ -27,7 +26,7 @@ public class AppHospital extends ScrollPane implements MouseListener, KeyListene
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
 		JTabbedPane jTabbedpane= new JTabbedPane();
 		Container chuanRanJiZhenContainer= new Container();
-		ChuanRanJiZhenJPanel chuanRanJiZhenPanel= new ChuanRanJiZhenJPanel(name);
+		LinChuangJianYanBaoGaoA chuanRanJiZhenPanel= new LinChuangJianYanBaoGaoA(name);
 		chuanRanJiZhenContainer.setLayout(null);
 		chuanRanJiZhenContainer.setBounds(0, 0, 1490, 980);
 		chuanRanJiZhenContainer.add(chuanRanJiZhenPanel);
@@ -35,7 +34,7 @@ public class AppHospital extends ScrollPane implements MouseListener, KeyListene
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 			
 		Container jianYanBaoGaoContainer= new Container();
-		JianYanBaoGaoJPanel jianYanBaoGaoJPanel= new JianYanBaoGaoJPanel(name, app);
+		LinChuangJianYanBaoGaoB jianYanBaoGaoJPanel= new LinChuangJianYanBaoGaoB(name, app);
 		jianYanBaoGaoContainer.setLayout(null);
 		jianYanBaoGaoContainer.setBounds(0, 0, 1490, 980);
 		jianYanBaoGaoContainer.add(jianYanBaoGaoJPanel);

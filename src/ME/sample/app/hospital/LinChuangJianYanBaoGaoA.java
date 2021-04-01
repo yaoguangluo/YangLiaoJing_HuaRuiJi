@@ -16,11 +16,11 @@ import javax.swing.JTextPane;
 
 import comp.jbutton.DetaButton;
 
-public class ChuanRanJiZhenJPanel  extends JPanel implements MouseListener, KeyListener, ActionListener{
+public class LinChuangJianYanBaoGaoA  extends JPanel implements MouseListener, KeyListener, ActionListener{
 //今天准备把医学检验报告的单位进行格式化 规范化,等下开始 20210401
 //罗瑶光
 	private static final long serialVersionUID = 1L;
-	public ChuanRanJiZhenJPanel(JTextPane name){
+	public LinChuangJianYanBaoGaoA(JTextPane name){
 		this.setLayout(null);
 		this.setBounds(0, 0, 1180, 610);
 		this.setBackground(Color.BLACK);
@@ -53,7 +53,6 @@ public class ChuanRanJiZhenJPanel  extends JPanel implements MouseListener, KeyL
 			}
 		});
 		this.add(清空);	
-		
 		
 		DetaButton 打印= new DetaButton ("打印", 100,50, Color.red);	
 		//JButton 打印= new JButton("打印");  
