@@ -1,5 +1,6 @@
 package OVQ.OSU.sort;
 import sortProcessor.Quick_6D_luoyaoguang_Sort;;
+//×÷Õß ÂÞÑþ¹â
 public class Quick9DLYGWithStringSwap extends Quick_6D_luoyaoguang_Sort{
 	public int[] sort(int[]a, String[]sa) {
 		processDouble(a, 0, a.length - 1, sa, 0);
