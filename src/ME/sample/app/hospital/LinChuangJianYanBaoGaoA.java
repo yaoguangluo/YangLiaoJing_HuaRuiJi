@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
 import comp.jbutton.DetaButton;
+import comp.label.DetaLabel;
 
 public class LinChuangJianYanBaoGaoA  extends JPanel implements MouseListener, KeyListener, ActionListener{
 //今天准备把医学检验报告的单位进行格式化 规范化,等下开始 20210401
@@ -147,9 +148,10 @@ public class LinChuangJianYanBaoGaoA  extends JPanel implements MouseListener, K
 		this.add(蓝牙接收报告);	
 		
 		//copy tab
-		JLabel baiDanBai= new JLabel("白蛋白alb :");  
+		DetaLabel baiDanBai= new DetaLabel("白蛋白alb :", 10, 20+ 0, 100, 50);  
 		baiDanBai.setForeground(Color.WHITE);
-		baiDanBai.setBounds(10, 20+ 0, 100, 50);
+		//baiDanBai.setBounds(10, 20+ 0, 100, 50);
+		baiDanBai.setTag("西医检验：白蛋白ALB->临床意义:鞘内免疫病观测指标鞘内免疫病观测指标->实验室检查:血3350-4765mg/dl脑脊液13.4-23.7mg/dl", true);
 		JTextField baiDanBai_box= new JTextField();
 		baiDanBai_box.setBounds(10+ 110, 33+ 0, 80, 20);
 		baiDanBai_box.addActionListener(new ActionListener(){
@@ -157,9 +159,9 @@ public class LinChuangJianYanBaoGaoA  extends JPanel implements MouseListener, K
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 				String temp= baiDanBai_box.getText();
-				double temp_double= Double.valueOf(temp);
+				double temp_double= Double.valueOf(temp.isEmpty()?"0":temp);
 				String report= "鞘内免疫病观测指标鞘内免疫病观测指标异常";
-				if(temp_double> 4765&& temp_double< 3350) {
+				if(temp_double< 4765&& temp_double> 3350) {
 					诊断结果_box.setText(诊断结果_box.getText().contains(report)
 							? 诊断结果_box.getText(): 诊断结果_box.getText()+ report);	
 				}else {
