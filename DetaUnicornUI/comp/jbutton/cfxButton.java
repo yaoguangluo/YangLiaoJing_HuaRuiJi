@@ -13,6 +13,9 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.Timer;
 public class cfxButton extends JButton{
+	/**
+	 * Author Yaoguang Luo
+	 */
 	private static final long serialVersionUID = 1L;
 	private int x, y=0;
 	public cfxButton(String string, final int x, final int y, java.awt.Color c) {  
