@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.fqz.fqz;
+import ME.sample.fqz.Fqz;
 public class MakeContainerZYFC extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -38,7 +38,7 @@ public class MakeContainerZYFC extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*2);
-			u.jpanel10 = new fqz(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			u.jpanel10 = new Fqz(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
 			u.jpanel10.setName(tabNames.get(9));
 			jTabbedpane.addTab(tabNames.get(9),new ImageIcon() , u.jpanel10, "傅青主妇科");// 加入第一个页面  
 			Color[] colors= new Color[3];

@@ -36,7 +36,7 @@ public class VoicejPanel extends JPanel implements Runnable{
 	int reg=0;
 	SoundRecord rec;
 	Vector<Double> lines ;
-	jpv jp3;
+	Jpv jp3;
 	public VoicejPanel(){
 		rec= new SoundRecord(null);
 		JButton j= new DetaButton("¿ªÊ¼Â¼Òô",100,50,Color.red);
@@ -69,7 +69,7 @@ public class VoicejPanel extends JPanel implements Runnable{
 		this.add(j);	
 		this.add(j1);
 		this.add(j2);
-		jp3=new jpv();
+		jp3=new Jpv();
 		jp3.setBounds(100,0, 400, 400);
 		jp3.setVisible(true);
 		this.add(jp3);

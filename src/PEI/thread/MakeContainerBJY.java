@@ -9,7 +9,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.editPane.editPane;
+import ME.sample.editPane.EditPane;
 public class MakeContainerBJY extends Thread implements  Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -48,7 +48,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel16 = new editPane(u.text, this.analyzer,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
+			u.jpanel16 = new EditPane(u.text, this.analyzer,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
 			u.jpanel16.setName(tabNames.get(15));
 			jTabbedpane.addTab(tabNames.get(15),new ImageIcon() , u.jpanel16, "编辑页");// 加入第一个页面  	
 			Color[] colors= new Color[3];

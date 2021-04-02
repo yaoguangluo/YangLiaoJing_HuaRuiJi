@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.jzkx.jzkx;
+import ME.sample.jzkx.Jzkx;
 public class MakeContainerXYJZ extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -38,7 +38,7 @@ public class MakeContainerXYJZ extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*4);	
-			u.jpanel12= new jzkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.jpanel12= new Jzkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
 			u.jpanel12.setName(tabNames.get(11));
 			jTabbedpane.addTab(tabNames.get(11),new ImageIcon() , u.jpanel12, "急诊学指南");// 加入第一个页面  
 			Color[] colors= new Color[3];

@@ -9,21 +9,21 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 
-import org.tinos.vpcs.restServer.restServer;
+import org.tinos.vpcs.restServer.RestServer;
 
 import AVQ.OEQ.cap.Monitor;
-import ME.sample.cecil.cecil;
-import ME.sample.editPane.editPane;
-import ME.sample.fckx.fckx;
-import ME.sample.fqz.fqz;
-import ME.sample.fyyd.fyyd;
-import ME.sample.jzkx.jzkx;
-import ME.sample.nk.xynk;
-import ME.sample.wkx.wkx;
-import ME.sample.wskx.wskx;
-import ME.sample.xysc.xysc;
-import ME.sample.zynkx.zynkx;
-import ME.sample.zyzdx.zyzdx;
+import ME.sample.cecil.Cecil;
+import ME.sample.editPane.EditPane;
+import ME.sample.fckx.Fckx;
+import ME.sample.fqz.Fqz;
+import ME.sample.fyyd.Fyyd;
+import ME.sample.jzkx.Jzkx;
+import ME.sample.nk.Xynk;
+import ME.sample.wkx.Wkx;
+import ME.sample.wskx.Wskx;
+import ME.sample.xysc.Xysc;
+import ME.sample.zynkx.Zynkx;
+import ME.sample.zyzdx.Zyzdx;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
@@ -46,7 +46,7 @@ import PEI.thread.MakeContainerZYNKFJ;
 import PEI.thread.MakeContainerZYWS;
 import PEI.thread.MakeContainerZYZD;
 import PEI.thread.MakeContainer_ZHONG_YAO;
-import SP.jp;
+import SP.Jp;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -111,11 +111,11 @@ import org.tinos.rest.medicine.RestMedicinePortImpl;
 
 import biProcessor.CoAuthorForWord;
 import comp.jbutton.DetaButton;
-import comp.jbutton.cfxButton;
+import comp.jbutton.CfxButton;
 import comp.jslider.DetaSlider;
 import comp.jtabbedpane.DetabbedPane;
-import comp.jtextfield.cfxTextField;
-import comp.jtextpane.cfxTextPane;
+import comp.jtextfield.CfxTextField;
+import comp.jtextpane.CfxTextPane;
 import mapProcessor.VtoV;
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;
@@ -124,7 +124,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public JFrame frameConfig;
 	public int rangeHigh= 40;
 	public int row= 0;
-	public jp jp1;
+	public Jp jp1;
 	public int col= 0;
 	public boolean disableCursor= true;
 	public Translator ts;
@@ -162,18 +162,18 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public JCheckBox shuming_filter_box;
 	public DetabbedPane jTabbedpane;
 	public List<String> sets;
-	public xynk jpanel6;
-	public zynkx jpanel7;
-	public zyzdx jpanel8;
-	public fyyd jpanel9;
-	public fqz jpanel10;
-	public fckx jpanel11;
-	public jzkx jpanel12;
-	public wkx jpanel13;
-	public wskx jpanel14;
-	public xysc jpanel15;
-	public cecil jpanel17;
-	public editPane jpanel16;
+	public Xynk jpanel6;
+	public Zynkx jpanel7;
+	public Zyzdx jpanel8;
+	public Fyyd jpanel9;
+	public Fqz jpanel10;
+	public Fckx jpanel11;
+	public Jzkx jpanel12;
+	public Wkx jpanel13;
+	public Wskx jpanel14;
+	public Xysc jpanel15;
+	public Cecil jpanel17;
+	public EditPane jpanel16;
 	public JLabel label0001;
 	public JTextPane data;
 	public JPanel panel_yt;
@@ -248,9 +248,9 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public ImageIcon pngy_2_1= new ImageIcon(this.getClass().getResource(PathLinkFile.yc_2_1_png));  
 	public Object[] columnTitle= {"ID", "打分", "中药名称", "笔记原文", "功效", "风险规避", "用法"
 			, "性味", "脉络", "中医馆药理", "经解", "崇源", "愚按", "搭配", "常见药"};
-	public cfxTextField name_filter_not_have;
+	public CfxTextField name_filter_not_have;
 	private Map<String, String> ctr;
-	public cfxTextField name_feel_filter;
+	public CfxTextField name_feel_filter;
 	public JScrollPane jsp_name= null;
 	public boolean ready= false;
 	public App appInstance;
@@ -343,7 +343,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		}
 		jTabbedpane= new DetabbedPane(1000-60, 20, Color.black);// 存放选项卡的组件
 		try {
-			restServer rest= new restServer(this);
+			RestServer rest= new RestServer(this);
 			rest.start();
 			if(appConfig.SectionJPanel.jTextPane!= null) {
 				String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -540,7 +540,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			risk_filter_box.setBounds(10+350+60, 8, 20, 20);
 			risk_filter_box.setBackground(Color.RED);
 			
-			JButton addChuFang= new cfxButton("电子医院", 100, 50, Color.red); 
+			JButton addChuFang= new CfxButton("电子医院", 100, 50, Color.red); 
 			addChuFang.setBounds(50+50+760+130+130-100-50, 6, 100, 50);
 			addChuFang.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -739,7 +739,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				}
 			});
 
-			JButton button2= new cfxButton("德塔在线", 100, 50, Color.cyan); 
+			JButton button2= new CfxButton("德塔在线", 100, 50, Color.cyan); 
 			button2.setBounds(30+60+760+130+130+130-100-50, 6, 100, 50);
 			button2.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -752,7 +752,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				}
 			});
 
-			JButton button5= new cfxButton("卫健委", 100, 50, Color.orange); 
+			JButton button5= new CfxButton("卫健委", 100, 50, Color.orange); 
 			button5.setBounds(10+ 70+ 760+ 130+ 130+ 130+ 130- 100- 50, 6, 100, 50);
 			button5.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -1070,7 +1070,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}
 	
 	private JTextField name_feel_filter() {
-		name_feel_filter= new cfxTextField(null, 0, 0, null);  
+		name_feel_filter= new CfxTextField(null, 0, 0, null);  
 		name_feel_filter.setBounds(180-50, 50, 380, 80);
 		name_feel_filter.setBackground(Color.white);
 		name_feel_filter.setText(" ");
@@ -1088,7 +1088,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}
 
 	public JTextPane data() throws IOException {
-		data= new cfxTextPane("内容", 1350, 2980, null);  
+		data= new CfxTextPane("内容", 1350, 2980, null);  
 		data.setBounds(850, 150, 1350, 2980);	
 		data.setBackground(Color.white);
 		Box buttonBoxLineTwo= new Box(BoxLayout.X_AXIS);  
@@ -1450,7 +1450,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
     } 
     
 	public JTextField name() throws IOException {
-		name= new cfxTextField(null, 0, 0, null);  
+		name= new CfxTextField(null, 0, 0, null);  
 		name.setBounds(180- 50, 50, 380, 80);
 		name.setBackground(Color.white);
 		name.setText(" ");
@@ -1459,7 +1459,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}	
 	
 	public JTextField nameHospital() throws IOException {
-		nameHospital= new cfxTextField(null, 0, 0, null);  
+		nameHospital= new CfxTextField(null, 0, 0, null);  
 		nameHospital.setBounds(180-50, 50, 380, 80);
 		nameHospital.setBackground(Color.white);
 		nameHospital.setText(" ");
@@ -1468,7 +1468,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}	
 
 	public JTextField name_filter() throws IOException {
-		name_filter= new cfxTextField(null, 0, 0, null);  
+		name_filter= new CfxTextField(null, 0, 0, null);  
 		name_filter.setBounds(180-50, 50, 380, 80);
 		name_filter.setBackground(Color.white);
 		name_filter.setText(" ");
@@ -1477,7 +1477,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}	
 	
 	public JTextField name_filter_not_have() throws IOException {
-		name_filter_not_have= new cfxTextField(null, 0, 0, null);  
+		name_filter_not_have= new CfxTextField(null, 0, 0, null);  
 		name_filter_not_have.setBounds(180-50, 50, 380, 80);
 		name_filter_not_have.setBackground(Color.white);
 		name_filter_not_have.setText(" ");
@@ -1487,7 +1487,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable() throws IOException {
-		dictionaryFromDB d= new dictionaryFromDB();
+		DictionaryFromDB d= new DictionaryFromDB();
 		//dictionary d= new dictionary();
 		//dic_list= d.txtToList();
 		try {

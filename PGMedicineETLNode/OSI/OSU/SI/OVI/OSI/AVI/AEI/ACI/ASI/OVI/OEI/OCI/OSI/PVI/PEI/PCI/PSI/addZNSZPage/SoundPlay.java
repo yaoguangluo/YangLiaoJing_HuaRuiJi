@@ -15,7 +15,7 @@ import PEU.waveProcessorYLJ.DFT;
 public class SoundPlay implements Runnable {
 	private LYGFileIO cur;
 	private AdataFrame af;
-	private jpWave jp;
+	private JpWave jp;
 	@SuppressWarnings("unused")
 	private Object bootSound;
 	public SoundPlay(){
@@ -407,7 +407,7 @@ public class SoundPlay implements Runnable {
 		// TODO Auto-generated method stub
 
 	}
-	public void PlayFftArray(AdataFrame af, LYGFileIO cur, jpWave jp, Object bootSound) throws InterruptedException {
+	public void PlayFftArray(AdataFrame af, LYGFileIO cur, JpWave jp, Object bootSound) throws InterruptedException {
 		if (af.audioIS == null) {
 			return;
 		}

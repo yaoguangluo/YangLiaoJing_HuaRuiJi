@@ -837,7 +837,7 @@ public class NanKekx extends Container implements MouseListener, KeyListener{
 
 	@SuppressWarnings({ "serial" })
 	public javax.swing.JTable jTable() throws IOException {  
-		dictionary d=new dictionary();
+		Dictionary d=new Dictionary();
 		dic_list=d.txtToList();
 		dic_map = d.listToMap(dic_list);
 		dic_gn = d.mapToMap_gn(dic_map);

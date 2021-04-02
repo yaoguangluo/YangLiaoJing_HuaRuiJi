@@ -167,7 +167,7 @@ public class NgramTrieModel implements LanguageModel {
      * Builds the map from unigram to unigramID. Also finds the startWordID and
      * endWordID.
      * 
-     * @param dictionary
+     * @param Dictionary
      * */
     private void buildUnigramIDMap() {
         int missingWords = 0;

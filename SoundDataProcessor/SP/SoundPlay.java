@@ -8,7 +8,7 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
-import OSI.OSU.PEQ.node.sound.wavePlay.jp;
+import OSI.OSU.PEQ.node.sound.wavePlay.Jp;
 import PEU.movieProcessorYLJ.AdataFrame;
 import PEU.movieProcessorYLJ.LYGFileIO;
 import PEU.soundProcessorYLJ.BytestoAIS;
@@ -16,7 +16,7 @@ import PEU.waveProcessorYLJ.DFT;
 public class SoundPlay implements Runnable {
 	private LYGFileIO cur;
 	private AdataFrame af;
-	private jp jp;
+	private Jp jp;
 	@SuppressWarnings("unused")
 	private Object bootSound;
 	public SoundPlay(){
@@ -408,7 +408,7 @@ public class SoundPlay implements Runnable {
 		// TODO Auto-generated method stub
 
 	}
-	public void PlayFftArray(AdataFrame af, LYGFileIO cur, jp jp, Object bootSound) throws InterruptedException {
+	public void PlayFftArray(AdataFrame af, LYGFileIO cur, Jp jp, Object bootSound) throws InterruptedException {
 		if (af.audioIS == null) {
 			return;
 		}

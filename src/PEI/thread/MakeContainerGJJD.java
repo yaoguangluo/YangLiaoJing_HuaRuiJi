@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.fyyd.fyyd;;
+import ME.sample.fyyd.Fyyd;;
 public class MakeContainerGJJD extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -37,7 +37,7 @@ public class MakeContainerGJJD extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel9 = new fyyd(u.text, this.analyzer, pos, pose, etc, cte, u);
+			u.jpanel9 = new Fyyd(u.text, this.analyzer, pos, pose, etc, cte, u);
 			u.jpanel9.setName(tabNames.get(8));
 			jTabbedpane.addTab(tabNames.get(8),new ImageIcon() , u.jpanel9, "古籍经典");// 加入第一个页面  
 			Color[] colors= new Color[3];

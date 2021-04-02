@@ -24,7 +24,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
 import PEU.waveProcessorYLJ.DFT;
-import SP.jp;
+import SP.Jp;
 public class MakeContainerZNSZ extends Thread implements Runnable{
 	public Container jpanelFourth;
 	public App u;
@@ -346,7 +346,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			DFT dFt= new DFT();
 			dFt.init(1024);
 			BufferedImage imageForOutput= new BufferedImage(1400, 700, BufferedImage.TYPE_INT_RGB);
-			u.jp1= new jp(jpanelFourth, dFt, u.text, imageForOutput, this);
+			u.jp1= new Jp(jpanelFourth, dFt, u.text, imageForOutput, this);
 			u.jp1.setVisible(true);
 			u.jp1.setBounds(0+ 10, 15, 1040+ 20, 640-30);
 			JButton zc= new JButton("Õý³£ÉùÎÆ"); 

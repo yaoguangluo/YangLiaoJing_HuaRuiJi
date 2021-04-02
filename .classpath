@@ -12,7 +12,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="BioDNA3st"/>
-	<classpathentry kind="src" path="database"/>
+	<classpathentry kind="src" path="Database"/>
 	<classpathentry excluding="**" kind="src" output="target/classes" path="JVM">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

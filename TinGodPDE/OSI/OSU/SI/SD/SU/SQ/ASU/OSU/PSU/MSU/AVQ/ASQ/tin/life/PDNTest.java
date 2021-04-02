@@ -4,16 +4,16 @@ import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
 
-import biProcessor.coDNAAuthorForWord;
+import biProcessor.CoDNAAuthorForWord;
 
 public class PDNTest{
 	public static void main(String[] argv) throws InterruptedException {
 		Application application= new Application();
 		application.init();
 		try {
-			coDNAAuthorForWord app = null;
+			CoDNAAuthorForWord app = null;
 			try {
-				app= new coDNAAuthorForWord(null, null, null);
+				app= new CoDNAAuthorForWord(null, null, null);
 				app.setSize(850, 400);
 				app.setVisible(true);
 				JFrame f= new JFrame();

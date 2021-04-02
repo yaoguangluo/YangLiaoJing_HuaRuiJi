@@ -24,7 +24,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.xlx.coAuthorForWord;
+import ME.sample.xlx.CoAuthorForWord;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;
 	public App u;
@@ -399,9 +399,9 @@ public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionLi
 			bt_3d.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
-							coAuthorForWord app;
+							CoAuthorForWord app;
 							try {
-								app = new coAuthorForWord(null, null, null);
+								app = new CoAuthorForWord(null, null, null);
 								app.setSize(850, 400);
 								app.setVisible(true);
 								JFrame f = new JFrame();

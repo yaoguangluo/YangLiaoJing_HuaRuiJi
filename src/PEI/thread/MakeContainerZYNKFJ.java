@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.zynkx.zynkx;
+import ME.sample.zynkx.Zynkx;
 public class MakeContainerZYNKFJ extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -39,7 +39,7 @@ public class MakeContainerZYNKFJ extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000* 2);
 			//jTabbedpane.setMnemonicAt(5, KeyEvent.VK_5);// 设置第一个位置的快捷键为0  
-			u.jpanel7= new zynkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.jpanel7= new Zynkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
 			u.jpanel7.setName(tabNames.get(6));
 			jTabbedpane.addTab(tabNames.get(6), new ImageIcon(), u.jpanel7, "中医方剂诊治");// 加入第一个页面  
 			Color[] colors= new Color[3];

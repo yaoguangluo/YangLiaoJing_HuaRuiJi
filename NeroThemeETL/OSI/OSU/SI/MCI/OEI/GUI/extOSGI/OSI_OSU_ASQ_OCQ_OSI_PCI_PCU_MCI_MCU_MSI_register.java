@@ -17,7 +17,7 @@ import org.LYG.node.movie.LYGPlayer.LYGPlayerNodeInterface;
 import org.LYG.node.movie.LYGRead.LYGReadNodeInterface;
 import org.LYG.node.movie.LYGWrite.LYGWriteNodeInterface;
 import org.LYG.node.movie.MovieTransfer.MovieTransferNodeInterface;
-import org.OVI.node.image.imageRead.imageReadNodeInterface;
+import org.OVI.node.image.imageRead.ImageReadNodeInterface;
 import org.OVQ.node.image.FindColorB.FindColorBInterface;
 import org.OVQ.node.image.FindColorG.FindColorGInterface;
 import org.OVQ.node.image.FindColorR.FindColorRInterface;
@@ -30,7 +30,7 @@ import org.OVU.node.image.LaplacianFilter.LaplacianFilterInterface;
 import org.OVU.node.image.MedianImageFilter.MedianImageNodeInterface;
 import org.OVU.node.image.MorphologyFilter.MorphologyFilterInterface;
 import org.OVU.node.image.SobelFilter.SobelFilterNodeInterface;
-import org.OVU.node.image.imageStrech.imageStrechNodeInterface;
+import org.OVU.node.image.imageStrech.ImageStrechNodeInterface;
 
 import ME.sample.App;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
@@ -41,14 +41,14 @@ import OSI.OSU.OEU.node.sound.LaplacianFilter.LaplacianFilterNodeInterface;
 import OSI.OSU.OEU.node.sound.MaxMiniFilter.MaxMiniFilterNodeInterface;
 import OSI.OSU.OEU.node.sound.MedianFilter.MedianFilterNodeInterface;
 import OSI.OSU.OEU.node.sound.WavRead.WavReadNodeInterface;
-import OSI.OSU.OEU.node.sound.fft2DFilter.ft2DFilterInterface;
-import OSI.OSU.OEU.node.sound.freqCount.freqCountNodeInterface;
-import OSI.OSU.OEU.node.sound.logFFT.logFFTInterface;
-import OSI.OSU.OEU.node.sound.logFFTcount.logFFTcountInterface;
-import OSI.OSU.OEU.node.sound.lygFilter.lygFilterNodeInterface;
-import OSI.OSU.OEU.node.sound.lygSlaveFilter.lygSlaveFilterInterface;
+import OSI.OSU.OEU.node.sound.fft2DFilter.Ft2DFilterInterface;
+import OSI.OSU.OEU.node.sound.freqCount.FreqCountNodeInterface;
+import OSI.OSU.OEU.node.sound.logFFT.LogFFTInterface;
+import OSI.OSU.OEU.node.sound.logFFTcount.LogFFTcountInterface;
+import OSI.OSU.OEU.node.sound.lygFilter.LygFilterNodeInterface;
+import OSI.OSU.OEU.node.sound.lygSlaveFilter.LygSlaveFilterInterface;
 import OSI.OSU.OVU.node.sound.ButterworthFilter.ButterworthFilterNodeInterface;
-import OSI.OSU.PEQ.node.sound.wavePlay.wavePlayNodeInterface;
+import OSI.OSU.PEQ.node.sound.wavePlay.WavePlayNodeInterface;
 //import OSI.OSU.SI.OVI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addPGSearchPage.addPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 //import OSI.OSU.SI.OVI.OSQ.AVQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dNA3DShow.dNA3DShowNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 
@@ -74,10 +74,10 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI XlsReadernode = new XlsReaderNodeInterface();
 		first = link.addNode(first, XlsReadernode);
 
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI imageReadNode = new imageReadNodeInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI imageReadNode = new ImageReadNodeInterface();
 		first = link.addNode(first, imageReadNode);
 		
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI imageStrechNode = new imageStrechNodeInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI imageStrechNode = new ImageStrechNodeInterface();
 		first = link.addNode(first, imageStrechNode);
 		
         //		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI arffTransferNode = new arffTransferNodeInterface();
@@ -136,7 +136,7 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI MaxMiniFilterNode = new MaxMiniFilterNodeInterface();
 		first = link.addNode(first, MaxMiniFilterNode);
 		
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI wavePlayNode = new wavePlayNodeInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI wavePlayNode = new WavePlayNodeInterface();
 		first = link.addNode(first, wavePlayNode);
 		
 		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI Show3DNode = new Show3DInterface();
@@ -163,22 +163,22 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI FFTFilterNode = new FFTFilterNodeInterface();
 		first = link.addNode(first, FFTFilterNode);
 		
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI freqCountNode = new freqCountNodeInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI freqCountNode = new FreqCountNodeInterface();
 		first = link.addNode(first, freqCountNode);
 			
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygFilterNode = new lygFilterNodeInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygFilterNode = new LygFilterNodeInterface();
 		first = link.addNode(first, lygFilterNode);
 		
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygFilterComp = new ft2DFilterInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygFilterComp = new Ft2DFilterInterface();
 		first = link.addNode(first, lygFilterComp);
 
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygSlave = new lygSlaveFilterInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI lygSlave = new LygSlaveFilterInterface();
 		first = link.addNode(first, lygSlave);
 		
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI logFFT = new logFFTInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI logFFT = new LogFFTInterface();
 		first = link.addNode(first, logFFT);
 
-		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI logFFTcount = new logFFTcountInterface();
+		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI logFFTcount = new LogFFTcountInterface();
 		first = link.addNode(first, logFFTcount);
 
 //		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI dNA3DShow = new dNA3DShowNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI();

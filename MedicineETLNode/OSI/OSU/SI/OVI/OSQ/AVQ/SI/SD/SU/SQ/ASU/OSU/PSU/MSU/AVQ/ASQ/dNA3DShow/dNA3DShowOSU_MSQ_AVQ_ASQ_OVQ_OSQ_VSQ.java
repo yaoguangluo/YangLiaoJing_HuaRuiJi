@@ -8,7 +8,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.life.Application;
-import biProcessor.coDNAAuthorForWord;
+import biProcessor.CoDNAAuthorForWord;
 public class dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
@@ -24,9 +24,9 @@ public class dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 		Application application= new Application();
 		application.init();
 		try {
-			coDNAAuthorForWord app = null;
+			CoDNAAuthorForWord app = null;
 			try {
-				app= new coDNAAuthorForWord(u, analyzer, pos);
+				app= new CoDNAAuthorForWord(u, analyzer, pos);
 				app.setSize(850, 400);
 				app.setVisible(true);
 				JFrame f= new JFrame();

@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.nk.xynk;
+import ME.sample.nk.Xynk;
 public class MakeContainerXYNK extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -39,7 +39,7 @@ public class MakeContainerXYNK extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*4);
-			u.jpanel6= new xynk(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.jpanel6= new Xynk(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
 			u.jpanel6.setName(tabNames.get(5));
 			jTabbedpane.addTab(tabNames.get(5),new ImageIcon() , u.jpanel6, "西医内科学");// 加入第一个页面  
 			Color[] colors= new Color[3];

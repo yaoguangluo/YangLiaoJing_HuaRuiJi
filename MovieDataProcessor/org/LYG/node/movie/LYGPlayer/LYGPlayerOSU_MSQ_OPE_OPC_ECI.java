@@ -14,7 +14,7 @@ public class LYGPlayerOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI
 	public int value = 0;
 	public String filepath;
 	public String writefile;
-	jp jj;
+	Jp jj;
 	public String filepathWAV;
 	public LYGPlayerOSU_MSQ_OPE_OPC_ECI()throws IOException
  	{	
@@ -22,7 +22,7 @@ public class LYGPlayerOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI
 	public void run(final LYGPlayerOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException, UnsupportedAudioFileException
 	{		
 		 SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout = new LYGFileIO();
-		 jj = new jp(filepath);			
+		 jj = new Jp(filepath);			
 		 JFrame ff = new JFrame();
 		 ff.add(jj);
 	     ff.setSize(800, 600);
