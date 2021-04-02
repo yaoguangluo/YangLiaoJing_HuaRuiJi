@@ -1013,7 +1013,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 					String FirstCharOfLastName= (""+ lastName.charAt(0)).toUpperCase();
 					String NewlastName= FirstCharOfLastName+ lastName.subSequence(1, lastName.length());	
 					System.out.println(filename);
-					String[] columns= filename.split("\\.");
 					
 					Class<?> myclass = null;
 					//   数组                                                      尾组                                                                          首字母                    大写
