@@ -247,15 +247,27 @@ public class GUISample extends JApplet implements MouseMotionListener
 						if(!filename.contains("OSI.OSU.")) {
 							continue Here;
 						}
-						String[] columns= filename.split("\\.");
 						//如下注释2行代码 refer https://www.cnblogs.com/chinaxin/p/3678442.html 这小伙子以后有前途。哈哈
 						//Class<?> myclass = loader.loadClass("hand.java.loadjar.TestClass");
 						//Gene new object
 						//Object myobject = myclass.newInstance();   
 						Class<?> myclass= null;
+					
+						//因为按照标准格式函数命名, 因此做了首字母的大写变换, 准备调试下.罗瑶光
+						String[] filenameSplit= filename.split("\\.");
+						String lastName= filenameSplit[filenameSplit.length- 1];
+						String FirstCharOfLastName= (""+ lastName.charAt(0)).toUpperCase();
+						String NewlastName= FirstCharOfLastName+ lastName.subSequence(1, lastName.length());	
+						System.out.println(filename);
+						
+						//   数组                                                      尾组                                                                          首字母                    大写
+						//filename= (""+ filename.split("\\.")[filename.split("\\.").length- 1].charAt(0)).toUpperCase();			
+						//System.out.println(filename.replace(filename.split(".").length, newChar)filename.split(".").length);
 						try {
-							myclass= loader.loadClass(filename+ "."+ columns[columns.length- 1]
-									+ StableData.NODE_NODE_INTERFACE);
+							String className= filename+ "."+ NewlastName
+									+ StableData.NODE_NODE_INTERFACE;
+							System.out.println(className);
+							myclass= loader.loadClass(className);
 						} catch (ClassNotFoundException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -1000,8 +1012,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 					String lastName= filenameSplit[filenameSplit.length- 1];
 					String FirstCharOfLastName= (""+ lastName.charAt(0)).toUpperCase();
 					String NewlastName= FirstCharOfLastName+ lastName.subSequence(1, lastName.length());	
-					filename= filename.replace(lastName, NewlastName);
-					System.out.println(1);
+					System.out.println(filename);
 					String[] columns= filename.split("\\.");
 					
 					Class<?> myclass = null;
@@ -1009,8 +1020,10 @@ public class GUISample extends JApplet implements MouseMotionListener
 					//filename= (""+ filename.split("\\.")[filename.split("\\.").length- 1].charAt(0)).toUpperCase();			
 					//System.out.println(filename.replace(filename.split(".").length, newChar)filename.split(".").length);
 					try {
-						myclass= loader.loadClass(filename+ "."+ columns[columns.length- 1]
-									+ StableData.NODE_NODE_INTERFACE);
+						String className= filename+ "."+ NewlastName
+								+ StableData.NODE_NODE_INTERFACE;
+						System.out.println(className);
+						myclass= loader.loadClass(className);
 					} catch (ClassNotFoundException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
