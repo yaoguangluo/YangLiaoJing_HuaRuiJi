@@ -101,7 +101,7 @@
 
 # 养疗经 华瑞集 Github 源码备份
 
-##### Github: GitMain
+##### Github: Main
 https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
 
 ##### Gitee: master
