@@ -99,3 +99,18 @@
 ### 养疗经，华瑞集 开源参与者（2人） 参与标准为 其知识产权体系作品申请者集合：
 ###### 罗瑶光，罗荣武
 
+# 养疗经 华瑞集 Github 源码备份
+
+##### Github: GitMain
+https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
+
+##### Gitee: master
+https://gitee.com/DetaChina/YangLiaoJing
+
+##### Bitbucket: Main
+https://bitbucket.org/luoyaoguang/yangliaojing
+
+见该项目的 GitMain 分支.
+
+
+
