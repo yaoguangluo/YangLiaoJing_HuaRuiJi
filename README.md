@@ -110,7 +110,7 @@ https://gitee.com/DetaChina/YangLiaoJing
 ##### Bitbucket: Main
 https://bitbucket.org/luoyaoguang/yangliaojing
 
-见该项目的 GitMain 分支.
+统一用 Main 分支.
 
 
 
