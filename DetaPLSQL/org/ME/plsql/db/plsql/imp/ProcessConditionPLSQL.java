@@ -261,7 +261,8 @@ public class ProcessConditionPLSQL {
 		output.clear();
 		output.addAll(outputTemp);
 	}
-
+	
+	//plsql引擎函数获取表开始检查 罗瑶光 20210405  //奇怪了 这是一个没有读 缓存的plsql引擎,我准备对比下history
 	public static void processTable(String[] sets, List<Map<String, Object>> output
 			, String DBTablePath, Map<String, Object> object) throws IOException {
 		String DBTableRowsPath = DBTablePath + "/rows";	
@@ -292,12 +293,15 @@ public class ProcessConditionPLSQL {
 								temp += tempString;
 							}
 							reader.close();
+							if(temp.isEmpty()) {//增加一行id为空检查, 大家记得给 数据库的id加点值,我lyg的都是空文件.
+								continue NextRow;
+							}
 							if(sets[1].equalsIgnoreCase("<")||sets[1].equalsIgnoreCase("-lt")) {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										< new BigDecimal(sets[2].toString()).doubleValue()) {	
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -310,7 +314,7 @@ public class ProcessConditionPLSQL {
 										<= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -323,7 +327,7 @@ public class ProcessConditionPLSQL {
 										== new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -336,7 +340,7 @@ public class ProcessConditionPLSQL {
 										>= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -348,7 +352,7 @@ public class ProcessConditionPLSQL {
 										> new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -360,7 +364,7 @@ public class ProcessConditionPLSQL {
 										!= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -372,7 +376,7 @@ public class ProcessConditionPLSQL {
 								if(rowCellFromString.equalsIgnoreCase(sets[2].toString())) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows 
 										= (Map<Integer, Boolean>) object.get("recordRows");
@@ -384,7 +388,7 @@ public class ProcessConditionPLSQL {
 								String rowCellFromString = temp.toString();
 								if(!rowCellFromString.equalsIgnoreCase(sets[2].toString())) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
-										processkernel(row, readDBTableRowIndexCulumnFile, readDBTableRowIndexCulumnFile, reader
+										processkernel(row, readDBTableRowIndexCulumnFile, readDBTableRowIndexFile, reader
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -398,7 +402,7 @@ public class ProcessConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows")))
 											.containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
@@ -411,7 +415,7 @@ public class ProcessConditionPLSQL {
 								if(!set.contains("," + rowCellFromString + ",")) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexCulumnFile, reader
+												, readDBTableRowIndexFile, reader
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows 
 										= (Map<Integer, Boolean>) object.get("recordRows");
@@ -424,7 +428,8 @@ public class ProcessConditionPLSQL {
 				}
 		}
 	}
-
+    
+	//比较是否有数据取出列表到输出 检验中 罗瑶光 20210405
 	private static void processkernel(String temp, File readDBTableRowIndexCulumnFile, File readDBTableRowIndexFile
 			, BufferedReader reader, String DBTableRowIndexPath, List<Map<String, Object>> output, String tempString
 			, Map<String, Object> rowMap) throws IOException {
@@ -434,9 +439,10 @@ public class ProcessConditionPLSQL {
 				if(culumn.contains("is_delete")) {
 					continue NextFile;
 				}
-				String DBTableCulumnIndexPath = DBTableRowIndexPath + "/" + culumn;	
+				String DBTableCulumnIndexPath = readDBTableRowIndexFile + "/" + culumn;	
 				File readDBTableCulumnIndexPathFile = new File(DBTableCulumnIndexPath);
-				if (readDBTableRowIndexCulumnFile.isDirectory()) {
+				if (readDBTableCulumnIndexPathFile.isDirectory()) {
+					//似乎被动了手脚, 20210405 罗瑶光重新检查
 					reader = new BufferedReader(new FileReader(readDBTableCulumnIndexPathFile + "/" + "value.lyg"));  
 					temp = "";
 					while ((tempString = reader.readLine()) != null) {

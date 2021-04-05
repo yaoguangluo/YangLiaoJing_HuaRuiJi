@@ -91,7 +91,7 @@ public class PLSQLCommandImp {
 			}
 		}
 	}
-
+//处理机中心, 别急, 准备验证 罗瑶光
 	private static void processExecKernel(Map<String, Object> object, boolean mod) throws Exception{
 		if(object.get("type").toString().equalsIgnoreCase("select") && 
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
@@ -181,7 +181,8 @@ public class PLSQLCommandImp {
 		object.remove("getCulumns");
 		object.put("start", "0");
 	}
-
+    
+	//plsql函数执行指令 正在检查中 罗瑶光 20210405
 	public static void processCheck(String acknowledge, Map<String, Object> object, boolean mod) throws Exception {
 		if(object.get("start").toString().equals("1")) {
 			processExecKernel(object, mod);
@@ -210,11 +211,15 @@ public class PLSQLCommandImp {
 			if(null!= table) {
 				iterator= table.getSpec().getCulumnTypes().keySet().iterator();
 			}
-		}else {
-			iterator = ((Map<String, Object>)obj.get(0).get("rowValue")).keySet().iterator();
+		}else {//进行map 验证检测 罗瑶光 20210405
+			Map<String, Object> map= obj.get(0);
+			Map<String, Object> objectInMap= (Map<String, Object>)map.get("rowValue");
+			iterator = null== objectInMap? null:objectInMap.keySet().iterator();
 		}
-		while(iterator.hasNext()) {
-			spec.add(iterator.next());
+		if(iterator != null) {
+			while(iterator.hasNext()) {
+				spec.add(iterator.next());
+			}
 		}
 		object.put("spec", spec);
 	}

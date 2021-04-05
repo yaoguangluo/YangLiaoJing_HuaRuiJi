@@ -212,6 +212,7 @@ public class SelectRowsImp {
 		return output;
 	}
 
+	//因为数据id的补充, 今天开始进行相应的debug验证  罗瑶光20210405
 	public static Object selectRowsByAttributesOfCondition(Map<String, Object> object) throws IOException {
 		if(!object.containsKey("recordRows")) {
 			Map<String, Boolean> recordRows = new ConcurrentHashMap<>();
