@@ -5,20 +5,20 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="DetaSrc">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="BioDNA3st"/>
-	<classpathentry kind="src" path="Database"/>
+	<classpathentry kind="src" path="DetaBioDNA3st"/>
+	<classpathentry kind="src" path="DetaDatabase"/>
 	<classpathentry excluding="**" kind="src" output="target/classes" path="JVM">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="YLJNetwork"/>
+	<classpathentry kind="src" path="DetaYLJNetwork"/>
 	<classpathentry kind="src" path="DataWavelet"/>
 	<classpathentry kind="src" path="DetaUnicornUI"/>
 	<classpathentry kind="src" path="WordsForSpeak"/>
@@ -26,9 +26,9 @@
 	<classpathentry kind="src" path="DetaPLSQL"/>
 	<classpathentry kind="src" path="DetaDBBootVPCS"/>
 	<classpathentry kind="src" path="DataPrediction"/>
-	<classpathentry kind="src" path="AILanguage"/>
+	<classpathentry kind="src" path="DetaAILanguage"/>
 	<classpathentry kind="src" path="medReport"/>
-	<classpathentry kind="src" path="ListenCMU"/>
+	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
 	<classpathentry kind="src" path="suggest"/>
 	<classpathentry kind="src" path="NeroThemeETL"/>
 	<classpathentry kind="src" path="BussinessIntelligence"/>
