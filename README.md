@@ -104,7 +104,7 @@
 ##### Github: Main
 https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
 
-##### Gitee: master
+##### Gitee: Main
 https://gitee.com/DetaChina/YangLiaoJing
 
 ##### Bitbucket: Main
