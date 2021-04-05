@@ -1,6 +1,3 @@
-/DBconfig.zip
-/Data/
-/OSI/
 /AVQ/
 /AVU/
 /DBPath/
@@ -9,11 +6,13 @@
 /ME/
 /NLPProcessor/
 /OEU/
+/OSI/
 /OSQ/
 /OVQ/
 /PEI/
 /PEU/
 /PVU/
+/SP/
 /cacheProcessor/
 /comp/
 /dct/
@@ -62,4 +61,4 @@
 /glredbook11/
 /glredbook12x/
 /glredbook1314/
-/SP/
+/Data/
