@@ -61,17 +61,18 @@ public class RequestFilterController {
 		//			vPCSResponse.returnErrorCode(400);
 		//		}
 	}
-
+	
+    //ÏÈ×¢ÊÍµô Ö®ºó²âÊÔ 20210405 ÂÞÑþ¹â
 	public static void initBlockList() throws IOException {
 		ipBlock = new ConcurrentHashMap<>();
-		FileInputStream fileInputStream = new FileInputStream(
-				new File("src/main/resources/ipBlock.ips")); 
-		InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8"); 
-		BufferedReader bufferedReader = new BufferedReader(inputStreamReader); 
-		String line = null; 
-		while ((line = bufferedReader.readLine()) != null) { 
-			ipBlock.put(line, true); 
-		}
-		bufferedReader.close();
+//		FileInputStream fileInputStream = new FileInputStream(
+//				new File("src/main/resources/ipBlock.ips")); 
+//		InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF-8"); 
+//		BufferedReader bufferedReader = new BufferedReader(inputStreamReader); 
+//		String line = null; 
+//		while ((line = bufferedReader.readLine()) != null) { 
+//			ipBlock.put(line, true); 
+//		}
+//		bufferedReader.close();
 	}
 }

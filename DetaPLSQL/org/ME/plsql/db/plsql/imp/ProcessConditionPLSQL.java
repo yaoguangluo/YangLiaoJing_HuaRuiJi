@@ -263,6 +263,8 @@ public class ProcessConditionPLSQL {
 	}
 	
 	//plsql引擎函数获取表开始检查 罗瑶光 20210405  //奇怪了 这是一个没有读 缓存的plsql引擎,我准备对比下history
+	//object 指令堆栈
+	//output 数据行
 	public static void processTable(String[] sets, List<Map<String, Object>> output
 			, String DBTablePath, Map<String, Object> object) throws IOException {
 		String DBTableRowsPath = DBTablePath + "/rows";	
@@ -305,6 +307,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -318,6 +321,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -331,6 +335,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -344,6 +349,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -356,6 +362,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -368,6 +375,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -381,6 +389,7 @@ public class ProcessConditionPLSQL {
 										Map<Integer, Boolean> recordRows 
 										= (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -392,6 +401,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -406,6 +416,7 @@ public class ProcessConditionPLSQL {
 												, row, output, row, rowMap);
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}
@@ -420,6 +431,7 @@ public class ProcessConditionPLSQL {
 										Map<Integer, Boolean> recordRows 
 										= (Map<Integer, Boolean>) object.get("recordRows");
 										recordRows.put(count, true);
+										object.put("recordRows", recordRows);
 									}
 								}	
 							}

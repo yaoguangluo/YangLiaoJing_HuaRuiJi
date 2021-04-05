@@ -262,6 +262,7 @@ public class SelectRowsImp {
 								ProcessConditionPLSQL.processCache(sets, output, object.get("tableName").toString()
 										, object.get("baseName").toString(), object);//1
 							}else {
+								//DMA的表格导入, 我等下同样进行验算,2年的编写过程全部朔源. 20210405 让猫腻 无死角.
 								ProcessConditionPLSQL.processTable(sets, output, DBTablePath, object);//1
 							}
 						}
