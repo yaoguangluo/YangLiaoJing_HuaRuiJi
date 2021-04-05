@@ -2030,7 +2030,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		if(dic_map.containsKey(zhongyao.replaceAll(" ", ""))) {
 			mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
 		}else {
-			if(!key.isEmpty()|| key.split(" ")[0].length()> 5) {
+			String[] strings= key.split(" ");
+			if(strings.length> 1&& key.split(" ")[0].length()> 5) {
 				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(key);
 			}else {
 				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
