@@ -5,7 +5,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry including="**/*.java" kind="src" output="target/classes" path="DetaSrc">
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="DetaHRJ_YLJSrc">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -13,7 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="DetaBioDNA3st"/>
 	<classpathentry kind="src" path="DetaDatabase"/>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="JVM">
+	<classpathentry excluding="**" kind="src" output="target/classes" path="ThirdPartyUtilsJVM">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -21,23 +21,23 @@
 	<classpathentry kind="src" path="DetaYLJNetwork"/>
 	<classpathentry kind="src" path="DataWavelet"/>
 	<classpathentry kind="src" path="DetaUnicornUI"/>
-	<classpathentry kind="src" path="WordsForSpeak"/>
+	<classpathentry kind="src" path="DetaUtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="DetaDataSwap"/>
 	<classpathentry kind="src" path="DetaPLSQL"/>
 	<classpathentry kind="src" path="DetaDBBootVPCS"/>
 	<classpathentry kind="src" path="DataPrediction"/>
 	<classpathentry kind="src" path="DetaAILanguage"/>
-	<classpathentry kind="src" path="medReport"/>
+	<classpathentry kind="src" path="ThirdPartyMedReport"/>
 	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
-	<classpathentry kind="src" path="suggest"/>
-	<classpathentry kind="src" path="NeroThemeETL"/>
-	<classpathentry kind="src" path="BussinessIntelligence"/>
-	<classpathentry kind="src" path="ImageDataProcessor"/>
-	<classpathentry kind="src" path="MovieDataProcessor"/>
-	<classpathentry kind="src" path="OPGL"/>
-	<classpathentry kind="src" path="SoundDataProcessor"/>
-	<classpathentry kind="src" path="YLJDataProcessor"/>
-	<classpathentry kind="src" path="TinGodPDE"/>
+	<classpathentry kind="src" path="DetaSuggest"/>
+	<classpathentry kind="src" path="DetaUnicornNeroThemeETL"/>
+	<classpathentry kind="src" path="DetaBussinessIntelligence"/>
+	<classpathentry kind="src" path="DetaImageDataProcessor"/>
+	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
+	<classpathentry kind="src" path="ThirdPartyOPGL"/>
+	<classpathentry kind="src" path="DetaSoundDataProcessor"/>
+	<classpathentry kind="src" path="DetaYLJDataProcessor"/>
+	<classpathentry kind="src" path="DetaTinGodPDE"/>
 	<classpathentry kind="src" path="DetaParserBehaviorMap"/>
 	<classpathentry kind="src" path="DetaParserEmotionMap"/>
 	<classpathentry kind="src" path="DetaParserNeroMap"/>
@@ -46,13 +46,14 @@
 	<classpathentry kind="src" path="DetaDataProcessor"/>
 	<classpathentry kind="src" path="DetaVPCSBackend"/>
 	<classpathentry kind="src" path="DetaVPCSFrontend"/>
-	<classpathentry kind="src" path="JavaVPCSBackend"/>
-	<classpathentry kind="src" path="JavaVPCSFrontend"/>
-	<classpathentry kind="src" path="MedicineETLNode"/>
-	<classpathentry kind="src" path="NeiWaiKeETLNode"/>
-	<classpathentry kind="src" path="PGMedicineETLNode"/>
-	<classpathentry kind="src" path="SmallMedicineETLNode"/>
+	<classpathentry kind="src" path="DetaJavaVPCSBackend"/>
+	<classpathentry kind="src" path="DetaJavaVPCSFrontend"/>
+	<classpathentry kind="src" path="DetaMedicineETLNode"/>
+	<classpathentry kind="src" path="DetaNeiWaiKeETLNode"/>
+	<classpathentry kind="src" path="DetaPGMedicineETLNode"/>
+	<classpathentry kind="src" path="DetaSmallMedicineETLNode"/>
 	<classpathentry kind="src" path="YLJConfig"/>
+	<classpathentry kind="src" path="DetaMovieDataProcessor"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math-2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
