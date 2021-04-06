@@ -56,7 +56,7 @@
 ### 项目内容展示. 见工程的doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/Deta_OSSV800.pdf
+###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSSV800.pdf
 
 ##### DNA 第一卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
