@@ -91,7 +91,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 				Thread.sleep(1000);
 				this.updateUI();
 			}catch (InterruptedException e) {
-				threadApplet.destroy();
+				//threadApplet.destroy(); //jdk16 没有了destroy
+				threadApplet.stop();
 				e.printStackTrace();
 			}
 		}      
@@ -105,7 +106,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 	}
 	@SuppressWarnings(StableData.TAG_DEPRECATION)
 	public void stop() {
-		threadApplet.destroy();
+		//threadApplet.destroy(); //jdk16 没有了destroy
+		threadApplet.stop();
 	}
 
 	public void actionPerformed(ActionEvent arg0) {}

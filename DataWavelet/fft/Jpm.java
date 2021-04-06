@@ -9,8 +9,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import OSI.OSU.OVQ.MSQ.GUI.platForm.UnicornJSplitPane;
-public class Jpm extends Panel
-{
+public class Jpm extends Panel{
 	 private static final long serialVersionUID = 1L;
 	 final static double pi = 6.28318530;
 	 final static int N = 1024;
@@ -23,8 +22,7 @@ public class Jpm extends Panel
      cp []f;
      cp []p;
      int c=0;
-	 public Jpm()
-	 {
+	 public Jpm() {
 		this.setLayout(null);
 		UnicornJSplitPane mainsplitPane;
 		mainsplitPane = new UnicornJSplitPane();
@@ -39,8 +37,7 @@ public class Jpm extends Panel
 		mainsplitPane.setLeftComponent(jpl);
 		mainsplitPane.setRightComponent(jpr);	
 	}
-	public class Jpl extends Panel
-	{
+	public class Jpl extends Panel{
 		private static final long serialVersionUID = 1L;
 		@SuppressWarnings("unused")
 		public void paint(Graphics g) {
@@ -57,8 +54,7 @@ public class Jpm extends Panel
 	           g2.fillRect(0, h-INFOPAD, w, INFOPAD);  
 	      	   p=new cp[1024];
 			   f=new cp[1024];
-			   for(int k=0;k<N;k++)
-				{
+			   for(int k=0;k<N;k++){
 				   f[k]=new cp(); 
 				   p[k]=new cp(); 
 				   f[k].real=0;
@@ -73,15 +69,13 @@ public class Jpm extends Panel
 			   f[190].real=y3;
 	
 			   g2.setColor(Color.blue);
-			   for (int i = 0; i<N-1; i++) 
-		          {
+			   for (int i = 0; i<N-1; i++) {
 		              g2.drawLine(i,400,i,(int)(f[i].real/4)+400);           
 		          }	 
 	///////////////////////////////////////////////////       
 		         double cos[][]= new double [N][N] ;
 		         double sin[][]= new double [N][N] ; 
-			   for(int k=0;k<N;k++)
-		  		{
+			   for(int k=0;k<N;k++){
 	        	    double v1 = pi*k/N/2;
 	        	 	for(int n=0;n<N;n++)
 	 	  			{
@@ -92,9 +86,7 @@ public class Jpm extends Panel
 		  		} 
 			   
 			   ////////////////////////////////
-			   
-			   for(int k=0;k<N;k++)
-				{
+			   for(int k=0;k<N;k++){
 					for(int n=0;n<N;n++)
 					{
 						p[k].real+=f[n].real*cos[k][n];
@@ -102,8 +94,7 @@ public class Jpm extends Panel
 					}
 				}		   
 	          g2.setColor(Color.red);
-	          for (int i = 0; i <N-1; i++) 
-	          {
+	          for (int i = 0; i <N-1; i++)  {
 	              g2.drawLine(i,(int)((p[i].real-p[i].image)/4)+200,i+1,(int)((p[i+1].real-p[i+1].image)/4)+200);           
 	          }
 	     

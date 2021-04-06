@@ -1,6 +1,5 @@
 package edu.cmu.sphinx.linguist.language.ngram.large;
 
-import edu.cmu.sphinx.linguist.language.ngram.large.LargeNGramModel;
 import edu.cmu.sphinx.linguist.WordSequence;
 import edu.cmu.sphinx.linguist.dictionary.Word;
 
@@ -26,7 +25,7 @@ import java.util.*;
  * @version 2010-12-16
  * @see LargeNGramModel
  * @see edu.cmu.sphinx.linguist.language.ngram.KeywordOptimizerModel
- *
+ * @fix yaoguangluo 20210406
  */
 
 public class KeywordOptimizerLargeNGramModel extends LargeNGramModel {
