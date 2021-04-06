@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.MS.plsql.cache.DetaDBBufferCacheManager;
 import org.plsql.db.reflection.Cell;
@@ -302,12 +303,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										< new BigDecimal(sets[2].toString()).doubleValue()) {	
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);						
 									}
 								}	
 							}
@@ -316,12 +319,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										<= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -330,12 +335,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										== new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -344,12 +351,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										>= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -357,12 +366,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue() 
 										> new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -370,12 +381,14 @@ public class ProcessConditionPLSQL {
 								if(new BigDecimal(temp.toString()).doubleValue()
 										!= new BigDecimal(sets[2].toString()).doubleValue()) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -383,13 +396,14 @@ public class ProcessConditionPLSQL {
 								String rowCellFromString = temp.toString();
 								if(rowCellFromString.equalsIgnoreCase(sets[2].toString())) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
-												, row, output, row, rowMap);
-										Map<Integer, Boolean> recordRows 
-										= (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
+										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -397,11 +411,14 @@ public class ProcessConditionPLSQL {
 								String rowCellFromString = temp.toString();
 								if(!rowCellFromString.equalsIgnoreCase(sets[2].toString())) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
-										processkernel(row, readDBTableRowIndexCulumnFile, readDBTableRowIndexFile, reader
-												, row, output, row, rowMap);
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
+										processkernel(row, readDBTableRowIndexCulumnFile
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -409,14 +426,15 @@ public class ProcessConditionPLSQL {
 								String rowCellFromString = temp.toString();
 								String set = "," + sets[2] + ",";
 								if(set.contains("," + rowCellFromString + ",")) {
-									if(!((Map<Integer, Boolean>)(object.get("recordRows")))
-											.containsKey(count)) {
+									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexFile, reader
-												, row, output, row, rowMap);
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
 										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -425,13 +443,14 @@ public class ProcessConditionPLSQL {
 								String set = "," + sets[2] + ",";
 								if(!set.contains("," + rowCellFromString + ",")) {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
+										Row bufferRow= new Row();
+										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
 										processkernel(row, readDBTableRowIndexCulumnFile
-												, readDBTableRowIndexFile, reader
-												, row, output, row, rowMap);
-										Map<Integer, Boolean> recordRows 
-										= (Map<Integer, Boolean>) object.get("recordRows");
-										recordRows.put(count, true);
-										object.put("recordRows", recordRows);
+												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
+												, row, output, bufferRow, rowMap);
+										output.add(rowToRowMap(bufferRow));
+										Map<Integer, Boolean> recordRows = (Map<Integer, Boolean>) object.get("recordRows");
+										recordRows.put(count, true);		
 									}
 								}	
 							}
@@ -442,8 +461,10 @@ public class ProcessConditionPLSQL {
 	}
     
 	//比较是否有数据取出列表到输出 检验中 罗瑶光 20210405
+	//这个走硬盘查询函数来标识下, 在我设计了数据缓存查询启动函数 后就没用过了, 时间点大概在2019年1月后, 我先调通下, 之后朔源.
+	//准备验算下20210406 罗瑶光
 	private static void processkernel(String temp, File readDBTableRowIndexCulumnFile, File readDBTableRowIndexFile
-			, BufferedReader reader, String DBTableRowIndexPath, List<Map<String, Object>> output, String tempString
+			, BufferedReader reader, String DBTableRowIndexPath, List<Map<String, Object>> output, Row bufferRow
 			, Map<String, Object> rowMap) throws IOException {
 		String[] culumnList = readDBTableRowIndexFile.list();
 		NextFile:
@@ -453,17 +474,24 @@ public class ProcessConditionPLSQL {
 				}
 				String DBTableCulumnIndexPath = readDBTableRowIndexFile + "/" + culumn;	
 				File readDBTableCulumnIndexPathFile = new File(DBTableCulumnIndexPath);
+				
+				Cell cell= new Cell();
 				if (readDBTableCulumnIndexPathFile.isDirectory()) {
 					//似乎被动了手脚, 20210405 罗瑶光重新检查
 					reader = new BufferedReader(new FileReader(readDBTableCulumnIndexPathFile + "/" + "value.lyg"));  
 					temp = "";
+					String tempString;
 					while ((tempString = reader.readLine()) != null) {
 						temp += tempString;
 					}
 					reader.close();
 					rowMap.put(culumn, temp);
+					cell.setCellValue(temp);
+					bufferRow.putCell(culumn, cell);
 				}else {
 					rowMap.put(culumn, null);
+					cell.setCellValue(null);
+					bufferRow.putCell(culumn, cell);
 				}
 			}
 		output.add(rowMap);

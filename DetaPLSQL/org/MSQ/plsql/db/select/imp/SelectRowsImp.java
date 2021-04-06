@@ -256,7 +256,7 @@ public class SelectRowsImp {
 						boolean andMap = type.equalsIgnoreCase("and")?true:false;
 						for(int i = 2; i < conditionValueArray.length; i++) {
 							String[] sets = conditionValueArray[i].split("\\|");
-							if(overMap && andMap) {
+							if(overMap&& andMap) {
 								ProcessConditionPLSQL.processMap(sets, output, DBTablePath);//1
 							}else if(DetaDBBufferCacheManager.dbCache){
 								ProcessConditionPLSQL.processCache(sets, output, object.get("tableName").toString()
