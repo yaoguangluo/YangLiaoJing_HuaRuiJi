@@ -77,7 +77,7 @@
 ###### ECLIPSE, GRADLE, GITHUB, GITEE, WECHAT, 联想。
 
 ### 第三方开源包引用情况
-###### JOGL 官方 gleem DEMO (源码仅引用未修改)
+###### BSD APACHE GPL CDDL JOGL 官方 gleem DEMO (源码仅引用未修改)
 ###### APACHE SUN 官方AWT DEMO(源码仅引用未修改)
 ###### APACHE Json(源码仅引用未修改)      
 ###### APACHE Jacob 中文发音 DEMO (源码仅引用未修改)
