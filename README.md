@@ -48,6 +48,7 @@
 ###### 1将jacob语音发音文件放入jdk或者JRE的 BIN目录 下， system32 的 driver目录下 或者 将函数注释掉。
 ###### 2将DetaDatabase项目目录下的DBconfig.zip文件解压缩在C盘下即可（注意路径名，去掉 副本 两个字）， 文件我已经裁掉了850个中药属性和 1550个西药属性，仅做数据库集成调试展示。
 ###### 2.1 注意 数据库的row文件夹下面请自行添加 is_delete_0 文件夹标识，不然 养疗经不显示哦，详细见《DETA socket流 plsql数据库》 著作的 语法。
+###### 2.2 注意 数据库的row文件夹下面ID项目 sample数据 缺失, DMA 计算环境请 自己补充0,1,2 来标识.
 ###### 3，64位windows用eclipse即可打开运行调试。
 ###### 4 启动文件: DetaHRJ_YLJSrc.ME.SAMPLE 的(YLJFrame 和 HRJFrame).
 
