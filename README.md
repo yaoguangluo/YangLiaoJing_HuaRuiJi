@@ -54,7 +54,7 @@
 ###### 4 启动文件: DetaHRJ_YLJSrc.ME.SAMPLE 的(YLJFrame 和 HRJFrame).
 
 
-### 项目内容展示. 见工程的doc 文件夹：
+### 项目内容展示. 见工程的 doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
 ###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSS v11.final.pdf
@@ -71,7 +71,8 @@
 ###### 源码:https://gitee.com/DetaChina/dna_-db
 ###### 文档:https://github.com/yaoguangluo/DNA_DB_DOC_BACKUP/blob/main/DNA元基催化与肽计算%20第三卷20210328.pdf
 
-### 华瑞集养疗经 资质：
+### 华瑞集养疗经 资质 见工程的 证书 文件夹：
+
 ###### 国商字第 40126364 号 (中华人民共和国 国家知识产权局)
 ###### 国商字第 39193470 号 (中华人民共和国 国家知识产权局)
 ###### 国商字第 40126765 号 (中华人民共和国 国家知识产权局)
@@ -85,35 +86,19 @@
 ###### 国作登字 2019-F-00943474 (中华人民共和国 国家版权局)
 ###### 国作登字 2019-F-00943475 (中华人民共和国 国家版权局)
 
-### 软件思想架构
-
+### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作
 ##### 德塔自然语言图灵系统研发作者。CN: 2019SR0530609 (中华人民共和国 国家版权局).软著登字第3951366号
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### ETL数据流处理软件研发引擎作者。CN: 2019R11L803285 (中华人民共和国 国家版权局).软著登字第4240558号
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### 德塔数据分析算法 Java 引擎系统 作者。CN: 2019R11L1122752 (中华人民共和国 国家版权局).软著登字第4584594号
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### 德塔 PLSQL Socket数据库引擎研发作者。CN: 2019R11L885247 (中华人民共和国 国家版权局).软著登字第4317518号
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### 德塔数据结构变量快速转换 作者 CN:2019R11L1293422 (中华人民共和国 国家版权局).软著登字第4607950号 
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### 快速数据预测算法引擎系统 V1.0.0 CN: 2020R11L186818 (中华人民共和国 国家版权局).软著登字第 5447819号
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf 
 ##### DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2 2020Z11L0333706 (中华人民共和国 国家版权局)
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### DNA 元基公式 AOPM VECS IDUQ 肽展公式推导与元基编码进化计算以及它的应用发现 1.2.2 2020Z11L0356797(中华人民共和国 国家版权局) 国作登字 2021-A-00942587 
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ##### DNA 元基解码 DNA催化与肽展计算 和 AOPM-TXH-VECS-IDUQ 元基解码 V013_026中文版本 2020Z11L0386462(中华人民共和国 国家版权局) 国作登字 2021-A-00942586  
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
 ###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+
 ##### 德塔DNA元基催化与肽计算第二卷 2021Z11L1057159 (中华人民共和国 国家版权局)
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 ###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
