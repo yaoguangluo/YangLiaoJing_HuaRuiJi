@@ -1,7 +1,7 @@
 package org.PEQ.behavior.test;
 import java.io.IOException;
 
-import org.AEU.tinos.behavior.ICA.EducationRatio;
+import org.AEU.tinos.behavior.ica.EducationRatio;
 import org.ASQ.PSU.tinos.view.stable.StableData;
 public class EducationLevelTest{
 	double[] EducationLevel;

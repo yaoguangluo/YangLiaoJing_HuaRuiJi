@@ -9,13 +9,14 @@ import javax.swing.event.ChangeListener;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
-import javax.media.opengl.*;  
-
-import JOGLOBJ_YaoguangLuo.JOGLDrawOBJ;
-import JOGLOBJ_YaoguangLuo.JOGLOBJShape;
+import javax.media.opengl.*;
 
 import com.jogamp.opengl.util.FPSAnimator;  
 import com.jogamp.opengl.util.gl2.GLUT;
+
+import jogl.obj.yaoguangLuo.JOGLDrawOBJ;
+import jogl.obj.yaoguangLuo.JOGLOBJShape;
+
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
 public class test extends JPanel implements GLEventListener {  

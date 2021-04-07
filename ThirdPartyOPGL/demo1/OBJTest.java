@@ -1,8 +1,9 @@
 
 
 package demo1;
-import JOGLOBJ_YaoguangLuo.*;
-import com.jogamp.opengl.util.gl2.GLUT;    
+import com.jogamp.opengl.util.gl2.GLUT;
+import jogl.obj.yaoguangLuo.*;
+
 import javax.media.opengl.GL;  
 import javax.media.opengl.GL2;  
 import javax.media.opengl.GL2ES1;

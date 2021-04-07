@@ -5,8 +5,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-import MD5Processor.Token;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.TokenPDI;
+import md5Processor.Token;
 
 public class StringUtil {
 	public static String encode(String input) throws Exception {

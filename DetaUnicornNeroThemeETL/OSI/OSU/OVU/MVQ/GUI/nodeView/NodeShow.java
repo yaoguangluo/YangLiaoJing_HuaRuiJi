@@ -15,7 +15,7 @@ import javax.swing.tree.*;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.GUISample;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.GUISample;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 import OSI.OSU.OVQ.MSQ.GUI.platForm.UnicornTreeCellRenderer;
 import OSI.OSU.SI.MCI.OEI.GUI.extOSGI.OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register;

@@ -8,11 +8,10 @@ import org.MSQ.plsql.db.select.imp.SelectRowsImp;
 import org.MSU.plsql.db.update.imp.UpdateRowsImp;
 import org.json.JSONObject;
 import cacheProcessor.CacheManager;
+import md5Processor.Usr;
+import md5Processor.UsrToken;
 
 import org.plsql.vpc.view.UsrFull;
-
-import MD5Processor.Usr;
-import MD5Processor.UsrToken;
 
 public class LoginDAOImpl {
 	//	@Autowired

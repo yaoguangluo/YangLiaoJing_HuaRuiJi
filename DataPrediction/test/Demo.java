@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.ASQ.tinos.deta.PCA.FindPCAMeanDistance;
 import org.ASQ.tinos.deta.basic.Euclid;
 import org.ASQ.tinos.deta.classification.Fissile;
 import org.ASQ.tinos.deta.classification.PositionClasification;
@@ -14,6 +13,7 @@ import org.ASQ.tinos.deta.cluster.Fusion;
 import org.ASQ.tinos.deta.demension.Position2D;
 import org.ASQ.tinos.deta.isolation.ForestIsolation;
 import org.ASQ.tinos.deta.isolation.Isolation;
+import org.ASQ.tinos.deta.pca.FindPCAMeanDistance;
 
 @SuppressWarnings("unused")
 public class Demo{

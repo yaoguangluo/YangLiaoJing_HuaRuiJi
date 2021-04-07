@@ -10,7 +10,7 @@ import javax.swing.JTextPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.GUISample;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.GUISample;
 public class MakeContainerSJFX extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

@@ -18,7 +18,7 @@ import org.ASQ.PSU.tinos.view.obj.FMHMMPOS;
 import org.ASQ.PSU.tinos.view.stable.StableData;
 import org.ASQ.PSU.tinos.view.stable.StableMaps;
 
-import NLPProcessor.StopSymbol;
+import nlpProcessor.StopSymbol;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")
 public class FMHMMListOneTimeImp implements FHMMList {

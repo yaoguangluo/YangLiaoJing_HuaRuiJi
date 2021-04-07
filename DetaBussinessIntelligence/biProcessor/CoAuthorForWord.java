@@ -22,15 +22,17 @@ import javax.swing.event.ChangeListener;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 
-import javax.media.opengl.*;  
-import JOGLOBJ_YaoguangLuo.JOGLOBJShape;
+import javax.media.opengl.*;
+
 import ME.sample.App;
 import comp.jbutton.DetaButton;
 import comp.jslider.DetaSlider;
+import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
+
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
 public class CoAuthorForWord extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener, GLEventListener { 

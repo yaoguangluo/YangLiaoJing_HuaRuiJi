@@ -10,7 +10,7 @@ import javax.swing.*;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 public class dNA3DShowNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 //	JTextPane text;

@@ -6,10 +6,13 @@ import java.nio.ByteBuffer;
 import javax.swing.*;  
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.media.opengl.*;  
-import JOGLOBJ_YaoguangLuo.JOGLOBJShape;
+import javax.media.opengl.*;
+
 import com.jogamp.opengl.util.FPSAnimator;  
 import com.jogamp.opengl.util.gl2.GLUT;
+
+import jogl.obj.yaoguangLuo.JOGLOBJShape;
+
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
 //import parserProcessor.timeCheck;

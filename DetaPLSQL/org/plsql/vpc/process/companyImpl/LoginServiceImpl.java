@@ -8,8 +8,8 @@ import org.plsql.common.utils.StringUtil;
 import org.plsql.common.utils.TokenUtil;
 import org.plsql.vpc.process.factoryImpl.LoginDAOImpl;
 
-import MD5Processor.Usr;
-import MD5Processor.UsrToken;
+import md5Processor.Usr;
+import md5Processor.UsrToken;
 public class LoginServiceImpl {
 
 	//	@Autowired

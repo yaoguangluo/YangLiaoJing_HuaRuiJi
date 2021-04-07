@@ -22,17 +22,19 @@ import javax.swing.event.ChangeListener;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
-import javax.media.opengl.*;  
-import JOGLOBJ_YaoguangLuo.JOGLOBJShape;
+import javax.media.opengl.*;
+
 import ME.sample.App;
-import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.DNA.sets.CMS;
+import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.life.Application;
 import comp.jbutton.DetaButton;
 import comp.jslider.DetaSlider;
+import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
+
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
 public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener, GLEventListener { 

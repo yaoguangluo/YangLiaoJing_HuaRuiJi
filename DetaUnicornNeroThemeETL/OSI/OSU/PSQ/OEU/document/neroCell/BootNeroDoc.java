@@ -3,7 +3,7 @@ import java.io.File;
 import java.util.Map;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.LYG.vpcs.skivvy.Skivvy;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEI.PVI.document.load.LoadFile;

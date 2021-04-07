@@ -1,7 +1,7 @@
 package org.lygbackend.vpc.process.portImpl;
 import org.AEU.OCI.emotion.estimation.EmotionSample;
 import org.AEU.emotion.engine.LenovoInit;
-import org.AEU.tinos.behavior.ICA.InitBehaviorICAKernel;
+import org.AEU.tinos.behavior.ica.InitBehaviorICAKernel;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.OCI.emotion.ortho.fhmm.EmotionMap;

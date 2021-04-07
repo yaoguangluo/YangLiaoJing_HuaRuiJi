@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.LYG.vpcs.sets.Sets;
 import OSI.OSU.LYG.vpcs.skivvy.Skivvy;
 import OSI.OSU.LYG.vpcs.vision.Pillow;

@@ -2,7 +2,7 @@ package org.PEQ.behavior.test;
 
 import java.io.IOException;
 
-import org.AEU.tinos.behavior.ICA.InitBehaviorICAKernel;
+import org.AEU.tinos.behavior.ica.InitBehaviorICAKernel;
 
 import matrixProcessor.CnnMeasure;
 

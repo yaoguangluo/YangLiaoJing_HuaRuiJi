@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
-import NLPProcessor.DETA_ANN_HMM;
+import nlpProcessor.DETA_ANN_HMM;
 public class ANNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		ANNTest ANNTest = new ANNTest();
@@ -45,11 +45,11 @@ public class ANNTest{
 		for(int j= 0; j< AnnMatrix.length; j++) {
 			if(pos.containsKey(AnnMatrix[j][0])) {
 				String string= pos.get(AnnMatrix[j][0]);
-				if(string.contains("名")
-						|| string.contains("动")
-						|| string.contains("医")
-						|| string.contains("谓")
-						|| string.contains("形")){
+				if(string.contains("鍚�")
+						|| string.contains("鍔�")
+						|| string.contains("鍖�")
+						|| string.contains("璋�")
+						|| string.contains("褰�")){
 					list.add(AnnMatrix[j]);
 				}
 			}

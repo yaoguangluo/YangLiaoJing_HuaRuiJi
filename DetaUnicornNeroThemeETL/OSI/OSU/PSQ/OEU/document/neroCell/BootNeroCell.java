@@ -10,7 +10,7 @@ import java.util.Map;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.Flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
 import OSI.OSU.SI.MCI.OEI.GUI.extOSGI.OSGI_chansfer;
 public class BootNeroCell{
