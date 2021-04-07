@@ -158,14 +158,17 @@
 
 # 养疗经 华瑞集 Github 源码备份
 
-##### Github: Main
-https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
-
-##### Gitee: Main
+##### (中国) Gitee: Main 
 https://gitee.com/DetaChina/YangLiaoJing
 
-##### Bitbucket: Main
+##### (欧美) Github: Main
+https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
+
+##### (澳洲) Bitbucket: Main 
 https://bitbucket.org/luoyaoguang/yangliaojing
+
+##### (非洲) CodingNet: Main
+https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
 统一用 Main 分支.
 
