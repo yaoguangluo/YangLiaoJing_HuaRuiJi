@@ -16,8 +16,8 @@
 ###### 2> 线上心理大数据推荐分析产业
 
 ### 软件应用功能
-###### 1> 1150 + 味药食同源进行4维学习,分析, 应用, 识别.
-###### 2> 1145 味西药急速索引推荐.
+###### 1> 1500 + 味药食同源进行4维学习,分析, 应用, 识别.
+###### 2> 1750 + 味西药急速索引推荐.
 ###### 3> 包括处方优化处理的数据ETL节点流模拟分析系统.
 ###### 4> 8100本+(无限扩充)专业书籍自适应阅读推荐.
 ###### 5> 55个医学专业的中西医学索引包括1.6亿字推荐处理.
@@ -29,7 +29,8 @@
 ###### 2> 理疗中心, 保健中心
 ###### 3> 美体护理会所茶楼
 ###### 4> 制药公司, 食品公司
-###### 5> 医院, 药店6 养老院
+###### 5> 医院, 药店
+###### 6> 养老院
 ###### 7> 按摩,休闲,餐饮中心
 ###### 8> 所有对健康感兴趣的单位
 
@@ -56,7 +57,7 @@
 ### 项目内容展示. 见工程的doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
-###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSSV800.pdf
+###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSS v11.final.pdf
 
 ##### DNA 第一卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
@@ -86,16 +87,36 @@
 
 ### 软件思想架构
 
-###### 德塔自然语言图灵系统研发作者。CN: 2019SR0530609 (中华人民共和国 国家版权局).软著登字第3951366号
-###### ETL数据流处理软件研发引擎作者。CN: 2019R11L803285 (中华人民共和国 国家版权局).软著登字第4240558号
-###### 德塔数据分析算法 Java 引擎系统 作者。CN: 2019R11L1122752 (中华人民共和国 国家版权局).软著登字第4584594号
-###### 德塔 PLSQL Socket数据库引擎研发作者。CN: 2019R11L885247 (中华人民共和国 国家版权局).软著登字第4317518号
-###### 德塔数据结构变量快速转换 作者 CN:2019R11L1293422 (中华人民共和国 国家版权局).软著登字第4607950号 
-###### 快速数据预测算法引擎系统 V1.0.0 CN: 2020R11L186818 (中华人民共和国 国家版权局).软著登字第 5447819号
-###### DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2 2020Z11L0333706 (中华人民共和国 国家版权局)
-###### DNA 元基公式 AOPM VECS IDUQ 肽展公式推导与元基编码进化计算以及它的应用发现 1.2.2 2020Z11L0356797(中华人民共和国 国家版权局) 国作登字 2021-A-00942587 
-###### DNA 元基解码 DNA催化与肽展计算 和 AOPM-TXH-VECS-IDUQ 元基解码 V013_026中文版本 2020Z11L0386462(中华人民共和国 国家版权局) 国作登字 2021-A-00942586  
-###### 德塔DNA元基催化与肽计算第二卷 2021Z11L1057159 (中华人民共和国 国家版权局)
+##### 德塔自然语言图灵系统研发作者。CN: 2019SR0530609 (中华人民共和国 国家版权局).软著登字第3951366号
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### ETL数据流处理软件研发引擎作者。CN: 2019R11L803285 (中华人民共和国 国家版权局).软著登字第4240558号
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### 德塔数据分析算法 Java 引擎系统 作者。CN: 2019R11L1122752 (中华人民共和国 国家版权局).软著登字第4584594号
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### 德塔 PLSQL Socket数据库引擎研发作者。CN: 2019R11L885247 (中华人民共和国 国家版权局).软著登字第4317518号
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### 德塔数据结构变量快速转换 作者 CN:2019R11L1293422 (中华人民共和国 国家版权局).软著登字第4607950号 
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### 快速数据预测算法引擎系统 V1.0.0 CN: 2020R11L186818 (中华人民共和国 国家版权局).软著登字第 5447819号
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf 
+##### DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2 2020Z11L0333706 (中华人民共和国 国家版权局)
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### DNA 元基公式 AOPM VECS IDUQ 肽展公式推导与元基编码进化计算以及它的应用发现 1.2.2 2020Z11L0356797(中华人民共和国 国家版权局) 国作登字 2021-A-00942587 
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### DNA 元基解码 DNA催化与肽展计算 和 AOPM-TXH-VECS-IDUQ 元基解码 V013_026中文版本 2020Z11L0386462(中华人民共和国 国家版权局) 国作登字 2021-A-00942586  
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+##### 德塔DNA元基催化与肽计算第二卷 2021Z11L1057159 (中华人民共和国 国家版权局)
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
+###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 
 ### 浏阳德塔软件开发有限公司 统一社会信用代码 91430181MA4Q3REH6K 欢迎社会各界监督.
 
@@ -105,6 +126,7 @@
 ###### 重要函数开始详细注释描述
 ###### 配置文件综合
 ###### SONAR 覆盖率测试
+###### 开始2021年研究计划布局
 
 ### 当前养疗经应用任务 （如果有开源爱好者可自行开分支，注意协议为 GPL，避免法律纠纷）
 ##### 中西医结合检验报告组件功能优化。
@@ -112,6 +134,7 @@
 ###### 检验报告值校准
 ###### 智慧化检验结果展示
 ###### 肽计算函数集成
+###### 开始2021年应用计划布局
 
 ### 感谢：
 ###### 人民教育出版社 作者的九年义务教育采用该出版社教材
