@@ -173,5 +173,4 @@ https://bitbucket.org/luoyaoguang/yangliaojing
 ##### (非洲) CodingNet: 18111分支
 https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
-统一用 Main 分支.
 最新纯净版本见分支号 18111
