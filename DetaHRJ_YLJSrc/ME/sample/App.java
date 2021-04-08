@@ -139,7 +139,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public AppConfig appConfig;
 	public Analyzer analyzer;
 	public CoAuthorForWord coAuthorForWord;
-	public Monitor m;
+	public Monitor monitor;
 	public JSlider look;
 	public Map<String, String> pos;
 	public Map<String, String> posec;
@@ -2306,11 +2306,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				this.validate();
 			}
 		}
-		// TODO Auto-generated method stub
-
 	}
 }

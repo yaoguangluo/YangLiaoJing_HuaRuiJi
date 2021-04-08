@@ -27,7 +27,7 @@ import PEU.waveProcessorYLJ.DFT;
 import SP.SoundWaveJPanel;
 public class MakeContainerZNSZ extends Thread implements Runnable{
 	public Container jpanelFourth;
-	public App u;
+	public App app;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
 	public Analyzer analyzer;
@@ -68,7 +68,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			, Map<String, String> cte) {
 		super();
 		this.jpanelFourth= jpanelFourth;
-		this.u= u2;
+		this.app= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
 		this.analyzer= analyzer;
@@ -83,16 +83,16 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			Thread.sleep(1000* 6);
 			jpanelFourth.setLayout(null);
 			jpanelFourth.setBounds(0, 0, 1446, 980);
-			u.pnga.setImage(u.pnga.getImage().getScaledInstance(500, 90, 0));
-			u.pngo.setImage(u.pngo.getImage().getScaledInstance(500, 90, 0));
-			u.pnge.setImage(u.pnge.getImage().getScaledInstance(500, 90, 0));
-			u.pngi.setImage(u.pngi.getImage().getScaledInstance(500, 90, 0));
-			u.pngu.setImage(u.pngu.getImage().getScaledInstance(500, 90, 0));
-			JLabel labela= new JLabel(u.pnga);
-			JLabel labelo= new JLabel(u.pngo);
-			JLabel labele= new JLabel(u.pnge);
-			JLabel labeli= new JLabel(u.pngi);
-			JLabel labelu= new JLabel(u.pngu);
+			app.pnga.setImage(app.pnga.getImage().getScaledInstance(500, 90, 0));
+			app.pngo.setImage(app.pngo.getImage().getScaledInstance(500, 90, 0));
+			app.pnge.setImage(app.pnge.getImage().getScaledInstance(500, 90, 0));
+			app.pngi.setImage(app.pngi.getImage().getScaledInstance(500, 90, 0));
+			app.pngu.setImage(app.pngu.getImage().getScaledInstance(500, 90, 0));
+			JLabel labela= new JLabel(app.pnga);
+			JLabel labelo= new JLabel(app.pngo);
+			JLabel labele= new JLabel(app.pnge);
+			JLabel labeli= new JLabel(app.pngi);
+			JLabel labelu= new JLabel(app.pngu);
 			
 			slider2.setSnapToTicks(true);
 			slider2.setPaintTicks(true);
@@ -346,13 +346,13 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			DFT dFt= new DFT();
 			dFt.init(1024);
 			BufferedImage imageForOutput= new BufferedImage(1400, 700, BufferedImage.TYPE_INT_RGB);
-			u.soundWaveJPanel= new SoundWaveJPanel(jpanelFourth, dFt, u.text, imageForOutput, this);
-			u.soundWaveJPanel.setVisible(true);
-			u.soundWaveJPanel.setBounds(0+ 10, 15, 1040+ 20, 640-30);
+			app.soundWaveJPanel= new SoundWaveJPanel(jpanelFourth, dFt, app.text, imageForOutput, this);
+			app.soundWaveJPanel.setVisible(true);
+			app.soundWaveJPanel.setBounds(0+ 10, 15, 1040+ 20, 640-30);
 			JButton zc= new JButton("Õý³£ÉùÎÆ"); 
 			zc.setBounds(1490, 15, 100, 50);
 			jpanelFourth.add(zc);
-			jpanelFourth.add(u.soundWaveJPanel);
+			jpanelFourth.add(app.soundWaveJPanel);
 			jpanelFourth.add(jsp_panel_sc);
 			jpanelFourth.add(jsp_panel_scm);
 			jpanelFourth.setName(tabNames.get(3));

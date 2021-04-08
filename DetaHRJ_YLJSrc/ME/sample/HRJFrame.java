@@ -85,12 +85,12 @@ public class HRJFrame{
 					//Runtime.getRuntime().exec(command);
 					//Runtime.getRuntime().exec("taskkill /IM javaw.exe /f ");
 					System.out.println("pre closing...1");
-					if(NE.m != null) {
-						NE.m.stop = 1;
+					if(NE.monitor != null) {
+						NE.monitor.stop = 1;
 					}
 					System.out.println("pre closing...2");
-					if(NE.m != null) {
-						NE.m.stop();
+					if(NE.monitor != null) {
+						NE.monitor.stop();
 					}
 					System.out.println("pre closing...3");
 					NE.stop();

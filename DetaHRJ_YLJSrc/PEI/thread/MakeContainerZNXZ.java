@@ -1,5 +1,6 @@
 package PEI.thread;
 import java.awt.Color;
+
 import java.awt.Container;
 import java.awt.FileDialog;
 import java.awt.Frame;
@@ -62,269 +63,269 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 			Thread.sleep(1000*5);
 			jpanelThird.setLayout(null);
 			jpanelThird.setBounds(0, 0, 1490, 980);	
-			u.m = new Monitor();
-			u.m.setVisible(true);
-			u.m.init();
-			u.m.sliderx = new JSlider(0,360);
-			u.m.sliderx.setSnapToTicks(true);
-			u.m.sliderx.setPaintTicks(true);
-			u.m.sliderx.setMajorTickSpacing(5);
-			u.m.sliderx.setMinorTickSpacing(1);
-			u.m.sliderx.setBackground(Color.black);
-			u.m.sliderx.setForeground(Color.white);
-			u.m.sliderx.addChangeListener( 
+			u.monitor = new Monitor();
+			u.monitor.setVisible(true);
+			u.monitor.init();
+			u.monitor.sliderx = new JSlider(0,360);
+			u.monitor.sliderx.setSnapToTicks(true);
+			u.monitor.sliderx.setPaintTicks(true);
+			u.monitor.sliderx.setMajorTickSpacing(5);
+			u.monitor.sliderx.setMinorTickSpacing(1);
+			u.monitor.sliderx.setBackground(Color.black);
+			u.monitor.sliderx.setForeground(Color.white);
+			u.monitor.sliderx.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facx = source.getValue();  
+							u.monitor.facx = source.getValue();  
 						}
 					});  
 
-			u.m.slidery = new JSlider(0,360);
-			u.m.slidery.setSnapToTicks(true);
-			u.m.slidery.setPaintTicks(true);
-			u.m.slidery.setMajorTickSpacing(5);
-			u.m.slidery.setMinorTickSpacing(1);
-			u.m.slidery.setBackground(Color.black);
-			u.m.slidery.setForeground(Color.white);
-			u.m.slidery.addChangeListener( 
+			u.monitor.slidery = new JSlider(0,360);
+			u.monitor.slidery.setSnapToTicks(true);
+			u.monitor.slidery.setPaintTicks(true);
+			u.monitor.slidery.setMajorTickSpacing(5);
+			u.monitor.slidery.setMinorTickSpacing(1);
+			u.monitor.slidery.setBackground(Color.black);
+			u.monitor.slidery.setForeground(Color.white);
+			u.monitor.slidery.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facy = source.getValue();  
+							u.monitor.facy = source.getValue();  
 						}
 					});  
 
-			u.m.sliderz = new JSlider(0,360);
-			u.m.sliderz.setSnapToTicks(true);
-			u.m.sliderz.setPaintTicks(true);
-			u.m.sliderz.setMajorTickSpacing(5);
-			u.m.sliderz.setMinorTickSpacing(1);
-			u.m.sliderz.setBackground(Color.black);
-			u.m.sliderz.setForeground(Color.white);
-			u.m.sliderz.addChangeListener( 
+			u.monitor.sliderz = new JSlider(0,360);
+			u.monitor.sliderz.setSnapToTicks(true);
+			u.monitor.sliderz.setPaintTicks(true);
+			u.monitor.sliderz.setMajorTickSpacing(5);
+			u.monitor.sliderz.setMinorTickSpacing(1);
+			u.monitor.sliderz.setBackground(Color.black);
+			u.monitor.sliderz.setForeground(Color.white);
+			u.monitor.sliderz.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facz = source.getValue(); 
+							u.monitor.facz = source.getValue(); 
 						}
 					});  
-			u.m.slidert = new JSlider(0,100);
-			u.m.slidert.setSnapToTicks(true);
-			u.m.slidert.setPaintTicks(true);
-			u.m.slidert.setMajorTickSpacing(5);
-			u.m.slidert.setMinorTickSpacing(1);
-			u.m.slidert.setBackground(Color.black);
-			u.m.slidert.setForeground(Color.white);
-			u.m.slidert.addChangeListener( 
+			u.monitor.slidert = new JSlider(0,100);
+			u.monitor.slidert.setSnapToTicks(true);
+			u.monitor.slidert.setPaintTicks(true);
+			u.monitor.slidert.setMajorTickSpacing(5);
+			u.monitor.slidert.setMinorTickSpacing(1);
+			u.monitor.slidert.setBackground(Color.black);
+			u.monitor.slidert.setForeground(Color.white);
+			u.monitor.slidert.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.fact = source.getValue();  
-							System.out.println(u.m.fact);
+							u.monitor.fact = source.getValue();  
+							System.out.println(u.monitor.fact);
 						}
 					});  
-			u.m.sliderl = new JSlider(0,360);
-			u.m.sliderl.setSnapToTicks(true);
-			u.m.sliderl.setPaintTicks(true);
-			u.m.sliderl.setMajorTickSpacing(5);
-			u.m.sliderl.setMinorTickSpacing(1);
-			u.m.sliderl.setBackground(Color.black);
-			u.m.sliderl.setForeground(Color.white);
-			u.m.sliderl.addChangeListener( 
+			u.monitor.sliderl = new JSlider(0,360);
+			u.monitor.sliderl.setSnapToTicks(true);
+			u.monitor.sliderl.setPaintTicks(true);
+			u.monitor.sliderl.setMajorTickSpacing(5);
+			u.monitor.sliderl.setMinorTickSpacing(1);
+			u.monitor.sliderl.setBackground(Color.black);
+			u.monitor.sliderl.setForeground(Color.white);
+			u.monitor.sliderl.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facl = source.getValue();  
+							u.monitor.facl = source.getValue();  
 						}
 					});  
 
-			u.m.bt00 = new DetaButton ("初始化重置",100,50, Color.red);
-			u.m.bt00.addActionListener( 
+			u.monitor.bt00 = new DetaButton ("初始化重置",100,50, Color.red);
+			u.monitor.bt00.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							u.m.isRedButton = false;
-							u.m.isGreenButton = false;
-							u.m.isBlueButton = false;
-							u.m.isStreButton = false;
-							u.m.isSblButton = false;
-							u.m.isRcaButton = false;
-							u.m.isPcaButton = false;
-							u.m.isPcfButton = false;	
-							u.m.isStop = false;	
-							u.m.recordStop = true;	
-							u.m.imageList.clear();	
-							u.m.bt01.setLabel("红色光谱关");
-							u.m.bt02.setLabel("绿色光谱关");
-							u.m.bt03.setLabel("蓝色光谱关");
-							u.m.bt10.setLabel("锐化拉伸关");
-							u.m.bt11.setLabel("纹理检测关");
-							u.m.bt12.setLabel("熵增过滤关");
-							u.m.bt13.setLabel("成份分析关");
-							u.m.bt20.setLabel("成份过滤关");
-							u.m.bt20.setLabel("暂停视屏关");
-							u.m.bt31.setLabel("开始录制流");
-							u.m.facx=7;
-							u.m.facy=100;
-							u.m.facz=0;
-							u.m.fact=0;
-							u.m.facl=3;
-							u.m.facr=0;
-							u.m.facg=0;
-							u.m.facb=0;
+							u.monitor.isRedButton = false;
+							u.monitor.isGreenButton = false;
+							u.monitor.isBlueButton = false;
+							u.monitor.isStreButton = false;
+							u.monitor.isSblButton = false;
+							u.monitor.isRcaButton = false;
+							u.monitor.isPcaButton = false;
+							u.monitor.isPcfButton = false;	
+							u.monitor.isStop = false;	
+							u.monitor.recordStop = true;	
+							u.monitor.imageList.clear();	
+							u.monitor.bt01.setLabel("红色光谱关");
+							u.monitor.bt02.setLabel("绿色光谱关");
+							u.monitor.bt03.setLabel("蓝色光谱关");
+							u.monitor.bt10.setLabel("锐化拉伸关");
+							u.monitor.bt11.setLabel("纹理检测关");
+							u.monitor.bt12.setLabel("熵增过滤关");
+							u.monitor.bt13.setLabel("成份分析关");
+							u.monitor.bt20.setLabel("成份过滤关");
+							u.monitor.bt20.setLabel("暂停视屏关");
+							u.monitor.bt31.setLabel("开始录制流");
+							u.monitor.facx=7;
+							u.monitor.facy=100;
+							u.monitor.facz=0;
+							u.monitor.fact=0;
+							u.monitor.facl=3;
+							u.monitor.facr=0;
+							u.monitor.facg=0;
+							u.monitor.facb=0;
 						}
 					});
 
-			u.m.bt01= new DetaButton ("红色光谱关",100,50, Color.red);
-			u.m.bt01.addActionListener( 
+			u.monitor.bt01= new DetaButton ("红色光谱关",100,50, Color.red);
+			u.monitor.bt01.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isRedButton==false) {
-								u.m.isRedButton=true;
-								u.m.bt01.setLabel("红色光谱开");
+							if(u.monitor.isRedButton==false) {
+								u.monitor.isRedButton=true;
+								u.monitor.bt01.setLabel("红色光谱开");
 							}else {
-								u.m.isRedButton=false;
-								u.m.bt01.setLabel("红色光谱关");
+								u.monitor.isRedButton=false;
+								u.monitor.bt01.setLabel("红色光谱关");
 							}
 						}
 					});
 
-			u.m.bt02= new DetaButton ("绿色光谱关",100,50, Color.green);
-			u.m.bt02.addActionListener( 
+			u.monitor.bt02= new DetaButton ("绿色光谱关",100,50, Color.green);
+			u.monitor.bt02.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isGreenButton==false) {
-								u.m.isGreenButton=true;
-								u.m.bt02.setLabel("绿色光谱开");
+							if(u.monitor.isGreenButton==false) {
+								u.monitor.isGreenButton=true;
+								u.monitor.bt02.setLabel("绿色光谱开");
 							}else {
-								u.m.isGreenButton=false;
-								u.m.bt02.setLabel("绿色光谱关");
+								u.monitor.isGreenButton=false;
+								u.monitor.bt02.setLabel("绿色光谱关");
 							}
 						}
 					});
 
-			u.m.bt03= new DetaButton ("蓝色光谱关",100,50, Color.blue);
-			u.m.bt03.addActionListener( 
+			u.monitor.bt03= new DetaButton ("蓝色光谱关",100,50, Color.blue);
+			u.monitor.bt03.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isBlueButton==false) {
-								u.m.isBlueButton=true;
-								u.m.bt03.setLabel("蓝色光谱开");
+							if(u.monitor.isBlueButton==false) {
+								u.monitor.isBlueButton=true;
+								u.monitor.bt03.setLabel("蓝色光谱开");
 							}else {
-								u.m.isBlueButton=false;
-								u.m.bt03.setLabel("蓝色光谱关");
+								u.monitor.isBlueButton=false;
+								u.monitor.bt03.setLabel("蓝色光谱关");
 							}
 						}
 					});
 
-			u.m.bt10= new DetaButton ("锐化拉伸关",100,50, Color.magenta);
-			u.m.bt10.addActionListener( 
+			u.monitor.bt10= new DetaButton ("锐化拉伸关",100,50, Color.magenta);
+			u.monitor.bt10.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isStreButton== false) {
-								u.m.isStreButton= true;
-								u.m.bt10.setLabel("锐化拉伸开");
+							if(u.monitor.isStreButton== false) {
+								u.monitor.isStreButton= true;
+								u.monitor.bt10.setLabel("锐化拉伸开");
 							}else {
-								u.m.isStreButton= false;
-								u.m.bt10.setLabel("锐化拉伸关");
+								u.monitor.isStreButton= false;
+								u.monitor.bt10.setLabel("锐化拉伸关");
 							}
 						}
 					});
 
-			u.m.bt11= new DetaButton("纹理检测关", 100, 50, Color.pink);
-			u.m.bt11.addActionListener( 
+			u.monitor.bt11= new DetaButton("纹理检测关", 100, 50, Color.pink);
+			u.monitor.bt11.addActionListener( 
 					new ActionListener(){    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isSblButton== false){
-								u.m.isSblButton= true;
-								u.m.bt11.setLabel("纹理检测开");
+							if(u.monitor.isSblButton== false){
+								u.monitor.isSblButton= true;
+								u.monitor.bt11.setLabel("纹理检测开");
 							}else {
-								u.m.isSblButton= false;
-								u.m.bt11.setLabel("纹理检测关");
+								u.monitor.isSblButton= false;
+								u.monitor.bt11.setLabel("纹理检测关");
 							}
 						}
 					});
 
-			u.m.bt12= new DetaButton ("熵增过滤关",100,50, Color.pink);
-			u.m.bt12.addActionListener( 
+			u.monitor.bt12= new DetaButton ("熵增过滤关",100,50, Color.pink);
+			u.monitor.bt12.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isRcaButton==false) {
-								u.m.isRcaButton=true;
-								u.m.bt12.setLabel("熵增过滤开");
+							if(u.monitor.isRcaButton==false) {
+								u.monitor.isRcaButton=true;
+								u.monitor.bt12.setLabel("熵增过滤开");
 							}else {
-								u.m.isRcaButton=false;
-								u.m.bt12.setLabel("熵增过滤关");
+								u.monitor.isRcaButton=false;
+								u.monitor.bt12.setLabel("熵增过滤关");
 							}
 						}
 					});
 
-			u.m.bt13= new DetaButton ("成份分析关",100,50, Color.pink);
-			u.m.bt13.addActionListener( 
+			u.monitor.bt13= new DetaButton ("成份分析关",100,50, Color.pink);
+			u.monitor.bt13.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isPcaButton==false) {
-								u.m.isPcaButton=true;
-								u.m.bt13.setLabel("成份分析开");
+							if(u.monitor.isPcaButton==false) {
+								u.monitor.isPcaButton=true;
+								u.monitor.bt13.setLabel("成份分析开");
 							}else {
-								u.m.isPcaButton=false;
-								u.m.bt13.setLabel("成份分析关");
+								u.monitor.isPcaButton=false;
+								u.monitor.bt13.setLabel("成份分析关");
 							}
 						}
 					});
 
-			u.m.bt20= new DetaButton ("成份过滤关",100,50, Color.pink);
-			u.m.bt20.addActionListener( 
+			u.monitor.bt20= new DetaButton ("成份过滤关",100,50, Color.pink);
+			u.monitor.bt20.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isPcfButton==false) {
-								u.m.isPcfButton=true;
-								u.m.bt20.setLabel("成份过滤开");
+							if(u.monitor.isPcfButton==false) {
+								u.monitor.isPcfButton=true;
+								u.monitor.bt20.setLabel("成份过滤开");
 							}else {
-								u.m.isPcfButton=false;
-								u.m.bt20.setLabel("成份过滤关");
+								u.monitor.isPcfButton=false;
+								u.monitor.bt20.setLabel("成份过滤关");
 							}
 						}
 					});
 
-			u.m.bt21= new DetaButton ("动态裁剪面",100,50, Color.pink);
-			u.m.bt21.addActionListener( 
+			u.monitor.bt21= new DetaButton ("动态裁剪面",100,50, Color.pink);
+			u.monitor.bt21.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt22= new DetaButton ("暂停视屏关",100,50, Color.pink);
-			u.m.bt22.addActionListener(
+			u.monitor.bt22= new DetaButton ("暂停视屏关",100,50, Color.pink);
+			u.monitor.bt22.addActionListener(
 					new ActionListener(){
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isStop == false) {
-								u.m.isStop = true;
-								u.m.bt22.setLabel("暂停视屏开");
+							if(u.monitor.isStop == false) {
+								u.monitor.isStop = true;
+								u.monitor.bt22.setLabel("暂停视屏开");
 							}else {
-								u.m.isStop = false;
-								u.m.bt22.setLabel("暂停视屏关");
+								u.monitor.isStop = false;
+								u.monitor.bt22.setLabel("暂停视屏关");
 							}
 						}
 					});
 
-			u.m.bt23= new DetaButton ("保存该图片",100,50, Color.pink);
-			u.m.bt23.addActionListener( 
+			u.monitor.bt23= new DetaButton ("保存该图片",100,50, Color.pink);
+			u.monitor.bt23.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							//获取图片
 							//弹出保存框
-							if(null== u.m.imageForOutput) {
+							if(null== u.monitor.imageForOutput) {
 								return;
 							}
 							//get path
@@ -335,10 +336,10 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 							System.out.println(filepath);
 							try {
 								File outputBin = new File(filepath+ ".png");
-								if(null== u.m.imageForOutput) {
+								if(null== u.monitor.imageForOutput) {
 									return;
 								}
-								ImageIO.write(u.m.imageForOutput, "png", outputBin);	
+								ImageIO.write(u.monitor.imageForOutput, "png", outputBin);	
 							} catch (IOException writePngError) {
 								System.out.println(filepath);
 							}	
@@ -346,33 +347,33 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 						}
 					});
 
-			u.m.bt30= new DetaButton ("录制配置项",100,50, Color.pink);
-			u.m.bt30.addActionListener( 
+			u.monitor.bt30= new DetaButton ("录制配置项",100,50, Color.pink);
+			u.monitor.bt30.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt31= new DetaButton ("开始录制流",100,50, Color.pink);
-			u.m.bt31.addActionListener( 
+			u.monitor.bt31= new DetaButton ("开始录制流",100,50, Color.pink);
+			u.monitor.bt31.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.recordStop == true) {
-								u.m.recordStop = false;
-								u.m.bt31.setLabel("暂停录制流");
+							if(u.monitor.recordStop == true) {
+								u.monitor.recordStop = false;
+								u.monitor.bt31.setLabel("暂停录制流");
 							}else {
-								u.m.recordStop = true;
-								u.m.bt31.setLabel("开始录制流");
+								u.monitor.recordStop = true;
+								u.monitor.bt31.setLabel("开始录制流");
 							}
 						}
 					});
 
-			u.m.bt32 = new DetaButton ("保存视屏流",100,50, Color.pink);
-			u.m.bt32.addActionListener( 
+			u.monitor.bt32 = new DetaButton ("保存视屏流",100,50, Color.pink);
+			u.monitor.bt32.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
-							if(u.m.imageList.size()<= 0|| !u.m.recordStop) {
+							if(u.monitor.imageList.size()<= 0|| !u.monitor.recordStop) {
 								return;
 							}
 							FileDialog filedialog= new FileDialog(new Frame(), "导入到这里", FileDialog.LOAD);
@@ -381,7 +382,7 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 							String filepath= filedialog.getDirectory() + filedialog.getFile();
 							System.out.println(filepath);
 							File outputBin= new File(filepath+ ".lyg");
-							Iterator<int[][]> iterator= u.m.imageList.iterator();
+							Iterator<int[][]> iterator= u.monitor.imageList.iterator();
 							try {
 								FileOutputStream wr= new FileOutputStream(outputBin);
 								//写头， 宽，长
@@ -389,7 +390,7 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 									int[][] bufferedImage= iterator.next(); 
 									int width= bufferedImage.length;
 									int height= bufferedImage[0].length;
-									int flips= u.m.imageList.size();
+									int flips= u.monitor.imageList.size();
 									byte[] flipBytes= new byte[height* width* 4];
 									
 									byte[] widthBytes= new byte[4];
@@ -444,7 +445,7 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 									}
 								}
 								wr.close();
-								u.m.imageList.clear();
+								u.monitor.imageList.clear();
 							} catch (FileNotFoundException e1) {
 								e1.printStackTrace();
 							} catch (IOException e1) {
@@ -453,8 +454,8 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 						}
 					});
 
-			u.m.bt33= new DetaButton ("读取录制流",100,50, Color.pink);
-			u.m.bt33.addActionListener( 
+			u.monitor.bt33= new DetaButton ("读取录制流",100,50, Color.pink);
+			u.monitor.bt33.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							FileDialog filedialog= new FileDialog(new Frame(), "读取lyg 视频文件", FileDialog.LOAD);
@@ -551,335 +552,335 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 
 					});
 
-			u.m.bt43 = new DetaButton ("高斯谱分析",100,50, Color.pink);
-			u.m.bt43.addActionListener( 
+			u.monitor.bt43 = new DetaButton ("高斯谱分析",100,50, Color.pink);
+			u.monitor.bt43.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt43Stop== false) {
-								u.m.isbt43Stop= true;
-								u.m.bt43.setLabel("高斯谱开启");
+							if(u.monitor.isbt43Stop== false) {
+								u.monitor.isbt43Stop= true;
+								u.monitor.bt43.setLabel("高斯谱开启");
 							}else {
-								u.m.isbt43Stop= false;
-								u.m.bt43.setLabel("高斯谱关闭");
+								u.monitor.isbt43Stop= false;
+								u.monitor.bt43.setLabel("高斯谱关闭");
 							}
 						}
 					});
 
-			u.m.bt42= new DetaButton ("巴特沃斯流",100,50, Color.pink);
-			u.m.bt42.addActionListener( 
+			u.monitor.bt42= new DetaButton ("巴特沃斯流",100,50, Color.pink);
+			u.monitor.bt42.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt41= new DetaButton ("拉普拉斯流",100,50, Color.pink);
-			u.m.bt41.addActionListener( 
+			u.monitor.bt41= new DetaButton ("拉普拉斯流",100,50, Color.pink);
+			u.monitor.bt41.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt41Stop== false) {
-								u.m.isbt41Stop= true;
-								u.m.bt41.setLabel("拉普拉斯开");
+							if(u.monitor.isbt41Stop== false) {
+								u.monitor.isbt41Stop= true;
+								u.monitor.bt41.setLabel("拉普拉斯开");
 							}else {
-								u.m.isbt41Stop= false;
-								u.m.bt41.setLabel("拉普拉斯关");
+								u.monitor.isbt41Stop= false;
+								u.monitor.bt41.setLabel("拉普拉斯关");
 							}
 						}
 					});
 
-			u.m.bt40= new DetaButton ("线性傅里叶",100,50, Color.pink);
-			u.m.bt40.addActionListener( 
+			u.monitor.bt40= new DetaButton ("线性傅里叶",100,50, Color.pink);
+			u.monitor.bt40.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt50= new DetaButton ("欧基里德流",100,50, Color.pink);
-			u.m.bt50.addActionListener( 
+			u.monitor.bt50= new DetaButton ("欧基里德流",100,50, Color.pink);
+			u.monitor.bt50.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt51= new DetaButton ("皮脂层透显",100,50, Color.pink);
-			u.m.bt51.addActionListener( 
+			u.monitor.bt51= new DetaButton ("皮脂层透显",100,50, Color.pink);
+			u.monitor.bt51.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt52= new DetaButton ("肝像色处理",100,50, Color.pink);
-			u.m.bt52.addActionListener( 
+			u.monitor.bt52= new DetaButton ("肝像色处理",100,50, Color.pink);
+			u.monitor.bt52.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt52Stop== false) {
-								u.m.isbt52Stop= true;
-								u.m.bt52.setLabel("肝相视屏开");
-								u.m.facr=130;
-								u.m.facg=110;
-								u.m.facb=160;
+							if(u.monitor.isbt52Stop== false) {
+								u.monitor.isbt52Stop= true;
+								u.monitor.bt52.setLabel("肝相视屏开");
+								u.monitor.facr=130;
+								u.monitor.facg=110;
+								u.monitor.facb=160;
 							}else {
-								u.m.isbt52Stop= false;
-								u.m.bt52.setLabel("肝相视屏关");
-								u.m.facr=0;
-								u.m.facg=0;
-								u.m.facb=0;
+								u.monitor.isbt52Stop= false;
+								u.monitor.bt52.setLabel("肝相视屏关");
+								u.monitor.facr=0;
+								u.monitor.facg=0;
+								u.monitor.facb=0;
 							}
 						}
 					});
 
-			u.m.bt53= new DetaButton ("心相视屏关",100,50, Color.pink);
-			u.m.bt53.addActionListener( 
+			u.monitor.bt53= new DetaButton ("心相视屏关",100,50, Color.pink);
+			u.monitor.bt53.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt53Stop== false) {
-								u.m.isbt53Stop= true;
-								u.m.bt53.setLabel("心相视屏开");
+							if(u.monitor.isbt53Stop== false) {
+								u.monitor.isbt53Stop= true;
+								u.monitor.bt53.setLabel("心相视屏开");
 							}else {
-								u.m.isbt53Stop= false;
-								u.m.bt53.setLabel("心相视屏关");
+								u.monitor.isbt53Stop= false;
+								u.monitor.bt53.setLabel("心相视屏关");
 							}
 						}
 					});
 
-			u.m.bt60 = new DetaButton ("肾相色处理",100,50, Color.pink);
-			u.m.bt60.addActionListener( 
+			u.monitor.bt60 = new DetaButton ("肾相色处理",100,50, Color.pink);
+			u.monitor.bt60.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt60Stop== false) {
-								u.m.isbt60Stop= true;
-								u.m.bt60.setLabel("肾相视屏开");
-								u.m.facr=146;
-								u.m.facg=126;
-								u.m.facb=126;
+							if(u.monitor.isbt60Stop== false) {
+								u.monitor.isbt60Stop= true;
+								u.monitor.bt60.setLabel("肾相视屏开");
+								u.monitor.facr=146;
+								u.monitor.facg=126;
+								u.monitor.facb=126;
 							}else {
-								u.m.isbt60Stop= false;
-								u.m.bt60.setLabel("肾相视屏关");
-								u.m.facr=0;
-								u.m.facg=0;
-								u.m.facb=0;
+								u.monitor.isbt60Stop= false;
+								u.monitor.bt60.setLabel("肾相视屏关");
+								u.monitor.facr=0;
+								u.monitor.facg=0;
+								u.monitor.facb=0;
 							}
 						}
 					});
 
-			u.m.bt61 = new DetaButton ("伤口炎症状",100,50, Color.pink);
-			u.m.bt61.addActionListener( 
+			u.monitor.bt61 = new DetaButton ("伤口炎症状",100,50, Color.pink);
+			u.monitor.bt61.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
 
-			u.m.bt1 = new DetaButton ("催化成份",100,50, Color.pink);
-			u.m.bt1.addActionListener( 
+			u.monitor.bt1 = new DetaButton ("催化成份",100,50, Color.pink);
+			u.monitor.bt1.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt62 = new DetaButton ("因博思关闭",100,50, Color.pink);
-			u.m.bt62.addActionListener( 
+			u.monitor.bt62 = new DetaButton ("因博思关闭",100,50, Color.pink);
+			u.monitor.bt62.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt62Stop== false) {
-								u.m.isbt62Stop= true;
-								u.m.bt62.setLabel("因博思开启");
+							if(u.monitor.isbt62Stop== false) {
+								u.monitor.isbt62Stop= true;
+								u.monitor.bt62.setLabel("因博思开启");
 							}else {
-								u.m.isbt62Stop= false;
-								u.m.bt62.setLabel("因博思关闭");
+								u.monitor.isbt62Stop= false;
+								u.monitor.bt62.setLabel("因博思关闭");
 							}
 						}
 					});
 
-			u.m.bt63 = new DetaButton ("鼻相色分析",100,50, Color.pink);
-			u.m.bt63.addActionListener( 
+			u.monitor.bt63 = new DetaButton ("鼻相色分析",100,50, Color.pink);
+			u.monitor.bt63.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt70 = new DetaButton ("眼相色分析",100,50, Color.pink);
-			u.m.bt70.addActionListener( 
+			u.monitor.bt70 = new DetaButton ("眼相色分析",100,50, Color.pink);
+			u.monitor.bt70.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt71 = new DetaButton ("耳相色分析",100,50, Color.pink);
-			u.m.bt71.addActionListener( 
+			u.monitor.bt71 = new DetaButton ("耳相色分析",100,50, Color.pink);
+			u.monitor.bt71.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
 
-			u.m.bt72 = new DetaButton ("唇相色分析",100,50, Color.pink);
-			u.m.bt72.addActionListener( 
+			u.monitor.bt72 = new DetaButton ("唇相色分析",100,50, Color.pink);
+			u.monitor.bt72.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt73= new DetaButton ("白舌相色关",100,50, Color.white);
-			u.m.bt73.addActionListener( 
+			u.monitor.bt73= new DetaButton ("白舌相色关",100,50, Color.white);
+			u.monitor.bt73.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt73Stop== false) {
-								u.m.isbt73Stop= true;
-								u.m.bt73.setLabel("白舌相色开");
-								u.m.facr=145;
-								u.m.facg=115;
-								u.m.facb=95;
+							if(u.monitor.isbt73Stop== false) {
+								u.monitor.isbt73Stop= true;
+								u.monitor.bt73.setLabel("白舌相色开");
+								u.monitor.facr=145;
+								u.monitor.facg=115;
+								u.monitor.facb=95;
 							}else {
-								u.m.isbt73Stop= false;
-								u.m.bt73.setLabel("白舌相色关");
-								u.m.facr=0;
-								u.m.facg=0;
-								u.m.facb=0;
+								u.monitor.isbt73Stop= false;
+								u.monitor.bt73.setLabel("白舌相色关");
+								u.monitor.facr=0;
+								u.monitor.facg=0;
+								u.monitor.facb=0;
 							}
 						}
 					});
 
-			u.m.bt80 = new DetaButton("青舌相色关",100,50, Color.blue);
-			u.m.bt80.addActionListener( 
+			u.monitor.bt80 = new DetaButton("青舌相色关",100,50, Color.blue);
+			u.monitor.bt80.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt80Stop== false) {
-								u.m.isbt80Stop= true;
-								u.m.bt80.setLabel("青舌相色开");
-								u.m.facr=205;
-								u.m.facg=125;
-								u.m.facb=140;
+							if(u.monitor.isbt80Stop== false) {
+								u.monitor.isbt80Stop= true;
+								u.monitor.bt80.setLabel("青舌相色开");
+								u.monitor.facr=205;
+								u.monitor.facg=125;
+								u.monitor.facb=140;
 							}else {
-								u.m.isbt80Stop= false;
-								u.m.bt80.setLabel("青舌相色关");
-								u.m.facr=0;
-								u.m.facg=0;
-								u.m.facb=0;
+								u.monitor.isbt80Stop= false;
+								u.monitor.bt80.setLabel("青舌相色关");
+								u.monitor.facr=0;
+								u.monitor.facg=0;
+								u.monitor.facb=0;
 							}
 						}
 					});
 			
-			u.m.bt81 = new DetaButton ("紫舌相色关",100,50, Color.magenta);
-			u.m.bt81.addActionListener( 
+			u.monitor.bt81 = new DetaButton ("紫舌相色关",100,50, Color.magenta);
+			u.monitor.bt81.addActionListener( 
 					new ActionListener()  {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt81Stop== false) {
-								u.m.isbt81Stop= true;
-								u.m.bt81.setLabel("紫舌相色开");
-								u.m.facr=140;
-								u.m.facg=200;
-								u.m.facb=135;
+							if(u.monitor.isbt81Stop== false) {
+								u.monitor.isbt81Stop= true;
+								u.monitor.bt81.setLabel("紫舌相色开");
+								u.monitor.facr=140;
+								u.monitor.facg=200;
+								u.monitor.facb=135;
 							}else {
-								u.m.isbt81Stop= false;
-								u.m.bt81.setLabel("紫舌相色关");
-								u.m.facr=0;
-								u.m.facg=0;
-								u.m.facb=0;
+								u.monitor.isbt81Stop= false;
+								u.monitor.bt81.setLabel("紫舌相色关");
+								u.monitor.facr=0;
+								u.monitor.facg=0;
+								u.monitor.facb=0;
 							}
 						}
 					});
 			
 			
-			u.m.bt82= new DetaButton ("黄舌相色关",100,50, Color.yellow);
-			u.m.bt82.addActionListener( 
+			u.monitor.bt82= new DetaButton ("黄舌相色关",100,50, Color.yellow);
+			u.monitor.bt82.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt82Stop== false) {
-								u.m.isbt82Stop= true;
-								u.m.bt82.setLabel("黄舌相色开");
-								u.m.facr= 160;
-								u.m.facg= 110;
-								u.m.facb= 160;
+							if(u.monitor.isbt82Stop== false) {
+								u.monitor.isbt82Stop= true;
+								u.monitor.bt82.setLabel("黄舌相色开");
+								u.monitor.facr= 160;
+								u.monitor.facg= 110;
+								u.monitor.facb= 160;
 							}else {
-								u.m.isbt82Stop= false;
-								u.m.bt82.setLabel("黄舌相色关");
-								u.m.facr= 0;
-								u.m.facg= 0;
-								u.m.facb= 0;
+								u.monitor.isbt82Stop= false;
+								u.monitor.bt82.setLabel("黄舌相色关");
+								u.monitor.facr= 0;
+								u.monitor.facg= 0;
+								u.monitor.facb= 0;
 							}
 						}
 					});
 			
-			u.m.bt83= new DetaButton ("红舌相色关",100,50, Color.red);
-			u.m.bt83.addActionListener( 
+			u.monitor.bt83= new DetaButton ("红舌相色关",100,50, Color.red);
+			u.monitor.bt83.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt83Stop== false) {
-								u.m.isbt83Stop= true;
-								u.m.bt83.setLabel("红舌相色开");
-								u.m.facr= 100;
-								u.m.facg= 125;
-								u.m.facb= 135;
+							if(u.monitor.isbt83Stop== false) {
+								u.monitor.isbt83Stop= true;
+								u.monitor.bt83.setLabel("红舌相色开");
+								u.monitor.facr= 100;
+								u.monitor.facg= 125;
+								u.monitor.facb= 135;
 							}else {
-								u.m.isbt83Stop= false;
-								u.m.bt83.setLabel("红舌相色关");
-								u.m.facr= 0;
-								u.m.facg= 0;
-								u.m.facb= 0;
+								u.monitor.isbt83Stop= false;
+								u.monitor.bt83.setLabel("红舌相色关");
+								u.monitor.facr= 0;
+								u.monitor.facg= 0;
+								u.monitor.facb= 0;
 							}
 						}
 					});
 
-			u.m.bt84= new DetaButton ("上传视频项",100,50, Color.pink);
-			u.m.bt84.addActionListener( 
+			u.monitor.bt84= new DetaButton ("上传视频项",100,50, Color.pink);
+			u.monitor.bt84.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt85= new DetaButton ("上传声频项",100,50, Color.pink);
-			u.m.bt85.addActionListener( 
+			u.monitor.bt85= new DetaButton ("上传声频项",100,50, Color.pink);
+			u.monitor.bt85.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt86= new DetaButton ("上传图片项",100,50, Color.pink);
-			u.m.bt86.addActionListener( 
+			u.monitor.bt86= new DetaButton ("上传图片项",100,50, Color.pink);
+			u.monitor.bt86.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt87= new DetaButton ("上传文档项",100,50, Color.pink);
-			u.m.bt87.addActionListener( 
+			u.monitor.bt87= new DetaButton ("上传文档项",100,50, Color.pink);
+			u.monitor.bt87.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt88= new DetaButton ("识别眼睛关",100,50, Color.pink);
-			u.m.bt88.addActionListener( 
+			u.monitor.bt88= new DetaButton ("识别眼睛关",100,50, Color.pink);
+			u.monitor.bt88.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt88Stop== false) {
-								u.m.isbt88Stop= true;
-								u.m.bt88.setLabel("识别眼睛开");
+							if(u.monitor.isbt88Stop== false) {
+								u.monitor.isbt88Stop= true;
+								u.monitor.bt88.setLabel("识别眼睛开");
 							}else {
-								u.m.isbt88Stop= false;
-								u.m.bt88.setLabel("识别眼睛关");
+								u.monitor.isbt88Stop= false;
+								u.monitor.bt88.setLabel("识别眼睛关");
 							}
 						}
 					});
 			
-			u.m.bt89= new DetaButton ("识别鼻子关",100,50, Color.pink);
-			u.m.bt89.addActionListener( 
+			u.monitor.bt89= new DetaButton ("识别鼻子关",100,50, Color.pink);
+			u.monitor.bt89.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
@@ -887,30 +888,30 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 					});
 			
 			
-			u.m.bt90= new DetaButton ("识别五官关",100,50, Color.pink);
-			u.m.bt90.addActionListener( 
+			u.monitor.bt90= new DetaButton ("识别五官关",100,50, Color.pink);
+			u.monitor.bt90.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt91= new DetaButton ("识别嘴巴关",100,50, Color.pink);
-			u.m.bt91.addActionListener( 
+			u.monitor.bt91= new DetaButton ("识别嘴巴关",100,50, Color.pink);
+			u.monitor.bt91.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt111= new DetaButton("导入图片关",100,50, Color.pink);
-			u.m.bt111.addActionListener( 
+			u.monitor.bt111= new DetaButton("导入图片关",100,50, Color.pink);
+			u.monitor.bt111.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isStop == false) {
-								u.m.isStop = true;
-								u.m.bt111.setLabel("导入图片开");
+							if(u.monitor.isStop == false) {
+								u.monitor.isStop = true;
+								u.monitor.bt111.setLabel("导入图片开");
 								FileDialog filedialog= new FileDialog(new Frame(), "打开图片文件", FileDialog.LOAD);
 								filedialog.setFilenameFilter(new TXTFilter("jpg"));
 								filedialog.setVisible(true);
@@ -919,18 +920,18 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 								File inputBin= new File(filepath);
 								try {
 									u.tempBufferedImage= ImageIO.read(inputBin);
-//									Image img= image.getScaledInstance(u.m.imageForOutput.getWidth()
-//											, u.m.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
-//									u.m.imageForOutput.getGraphics().drawImage(img, 0, 0, null);
-//									u.m.getGraphics().drawImage(img, 0, 0, 900, 680, u.m);// 绘出图形文件
+//									Image img= image.getScaledInstance(u.monitor.imageForOutput.getWidth()
+//											, u.monitor.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
+//									u.monitor.imageForOutput.getGraphics().drawImage(img, 0, 0, null);
+//									u.monitor.getGraphics().drawImage(img, 0, 0, 900, 680, u.monitor);// 绘出图形文件
 									if(null== u.tempBufferedImage) {
 										return;
 									}
-									u.m.stopBufferedImage= u.tempBufferedImage;
-									u.m.img= u.m.stopBufferedImage.getScaledInstance(u.m.imageForOutput.getWidth()
-												, u.m.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
-									u.m.imageForOutput.getGraphics().drawImage(u.m.img, 0, 0, null);	
-									u.m.getGraphics().drawImage(u.m.img, 0, 0, 900, 680, u.m);// 绘出图形文件
+									u.monitor.stopBufferedImage= u.tempBufferedImage;
+									u.monitor.img= u.monitor.stopBufferedImage.getScaledInstance(u.monitor.imageForOutput.getWidth()
+												, u.monitor.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
+									u.monitor.imageForOutput.getGraphics().drawImage(u.monitor.img, 0, 0, null);	
+									u.monitor.getGraphics().drawImage(u.monitor.img, 0, 0, 900, 680, u.monitor);// 绘出图形文件
 								} catch (IOException e1) {
 									// TODO Auto-generated catch block
 									e1.printStackTrace();
@@ -938,106 +939,106 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 								//imge format
 								//leftPanel.img= image.getScaledInstance(605, 365, java.awt.Image.SCALE_SMOOTH);
 							}else {
-								u.m.isStop = false;
-								u.m.bt111.setLabel("导入图片关");
+								u.monitor.isStop = false;
+								u.monitor.bt111.setLabel("导入图片关");
 							}	
 						}
 					});
-			u.m.bt112= new DetaButton ("图搜索焦点", 100,50, Color.pink);
-			u.m.bt112.addActionListener( 
+			u.monitor.bt112= new DetaButton ("图搜索焦点", 100,50, Color.pink);
+			u.monitor.bt112.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isStop== false) {
-								u.m.isStop= true;
-								u.m.bt22.setLabel("导入图片开");
+							if(u.monitor.isStop== false) {
+								u.monitor.isStop= true;
+								u.monitor.bt22.setLabel("导入图片开");
 								if(null== u.tempBufferedImage) {
 									return;
 								}
-								u.m.stopBufferedImage= u.tempBufferedImage;
-								u.m.img= u.m.stopBufferedImage.getScaledInstance(u.m.imageForOutput.getWidth()
-											, u.m.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
-								u.m.imageForOutput.getGraphics().drawImage(u.m.img, 0, 0, null);	
-								u.m.getGraphics().drawImage(u.m.img, 0, 0, 900, 680, u.m);// 绘出图形文件
+								u.monitor.stopBufferedImage= u.tempBufferedImage;
+								u.monitor.img= u.monitor.stopBufferedImage.getScaledInstance(u.monitor.imageForOutput.getWidth()
+											, u.monitor.imageForOutput.getHeight(), java.awt.Image.SCALE_SMOOTH);
+								u.monitor.imageForOutput.getGraphics().drawImage(u.monitor.img, 0, 0, null);	
+								u.monitor.getGraphics().drawImage(u.monitor.img, 0, 0, 900, 680, u.monitor);// 绘出图形文件
 							}else {
-								u.m.isStop = false;
-								u.m.bt22.setLabel("导入图片关");
+								u.monitor.isStop = false;
+								u.monitor.bt22.setLabel("导入图片关");
 							}	
 						}
 					});
-			u.m.bt113= new DetaButton ("索贝尔关闭",100,50, Color.pink);
-			u.m.bt113.addActionListener( 
+			u.monitor.bt113= new DetaButton ("索贝尔关闭",100,50, Color.pink);
+			u.monitor.bt113.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt113Stop== false) {
-								u.m.isbt113Stop= true;
-								u.m.bt113.setLabel("索贝尔开启");
+							if(u.monitor.isbt113Stop== false) {
+								u.monitor.isbt113Stop= true;
+								u.monitor.bt113.setLabel("索贝尔开启");
 							}else {
-								u.m.isbt113Stop= false;
-								u.m.bt113.setLabel("索贝尔关闭");
+								u.monitor.isbt113Stop= false;
+								u.monitor.bt113.setLabel("索贝尔关闭");
 							}
 						}
 					});
-			u.m.bt114= new DetaButton ("肽特征关闭",100,50, Color.pink);
-			u.m.bt114.addActionListener( 
+			u.monitor.bt114= new DetaButton ("肽特征关闭",100,50, Color.pink);
+			u.monitor.bt114.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt114Stop== false) {
-								u.m.isbt114Stop= true;
-								u.m.bt114.setLabel("肽特征开启");
+							if(u.monitor.isbt114Stop== false) {
+								u.monitor.isbt114Stop= true;
+								u.monitor.bt114.setLabel("肽特征开启");
 							}else {
-								u.m.isbt114Stop= false;
-								u.m.bt114.setLabel("肽特征关闭");
+								u.monitor.isbt114Stop= false;
+								u.monitor.bt114.setLabel("肽特征关闭");
 							}
 						}
 					});
 			
-			u.m.bt121= new DetaButton ("肽腐蚀关闭",100,50, Color.pink);
-			u.m.bt121.addActionListener( 
+			u.monitor.bt121= new DetaButton ("肽腐蚀关闭",100,50, Color.pink);
+			u.monitor.bt121.addActionListener( 
 					new ActionListener() { 
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt121Stop== false) {
-								u.m.isbt121Stop= true;
-								u.m.bt121.setLabel("肽腐蚀开启");
+							if(u.monitor.isbt121Stop== false) {
+								u.monitor.isbt121Stop= true;
+								u.monitor.bt121.setLabel("肽腐蚀开启");
 							}else {
-								u.m.isbt121Stop= false;
-								u.m.bt121.setLabel("肽腐蚀关闭");
+								u.monitor.isbt121Stop= false;
+								u.monitor.bt121.setLabel("肽腐蚀关闭");
 							}
 						}
 					});
-			u.m.bt122= new DetaButton ("肽催化关闭",100,50, Color.pink);
-			u.m.bt122.addActionListener( 
+			u.monitor.bt122= new DetaButton ("肽催化关闭",100,50, Color.pink);
+			u.monitor.bt122.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt122Stop== false) {
-								u.m.isbt122Stop= true;
-								u.m.bt122.setLabel("肽催化开启");
+							if(u.monitor.isbt122Stop== false) {
+								u.monitor.isbt122Stop= true;
+								u.monitor.bt122.setLabel("肽催化开启");
 							}else {
-								u.m.isbt122Stop= false;
-								u.m.bt122.setLabel("肽催化关闭");
+								u.monitor.isbt122Stop= false;
+								u.monitor.bt122.setLabel("肽催化关闭");
 							}
 						}
 					});
-			u.m.bt123= new DetaButton ("肽丝化关闭",100,50, Color.pink);
-			u.m.bt123.addActionListener( 
+			u.monitor.bt123= new DetaButton ("肽丝化关闭",100,50, Color.pink);
+			u.monitor.bt123.addActionListener( 
 					new ActionListener() {    
 						@SuppressWarnings("deprecation")
 						public void actionPerformed(ActionEvent e){
-							if(u.m.isbt123Stop== false) {
-								u.m.isbt123Stop= true;
-								u.m.bt123.setLabel("肽丝化开启");
+							if(u.monitor.isbt123Stop== false) {
+								u.monitor.isbt123Stop= true;
+								u.monitor.bt123.setLabel("肽丝化开启");
 							}else {
-								u.m.isbt123Stop= false;
-								u.m.bt123.setLabel("肽丝化关闭");
+								u.monitor.isbt123Stop= false;
+								u.monitor.bt123.setLabel("肽丝化关闭");
 							}
 						}
 					});
-			u.m.bt124= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt124.addActionListener( 
+			u.monitor.bt124= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt124.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
@@ -1045,96 +1046,96 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 					});
 			
 			
-			u.m.bt131= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt131.addActionListener( 
+			u.monitor.bt131= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt131.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt132= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt132.addActionListener( 
+			u.monitor.bt132= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt132.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt133= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt133.addActionListener( 
+			u.monitor.bt133= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt133.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt134= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt134.addActionListener( 
-					new ActionListener() {    
-						public void actionPerformed(ActionEvent e){
-							
-						}
-					});
-			
-			
-			u.m.bt141= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt141.addActionListener( 
-					new ActionListener() {    
-						public void actionPerformed(ActionEvent e){
-							
-						}
-					});
-			u.m.bt142= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt142.addActionListener( 
-					new ActionListener() {    
-						public void actionPerformed(ActionEvent e){
-							
-						}
-					});
-			u.m.bt143= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt143.addActionListener( 
-					new ActionListener() {    
-						public void actionPerformed(ActionEvent e){
-							
-						}
-					});
-			u.m.bt144= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt144.addActionListener( 
+			u.monitor.bt134= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt134.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt151= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt151.addActionListener( 
+			
+			u.monitor.bt141= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt141.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt152= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt152.addActionListener( 
+			u.monitor.bt142= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt142.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt153= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt153.addActionListener( 
+			u.monitor.bt143= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt143.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
-			u.m.bt154= new DetaButton ("待添加功能",100,50, Color.pink);
-			u.m.bt154.addActionListener( 
+			u.monitor.bt144= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt144.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							
 						}
 					});
 			
-			u.m.bt92= new DetaButton ("播放多媒体",100,50, Color.orange);
-			u.m.bt92.addActionListener( 
+			u.monitor.bt151= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt151.addActionListener( 
+					new ActionListener() {    
+						public void actionPerformed(ActionEvent e){
+							
+						}
+					});
+			u.monitor.bt152= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt152.addActionListener( 
+					new ActionListener() {    
+						public void actionPerformed(ActionEvent e){
+							
+						}
+					});
+			u.monitor.bt153= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt153.addActionListener( 
+					new ActionListener() {    
+						public void actionPerformed(ActionEvent e){
+							
+						}
+					});
+			u.monitor.bt154= new DetaButton ("待添加功能",100,50, Color.pink);
+			u.monitor.bt154.addActionListener( 
+					new ActionListener() {    
+						public void actionPerformed(ActionEvent e){
+							
+						}
+					});
+			
+			u.monitor.bt92= new DetaButton ("播放多媒体",100,50, Color.orange);
+			u.monitor.bt92.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
 							FileDialog filedialog= new FileDialog(new Frame(), "播放多媒体", FileDialog.LOAD);
@@ -1153,234 +1154,234 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 					});
 			
 			
-			u.m.bt2 = new DetaButton ("线性腐蚀",100,50, Color.pink);
-			u.m.bt2.addActionListener( 
+			u.monitor.bt2 = new DetaButton ("线性腐蚀",100,50, Color.pink);
+			u.monitor.bt2.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt3= new DetaButton ("独立成份",100,50, Color.pink);
-			u.m.bt3.addActionListener( 
+			u.monitor.bt3= new DetaButton ("独立成份",100,50, Color.pink);
+			u.monitor.bt3.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt4= new DetaButton ("特征成份",100,50, Color.pink);
-			u.m.bt4.addActionListener( 
+			u.monitor.bt4= new DetaButton ("特征成份",100,50, Color.pink);
+			u.monitor.bt4.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.bt5 = new DetaButton ("向量成份",100,50, Color.pink);
-			u.m.bt5.addActionListener( 
+			u.monitor.bt5 = new DetaButton ("向量成份",100,50, Color.pink);
+			u.monitor.bt5.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
 
-			u.m.btr = new DetaButton ("荧光谱红",100,50, Color.red);
-			u.m.btr.addActionListener( 
+			u.monitor.btr = new DetaButton ("荧光谱红",100,50, Color.red);
+			u.monitor.btr.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.btg = new DetaButton ("荧光谱绿",100,50, Color.green);
-			u.m.btg.addActionListener( 
+			u.monitor.btg = new DetaButton ("荧光谱绿",100,50, Color.green);
+			u.monitor.btg.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.btb = new DetaButton ("荧光谱蓝",100,50, Color.blue);
-			u.m.btb.addActionListener( 
+			u.monitor.btb = new DetaButton ("荧光谱蓝",100,50, Color.blue);
+			u.monitor.btb.addActionListener( 
 					new ActionListener()  {    
 						public void actionPerformed(ActionEvent e){
 						}
 					});
 
-			u.m.sliderr = new JSlider(0,255);
-			u.m.sliderr.setSnapToTicks(true);
-			u.m.sliderr.setPaintTicks(true);
-			u.m.sliderr.setMajorTickSpacing(5);
-			u.m.sliderr.setMinorTickSpacing(0);
-			u.m.sliderr.setBackground(Color.black);
-			u.m.sliderr.setForeground(Color.red);
-			u.m.sliderr.addChangeListener( 
+			u.monitor.sliderr = new JSlider(0,255);
+			u.monitor.sliderr.setSnapToTicks(true);
+			u.monitor.sliderr.setPaintTicks(true);
+			u.monitor.sliderr.setMajorTickSpacing(5);
+			u.monitor.sliderr.setMinorTickSpacing(0);
+			u.monitor.sliderr.setBackground(Color.black);
+			u.monitor.sliderr.setForeground(Color.red);
+			u.monitor.sliderr.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facr = source.getValue();  
-							System.out.println(u.m.facr);
+							u.monitor.facr = source.getValue();  
+							System.out.println(u.monitor.facr);
 						}
 					});
 
-			u.m.sliderg = new JSlider(0,255);
-			u.m.sliderg.setSnapToTicks(true);
-			u.m.sliderg.setPaintTicks(true);
-			u.m.sliderg.setMajorTickSpacing(5);
-			u.m.sliderg.setMinorTickSpacing(0);
-			u.m.sliderg.setBackground(Color.black);
-			u.m.sliderg.setForeground(Color.green);
-			u.m.sliderg.addChangeListener( 
+			u.monitor.sliderg = new JSlider(0,255);
+			u.monitor.sliderg.setSnapToTicks(true);
+			u.monitor.sliderg.setPaintTicks(true);
+			u.monitor.sliderg.setMajorTickSpacing(5);
+			u.monitor.sliderg.setMinorTickSpacing(0);
+			u.monitor.sliderg.setBackground(Color.black);
+			u.monitor.sliderg.setForeground(Color.green);
+			u.monitor.sliderg.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facg = source.getValue();  
-							System.out.println(u.m.facg);
+							u.monitor.facg = source.getValue();  
+							System.out.println(u.monitor.facg);
 						}
 					});
 
-			u.m.sliderb = new JSlider(0,255);
-			u.m.sliderb.setSnapToTicks(true);
-			u.m.sliderb.setPaintTicks(true);
-			u.m.sliderb.setMajorTickSpacing(5);
-			u.m.sliderb.setMinorTickSpacing(0);
-			u.m.sliderb.setBackground(Color.black);
-			u.m.sliderb.setForeground(Color.blue);
-			u.m.sliderb.addChangeListener( 
+			u.monitor.sliderb = new JSlider(0,255);
+			u.monitor.sliderb.setSnapToTicks(true);
+			u.monitor.sliderb.setPaintTicks(true);
+			u.monitor.sliderb.setMajorTickSpacing(5);
+			u.monitor.sliderb.setMinorTickSpacing(0);
+			u.monitor.sliderb.setBackground(Color.black);
+			u.monitor.sliderb.setForeground(Color.blue);
+			u.monitor.sliderb.addChangeListener( 
 					new ChangeListener() {
 						public void stateChanged(ChangeEvent event)  {    
 							JSlider source = (JSlider) event.getSource();  
-							u.m.facb = source.getValue();  
-							System.out.println(u.m.facb);
+							u.monitor.facb = source.getValue();  
+							System.out.println(u.monitor.facb);
 						}
 					});  
-			u.m.br.add(u.m.btr);
-			u.m.br.add(u.m.sliderr);
-			u.m.sliderBox.add(u.m.br);
+			u.monitor.br.add(u.monitor.btr);
+			u.monitor.br.add(u.monitor.sliderr);
+			u.monitor.sliderBox.add(u.monitor.br);
 
-			u.m.bg.add(u.m.btg);
-			u.m.bg.add(u.m.sliderg);
-			u.m.sliderBox.add(u.m.bg);
+			u.monitor.bg.add(u.monitor.btg);
+			u.monitor.bg.add(u.monitor.sliderg);
+			u.monitor.sliderBox.add(u.monitor.bg);
 
-			u.m.bb.add(u.m.btb);
-			u.m.bb.add(u.m.sliderb);
-			u.m.sliderBox.add(u.m.bb);
+			u.monitor.bb.add(u.monitor.btb);
+			u.monitor.bb.add(u.monitor.sliderb);
+			u.monitor.sliderBox.add(u.monitor.bb);
 
-			u.m.b1.add(u.m.bt1);
-			u.m.b1.add(u.m.sliderx);
-			u.m.sliderBox.add(u.m.b1);
+			u.monitor.b1.add(u.monitor.bt1);
+			u.monitor.b1.add(u.monitor.sliderx);
+			u.monitor.sliderBox.add(u.monitor.b1);
 
-			u.m.b2.add(u.m.bt2);
-			u.m.b2.add(u.m.slidery);
-			u.m.sliderBox.add(u.m.b2);
+			u.monitor.b2.add(u.monitor.bt2);
+			u.monitor.b2.add(u.monitor.slidery);
+			u.monitor.sliderBox.add(u.monitor.b2);
 
-			u.m.b3.add(u.m.bt3);
-			u.m.b3.add(u.m.sliderz);
-			u.m.sliderBox.add(u.m.b3);
+			u.monitor.b3.add(u.monitor.bt3);
+			u.monitor.b3.add(u.monitor.sliderz);
+			u.monitor.sliderBox.add(u.monitor.b3);
 
-			u.m.b4.add(u.m.bt4);
-			u.m.b4.add(u.m.slidert);
-			u.m.sliderBox.add(u.m.b4);
+			u.monitor.b4.add(u.monitor.bt4);
+			u.monitor.b4.add(u.monitor.slidert);
+			u.monitor.sliderBox.add(u.monitor.b4);
 
-			u.m.b5.add(u.m.bt5);
-			u.m.b5.add(u.m.sliderl);
-			u.m.sliderBox.add(u.m.b5);
+			u.monitor.b5.add(u.monitor.bt5);
+			u.monitor.b5.add(u.monitor.sliderl);
+			u.monitor.sliderBox.add(u.monitor.b5);
 
-			u.m.buttonBox0.add(u.m.bt00);
-			u.m.buttonBox0.add(u.m.bt01);
-			u.m.buttonBox0.add(u.m.bt02);
-			u.m.buttonBox0.add(u.m.bt03);
-			u.m.sliderBox.add(u.m.buttonBox0);
+			u.monitor.buttonBox0.add(u.monitor.bt00);
+			u.monitor.buttonBox0.add(u.monitor.bt01);
+			u.monitor.buttonBox0.add(u.monitor.bt02);
+			u.monitor.buttonBox0.add(u.monitor.bt03);
+			u.monitor.sliderBox.add(u.monitor.buttonBox0);
 
-			u.m.buttonBox1.add(u.m.bt10);
-			u.m.buttonBox1.add(u.m.bt11);
-			u.m.buttonBox1.add(u.m.bt12);
-			u.m.buttonBox1.add(u.m.bt13);
-			u.m.sliderBox.add(u.m.buttonBox1);
+			u.monitor.buttonBox1.add(u.monitor.bt10);
+			u.monitor.buttonBox1.add(u.monitor.bt11);
+			u.monitor.buttonBox1.add(u.monitor.bt12);
+			u.monitor.buttonBox1.add(u.monitor.bt13);
+			u.monitor.sliderBox.add(u.monitor.buttonBox1);
 
-			u.m.buttonBox2.add(u.m.bt20);
-			u.m.buttonBox2.add(u.m.bt21);
-			u.m.buttonBox2.add(u.m.bt22);
-			u.m.buttonBox2.add(u.m.bt23);
-			u.m.sliderBox.add(u.m.buttonBox2);
+			u.monitor.buttonBox2.add(u.monitor.bt20);
+			u.monitor.buttonBox2.add(u.monitor.bt21);
+			u.monitor.buttonBox2.add(u.monitor.bt22);
+			u.monitor.buttonBox2.add(u.monitor.bt23);
+			u.monitor.sliderBox.add(u.monitor.buttonBox2);
 
-			u.m.buttonBox3.add(u.m.bt30);
-			u.m.buttonBox3.add(u.m.bt31);
-			u.m.buttonBox3.add(u.m.bt32);
-			u.m.buttonBox3.add(u.m.bt33);
-			u.m.sliderBox.add(u.m.buttonBox3);
+			u.monitor.buttonBox3.add(u.monitor.bt30);
+			u.monitor.buttonBox3.add(u.monitor.bt31);
+			u.monitor.buttonBox3.add(u.monitor.bt32);
+			u.monitor.buttonBox3.add(u.monitor.bt33);
+			u.monitor.sliderBox.add(u.monitor.buttonBox3);
 
-			u.m.buttonBox4.add(u.m.bt40);
-			u.m.buttonBox4.add(u.m.bt41);
-			u.m.buttonBox4.add(u.m.bt42);
-			u.m.buttonBox4.add(u.m.bt43);
-			u.m.sliderBox.add(u.m.buttonBox4);
+			u.monitor.buttonBox4.add(u.monitor.bt40);
+			u.monitor.buttonBox4.add(u.monitor.bt41);
+			u.monitor.buttonBox4.add(u.monitor.bt42);
+			u.monitor.buttonBox4.add(u.monitor.bt43);
+			u.monitor.sliderBox.add(u.monitor.buttonBox4);
 
-			u.m.buttonBox5.add(u.m.bt50);
-			u.m.buttonBox5.add(u.m.bt51);
-			u.m.buttonBox5.add(u.m.bt52);
-			u.m.buttonBox5.add(u.m.bt53);
-			u.m.sliderBox.add(u.m.buttonBox5);
+			u.monitor.buttonBox5.add(u.monitor.bt50);
+			u.monitor.buttonBox5.add(u.monitor.bt51);
+			u.monitor.buttonBox5.add(u.monitor.bt52);
+			u.monitor.buttonBox5.add(u.monitor.bt53);
+			u.monitor.sliderBox.add(u.monitor.buttonBox5);
 
-			u.m.buttonBox6.add(u.m.bt60);
-			u.m.buttonBox6.add(u.m.bt61);
-			u.m.buttonBox6.add(u.m.bt62);
-			u.m.buttonBox6.add(u.m.bt63);
-			u.m.sliderBox.add(u.m.buttonBox6);
+			u.monitor.buttonBox6.add(u.monitor.bt60);
+			u.monitor.buttonBox6.add(u.monitor.bt61);
+			u.monitor.buttonBox6.add(u.monitor.bt62);
+			u.monitor.buttonBox6.add(u.monitor.bt63);
+			u.monitor.sliderBox.add(u.monitor.buttonBox6);
 
-			u.m.buttonBox7.add(u.m.bt70);
-			u.m.buttonBox7.add(u.m.bt71);
-			u.m.buttonBox7.add(u.m.bt72);
-			u.m.buttonBox7.add(u.m.bt73);
-			u.m.sliderBox.add(u.m.buttonBox7);
+			u.monitor.buttonBox7.add(u.monitor.bt70);
+			u.monitor.buttonBox7.add(u.monitor.bt71);
+			u.monitor.buttonBox7.add(u.monitor.bt72);
+			u.monitor.buttonBox7.add(u.monitor.bt73);
+			u.monitor.sliderBox.add(u.monitor.buttonBox7);
 			
-			u.m.buttonBox8.add(u.m.bt80);
-			u.m.buttonBox8.add(u.m.bt81);
-			u.m.buttonBox8.add(u.m.bt82);
-			u.m.buttonBox8.add(u.m.bt83);
-			u.m.sliderBox.add(u.m.buttonBox8);
+			u.monitor.buttonBox8.add(u.monitor.bt80);
+			u.monitor.buttonBox8.add(u.monitor.bt81);
+			u.monitor.buttonBox8.add(u.monitor.bt82);
+			u.monitor.buttonBox8.add(u.monitor.bt83);
+			u.monitor.sliderBox.add(u.monitor.buttonBox8);
 			
-			u.m.buttonBox9.add(u.m.bt84);
-			u.m.buttonBox9.add(u.m.bt85);
-			u.m.buttonBox9.add(u.m.bt86);
-			u.m.buttonBox9.add(u.m.bt87);
-			u.m.sliderBox.add(u.m.buttonBox9);
+			u.monitor.buttonBox9.add(u.monitor.bt84);
+			u.monitor.buttonBox9.add(u.monitor.bt85);
+			u.monitor.buttonBox9.add(u.monitor.bt86);
+			u.monitor.buttonBox9.add(u.monitor.bt87);
+			u.monitor.sliderBox.add(u.monitor.buttonBox9);
 
-			u.m.buttonBox10.add(u.m.bt88);
-			u.m.buttonBox10.add(u.m.bt89);
-			u.m.buttonBox10.add(u.m.bt90);
-			u.m.buttonBox10.add(u.m.bt92);
+			u.monitor.buttonBox10.add(u.monitor.bt88);
+			u.monitor.buttonBox10.add(u.monitor.bt89);
+			u.monitor.buttonBox10.add(u.monitor.bt90);
+			u.monitor.buttonBox10.add(u.monitor.bt92);
 			
-			u.m.buttonBox11.add(u.m.bt111);
-			u.m.buttonBox11.add(u.m.bt112);
-			u.m.buttonBox11.add(u.m.bt113);
-			u.m.buttonBox11.add(u.m.bt114);
+			u.monitor.buttonBox11.add(u.monitor.bt111);
+			u.monitor.buttonBox11.add(u.monitor.bt112);
+			u.monitor.buttonBox11.add(u.monitor.bt113);
+			u.monitor.buttonBox11.add(u.monitor.bt114);
 			
-			u.m.buttonBox12.add(u.m.bt121);
-			u.m.buttonBox12.add(u.m.bt122);
-			u.m.buttonBox12.add(u.m.bt123);
-			u.m.buttonBox12.add(u.m.bt124);
+			u.monitor.buttonBox12.add(u.monitor.bt121);
+			u.monitor.buttonBox12.add(u.monitor.bt122);
+			u.monitor.buttonBox12.add(u.monitor.bt123);
+			u.monitor.buttonBox12.add(u.monitor.bt124);
 			
-			u.m.buttonBox13.add(u.m.bt131);
-			u.m.buttonBox13.add(u.m.bt132);
-			u.m.buttonBox13.add(u.m.bt133);
-			u.m.buttonBox13.add(u.m.bt134);
+			u.monitor.buttonBox13.add(u.monitor.bt131);
+			u.monitor.buttonBox13.add(u.monitor.bt132);
+			u.monitor.buttonBox13.add(u.monitor.bt133);
+			u.monitor.buttonBox13.add(u.monitor.bt134);
 			
-			u.m.buttonBox14.add(u.m.bt141);
-			u.m.buttonBox14.add(u.m.bt142);
-			u.m.buttonBox14.add(u.m.bt143);
-			u.m.buttonBox14.add(u.m.bt144);
+			u.monitor.buttonBox14.add(u.monitor.bt141);
+			u.monitor.buttonBox14.add(u.monitor.bt142);
+			u.monitor.buttonBox14.add(u.monitor.bt143);
+			u.monitor.buttonBox14.add(u.monitor.bt144);
 			
-			u.m.buttonBox15.add(u.m.bt151);
-			u.m.buttonBox15.add(u.m.bt152);
-			u.m.buttonBox15.add(u.m.bt153);
-			u.m.buttonBox15.add(u.m.bt154);
+			u.monitor.buttonBox15.add(u.monitor.bt151);
+			u.monitor.buttonBox15.add(u.monitor.bt152);
+			u.monitor.buttonBox15.add(u.monitor.bt153);
+			u.monitor.buttonBox15.add(u.monitor.bt154);
 			
-			u.m.sliderBox.add(u.m.buttonBox10);
-			u.m.sliderBox.add(u.m.buttonBox11);
-			u.m.sliderBox.add(u.m.buttonBox12);
-			u.m.sliderBox.add(u.m.buttonBox13);
-		//	u.m.sliderBox.add(u.m.buttonBox14);
+			u.monitor.sliderBox.add(u.monitor.buttonBox10);
+			u.monitor.sliderBox.add(u.monitor.buttonBox11);
+			u.monitor.sliderBox.add(u.monitor.buttonBox12);
+			u.monitor.sliderBox.add(u.monitor.buttonBox13);
+		//	u.monitor.sliderBox.add(u.monitor.buttonBox14);
 
-			u.m.sliderBox.setBounds(910, 15, 400, 750);
-			jpanelThird.add(u.m);
-			jpanelThird.add(u.m.sliderBox);
+			u.monitor.sliderBox.setBounds(910, 15, 400, 750);
+			jpanelThird.add(u.monitor);
+			jpanelThird.add(u.monitor.sliderBox);
 			jpanelThird.setName(tabNames.get(2));
 			jTabbedpane.addTab(tabNames.get(2), new ImageIcon(), jpanelThird, "相诊");// 加入第一个页面  
 			Color[] colors= new Color[3];
@@ -1389,11 +1390,11 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 			colors[2]=new Color(255,251,232);
 			jTabbedpane.setBackgroundAt(jTabbedpane.getTabCount()- 1, colors[jTabbedpane.getTabCount()%3]);
 			jTabbedpane.validate();	
-			while(0 == u.m.stop) {
+			while(0 == u.monitor.stop) {
 				Thread.sleep(50);
-				Graphics g =u.m.getGraphics();
+				Graphics g =u.monitor.getGraphics();
 				if(g!=null) {
-					u.m.paint(g);
+					u.monitor.paint(g);
 				}	 
 			} 
 		}catch (InterruptedException e) {
