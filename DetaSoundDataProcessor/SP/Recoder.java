@@ -9,7 +9,7 @@ public class Recoder{
 	public static void main(String [] argv){
 		//创造线程录音每5秒录一次
 		//创造线程显示数值
-		Jp jp1= new Jp(null, null, null, null, null);
+		SoundWaveJPanel jp1= new SoundWaveJPanel(null, null, null, null, null);
 		jp1.setVisible(true);
 		JFrame f= new JFrame("Capture");  
 		f.addWindowListener(new WindowAdapter() {  

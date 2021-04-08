@@ -25,8 +25,8 @@ import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import javax.media.opengl.*;
 
 import ME.sample.App;
-import comp.jbutton.DetaButton;
-import comp.jslider.DetaSlider;
+import comp.jButton.DetaButton;
+import comp.jSlider.DetaSlider;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

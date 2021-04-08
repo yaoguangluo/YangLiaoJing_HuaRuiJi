@@ -17,7 +17,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import ME.sample.App;
-import comp.jslider.DetaSlider;
+import comp.jSlider.DetaSlider;
 
 public class SectionJPanel extends JPanel implements MouseListener, KeyListener, ActionListener{
 
@@ -622,7 +622,7 @@ public class SectionJPanel extends JPanel implements MouseListener, KeyListener,
 		this.add(jlabelpeizhi2515);
 		this.add(jlabel_peizhi_di2515);	
 		
-		comp.jbutton.DetaButton jlabel_button= new comp.jbutton.DetaButton("添加完毕:");
+		comp.jButton.DetaButton jlabel_button= new comp.jButton.DetaButton("添加完毕:");
 		jlabel_button.setBounds(10, 460, 100, 30);
 		jlabel_button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -632,7 +632,7 @@ public class SectionJPanel extends JPanel implements MouseListener, KeyListener,
 		});
 		this.add(jlabel_button);
 		
-		comp.jbutton.DetaButton jlabel_flush_button= new comp.jbutton.DetaButton("异常刷新:");
+		comp.jButton.DetaButton jlabel_flush_button= new comp.jButton.DetaButton("异常刷新:");
 		jlabel_flush_button.setBounds(10+100+30, 460, 100, 30);
 		jlabel_flush_button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

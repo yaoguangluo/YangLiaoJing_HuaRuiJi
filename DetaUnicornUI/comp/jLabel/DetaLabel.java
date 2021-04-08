@@ -1,4 +1,4 @@
-package comp.label;
+package comp.jLabel;
 
 import java.awt.Color;
 import java.awt.Point;

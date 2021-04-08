@@ -14,8 +14,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-import comp.jbutton.DetaButton;
-import comp.label.DetaLabel;
+import comp.jButton.DetaButton;
+import comp.jLabel.DetaLabel;
 
 public class LinChuangJianYanBaoGaoA  extends JPanel implements MouseListener, KeyListener, ActionListener{
 //今天准备把医学检验报告的单位进行格式化 规范化,等下开始 20210401

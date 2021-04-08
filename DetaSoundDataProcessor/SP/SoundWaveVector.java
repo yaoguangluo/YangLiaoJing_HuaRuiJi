@@ -34,7 +34,7 @@ public class SoundWaveVector{
 	public int N= 1024;
 	//
 	@SuppressWarnings({ "rawtypes", "unused" })
-	public Vector getVectorLines1(Jp jpt, Jpv jp3, AudioInputStream ais, Map<String,String> cache_bz
+	public Vector getVectorLines1(SoundWaveJPanel jpt, SoundWavePanelVector jp3, AudioInputStream ais, Map<String,String> cache_bz
 			, Map<String,String> cache_sj, DFT dFT, Vector<Double> forOutput
 			, Graphics graphics, int type) throws IOException, InterruptedException{
 		pshock= 0;

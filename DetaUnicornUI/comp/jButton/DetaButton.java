@@ -1,4 +1,4 @@
-package comp.jbutton;
+package comp.jButton;
 import java.awt.Color;
 import java.awt.Graphics;
 //import java.awt.Dimension;

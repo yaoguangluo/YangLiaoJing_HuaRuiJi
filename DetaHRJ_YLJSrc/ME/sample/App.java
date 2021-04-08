@@ -46,10 +46,9 @@ import PEI.thread.MakeContainerZYNKFJ;
 import PEI.thread.MakeContainerZYWS;
 import PEI.thread.MakeContainerZYZD;
 import PEI.thread.MakeContainer_ZHONG_YAO;
-import SP.Jp;
+import SP.SoundWaveJPanel;
 
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -88,7 +87,6 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
-import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.text.BadLocationException;
@@ -110,12 +108,13 @@ import org.tinos.neo.tts.ReadChinese;
 import org.tinos.rest.medicine.RestMedicinePortImpl;
 
 import biProcessor.CoAuthorForWord;
-import comp.jbutton.DetaButton;
-import comp.jbutton.CfxButton;
-import comp.jslider.DetaSlider;
-import comp.jtabbedpane.DetabbedPane;
-import comp.jtextfield.CfxTextField;
-import comp.jtextpane.CfxTextPane;
+import comp.jButton.CfxButton;
+import comp.jButton.DetaButton;
+import comp.jSlider.DetaSlider;
+import comp.jTabbedpane.DetabbedPane;
+import comp.jTableRender.ColorTableRender;
+import comp.jTextfield.CfxTextField;
+import comp.jTextpane.CfxTextPane;
 import mapProcessor.VtoV;
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;
@@ -124,7 +123,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public JFrame frameConfig;
 	public int rangeHigh= 40;
 	public int row= 0;
-	public Jp jp1;
+	public SoundWaveJPanel soundWaveJPanel;
 	public int col= 0;
 	public boolean disableCursor= true;
 	public Translator ts;
@@ -261,7 +260,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public BufferedImage tempBufferedImage;
 	public int 催化比值rot;
 	public boolean DNASearchIsClick;
-	
+
 	@SuppressWarnings("deprecation")
 	public void init(){
 		//Register DNA
@@ -289,7 +288,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		}  
-		
+
 		frameConfig= new JFrame("软件配置面板");
 		frameConfig.setIconImage(this.logo.getImage());
 		frameConfig.setLayout(null);
@@ -313,16 +312,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				}
 			}
 		});
-		        
-//		long v= 1612264183;
-//		long n= System.currentTimeMillis()/1000;
-//		long d= (n- v)/60/60/24;
-//		if(d> 30*3) {
-//			System.out.println("有效期90天已过");	
-//			System.exit(0);
-//			return;
-//		}
-//		
+
+		//		long v= 1612264183;
+		//		long n= System.currentTimeMillis()/1000;
+		//		long d= (n- v)/60/60/24;
+		//		if(d> 30*3) {
+		//			System.out.println("有效期90天已过");	
+		//			System.exit(0);
+		//			return;
+		//		}
+		//		
 		appInstance= this;
 		appConfig.init(appInstance);
 		//stop cursor
@@ -412,8 +411,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 
 			jsp_name= new JScrollPane(this.name());
 			jsp_name.setBounds(10+50, 6, 580- 300, 50);
-			
-			comp.jbutton.DetaButton jlabel_button= new comp.jbutton.DetaButton("搜:");
+
+			comp.jButton.DetaButton jlabel_button= new comp.jButton.DetaButton("搜:");
 			jlabel_button.setBounds(2, 6, 56, 23);
 			jlabel_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -438,8 +437,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					}
 				}
 			});
-			
-			comp.jbutton.DetaButton yin_button= new comp.jbutton.DetaButton("音:");
+
+			comp.jButton.DetaButton yin_button= new comp.jButton.DetaButton("音:");
 			yin_button.setBounds(2, 33, 56, 23);
 			yin_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -454,42 +453,42 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					}
 				}
 			});
-			
-			
+
+
 			JLabel jlabel_filter= new JLabel("包含过滤:");  
 			jlabel_filter.setForeground(Color.WHITE); 
 			jlabel_filter.setBounds(60+ 15+ 7+ 585+ 100, -6, 100, 50);
-			
+
 			JScrollPane jsp_name_filter= null;
 			jsp_name_filter= new JScrollPane(this.name_filter());
 			jsp_name_filter.setBounds(60+15+30+580+ 100+ 40, 8, 580- 455, 22);	
-			
+
 			JLabel jlabel_filter_not_have= new JLabel("有关经络:");  
 			jlabel_filter_not_have.setForeground(Color.WHITE); 
 			jlabel_filter_not_have.setBounds(50+15+7+485+7, 20, 100, 50);
-		
+
 			JScrollPane jsp_name_filter_not_have= null;
 			jsp_name_filter_not_have= new JScrollPane(this.name_filter_not_have());
 			jsp_name_filter_not_have.setBounds(50+15+7+485+7+20+ 40, 6+28, 580- 459, 22);
-			
+
 			JLabel risk_filter= new JLabel("风险过滤:");  
 			risk_filter.setForeground(Color.WHITE);
 			risk_filter.setBounds(10+ 350, 6, 100, 25);
-			
+
 			JLabel feel_filter= new JLabel("无关性味:"); 
 			feel_filter.setForeground(Color.WHITE);
 			feel_filter.setBounds(60+15+7+585+ 100, 20, 100, 50);
-			
+
 			JScrollPane jsp_name_feel_filter= null;
 			jsp_name_feel_filter= new JScrollPane(this.name_feel_filter());
 			jsp_name_feel_filter.setBounds(60+15+30+580+ 100+ 40, 6+28, 580- 455, 22);
-			
-			
+
+
 			JLabel jingmai_filter= new JLabel("线性观测:");  
 			jingmai_filter.setForeground(Color.WHITE);
 			jingmai_filter.setBounds(10+350, 21, 100, 50);
 
-			
+
 			look = new DetaSlider(0, 20);
 			look.setSnapToTicks(true);
 			look.setPaintTicks(true);
@@ -505,11 +504,11 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						}
 					});
 			look.setBounds(10+350+60, 36, 135, 20);
-			
+
 			JLabel xingwei_filter= new JLabel("功效过滤:");  
 			xingwei_filter.setForeground(Color.WHITE); 
 			xingwei_filter.setBounds(60+15+7+585, -6, 100, 50);
-			
+
 			JLabel zonghe_filter= new JLabel("配伍过滤:");  
 			zonghe_filter.setForeground(Color.WHITE); 
 			zonghe_filter.setBounds(50+15+7+485+7, -6, 100, 50);
@@ -517,29 +516,29 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			JLabel shuming_filter= new JLabel("术名过滤:");  
 			shuming_filter.setForeground(Color.WHITE); 
 			shuming_filter.setBounds(1+350+100+10, -6, 100, 50);
-			
+
 			zonghe_filter_box= new JCheckBox();
 			zonghe_filter_box.setBounds(50+15+7+485+60+7, 8, 20, 20);
 			zonghe_filter_box.setBackground(Color.ORANGE);
-			
+
 			zonghe_filter_box.addActionListener(this);
-			
+
 			shuming_filter_box= new JCheckBox();
 			shuming_filter_box.setBounds(1+350+100+60+10, 8, 20, 20);
 			shuming_filter_box.setBackground(Color.GREEN);
-			
+
 			jingmai_filter_box= new JCheckBox();
 			jingmai_filter_box.setBounds(60+ 15+ 30+ 580+ 40, 8, 20, 20);
 			jingmai_filter_box.setBackground(Color.BLUE);
-			
+
 			feel_filter_box= new JCheckBox();
 			feel_filter_box.setBounds(60+15+30+580+40, 8, 20, 20);
 			feel_filter_box.setBackground(Color.MAGENTA);
-			
+
 			risk_filter_box= new JCheckBox();
 			risk_filter_box.setBounds(10+350+60, 8, 20, 20);
 			risk_filter_box.setBackground(Color.RED);
-			
+
 			JButton addChuFang= new CfxButton("电子医院", 100, 50, Color.red); 
 			addChuFang.setBounds(50+50+760+130+130-100-50, 6, 100, 50);
 			addChuFang.addActionListener(new ActionListener() {
@@ -553,7 +552,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					preAdd+= "中医诊断：\r\n\r\n";
 					for(int i=0;i<5;i++) {
 						preAdd+= "证候名："+ (null==jpanel8.table.getValueAt(i, 2)?"":jpanel8.table.getValueAt(i, 2).toString())
-							//	+ "证候内容："+	(null==jpanel8.table.getValueAt(i, 5)?"":jpanel8.table.getValueAt(i, 5).toString())
+								//	+ "证候内容："+	(null==jpanel8.table.getValueAt(i, 5)?"":jpanel8.table.getValueAt(i, 5).toString())
 								+ "可能性："+	(null==jpanel8.table.getValueAt(i, 1)?"":jpanel8.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
@@ -561,7 +560,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					//内科分析：
 					for(int i=0;i<5;i++) {
 						preAdd+= "证候名："+ (null==jpanel6.table.getValueAt(i, 2)?"":jpanel6.table.getValueAt(i, 2).toString())
-							//	+ "证候意义："+	(null==jpanel6.table.getValueAt(i, 9)?"":jpanel6.table.getValueAt(i, 9).toString())
+								//	+ "证候意义："+	(null==jpanel6.table.getValueAt(i, 9)?"":jpanel6.table.getValueAt(i, 9).toString())
 								+ "可能性："+	(null==jpanel6.table.getValueAt(i, 1)?"":jpanel6.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
@@ -589,7 +588,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 								+ "可能性："+	(null==jpanel11.table.getValueAt(i, 1)?"":jpanel11.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
-					
+
 					preAdd+= "伤科：\r\n\r\n";
 					//伤科分析：
 					for(int i=0;i<5;i++) {
@@ -597,7 +596,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 								+ "可能性："+	(null==jpanel14.table.getValueAt(i, 1)?"":jpanel14.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
-					
+
 					String xiYaoTuiJian="";
 					xiYaoTuiJian+= "*************************\r\n\r\n";
 					xiYaoTuiJian+= "中西医结合用药打分排序（可选）：";
@@ -620,7 +619,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "\r\n\r\n";
-					
+
 					String zhongYaoTuiJian="";
 					//
 					zhongYaoTuiJian+= "*************************";
@@ -688,7 +687,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						jText.setText(zhongYaoTuiJian);
 					}
 					jText.validate();
-					
+
 					if(jxText.getText().length()< 8000) {
 						if(xiYaoTuiJian.length()< 8000) {
 							if(!jxText.getText().isEmpty()) {
@@ -701,8 +700,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						jxText.setText(xiYaoTuiJian);
 					}
 					jxText.validate();
-					
-					
+
+
 					if(null== frameHospital) {
 						appHospital= new AppHospital();
 						appHospital.init(jText, appInstance);
@@ -735,7 +734,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						frameHospital.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
 					}
 					jText.validate();
-					
+
 				}
 			});
 
@@ -812,7 +811,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			jTabbedpane.addChangeListener(this);
 			Thread.sleep(300);
 			this.mouseClicked(null);
-			
+
 			if(appConfig.SectionJPanel.jlabel_peizhi_di2511.isSelected()) {
 				//front
 				new BootVPCSFrontEnd().start();
@@ -835,7 +834,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 			}
-			
+
 			if(appConfig.SectionJPanel.tabNamesHook[1]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -848,7 +847,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c2.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[2]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -861,20 +860,20 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c3.start();
 				Thread.sleep(300);
 			}
-			 
-//			if(appConfig.SectionJPanel.tabNamesHook[3]) {
-//				if(appConfig.SectionJPanel.jTextPane!= null) {
-//					String text= appConfig.SectionJPanel.jTextPane.getText();
-//					text="\r\n"+ "----正在载入智能声诊页面！"+ text;
-//					text="\r\n"+ "..."+ text;
-//					appConfig.SectionJPanel.jTextPane.setText(text);
-//				}
-//				Container jpanelFourth= new Container();
-//				MakeContainerZNSZ c4= new MakeContainerZNSZ(analyzer,jpanelFourth,this,jTabbedpane,tabNames,  pos,pose,etc,cte);
-//				c4.start();
-//				Thread.sleep(300);
-//			}
-			 
+
+			//			if(appConfig.SectionJPanel.tabNamesHook[3]) {
+			//				if(appConfig.SectionJPanel.jTextPane!= null) {
+			//					String text= appConfig.SectionJPanel.jTextPane.getText();
+			//					text="\r\n"+ "----正在载入智能声诊页面！"+ text;
+			//					text="\r\n"+ "..."+ text;
+			//					appConfig.SectionJPanel.jTextPane.setText(text);
+			//				}
+			//				Container jpanelFourth= new Container();
+			//				MakeContainerZNSZ c4= new MakeContainerZNSZ(analyzer,jpanelFourth,this,jTabbedpane,tabNames,  pos,pose,etc,cte);
+			//				c4.start();
+			//				Thread.sleep(300);
+			//			}
+
 			if(appConfig.SectionJPanel.tabNamesHook[4]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -887,7 +886,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c5.start();
 				Thread.sleep(300);
 			}
-			
+
 			if(appConfig.SectionJPanel.tabNamesHook[5]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -899,7 +898,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c6.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[6]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -911,7 +910,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c7.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[7]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -923,7 +922,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c8.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[8]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -935,7 +934,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c9.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[9]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -947,7 +946,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c10.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[10]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -959,7 +958,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c11.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[11]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -971,7 +970,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c12.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[12]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -983,7 +982,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c13.start();
 				Thread.sleep(300);
 			}
-			
+
 			if(appConfig.SectionJPanel.tabNamesHook[13]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -995,7 +994,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c14.start();	
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[14]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -1007,7 +1006,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				c15.start();
 				Thread.sleep(300);
 			}
-			 
+
 			if(appConfig.SectionJPanel.tabNamesHook[15]) {
 				if(appConfig.SectionJPanel.jTextPane!= null) {
 					String text= appConfig.SectionJPanel.jTextPane.getText();
@@ -1038,17 +1037,13 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				text="\r\n"+ "..."+ text;
 				appConfig.SectionJPanel.jTextPane.setText(text);
 			}
-			
+
 			try {
 				Process process;
 				process = Runtime.getRuntime().exec(  
 						new String[] {"wmic", "cpu", "get", "ProcessorId"});
 				process.getOutputStream().close();
 				String value= "";
-//				if(d> 30*3) {
-//					System.exit(0);
-//					return;
-//				}
 				@SuppressWarnings("resource")
 				Scanner sc= new Scanner(process.getInputStream()); 
 				while(sc.hasNext()) {
@@ -1068,7 +1063,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			e4.printStackTrace();
 		}
 	}
-	
+
 	private JTextField name_feel_filter() {
 		name_feel_filter= new CfxTextField(null, 0, 0, null);  
 		name_feel_filter.setBounds(180-50, 50, 380, 80);
@@ -1092,16 +1087,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		data.setBounds(850, 150, 1350, 2980);	
 		data.setBackground(Color.white);
 		Box buttonBoxLineTwo= new Box(BoxLayout.X_AXIS);  
-//		buttonBoxLineTwo.add(buttonGXB);
-//		buttonBoxLineTwo.add(buttonBCJ);
+		//		buttonBoxLineTwo.add(buttonGXB);
+		//		buttonBoxLineTwo.add(buttonBCJ);
 		buttonBoxLineTwo.setBounds(0, 22, 450, 20);
 		//container.add(buttonBox);
 		//container.add(buttonBoxLineTwo);
 		return data; 
 	}
-	
+
 	public Box getBox() {	
-    	buttonADD= new DetaButton("添加到编辑页", 100, 50, Color.red);
+		buttonADD= new DetaButton("添加到编辑页", 100, 50, Color.red);
 		buttonADD.setBounds(295-15, 0, 135, 30);
 		buttonADD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -1114,16 +1109,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				StringBuilder page= new StringBuilder();
 				List<String> setsForGet= sets;
 				Iterator<String> iterator= setsForGet.iterator();
-					while(iterator.hasNext()) {
-						String setOfi= iterator.next();
-						page.append(setOfi); 
-					}
-					if(!text.getText().isEmpty()) {
-						text.setText(text.getText() +"\r\n\r\n"+ page.toString());
-					}else {
-						text.setText(page.toString());
-					}
-					text.validate();
+				while(iterator.hasNext()) {
+					String setOfi= iterator.next();
+					page.append(setOfi); 
+				}
+				if(!text.getText().isEmpty()) {
+					text.setText(text.getText() +"\r\n\r\n"+ page.toString());
+				}else {
+					text.setText(page.toString());
+				}
+				text.validate();
 			}
 		});
 		buttonCTE= new DetaButton("英文注释", 100, 50, Color.orange);
@@ -1168,59 +1163,59 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						}}
 				data.setText(page.toString());
 				data.addHyperlinkListener(new HyperlinkListener(){
-						@SuppressWarnings({ "deprecation", "hiding" })
-						@Override
-						public void hyperlinkUpdate(HyperlinkEvent e) {
-							//.........
-							//本函数的hyperlinkUpdate 格式 查阅了https://blog.csdn.net/nullpointer2008/article/details/7998986 文章。
-							//20200323 罗瑶光修改
-							//版权声明：本文为CSDN博主「空指针1996」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-							//原文链接：https://blog.csdn.net/nullpointer2008/article/details/7998986);
-							//.........
-							if (e.getEventType()!= HyperlinkEvent.EventType.ACTIVATED) 
-								return;
-							URL linkUrl= e.getURL();
-							String string; System.out.println(linkUrl.getFile());
-							try {
-								string= StringSwap.charsetSwap(linkUrl.getFile().toString(), "GBK", "GBK");
-								String[] value= string.split("=");
-								if(value.length> 1) {
-									VtoV.ObjectToJsonString(RestMedicinePortImpl.doSearch(appInstance, value[1]));
-								}
-							} catch (UnsupportedEncodingException e2) {
-								e2.printStackTrace();
-							} catch (IOException e1) {
-								e1.printStackTrace();
+					@SuppressWarnings({ "deprecation", "hiding" })
+					@Override
+					public void hyperlinkUpdate(HyperlinkEvent e) {
+						//.........
+						//本函数的hyperlinkUpdate 格式 查阅了https://blog.csdn.net/nullpointer2008/article/details/7998986 文章。
+						//20200323 罗瑶光修改
+						//版权声明：本文为CSDN博主「空指针1996」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+						//原文链接：https://blog.csdn.net/nullpointer2008/article/details/7998986);
+						//.........
+						if (e.getEventType()!= HyperlinkEvent.EventType.ACTIVATED) 
+							return;
+						URL linkUrl= e.getURL();
+						String string; System.out.println(linkUrl.getFile());
+						try {
+							string= StringSwap.charsetSwap(linkUrl.getFile().toString(), "GBK", "GBK");
+							String[] value= string.split("=");
+							if(value.length> 1) {
+								VtoV.ObjectToJsonString(RestMedicinePortImpl.doSearch(appInstance, value[1]));
 							}
-							//弹窗
-							//1 得到文字
-							//2 文字标注解释字符串
-							//3 生成frame
-							if(null== frameTag) {
-								tagSearch= new TagSearch();
-								tagSearch.init(name);
-								tagSearch.setBounds(0, 0, 435, 355);
-								tagSearch.setVisible(true);
-								tagSearch.show();
-								frameTag= new JFrame("提示栏");
-								//frame.setLayout(null);
-								frameTag.setSize(430, 350);
-								//摘自第37行 https://blog.csdn.net/code_better/article/details/53505962
-								Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
-								//
-								frameTag.setLocation(point.x, point.y);
-								frameTag.setResizable(false);
-								frameTag.add(tagSearch);
-								frameTag.setVisible(true);
-								frameTag.show();
-								frameTag.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
-							}else {
-								Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
-								frameTag.setLocation(point.x, point.y);
-								frameTag.setVisible(true);
-								frameTag.show();
-							}
+						} catch (UnsupportedEncodingException e2) {
+							e2.printStackTrace();
+						} catch (IOException e1) {
+							e1.printStackTrace();
 						}
+						//弹窗
+						//1 得到文字
+						//2 文字标注解释字符串
+						//3 生成frame
+						if(null== frameTag) {
+							tagSearch= new TagSearch();
+							tagSearch.init(name);
+							tagSearch.setBounds(0, 0, 435, 355);
+							tagSearch.setVisible(true);
+							tagSearch.show();
+							frameTag= new JFrame("提示栏");
+							//frame.setLayout(null);
+							frameTag.setSize(430, 350);
+							//摘自第37行 https://blog.csdn.net/code_better/article/details/53505962
+							Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
+							//
+							frameTag.setLocation(point.x, point.y);
+							frameTag.setResizable(false);
+							frameTag.add(tagSearch);
+							frameTag.setVisible(true);
+							frameTag.show();
+							frameTag.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
+						}else {
+							Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
+							frameTag.setLocation(point.x, point.y);
+							frameTag.setVisible(true);
+							frameTag.show();
+						}
+					}
 				});
 				data.setEditable(false);
 				data.setSelectionStart(0);
@@ -1228,7 +1223,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				data.validate();
 			}
 		});
-		
+
 		buttonFRS= new DetaButton("中文词还原", 100, 50, Color.green);
 		buttonFRS.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -1249,7 +1244,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
 								page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi +"</font></span>");
 								continue Here;
-						}
+							}
 							if(pos.get(setOfi).contains("名")) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
@@ -1275,7 +1270,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				data.validate();
 			}
 		});
-		
+
 		buttonETC= new DetaButton("同义词描述", 100, 50, Color.pink);
 		//buttonETC.setBounds(200-15, 0, 88, 30);
 		buttonETC.addActionListener(new ActionListener() {
@@ -1296,8 +1291,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						if (!setOfi.equals("")) {
 							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
 								page.append("<span style=\"background:red\"><font color=\"white\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") +  "</font></span>");
-			    				continue Here;
-			    			}
+								continue Here;
+							}
 							if(pos.get(setOfi).contains("名")) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
@@ -1323,7 +1318,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				data.validate();
 			}
 		});
-		
+
 		buttonGXB= new JButton("更新到表格");
 		buttonETC.setBounds(200 - 15, 0, 88, 30);
 		buttonGXB.addActionListener(new ActionListener() {
@@ -1347,53 +1342,53 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		//buttonETC.setBounds(200 - 15, 0, 88, 30);
 		buttonBCJ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				FileWriter fw = null;
-//				try {
-//					fw= new FileWriter("C:/Users/Administrator/Desktop/养疗金项目/bcqj.txt", true);
-//					for(int i=0;i<table.getRowCount();i++){
-//						fw.write("摘要");
-//						for(int j=0;j<table.getColumnCount();j++){
-//							fw.write("\r\n");
-//							fw.write("["+table.getColumnName(j)+"]");
-//							if(table.getValueAt(i, j)!=null) {
-//								if(j==3) {
-//									fw.write(table.getValueAt(i, j).toString().replaceAll("\\[()\\]", ""));
-//								}else {
-//									fw.write(table.getValueAt(i, j).toString());
-//								}
-//							}
-//							fw.write("\r\n");
-//						}
-//					}
-//					fw.write("\r\n");
-//					fw.write("摘要");
-//					fw.close();
-//				} catch (IOException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}	
+				//				FileWriter fw = null;
+				//				try {
+				//					fw= new FileWriter("C:/Users/Administrator/Desktop/养疗金项目/bcqj.txt", true);
+				//					for(int i=0;i<table.getRowCount();i++){
+				//						fw.write("摘要");
+				//						for(int j=0;j<table.getColumnCount();j++){
+				//							fw.write("\r\n");
+				//							fw.write("["+table.getColumnName(j)+"]");
+				//							if(table.getValueAt(i, j)!=null) {
+				//								if(j==3) {
+				//									fw.write(table.getValueAt(i, j).toString().replaceAll("\\[()\\]", ""));
+				//								}else {
+				//									fw.write(table.getValueAt(i, j).toString());
+				//								}
+				//							}
+				//							fw.write("\r\n");
+				//						}
+				//					}
+				//					fw.write("\r\n");
+				//					fw.write("摘要");
+				//					fw.close();
+				//				} catch (IOException e1) {
+				//					// TODO Auto-generated catch block
+				//					e1.printStackTrace();
+				//				}	
 				//一行一行的插入
 				boolean mod= true;
 				for(int i= 0; i< table.getRowCount(); i++){
 					//元基编码加密：
 					String plsql= "setRoot:C:/DetaDB1;";
-					   plsql+= "baseName:ZYY;"; 
-					   plsql+= "tableName:zybc:insert;" +
-						   		"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@biky@")+ ";" + 
-						   		"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@biky@")+ ";" + 
-						   		"culumnValue:中药名称:"+ table.getValueAt(i, 2).toString().replace(":", "@biky@")+ ";" + 
-						   		"culumnValue:笔记原文:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:功效:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 4).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:风险规避:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 5).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:用量:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 6).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:性味:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 7).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:经脉:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 8).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:中医馆药理:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 9).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:经解:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 10).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:崇源:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 11).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:愚按:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 12).toString().replace(":", "@biky@"))+ ";" + 
-						   		"culumnValue:搭配:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 13).toString().replace(":", "@biky@"))+ ";" +  
-						   		"culumnValue:常见药:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 14).toString().replace(":", "@biky@"))+ ";";
+					plsql+= "baseName:ZYY;"; 
+					plsql+= "tableName:zybc:insert;" +
+							"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@biky@")+ ";" + 
+							"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@biky@")+ ";" + 
+							"culumnValue:中药名称:"+ table.getValueAt(i, 2).toString().replace(":", "@biky@")+ ";" + 
+							"culumnValue:笔记原文:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:功效:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 4).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:风险规避:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 5).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:用量:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 6).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:性味:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 7).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:经脉:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 8).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:中医馆药理:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 9).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:经解:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 10).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:崇源:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 11).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:愚按:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 12).toString().replace(":", "@biky@"))+ ";" + 
+							"culumnValue:搭配:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 13).toString().replace(":", "@biky@"))+ ";" +  
+							"culumnValue:常见药:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 14).toString().replace(":", "@biky@"))+ ";";
 					try {
 						org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
 					}catch(Exception e1) {
@@ -1402,7 +1397,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				}
 			}
 		});
-    	
+
 		readChinese= new ReadChinese();
 		buttonCTV= new DetaButton("语音阅读关");
 		buttonCTV.setBounds(740, 0, 100, 30);
@@ -1412,11 +1407,11 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				if(sets== null) {
 					return;
 				}
-//				if(appConfig.SectionJPanel.jlabel_end_boxs.isSelected()) {
-//					return;
-//				}
-//				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()
-//						? (currentPage + 1)*2000: sets.size());
+				//				if(appConfig.SectionJPanel.jlabel_end_boxs.isSelected()) {
+				//					return;
+				//				}
+				//				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()
+				//						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("语音阅读开");
 					readChinese= new ReadChinese();
@@ -1430,9 +1425,9 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				}
 			}
 		});
-		
-    	
-    	Box buttonBox= new Box(BoxLayout.X_AXIS);
+
+
+		Box buttonBox= new Box(BoxLayout.X_AXIS);
 		buttonBox.add(buttonCTE);
 		buttonBox.add(buttonFRS);
 		buttonBox.add(buttonCTV);
@@ -1440,15 +1435,15 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		//buttonBox.add(buttonBCJ);
 		buttonBox.add(buttonADD);
 		buttonBox.setBounds(0, 0, 445, 20);
-		
-	    //Box buttonBoxLineTwo= new Box(BoxLayout.X_AXIS);  
+
+		//Box buttonBoxLineTwo= new Box(BoxLayout.X_AXIS);  
 		//buttonBoxLineTwo.add(buttonGXB);
 		//buttonBoxLineTwo.add(buttonBCJ);
 		//buttonBoxLineTwo.setBounds(0, 22, 450, 20);
 		//container.add(buttonBoxLineTwo);
 		return buttonBox;
-    } 
-    
+	} 
+
 	public JTextField name() throws IOException {
 		name= new CfxTextField(null, 0, 0, null);  
 		name.setBounds(180- 50, 50, 380, 80);
@@ -1457,7 +1452,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name.addKeyListener(this);
 		return name;
 	}	
-	
+
 	public JTextField nameHospital() throws IOException {
 		nameHospital= new CfxTextField(null, 0, 0, null);  
 		nameHospital.setBounds(180-50, 50, 380, 80);
@@ -1475,7 +1470,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name_filter.addKeyListener(this);
 		return name_filter;
 	}	
-	
+
 	public JTextField name_filter_not_have() throws IOException {
 		name_filter_not_have= new CfxTextField(null, 0, 0, null);  
 		name_filter_not_have.setBounds(180-50, 50, 380, 80);
@@ -1484,7 +1479,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name_filter_not_have.addKeyListener(this);
 		return name_filter_not_have;
 	}	
-	
+
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable() throws IOException {
 		DictionaryFromDB d= new DictionaryFromDB();
@@ -1496,20 +1491,20 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-//		dic_map= d.listToMap(dic_list);
+		//		dic_map= d.listToMap(dic_list);
 		dic_index= d.mapToIndex(dic_map);
-//		dic_yw= d.mapToMap_yw(dic_map);
-//		dic_li= d.mapToMap_li(dic_map);
-//		dic_hai= d.mapToMap_hai(dic_map);
-//		dic_xz= d.mapToMap_xz(dic_map);
-//		dic_ya= d.mapToMap_ya(dic_map);
-//		dic_jm= d.mapToMap_jm(dic_map);
-//		dic_xw= d.mapToMap_xw(dic_map);
-//		dic_cy= d.mapToMap_cy(dic_map);
-//		dic_jj= d.mapToMap_jj(dic_map);
-//		dic_zf= d.mapToMap_zf(dic_map);
-//		dic_cj= d.mapToMap_cj(dic_map);
-//		dic_yl= d.mapToMap_yl(dic_map,dic_xw,dic_li,dic_xz,dic_jm);
+		//		dic_yw= d.mapToMap_yw(dic_map);
+		//		dic_li= d.mapToMap_li(dic_map);
+		//		dic_hai= d.mapToMap_hai(dic_map);
+		//		dic_xz= d.mapToMap_xz(dic_map);
+		//		dic_ya= d.mapToMap_ya(dic_map);
+		//		dic_jm= d.mapToMap_jm(dic_map);
+		//		dic_xw= d.mapToMap_xw(dic_map);
+		//		dic_cy= d.mapToMap_cy(dic_map);
+		//		dic_jj= d.mapToMap_jj(dic_map);
+		//		dic_zf= d.mapToMap_zf(dic_map);
+		//		dic_cj= d.mapToMap_cj(dic_map);
+		//		dic_yl= d.mapToMap_yl(dic_map,dic_xw,dic_li,dic_xz,dic_jm);
 		tableData_old= new Object[dic_map.size()][14];
 		Object[][] tableData_old_for_model= new Object[dic_map.size()][14];
 		Iterator<String> iter= dic_map.keySet().iterator();
@@ -1564,7 +1559,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				return false;  
 			}
 		};  
-//		TableSorterWithLYG4DQS4D sorter= new TableSorterWithLYG4DQS4D(newTableModel); //ADDE
+		//		TableSorterWithLYG4DQS4D sorter= new TableSorterWithLYG4DQS4D(newTableModel); //ADDE
 		TableSorterZYNK sorter= new TableSorterZYNK(newTableModel); //ADD
 		sorter.addTableName("zybc");
 		sorter.setTableHeader(table.getTableHeader());
@@ -1588,7 +1583,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		table.getTableHeader().setReorderingAllowed(false);
 		table.validate();
 		table.setVisible(true);
-		colorTableRender tcr= new colorTableRender();  
+		ColorTableRender tcr= new ColorTableRender();  
 		table.setDefaultRenderer(Object.class, tcr);	
 		return table;
 	}
@@ -1633,7 +1628,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					String setOfi = iterator.next();
 					if(pos.get(setOfi) == null) {
 						page += ("<span style=\"background:#FEFEFE\"><font color=\"black\" size=\"5\">" 
-					+ setOfi + "</font></span>");
+								+ setOfi + "</font></span>");
 						continue Here;
 					}
 					if (!setOfi.equals("")) {
@@ -1816,7 +1811,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				//this.panel.add(temp);
 				jingMaiBox.add(temp);
 			}
-			
+
 			//box, button, 
 			//panel add box
 			this.panel.add(jingMaiBox);
@@ -1846,8 +1841,8 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 	}
-	
-    //搜索
+
+	//搜索
 	@Override
 	public void keyReleased(KeyEvent arg0) {
 		String zhongyao= "";
@@ -1983,7 +1978,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				//e.printStackTrace();
 			}
 		}
-	    	
+
 		Translator ts= new TranslatorImp();
 		try {
 			ts.init(analyzer);
@@ -2012,7 +2007,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
 				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
 				CatalyticDNA_xingwei= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();
-				}
+			}
 			//
 			pDE_RNA_Formular.pde= "";
 			if(null!= name_filter_not_have.getText()) {
@@ -2280,48 +2275,20 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		//if(arg0.getID())
 	}
 
-	public class colorTableRender extends DefaultTableCellRenderer { 
-		private static final long serialVersionUID = 1L;
-		public Component getTableCellRendererComponent(JTable table,Object value
-				, boolean isSelected, boolean hasFocus, int row,
-				int column) {
-			if (isSelected && hasFocus && row == table.getSelectedRow() && column 
-					== table.getSelectedColumn()) {
-				//2.设置当前Cell的颜色
-				Component c = super.getTableCellRendererComponent(table, value, isSelected
-						, hasFocus, row, column);
-				c.setBackground(Color.CYAN);//设置背景色
-				c.setForeground(Color.gray);//设置前景色
-				return c;
-			} else {
-				//3.设置单数行，偶数行的颜色
-				if (row % 3 == 0) {//偶数行时的颜色
-					setBackground(new Color(253,233,254));
-				}else if (row % 3 == 1) {//设置单数行的颜色
-					setBackground(new Color(233,254,234));
-				}else if (row % 3 == 2) {//设置单数行的颜色
-					setBackground(new Color(255,251,232));
-				}
-				return super.getTableCellRendererComponent(table, value,
-						isSelected, hasFocus, row, column);
-			}
-		}
-	}
-
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		if(zonghe_filter_box.isSelected()) {
 			for(int i = 0; i < newTableModel.getRowCount(); i++){
-					for(int j = 0; j < newTableModel.getRowCount(); j++){
-						if(i!= j) {
-							if(newTableModel.getValueAt(i, 5).toString()
-									.contains(newTableModel.getValueAt(j, 2).toString())) {
-								newTableModel.removeRow(j);
-								j-= 1;
-							}
+				for(int j = 0; j < newTableModel.getRowCount(); j++){
+					if(i!= j) {
+						if(newTableModel.getValueAt(i, 5).toString()
+								.contains(newTableModel.getValueAt(j, 2).toString())) {
+							newTableModel.removeRow(j);
+							j-= 1;
 						}
 					}
 				}
+			}
 			newTableModel.fireTableDataChanged();
 		}else {
 			this.keyReleased(null);;
@@ -2330,10 +2297,10 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 
 	@Override
 	public void stateChanged(ChangeEvent arg0) {
-		if(null!= jp1) {
-			jp1.reg= 0;
-			if(null!= jp1.waveJpanel) {
-				jp1.waveJpanel.reg= 0;	
+		if(null!= soundWaveJPanel) {
+			soundWaveJPanel.reg= 0;
+			if(null!= soundWaveJPanel.waveJpanel) {
+				soundWaveJPanel.waveJpanel.reg= 0;	
 			}
 			this.validate();
 			try {
@@ -2344,6 +2311,6 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			}
 		}
 		// TODO Auto-generated method stub
-		
+
 	}
 }

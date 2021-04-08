@@ -62,7 +62,7 @@ import OSI.OSU.OVU.MVU.GUI.nodeEdit.Sort;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.UpdateRelatedLineVPS;
 import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroCell;
 import comp.filenameFilter.TXTFilter;
-import comp.jbutton.DetaButton;
+import comp.jButton.DetaButton;
 public class GUISample extends JApplet implements MouseMotionListener
 , MouseListener, ItemListener, ActionListener, Runnable{	
 	private static final long serialVersionUID= 5270675501794340912L;

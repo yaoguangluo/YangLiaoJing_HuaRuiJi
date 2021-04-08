@@ -1,22 +1,40 @@
-package comp.jtextarea;
+package comp.jTextfield;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.util.Random;
 import javax.swing.BorderFactory;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.Timer;
-public class CfxTextArea extends JTextArea {
+public class CfxTextField extends JTextField {
 	private static final long serialVersionUID = 1L;
-	private int x,y=0;
-	public CfxTextArea(String string, final int x, final int y, java.awt.Color c) {  
+	private int x,y = 0;
+	@Override
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+		Graphics2D g2=(Graphics2D) g;
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
+		g2.setStroke(new BasicStroke(2.0f));
+		g2.setColor(Color.blue);
+		g2.drawArc(   1,  1, 15, 15, 170, -90);
+		g2.drawArc( 670,  1, 10, 10, 90, -90);
+		g2.drawLine(  5,  1, 670, 1);
+		g2.drawLine(  1,  5, 1, 42);
+		g2.drawLine(670,  5, 670, 42);
+		g2.drawLine(  1, 42, 670, 42);
+	}
+
+	public CfxTextField(String string, final int x, final int y, java.awt.Color c) {  
 		super(string); 
-		this.x=x;
-		this.y=y; 
+		this.x = x;
+		this.y = y; 
 		this.setBorder(BorderFactory.createRaisedBevelBorder()); 
 		this.setPreferredSize(new Dimension(this.x+1, this.y+1));
 		this.setOpaque(true);

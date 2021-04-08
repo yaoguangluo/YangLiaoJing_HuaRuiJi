@@ -8,8 +8,8 @@ import java.util.Vector;
 import javax.swing.JPanel;
 
 import PEU.waveProcessorYLJ.DFT;
-import SP.Jp;
-import SP.Jpv;
+import SP.SoundWaveJPanel;
+import SP.SoundWavePanelVector;
 public class Flt extends JPanel{
 	private static final long serialVersionUID = 1L;
 	double pi= 3.1415926;
@@ -46,7 +46,7 @@ public class Flt extends JPanel{
 		} 	
 	}
 
-	public String clt4(DFT dFT, Vector<Double> lines,Jp jpt,Jpv jp3,Vector<Double> mlines1,
+	public String clt4(DFT dFT, Vector<Double> lines,SoundWaveJPanel jpt,SoundWavePanelVector jp3,Vector<Double> mlines1,
 			Vector<Double> mlines2,
 			Vector<Double> mlines3,
 			Vector<Double> mlines4,

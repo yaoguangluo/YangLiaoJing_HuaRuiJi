@@ -1,6 +1,7 @@
-package comp.jtabbedpane;
+package comp.jButton;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,17 +10,21 @@ import java.awt.event.MouseMotionListener;
 import java.util.Random;
 
 import javax.swing.BorderFactory;
-import javax.swing.JTabbedPane;
+import javax.swing.JButton;
 import javax.swing.Timer;
-public class DetabbedPane extends JTabbedPane{
+public class CfxButton extends JButton{
+	/**
+	 * Author Yaoguang Luo
+	 */
 	private static final long serialVersionUID = 1L;
-	private int x, y= 0;
-	public DetabbedPane(final int x, final int y, java.awt.Color c) {  
-		super(); 
-	//	this.x= x;
-	//	this.y= y; 
+	private int x, y=0;
+	public CfxButton(String string, final int x, final int y, java.awt.Color c) {  
+		super(string); 
+		this.x = x;
+		this.y = y; 
+		this.setContentAreaFilled(false); 
 		this.setBorder(BorderFactory.createRaisedBevelBorder()); 
-	//	this.setPreferredSize(new Dimension(this.x+ 1, this.y+ 1));
+		this.setPreferredSize(new Dimension(this.x+ 1, this.y+ 1));
 		this.setOpaque(true);
 		this.setBackground(c);
 		this.addMouseMotionListener(new MouseMotionListener() {
@@ -27,21 +32,23 @@ public class DetabbedPane extends JTabbedPane{
 			}
 			
 			public void mouseMoved(MouseEvent e) {
-//				Graphics g = getGraphics();
-//				setcolor(g);
-//				//g.setColor(new Color(255,0,255,128));
-//				int xPoints[]={8,8+15,8};
-//				int yPoints[]={8,8,8+15};
-//				g.fillPolygon(xPoints,yPoints,3);
-//				int xPoints1[]={x-16-5,x-8,x-8};
-//				int yPoints1[]={y-8,y-16-5,y-8};
-//				g.fillPolygon(xPoints1,yPoints1,3);
-//				g.fillRect(8,8,x-16 ,5);
-//				g.fillRect(8,8,5 ,y-16);
-//				g.fillRect(8,y-12,x-16 ,5);
-//				g.fillRect(x-12,8,5 ,y-16);
+				Graphics g = getGraphics();
+				setcolor(g);
+				//g.setColor(new Color(255,0,255,128));
+				int xPoints[]={8,8+15,8};
+				int yPoints[]={8,8,8+15};
+				g.fillPolygon(xPoints,yPoints,3);
+				int xPoints1[]={x-16-5,x-8,x-8};
+				int yPoints1[]={y-8,y-16-5,y-8};
+				g.fillPolygon(xPoints1,yPoints1,3);
+				g.fillRect(8,8,x-16 ,5);
+				g.fillRect(8,8,5 ,y-16);
+				g.fillRect(8,y-12,x-16 ,5);
+				g.fillRect(x-12,8,5 ,y-16);
 			}
 		});
+		Graphics g = getGraphics();
+		this.callback(g); 
 	}
 	protected void setcolor(Graphics g) {
 		// TODO Auto-generated method stub

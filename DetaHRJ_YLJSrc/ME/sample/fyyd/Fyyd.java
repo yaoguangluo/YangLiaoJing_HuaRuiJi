@@ -19,7 +19,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
-import comp.jbutton.DetaButton;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -40,6 +39,7 @@ import org.tinos.tcp.http.RestCall;
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
+import comp.jButton.DetaButton;
 public class Fyyd extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;

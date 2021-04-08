@@ -40,7 +40,7 @@ import ME.sample.App;
 import ME.sample.TableSorterZYNK;
 //import ME.sample.fckx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
-import comp.jbutton.DetaButton;
+import comp.jButton.DetaButton;
 public class Fckx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;

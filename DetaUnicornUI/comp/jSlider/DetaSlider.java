@@ -1,4 +1,4 @@
-package comp.jslider;
+package comp.jSlider;
 
 import java.awt.Color;
 import java.awt.event.MouseEvent;

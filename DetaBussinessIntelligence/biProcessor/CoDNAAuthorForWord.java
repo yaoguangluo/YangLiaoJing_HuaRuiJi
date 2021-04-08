@@ -27,8 +27,8 @@ import javax.media.opengl.*;
 import ME.sample.App;
 import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.life.Application;
-import comp.jbutton.DetaButton;
-import comp.jslider.DetaSlider;
+import comp.jButton.DetaButton;
+import comp.jSlider.DetaSlider;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

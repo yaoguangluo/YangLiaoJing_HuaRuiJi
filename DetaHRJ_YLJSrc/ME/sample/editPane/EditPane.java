@@ -21,7 +21,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.tinos.neo.tts.ReadChinese;
 
 import comp.filenameFilter.TXTFilter;
-import comp.jbutton.DetaButton;
+import comp.jButton.DetaButton;
 public class EditPane extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -76,7 +76,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 
 	private void addArabicButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("∞¢”Ô");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("∞¢”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -145,7 +145,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addRussianButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("∂Ì”Ô");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("∂Ì”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -214,7 +214,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addTranditionButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("∑±ÃÂ");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("∑±ÃÂ");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -284,7 +284,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addJapanButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("»’”Ô");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("»’”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -354,7 +354,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addPinYinButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("∆¥“Ù");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("∆¥“Ù");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -418,7 +418,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addReadButton() {
-		comp.jbutton.DetaButton button= new comp.jbutton.DetaButton("‘ƒ∂¡");
+		comp.jButton.DetaButton button= new comp.jButton.DetaButton("‘ƒ∂¡");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			ReadChinese readChinese= new ReadChinese();

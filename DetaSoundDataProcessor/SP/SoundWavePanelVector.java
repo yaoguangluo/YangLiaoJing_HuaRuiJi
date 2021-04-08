@@ -9,7 +9,7 @@ import java.awt.Panel;
 import java.awt.geom.Line2D;
 import java.awt.geom.Line2D.Double;
 import java.util.Vector;
-public class Jpv extends Panel implements Runnable{
+public class SoundWavePanelVector extends Panel implements Runnable{
 	public Vector<Double> lines;
 	public Vector<Double> mlines1;
 	public Vector<Double> mlines2;
@@ -28,7 +28,7 @@ public class Jpv extends Panel implements Runnable{
 	Graphics2D g2;
 	Graphics g3;
 	private static final long serialVersionUID = 1L;
-	public Jpv(Graphics graphics) {
+	public SoundWavePanelVector(Graphics graphics) {
 		this.g3= graphics;
 	}
 

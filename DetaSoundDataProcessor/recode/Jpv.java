@@ -15,10 +15,6 @@ import java.awt.geom.Line2D.Double;
 
 import java.util.Vector;
 
-
-
-
-
 public class Jpv extends Panel implements Runnable
 {
 

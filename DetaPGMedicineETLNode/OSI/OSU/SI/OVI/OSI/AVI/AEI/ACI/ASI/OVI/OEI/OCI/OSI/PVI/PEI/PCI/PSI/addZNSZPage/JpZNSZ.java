@@ -29,7 +29,7 @@ import javax.swing.JTextPane;
 import PEU.soundProcessorYLJ.SoundRecord;
 import PEU.waveProcessorYLJ.DFT;
 import comp.filenameFilter.TXTFilter;
-import comp.jbutton.DetaButton;
+import comp.jButton.DetaButton;
 
 public class JpZNSZ extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

@@ -34,8 +34,8 @@ import PEU.movieProcessorYLJ.LYGFileIO;
 import PEU.soundProcessorYLJ.SoundRecord;
 import PEU.waveProcessorYLJ.DFT;
 import comp.filenameFilter.TXTFilter;
-import comp.jbutton.DetaButton;
-public class Jp extends JPanel implements Runnable{
+import comp.jButton.DetaButton;
+public class SoundWaveJPanel extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;
 	public Thread t1;
@@ -48,10 +48,10 @@ public class Jp extends JPanel implements Runnable{
 	Vector<Double> lines ;
 	Vector<Double> forOutput;
 	BufferedImage imageForOutput;
-	Jpv jp3;
+	SoundWavePanelVector jp3;
 	
 	//
-	public Jp(Container jpanelFourth, DFT dFT, JTextPane text, BufferedImage imageForOutput, MakeContainerZNSZ makeContainerZNSZ){
+	public SoundWaveJPanel(Container jpanelFourth, DFT dFT, JTextPane text, BufferedImage imageForOutput, MakeContainerZNSZ makeContainerZNSZ){
 		this.imageForOutput= imageForOutput;
 		this.dFT= dFT;
 		forOutput= new Vector<Double>();
@@ -67,7 +67,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 0;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -179,7 +179,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -193,7 +193,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -227,7 +227,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -241,7 +241,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -255,7 +255,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -269,7 +269,7 @@ public class Jp extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(Jp.this);
+				t1= new Thread(SoundWaveJPanel.this);
 				t1.setPriority(Thread.MIN_PRIORITY);
 				t1.start();	
 				jpanelFourth.validate();
@@ -289,7 +289,7 @@ public class Jp extends JPanel implements Runnable{
 		this.add(j7);
 		this.add(j8);
 		this.add(j9);
-		jp3= new Jpv(imageForOutput.getGraphics());
+		jp3= new SoundWavePanelVector(imageForOutput.getGraphics());
 		jp3.setBounds(100, 0, 400, 400);
 		jp3.setVisible(true);
 		this.add(jp3);	

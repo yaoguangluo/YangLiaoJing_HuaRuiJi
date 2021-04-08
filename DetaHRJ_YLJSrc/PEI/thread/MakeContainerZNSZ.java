@@ -24,7 +24,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
 import PEU.waveProcessorYLJ.DFT;
-import SP.Jp;
+import SP.SoundWaveJPanel;
 public class MakeContainerZNSZ extends Thread implements Runnable{
 	public Container jpanelFourth;
 	public App u;
@@ -346,13 +346,13 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			DFT dFt= new DFT();
 			dFt.init(1024);
 			BufferedImage imageForOutput= new BufferedImage(1400, 700, BufferedImage.TYPE_INT_RGB);
-			u.jp1= new Jp(jpanelFourth, dFt, u.text, imageForOutput, this);
-			u.jp1.setVisible(true);
-			u.jp1.setBounds(0+ 10, 15, 1040+ 20, 640-30);
+			u.soundWaveJPanel= new SoundWaveJPanel(jpanelFourth, dFt, u.text, imageForOutput, this);
+			u.soundWaveJPanel.setVisible(true);
+			u.soundWaveJPanel.setBounds(0+ 10, 15, 1040+ 20, 640-30);
 			JButton zc= new JButton("Õý³£ÉùÎÆ"); 
 			zc.setBounds(1490, 15, 100, 50);
 			jpanelFourth.add(zc);
-			jpanelFourth.add(u.jp1);
+			jpanelFourth.add(u.soundWaveJPanel);
 			jpanelFourth.add(jsp_panel_sc);
 			jpanelFourth.add(jsp_panel_scm);
 			jpanelFourth.setName(tabNames.get(3));

@@ -29,7 +29,7 @@ import org.math.initon.pde.DecadeToPDS;
 import org.tinos.freetts.thread.read.ReadEnglish;
 
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.RangePDI;
-import comp.jbutton.DetaButton;
+import comp.jButton.DetaButton;
 
 public class Monitor extends JApplet{
 	private static final long serialVersionUID = 1L;

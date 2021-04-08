@@ -37,8 +37,8 @@ import ME.sample.App;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import comp.filenameFilter.TXTFilter;
-import comp.jbutton.DetaButton;
-import comp.jbutton.YLJShowButton;
+import comp.jButton.DetaButton;
+import comp.jButton.YLJShowButton;
 
 public class MakeContainerYXTP extends Thread implements Runnable{
 	public Container jpanelFourth;
