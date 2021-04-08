@@ -1,4 +1,4 @@
-# 养疗经 华瑞集 综合
+# 养疗经 华瑞集 综合 版本18111
 ## 协议 GNU GPL-2.0 License
 ## 介绍
 
@@ -161,16 +161,17 @@
 
 # 养疗经 华瑞集 Github 源码备份
 
-##### (中国) Gitee: Main 
+##### (中国) Gitee: 18111分支
 https://gitee.com/DetaChina/YangLiaoJing
 
-##### (欧美) Github: Main
+##### (欧美) Github: 18111分支
 https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
 
-##### (澳洲) Bitbucket: Main 
+##### (澳洲) Bitbucket: 18111分支
 https://bitbucket.org/luoyaoguang/yangliaojing
 
-##### (非洲) CodingNet: Main
+##### (非洲) CodingNet: 18111分支
 https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
 统一用 Main 分支.
+最新纯净版本见分支号 18111
