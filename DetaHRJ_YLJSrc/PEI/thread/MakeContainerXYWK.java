@@ -37,9 +37,9 @@ public class MakeContainerXYWK extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*5);
-			u.jpanel13= new Wkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
-			u.jpanel13.setName(tabNames.get(12));
-			jTabbedpane.addTab(tabNames.get(12),new ImageIcon() , u.jpanel13, "大外科概论");// 加入第一个页面  
+			u.wkx= new Wkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.wkx.setName(tabNames.get(12));
+			jTabbedpane.addTab(tabNames.get(12),new ImageIcon() , u.wkx, "大外科概论");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

@@ -48,9 +48,9 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel16 = new EditPane(u.text, this.analyzer,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
-			u.jpanel16.setName(tabNames.get(15));
-			jTabbedpane.addTab(tabNames.get(15),new ImageIcon() , u.jpanel16, "编辑页");// 加入第一个页面  	
+			u.editPane = new EditPane(u.text, this.analyzer,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
+			u.editPane.setName(tabNames.get(15));
+			jTabbedpane.addTab(tabNames.get(15),new ImageIcon() , u.editPane, "编辑页");// 加入第一个页面  	
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

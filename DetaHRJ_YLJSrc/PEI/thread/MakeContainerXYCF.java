@@ -38,9 +38,9 @@ public class MakeContainerXYCF extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
-			u.jpanel15 = new Xysc(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
-			u.jpanel15.setName(tabNames.get(14));
-			jTabbedpane.addTab(tabNames.get(14),new ImageIcon() , u.jpanel15, "西医处方药");// 加入第一个页面  
+			u.xysc = new Xysc(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
+			u.xysc.setName(tabNames.get(14));
+			jTabbedpane.addTab(tabNames.get(14),new ImageIcon() , u.xysc, "西医处方药");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

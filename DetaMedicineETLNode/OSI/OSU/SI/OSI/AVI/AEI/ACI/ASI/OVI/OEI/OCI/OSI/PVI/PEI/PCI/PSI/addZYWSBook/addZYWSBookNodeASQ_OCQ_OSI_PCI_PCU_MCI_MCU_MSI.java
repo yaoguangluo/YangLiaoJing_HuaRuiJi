@@ -51,52 +51,52 @@ public class addZYWSBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 	}
 	public void IMP_PSU() throws IOException {		
 		dictionary d=new dictionary();
-		u.jpanel14.dic_list=d.txtToList();
-		u.jpanel14.dic_map = d.listToMap(u.jpanel14.dic_map, u.jpanel14.dic_list);
-		u.jpanel14.dic_gn = d.mapToMap_gn(u.jpanel14.dic_map);
-		u.jpanel14.dic_lx = d.mapToMap_lx(u.jpanel14.dic_map);
-		u.jpanel14.dic_by = d.mapToMap_by(u.jpanel14.dic_map);
-		u.jpanel14.dic_wx = d.mapToMap_wx(u.jpanel14.dic_map);
-		u.jpanel14.dic_bl = d.mapToMap_bl(u.jpanel14.dic_map);
-		u.jpanel14.dic_lc = d.mapToMap_lc(u.jpanel14.dic_map);
-		u.jpanel14.dic_sy = d.mapToMap_sy(u.jpanel14.dic_map);
-		u.jpanel14.dic_zd = d.mapToMap_zd(u.jpanel14.dic_map);
-		u.jpanel14.dic_bf = d.mapToMap_bf(u.jpanel14.dic_map);
-		u.jpanel14.dic_zl = d.mapToMap_zl(u.jpanel14.dic_map);
-		u.jpanel14.dic_jy = d.mapToMap_jy(u.jpanel14.dic_map);
-		u.jpanel14.dic_yh = d.mapToMap_yh(u.jpanel14.dic_map);
-		u.jpanel14.dic_yf = d.mapToMap_yf(u.jpanel14.dic_map);
-		u.jpanel14.dic_yx = d.mapToMap_yx(u.jpanel14.dic_map);
-		tableData_old = new Object[u.jpanel14.dic_map.size()][18];
-		Iterator<String> iter = u.jpanel14.dic_map.keySet().iterator();
-		u.jpanel14.copy = new ArrayList<String>();
+		u.wskx.dic_list=d.txtToList();
+		u.wskx.dic_map = d.listToMap(u.wskx.dic_map, u.wskx.dic_list);
+		u.wskx.dic_gn = d.mapToMap_gn(u.wskx.dic_map);
+		u.wskx.dic_lx = d.mapToMap_lx(u.wskx.dic_map);
+		u.wskx.dic_by = d.mapToMap_by(u.wskx.dic_map);
+		u.wskx.dic_wx = d.mapToMap_wx(u.wskx.dic_map);
+		u.wskx.dic_bl = d.mapToMap_bl(u.wskx.dic_map);
+		u.wskx.dic_lc = d.mapToMap_lc(u.wskx.dic_map);
+		u.wskx.dic_sy = d.mapToMap_sy(u.wskx.dic_map);
+		u.wskx.dic_zd = d.mapToMap_zd(u.wskx.dic_map);
+		u.wskx.dic_bf = d.mapToMap_bf(u.wskx.dic_map);
+		u.wskx.dic_zl = d.mapToMap_zl(u.wskx.dic_map);
+		u.wskx.dic_jy = d.mapToMap_jy(u.wskx.dic_map);
+		u.wskx.dic_yh = d.mapToMap_yh(u.wskx.dic_map);
+		u.wskx.dic_yf = d.mapToMap_yf(u.wskx.dic_map);
+		u.wskx.dic_yx = d.mapToMap_yx(u.wskx.dic_map);
+		tableData_old = new Object[u.wskx.dic_map.size()][18];
+		Iterator<String> iter = u.wskx.dic_map.keySet().iterator();
+		u.wskx.copy = new ArrayList<String>();
 		while (iter.hasNext())
-			u.jpanel14.copy.add(iter.next());
-		for(int i= 0;i< u.jpanel14.copy.size(); i++) {
-			tableData_old[i]= new Object[]{""+(i+1),""+0,u.jpanel14.copy.get(i).trim().replace("¡²¡²¡²", "¡²") ,
-					u.jpanel14.dic_map.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", "").replace("¡²¡²¡²", "¡²"),
-					u.jpanel14.dic_gn.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_lx.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_by.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_wx.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_bl.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_lc.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_sy.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_zd.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_bf.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_zl.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_jy.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_yh.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_yf.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel14.dic_yx.get(u.jpanel14.copy.get(i)).toString().replaceAll("\\s*", "")};
+			u.wskx.copy.add(iter.next());
+		for(int i= 0;i< u.wskx.copy.size(); i++) {
+			tableData_old[i]= new Object[]{""+(i+1),""+0,u.wskx.copy.get(i).trim().replace("¡²¡²¡²", "¡²") ,
+					u.wskx.dic_map.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", "").replace("¡²¡²¡²", "¡²"),
+					u.wskx.dic_gn.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_lx.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_by.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_wx.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_bl.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_lc.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_sy.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_zd.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_bf.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_zl.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_jy.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_yh.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_yf.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.wskx.dic_yx.get(u.wskx.copy.get(i)).toString().replaceAll("\\s*", "")};
 		}	
-		u.jpanel14.newTableModel.getDataVector().clear();
+		u.wskx.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.jpanel14.newTableModel.insertRow(i, tableData_old[i]);
+			u.wskx.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.jpanel14.tableData_old= tableData_old;
-		u.jpanel14.newTableModel.fireTableDataChanged();
-		u.jpanel14.revalidate();
+		u.wskx.tableData_old= tableData_old;
+		u.wskx.newTableModel.fireTableDataChanged();
+		u.wskx.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

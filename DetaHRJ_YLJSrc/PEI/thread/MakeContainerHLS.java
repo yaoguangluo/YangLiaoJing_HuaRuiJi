@@ -42,9 +42,9 @@ public class MakeContainerHLS extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel17= new Cecil(u.text, this.analyzer, pos, pose, etc, cte, posec, posFullec, u);
-			u.jpanel17.setName(tabNames.get(16));
-			jTabbedpane.addTab(tabNames.get(16), new ImageIcon(), u.jpanel17, "哈里森大内科英文版");// 加入第一个页面  
+			u.cecil= new Cecil(u.text, this.analyzer, pos, pose, etc, cte, posec, posFullec, u);
+			u.cecil.setName(tabNames.get(16));
+			jTabbedpane.addTab(tabNames.get(16), new ImageIcon(), u.cecil, "哈里森大内科英文版");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

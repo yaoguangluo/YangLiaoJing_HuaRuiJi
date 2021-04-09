@@ -162,18 +162,18 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public JCheckBox shuming_filter_box;
 	public DetabbedPane jTabbedpane;
 	public List<String> sets;
-	public Xynk jpanel6;
-	public Zynkx jpanel7;
-	public Zyzdx jpanel8;
-	public Fyyd jpanel9;
-	public Fqz jpanel10;
-	public Fckx jpanel11;
-	public Jzkx jpanel12;
-	public Wkx jpanel13;
-	public Wskx jpanel14;
-	public Xysc jpanel15;
-	public Cecil jpanel17;
-	public EditPane jpanel16;
+	public Xynk xynk;
+	public Zynkx zynkx;
+	public Zyzdx zyzdx;
+	public Fyyd fyyd;
+	public Fqz fqz;
+	public Fckx fckx;
+	public Jzkx jzkx;
+	public Wkx wkx;
+	public Wskx wskx;
+	public Xysc xysc;
+	public Cecil cecil;
+	public EditPane editPane;
 	public JLabel label0001;
 	public JTextPane data;
 	public JPanel panel_yt;
@@ -551,31 +551,31 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					//中医诊断：
 					preAdd+= "中医诊断：\r\n\r\n";
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==jpanel8.table.getValueAt(i, 2)?"":jpanel8.table.getValueAt(i, 2).toString())
-								//	+ "证候内容："+	(null==jpanel8.table.getValueAt(i, 5)?"":jpanel8.table.getValueAt(i, 5).toString())
-								+ "可能性："+	(null==jpanel8.table.getValueAt(i, 1)?"":jpanel8.table.getValueAt(i, 1).toString());
+						preAdd+= "证候名："+ (null==zyzdx.table.getValueAt(i, 2)?"":zyzdx.table.getValueAt(i, 2).toString())
+								//	+ "证候内容："+	(null==zyzdx.table.getValueAt(i, 5)?"":zyzdx.table.getValueAt(i, 5).toString())
+								+ "可能性："+	(null==zyzdx.table.getValueAt(i, 1)?"":zyzdx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "内科诊断：\r\n\r\n";
 					//内科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==jpanel6.table.getValueAt(i, 2)?"":jpanel6.table.getValueAt(i, 2).toString())
-								//	+ "证候意义："+	(null==jpanel6.table.getValueAt(i, 9)?"":jpanel6.table.getValueAt(i, 9).toString())
-								+ "可能性："+	(null==jpanel6.table.getValueAt(i, 1)?"":jpanel6.table.getValueAt(i, 1).toString());
+						preAdd+= "证候名："+ (null==xynk.table.getValueAt(i, 2)?"":xynk.table.getValueAt(i, 2).toString())
+								//	+ "证候意义："+	(null==xynk.table.getValueAt(i, 9)?"":xynk.table.getValueAt(i, 9).toString())
+								+ "可能性："+	(null==xynk.table.getValueAt(i, 1)?"":xynk.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "西医诊断：\r\n\r\n";
 					//西医急诊：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==jpanel12.table.getValueAt(i, 2)?"":jpanel12.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==jpanel12.table.getValueAt(i, 1)?"":jpanel12.table.getValueAt(i, 1).toString());
+						preAdd+= "证候名："+ (null==jzkx.table.getValueAt(i, 2)?"":jzkx.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==jzkx.table.getValueAt(i, 1)?"":jzkx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "外科诊断：\r\n\r\n";
 					//外科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==jpanel13.table.getValueAt(i, 2)?"":jpanel13.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==jpanel13.table.getValueAt(i, 1)?"":jpanel13.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==wkx.table.getValueAt(i, 2)?"":wkx.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==wkx.table.getValueAt(i, 1)?"":wkx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "\r\n\r\n *************************\r\n\r\n";
@@ -584,16 +584,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					preAdd+= "妇幼诊断：\r\n\r\n";
 					//妇幼分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==jpanel11.table.getValueAt(i, 2)?"":jpanel11.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==jpanel11.table.getValueAt(i, 1)?"":jpanel11.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==fckx.table.getValueAt(i, 2)?"":fckx.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==fckx.table.getValueAt(i, 1)?"":fckx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 
 					preAdd+= "伤科：\r\n\r\n";
 					//伤科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==jpanel14.table.getValueAt(i, 2)?"":jpanel14.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==jpanel14.table.getValueAt(i, 1)?"":jpanel14.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==wskx.table.getValueAt(i, 2)?"":wskx.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==wskx.table.getValueAt(i, 1)?"":wskx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 
@@ -604,18 +604,18 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					xiYaoTuiJian+= "西药推荐：\r\n\r\n";
 					//分析：
 					for(int i=0;i<20;i++) {
-						xiYaoTuiJian+= "推荐名："+ (null==jpanel15.table.getValueAt(i, 2)?"":jpanel15.table.getValueAt(i, 2).toString())
-								+ "适应内容："+	(null==jpanel15.table.getValueAt(i, 8)?"":jpanel15.table.getValueAt(i, 8).toString())
-								+ "可能性："+	(null==jpanel15.table.getValueAt(i, 1)?"":jpanel15.table.getValueAt(i, 1).toString());
+						xiYaoTuiJian+= "推荐名："+ (null==xysc.table.getValueAt(i, 2)?"":xysc.table.getValueAt(i, 2).toString())
+								+ "适应内容："+	(null==xysc.table.getValueAt(i, 8)?"":xysc.table.getValueAt(i, 8).toString())
+								+ "可能性："+	(null==xysc.table.getValueAt(i, 1)?"":xysc.table.getValueAt(i, 1).toString());
 						xiYaoTuiJian+= "\r\n\r\n";
 					}
 					preAdd+= xiYaoTuiJian;
 					preAdd+= "方剂推荐：\r\n\r\n";
 					//方剂分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "推荐名："+ (null==jpanel7.table.getValueAt(i, 2)?"":jpanel7.table.getValueAt(i, 2).toString())
-								+ "推荐内容："+(null==jpanel7.table.getValueAt(i, 4)?"":jpanel7.table.getValueAt(i, 4).toString())
-								+ "可能性："+	(null==jpanel7.table.getValueAt(i, 1)?"":jpanel7.table.getValueAt(i, 1).toString());
+						preAdd+= "推荐名："+ (null==zynkx.table.getValueAt(i, 2)?"":zynkx.table.getValueAt(i, 2).toString())
+								+ "推荐内容："+(null==zynkx.table.getValueAt(i, 4)?"":zynkx.table.getValueAt(i, 4).toString())
+								+ "可能性："+	(null==zynkx.table.getValueAt(i, 1)?"":zynkx.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "\r\n\r\n";
@@ -1606,9 +1606,9 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		if(key== null) {
 			key= "";	
 		}
-		if(jpanel7!= null) {
-			this.jpanel7.key= table.getValueAt(row, 2).toString();
-			this.jpanel7.keyReleased(null);
+		if(zynkx!= null) {
+			this.zynkx.key= table.getValueAt(row, 2).toString();
+			this.zynkx.keyReleased(null);
 		}
 		try {
 			coAuthorForWord.bootClassificationMap(table.getValueAt(row, 2).toString(), false);
@@ -1924,49 +1924,49 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					key+= "淤";
 				}
 			}
-		if(jpanel6!= null) {
-			this.jpanel6.key= zhongyao.toString();
-			this.jpanel6.keyReleased(null);
+		if(xynk!= null) {
+			this.xynk.key= zhongyao.toString();
+			this.xynk.keyReleased(null);
 		}
-		if(jpanel7!= null) {
-			this.jpanel7.key= zhongyao.toString();
-			this.jpanel7.keyReleased(null);
+		if(zynkx!= null) {
+			this.zynkx.key= zhongyao.toString();
+			this.zynkx.keyReleased(null);
 		}
-		if(jpanel8!= null) {
-			this.jpanel8.key= zhongyao.toString();
-			this.jpanel8.keyReleased(null);
+		if(zyzdx!= null) {
+			this.zyzdx.key= zhongyao.toString();
+			this.zyzdx.keyReleased(null);
 		}
-		if(jpanel9!= null) {
-			this.jpanel9.key= zhongyao.toString();
-			this.jpanel9.keyReleased(null);
+		if(fyyd!= null) {
+			this.fyyd.key= zhongyao.toString();
+			this.fyyd.keyReleased(null);
 		}
-		if(jpanel10!= null) {
-			this.jpanel10.key= zhongyao.toString();
-			this.jpanel10.keyReleased(null);
+		if(fqz!= null) {
+			this.fqz.key= zhongyao.toString();
+			this.fqz.keyReleased(null);
 		}
-		if(jpanel11!= null) {
-			this.jpanel11.key= zhongyao.toString();
-			this.jpanel11.keyReleased(null);
+		if(fckx!= null) {
+			this.fckx.key= zhongyao.toString();
+			this.fckx.keyReleased(null);
 		}
-		if(jpanel12!= null) {
-			this.jpanel12.key= zhongyao.toString();
-			this.jpanel12.keyReleased(null);
+		if(jzkx!= null) {
+			this.jzkx.key= zhongyao.toString();
+			this.jzkx.keyReleased(null);
 		}
-		if(jpanel13!= null) {
-			this.jpanel13.key= zhongyao.toString();
-			this.jpanel13.keyReleased(null);
+		if(wkx!= null) {
+			this.wkx.key= zhongyao.toString();
+			this.wkx.keyReleased(null);
 		}
-		if(jpanel14!= null) {
-			this.jpanel14.key= zhongyao.toString();
-			this.jpanel14.keyReleased(null);
+		if(wskx!= null) {
+			this.wskx.key= zhongyao.toString();
+			this.wskx.keyReleased(null);
 		}
-		if(jpanel15!= null) {
-			this.jpanel15.key= zhongyao.toString();
-			this.jpanel15.keyReleased(null);
+		if(xysc!= null) {
+			this.xysc.key= zhongyao.toString();
+			this.xysc.keyReleased(null);
 		}
-		if(jpanel16!= null) {
-			this.jpanel16.key= zhongyao.toString();
-			this.jpanel16.keyReleased(null);
+		if(editPane!= null) {
+			this.editPane.key= zhongyao.toString();
+			this.editPane.keyReleased(null);
 		}
 		for(int i= 0; i< this.searchList.size(); i++) {
 			try {
@@ -1984,9 +1984,9 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		} catch (IOException e) {
 		} 
 		List<Verbal> verbals= ts.index(analyzer, forE);
-		if(jpanel17!= null) {
-			this.jpanel17.verbals= verbals;
-			this.jpanel17.keyReleased(null);
+		if(cecil!= null) {
+			this.cecil.verbals= verbals;
+			this.cecil.keyReleased(null);
 		}
 		zhongYaoSearch(zhongyao, forE, key);
 	}

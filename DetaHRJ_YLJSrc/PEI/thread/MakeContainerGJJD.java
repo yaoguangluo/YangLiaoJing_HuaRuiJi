@@ -37,9 +37,9 @@ public class MakeContainerGJJD extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel9 = new Fyyd(u.text, this.analyzer, pos, pose, etc, cte, u);
-			u.jpanel9.setName(tabNames.get(8));
-			jTabbedpane.addTab(tabNames.get(8),new ImageIcon() , u.jpanel9, "古籍经典");// 加入第一个页面  
+			u.fyyd = new Fyyd(u.text, this.analyzer, pos, pose, etc, cte, u);
+			u.fyyd.setName(tabNames.get(8));
+			jTabbedpane.addTab(tabNames.get(8),new ImageIcon() , u.fyyd, "古籍经典");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

@@ -39,9 +39,9 @@ public class MakeContainerZYNKFJ extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000* 2);
 			//jTabbedpane.setMnemonicAt(5, KeyEvent.VK_5);// 设置第一个位置的快捷键为0  
-			u.jpanel7= new Zynkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
-			u.jpanel7.setName(tabNames.get(6));
-			jTabbedpane.addTab(tabNames.get(6), new ImageIcon(), u.jpanel7, "中医方剂诊治");// 加入第一个页面  
+			u.zynkx= new Zynkx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.zynkx.setName(tabNames.get(6));
+			jTabbedpane.addTab(tabNames.get(6), new ImageIcon(), u.zynkx, "中医方剂诊治");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);
@@ -76,7 +76,7 @@ public class MakeContainerZYNKFJ extends Thread implements Runnable{
 //			//
 //			frameTag.setLocation(point.x, point.y);
 //			frameTag.setResizable(false);
-//			//frameTag.add(u.jpanel7);
+//			//frameTag.add(u.zynkx);
 //			frameTag.add(jTabbedpane.getSelectedComponent());
 //			frameTag.setVisible(true);
 //			frameTag.show();

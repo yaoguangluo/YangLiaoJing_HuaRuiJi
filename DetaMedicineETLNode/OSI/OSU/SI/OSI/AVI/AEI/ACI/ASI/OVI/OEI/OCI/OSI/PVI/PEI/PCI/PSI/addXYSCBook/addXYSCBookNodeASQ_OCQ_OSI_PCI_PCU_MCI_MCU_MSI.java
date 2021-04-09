@@ -52,50 +52,50 @@ public class addXYSCBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 	}
 	public void IMP_PSU() throws IOException {
 		dictionary d= new dictionary();
-		u.jpanel15.dic_yao_ming= new ConcurrentHashMap<>();
-		u.jpanel15.dic_chengfen_danwei= new ConcurrentHashMap<>();
-		u.jpanel15.dic_yong_fa= new ConcurrentHashMap<>();
-		u.jpanel15.dic_yong_liang= new ConcurrentHashMap<>();
-		u.jpanel15.dic_yao_li= new ConcurrentHashMap<>();
-		u.jpanel15.dic_zhu_yi= new ConcurrentHashMap<>();
-		u.jpanel15.dic_shi_ying= new ConcurrentHashMap<>();
-		u.jpanel15.dic_jie_shao= new ConcurrentHashMap<>();
-		u.jpanel15.dic_bu_liang_fan_ying= new ConcurrentHashMap<>();
-		u.jpanel15.dic_yao_wu_xiang_hu_zuo_yong= new ConcurrentHashMap<>();
-		u.jpanel15.dic_qi_ta= new ConcurrentHashMap<>();
-		d.txtToMap(u.jpanel15.dic_yao_ming, u.jpanel15.dic_chengfen_danwei, u.jpanel15.dic_yong_fa
-				, u.jpanel15.dic_yao_li, u.jpanel15.dic_zhu_yi, u.jpanel15.dic_shi_ying
-				, u.jpanel15.dic_bu_liang_fan_ying, u.jpanel15.dic_yao_wu_xiang_hu_zuo_yong
-				, u.jpanel15.dic_qi_ta, u.jpanel15.dic_yong_liang, u.jpanel15.dic_jie_shao);
-		Iterator<String> iter= u.jpanel15.dic_yao_ming.keySet().iterator();
-		u.jpanel15.copy= new ArrayList<>();
+		u.xysc.dic_yao_ming= new ConcurrentHashMap<>();
+		u.xysc.dic_chengfen_danwei= new ConcurrentHashMap<>();
+		u.xysc.dic_yong_fa= new ConcurrentHashMap<>();
+		u.xysc.dic_yong_liang= new ConcurrentHashMap<>();
+		u.xysc.dic_yao_li= new ConcurrentHashMap<>();
+		u.xysc.dic_zhu_yi= new ConcurrentHashMap<>();
+		u.xysc.dic_shi_ying= new ConcurrentHashMap<>();
+		u.xysc.dic_jie_shao= new ConcurrentHashMap<>();
+		u.xysc.dic_bu_liang_fan_ying= new ConcurrentHashMap<>();
+		u.xysc.dic_yao_wu_xiang_hu_zuo_yong= new ConcurrentHashMap<>();
+		u.xysc.dic_qi_ta= new ConcurrentHashMap<>();
+		d.txtToMap(u.xysc.dic_yao_ming, u.xysc.dic_chengfen_danwei, u.xysc.dic_yong_fa
+				, u.xysc.dic_yao_li, u.xysc.dic_zhu_yi, u.xysc.dic_shi_ying
+				, u.xysc.dic_bu_liang_fan_ying, u.xysc.dic_yao_wu_xiang_hu_zuo_yong
+				, u.xysc.dic_qi_ta, u.xysc.dic_yong_liang, u.xysc.dic_jie_shao);
+		Iterator<String> iter= u.xysc.dic_yao_ming.keySet().iterator();
+		u.xysc.copy= new ArrayList<>();
 		while(iter.hasNext()) {
-			u.jpanel15.copy.add(iter.next());	
+			u.xysc.copy.add(iter.next());	
 		}
-		tableData_old= new Object[u.jpanel15.dic_yao_ming.size()][18];
-		for(int i= 0; i< u.jpanel15.copy.size(); i++) {
+		tableData_old= new Object[u.xysc.dic_yao_ming.size()][18];
+		for(int i= 0; i< u.xysc.copy.size(); i++) {
 			tableData_old[i]= new Object[]{""+(i+1),
 					""+0,
-					u.jpanel15.copy.get(i).trim(),
-					u.jpanel15.dic_jie_shao.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_yao_li.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_chengfen_danwei.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_yong_fa.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_zhu_yi.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_shi_ying.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_bu_liang_fan_ying.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_yong_liang.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_yao_wu_xiang_hu_zuo_yong.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.jpanel15.dic_qi_ta.get(u.jpanel15.copy.get(i)).toString().replaceAll("\\s*", "")
+					u.xysc.copy.get(i).trim(),
+					u.xysc.dic_jie_shao.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_yao_li.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_chengfen_danwei.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_yong_fa.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_zhu_yi.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_shi_ying.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_bu_liang_fan_ying.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_yong_liang.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_yao_wu_xiang_hu_zuo_yong.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xysc.dic_qi_ta.get(u.xysc.copy.get(i)).toString().replaceAll("\\s*", "")
 			};
 		}	
-		u.jpanel15.newTableModel.getDataVector().clear();
+		u.xysc.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.jpanel15.newTableModel.insertRow(i, tableData_old[i]);
+			u.xysc.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.jpanel15.tableData_old= tableData_old;
-		u.jpanel15.newTableModel.fireTableDataChanged();
-		u.jpanel15.revalidate();
+		u.xysc.tableData_old= tableData_old;
+		u.xysc.newTableModel.fireTableDataChanged();
+		u.xysc.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

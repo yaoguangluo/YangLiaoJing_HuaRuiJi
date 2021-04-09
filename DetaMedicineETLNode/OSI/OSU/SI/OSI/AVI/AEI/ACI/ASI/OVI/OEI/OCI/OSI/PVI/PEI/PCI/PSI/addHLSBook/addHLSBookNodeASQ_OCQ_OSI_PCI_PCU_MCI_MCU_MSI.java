@@ -53,24 +53,24 @@ public class addHLSBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_A
 	}
 	public void IMP_PSU() throws IOException {
 		dictionary d = new dictionary();
-		u.jpanel17.dic_list = d.txtToListName();
-		u.jpanel17.dic_map = d.listNameToMap(u.jpanel17.dic_map, u.jpanel17.dic_list);//.listNameToMap(dic_list);
-		tableData_old = new Object[u.jpanel17.dic_map.size()][4];
-		Iterator<String> iter= u.jpanel17.dic_map.keySet().iterator();
-		u.jpanel17.copy= new ArrayList<String>();
+		u.cecil.dic_list = d.txtToListName();
+		u.cecil.dic_map = d.listNameToMap(u.cecil.dic_map, u.cecil.dic_list);//.listNameToMap(dic_list);
+		tableData_old = new Object[u.cecil.dic_map.size()][4];
+		Iterator<String> iter= u.cecil.dic_map.keySet().iterator();
+		u.cecil.copy= new ArrayList<String>();
 		while (iter.hasNext())
-			u.jpanel17.copy.add(iter.next());
-		for(int i= 0; i< u.jpanel17.copy.size(); i++) {
-			tableData_old[i] = new Object[]{""+(i+1),""+0,u.jpanel17.copy.get(i).trim(),
-					u.jpanel17.dic_map.get(u.jpanel17.copy.get(i)).toString().replaceAll("\\s+", " ")};
+			u.cecil.copy.add(iter.next());
+		for(int i= 0; i< u.cecil.copy.size(); i++) {
+			tableData_old[i] = new Object[]{""+(i+1),""+0,u.cecil.copy.get(i).trim(),
+					u.cecil.dic_map.get(u.cecil.copy.get(i)).toString().replaceAll("\\s+", " ")};
 		}	
-		u.jpanel17.newTableModel.getDataVector().clear();
+		u.cecil.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.jpanel17.newTableModel.insertRow(i, tableData_old[i]);
+			u.cecil.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.jpanel17.tableData_old= tableData_old;
-		u.jpanel17.newTableModel.fireTableDataChanged();
-		u.jpanel17.revalidate();
+		u.cecil.tableData_old= tableData_old;
+		u.cecil.newTableModel.fireTableDataChanged();
+		u.cecil.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

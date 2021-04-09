@@ -37,9 +37,9 @@ public class MakeContainerZYZD extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.jpanel8= new Zyzdx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
-			u.jpanel8.setName(tabNames.get(7));
-			jTabbedpane.addTab(tabNames.get(7),new ImageIcon() , u.jpanel8, "中医诊断学");// 加入第一个页面  
+			u.zyzdx= new Zyzdx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.zyzdx.setName(tabNames.get(7));
+			jTabbedpane.addTab(tabNames.get(7),new ImageIcon() , u.zyzdx, "中医诊断学");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);
