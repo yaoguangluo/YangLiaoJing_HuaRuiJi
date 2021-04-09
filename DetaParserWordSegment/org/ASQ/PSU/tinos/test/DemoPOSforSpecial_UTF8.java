@@ -9,7 +9,7 @@ import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 
 import static java.lang.System.*;
 
-public class DemoPOSforSpecial {
+public class DemoPOSforSpecial_UTF8 {
 	public static void main(String[] args) throws IOException {
 		Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
 		analyzer.initMixed();
