@@ -22,6 +22,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import AVQ.OVU.semaphone.TaskMakeCoWorker;
 import ME.sample.App;
+import ME.sample.zhongyao.ZhongYaoTable;
 public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseListener{
 	public Container jpanelFirst;
 	public App u;
@@ -43,7 +44,7 @@ public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseLi
 		jpanelFirst.setLayout(null);
 		jpanelFirst.setBounds(0, 0, 1490, 980);
 		JScrollPane jsp_table= null;
-		jsp_table= new JScrollPane(u.jTable());
+		jsp_table= new JScrollPane(new ZhongYaoTable().jTable(u));
 		jsp_table.setBounds(5, 80-80, 1440-130, 200+120+50-135);
 		jpanelFirst.add(jsp_table);  
 	}

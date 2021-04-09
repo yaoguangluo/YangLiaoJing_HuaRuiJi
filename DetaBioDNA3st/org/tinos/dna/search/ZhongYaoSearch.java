@@ -198,9 +198,9 @@ public class ZhongYaoSearch{
 					continue Here;
 				}
 				if(app.risk_filter_box.isSelected()) {
-					String hai= (app.dic_hai.get(score[i])==null?"null."
-							:app.dic_hai.get(score[i]).toString().replaceAll("\\s*", "")
-							.equalsIgnoreCase("")?"null":app.dic_hai.get(score[i]).toString()
+					String hai= (app.dic_hai.get(score[i])== null? "null."
+							: app.dic_hai.get(score[i]).toString().replaceAll("\\s*", "")
+							.equalsIgnoreCase("")? "null": app.dic_hai.get(score[i]).toString()
 									.replaceAll("\\s*", ""));
 					String temp= app.name_filter.getText();
 					for(int j=0;j<temp.length();j++) {
@@ -210,8 +210,8 @@ public class ZhongYaoSearch{
 					}
 				}
 				if(app.feel_filter_box.isSelected()) {
-					String li= (app.dic_li.get(score[i])==null?"null."
-							:app.dic_li.get(score[i]).toString().replaceAll("\\s*", "")
+					String li= (app.dic_li.get(score[i])== null? "null."
+							: app.dic_li.get(score[i]).toString().replaceAll("\\s*", "")
 							.equalsIgnoreCase("")?"null": app.dic_li.get(score[i]).toString()
 									.replaceAll("\\s*", ""));
 					String temp= app.name_filter.getText();
@@ -234,7 +234,7 @@ public class ZhongYaoSearch{
 				if(null!= app.name_filter_not_have.getText()) {
 					if(!app.name_filter_not_have.getText().replace(" ", "").isEmpty()) {
 						String wei= app.dic_jm.get(score[i]).toString().replaceAll("\\s*", "");
-						CatalyticDNA_gongxiao+= app.name_filter_not_have.getText().replace(" ", "");;
+						CatalyticDNA_gongxiao+= app.name_filter_not_have.getText().replace(" ", "");
 						for(int j= 0; j< CatalyticDNA_gongxiao.length(); j++) {
 							if(!wei.contains(""+ CatalyticDNA_gongxiao.charAt(j))) {
 								continue Here;
