@@ -513,7 +513,7 @@ public class TokenPDI {
 		while(InitonPDE.hasNext()) {
 			InitonPDE= InitonPDE.next;
 		}
-		System.out.println();
+		//System.out.println();
 		while(InitonPDE.hasPrev()) {
 			InitonPDE= InitonPDE.prev;
 		}
