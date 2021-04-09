@@ -1,9 +1,9 @@
 package org.math.initon.pds;
-//这个函数用于元基进行数字逻辑丝化变换
-//思想：肽展公式，十七进制元基数字，元基数字逻辑
-//作者：罗瑶光
-//算法参考如下（肽展公式在离散数学中根据贝叶斯进行数字逻辑变换）
-//#### 元基数字  =   元基符号=   肽展公式元基数字变换 = (肽概率展开数字逻辑集合)
+//�����������Ԫ�����������߼�˿���任
+//˼�룺��չ��ʽ��ʮ�߽���Ԫ�����֣�Ԫ�������߼�
+//���ߣ�������
+//�㷨�ο����£���չ��ʽ����ɢ��ѧ�и��ݱ�Ҷ˹���������߼��任��
+//#### Ԫ������  =   Ԫ������=   ��չ��ʽԪ�����ֱ任 = (�ĸ���չ�������߼�����)
 //#### 0	=		D  = 	DD =(D, DD)         
 //#### E 	=		I  = 	I  =(I) 
 //#### F 	=		U  = 	I++ OR Q--  =(I, Q) 
@@ -101,7 +101,7 @@ public class PDE_PDS_DL {
 			}
 		}
 
-		//+- 符号见 FindOulerRing 函数 的 332行。
+		//+- ���ż� FindOulerRing ���� �� 332�С�
 		//#### 5 	=		HC =    ((IU, DU) OR DI) + DI  
 		//=(IUDI, DUDI, DIDI) OR (IUDIDI, DUDIDI)
 		if(initon.equalsIgnoreCase("-")) {	
@@ -123,7 +123,7 @@ public class PDE_PDS_DL {
 				}
 			}
 		}
-		//+- 符号见 FindOulerRing 函数 的 332行。
+		//+- ���ż� FindOulerRing ���� �� 332�С�
 		//#### B 	=		HE =    ((IU, DU) OR DI) + (IU, DU)  
 		//=(IUIU, IUDU, DUIU, DUDU, DIIU, DIDU) OR (IUDIIU, IUDIDU, DUDIIU, DUDIDU) 
 		if(initon.equalsIgnoreCase("+")) {
@@ -310,7 +310,7 @@ public class PDE_PDS_DL {
 		return null;
 	}
 	//IUQ D CEVS H POA -+ MXT
-	//反向排列后如下
+	//�������к�����
 	//TXM +- AOP H SVEC D QUI
 	public String initonPDIwithBYS(String pds, double bys, StringBuilder pDEKey, boolean isBys) {
 		pds= pds.replace("UQIUDIIU", "T");
@@ -346,7 +346,7 @@ public class PDE_PDS_DL {
 		return pds;
 	}
 
-	//用于肽展公式逐级变换
+	//������չ��ʽ�𼶱任
 	//QUI  D  SVEC  H AOP +-  TXM 
 	public String initonPDEwithBYS(String pds, double pDE_KEY_rate, StringBuilder pDEKey, boolean isBys) {
 		if(!isBys) {
@@ -467,7 +467,7 @@ public class PDE_PDS_DL {
 		return pds;
 	}
 
-	//融合肽展公式，离散数学和数字逻辑 的元基变换
+	//�ں���չ��ʽ����ɢ��ѧ�������߼� ��Ԫ���任
 	//	pds= pds.replace("UQ", "V");
 	//	pds= pds.replace("DI", "C");
 	//	pds= pds.replace("IQ", "S");
@@ -477,7 +477,7 @@ public class PDE_PDS_DL {
 	//	pds= pds.replace("CS", "M");
 	//	pds= pds.replace("VE", "T");
 	//	pds= pds.replace("VC", "X");
-	// 我的思维逻辑是先将PDS的数字逻辑和离散数学归纳识别，然后走肽展识别，最大缩短元基长度
+	// �ҵ�˼ά�߼����Ƚ�PDS�������߼�����ɢ��ѧ����ʶ��Ȼ������չʶ���������Ԫ������
 	public String initonPDE_DCDLwithBYS(String pds, double pDE_KEY_rate, StringBuilder pDEKey, boolean isBys) {
 		if(!isBys) {
 			pds= pds.replace("UQIUDIIU", "T");

@@ -4,21 +4,21 @@ public interface VerbalController{
 	 
 	//get verbal
 	
-	//è¿‘ä¹‰è¯ synonyms
+	//½üÒå´Ê synonyms
 	
-	//åä¹‰è¯ antonyms
+	//·´Òå´Ê antonyms
 	
-	//è¯æ€§the part of speech
+	//´ÊĞÔthe part of speech
 	
-	//è¯æ ¹root
+	//´Ê¸ùroot
 	
-	//è¯é¢‘word frequency
+	//´ÊÆµword frequency
 	
-	//è¯æ€word fix
+	//´ÊÌ¬word fix
 	
-	//è¯æ„Ÿsense of word
+	//´Ê¸Ğsense of word
 	
-	//è¯éŸ³pronounciation
+	//´ÊÒôpronounciation
 	
-	//ç¿»è¯‘translation
+	//·­Òëtranslation
 }

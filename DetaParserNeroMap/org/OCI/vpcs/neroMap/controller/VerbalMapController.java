@@ -1,21 +1,21 @@
 package org.OCI.vpcs.neroMap.controller;
 
 public interface VerbalMapController{
-	//è¿‘ä¹‰è¯synonymsMap
+	//½üÒå´ÊsynonymsMap
 	
-	//åä¹‰è¯antonymsMap
+	//·´Òå´ÊantonymsMap
 	
-	//è¯æ€§the part of speechMap
+	//´ÊĞÔthe part of speechMap
 	
-	//è¯æ ¹rootMap
+	//´Ê¸ùrootMap
 	
-	//è¯é¢‘word frequencyMap
+	//´ÊÆµword frequencyMap
 	
-	//è¯æ€word fixMap
+	//´ÊÌ¬word fixMap
 	
-	//è¯æ„Ÿsense of wordMap
+	//´Ê¸Ğsense of wordMap
 	
-	//è¯éŸ³pronounciationMap
+	//´ÊÒôpronounciationMap
 	
-	//ç¿»è¯‘translationMap
+	//·­ÒëtranslationMap
 }

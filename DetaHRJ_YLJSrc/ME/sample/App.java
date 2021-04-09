@@ -132,7 +132,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public Xysc xysc;
 	public Cecil cecil;
 	public EditPane editPane;
-	public JLabel label0001;
+	public JLabel yaoCaiLabel;
 	public JTextPane data;
 	public JPanel panel_yt;
 	public JTextField name;
@@ -208,7 +208,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			, "性味", "脉络", "中医馆药理", "经解", "崇源", "愚按", "搭配", "常见药"};
 	public CfxTextField name_filter_not_have;
 	public Map<String, String> ctr;
-	public CfxTextField name_feel_filter;
+	public CfxTextField nameFeelFilter;
 	public JScrollPane jsp_name= null;
 	public boolean ready= false;
 	public App appInstance;
@@ -225,21 +225,21 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		appInit.init(this);
 	}
 //
-	public JTextField name_feel_filter() {
-		name_feel_filter= new CfxTextField(null, 0, 0, null);  
-		name_feel_filter.setBounds(180-50, 50, 380, 80);
-		name_feel_filter.setBackground(Color.white);
-		name_feel_filter.setText(" ");
-		name_feel_filter.addKeyListener(this);
-		return name_feel_filter;
+	public JTextField nameFeelFilter() {
+		nameFeelFilter= new CfxTextField(null, 0, 0, null);  
+		nameFeelFilter.setBounds(180-50, 50, 380, 80);
+		nameFeelFilter.setBackground(Color.white);
+		nameFeelFilter.setText(" ");
+		nameFeelFilter.addKeyListener(this);
+		return nameFeelFilter;
 	}
 
 	public JPanel panel() throws IOException{
 		panel_yt= new JPanel();
 		panel_yt.setBackground(Color.white);
 		pngy_2_1= new ImageIcon(this.getClass().getResource(PathLinkFile.yc_2_1_png));
-		label0001= new JLabel(pngy_2_1);
-		panel_yt.add(label0001);
+		yaoCaiLabel= new JLabel(pngy_2_1);
+		panel_yt.add(yaoCaiLabel);
 		return panel_yt;
 	}
 

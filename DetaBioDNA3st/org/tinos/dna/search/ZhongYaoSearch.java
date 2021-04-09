@@ -21,8 +21,8 @@ public class ZhongYaoSearch{
 			pDE_RNA_Formular.key[1]= rate;
 			pDE_RNA_Formular.key[2]= rate;
 			//pDE_RNA_Formular.key[3]= 0.3;
-			if(null!= app.name_feel_filter.getText()) {
-				pDE_RNA_Formular.pdw= app.name_feel_filter.getText().toUpperCase();
+			if(null!= app.nameFeelFilter.getText()) {
+				pDE_RNA_Formular.pdw= app.nameFeelFilter.getText().toUpperCase();
 				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
 				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
 				CatalyticDNA_xingwei= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();
@@ -222,9 +222,9 @@ public class ZhongYaoSearch{
 					}
 				}
 				//催化比值rot dna 催化计算
-				if(!app.name_feel_filter.getText().isEmpty()) {
+				if(!app.nameFeelFilter.getText().isEmpty()) {
 					String wei= app.dic_xw.get(score[i]).toString().replaceAll("\\s*", "");
-					CatalyticDNA_xingwei+= app.name_feel_filter.getText().replace(" ", "");
+					CatalyticDNA_xingwei+= app.nameFeelFilter.getText().replace(" ", "");
 					for(int j= 0; j< CatalyticDNA_xingwei.length(); j++) {
 						if(wei.contains(""+ CatalyticDNA_xingwei.charAt(j))) {
 							continue Here;

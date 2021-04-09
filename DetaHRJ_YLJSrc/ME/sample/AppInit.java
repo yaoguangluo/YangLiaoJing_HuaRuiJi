@@ -114,7 +114,6 @@ public class AppInit {
 			try {
 				Thread.sleep(300);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -264,9 +263,9 @@ public class AppInit {
 			feel_filter.setForeground(Color.WHITE);
 			feel_filter.setBounds(60+15+7+585+ 100, 20, 100, 50);
 
-			JScrollPane jsp_name_feel_filter= null;
-			jsp_name_feel_filter= new JScrollPane(app.name_feel_filter());
-			jsp_name_feel_filter.setBounds(60+15+30+580+ 100+ 40, 6+28, 580- 455, 22);
+			JScrollPane jsp_nameFeelFilter= null;
+			jsp_nameFeelFilter= new JScrollPane(app.nameFeelFilter());
+			jsp_nameFeelFilter.setBounds(60+15+30+580+ 100+ 40, 6+28, 580- 455, 22);
 
 
 			JLabel jingmai_filter= new JLabel("ÏßÐÔ¹Û²â:");  
@@ -548,48 +547,49 @@ public class AppInit {
 					}
 				}
 			});	
-			JPanel jp= new JPanel();
-			jp.setLayout(null);
-			jp.setBounds(0, 0, 1470, 980-50+ app.rangeHigh);
-			jp.setBackground(Color.BLACK);
-			jp.add(addChuFang);
-			jp.add(button2);
-			//jp.add(button3);
-			//jp.add(button4);
-			jp.add(button5);
-			jp.add(jlabel_button);
-			jp.add(yin_button);
-			jp.add(app.jsp_name);
-			jp.add(jsp_name_filter);
-			jp.add(jlabel_filter);
-			jp.add(jsp_name_filter_not_have);
-			jp.add(jlabel_filter_not_have);
-			jp.add(app.jTabbedpane);
-			jp.add(risk_filter);
-			jp.add(feel_filter);
-			jp.add(xingwei_filter);
-			jp.add(app.risk_filter_box);
-			jp.add(app.look);
-			jp.add(jsp_name_feel_filter);
-			jp.add(jingmai_filter);
-			jp.add(app.feel_filter_box);
-			//jp.add(jingmai_filter_box);
-			jp.add(zonghe_filter);
-			jp.add(shuming_filter);
-			jp.add(app.zonghe_filter_box);
-			jp.add(app.shuming_filter_box);
-			jp.setPreferredSize(new Dimension(1330, 730+ 40+ app.rangeHigh));
-			JScrollPane js= new JScrollPane(jp);
-			js.setBounds(0, 0, 1335, 730+ 50+ app.rangeHigh);	
+			JPanel jPanel= new JPanel();
+			jPanel.setLayout(null);
+			jPanel.setBounds(0, 0, 1470, 980-50+ app.rangeHigh);
+			jPanel.setBackground(Color.BLACK);
+			jPanel.add(addChuFang);
+			jPanel.add(button2);
+			//jPanel.add(button3);
+			//jPanel.add(button4);
+			jPanel.add(button5);
+			jPanel.add(jlabel_button);
+			jPanel.add(yin_button);
+			jPanel.add(app.jsp_name);
+			jPanel.add(jsp_name_filter);
+			jPanel.add(jlabel_filter);
+			jPanel.add(jsp_name_filter_not_have);
+			jPanel.add(jlabel_filter_not_have);
+			jPanel.add(app.jTabbedpane);
+			jPanel.add(risk_filter);
+			jPanel.add(feel_filter);
+			jPanel.add(xingwei_filter);
+			jPanel.add(app.risk_filter_box);
+			jPanel.add(app.look);
+			jPanel.add(jsp_nameFeelFilter);
+			jPanel.add(jingmai_filter);
+			jPanel.add(app.feel_filter_box);
+			//jPanel.add(jingmai_filter_box);
+			jPanel.add(zonghe_filter);
+			jPanel.add(shuming_filter);
+			jPanel.add(app.zonghe_filter_box);
+			jPanel.add(app.shuming_filter_box);
+			jPanel.setPreferredSize(new Dimension(1330, 730+ 40+ app.rangeHigh));
+			JScrollPane jScrollPane= new JScrollPane(jPanel);
+			jScrollPane.setBounds(0, 0, 1335, 730+ 50+ app.rangeHigh);	
 			app.setLayout(null);  
-			app.getContentPane().add(js);
-			js.setViewportView(jp);
+			app.getContentPane().add(jScrollPane);
+			jScrollPane.setViewportView(jPanel);
 			app.setBounds(0, 0, 1345, 770+ 25+ app.rangeHigh);
 			app.setVisible(true);
 			Container jpanelFirst= new Container();
-			MakeContainer_ZHONG_YAO c1= null;
-			c1= new MakeContainer_ZHONG_YAO(app.analyzer, jpanelFirst, app, app.tabNames, app.pos, app.jTabbedpane);
-			c1.start();
+			MakeContainer_ZHONG_YAO makeContainer_ZHONG_YAO= null;
+			makeContainer_ZHONG_YAO= new MakeContainer_ZHONG_YAO(app.analyzer, jpanelFirst, app, app.tabNames
+					, app.pos, app.jTabbedpane);
+			makeContainer_ZHONG_YAO.start();
 			app.jTabbedpane.addTab(app.tabNames.get(0), new ImageIcon(), jpanelFirst, "first");
 			app.jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 			app.jTabbedpane.setBackgroundAt(0, new Color(253, 233, 254));
@@ -628,9 +628,9 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanelSecond= new Container();  
-				MakeContainerSJFX c2= new MakeContainerSJFX(app.tableData_old, app.text, app.analyzer,jpanelSecond, app
+				MakeContainerSJFX makeContainerSJFX= new MakeContainerSJFX(app.tableData_old, app.text, app.analyzer,jpanelSecond, app
 						,app.jTabbedpane,app.tabNames, app.pos, app.pose, app.etc, app.cte);
-				c2.start();
+				makeContainerSJFX.start();
 				Thread.sleep(300);
 			}
 
@@ -642,9 +642,9 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanelThird= new Container();  
-				MakeContainerZNXZ c3= new MakeContainerZNXZ(app.analyzer,jpanelThird, app,app.jTabbedpane
+				MakeContainerZNXZ makeContainerZNXZ= new MakeContainerZNXZ(app.analyzer,jpanelThird, app,app.jTabbedpane
 						, app.tabNames, app.pos, app.pose, app.etc, app.cte);
-				c3.start();
+				makeContainerZNXZ.start();
 				Thread.sleep(300);
 			}
 
@@ -669,9 +669,9 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanel5= new Container();  
-				MakeContainerQMDJ c5=new MakeContainerQMDJ(app.analyzer,jpanel5, app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerQMDJ makeContainerQMDJ=new MakeContainerQMDJ(app.analyzer,jpanel5, app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c5.start();
+				makeContainerQMDJ.start();
 				Thread.sleep(300);
 			}
 
@@ -682,9 +682,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYNK c6=new MakeContainerXYNK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYNK makeContainerXYNK= new MakeContainerXYNK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c6.start();
+				makeContainerXYNK.start();
 				Thread.sleep(300);
 			}
 
@@ -695,9 +695,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYNKFJ c7=new MakeContainerZYNKFJ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYNKFJ makeContainerZYNKFJ= new MakeContainerZYNKFJ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c7.start();
+				makeContainerZYNKFJ.start();
 				Thread.sleep(300);
 			}
 
@@ -708,9 +708,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYZD c8=new MakeContainerZYZD(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYZD makeContainerZYZD= new MakeContainerZYZD(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c8.start();
+				makeContainerZYZD.start();
 				Thread.sleep(300);
 			}
 
@@ -721,9 +721,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerGJJD c9=new MakeContainerGJJD(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerGJJD makeContainerGJJD= new MakeContainerGJJD(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c9.start();
+				makeContainerGJJD.start();
 				Thread.sleep(300);
 			}
 
@@ -734,9 +734,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYFC c10=new MakeContainerZYFC(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYFC makeContainerZYFC= new MakeContainerZYFC(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c10.start();
+				makeContainerZYFC.start();
 				Thread.sleep(300);
 			}
 
@@ -747,9 +747,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXXFC c11=new MakeContainerXXFC(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerXXFC makeContainerXXFC= new MakeContainerXXFC(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
-				c11.start();
+				makeContainerXXFC.start();
 				Thread.sleep(300);
 			}
 
@@ -760,9 +760,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYJZ c12=new MakeContainerXYJZ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYJZ makeContainerXYJZ=new MakeContainerXYJZ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c12.start();
+				makeContainerXYJZ.start();
 				Thread.sleep(300);
 			}
 
@@ -773,9 +773,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYWK c13=new MakeContainerXYWK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYWK makeContainerXYWK= new MakeContainerXYWK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
-				c13.start();
+				makeContainerXYWK.start();
 				Thread.sleep(300);
 			}
 
@@ -786,9 +786,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYWS c14=new MakeContainerZYWS(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerZYWS makeContainerZYWS= new MakeContainerZYWS(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
-				c14.start();	
+				makeContainerZYWS.start();	
 				Thread.sleep(300);
 			}
 
@@ -799,9 +799,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYCF c15=new MakeContainerXYCF(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerXYCF makeContainerXYCF=new MakeContainerXYCF(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
-				c15.start();
+				makeContainerXYCF.start();
 				Thread.sleep(300);
 			}
 
@@ -812,9 +812,9 @@ public class AppInit {
 					text= "\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerBJY c16= new MakeContainerBJY(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos,app.pose,app.etc
+				MakeContainerBJY makeContainerBJY= new MakeContainerBJY(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos,app.pose,app.etc
 						, app.cte, app.pinyin, app.ctj, app.ctt, app.ctk, app.ctr);
-				c16.start();	
+				makeContainerBJY.start();	
 				Thread.sleep(300);
 			}
 
@@ -825,9 +825,9 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerHLS c17= new MakeContainerHLS(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerHLS makeContainerHLS= new MakeContainerHLS(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos
 						, app.pose, app.etc, app.cte, app.posec, app.posFullec);
-				c17.start();
+				makeContainerHLS.start();
 			}
 			if(app.appConfig.SectionJPanel.jTextPane!= null) {
 				String text= app.appConfig.SectionJPanel.jTextPane.getText();
@@ -843,7 +843,6 @@ public class AppInit {
 						new String[] {"wmic", "cpu", "get", "ProcessorId"});
 				process.getOutputStream().close();
 				String value= "";
-				@SuppressWarnings("resource")
 				Scanner sc= new Scanner(process.getInputStream()); 
 				while(sc.hasNext()) {
 					value+=sc.next();	
@@ -853,7 +852,6 @@ public class AppInit {
 					//return;
 				}
 			} catch (IOException e2) {
-				// TODO Auto-generated catch block
 				e2.printStackTrace();
 			}  
 			app.disableCursor= false;

@@ -216,12 +216,12 @@ public class ZhongYaoTable implements MouseListener {
 		//add graph
 		try {
 			app.panel_yt.removeAll();
-			app.label0001.removeAll();
+			app.yaoCaiLabel.removeAll();
 			String value_temp= app.table.getValueAt(app.row, 2).toString().replace("\\s+", "");
 			app.pngy_2_1= new ImageIcon(this.app.getClass().getResource(PathLinkFile.yc+ "/"+ value_temp+ ".png"));
-			app.label0001.setIcon(app.pngy_2_1);
-			app.label0001.validate();
-			app.panel_yt.add(app.label0001);
+			app.yaoCaiLabel.setIcon(app.pngy_2_1);
+			app.yaoCaiLabel.validate();
+			app.panel_yt.add(app.yaoCaiLabel);
 			app.panel_yt.validate();
 			app.panel_yt.updateUI();
 		}catch(Exception e) {

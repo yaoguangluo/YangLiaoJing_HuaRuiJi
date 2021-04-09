@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindOulerRing{
-	//è¿™æ®µå‡½æ•°ç”¨äºè§‚æµ‹å…ƒåŸºæ˜ å°„çš„æ¬§æ‹‰å›è·¯æ¨¡å‹
-	//æ€æƒ³ ç½—ç‘¶å…‰
-	//ç®—æ³• æ¬§æ‹‰
-	//ç¨‹åºå‘˜ ç½—ç‘¶å…‰
-	//QUIVT+OSMAX-HEPCD 9 ç»“æœè¾“å‡º æœ‰å¾ˆå¤šï¼Œæˆ‘å…ˆä»»æ„é€‰ä¸€ç§ï¼Œå°±è¿™ä¸ªäº† å‚è€ƒç¬¬48è¡Œã€‚
+	//Õâ¶Îº¯ÊıÓÃÓÚ¹Û²âÔª»ùÓ³ÉäµÄÅ·À­»ØÂ·Ä£ĞÍ
+	//Ë¼Ïë ÂŞÑş¹â
+	//Ëã·¨ Å·À­
+	//³ÌĞòÔ± ÂŞÑş¹â
+	//QUIVT+OSMAX-HEPCD 9 ½á¹ûÊä³ö ÓĞºÜ¶à£¬ÎÒÏÈÈÎÒâÑ¡Ò»ÖÖ£¬¾ÍÕâ¸öÁË ²Î¿¼µÚ48ĞĞ¡£
 
-//ä¸‹é¢æ˜¯æ‰€æœ‰çš„è¾“å‡ºç»“æœï¼Œæ²¡æ—¶é—´è€—åœ¨è¿™ä¸Šé¢ã€‚
+//ÏÂÃæÊÇËùÓĞµÄÊä³ö½á¹û£¬Ã»Ê±¼äºÄÔÚÕâÉÏÃæ¡£
 //	HEPCD3
 //	2
 //	1
@@ -45,7 +45,7 @@ public class FindOulerRing{
 //	1
 //	0
 //
-//ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€ã€--ã€‹ã€‹ã€‹ã€‹ã€‹ã€‹	OSMAX-HEPCD9
+//¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢¡¢--¡·¡·¡·¡·¡·¡·	OSMAX-HEPCD9
 //	8
 //	7
 //	UIVT+11
@@ -304,9 +304,9 @@ public class FindOulerRing{
 	
 	public static void main(String[] args) {
 		//init AOPM VECS IDUQ TXH DD
-		//åˆå§‹ç¯è·¯
+		//³õÊ¼»·Â·
 		Map<String, Boolean> initonsLink= new HashMap<>();
-		//ç¯è·¯æ¢ç´¢
+		//»·Â·Ì½Ë÷
 		Map<String, Boolean> didInitonsLink= new HashMap<>();
 		initonsLink.put("DC", true);
 		initonsLink.put("CD", true);
@@ -358,7 +358,7 @@ public class FindOulerRing{
 		String[] initons= new String[]{"H", "A", "O", "P", "M", "V", "E", "C", "S", "I", "D", "U", "Q", "T", "X", "+", "-"};
 		int[] initonsCount= new int[17]; 
 		//for loop 
-		//å¼€å§‹è®¡ç®— è·¯å¾„æ€»æ•°
+		//¿ªÊ¼¼ÆËã Â·¾¶×ÜÊı
 		//String didInitons= "";
         int count= 0;
 		for(int i= 0; i< initons.length; i++) {
@@ -367,23 +367,23 @@ public class FindOulerRing{
 			initonsCount[i]++;
 			recur(initons[i], initonsLink, didInitonsLink, initons, initonsCount, count, i);
 			//System.out.println(count);
-			//ä¸‹ä¸€ä¸ª
+			//ÏÂÒ»¸ö
 			count= 0;
 			System.out.println();
 			didInitonsLink.clear();
 			initonsCount= new int[17]; 
 		}
 		// print loop initons
-		//æ‰“å°å¯èƒ½æ¨¡å¼
+		//´òÓ¡¿ÉÄÜÄ£Ê½
 		System.out.println(count);
 	}
-	//é€’å½’ ç»§ç»­ä¿®æ”¹ã€‚ç­‰ä¼šåŠ  éš”å¼€è§‚æµ‹ã€‚
+	//µİ¹é ¼ÌĞøĞŞ¸Ä¡£µÈ»á¼Ó ¸ô¿ª¹Û²â¡£
 	public static void recur(String firstChar, Map<String, Boolean> initonsLink
 			, Map<String, Boolean> didInitonsLink, String[] initons, int[] initonsCount, int count, int i) {
 		for(int j= 0; j< initons.length; j++) {
 			if(!firstChar.equals(initons[j])) {
 				String temp= ""+ firstChar+ initons[j];
-				//æœ‰è·¯å¾„                                                                                          //æ²¡æœ‰éå†                                                                     //éå†äº†ä¸¤æ¬¡
+				//ÓĞÂ·¾¶                                                                                          //Ã»ÓĞ±éÀú                                                                     //±éÀúÁËÁ½´Î
 				if(initonsLink.containsKey(temp)&& !didInitonsLink.containsKey(temp)&& initonsCount[j]< 1) {
 					initonsCount[j]++;
 					didInitonsLink.put(""+ firstChar+ initons[j], true);

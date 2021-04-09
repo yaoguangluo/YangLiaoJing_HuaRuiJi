@@ -23,12 +23,12 @@ public class DemoTSLT {
 		Map<String, String> posee = analyzer.getPosEnToEn();
 		Map<String, String> fce = analyzer.getFullCnToEn();
 		Map<String, String> fec = analyzer.getFullEnToCn();
-		System.out.println("è¾“å…¥");
-		 String v = "å¦‚æµæ«ä¹‹å›é›ªï¼Œè‹¥æµ£èŠ±æ´—æœˆ";
-////		 //String v = "æ•°æ®ä¸€ç›´åœ¨æ›´æ–°ä¸­";
-//		String v = "ä¸­å›½æ­£åœ¨å´›èµ·çš„é“è·¯ä¸Šå¥”è·‘";
-//		String v = "æˆ‘ä¸€ç›´åœ¨å¥”è·‘ï¼Œæˆ‘éœ€è¦ä¸€åŒç¿…è†€ï¼";
-//		String v = "ä»–ä¹Ÿä¸€ç›´åœ¨å¥”è·‘ï¼Œä»–åŒæ ·éœ€è¦ä¸€åŒç¿…è†€ï¼";
+		System.out.println("ÊäÈë");
+		 String v = "ÈçÁ÷·ãÖ®»ØÑ©£¬Èôä½»¨Ï´ÔÂ";
+////		 //String v = "Êı¾İÒ»Ö±ÔÚ¸üĞÂÖĞ";
+//		String v = "ÖĞ¹úÕıÔÚáÈÆğµÄµÀÂ·ÉÏ±¼ÅÜ";
+//		String v = "ÎÒÒ»Ö±ÔÚ±¼ÅÜ£¬ÎÒĞèÒªÒ»Ë«³á°ò£¡";
+//		String v = "ËûÒ²Ò»Ö±ÔÚ±¼ÅÜ£¬ËûÍ¬ÑùĞèÒªÒ»Ë«³á°ò£¡";
 		System.out.println(v);
 		Translator ts = new TranslatorImp();
 		ts.init(analyzer); 
@@ -37,7 +37,7 @@ public class DemoTSLT {
 		List<Verbal> verbals = ts.index(analyzer, v);
 		String ch = ts.getChineseSentenseFromVerbalList(verbals);
 //		t.end();
-		System.out.println("ä¸­æ–‡");
+		System.out.println("ÖĞÎÄ");
 		System.out.println(ch);
 		
 		for(int i=0;i<verbals.size();i++) {
@@ -49,7 +49,7 @@ public class DemoTSLT {
 		List<Verbal> verbalsFix = ts.fixPos(verbals);
 		String en = ts.getEnglishSentenseFromVerbalFixList(verbalsFix);
 		System.out.println("");
-		System.out.println("è‹±æ–‡");
+		System.out.println("Ó¢ÎÄ");
 		System.out.println(en);
 
 		for(int i=0;i<verbalsFix.size();i++) {
@@ -60,7 +60,7 @@ public class DemoTSLT {
 		}
 		
 		System.out.println("");
-		System.out.println("ä¸­æ–‡è§£é‡Š");
+		System.out.println("ÖĞÎÄ½âÊÍ");
 		for(int i=0;i<verbals.size();i++) {
 			System.out.print(verbals.get(i).getExplain()==null?verbals.get(i).getChinese():verbals.get(i).getExplain());
 		}

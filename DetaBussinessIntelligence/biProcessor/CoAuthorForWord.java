@@ -857,8 +857,8 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 												}
 											}
 											//xw
-											if(!app.name_feel_filter.getText().isEmpty()) {
-												String temp= app.name_feel_filter.getText();
+											if(!app.nameFeelFilter.getText().isEmpty()) {
+												String temp= app.nameFeelFilter.getText();
 												for(int j=0;j<temp.length();j++) {
 													if(xw.contains(""+ temp.charAt(j))) {
 														continue Here;
@@ -957,8 +957,8 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 												}
 											}
 											//xw
-											if(!app.name_feel_filter.getText().isEmpty()) {
-												String temp= app.name_feel_filter.getText();
+											if(!app.nameFeelFilter.getText().isEmpty()) {
+												String temp= app.nameFeelFilter.getText();
 												for(int j=0;j<temp.length();j++) {
 													if(xw.contains(""+ temp.charAt(j))) {
 														continue Here;

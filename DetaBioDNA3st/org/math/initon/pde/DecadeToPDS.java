@@ -5,16 +5,16 @@ import java.util.Map;
 
 import org.math.initon.pds.PDE_PDS_DL;
 
-//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†å¸¸æ•°å˜æ¢æˆåä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—ï¼Œ
-//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†åä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—è¿›è¡Œå…ƒåŸºå˜æ¢
-//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†å…ƒåŸºå˜æ¢è¿›è¡Œè‚½å±•æ¦‚ç‡ä¸åŒ–å±•å¼€
-//è¿™ä¸ªå‡½æ•°ç”¨äºå°†è‚½å±•ä¸åŒ–çš„è‚½å¢åä¸ƒè¿›åˆ¶è¿›è¡Œå…ƒåŸºå˜æ¢
-//è¿™ä¸ªå‡½æ•°ç”¨äºå°†è‚½å±•ä¸åŒ–çš„è‚½å¢åä¸ƒè¿›åˆ¶å˜æ¢æˆå…ƒåŸºæ•°å­—
-//è¿™ä¸ªå‡½æ•°ç”¨äºåä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—è¿›è¡Œåè¿›åˆ¶è¿˜åŸã€‚
+//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«³£Êı±ä»»³ÉÊ®Æß½øÖÆÔª»ùÊı×Ö£¬
+//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«Ê®Æß½øÖÆÔª»ùÊı×Ö½øĞĞÔª»ù±ä»»
+//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«Ôª»ù±ä»»½øĞĞëÄÕ¹¸ÅÂÊË¿»¯Õ¹¿ª
+//Õâ¸öº¯ÊıÓÃÓÚ½«ëÄÕ¹Ë¿»¯µÄëÄÔöÊ®Æß½øÖÆ½øĞĞÔª»ù±ä»»
+//Õâ¸öº¯ÊıÓÃÓÚ½«ëÄÕ¹Ë¿»¯µÄëÄÔöÊ®Æß½øÖÆ±ä»»³ÉÔª»ùÊı×Ö
+//Õâ¸öº¯ÊıÓÃÓÚÊ®Æß½øÖÆÔª»ùÊı×Ö½øĞĞÊ®½øÖÆ»¹Ô­¡£
 public class DecadeToPDS{
-	//æ€æƒ³ï¼šè‚½å±•å…¬å¼ 1.2.2ï¼Œå…ƒåŸºæ•°å­—é€»è¾‘ï¼› åä¸ƒè¿›åˆ¶å…ƒåŸºç»„åˆæ•°å­¦ï¼›æ¦‚ç‡è®º
-	//ç®—æ³•ï¼šè¿›åˆ¶è®¡ç®—ï¼Œè‚½å±•è®¡ç®—
-	//ç¨‹åºå‘˜ï¼š ç½—ç‘¶å…‰ï¼Œ
+	//Ë¼Ïë£ºëÄÕ¹¹«Ê½ 1.2.2£¬Ôª»ùÊı×ÖÂß¼­£» Ê®Æß½øÖÆÔª»ù×éºÏÊıÑ§£»¸ÅÂÊÂÛ
+	//Ëã·¨£º½øÖÆ¼ÆËã£¬ëÄÕ¹¼ÆËã
+	//³ÌĞòÔ±£º ÂŞÑş¹â£¬
 	public Map<String, String> initonsMap= new HashMap<>();
 	public Map<String, String> initonsCode= new HashMap<>();
 	public Map<String, String> initonsSet= new HashMap<>();
@@ -22,32 +22,32 @@ public class DecadeToPDS{
 	public static void main(String[] Args) {	
 		DecadeToPDS decadeToPDS= new DecadeToPDS();
 		decadeToPDS.init(decadeToPDS);
-		int decade= (int)(Math.random()*1000 % 256);//éšä¾¿å†™ä¸€ä¸ªæ•°
-		double pDE_KEY_rate= 0.25;//éšä¾¿æ¨¡æ‹Ÿä¸€ä¸ª0-1ä¹‹é—´çš„æ¦‚ç‡é’¥åŒ™ï¼Œå‡è®¾ 0~0.5ä¸ºé…¸ï¼Œ0.5~1 ä¸ºç¢±ï¼›		
+		int decade= (int)(Math.random()*1000 % 256);//Ëæ±ãĞ´Ò»¸öÊı
+		double pDE_KEY_rate= 0.25;//Ëæ±ãÄ£ÄâÒ»¸ö0-1Ö®¼äµÄ¸ÅÂÊÔ¿³×£¬¼ÙÉè 0~0.5ÎªËá£¬0.5~1 Îª¼î£»		
 		decadeToPDS.doPDS(decadeToPDS, decade, pDE_KEY_rate);
 	}
 	
-//	//å…ƒåŸºç¬¦å·å˜å…ƒåŸºæ•°å­—
-//	//System.out.println("è¾“å…¥åè¿›åˆ¶æ•°ï¼š"+ decade);
+//	//Ôª»ù·ûºÅ±äÔª»ùÊı×Ö
+//	//System.out.println("ÊäÈëÊ®½øÖÆÊı£º"+ decade);
 //	String seventeen= decadeToPDS.decadeToSeventeen(decade, decadeToPDS);
-//	//System.out.println("å…ƒåŸºè¿›åˆ¶æ•°ä¸ºï¼š"+ seventeen);
+//	//System.out.println("Ôª»ù½øÖÆÊıÎª£º"+ seventeen);
 //	String initons= decadeToPDS.seventeenToIntons(seventeen, decadeToPDS);
-//	//System.out.println("å˜æ¢ä¸ºå…ƒåŸºï¼š"+initons);
+//	//System.out.println("±ä»»ÎªÔª»ù£º"+initons);
 //	//initons= "AOPMVE";
-//	//System.out.println("è¾“å…¥å…ƒåŸºï¼š"+ initons);
-//	//System.out.println("è¾“å…¥æ¦‚ç‡ï¼š"+ pDE_KEY_rate);
+//	//System.out.println("ÊäÈëÔª»ù£º"+ initons);
+//	//System.out.println("ÊäÈë¸ÅÂÊ£º"+ pDE_KEY_rate);
 //	String pDS= decadeToPDS.initonsToPDS(initons, pDE_KEY_rate, decadeToPDS);
-//	//System.out.println("è¾“å‡ºè‚½ä¸:"+ pDS);
+//	//System.out.println("Êä³öëÄË¿:"+ pDS);
 //	pDS= pDS.replace(".", "");
 //	String pDSInitons= decadeToPDS.PDSToInitons(pDS, pDE_KEY_rate, decadeToPDS);
-//	//System.out.println("è‚½ä¸å¢å…ƒ:"+ pDSInitons);
-//	//ç¬¬äºŒå·çš„è‚½å±•å…¬å¼ å¯ä»¥ç”¨åˆ°äº†
+//	//System.out.println("ëÄË¿ÔöÔª:"+ pDSInitons);
+//	//µÚ¶ş¾íµÄëÄÕ¹¹«Ê½ ¿ÉÒÔÓÃµ½ÁË
 //	//String pDEInitons= decadeToPDS.PDSToPDE(pDSInitons, pDE_KEY_rate, decadeToPDS);
-//	//System.out.println("è‚½å±•å¢å…ƒ:"+ pDEInitons);
+//	//System.out.println("ëÄÕ¹ÔöÔª:"+ pDEInitons);
 //	String pDSSeventeen= decadeToPDS.initonsToSeventeen(pDSInitons, decadeToPDS);
-//	//System.out.println("å…ƒåŸºæ•°å­—:"+ pDSSeventeen);
+//	//System.out.println("Ôª»ùÊı×Ö:"+ pDSSeventeen);
 //	String pDSDecade= decadeToPDS.seventeenToDecade(pDSSeventeen, decadeToPDS);
-//	//System.out.println("è¾“å‡ºåè¿›åˆ¶æ•°:"+ pDSDecade);
+//	//System.out.println("Êä³öÊ®½øÖÆÊı:"+ pDSDecade);
 //	return Integer.valueOf(pDSDecade).intValue();
 	private int doPDS(DecadeToPDS decadeToPDS, int decade, double pDE_KEY_rate) {
 		String seventeen= decadeToPDS.decadeToSeventeen(decade, decadeToPDS);
@@ -78,7 +78,7 @@ public class DecadeToPDS{
 		decadeToPDS.initonsMap.put("+", "B");
 		decadeToPDS.initonsMap.put("-", "5");
 		decadeToPDS.initonsMap.put("H", "4");
-		//å…ƒåŸºæ•°å­—å˜å…ƒåŸºç¬¦å·
+		//Ôª»ùÊı×Ö±äÔª»ù·ûºÅ
 		decadeToPDS.initonsCode.put("0", "D");
 		decadeToPDS.initonsCode.put("1", "C");
 		decadeToPDS.initonsCode.put("2", "P");
@@ -96,7 +96,7 @@ public class DecadeToPDS{
 		decadeToPDS.initonsCode.put("E", "I");
 		decadeToPDS.initonsCode.put("F", "U");
 		decadeToPDS.initonsCode.put("G", "Q");
-		//é˜¿æ‹‰ä¼¯æ•°å­—å˜å…ƒåŸºæ•°å­—
+		//°¢À­²®Êı×Ö±äÔª»ùÊı×Ö
 		decadeToPDS.initonsSet.put("0", "0");
 		decadeToPDS.initonsSet.put("1", "1");
 		decadeToPDS.initonsSet.put("2", "2");
@@ -115,7 +115,7 @@ public class DecadeToPDS{
 		decadeToPDS.initonsSet.put("15", "F");
 		decadeToPDS.initonsSet.put("16", "G");
 
-		//å…ƒåŸºæ•°å­—å˜é˜¿æ‹‰ä¼¯æ•°å­—
+		//Ôª»ùÊı×Ö±ä°¢À­²®Êı×Ö
 		decadeToPDS.numberSet.put("0", 0);
 		decadeToPDS.numberSet.put("1", 1);
 		decadeToPDS.numberSet.put("2", 2);
@@ -135,7 +135,7 @@ public class DecadeToPDS{
 		decadeToPDS.numberSet.put("G", 16);
 	}
 
-	//	//å‡†å¤‡é›†æˆç¬¬äºŒå·çš„AOPM çº§åˆ« è‚½å±•å…¬å¼ ï¼Œå·²ç»å¹¶å…¥PDSToInitons å‡½æ•°ä¸­
+	//	//×¼±¸¼¯³ÉµÚ¶ş¾íµÄAOPM ¼¶±ğ ëÄÕ¹¹«Ê½ £¬ÒÑ¾­²¢ÈëPDSToInitons º¯ÊıÖĞ
 	//	private String PDSToPDE(String pds, double pDE_KEY_rate, DecadeToPDS decadeToPDS) {
 	//		
 	////pds= pds.replace("UQ", "V");	
@@ -150,7 +150,7 @@ public class DecadeToPDS{
 	////		
 	//		return pds;
 	//	}
-	//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†å¸¸æ•°å˜æ¢æˆåä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—ï¼Œ
+	//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«³£Êı±ä»»³ÉÊ®Æß½øÖÆÔª»ùÊı×Ö£¬
 	public String decadeToSeventeen(int decade, DecadeToPDS decadeToPDS) {
 		String seventeen= "";
 		int decad= decade;
@@ -163,7 +163,7 @@ public class DecadeToPDS{
 		//
 		return seventeen;
 	}
-	//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†åä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—è¿›è¡Œå…ƒåŸºå˜æ¢
+	//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«Ê®Æß½øÖÆÔª»ùÊı×Ö½øĞĞÔª»ù±ä»»
 	public String seventeenToIntons(String seventeen, DecadeToPDS decadeToPDS) {
 		String initons= "";	
 		for(int i= 0; i< seventeen.length(); i++) {
@@ -172,18 +172,18 @@ public class DecadeToPDS{
 		//
 		return initons;
 	}
-	//è¿™ä¸ªå‡½æ•°é›†ç”¨äºå°†å…ƒåŸºå˜æ¢è¿›è¡Œè‚½å±•æ¦‚ç‡ä¸åŒ–å±•å¼€
+	//Õâ¸öº¯Êı¼¯ÓÃÓÚ½«Ôª»ù±ä»»½øĞĞëÄÕ¹¸ÅÂÊË¿»¯Õ¹¿ª
 	public String initonsToPDS(String initons, double pDE_KEY_rate, DecadeToPDS decadeToPDS) {
 		String PDS= "";
 		StringBuilder PDEKey= new StringBuilder("");
 		for(int i= 0; i< initons.length(); i++) {
 			PDS+=	new PDE_PDS_DL().initonPDSwithBYS(""+ initons.charAt(i), pDE_KEY_rate, PDEKey, true)+ ".";
 		}
-		//System.out.println("ç”Ÿæˆé’¥åŒ™ï¼š"+ PDEKey);
+		//System.out.println("Éú³ÉÔ¿³×£º"+ PDEKey);
 		//
 		return PDS;
 	}
-	//è¿™ä¸ªå‡½æ•°ç”¨äºå°†è‚½å±•ä¸åŒ–çš„è‚½å¢åä¸ƒè¿›åˆ¶è¿›è¡Œå…ƒåŸºå˜æ¢
+	//Õâ¸öº¯ÊıÓÃÓÚ½«ëÄÕ¹Ë¿»¯µÄëÄÔöÊ®Æß½øÖÆ½øĞĞÔª»ù±ä»»
 	public String PDSToInitons(String pDS, double pDE_KEY_rate, DecadeToPDS decadeToPDS) {
 		String initons= "";
 		//initons= new PDE_PDS_DL().initonPDIwithBYS(pDS, 0, new StringBuilder(), false);
@@ -191,7 +191,7 @@ public class DecadeToPDS{
 		initons= new PDE_PDS_DL().initonPDE_DCDLwithBYS(pDS, pDE_KEY_rate, new StringBuilder(), true);
 		return initons;
 	}
-	//è¿™ä¸ªå‡½æ•°ç”¨äºå°†è‚½å±•ä¸åŒ–çš„è‚½å¢åä¸ƒè¿›åˆ¶å˜æ¢æˆå…ƒåŸºæ•°å­—
+	//Õâ¸öº¯ÊıÓÃÓÚ½«ëÄÕ¹Ë¿»¯µÄëÄÔöÊ®Æß½øÖÆ±ä»»³ÉÔª»ùÊı×Ö
 	public String initonsToSeventeen(String initons, DecadeToPDS decadeToPDS) {
 		String seventeen= "";
 		//
@@ -200,7 +200,7 @@ public class DecadeToPDS{
 		}
 		return seventeen;
 	}
-	//è¿™ä¸ªå‡½æ•°ç”¨äºåä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—è¿›è¡Œåè¿›åˆ¶è¿˜åŸã€‚
+	//Õâ¸öº¯ÊıÓÃÓÚÊ®Æß½øÖÆÔª»ùÊı×Ö½øĞĞÊ®½øÖÆ»¹Ô­¡£
 	public int seventeenToDecade(String seventeen, DecadeToPDS decadeToPDS) {
 		int decade= 0;
 		//A11         10*17*17 + 1*17 + 1
@@ -210,7 +210,7 @@ public class DecadeToPDS{
 		}
 		return decade;
 	}
-	//è¿™ä¸ªå‡½æ•°ç”¨äºåä¸ƒè¿›åˆ¶å…ƒåŸºæ•°å­—è¿›è¡Œåè¿›åˆ¶çŸ©é˜µå˜æ¢ã€‚
+	//Õâ¸öº¯ÊıÓÃÓÚÊ®Æß½øÖÆÔª»ùÊı×Ö½øĞĞÊ®½øÖÆ¾ØÕó±ä»»¡£
 	public int[][] doPDSMatrix(DecadeToPDS decadeToPDS, int[][] rp, double facx) {
 		for(int i= 0; i< rp.length; i++) {
 			for(int j= 0; j< rp[0].length; j++) {
