@@ -57,9 +57,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("动词")? 16: 0;
-				popFactor += pos.get(word).contains("名词")? 4: 0;
-				popFactor += pos.get(word).contains("形词")? 2: 0;	
+				popFactor += pos.get(word).contains("动")? 16: 0;
+				popFactor += pos.get(word).contains("名")? 4: 0;
+				popFactor += pos.get(word).contains("形")? 2: 0;	
 			}
 			ideMatrix[ideMatrixCount][0] = word;
 			ideMatrix[ideMatrixCount][1] = "" + popFactor;
@@ -114,9 +114,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("动词")? 16: 0;
-				popFactor += pos.get(word).contains("名词")? 4: 0;
-				popFactor += pos.get(word).contains("形词")? 2: 0;	
+				popFactor += pos.get(word).contains("动")? 16: 0;
+				popFactor += pos.get(word).contains("名")? 4: 0;
+				popFactor += pos.get(word).contains("形")? 2: 0;	
 			}
 
 			ideMatrix[ideMatrixCount][0] = word;

@@ -34,3 +34,4 @@ public class SimpleTokenizer implements TextTokenizer {
         return Arrays.asList(tokens);
     }
 }
+

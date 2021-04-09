@@ -45,11 +45,11 @@ public class ANNTest{
 		for(int j= 0; j< AnnMatrix.length; j++) {
 			if(pos.containsKey(AnnMatrix[j][0])) {
 				String string= pos.get(AnnMatrix[j][0]);
-				if(string.contains("éšï¿½")
-						|| string.contains("é”ï¿½")
-						|| string.contains("é–ï¿½")
-						|| string.contains("ç’‹ï¿½")
-						|| string.contains("è¤°ï¿½")){
+				if(string.contains("Ãû")
+						|| string.contains("¶¯")
+						|| string.contains("Ò½")
+						|| string.contains("Î½")
+						|| string.contains("ÐÎ")){
 					list.add(AnnMatrix[j]);
 				}
 			}
