@@ -27,9 +27,7 @@ import ME.sample.zyzdx.Zyzdx;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.TokenPDI;
 import OSQ.disk.GetDisk;
-import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
 import PEI.thread.MakeContainerHLS;
@@ -92,17 +90,14 @@ import javax.swing.table.JTableHeader;
 import javax.swing.text.BadLocationException;
 
 import org.ASQ.PSU.tinos.view.obj.Verbal;
-import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import org.MSU.OCI.engine.base.translator.Translator;
 import org.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import org.OSU.tinos.list.ListSwap;
 import org.OSU.tinos.string.StringSwap;
 import org.deta.boot.server.BootVPCSBackEnd;
 import org.deta.bootFrontEnd.server.BootVPCSFrontEnd;
-//import org.deta.boot.server.BootVPCSBackEnd;
-//import org.deta.bootFrontEnd.server.BootVPCSFrontEnd;
+import org.tinos.dna.search.ZhongYaoSearch;
 import org.tinos.listen.ReadToWav;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.rest.medicine.RestMedicinePortImpl;
@@ -1988,288 +1983,288 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			this.cecil.verbals= verbals;
 			this.cecil.keyReleased(null);
 		}
-		zhongYaoSearch(zhongyao, forE, key);
+		new ZhongYaoSearch().zhongYaoSearch(this, zhongyao, forE, key);
 	}
 
-	public void zhongYaoSearch(String zhongyao, String forE, String key) {
-		String CatalyticDNA_xingwei= "";
-		String CatalyticDNA_gongxiao= "";
-		if(DNASearchIsClick) {
-			TokenPDI pDE_RNA_Formular= new TokenPDI();
-			double rate= ((double)催化比值rot)/ 100;
-			//pDE_RNA_Formular.key[0]= 0.3;
-			pDE_RNA_Formular.key[1]= rate;
-			pDE_RNA_Formular.key[2]= rate;
-			//pDE_RNA_Formular.key[3]= 0.3;
-			if(null!= name_feel_filter.getText()) {
-				pDE_RNA_Formular.pdw= name_feel_filter.getText().toUpperCase();
-				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
-				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
-				CatalyticDNA_xingwei= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();
-			}
-			//
-			pDE_RNA_Formular.pde= "";
-			if(null!= name_filter_not_have.getText()) {
-				pDE_RNA_Formular.pdw= name_filter_not_have.getText().toUpperCase();
-				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
-				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
-				CatalyticDNA_gongxiao= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();		
-			}
-		}
-		String[] score= new String[copy.size()];
-		int[] score_code= new int[copy.size()];
-		double []reg= new double[copy.size()];
-		int count= 0;
-		Map<String, WordFrequency> mapSearchWithoutSort= null;
-		if(dic_map.containsKey(zhongyao.replaceAll(" ", ""))) {
-			mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
-		}else {
-			String[] strings= key.split(" ");
-			if(strings.length> 1&& key.split(" ")[0].length()> 5) {
-				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(key);
-			}else {
-				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
-			}
-		}	
-		Iterator<String> iteratorForCopy= copy.iterator();	
-		int copyCount= 0;
-		List<String> list= analyzer.parserMixedString(key);
-		String[] string= ListSwap.listToArray(list);
-
-		String[] stringReg= new String[forE.length()/ 3];
-		for(int i= 0; i< stringReg.length; i++) {
-			stringReg[i]= forE.substring(i* 3, (i* 3+ 3)< forE.length()? (i* 3+ 3): forE.length()- 1);
-		}
-		while(iteratorForCopy.hasNext()) {
-			String iteratorForCopyString= iteratorForCopy.next();
-			score[copyCount]= iteratorForCopyString;
-			String temps= dic_map.get(iteratorForCopyString).toString();
-			String tempsPCA= dic_li.get(iteratorForCopyString).toString();
-			String tempsIndex= dic_index.get(iteratorForCopyString).toString();
-			Iterator<String> iteratorWordFrequency= mapSearchWithoutSort.keySet().iterator();
-			Here:
-				while(iteratorWordFrequency.hasNext()) {  
-					String mapSearchaAtII = iteratorWordFrequency.next();
-					WordFrequency wordFrequencySearch = mapSearchWithoutSort.get(mapSearchaAtII);
-					if(temps.contains(mapSearchaAtII)) {
-						if(reg[copyCount] == 0){
-							count += 1;
-						}
-						if(score[copyCount].contains(zhongyao.replace(" ", ""))) {
-							reg[copyCount]+= 12;
-						}
-						if(zhongyao.contains(score[copyCount].replace(" ", ""))) {
-							reg[copyCount]+= 12;
-						}
-
-						if(tempsIndex.equalsIgnoreCase(zhongyao.replace(" ", ""))) {
-							reg[copyCount]+= 1200;
-						}
-						if(tempsIndex.contains(zhongyao.replace(" ", "").toUpperCase())) {
-							reg[copyCount]+= 1200;
-						}
-
-						score[copyCount]= iteratorForCopyString;
-						if(!pos.containsKey(mapSearchaAtII)) {
-							reg[copyCount]+= 1;
-							score_code[copyCount]+= 1<< mapSearchaAtII.length()
-									<< wordFrequencySearch.getFrequency() ;
-							if(tempsPCA.contains(mapSearchaAtII)) {
-								score_code[copyCount] *= 2;
-							}
-							if(score[copyCount].contains(mapSearchaAtII)) {
-								if(score[copyCount].length()>1) {
-									reg[copyCount]+= 22;
-								}
-								reg[copyCount]+= 3;
-							}
-							continue Here;
-						}
-						if(pos.get(mapSearchaAtII).contains("名")|| pos.get(mapSearchaAtII).contains("动")
-								|| pos.get(mapSearchaAtII).contains("形")|| pos.get(mapSearchaAtII).contains("谓")) {
-							reg[copyCount]+= 2;
-							if(tempsPCA.contains(mapSearchaAtII)) {
-								reg[copyCount]*= 2;
-							}
-						}
-						reg[copyCount]+= 1;
-						score_code[copyCount]+= (iteratorForCopyString.contains(mapSearchaAtII)? 2: 1) 
-								* (!pos.get(mapSearchaAtII).contains("名")? pos.get(mapSearchaAtII).contains("动")? 10: 1: 150) 
-								<< mapSearchaAtII.length()* wordFrequencySearch.getFrequency();
-						if(score[copyCount].contains(mapSearchaAtII)) {
-							if(score[copyCount].length()>1) {
-								reg[copyCount]+= 22;
-							}
-							reg[copyCount]+= 3;
-						}
-						continue Here;
-					}
-					if(mapSearchaAtII.length()>1) {
-						for(int j=0;j<mapSearchaAtII.length();j++) {
-							if(temps.contains(String.valueOf(mapSearchaAtII.charAt(j)))) {
-								if(reg[copyCount] == 0){
-									count += 1;
-								}
-								score[copyCount] = iteratorForCopyString;
-								score_code[copyCount]+=1;
-								if(pos.containsKey(String.valueOf(mapSearchaAtII.charAt(j)))&&(
-										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("名")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("动")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("形")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("谓")
-										)) {
-									reg[copyCount] += 2;
-								}
-								reg[copyCount] += 1;
-								if(score[copyCount].contains(mapSearchaAtII)) {
-									if(score[copyCount].length()>1) {
-										reg[copyCount]+= 12;
-									}
-									reg[copyCount]+= 3;
-								}
-								continue Here;
-							}
-						}
-					}
-				}
-			score_code[copyCount] = score_code[copyCount] * (int)reg[copyCount];
-			//词距
-			int code= 200;
-			int tempb= 0;
-			int tempa= score_code[copyCount];
-			if(key.length()> 6) {
-				//全词
-				for(int i= 0; i< string.length; i++) {
-					if(temps.contains(string[i])) {
-						tempb+= code;
-					}
-				}
-				//断句
-				for(int i= 0; i< stringReg.length; i++) {
-					if(temps.contains(stringReg[i])) {
-						tempb+= code;
-					}
-				}
-				score_code[copyCount] = (int) (tempa/Math.pow(lookrot+ 1, 4) + tempb*Math.pow(lookrot, 2));
-			}
-			if(zhongyao.replace(" ", "").length()> 1&& zhongyao.replace(" ", "").length()< 5) {
-				if(temps.contains(zhongyao.replace(" ", ""))) {
-					tempb+= code<< 7;
-				}
-				score_code[copyCount] = (int) (tempa/Math.pow(lookrot+ 1, 4) + tempb*Math.pow(lookrot, 2));
-			}
-			copyCount++;
-		}
-		new Quick9DLYGWithStringSwap().sort(score_code, score);
-		Object[][] tableData= new Object[count][13];
-		int new_count = 0;
-		newTableModel.getDataVector().clear();
-		if(null== key|| key.equals("")) {
-			for(int i= 0; i < tableData_old.length; i++) {
-				tableData_old[i][6]= tableData_old[i][6]==null? "": tableData_old[i][6];
-				newTableModel.insertRow(i, tableData_old[i]);
-			}		
-			newTableModel.fireTableDataChanged();	
-			return;
-		}
-		Here:
-			for(int i = copy.size()-1; i > -1; i--) {
-				if(score_code[i]< 1){
-					continue Here;
-				}
-				if(risk_filter_box.isSelected()) {
-					String hai= (dic_hai.get(score[i])==null?"null."
-							:dic_hai.get(score[i]).toString().replaceAll("\\s*", "")
-							.equalsIgnoreCase("")?"null":dic_hai.get(score[i]).toString()
-									.replaceAll("\\s*", ""));
-					String temp= name_filter.getText();
-					for(int j=0;j<temp.length();j++) {
-						if(hai.contains(""+ temp.charAt(j))) {
-							continue Here;
-						}	
-					}
-				}
-				if(feel_filter_box.isSelected()) {
-					String li= (dic_li.get(score[i])==null?"null."
-							:dic_li.get(score[i]).toString().replaceAll("\\s*", "")
-							.equalsIgnoreCase("")?"null": dic_li.get(score[i]).toString()
-									.replaceAll("\\s*", ""));
-					String temp= name_filter.getText();
-					for(int j= 0; j< temp.length(); j++) {
-						if(li.contains(""+ temp.charAt(j))) {
-							continue Here;
-						}	
-					}
-				}
-				//催化比值rot dna 催化计算
-				if(!name_feel_filter.getText().isEmpty()) {
-					String wei= dic_xw.get(score[i]).toString().replaceAll("\\s*", "");
-					CatalyticDNA_xingwei+= name_feel_filter.getText().replace(" ", "");
-					for(int j= 0; j< CatalyticDNA_xingwei.length(); j++) {
-						if(wei.contains(""+ CatalyticDNA_xingwei.charAt(j))) {
-							continue Here;
-						}	
-					}
-				}
-				if(null!= name_filter_not_have.getText()) {
-					if(!name_filter_not_have.getText().replace(" ", "").isEmpty()) {
-						String wei= dic_jm.get(score[i]).toString().replaceAll("\\s*", "");
-						CatalyticDNA_gongxiao+= name_filter_not_have.getText().replace(" ", "");;
-						for(int j= 0; j< CatalyticDNA_gongxiao.length(); j++) {
-							if(!wei.contains(""+ CatalyticDNA_gongxiao.charAt(j))) {
-								continue Here;
-							}
-						}
-					}
-				}
-				if(shuming_filter_box.isSelected()) {
-					String wei= score[i];
-					String temp= name_filter.getText();
-					for(int j= 0; j< temp.length(); j++) {
-						if(wei.contains(""+ temp.charAt(j))) {
-							continue Here;
-						}	
-					}
-				}
-				String temp= dic_map.get(score[i]).toString();
-				if(tableData.length<= new_count) {
-					continue Here;
-				}
-				tableData[new_count]= new Object[]{
-						(dic_index.get(score[i])== null? "": dic_index.get(score[i])).toString().replaceAll("\\s*", ""), 
-						score_code[i], score[i],
-						(dic_yw.get(score[i])== null? "": dic_yw.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_li.get(score[i])== null? "": dic_li.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_hai.get(score[i])==null?"详情参考笔记原文列: 是药三分毒, 补药甚三分. 食材亦如此, 勤俭亦长生."
-								:dic_hai.get(score[i]).toString().replaceAll("\\s*", "").equalsIgnoreCase("")?"详情参考笔记原文列"
-										:dic_hai.get(score[i]).toString().replaceAll("\\s*", "")), 				
-						(dic_yl.get(score[i])==null?"详情参考相关书籍":dic_yl.get(score[i])).toString().replaceAll("\\s*", ""),
-						(dic_xw.get(score[i])== null? "": dic_xw.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_jm.get(score[i])== null? "": dic_jm.get(score[i])).toString().replaceAll("\\s*", ""), 	
-						(dic_xz.get(score[i])==null?"":dic_xz.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_jj.get(score[i])==null?"":dic_jj.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_cy.get(score[i])==null?"":dic_cy.get(score[i])).toString().replaceAll("\\s*", ""),
-						(dic_ya.get(score[i])==null?"":dic_ya.get(score[i])).toString().replaceAll("\\s*", ""), 
-						(dic_zf.get(score[i])==null?"":dic_zf.get(score[i])).toString().replaceAll("\\s*", ""),
-						(dic_cj.get(score[i])==null?"":dic_cj.get(score[i])).toString().replaceAll("\\s*", "")};
-				if(zhongyao.contains("风寒")) {
-					if(temp.contains("风寒")) {
-						newTableModel.insertRow(new_count, tableData[new_count]);
-						new_count += 1;
-					}
-				}else if(zhongyao.contains("风热")){
-					if(temp.contains("风热")) {
-						newTableModel.insertRow(new_count, tableData[new_count]);
-						new_count += 1;
-					}		
-				}else {
-					newTableModel.insertRow(new_count, tableData[new_count]);
-					new_count+=1;
-				}		 
-			}	
-		newTableModel.fireTableDataChanged();
-	}
-	@Override
+//	public void zhongYaoSearch(String zhongyao, String forE, String key) {
+//		String CatalyticDNA_xingwei= "";
+//		String CatalyticDNA_gongxiao= "";
+//		if(DNASearchIsClick) {
+//			TokenPDI pDE_RNA_Formular= new TokenPDI();
+//			double rate= ((double)催化比值rot)/ 100;
+//			//pDE_RNA_Formular.key[0]= 0.3;
+//			pDE_RNA_Formular.key[1]= rate;
+//			pDE_RNA_Formular.key[2]= rate;
+//			//pDE_RNA_Formular.key[3]= 0.3;
+//			if(null!= name_feel_filter.getText()) {
+//				pDE_RNA_Formular.pdw= name_feel_filter.getText().toUpperCase();
+//				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
+//				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
+//				CatalyticDNA_xingwei= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();
+//			}
+//			//
+//			pDE_RNA_Formular.pde= "";
+//			if(null!= name_filter_not_have.getText()) {
+//				pDE_RNA_Formular.pdw= name_filter_not_have.getText().toUpperCase();
+//				pDE_RNA_Formular.code= pDE_RNA_Formular.pdw.toString().toUpperCase();
+//				pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);		
+//				CatalyticDNA_gongxiao= null== pDE_RNA_Formular.pde?"": pDE_RNA_Formular.pde.toString();		
+//			}
+//		}
+//		String[] score= new String[copy.size()];
+//		int[] score_code= new int[copy.size()];
+//		double []reg= new double[copy.size()];
+//		int count= 0;
+//		Map<String, WordFrequency> mapSearchWithoutSort= null;
+//		if(dic_map.containsKey(zhongyao.replaceAll(" ", ""))) {
+//			mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
+//		}else {
+//			String[] strings= key.split(" ");
+//			if(strings.length> 1&& key.split(" ")[0].length()> 5) {
+//				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(key);
+//			}else {
+//				mapSearchWithoutSort= analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
+//			}
+//		}	
+//		Iterator<String> iteratorForCopy= copy.iterator();	
+//		int copyCount= 0;
+//		List<String> list= analyzer.parserMixedString(key);
+//		String[] string= ListSwap.listToArray(list);
+//
+//		String[] stringReg= new String[forE.length()/ 3];
+//		for(int i= 0; i< stringReg.length; i++) {
+//			stringReg[i]= forE.substring(i* 3, (i* 3+ 3)< forE.length()? (i* 3+ 3): forE.length()- 1);
+//		}
+//		while(iteratorForCopy.hasNext()) {
+//			String iteratorForCopyString= iteratorForCopy.next();
+//			score[copyCount]= iteratorForCopyString;
+//			String temps= dic_map.get(iteratorForCopyString).toString();
+//			String tempsPCA= dic_li.get(iteratorForCopyString).toString();
+//			String tempsIndex= dic_index.get(iteratorForCopyString).toString();
+//			Iterator<String> iteratorWordFrequency= mapSearchWithoutSort.keySet().iterator();
+//			Here:
+//				while(iteratorWordFrequency.hasNext()) {  
+//					String mapSearchaAtII = iteratorWordFrequency.next();
+//					WordFrequency wordFrequencySearch = mapSearchWithoutSort.get(mapSearchaAtII);
+//					if(temps.contains(mapSearchaAtII)) {
+//						if(reg[copyCount] == 0){
+//							count += 1;
+//						}
+//						if(score[copyCount].contains(zhongyao.replace(" ", ""))) {
+//							reg[copyCount]+= 12;
+//						}
+//						if(zhongyao.contains(score[copyCount].replace(" ", ""))) {
+//							reg[copyCount]+= 12;
+//						}
+//
+//						if(tempsIndex.equalsIgnoreCase(zhongyao.replace(" ", ""))) {
+//							reg[copyCount]+= 1200;
+//						}
+//						if(tempsIndex.contains(zhongyao.replace(" ", "").toUpperCase())) {
+//							reg[copyCount]+= 1200;
+//						}
+//
+//						score[copyCount]= iteratorForCopyString;
+//						if(!pos.containsKey(mapSearchaAtII)) {
+//							reg[copyCount]+= 1;
+//							score_code[copyCount]+= 1<< mapSearchaAtII.length()
+//									<< wordFrequencySearch.getFrequency() ;
+//							if(tempsPCA.contains(mapSearchaAtII)) {
+//								score_code[copyCount] *= 2;
+//							}
+//							if(score[copyCount].contains(mapSearchaAtII)) {
+//								if(score[copyCount].length()>1) {
+//									reg[copyCount]+= 22;
+//								}
+//								reg[copyCount]+= 3;
+//							}
+//							continue Here;
+//						}
+//						if(pos.get(mapSearchaAtII).contains("名")|| pos.get(mapSearchaAtII).contains("动")
+//								|| pos.get(mapSearchaAtII).contains("形")|| pos.get(mapSearchaAtII).contains("谓")) {
+//							reg[copyCount]+= 2;
+//							if(tempsPCA.contains(mapSearchaAtII)) {
+//								reg[copyCount]*= 2;
+//							}
+//						}
+//						reg[copyCount]+= 1;
+//						score_code[copyCount]+= (iteratorForCopyString.contains(mapSearchaAtII)? 2: 1) 
+//								* (!pos.get(mapSearchaAtII).contains("名")? pos.get(mapSearchaAtII).contains("动")? 10: 1: 150) 
+//								<< mapSearchaAtII.length()* wordFrequencySearch.getFrequency();
+//						if(score[copyCount].contains(mapSearchaAtII)) {
+//							if(score[copyCount].length()>1) {
+//								reg[copyCount]+= 22;
+//							}
+//							reg[copyCount]+= 3;
+//						}
+//						continue Here;
+//					}
+//					if(mapSearchaAtII.length()>1) {
+//						for(int j=0;j<mapSearchaAtII.length();j++) {
+//							if(temps.contains(String.valueOf(mapSearchaAtII.charAt(j)))) {
+//								if(reg[copyCount] == 0){
+//									count += 1;
+//								}
+//								score[copyCount] = iteratorForCopyString;
+//								score_code[copyCount]+=1;
+//								if(pos.containsKey(String.valueOf(mapSearchaAtII.charAt(j)))&&(
+//										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("名")
+//										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("动")
+//										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("形")
+//										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("谓")
+//										)) {
+//									reg[copyCount] += 2;
+//								}
+//								reg[copyCount] += 1;
+//								if(score[copyCount].contains(mapSearchaAtII)) {
+//									if(score[copyCount].length()>1) {
+//										reg[copyCount]+= 12;
+//									}
+//									reg[copyCount]+= 3;
+//								}
+//								continue Here;
+//							}
+//						}
+//					}
+//				}
+//			score_code[copyCount] = score_code[copyCount] * (int)reg[copyCount];
+//			//词距
+//			int code= 200;
+//			int tempb= 0;
+//			int tempa= score_code[copyCount];
+//			if(key.length()> 6) {
+//				//全词
+//				for(int i= 0; i< string.length; i++) {
+//					if(temps.contains(string[i])) {
+//						tempb+= code;
+//					}
+//				}
+//				//断句
+//				for(int i= 0; i< stringReg.length; i++) {
+//					if(temps.contains(stringReg[i])) {
+//						tempb+= code;
+//					}
+//				}
+//				score_code[copyCount] = (int) (tempa/Math.pow(lookrot+ 1, 4) + tempb*Math.pow(lookrot, 2));
+//			}
+//			if(zhongyao.replace(" ", "").length()> 1&& zhongyao.replace(" ", "").length()< 5) {
+//				if(temps.contains(zhongyao.replace(" ", ""))) {
+//					tempb+= code<< 7;
+//				}
+//				score_code[copyCount] = (int) (tempa/Math.pow(lookrot+ 1, 4) + tempb*Math.pow(lookrot, 2));
+//			}
+//			copyCount++;
+//		}
+//		new Quick9DLYGWithStringSwap().sort(score_code, score);
+//		Object[][] tableData= new Object[count][13];
+//		int new_count = 0;
+//		newTableModel.getDataVector().clear();
+//		if(null== key|| key.equals("")) {
+//			for(int i= 0; i < tableData_old.length; i++) {
+//				tableData_old[i][6]= tableData_old[i][6]==null? "": tableData_old[i][6];
+//				newTableModel.insertRow(i, tableData_old[i]);
+//			}		
+//			newTableModel.fireTableDataChanged();	
+//			return;
+//		}
+//		Here:
+//			for(int i = copy.size()-1; i > -1; i--) {
+//				if(score_code[i]< 1){
+//					continue Here;
+//				}
+//				if(risk_filter_box.isSelected()) {
+//					String hai= (dic_hai.get(score[i])==null?"null."
+//							:dic_hai.get(score[i]).toString().replaceAll("\\s*", "")
+//							.equalsIgnoreCase("")?"null":dic_hai.get(score[i]).toString()
+//									.replaceAll("\\s*", ""));
+//					String temp= name_filter.getText();
+//					for(int j=0;j<temp.length();j++) {
+//						if(hai.contains(""+ temp.charAt(j))) {
+//							continue Here;
+//						}	
+//					}
+//				}
+//				if(feel_filter_box.isSelected()) {
+//					String li= (dic_li.get(score[i])==null?"null."
+//							:dic_li.get(score[i]).toString().replaceAll("\\s*", "")
+//							.equalsIgnoreCase("")?"null": dic_li.get(score[i]).toString()
+//									.replaceAll("\\s*", ""));
+//					String temp= name_filter.getText();
+//					for(int j= 0; j< temp.length(); j++) {
+//						if(li.contains(""+ temp.charAt(j))) {
+//							continue Here;
+//						}	
+//					}
+//				}
+//				//催化比值rot dna 催化计算
+//				if(!name_feel_filter.getText().isEmpty()) {
+//					String wei= dic_xw.get(score[i]).toString().replaceAll("\\s*", "");
+//					CatalyticDNA_xingwei+= name_feel_filter.getText().replace(" ", "");
+//					for(int j= 0; j< CatalyticDNA_xingwei.length(); j++) {
+//						if(wei.contains(""+ CatalyticDNA_xingwei.charAt(j))) {
+//							continue Here;
+//						}	
+//					}
+//				}
+//				if(null!= name_filter_not_have.getText()) {
+//					if(!name_filter_not_have.getText().replace(" ", "").isEmpty()) {
+//						String wei= dic_jm.get(score[i]).toString().replaceAll("\\s*", "");
+//						CatalyticDNA_gongxiao+= name_filter_not_have.getText().replace(" ", "");;
+//						for(int j= 0; j< CatalyticDNA_gongxiao.length(); j++) {
+//							if(!wei.contains(""+ CatalyticDNA_gongxiao.charAt(j))) {
+//								continue Here;
+//							}
+//						}
+//					}
+//				}
+//				if(shuming_filter_box.isSelected()) {
+//					String wei= score[i];
+//					String temp= name_filter.getText();
+//					for(int j= 0; j< temp.length(); j++) {
+//						if(wei.contains(""+ temp.charAt(j))) {
+//							continue Here;
+//						}	
+//					}
+//				}
+//				String temp= dic_map.get(score[i]).toString();
+//				if(tableData.length<= new_count) {
+//					continue Here;
+//				}
+//				tableData[new_count]= new Object[]{
+//						(dic_index.get(score[i])== null? "": dic_index.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						score_code[i], score[i],
+//						(dic_yw.get(score[i])== null? "": dic_yw.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_li.get(score[i])== null? "": dic_li.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_hai.get(score[i])==null?"详情参考笔记原文列: 是药三分毒, 补药甚三分. 食材亦如此, 勤俭亦长生."
+//								:dic_hai.get(score[i]).toString().replaceAll("\\s*", "").equalsIgnoreCase("")?"详情参考笔记原文列"
+//										:dic_hai.get(score[i]).toString().replaceAll("\\s*", "")), 				
+//						(dic_yl.get(score[i])==null?"详情参考相关书籍":dic_yl.get(score[i])).toString().replaceAll("\\s*", ""),
+//						(dic_xw.get(score[i])== null? "": dic_xw.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_jm.get(score[i])== null? "": dic_jm.get(score[i])).toString().replaceAll("\\s*", ""), 	
+//						(dic_xz.get(score[i])==null?"":dic_xz.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_jj.get(score[i])==null?"":dic_jj.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_cy.get(score[i])==null?"":dic_cy.get(score[i])).toString().replaceAll("\\s*", ""),
+//						(dic_ya.get(score[i])==null?"":dic_ya.get(score[i])).toString().replaceAll("\\s*", ""), 
+//						(dic_zf.get(score[i])==null?"":dic_zf.get(score[i])).toString().replaceAll("\\s*", ""),
+//						(dic_cj.get(score[i])==null?"":dic_cj.get(score[i])).toString().replaceAll("\\s*", "")};
+//				if(zhongyao.contains("风寒")) {
+//					if(temp.contains("风寒")) {
+//						newTableModel.insertRow(new_count, tableData[new_count]);
+//						new_count += 1;
+//					}
+//				}else if(zhongyao.contains("风热")){
+//					if(temp.contains("风热")) {
+//						newTableModel.insertRow(new_count, tableData[new_count]);
+//						new_count += 1;
+//					}		
+//				}else {
+//					newTableModel.insertRow(new_count, tableData[new_count]);
+//					new_count+=1;
+//				}		 
+//			}	
+//		newTableModel.fireTableDataChanged();
+//	}
+//	@Override
 	public void keyTyped(KeyEvent arg0) {
 		//if(arg0.getID())
 	}

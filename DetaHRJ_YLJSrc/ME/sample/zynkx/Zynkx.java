@@ -34,6 +34,7 @@ import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
 import org.OSU.tinos.list.ListSwap;
 import org.OSU.tinos.string.StringSwap;
+import org.tinos.dna.search.ZhongYaoSearch;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.tcp.http.RestCall;
 
@@ -791,8 +792,7 @@ public class Zynkx extends Container implements MouseListener, KeyListener{
 				String searchYaos= this.u.coAuthorForWord.bootZynkFlowerForest(table.getValueAt(row, 2).toString()
 						, zhongYaoFang, true);
 				//(this.u.table.getValueAt(row, 2).toString(), false);
-				//
-				this.u.zhongYaoSearch(searchYaos, "", searchYaos);
+				new ZhongYaoSearch().zhongYaoSearch(this.u, searchYaos, "", searchYaos);
 			}catch(Exception e) {
 				this.validate();
 			}

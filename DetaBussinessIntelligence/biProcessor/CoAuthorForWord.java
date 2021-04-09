@@ -21,6 +21,7 @@ import javax.swing.event.ChangeListener;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
+import org.tinos.dna.search.ZhongYaoSearch;
 
 import javax.media.opengl.*;
 
@@ -225,7 +226,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 				new ActionListener(){
 					public void actionPerformed(ActionEvent e){
 						String searchYaos= u.coAuthorForWord.bootFlowerForest(rootWord, true);
-						u.zhongYaoSearch(searchYaos, "", searchYaos);
+						new ZhongYaoSearch().zhongYaoSearch(u, searchYaos, "", searchYaos);
 					}
 				});  
 		cfc= new DetaButton(" Ù–‘÷≤÷Í", 100, 50, Color.orange);
@@ -233,7 +234,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 				new ActionListener(){
 					public void actionPerformed(ActionEvent e){
 						bootClassificationMap(rootWord, true);
-						u.zhongYaoSearch(u.key, "", u.key);
+						new ZhongYaoSearch().zhongYaoSearch(u, u.key, "", u.key);
 					}
 				});  
 		whh= new DetaButton("Ω˚º……≠¡÷", 200, 50, Color.magenta);
@@ -241,7 +242,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 				new ActionListener(){
 					public void actionPerformed(ActionEvent e){
 						String searchYaos= u.coAuthorForWord.bootFlowerSea(rootWord, true);
-						u.zhongYaoSearch(searchYaos, "", searchYaos);
+						new ZhongYaoSearch().zhongYaoSearch(u, searchYaos, "", searchYaos);
 					}
 				}); 
 		rst= new DetaButton("÷ÿ÷√", 200, 50, Color.pink);
