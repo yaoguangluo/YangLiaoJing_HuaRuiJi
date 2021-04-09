@@ -14,7 +14,7 @@ import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 public class AddZNSZPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public AddZNSZPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("addZNSZPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("æ·»åŠ æ™ºèƒ½å£°è¯Šæ–­é¡µ");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("Ìí¼ÓÖÇÄÜÉùÕï¶ÏÒ³");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
@@ -28,7 +28,7 @@ public class AddZNSZPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("addZNSZPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("æ·»åŠ æ™ºèƒ½å£°è¯Šæ–­é¡µ");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("Ìí¼ÓÖÇÄÜÉùÕï¶ÏÒ³");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);

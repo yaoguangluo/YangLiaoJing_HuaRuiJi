@@ -14,6 +14,6 @@ public class TimeCheck{
 	
 	public void duration(){
 		long du=now-before;
-		System.out.println("��ʱ: " + du + " ����");
+		System.out.println("end cost: " + du + " ms");
 	}
 }

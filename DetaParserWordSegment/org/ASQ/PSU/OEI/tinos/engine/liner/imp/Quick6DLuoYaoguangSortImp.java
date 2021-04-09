@@ -8,8 +8,8 @@ import org.ASQ.PSU.OCI.tinos.engine.liner.Quick6DLuoYaoguangSort;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
 /*
-** å¿«æ’6å°é«˜å³°ä¿®æ­£ç®—æ³• ä½œè€… ç½—ç‘¶å…‰
-** å¿«æ’10å°é«˜å³°ä¿®æ­£ç®—æ³• ä½œè€… ç½—ç‘¶å…‰ 20200921
+** ¿ìÅÅ6Ğ¡¸ß·åĞŞÕıËã·¨ ×÷Õß ÂŞÑş¹â
+** ¿ìÅÅ10Ğ¡¸ß·åĞŞÕıËã·¨ ×÷Õß ÂŞÑş¹â 20200921
 */
 public class Quick6DLuoYaoguangSortImp implements Quick6DLuoYaoguangSort {
 	public void quick6DLuoYaoGuangSortWordFrequency(List<WordFrequency> list, int leftPosition, int rightPosition) {		
@@ -40,11 +40,11 @@ public class Quick6DLuoYaoguangSortImp implements Quick6DLuoYaoguangSort {
 		int leftPositionNew= leftPosition;
 		WordFrequency wordFrequencyX= list.get(leftPosition);
 		WordFrequency wordFrequencyY= list.get(rightPosition);
-		//å°é«˜å³°ä¿®æ­£è¾¹ç¼˜å‡è¡¡å¼€å§‹
+		//Ğ¡¸ß·åĞŞÕı±ßÔµ¾ùºâ¿ªÊ¼
 		if (wordFrequencyX.getFrequency()< wordFrequencyY.getFrequency()) {
 			wordFrequencyY= wordFrequencyX;
 		}
-		//å°é«˜å³°ä¿®æ­£è¾¹ç¼˜å‡è¡¡ç»“æŸ
+		//Ğ¡¸ß·åĞŞÕı±ßÔµ¾ùºâ½áÊø
 		while (leftPositionNew++ < rightPosition) {
 			while (!(list.get(leftPositionNew++).getFrequency()> wordFrequencyY.getFrequency())
 					|| (leftPositionNew> rightPosition)){

@@ -23,14 +23,14 @@ public class DemoPOSMedcine {
         String[] ss1 = new String[1];
         ss[0] = "";
         ss1[0] = "";
-        //ss1[0] = "ã€ ç›Šæ¯ ã€ç»“å©šç›Šæ¯"; 
+        //ss1[0] = "¡¢ ÒæÄ¸ ¡¢½á»éÒæÄ¸"; 
 
         for (int i = 0; i < ss.length; i++) {
-            System.out.println("è¶…çº§å˜æ€å¤æ‚ç—…å¥-->" + ss[i]);
+            System.out.println("³¬¼¶±äÌ¬¸´ÔÓ²¡¾ä-->" + ss[i]);
             Map<String, WordFrequency> map = analyzer.parserMixStringByReturnFrequencyMap(
             		ss[0]
 					);
-            out.print("åˆ†æå¤„ç†çœŸå®ç»“æœ-->");
+            out.print("·ÖÎö´¦ÀíÕæÊµ½á¹û-->");
             Iterator<String> it = map.keySet().iterator();
             while(it.hasNext()) {
             	 out.println(it.next());

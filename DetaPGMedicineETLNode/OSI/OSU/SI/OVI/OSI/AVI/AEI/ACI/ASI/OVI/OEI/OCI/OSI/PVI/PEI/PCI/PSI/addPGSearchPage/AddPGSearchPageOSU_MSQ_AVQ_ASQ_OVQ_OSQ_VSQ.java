@@ -29,12 +29,12 @@ public class AddPGSearchPageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_
 				app.setVisible(true);
 				JFrame f= new JFrame();
 				f.add(app);
-				f.setTitle("澶勬柟DNN鍔熸晥瑙傛祴");
+				f.setTitle("处方DNN功效观测");
 				f.setLocationRelativeTo(null);
 				f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 				f.setSize(650,480);
 				f.setVisible(true);
-				app.bootZynkFlowerForest("鑽柟鍔熸晥妫灄", DNNtext, true);
+				app.bootZynkFlowerForest("药方功效森林", DNNtext, true);
 			} catch (HeadlessException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
