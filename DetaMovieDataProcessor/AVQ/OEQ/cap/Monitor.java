@@ -445,7 +445,7 @@ public class Monitor extends JApplet{
 						if(this.isStop) {
 //							image= new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
 //							image.getGraphics().drawImage(img, 0, 0, 640, 480, this);	
-							image= new ToolkitImageToBufferImage().toolkitImageToBufferImage(img, 640, 480, this);
+							image= new ToolkitImageToBufferImage().toolkitImageToBufferImage(img, 0, 0, 640, 480, this);
 						}else {
 							image= (BufferedImage) difImage;
 						}

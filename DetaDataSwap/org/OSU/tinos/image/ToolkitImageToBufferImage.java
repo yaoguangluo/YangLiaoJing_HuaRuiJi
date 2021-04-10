@@ -11,19 +11,19 @@ import javax.swing.ImageIcon;
 //sun 在命名的时候把画图和镜像分不开了,toolkit， image 的注释文档都是按toolkit来的，于是写图片经常要烧脑一下。现在分出来。
 //罗瑶光
 public class ToolkitImageToBufferImage{
-	public BufferedImage toolkitImageIconToBufferImage(ImageIcon imageIcon) {
+	public BufferedImage toolkitImageIconToBufferImage(int positionX, int positionY, ImageIcon imageIcon) {
 		BufferedImage  bufferedImage= new BufferedImage(imageIcon.getIconWidth(),
 				imageIcon.getIconHeight(), BufferedImage.TYPE_INT_RGB);
 		Graphics2D graphics2D= bufferedImage.createGraphics();
-		graphics2D.drawImage(imageIcon.getImage(), 0, 0, imageIcon.getImageObserver());
+		graphics2D.drawImage(imageIcon.getImage(), positionX, positionY, imageIcon.getImageObserver());
 		return bufferedImage;
 	}
 	
-	public BufferedImage toolkitImageToBufferImage(Image image,int width, int height, Object object) {
+	public BufferedImage toolkitImageToBufferImage(Image image, int positionX, int positionY, int width, int height, Object object) {
 		ImageObserver imageObserver= (ImageObserver)object;
 		BufferedImage  bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-		image.getGraphics().drawImage(image, 0, 0, width, height, imageObserver);
+		image.getGraphics().drawImage(image, positionX, positionY, width, height, imageObserver);
 		return bufferedImage;
 	}
 	
