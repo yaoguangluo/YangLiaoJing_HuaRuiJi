@@ -37,7 +37,8 @@ import com.jogamp.opengl.util.gl2.GLUT;
 
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
-public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener, GLEventListener { 
+public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, MouseListener
+, MouseWheelListener, KeyListener, GLEventListener { 
 	public Boolean clicked = false;
 	public int mousex = 0;
 	public int mousey = 0;

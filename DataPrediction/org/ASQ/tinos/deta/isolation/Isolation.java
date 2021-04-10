@@ -20,7 +20,8 @@ public class Isolation{
 	//Theory 《神经网络: 权距》，欧基里德， Yaoguang.Luo 20191220
 	//Application Yaoguang.Luo 
 	//适用于 最短路径，最小距离，商旅分析预测，等项目中
-	public static Map<Double, List<Position2D>> getTSPIsolationGroups2D(List<Position2D> groups, double scale) {
+	public static Map<Double, List<Position2D>> getTSPIsolationGroups2D(
+			List<Position2D> groups, double scale) {
 		boolean[][] isDelete= new boolean[groups.size()][groups.size()];
 		Map<Double, List<Position2D>> output= new HashMap<>(); 
 		Iterator<Position2D> iterator= groups.iterator();
@@ -64,7 +65,8 @@ public class Isolation{
 	//Theory 《神经网络: 权距》，欧基里德， Yaoguang.Luo 20191220
 	//Application Yaoguang.Luo 
 	//适用于 最短路径，最小距离，商旅分析预测，等项目中
-	public static Map<Double, List<Position3D>> getTSPIsolationGroups3D(List<Position3D> groups, double scale) {
+	public static Map<Double, List<Position3D>> getTSPIsolationGroups3D(
+			List<Position3D> groups, double scale) {
 		boolean[][] isDelete= new boolean[groups.size()][groups.size()];
 		Map<Double, List<Position3D>> output= new HashMap<>(); 
 		Iterator<Position3D> iterator= groups.iterator();

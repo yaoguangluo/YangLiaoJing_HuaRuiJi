@@ -16,7 +16,8 @@ public class SocketThread extends Thread implements Runnable{
 	private EmotionMap emotionMap;
 	private String sid;
 	private SocketThreadPool socketThreadPool;
-	public SocketThread(EmotionMap emotionMap, Analyzer analyzer, SocketThreadPool socketThreadPool, Socket socket, String id){
+	public SocketThread(EmotionMap emotionMap, Analyzer analyzer, SocketThreadPool socketThreadPool
+			, Socket socket, String id){
 		this.socket= socket;
 		this.sid= id;
 		this.analyzer= analyzer;

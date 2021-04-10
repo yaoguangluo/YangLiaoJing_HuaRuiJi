@@ -28,6 +28,7 @@ public class NodeOSGI{
 		pre= null;
 		currentFace= thisface;
 		thisIcon= currentFace.thisIcon;
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String(currentFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS);
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS
+		= new String(currentFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS);
 	}
 }

@@ -12,7 +12,8 @@ public class ArffTransferOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	public String filepath;
 	public ArffTransferOSU_MSQ_OPE_OPC_ECI( ) throws IOException{	
 	}
-	public void run(final ArffTransferOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException{
+	public void run(final ArffTransferOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ)
+			throws IOException{
 		System.out.println("runed" + value); 
 		System.out.println(toptablein.getModel().getValueAt(0, 0));
 		System.out.println("runed" + value);

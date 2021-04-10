@@ -221,7 +221,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 			graphics2D.setColor(new	Color(25, 25, 112));
 			if(node.beconnect){
 				if(node.tBeconnect){
-					drawArrow.doDrawArrow(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28, node.x+ 14, node.y- 6);
+					drawArrow.doDrawArrow(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
+							, node.x+ 14, node.y- 6);
 					if(!node.leftChoose&& node.rightChoose){
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
@@ -229,7 +230,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 					}
 				}
 				if(node.mBeconnect){
-					drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28, node.x- 4, node.y+ 25);
+					drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
+							, node.x- 4, node.y+ 25);
 					if(!node.leftChoose&& node.rightChoose){
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
@@ -237,7 +239,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 					}
 				}
 				if(node.dBeconnect){
-					drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28, node.x+ 6, node.y+ 55);
+					drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
+							, node.x+ 6, node.y+ 55);
 					if(!node.leftChoose&& node.rightChoose){
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);

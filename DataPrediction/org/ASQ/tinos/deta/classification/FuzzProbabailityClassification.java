@@ -25,7 +25,8 @@ public class FuzzProbabailityClassification{
 			double predictionRightError= Math.abs(input.getRightErrorRatio()- rightErrorMean);
 			double predictionErrorRight= Math.abs(input.getErrorRightRatio()- errorRightMean);
 			double predictionErrorError= Math.abs(input.getErrorErrorRatio()- errorErrorMean);
-			double tempSumRight= predictionRightRight+ predictionRightError+ predictionErrorRight+ predictionErrorError;
+			double tempSumRight= predictionRightRight+ predictionRightError+ predictionErrorRight
+					+ predictionErrorError;
 			if(true== isFirst) {
 				isFirst= false;
 				shortestSumRight= tempSumRight;
@@ -41,7 +42,8 @@ public class FuzzProbabailityClassification{
 		return groups.get(key);	
 	}	
 	
-	public static List<RatioMatrix> getSimilarFuzzSetWithScale(RatioMatrix input, List<RatioMatrix> groups, double scale) {
+	public static List<RatioMatrix> getSimilarFuzzSetWithScale(RatioMatrix input, List<RatioMatrix> groups
+			, double scale) {
 		List<RatioMatrix> output= new ArrayList<>();
 		Iterator<RatioMatrix> iterators= groups.iterator();
 		while(iterators.hasNext()) {
@@ -54,7 +56,8 @@ public class FuzzProbabailityClassification{
 			double predictionRightError= Math.abs(input.getRightErrorRatio()- rightErrorMean);
 			double predictionErrorRight= Math.abs(input.getErrorRightRatio()- errorRightMean);
 			double predictionErrorError= Math.abs(input.getErrorErrorRatio()- errorErrorMean);
-			double tempSumRight= predictionRightRight+ predictionRightError+ predictionErrorRight+ predictionErrorError;
+			double tempSumRight= predictionRightRight+ predictionRightError+ predictionErrorRight
+					+ predictionErrorError;
 			if(tempSumRight< scale) {
 				output.add(ratio);
 			}

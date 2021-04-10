@@ -15,7 +15,8 @@ import javax.swing.table.DefaultTableModel;
 
 import ME.sample.TableSorterZYNK;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
-public class ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ implements MouseListener{
+public class ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ 
+implements MouseListener{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;

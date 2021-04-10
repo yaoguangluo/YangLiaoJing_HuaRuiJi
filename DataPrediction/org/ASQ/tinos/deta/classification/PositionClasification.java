@@ -11,8 +11,8 @@ import org.ASQ.tinos.deta.demension.Position2D;
 //思想：欧基里德
 //实现：罗瑶光
 public class PositionClasification{
-	public static Map<Double, List<Position2D>> addNewPositionWithoutHeart(Map<Double, List<Position2D>> groups
-			, Position2D AMV_MVS_VSQ2D, double scaleDistance){
+	public static Map<Double, List<Position2D>> addNewPositionWithoutHeart(Map<Double
+			, List<Position2D>> groups, Position2D AMV_MVS_VSQ2D, double scaleDistance){
 		double groupKey = 0;
 		Iterator<Double> iterator= groups.keySet().iterator();
 		while(iterator.hasNext()) {
@@ -32,8 +32,8 @@ public class PositionClasification{
 		return groups;
 	}
 	
-	public static Map<Double, List<Position2D>> addNewPositionWithHeart(Map<Double
-			, List<Position2D>> groups, Position2D AMV_MVS_VSQ2D, Map<Double, Position2D> hearts, double scaleDistance){	
+	public static Map<Double, List<Position2D>> addNewPositionWithHeart(Map<Double, List<Position2D>> groups
+			, Position2D AMV_MVS_VSQ2D, Map<Double, Position2D> hearts, double scaleDistance){	
 		double groupKey= 0;
 		Iterator<Double> iterator= groups.keySet().iterator();
 		while(iterator.hasNext()) {

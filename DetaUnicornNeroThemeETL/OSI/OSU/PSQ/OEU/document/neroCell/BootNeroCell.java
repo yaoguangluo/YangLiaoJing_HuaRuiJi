@@ -14,8 +14,8 @@ import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
 import OSI.OSU.SI.MCI.OEI.GUI.extOSGI.OSGI_chansfer;
 public class BootNeroCell{
-	public static void bootCell(LinkNode linkNode, JTextPane rightBotJTextPane, ThisCanvas canvas) throws IOException
-	, UnsupportedAudioFileException, InterruptedException {
+	public static void bootCell(LinkNode linkNode, JTextPane rightBotJTextPane, ThisCanvas canvas) 
+			throws IOException, UnsupportedAudioFileException, InterruptedException {
 		Map<String, LinkNode> bootMaps= new HashMap<>();
 		LinkNode currentNode= linkNode;
 		while(null!= currentNode) {
@@ -54,12 +54,15 @@ public class BootNeroCell{
 					}else {
 						//报没有配置异常；弹出配置面板；
 						currentNode.thisFace.MEI_MSU(rightBotJTextPane, canvas);
-						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setLocation(currentNode.x, currentNode.y);
+						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setLocation(currentNode.x
+								, currentNode.y);
 						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setSize(300, 300);
 						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setResizable(true);
-						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.scrollPane.setBounds(0, 0, currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()-10
+						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.scrollPane.setBounds(0, 0
+								, currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()-10
 								, currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getHeight()-45);
-						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.panel.setPreferredSize(new Dimension(800, 600));
+						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.panel.setPreferredSize(
+								new Dimension(800, 600));
 						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setBackground(Color.BLUE);
 						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setVisible(true);
 						currentNode.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.validate();

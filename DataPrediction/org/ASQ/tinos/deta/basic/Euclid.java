@@ -22,7 +22,8 @@ public class Euclid{
 		return AMV_MVS_VSQ2D;
 	}
 	
-	public static Position2D findCryptionPosition2D(Position2D heart, Position2D oneMore) {
+	public static Position2D findCryptionPosition2D(Position2D heart
+			, Position2D oneMore) {
 		Position2D AMV_MVS_VSQ2D= new Position2D();
 		AMV_MVS_VSQ2D.setX((heart.getX()+ oneMore.getX())/ 2);
 		AMV_MVS_VSQ2D.setY((heart.getY()+ oneMore.getY())/ 2);
@@ -47,7 +48,8 @@ public class Euclid{
 		return AMV_MVS_VSQ3D;
 	}
 	
-	public static Position3D findCryptionPosition3D(Position3D heart, Position3D oneMore) {
+	public static Position3D findCryptionPosition3D(Position3D heart
+			, Position3D oneMore) {
 		Position3D AMV_MVS_VSQ3D= new Position3D();
 		AMV_MVS_VSQ3D.setX((heart.getX()+ oneMore.getX())/ 2);
 		AMV_MVS_VSQ3D.setY((heart.getY()+ oneMore.getY())/ 2);

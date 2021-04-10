@@ -52,8 +52,7 @@ public class Histogram extends JPanel implements GLEventListener {
     JOGLOBJShape shape=null;
     public double t = 1.0d;
     //timeCheck ch=new timeCheck();    
-    public Histogram() throws HeadlessException 
-    {  
+    public Histogram() throws HeadlessException  {  
     	this.setLayout(null);
         GLProfile glp = GLProfile.getDefault();
         GLCapabilities glcaps=new GLCapabilities(glp);      
@@ -70,10 +69,8 @@ public class Histogram extends JPanel implements GLEventListener {
         sliderx.setMajorTickSpacing(20);  
         sliderx.setMinorTickSpacing(5);  
         sliderx.addChangeListener( 
-        		    new ChangeListener()  
-        	        {    
-        	            public void stateChanged(ChangeEvent event)  
-        	            {    
+        		    new ChangeListener()   {    
+        	            public void stateChanged(ChangeEvent event)    {    
         	                JSlider source = (JSlider) event.getSource();  
         	                xrot= source.getValue();  
         	            }
@@ -85,10 +82,8 @@ public class Histogram extends JPanel implements GLEventListener {
         slidery.setMajorTickSpacing(20);  
         slidery.setMinorTickSpacing(5);  
         slidery.addChangeListener( 
-        		    new ChangeListener()  
-        	        {    
-        	            public void stateChanged(ChangeEvent event)  
-        	            {    
+        		    new ChangeListener()   {    
+        	            public void stateChanged(ChangeEvent event)   {    
         	                JSlider source = (JSlider) event.getSource();  
         	                yrot= source.getValue();  
         	            }
@@ -100,10 +95,8 @@ public class Histogram extends JPanel implements GLEventListener {
         sliderz.setMajorTickSpacing(20);  
         sliderz.setMinorTickSpacing(5);  
         sliderz.addChangeListener( 
-        		    new ChangeListener()  
-        	        {    
-        	            public void stateChanged(ChangeEvent event)  
-        	            {    
+        		    new ChangeListener()   {    
+        	            public void stateChanged(ChangeEvent event)   {    
         	                JSlider source = (JSlider) event.getSource();  
         	                zrot= source.getValue();  
         	            }
@@ -116,10 +109,8 @@ public class Histogram extends JPanel implements GLEventListener {
         slidert.setMajorTickSpacing(20);  
         slidert.setMinorTickSpacing(1);  
         slidert.addChangeListener( 
-        		    new ChangeListener()  
-        	        {    
-        	            public void stateChanged(ChangeEvent event)  
-        	            {    
+        		    new ChangeListener()   {    
+        	            public void stateChanged(ChangeEvent event)   {    
         	                JSlider source = (JSlider) event.getSource();  
         	                trot= source.getValue();  
         	            }
@@ -127,40 +118,32 @@ public class Histogram extends JPanel implements GLEventListener {
         
         top   = new JButton("top");
         top.addActionListener( 
-    		    new ActionListener()  
-    	        {    
-    		    	public void actionPerformed(ActionEvent e)
-    		    	{
+    		    new ActionListener()   {    
+    		    	public void actionPerformed(ActionEvent e){
     		    	 brot+=0.5;
     		    	}
     	        });  
         
         down  = new JButton("down");
         down.addActionListener( 
-    		    new ActionListener()  
-    	        {    
-    		    	public void actionPerformed(ActionEvent e)
-    		    	{
+    		    new ActionListener()   {    
+    		    	public void actionPerformed(ActionEvent e){
     		    		brot-=0.5;
     		    	}
     	        });  
         
         left  = new JButton("left");
         left.addActionListener( 
-    		    new ActionListener()  
-    	        {    
-    		    	public void actionPerformed(ActionEvent e)
-    		    	{
+    		    new ActionListener()    {    
+    		    	public void actionPerformed(ActionEvent e)	{
     		    		 lrot-=0.5;
     		    	}
     	        });  
         
         right = new JButton("right");
         right.addActionListener( 
-    		    new ActionListener()  
-    	        {    
-    		    	public void actionPerformed(ActionEvent e)
-    		    	{
+    		    new ActionListener()     {    
+    		    	public void actionPerformed(ActionEvent e){
     		    		 lrot+=0.5;
     		    	}
     	        });  
@@ -178,8 +161,7 @@ public class Histogram extends JPanel implements GLEventListener {
         sliderBox.setBounds(0, 500, 500, 700);
         add(sliderBox);
     }     
-    private void centerWindow(Component frame)
-    {
+    private void centerWindow(Component frame) {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();  
         Dimension frameSize = frame.getSize();  
         if (frameSize.width > screenSize.width)  
@@ -190,8 +172,7 @@ public class Histogram extends JPanel implements GLEventListener {
                 (screenSize.height - frameSize.height) >> 1);  
     }  
     @SuppressWarnings("static-access")
-	public void init(GLAutoDrawable drawable) 
-    {  
+	public void init(GLAutoDrawable drawable)  {  
         gl =  drawable.getGL().getGL2();    
         glu = new GLU();  
         glut= new GLUT();       
@@ -209,8 +190,7 @@ public class Histogram extends JPanel implements GLEventListener {
     }  
     
     
-    private static int[] arrayInit() 
-    {	
+    private static int[] arrayInit()  {	
 		int[] array=new int[12];	
 		java.util.Random r=new java.util.Random(); 
 		for(int i=12,j=0;i>0;i--,j++)
@@ -222,8 +202,7 @@ public class Histogram extends JPanel implements GLEventListener {
 	}
     
     @SuppressWarnings("static-access")
-	public void display(GLAutoDrawable drawable) 
-    {  
+	public void display(GLAutoDrawable drawable)  {  
      	GL2 gl = drawable.getGL().getGL2();
         gl.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT);
         gl.glLoadIdentity();
@@ -245,10 +224,8 @@ public class Histogram extends JPanel implements GLEventListener {
 // 
         int a[][]=new int[12][3];
         int x = 0;
-        for(int i=0;i<x;i++)
-        	{
-      	  for(int j=0;j<3;j++)
-      	  	{
+        for(int i=0;i<x;i++){
+      	  for(int j=0;j<3;j++)	{
       		  	
       		    gl.glBegin(gl.GL_POLYGON);
       			gl.glColor3f(0,0,255);
@@ -351,13 +328,7 @@ public class Histogram extends JPanel implements GLEventListener {
     			gl.glVertex3d(i*0.7+0.4 ,j*0.7+0.4 ,a[i*j][0]*0.05+1.5);
     			gl.glVertex3d(i*0.7+0.4 ,j*0.7+0.2 ,a[i*j][0]*0.05+1.5); 
     		    gl.glEnd();
-    		    
-    		    
-    		    
-    		    
-    		    
-    		    
-    		    
+    		       
     		    
       		    gl.glBegin(gl.GL_POLYGON);
       			gl.glColor3f(255,0,0);
@@ -406,31 +377,18 @@ public class Histogram extends JPanel implements GLEventListener {
     			gl.glVertex3d(i*0.7+0.6 ,j*0.7+0.6 ,a[i*j][0]*0.05+1.0);
     			gl.glVertex3d(i*0.7+0.6 ,j*0.7+0.4 ,a[i*j][0]*0.05+1.0); 
     		    gl.glEnd();
-    		    
-    		    
-    		    
-    		    
-    		    
-    		    
+    		    	    
     		    
       	  	}
         	}
-  
-        
-        
-        
-       
-
-      
+   
   	gl.glEnd();
     gl.glFlush();
    }  
-    public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) 
-    {  
+    public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height)  {  
         float fAspect; 
   
-        if (height == 0) 
-        {  
+        if (height == 0)  {  
             height = 1;  
         }      
         gl.glViewport(0, 0, width, height);  
@@ -441,11 +399,9 @@ public class Histogram extends JPanel implements GLEventListener {
         gl.glMatrixMode(GL2.GL_MODELVIEW);  
         gl.glLoadIdentity();  
     }  
-    public void dispose(GLAutoDrawable arg0) 
-    {       
+    public void dispose(GLAutoDrawable arg0) {       
     }  
-    public static void main(String[] args) 
-    {  
+    public static void main(String[] args)  {  
         final Histogram app = new Histogram();  
     	//final OBJTest app = new OBJTest();  
         app.setSize(850, 700);

@@ -45,7 +45,8 @@ public class NodeShow extends JScrollPane {
 		this.analyzer= analyzer;
 		this.pos= pos;
 		link= new LinkOSGI();
-		first= new OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register(this.tableData_old, this.text, this.u, this.analyzer, this.pos).Rigester(first, link);
+		first= new OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register(this.tableData_old, this.text, this.u
+				, this.analyzer, this.pos).Rigester(first, link);
 		updateTree();
 	}
 	

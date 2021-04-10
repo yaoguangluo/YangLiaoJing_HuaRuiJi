@@ -15,8 +15,8 @@ import org.ASQ.tinos.deta.demension.Position3D;
 //Theory yaoguang.luo 20191219~23£¬ Å·»ùÀïµÂ
 //Application yaoguang.luo
 public class FissileWithMatch{
-	public static Map<Double, ArrayList<Position2D>> fissilePosition2DWithMatch(ArrayList<Position2D> groups
-			, double scale) {
+	public static Map<Double, ArrayList<Position2D>> fissilePosition2DWithMatch(
+			ArrayList<Position2D> groups, double scale) {
 		if(null== groups) {
 			return new HashMap<Double, ArrayList<Position2D>>();
 		}
@@ -76,8 +76,8 @@ public class FissileWithMatch{
 		return distanceGroups;	
 	}
 	
-	public static Map<Double, List<Position3D>> fissilePosition3DWithMatch(List<Position3D> groups
-			, double scale) {
+	public static Map<Double, List<Position3D>> fissilePosition3DWithMatch(
+			List<Position3D> groups, double scale) {
 		Map<Double, List<Position3D>> distanceGroups= new HashMap<>();
 		Map<Double, Position3D> distanceHeart= new HashMap<>();
 		Iterator<Position3D> iterator= groups.iterator();

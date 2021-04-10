@@ -57,10 +57,12 @@ public class VPC {
 //			return VtoV.ObjectToJsonString(RestLoginPortImpl.checkStatus(data.get("token")));	
 //		}
 		if(string.equalsIgnoreCase("/ask")){
-			return VtoV.ObjectToJsonString(RestAskPortImpl.ask(data.get("ip"), data.get("token"), data.get("message"), data.get("pointIp")));
+			return VtoV.ObjectToJsonString(RestAskPortImpl.ask(data.get("ip"), data.get("token")
+					, data.get("message"), data.get("pointIp")));
 		}
 		if(string.equalsIgnoreCase("/feedBack")){
-			return VtoV.ObjectToJsonString(RestAskPortImpl.feedBack(data.get("ip"), data.get("token"), data.get("pointIp")));
+			return VtoV.ObjectToJsonString(RestAskPortImpl.feedBack(data.get("ip"), data.get("token")
+					, data.get("pointIp")));
 		}
 		if(string.equalsIgnoreCase("/getAskers")){
 			return VtoV.ObjectToJsonString(RestAskPortImpl.getAskers(data.get("token")));

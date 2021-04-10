@@ -12,7 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.OCI.emotion.ortho.fhmm.EmotionMap;
 public class RestMap {
-	public static void process(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) throws IOException {
+	public static void process(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 
+			throws IOException {
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();
 		for(String cell:column){

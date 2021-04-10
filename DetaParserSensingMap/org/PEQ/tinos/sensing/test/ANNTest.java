@@ -31,7 +31,8 @@ public class ANNTest{
 		return AnnMatrix;
 	}
 
-	public String[][] getANNMatrix(String string, Analyzer analyzer) throws IOException, InstantiationException, IllegalAccessException {
+	public String[][] getANNMatrix(String string, Analyzer analyzer) throws IOException
+	, InstantiationException, IllegalAccessException {
 		SensingTest sensingTest= new SensingTest();
 		//SUM OF ANN MAP CULUMN KERNEL
 		String[][] preAnnMatrix= sensingTest.getMatrix(string, analyzer);

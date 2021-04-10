@@ -30,7 +30,8 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	public ReadOSU_MSQ_OPE_OPC_ECI() throws IOException{	
 	}
 
-	public void run(final ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException{
+	public void run(final ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) 
+			throws IOException{
 		analyzer= new CogsBinaryForestAnalyzerImp();
 		analyzer.initMixed();
 		//拿到中文数据

@@ -22,7 +22,8 @@ public class ReadChinese extends Thread implements Runnable{
 			com.jacob.com.Dispatch dispdefaultVoice= defalutVoice.toDispatch();
 			com.jacob.com.Variant allVoices= com.jacob.com.Dispatch.call(sapo, "GetVoices");
 			com.jacob.com.Dispatch dispVoices= allVoices.toDispatch();
-			com.jacob.com.Dispatch setvoice= com.jacob.com.Dispatch.call(dispVoices, "Item", new com.jacob.com.Variant(1)).toDispatch();
+			com.jacob.com.Dispatch setvoice= com.jacob.com.Dispatch.call(dispVoices
+					, "Item", new com.jacob.com.Variant(1)).toDispatch();
 			com.jacob.activeX.ActiveXComponent voiceActivex= new com.jacob.activeX.ActiveXComponent(dispdefaultVoice);
 			com.jacob.activeX.ActiveXComponent setvoiceActivex= new com.jacob.activeX.ActiveXComponent(setvoice);
 			com.jacob.com.Variant item= com.jacob.com.Dispatch.call(setvoiceActivex, "GetDescription");

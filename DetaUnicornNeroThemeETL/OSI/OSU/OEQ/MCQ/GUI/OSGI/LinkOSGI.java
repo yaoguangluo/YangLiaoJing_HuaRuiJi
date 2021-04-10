@@ -1,6 +1,7 @@
 package OSI.OSU.OEQ.MCQ.GUI.OSGI;
 public class LinkOSGI{
-	public NodeOSGI addNode(NodeOSGI currentNode, OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI currentFace) {
+	public NodeOSGI addNode(NodeOSGI currentNode
+			, OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI currentFace) {
 		if(null== currentNode){
 			currentNode= new NodeOSGI();
 			currentNode.addName(currentFace);

@@ -37,8 +37,8 @@ public class PositionHeartsSample{
 		return groups.get(key);	
 	}	
 
-	public static Map<Double, List<Position2D>> getShorterSamplePosition2DGroupsWithScale(Position2D inputHeart
-			, Map<Double, List<Position2D>> groups, double scale) {
+	public static Map<Double, List<Position2D>> getShorterSamplePosition2DGroupsWithScale(
+			Position2D inputHeart, Map<Double, List<Position2D>> groups, double scale) {
 		Map<Double, List<Position2D>> output= new HashMap<>();
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
@@ -78,8 +78,8 @@ public class PositionHeartsSample{
 		return groups.get(key);	
 	}	
 
-	public static Map<Double, List<Position3D>> getShortestSamplePosition3DGroupsWithScale(Position3D inputHeart
-			, Map<Double, List<Position3D>> groups, double scale) {
+	public static Map<Double, List<Position3D>> getShortestSamplePosition3DGroupsWithScale(
+			Position3D inputHeart, Map<Double, List<Position3D>> groups, double scale) {
 		Map<Double, List<Position3D>> output= new HashMap<>();
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {

@@ -48,7 +48,8 @@ public class ProbabilityClasification{
 		boolean isFirst= true;
 		//轭
 		double esyn= input.getRightRightRatio()+ input.getErrorErrorRatio();
-		//double esny= input.getErrorRightRatio()+ input.getRightErrorRatio();若使用该行 轭 误差集合请自行校正。罗瑶光20191217
+		//double esny= input.getErrorRightRatio()+ input.getRightErrorRatio();若使用该行 
+		//轭 误差集合请自行校正。罗瑶光20191217
 		double yesyn= input.getRightRightRatio()/ esyn;
 		double nesyn= input.getErrorErrorRatio()/ esyn;
 		double totalRatio= -yesyn* Math.log(yesyn)- nesyn* Math.log(nesyn);

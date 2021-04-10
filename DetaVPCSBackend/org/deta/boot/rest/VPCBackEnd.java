@@ -9,7 +9,8 @@ import org.lygbackend.vpc.process.portImpl.RestLoginPortImpl;
 import org.lygbackend.vpc.process.portImpl.RestNLPPortImpl;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;
-	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) throws Exception {
+	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) 
+			throws Exception {
 		if(string.equalsIgnoreCase("/login")){
 			return new VtoV().ObjectToJsonString(RestLoginPortImpl.login(data.get("uEmail"),data.get("uPassword")));	
 		}
@@ -20,7 +21,8 @@ public class VPCBackEnd {
 			return new VtoV().ObjectToJsonString(RestLoginPortImpl.logout(data.get("uEmail"), data.get("uToken")));
 		}
 		if(string.equalsIgnoreCase("/register")){
-			return new VtoV().ObjectToJsonString(RestLoginPortImpl.register(data.get("uEmail"), data.get("uEmailEnsure")
+			return new VtoV().ObjectToJsonString(RestLoginPortImpl.register(data.get("uEmail")
+					, data.get("uEmailEnsure")
 					, data.get("uName"), data.get("uPassword"), data.get("uPassWDEnsure"), data.get("uAddress")
 					, data.get("uPhone"), data.get("uWeChat"), data.get("uQq"), data.get("uAge"), data.get("uSex")));	
 		}

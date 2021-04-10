@@ -11,7 +11,8 @@ public class ClusterAttraction{
 	//临近2个坐标团的相互引力比算法建模观测，小于1 吸引，大于1 排斥。
 	//思想： 罗瑶光，欧基里德， 立体几何，20191227
 	//实现： 罗瑶光
-	public static double getTwoPosition2DClusterAttraction(List<Position2D> clusterOne, List<Position2D> clusterTwo) {
+	public static double getTwoPosition2DClusterAttraction(List<Position2D> clusterOne
+			, List<Position2D> clusterTwo) {
 		Position2D midOne= Euclid.findMidPosition2D(clusterOne);
 		Position2D midTwo= Euclid.findMidPosition2D(clusterTwo);
 		Position2D heartOne= Euclid.findHeartPosition2D(clusterOne);
@@ -21,7 +22,8 @@ public class ClusterAttraction{
 		return heartDistance/ midDistance;
 	}
 	
-	public static double getTwoPosition3DClusterAttraction(List<Position3D> clusterOne, List<Position3D> clusterTwo) {
+	public static double getTwoPosition3DClusterAttraction(List<Position3D> clusterOne
+			, List<Position3D> clusterTwo) {
 		Position3D midOne= Euclid.findMidPosition3D(clusterOne);
 		Position3D midTwo= Euclid.findMidPosition3D(clusterTwo);
 		Position3D heartOne= Euclid.findHeartPosition3D(clusterOne);
