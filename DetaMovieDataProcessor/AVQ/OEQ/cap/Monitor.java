@@ -21,6 +21,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.ASQ.tinos.deta.image.ImagePixGroupFilter;
+import org.OSU.tinos.image.ToolkitImageToBufferImage;
 import org.bytedeco.javacpp.opencv_core.IplImage;
 import org.bytedeco.javacv.Java2DFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameConverter;
@@ -442,8 +443,9 @@ public class Monitor extends JApplet{
 						difImage= paintConverter.getBufferedImage(frame, 1);
 						BufferedImage image;
 						if(this.isStop) {
-							image= new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
-							image.getGraphics().drawImage(img, 0, 0, 640, 480, this);
+//							image= new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
+//							image.getGraphics().drawImage(img, 0, 0, 640, 480, this);	
+							image= new ToolkitImageToBufferImage().toolkitImageToBufferImage(img, 640, 480, this);
 						}else {
 							image= (BufferedImage) difImage;
 						}

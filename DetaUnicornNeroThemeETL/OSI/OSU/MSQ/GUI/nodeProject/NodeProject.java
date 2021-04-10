@@ -31,7 +31,7 @@ public class NodeProject extends JScrollPane {
 		img= images.getImage(); 
 		width= images.getIconWidth();
 		height= images.getIconHeight();
-		bufferedImage= new ToolkitImageToBufferImage().ToolkitImageIconToBufferImage(images);
+		bufferedImage= new ToolkitImageToBufferImage().toolkitImageIconToBufferImage(images);
 	}
 	public class MyPanel extends JPanel {	
 		public Image newimg;

@@ -2,18 +2,30 @@ package org.OSU.tinos.image;
 
 
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
 
 import javax.swing.ImageIcon;
 //新增一个ToolkitImage 变换
 //sun 在命名的时候把画图和镜像分不开了,toolkit， image 的注释文档都是按toolkit来的，于是写图片经常要烧脑一下。现在分出来。
 //罗瑶光
 public class ToolkitImageToBufferImage{
-	public BufferedImage ToolkitImageIconToBufferImage(ImageIcon imageIcon) {
+	public BufferedImage toolkitImageIconToBufferImage(ImageIcon imageIcon) {
 		BufferedImage  bufferedImage= new BufferedImage(imageIcon.getIconWidth(),
 				imageIcon.getIconHeight(), BufferedImage.TYPE_INT_RGB);
 		Graphics2D graphics2D= bufferedImage.createGraphics();
 		graphics2D.drawImage(imageIcon.getImage(), 0, 0, imageIcon.getImageObserver());
 		return bufferedImage;
 	}
+	
+	public BufferedImage toolkitImageToBufferImage(Image image,int width, int height, Object object) {
+		ImageObserver imageObserver= (ImageObserver)object;
+		BufferedImage  bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+		bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+		image.getGraphics().drawImage(image, 0, 0, width, height, imageObserver);
+		return bufferedImage;
+	}
+	
+	
 }
