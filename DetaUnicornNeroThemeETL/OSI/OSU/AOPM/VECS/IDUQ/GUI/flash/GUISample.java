@@ -111,17 +111,22 @@ public class GUISample extends JApplet implements MouseMotionListener
 	public Map<String, String> pos;
 	public void run() {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(100);
 			nodeProject.setBounds(0, 0, leftSplitPane.getWidth()
 					, leftSplitPane.getDividerLocation());
 			nodeProject.addimg();
-			nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.getWidth()
-					, nodeProject.getHeight(), java.awt.Image.SCALE_SMOOTH);
-			nodeProject.jPanel.update(getGraphics());
+			Thread.sleep(1000);
+//			nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.getWidth()
+//					, nodeProject.getHeight(), java.awt.Image.SCALE_SMOOTH);
+
+			nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.width
+					, nodeProject.height, java.awt.Image.SCALE_SMOOTH);
+			
+			nodeProject.jPanel.update(nodeProject.jPanel.getGraphics());
 			nodeProject.validate();
 			while(true){   
 				try{
-					Thread.sleep(1000);
+					Thread.sleep(5000);
 					this.validate();
 				}catch (InterruptedException e) {}
 				this.validate();
