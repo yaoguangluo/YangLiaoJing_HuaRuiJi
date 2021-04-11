@@ -18,6 +18,7 @@ public class CheckRangeVPS implements CheckRange{
 				linkNode.tBeconnectID= node.ID;
 				linkNode.tBeconnectPrimaryKey= node.primaryKey;
 				linkNode.tBeconnetName= new String(node.name);
+				linkNode.tNode= node;
 				return;
 			}
 			if((x> linkNode.x- 20)&& (x< linkNode.x+ 50)&& (y> linkNode.y+ 16)&& (y< linkNode.y+ 32)
@@ -29,6 +30,7 @@ public class CheckRangeVPS implements CheckRange{
 				linkNode.mBeconnectID= node.ID;
 				linkNode.mBeconnectPrimaryKey= node.primaryKey;
 				linkNode.mBeconnetName= new String(node.name);
+				linkNode.mNode= node;
 				return;
 			}	
 			if((x> linkNode.x- 20)&& (x< linkNode.x+ 50)&& (y> linkNode.y+ 32)&& (y< linkNode.y+ 100)
@@ -40,6 +42,7 @@ public class CheckRangeVPS implements CheckRange{
 				linkNode.dBeconnectID= node.ID;
 				linkNode.dBeconnectPrimaryKey= node.primaryKey;
 				linkNode.dBeconnetName= new String(node.name);
+				linkNode.dNode= node;
 				return;
 			}	
 			linkNode= linkNode.next;

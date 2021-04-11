@@ -65,7 +65,8 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	public double t = 1.0d;
 	public String rootWord;
 	// timeCheck ch=new timeCheck();    
-	public CoAuthor(Map<String, Object> dic_li, Analyzer analyzer, Map<String, String> pos) throws HeadlessException  {  
+	public CoAuthor(Map<String, Object> dic_li, Analyzer analyzer
+			, Map<String, String> pos) throws HeadlessException  {  
 		this.analyzer = analyzer;
 		this.dic_li = dic_li;
 		this.setLayout(null);
@@ -108,10 +109,8 @@ public class CoAuthor extends JPanel implements GLEventListener {
 		sliderz.setMajorTickSpacing(20);  
 		sliderz.setMinorTickSpacing(5);  
 		sliderz.addChangeListener( 
-				new ChangeListener()  
-				{    
-					public void stateChanged(ChangeEvent event)  
-					{    
+				new ChangeListener()  {    
+					public void stateChanged(ChangeEvent event)  {    
 						JSlider source = (JSlider) event.getSource();  
 						zrot= source.getValue();  
 					}
@@ -123,47 +122,37 @@ public class CoAuthor extends JPanel implements GLEventListener {
 		slidert.setMajorTickSpacing(20);  
 		slidert.setMinorTickSpacing(1);  
 		slidert.addChangeListener( 
-				new ChangeListener()  
-				{    
-					public void stateChanged(ChangeEvent event)  
-					{    
+				new ChangeListener()  {    
+					public void stateChanged(ChangeEvent event)  {    
 						JSlider source = (JSlider) event.getSource();  
 						trot= source.getValue();  
 					}
 				});      
 		top   = new JButton("top");
 		top.addActionListener( 
-				new ActionListener()  
-				{    
-					public void actionPerformed(ActionEvent e)
-					{
+				new ActionListener()  {    
+					public void actionPerformed(ActionEvent e){
 						brot+=0.5;
 					}
 				});     
 		down  = new JButton("down");
 		down.addActionListener( 
-				new ActionListener()  
-				{    
-					public void actionPerformed(ActionEvent e)
-					{
+				new ActionListener()  {    
+					public void actionPerformed(ActionEvent e){
 						brot-=0.5;
 					}
 				});     
 		left  = new JButton("left");
 		left.addActionListener( 
-				new ActionListener()  
-				{    
-					public void actionPerformed(ActionEvent e)
-					{
+				new ActionListener()  {    
+					public void actionPerformed(ActionEvent e){
 						lrot-=0.5;
 					}
 				});    
 		right = new JButton("right");
 		right.addActionListener( 
-				new ActionListener()  
-				{    
-					public void actionPerformed(ActionEvent e)
-					{
+				new ActionListener()  {    
+					public void actionPerformed(ActionEvent e){
 						lrot+=0.5;
 					}
 				});  
@@ -192,8 +181,8 @@ public class CoAuthor extends JPanel implements GLEventListener {
 
 	@SuppressWarnings("static-access")
 	public void init(GLAutoDrawable drawable) {  
-		gl =  drawable.getGL().getGL2();    
-		glu = new GLU();  
+		gl=  drawable.getGL().getGL2();    
+		glu= new GLU();  
 		glut= new GLUT();       
 		gl.glEnable(GL.GL_TEXTURE_2D);
 		gl.glTexParameteri(gl.GL_TEXTURE_2D,gl.GL_TEXTURE_MIN_FILTER,gl.GL_LINEAR);
@@ -276,7 +265,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 				gl.glEnd();
 				gl.glColor3f(0,0,255);
 				gl.glRasterPos3d(root[0]+Math.cos(2*Math.PI*i/s[se])*a,root[1]+Math.sin(2*Math.PI*i/s[se])*a,root[2]+1);
-				glut.glutBitmapString(GLUT.BITMAP_HELVETICA_12, (i)+"yaoguangluo");//锟斤拷示锟斤拷锟斤拷锟斤拷   
+				glut.glutBitmapString(GLUT.BITMAP_HELVETICA_12, (i)+"yaoguangluo");
 				double root1[]=new double[3];
 				root1[0]=root[0]+Math.cos(2*Math.PI*i/s[se])*a;
 				root1[1]=root[1]+Math.sin(2*Math.PI*i/s[se])*a;
@@ -295,7 +284,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 					gl.glEnd(); 	
 					gl.glColor3f(255,0,0);
 					gl.glRasterPos3d(root[0]+Math.cos(2*Math.PI*i/180)*a,root[1]+Math.sin(2*Math.PI*i/180)*a,root[2]+1);
-					glut.glutBitmapString(GLUT.BITMAP_HELVETICA_12, (i)+"yaoguangluo");//锟斤拷示锟斤拷锟斤拷锟斤拷   
+					glut.glutBitmapString(GLUT.BITMAP_HELVETICA_12, (i)+"yaoguangluo");
 				}
 			}
 		}       
@@ -334,7 +323,6 @@ public class CoAuthor extends JPanel implements GLEventListener {
 		rootWord = string;
 		root = new ConcurrentHashMap<String, Object>();
 		findLeaf = new ConcurrentHashMap<String, Integer>();
-		//锟揭筹拷锟斤拷效锟侥词伙拷
 		Map<String, Object> leaf = new ConcurrentHashMap<String, Object>();
 		kerner(rootWord, leaf, findLeaf);
 		root.put(rootWord, leaf);
@@ -343,7 +331,6 @@ public class CoAuthor extends JPanel implements GLEventListener {
 		if(dic_li.containsKey(temp)) {
 			Map<String, Object> leaf = new ConcurrentHashMap<String, Object>();
 			Map<String, WordFrequency> map = analyzer.parserMixStringByReturnFrequencyMap(dic_li.get(rootWord).toString());
-			//锟斤拷锟斤拷锟斤拷效锟绞伙拷锟揭筹拷锟斤拷氐锟揭╋拷锟�
 			Iterator<String> it = map.keySet().iterator();
 			while(it.hasNext()) {
 				String tempRec = it.next();

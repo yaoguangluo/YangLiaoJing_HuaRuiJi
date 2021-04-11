@@ -247,7 +247,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 						try {
 							loader= new URLClassLoader(new URL[]{ files[i].toURL() });
 						} catch (MalformedURLException e2) {
-							// TODO Auto-generated catch block
 							e2.printStackTrace();
 						}  
 						String filename= files[i].getName().replace(StableData.FILE_FORMAT_JAR, StableData.STRING_EMPTY);
@@ -276,7 +275,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 							System.out.println(className);
 							myclass= loader.loadClass(className);
 						} catch (ClassNotFoundException e1) {
-							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
 						Object myobject= null;
@@ -284,11 +282,9 @@ public class GUISample extends JApplet implements MouseMotionListener
 							myobject= myclass.newInstance();
 						}
 						catch (InstantiationException e1) {
-							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						} 
 						catch (IllegalAccessException e1) {
-							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						}
 
@@ -319,10 +315,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 							rightBotJTextPane.validate();
 							thread.sleep(100);
 						} catch (IOException e1) {
-							// TODO Auto-generated catch block
 							e1.printStackTrace();
 						} catch (InterruptedException e2) {
-							// TODO Auto-generated catch block
 							e2.printStackTrace();
 						}
 						nodeView.first= nodeView.link.addNode(nodeView.first
@@ -550,7 +544,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setLocation(node.x, node.y);
 							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setSize(300, 300);
 							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setResizable(true);
-							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.scrollPane.setBounds(0, 0, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()-10
+							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.scrollPane.setBounds(0, 0
+									, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()-10
 									, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getHeight()- 45);
 							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.panel.setPreferredSize(new Dimension(800, 600));
 							node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.setBackground(Color.BLUE);
@@ -612,7 +607,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.setLocation(node.x, node.y);
 								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.setSize(500, 500);
 								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.setResizable(true);
-								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.scrollPane.setBounds(0, 0, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()- 10
+								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.scrollPane.setBounds(0, 0
+										, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getWidth()- 10
 										, node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.getHeight()- 45);
 								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.panel.setPreferredSize(new Dimension(800, 600));
 								node.thisFace.SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.setVisible(true);
@@ -1000,7 +996,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 					try {
 						loader = new URLClassLoader(new URL[]{ files[i].toURL() });
 					} catch (MalformedURLException e2) {
-						// TODO Auto-generated catch block
 						e2.printStackTrace();
 					}  
 					String filename= files[i].getName().replace(StableData.FILE_FORMAT_JAR, StableData.STRING_EMPTY);
@@ -1031,7 +1026,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 						System.out.println(className);
 						myclass= loader.loadClass(className);
 					} catch (ClassNotFoundException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					Object myobject= null;
@@ -1039,11 +1033,9 @@ public class GUISample extends JApplet implements MouseMotionListener
 						myobject= myclass.newInstance();
 					}
 					catch (InstantiationException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					} 
 					catch (IllegalAccessException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 				
@@ -1072,10 +1064,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 						rightBotJTextPane.validate();
 						thread.sleep(100);
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 					nodeView.first= nodeView.link.addNode(nodeView.first
