@@ -173,6 +173,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 		Graphics2D graphics2D= (Graphics2D)g;
 		graphics2D.setColor(Color.black);
 		boolean needUpdate= false;
+		LinkNode actionNode= null;
 		while(null!= node){
 			if(node.leftChoose|| node.rightChoose) {
 				needUpdate= true;
@@ -181,8 +182,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 				node.actionNodeLeft= true;
 				node.actionNodeRight= false;
 				node.setxy(e.getX(), e.getY());
+				actionNode= node;
 				//移动后 节点输出坐标和连线更新
-				dynamicLineUpdater.exec(first.first, node);
 			}else {
 				node.actionNodeLeft= false;
 				node.actionNodeRight= true;
@@ -192,6 +193,10 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 		if(needUpdate) {
 			this.update(g);
 			g.dispose();
+			if(null!= actionNode) {
+				actionNode.actionNodeLeft= false;
+				actionNode.actionNodeRight= false;
+			}
 		}
 	}
 
