@@ -90,7 +90,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 	public void run() {
 		while(true){   
 			try{
-				Thread.sleep(1000);
+				Thread.sleep(200);
 				this.updateUI();
 			}catch (InterruptedException e) {
 				//threadApplet.destroy(); //jdk16 Ã»ÓÐÁËdestroy
@@ -175,6 +175,10 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 		boolean needUpdate= false;
 		LinkNode actionNode= null;
 		while(null!= node){
+			if(node.rightChoose) {
+				graphics2D.setColor(new Color(240, 240, 240));
+				g.fillRect(node.x+19, node.y+12, 30, 30);
+			}
 			if(node.leftChoose|| node.rightChoose) {
 				needUpdate= true;
 			}
@@ -224,12 +228,10 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 			if(node.y> (this.getHeight()- 100)){
 				node.y= this.getHeight()- 100; 	
 			}
-			if(node.actionNodeLeft) {
-				graphics2D.setColor(new Color(240, 240, 240));
-				g.fillRect(node.x+19, node.y+12, 30, 30);
-			}else {
+			if(!node.actionNodeLeft&& !node.leftChoose) { 
 				g.drawImage(node.thisFace.thisImage, node.x+19, node.y+12, this);
 			}
+
 			if(node.flash> 100){
 				node.flash= 0;
 			}
