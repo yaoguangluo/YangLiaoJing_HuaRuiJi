@@ -1,5 +1,6 @@
-package ME.sample.fckx;
+package ME.sample.zynkx;
 import java.awt.Color;
+
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Font;
@@ -33,48 +34,45 @@ import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
 import org.OSU.tinos.list.ListSwap;
 import org.OSU.tinos.string.StringSwap;
+import org.tinos.dna.search.ZhongYaoSearch;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-//import ME.sample.fckx.dictionary;
+//import ME.sample.zynkx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import comp.detaButton.DetaButton;
-public class Fckx extends Container implements MouseListener, KeyListener{
+public class ZynkxPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
+	public JTextPane data ;
+	public JTextPane statistic ;
 	public DetaButton buttonPrev;
 	public DetaButton buttonNext;
 	public DetaButton buttonSum;
 	public DetaButton buttonCrt;
-	public DetaButton buttonCTV;
 	public int currentPage;
 	public List<String> sets;
-	public JTextPane data;
-	public JTextPane statistic;
 	public JTextField name;
 	public javax.swing.JTable table;
 	public Object[][] tableData_old;
 	public DefaultTableModel newTableModel = null;
 	public List<String> copy;
 	public List<String> dic_list;
-	public Map<String, Object> dic_map;
-	public Map<String, Object> dic_gn;
-	public Map<String, Object> dic_lx;
-	public Map<String, Object> dic_by;
-	public Map<String, Object> dic_wx;
-	public Map<String, Object> dic_bl;
-	public Map<String, Object> dic_lc;
+	public Map<String, Object> dic_map ;
+	public Map<String, Object> dic_chu_fang ;
+	public Map<String, Object> dic_mz;
+	public Map<String, Object> dic_zf;
+	public Map<String, Object> dic_yy;
+	public Map<String, Object> dic_fg;	
+	public Map<String, Object> dic_ff;
 	public Map<String, Object> dic_sy;
-	public Map<String, Object> dic_zd;
-	public Map<String, Object> dic_bf;
-	public Map<String, Object> dic_zl;
-	public Map<String, Object> dic_jy;
-	public Map<String, Object> dic_yh;
-	public Map<String, Object> dic_yf;
-	public Map<String, Object> dic_yx;
-	public Analyzer analyzer;
+	public Map<String, Object> dic_tl;
+	int row;
+	int col; 
+	public Object[] columnTitle = {"ID", "打分", "病症&药名", "用药参考", "正常成人标准处方", "脉症", "制法", "应用", "使用", "讨论", "附方", "方歌"};
+	public Analyzer analyzer;  
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -82,36 +80,35 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public Object[] columnTitle = {"ID", "打分", "病症名", "原书笔记", "概念", "流行病学",
-			"病因&发病机制", "危险因素", "病理分类", "临床表现&类型&分型", "实验室和其他检查", "诊断&鉴别诊断", "并发症",
-			"治疗&治疗方案&原则", "教育&管理", "预后&影响", "预防", "影像与检查"};  
-	public JTextPane text;
-	public JTabbedPane jTabbedpane;
-	public App app;
-	public ReadChinese readChinese;
-	private int row;
-	public Fckx(JTextPane text, Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
-			, Map<String, String> etc, Map<String, String> cte, JTabbedPane jTabbedpane, App app) throws IOException{
+	public JTextPane text ;
+	private App u;
+	private JTabbedPane jTabbedpane;
+	private ReadChinese readChinese;
+	private DetaButton buttonCTV;
+	public ZynkxPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
+			, Map<String, String> etc, Map<String, String> cte, App u, JTabbedPane jTabbedpane) throws IOException{
 		this.text = text;
-		this.app= app;
 		this.pose = pose;
 		this.etc = etc;
 		this.cte = cte;
 		this.analyzer = analyzer;
 		this.pos = pos;
+		this.u= u;
+		this.jTabbedpane= jTabbedpane;
 		this.setLayout(null);
 		this.setBounds(0, 0, 1490, 980);	
-		this.jTabbedpane= jTabbedpane;
 		JScrollPane jsp_name = new JScrollPane(this.name());
 		jsp_name.setBounds(100, 15, 680, 50);
 		JScrollPane jsp_data = new JScrollPane(this.data());
 		JScrollPane jsp_statistic = new JScrollPane(this.statistic());
+
 		jsp_statistic.setBounds(5, 290 + 100 - 80 + 200-260, 1440 - 650 - 645, 500-166+90-44);
 		jsp_data.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260+26, 1440-800+650-130, 500-166+90-70);
 		JLabel jlabel = new JLabel("信息搜索:");  
 		jlabel.setBounds(5, 15, 100, 50);
 		JScrollPane jsp = new JScrollPane(this.jTable());
 		jsp.setBounds(5, 80-80, 1440-130, 200+100+200-260);
+
 		this.add(jsp);  
 		this.add(jsp_data); 
 		this.add(jsp_statistic);  
@@ -120,10 +117,12 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 	public JTextPane data() throws IOException {
 		data = new JTextPane();  
 		data.setBounds(850, 150, 1440-600, 800-70);
+
 		buttonSum = new DetaButton("共有 " + (sets==null?0:(1 + sets.size() / 2001))+ " 页");
 		buttonSum.setBounds(0, 0, 100, 30);
 		buttonCrt = new DetaButton("当前页面：" + (currentPage + 1));
 		buttonCrt.setBounds(120, 0, 150, 30);
+
 		buttonPrev= new DetaButton("<-向前翻页");
 		buttonPrev.setBounds(290, 0, 100, 30);
 		buttonPrev.addActionListener(new ActionListener() {
@@ -144,11 +143,11 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 							}
 							if(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形")) {
 								if (map.containsKey(setOfi)) {
-									WordFrequency wordFrequency = map.get(setOfi);
+									WordFrequency wordFrequency= map.get(setOfi);
 									wordFrequency.setFrequency(wordFrequency.getFrequency() + StableData.INT_ONE);
 									map.put(setOfi, wordFrequency);
 								} else {
-									WordFrequency wordFrequency = new WordFrequency();
+									WordFrequency wordFrequency= new WordFrequency();
 									wordFrequency.setFrequency(StableData.INT_ONE);
 									wordFrequency.setWord(setOfi);
 									map.put(setOfi, wordFrequency);
@@ -175,7 +174,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 									page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								} 
-								page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");			 
+								page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");		 
 							}
 						}	
 					buttonCrt.setText("当前页面：" + (currentPage + 1));
@@ -258,19 +257,19 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 				    				continue Here;
 				    			}
 								if(pos.get(setOfi).contains("名")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 254, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("动")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(254, 255, 254)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("形")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 254)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("副")) {
-									page.append("<span style=\"background:#FEFFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								} 
 								page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");			 
@@ -315,18 +314,17 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 					statistic.setSelectionEnd(0);
 					statistic.validate();
 				}catch(Exception e1){	
-					jTabbedpane.validate();
 					statistic.validate();
+					jTabbedpane.validate();
 				}  
 			}
 		});
 		buttonCTE = new DetaButton("英文注释");
 		buttonCTE.setBounds(630, 0, 100, 30);
 		buttonCTE.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if(sets==null) {
-					return;
-				}
+			public void actionPerformed(ActionEvent e) {if(sets==null) {
+				return;
+			}
 				StringBuilder page = new StringBuilder().append("");
 				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()? (currentPage + 1)*2000 : sets.size());
 				Iterator<String> iterator = setsForGet.iterator();
@@ -372,10 +370,9 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		buttonFRS = new DetaButton("中文还原");
 		buttonFRS.setBounds(520, 0, 100, 30);
 		buttonFRS.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if(sets==null) {
-					return;
-				}
+			public void actionPerformed(ActionEvent e) {if(sets==null) {
+				return;
+			}
 				StringBuilder page = new StringBuilder().append("");
 				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()? (currentPage + 1)*2000 : sets.size());
 				Iterator<String> iterator = setsForGet.iterator();
@@ -421,10 +418,9 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		buttonETC = new DetaButton("同义描述");
 		buttonETC.setBounds(740, 0, 100, 30);
 		buttonETC.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if(sets==null) {
-					return;
-				}
+			public void actionPerformed(ActionEvent e) {if(sets==null) {
+				return;
+			}
 				StringBuilder page = new StringBuilder().append("");
 				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()? (currentPage + 1)*2000 : sets.size());
 				Iterator<String> iterator = setsForGet.iterator();
@@ -466,7 +462,6 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 				data.validate();
 			}
 		});
-		
 		DetaButton buttonADD = new DetaButton("添加到编辑页");
 		buttonADD.setBounds(868, 0, 115, 30);
 		buttonADD.addActionListener(new ActionListener() {
@@ -492,7 +487,6 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 				text.validate();
 			}
 		});
-		
 		DetaButton buttonKSLJ= new DetaButton("中药DNN");
 		buttonKSLJ.setBounds(990, 0, 115, 30);
 		buttonKSLJ.addActionListener(new ActionListener() {
@@ -511,9 +505,9 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 				while(times++<1000&& iterator.hasNext()) {
 					setOfi += iterator.next();
 				}
-				String response= "";
+				String response = "";
 				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
-				if(!app.CacheString.containsKey(keyCache)) {
+				if(!u.CacheString.containsKey(keyCache)) {
 					try {
 						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
 						String encode= StringSwap.stringToURIencode(string, "UTF8");
@@ -524,22 +518,22 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 					} catch (IOException e1) {
 						e1.printStackTrace();
 					}
-					if(app.CacheStringPiple.size()< 301) {//buman
-						app.CacheString.put(keyCache, response);
-						app.CacheStringPiple.add(0, keyCache);
+					if(u.CacheStringPiple.size()< 301) {//buman
+						u.CacheString.put(keyCache, response);
+						u.CacheStringPiple.add(0, keyCache);
 					}else {//man
-						app.CacheString.put(keyCache, response);
-						app.CacheStringPiple.add(0, keyCache);
-						app.CacheString.remove(app.CacheStringPiple.get(300));
-						app.CacheStringPiple.remove(300);
+						u.CacheString.put(keyCache, response);
+						u.CacheStringPiple.add(0, keyCache);
+						u.CacheString.remove(u.CacheStringPiple.get(300));
+						u.CacheStringPiple.remove(300);
 					}
 				}else {
-					response=app.CacheString.get(keyCache);
+					response=u.CacheString.get(keyCache);
 				}
 				//dnn森林
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					app.coAuthorForWord.bootDetaDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
+					u.coAuthorForWord.bootDetaDnnFlowerForest(u, table.getValueAt(row, 2).toString(), dnn, true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();
@@ -637,147 +631,21 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		DetaButton buttonKSLJB= new DetaButton("西药DNN");
-		buttonKSLJB.setBounds(990+ 115+ 7, 0, 115, 30);
-		buttonKSLJB.addActionListener(new ActionListener() {
+		DetaButton buttonFJJJ= new DetaButton("方剂禁忌");
+		buttonFJJJ.setBounds(1106, 0, 115, 30);
+		buttonFJJJ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(null== sets) {
-					return;
-				}
-				if(text.getText().length()>5000) {
-					return;
-				}
-				StringBuilder page = new StringBuilder().append("");
-				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()? (currentPage + 1)*2000 : sets.size());
-				Iterator<String> iterator = setsForGet.iterator();
-				String setOfi= "";
-				int times= 0;
-				while(times++<1000&& iterator.hasNext()) {
-					setOfi += iterator.next();
-				}
-				String response= "";
-				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
-				if(!app.CacheString.containsKey(keyCache)) {
-					try {
-						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
-						String encode= StringSwap.stringToURIencode(string, "UTF8");
-						response= RestCall.backEndRequest(encode);
-						String[] strings= response.split("\"");
-						response= strings.length> 3? strings[3]: "";
-						response= StringSwap.uRIencodeToURIdecode(response, "UTF8");
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
-					if(app.CacheStringPiple.size()< 301) {//buman
-						app.CacheString.put(keyCache, response);
-						app.CacheStringPiple.add(0, keyCache);
-					}else {//man
-						app.CacheString.put(keyCache, response);
-						app.CacheStringPiple.add(0, keyCache);
-						app.CacheString.remove(app.CacheStringPiple.get(300));
-						app.CacheStringPiple.remove(300);
-					}
-				}else {
-					response=app.CacheString.get(keyCache);
-				}
-				//dnn森林
 				try {
-					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
-					app.coAuthorForWord.bootDetaBingMingDnnFlowerForest(app, table.getValueAt(row, 2).toString(), dnn, true);
+					int column= 4;
+					if(table.getValueAt(row, column).toString().isEmpty()) {
+						column= 3;
+					}
+					u.coAuthorForWord.bootZynkJFlowerForest(table.getValueAt(row, 2).toString()
+							, table.getValueAt(row, column).toString(), true);
 					//(this.u.table.getValueAt(row, 2).toString(), false);
 				}catch(Exception e1) {
 					validate();
 				}
-				
-				Map<String, WordFrequency> map = new ConcurrentHashMap<>();
-				iterator = setsForGet.iterator();
-				Here:
-					while(iterator.hasNext()) {
-						setOfi = iterator.next();
-						if(pos.get(setOfi) == null) {
-							page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
-							continue Here;
-						}
-						if((pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
-							if (map.containsKey(setOfi)) {
-								WordFrequency wordFrequency = map.get(setOfi);
-								wordFrequency.setFrequency(wordFrequency.getFrequency() + StableData.INT_ONE);
-								map.put(setOfi, wordFrequency);
-							} else {
-								WordFrequency wordFrequency = new WordFrequency();
-								wordFrequency.setFrequency(StableData.INT_ONE);
-								wordFrequency.setWord(setOfi);
-								map.put(setOfi, wordFrequency);
-							}
-						}
-						if (!setOfi.equals("")) {
-							if(response.contains(setOfi)&& setOfi.length()> 1) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 145, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
-								continue Here;
-							} 
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
-								page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi+"</font></span>");
-								continue Here;
-							}
-							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
-								continue Here;
-							}
-							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
-								continue Here;
-							}
-							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
-								continue Here;
-							}
-							if(pos.get(setOfi).contains("副")) {
-								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
-								continue Here;
-							} 
-							page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");			 
-						}
-					}	
-				buttonSum.setText("共有 " + (sets == null ? 0 : (1 + sets.size() / 2001)) + " 页");
-				buttonCrt.setText("当前页面：" + (sets == null? 0 : 1));
-				data.setText(page.toString());
-				data.setSelectionStart(0);
-				data.setSelectionEnd(0);
-				data.validate();			
-				//
-				try {
-					statistic.setSize(500, 800);
-					//Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
-					statistic.setContentType("text/html");
-					StringBuilder stringBuilder = new StringBuilder();
-					String[] fwa= response.replace("\r\n", "<br/>").split("<br/>");
-					Here:
-						for (int i = fwa.length-1; i > 0; i--) {
-							if (fwa[i]!= null) {
-								if(pos.get(fwa[i].split(":")[0]) == null) {
-									stringBuilder.append("<div style=\"background:black\"><font color=\"white\">" +fwa[i] + "</font></div>");
-									continue Here;
-								}
-								if(pos.get(fwa[i].split(":")[0]).contains("名")) {
-									stringBuilder.append( "<div style=\"background:#FF44FF\"><font color=\"white\">" + fwa[i] +"</font></div>");
-									continue Here;
-								}
-								if(pos.get(fwa[i].split(":")[0]).contains("动")) {
-									stringBuilder.append("<div style=\"background:#8CEA00\"><font color=\"black\" size=\"5\">" + fwa[i] +"</font></div>");
-									continue Here;
-								}
-								if(pos.get(fwa[i].split(":")[0]).contains("形")) {
-									stringBuilder.append("<div style=\"background:#FF9224\"><font color=\"black\" size=\"5\">" + fwa[i] +"</font></div>");
-								}
-							}
-						}	
-					statistic.setText(stringBuilder.toString());
-					statistic.setSelectionStart(0);
-					statistic.setSelectionEnd(0);
-					statistic.validate();
-				}catch(Exception e1){	
-					statistic.validate();
-				}          
 			}
 		});
 		
@@ -805,7 +673,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 				}
 			}
 		});
-		Box buttonBox = new Box(BoxLayout.X_AXIS);  
+		Box buttonBox= new Box(BoxLayout.X_AXIS);  
 		buttonBox.add(buttonPrev);
 		buttonBox.add(buttonNext);
 		buttonBox.add(buttonSum);
@@ -816,9 +684,8 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		buttonBox.add(buttonCTV);
 		buttonBox.add(buttonADD);
 		buttonBox.add(buttonKSLJ);
-		//buttonBox.add(buttonKSLJB);
-		buttonBox.add(buttonKSLJB);
-		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 950+ 220, 20);
+		buttonBox.add(buttonFJJJ);
+		buttonBox.setBounds(5+ 800- 650, 290+ 100- 80+ 200- 260, 950+ 120, 20);
 		this.add(buttonBox);
 		return data;  
 	}
@@ -834,56 +701,47 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		name.setBounds(180, 50, 380, 80);
 		name.addKeyListener(this);
 		return name;
-	}
+	}	
 
 	@SuppressWarnings({ "serial" })
 	public javax.swing.JTable jTable() throws IOException {  
 		Dictionary d=new Dictionary();
 		dic_list=d.txtToList();
 		dic_map = d.listToMap(dic_list);
-		dic_gn = d.mapToMap_gn(dic_map);
-		dic_lx = d.mapToMap_lx(dic_map);
-		dic_by = d.mapToMap_by(dic_map);
-		dic_wx = d.mapToMap_wx(dic_map);
-		dic_bl = d.mapToMap_bl(dic_map);
-		dic_lc = d.mapToMap_lc(dic_map);
-		dic_sy = d.mapToMap_sy(dic_map);
-		dic_zd = d.mapToMap_zd(dic_map);
-		dic_bf = d.mapToMap_bf(dic_map);
-		dic_zl = d.mapToMap_zl(dic_map);
-		dic_jy = d.mapToMap_jy(dic_map);
-		dic_yh = d.mapToMap_yh(dic_map);
-		dic_yf = d.mapToMap_yf(dic_map);
-		dic_yx = d.mapToMap_yx(dic_map);
-		tableData_old = new Object[dic_map.size()][18];
+		dic_chu_fang = d.MapToChuFang(dic_list, dic_map);
+		dic_mz = d.MapTomz(dic_list, dic_map);
+		dic_zf = d.MapTozf(dic_list, dic_map);
+		dic_yy = d.MapToyy(dic_list, dic_map);
+		
+		dic_sy = d.MapTosy(dic_list, dic_map);
+		dic_tl = d.MapTotl(dic_list, dic_map);
+		dic_ff = d.MapToff(dic_list, dic_map);
+		dic_fg = d.MapTofg(dic_list, dic_map);
+		
+		tableData_old = new Object[dic_map.size()][12];
 		Iterator<String> iter = dic_map.keySet().iterator();
 		copy = new ArrayList<String>();
 		while (iter.hasNext())
 			copy.add(iter.next());
-		for(int i=0;i<copy.size();i++) {
-			tableData_old[i]= new Object[]{""+(i+1),""+0,copy.get(i).replaceAll("〔+", "〔").trim(),
-					dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "").replaceAll("〔+", "〔"),
-					dic_gn.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_lx.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_by.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_wx.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_bl.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_lc.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_sy.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_zd.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_bf.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_zl.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_jy.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_yh.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_yf.get(copy.get(i)).toString().replaceAll("\\s*", ""),
-					dic_yx.get(copy.get(i)).toString().replaceAll("\\s*", "")
+		for(int i=0; i<copy.size(); i++) {
+			tableData_old[i] = new Object[]{""+(i+1),
+					"" + 0, copy.get(i).trim().replace("^", " "),
+					dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "").replace("^", " "),
+					dic_chu_fang.containsKey(copy.get(i))?dic_chu_fang.get(copy.get(i)).toString().replace("-", " "):"",
+					dic_mz.containsKey(copy.get(i))?dic_mz.get(copy.get(i)).toString().replace("-", " "):"",
+					dic_zf.containsKey(copy.get(i))?dic_zf.get(copy.get(i)).toString().replace("-", " "):"",
+					dic_yy.containsKey(copy.get(i))?dic_yy.get(copy.get(i)).toString().replace("-", " "):"",
+							dic_sy.containsKey(copy.get(i))?dic_sy.get(copy.get(i)).toString().replace("-", " "):"",	
+								dic_tl.containsKey(copy.get(i))?dic_tl.get(copy.get(i)).toString().replace("-", " "):"",	
+									dic_ff.containsKey(copy.get(i))?dic_ff.get(copy.get(i)).toString().replace("-", " "):"",	
+										dic_fg.containsKey(copy.get(i))?dic_fg.get(copy.get(i)).toString().replace("-", " "):""	
 			};
 		}	
 		table = new javax.swing.JTable();  
 		newTableModel = new DefaultTableModel(tableData_old,columnTitle){  
-			@Override  
-			public boolean isCellEditable(int row,int column){  
-				return false;  
+			@Override
+			public boolean isCellEditable(int row, int column){  
+				return false;
 			}  
 		};  
 		TableSorterZYNK sorter= new TableSorterZYNK(newTableModel); //ADDE
@@ -894,20 +752,17 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		header.setFont(new Font("楷体", Font.PLAIN, 18));// 设置表格字体
 		table.getColumnModel().getColumn(0).setPreferredWidth(80+30);
 		table.getColumnModel().getColumn(1).setPreferredWidth(80+30);
-		table.getColumnModel().getColumn(2).setPreferredWidth(80+130);
+		table.getColumnModel().getColumn(2).setPreferredWidth(80+50);
 		table.getColumnModel().getColumn(3).setPreferredWidth(80+521);
-		table.getColumnModel().getColumn(4).setPreferredWidth(80+30);
-		table.getColumnModel().getColumn(5).setPreferredWidth(80+30);
+		table.getColumnModel().getColumn(4).setPreferredWidth(80+100);
+		table.getColumnModel().getColumn(5).setPreferredWidth(80+60);
 		table.getColumnModel().getColumn(6).setPreferredWidth(80+60);
-		table.getColumnModel().getColumn(7).setPreferredWidth(80+30);
-		table.getColumnModel().getColumn(8).setPreferredWidth(80+30);
-		table.getColumnModel().getColumn(9).setPreferredWidth(80+110);
-		table.getColumnModel().getColumn(10).setPreferredWidth(80+110);
-		table.getColumnModel().getColumn(11).setPreferredWidth(80+60);
-		table.getColumnModel().getColumn(12).setPreferredWidth(80+30);
-		table.getColumnModel().getColumn(13).setPreferredWidth(80+110);
-		table.getColumnModel().getColumn(14).setPreferredWidth(80+110);
-		table.getColumnModel().getColumn(17).setPreferredWidth(80+110);
+		table.getColumnModel().getColumn(7).setPreferredWidth(80+50);
+		
+		table.getColumnModel().getColumn(8).setPreferredWidth(80+50);
+		table.getColumnModel().getColumn(9).setPreferredWidth(80+50);
+		table.getColumnModel().getColumn(10).setPreferredWidth(80+50);
+		table.getColumnModel().getColumn(11).setPreferredWidth(80+50);
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 		table.addMouseListener(this);
 		colorTableRender tcr = new colorTableRender();  
@@ -917,17 +772,33 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		if(key == null) {
-			key = "";
+		if(key== null) {
+			key= "";
 		}
-		sets = null;
+		sets= null;
 		Map<String, WordFrequency> map = new ConcurrentHashMap<>();
 		try {
 			row= table.getSelectedRow();
-			int col= table.getSelectedColumn();
+			col= table.getSelectedColumn();
 			String value= (String) table.getValueAt(row, col);
+			
+			//3d 
+			try {
+				int column= 4;
+				if(table.getValueAt(row, column).toString().isEmpty()) {
+					column= 3;
+				}
+				String zhongYaoFang= table.getValueAt(row, column).toString();
+				String searchYaos= this.u.coAuthorForWord.bootZynkFlowerForest(table.getValueAt(row, 2).toString()
+						, zhongYaoFang, true);
+				//(this.u.table.getValueAt(row, 2).toString(), false);
+				new ZhongYaoSearch().zhongYaoSearch(this.u, searchYaos, "", searchYaos);
+			}catch(Exception e) {
+				this.validate();
+			}
+			
 			data.setSize(500, 800);
-			sets= analyzer.parserMixedString(value);//词性分析		
+			sets = analyzer.parserMixedString(value);//词性分析		
 			data.setContentType("text/html");
 			StringBuilder page = new StringBuilder().append("");
 			currentPage= 0;
@@ -940,7 +811,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 						page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
 						continue Here;
 					}
-					if(pos.get(setOfi).contains("名")|| pos.get(setOfi).contains("动")|| pos.get(setOfi).contains("形")) {
+					if(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形")) {
 						if (map.containsKey(setOfi)) {
 							WordFrequency wordFrequency= map.get(setOfi);
 							wordFrequency.setFrequency(wordFrequency.getFrequency()+ StableData.INT_ONE);
@@ -953,7 +824,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 						}
 					}
 					if (!setOfi.equals("")) {
-						if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")|| pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
+						if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
 							page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi+"</font></span>");
 		    				continue Here;
 		    			}
@@ -973,7 +844,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 							page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						} 
-						page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");				 
+						page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");		 
 					}
 				}	
 			buttonSum.setText("共有 " + (sets == null ? 0 : (1 + sets.size() / 2001)) + " 页");
@@ -1034,7 +905,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 	}
 
 	@Override
-	public void mouseReleased(MouseEvent arg0) {
+	public void mouseReleased(MouseEvent arg0) {	
 	}
 
 	@Override
@@ -1047,12 +918,12 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 		String[] score = new String[copy.size()];
 		int[] score_code = new int[copy.size()];
 		int[] reg = new int[copy.size()];
-		int count = 0;
+		int count=0;
 		Map<String, WordFrequency> mapSearchWithoutSort = null;
-		Map<Integer, WordFrequency> mapSearchWithSort = null;
 		mapSearchWithoutSort = analyzer.parserMixStringByReturnFrequencyMap(key);
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
+		
 		List<String> list= analyzer.parserMixedString(key);
 		String[] string= ListSwap.listToArray(list);
 		
@@ -1091,7 +962,7 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 						}
 						reg[copyCount] += 1;
 						score_code[copyCount] += (iteratorForCopyString.contains(mapSearchaAtII) ? 2 : 1) 
-							* (!pos.get(mapSearchaAtII).contains("名") ? pos.get(mapSearchaAtII).contains("动")? 50 : 1 : 50) 
+								* (!pos.get(mapSearchaAtII).contains("名") ? pos.get(mapSearchaAtII).contains("动")? 45 : 1 : 50) 
 								<< mapSearchaAtII.length() * wordFrequencySearch.getFrequency();
 						continue Here;
 					}
@@ -1117,11 +988,11 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 						}
 					}
 				}
-			score_code[copyCount] = score_code[copyCount] * reg[copyCount];
+			score_code[copyCount] = score_code[copyCount] * reg[copyCount];	
 			//词距
 			int code= 100;
 			int tempb= 0;
-			int tempa= score_code[copyCount];
+			int tempa= score_code[copyCount];		
 			if(key.length()> 4) {
 				//全词
 				for(int i= 0; i< string.length; i++) {
@@ -1135,60 +1006,54 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 						tempb+= code;
 					}
 				}
-				score_code[copyCount] = (int) (tempa/Math.pow(this.app.lookrot+ 1, 4) + tempb*Math.pow(this.app.lookrot, 2));
+				score_code[copyCount] = (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
 			}
 			if(key.replace(" ", "").length()> 1&& key.replace(" ", "").length()< 5) {
-				if(temps.contains(key)) {
+				if(temps.contains(key.replace(" ", ""))) {
 					tempb+= code<< 7;
 				}
-				score_code[copyCount] = (int) (tempa/Math.pow(this.app.lookrot+ 1, 4) + tempb*Math.pow(this.app.lookrot, 2));
+				score_code[copyCount] = (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
 			}
 			copyCount++;
 		}
 		LABEL2:
 			new Quick9DLYGWithStringSwap().sort(score_code, score);
 		int max= score_code[0];
-		Object[][] tableData= new Object[count][18];
-		int new_count= 0;
+		Object[][] tableData = new Object[count][13];
+		int new_count=0;
 		newTableModel.getDataVector().clear();
-		if(null== key|| key.equals("")) {
-			for(int i= 0; i< tableData_old.length; i++) {
+		if(null == key || key.equals("")) {
+			for(int i=0; i<tableData_old.length; i++) {
 				newTableModel.insertRow(i, tableData_old[i]);
 			}		
 			newTableModel.fireTableDataChanged();	
 			return;
 		}
 		Here:
-			for(int i= copy.size()- 1; i> -1; i--) {
-				if(score_code[i]< 1){
+			for(int i = copy.size()-1; i > -1; i--) {
+				if(score_code[i] < 1){
 					continue Here;
 				}
-				if(app.shuming_filter_box.isSelected()) {
+				if(u.shuming_filter_box.isSelected()) {
 					String wei= score[i];
-					String temp= app.name_filter.getText();
-					for(int j= 0; j< temp.length(); j++) {
+					String temp= u.name_filter.getText();
+					for(int j=0;j<temp.length();j++) {
 						if(wei.contains(""+ temp.charAt(j))) {
 							continue Here;
 						}	
 					}
 				}
-				tableData[new_count]= new Object[]{new_count+1,score_code[i],score[i].replace("〔〔〔", "〔"),
-						dic_map.get(score[i]).toString().replace("〔〔〔", "〔"),
-						dic_gn.get(score[i]).toString(),
-						dic_lx.get(score[i]).toString(),
-						dic_by.get(score[i]).toString(),
-						dic_wx.get(score[i]).toString(),
-						dic_bl.get(score[i]).toString(),
-						dic_lc.get(score[i]).toString(),
-						dic_sy.get(score[i]).toString(),
-						dic_zd.get(score[i]).toString(),
-						dic_bf.get(score[i]).toString(),
-						dic_zl.get(score[i]).toString(),
-						dic_jy.get(score[i]).toString(),
-						dic_yh.get(score[i]).toString(),
-						dic_yf.get(score[i]).toString(),
-						dic_yx.get(score[i]).toString()
-				};   
+				tableData[new_count] = new Object[]{new_count+1,score_code[i],score[i].replace("^", " "),
+						dic_map.get(score[i]).toString().replace("^", " "),
+						dic_chu_fang.containsKey(score[i])?dic_chu_fang.get(score[i]).toString().replace("-", " "):"",
+								dic_mz.containsKey(score[i])?dic_mz.get(score[i]).toString().replace("-", " "):"",
+										dic_zf.containsKey(score[i])?dic_zf.get(score[i]).toString().replace("-", " "):"",
+												dic_yy.containsKey(score[i])?dic_yy.get(score[i]).toString().replace("-", " "):"",	
+														dic_sy.containsKey(score[i])?dic_sy.get(score[i]).toString().replace("-", " "):"",	
+																dic_tl.containsKey(score[i])?dic_tl.get(score[i]).toString().replace("-", " "):"",	
+																		dic_ff.containsKey(score[i])?dic_ff.get(score[i]).toString().replace("-", " "):"",	
+																				dic_fg.containsKey(score[i])?dic_fg.get(score[i]).toString().replace("-", " "):""	
+				};
 				newTableModel.insertRow(new_count, tableData[new_count]);
 				new_count+=1;
 			}	
@@ -1200,9 +1065,9 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 
 		public Component getTableCellRendererComponent(JTable table,Object value, boolean isSelected, boolean hasFocus, int row,
 				int column) {
-			if (isSelected && hasFocus && row== table.getSelectedRow() && column == table.getSelectedColumn()) {
+			if (isSelected && hasFocus && row == table.getSelectedRow() && column == table.getSelectedColumn()) {
 				//2.设置当前Cell的颜色
-				Component c= super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+				Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 				c.setBackground(Color.CYAN);//设置背景色
 				c.setForeground(Color.gray);//设置前景色
 				return c;
@@ -1223,5 +1088,5 @@ public class Fckx extends Container implements MouseListener, KeyListener{
 
 	@Override
 	public void keyTyped(KeyEvent arg0) {
-	}	
+	}
 }

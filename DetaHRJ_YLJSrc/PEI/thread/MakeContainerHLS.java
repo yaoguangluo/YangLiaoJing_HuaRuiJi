@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.cecil.Cecil;
+import ME.sample.cecil.CecilPage;
 public class MakeContainerHLS extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -42,7 +42,7 @@ public class MakeContainerHLS extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.cecil= new Cecil(u.text, this.analyzer, pos, pose, etc, cte, posec, posFullec, u);
+			u.cecil= new CecilPage(u.text, this.analyzer, pos, pose, etc, cte, posec, posFullec, u);
 			u.cecil.setName(tabNames.get(16));
 			jTabbedpane.addTab(tabNames.get(16), new ImageIcon(), u.cecil, "哈里森大内科英文版");// 加入第一个页面  
 			Color[] colors= new Color[3];

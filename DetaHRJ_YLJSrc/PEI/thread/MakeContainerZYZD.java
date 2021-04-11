@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.zyzdx.Zyzdx;
+import ME.sample.zyzdx.ZyzdxPage;
 public class MakeContainerZYZD extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -37,7 +37,7 @@ public class MakeContainerZYZD extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.zyzdx= new Zyzdx(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.zyzdx= new ZyzdxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
 			u.zyzdx.setName(tabNames.get(7));
 			jTabbedpane.addTab(tabNames.get(7),new ImageIcon() , u.zyzdx, "中医诊断学");// 加入第一个页面  
 			Color[] colors= new Color[3];

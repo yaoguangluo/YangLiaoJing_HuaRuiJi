@@ -151,9 +151,9 @@ public class ZhongYaoTable implements MouseListener {
 		if(app.key== null) {
 			app.key= "";	
 		}
-		if(app.zynkx!= null) {
-			this.app.zynkx.key= app.table.getValueAt(app.row, 2).toString();
-			this.app.zynkx.keyReleased(null);
+		if(app.zynkxPage!= null) {
+			this.app.zynkxPage.key= app.table.getValueAt(app.row, 2).toString();
+			this.app.zynkxPage.keyReleased(null);
 		}
 		try {
 			app.coAuthorForWord.bootClassificationMap(app.table.getValueAt(app.row, 2).toString(), false);

@@ -51,44 +51,44 @@ public class addZYNKBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 	}
 	public void IMP_PSU() throws IOException {		
 		dictionary d=new dictionary();
-		u.zynkx.dic_list=d.txtToList();
-		u.zynkx.dic_map = d.listToMap(u.zynkx.dic_map, u.zynkx.dic_list);
-		u.zynkx.dic_chu_fang = d.MapToChuFang(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_mz = d.MapTomz(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_zf = d.MapTozf(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_yy = d.MapToyy(u.zynkx.dic_list, u.zynkx.dic_map);
+		u.zynkxPage.dic_list=d.txtToList();
+		u.zynkxPage.dic_map = d.listToMap(u.zynkxPage.dic_map, u.zynkxPage.dic_list);
+		u.zynkxPage.dic_chu_fang = d.MapToChuFang(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_mz = d.MapTomz(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_zf = d.MapTozf(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_yy = d.MapToyy(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
 		
-		u.zynkx.dic_sy = d.MapTosy(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_tl = d.MapTotl(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_ff = d.MapToff(u.zynkx.dic_list, u.zynkx.dic_map);
-		u.zynkx.dic_fg = d.MapTofg(u.zynkx.dic_list, u.zynkx.dic_map);
+		u.zynkxPage.dic_sy = d.MapTosy(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_tl = d.MapTotl(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_ff = d.MapToff(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
+		u.zynkxPage.dic_fg = d.MapTofg(u.zynkxPage.dic_list, u.zynkxPage.dic_map);
 		
-		tableData_old = new Object[u.zynkx.dic_map.size()][12];
-		Iterator<String> iter = u.zynkx.dic_map.keySet().iterator();
-		u.zynkx.copy = new ArrayList<String>();
+		tableData_old = new Object[u.zynkxPage.dic_map.size()][12];
+		Iterator<String> iter = u.zynkxPage.dic_map.keySet().iterator();
+		u.zynkxPage.copy = new ArrayList<String>();
 		while (iter.hasNext())
-			u.zynkx.copy.add(iter.next());
-		for(int i= 0;i< u.zynkx.copy.size(); i++) {
+			u.zynkxPage.copy.add(iter.next());
+		for(int i= 0;i< u.zynkxPage.copy.size(); i++) {
 			tableData_old[i] = new Object[]{""+(i+1),
-					"" + 0, u.zynkx.copy.get(i).trim().replace("^", " "),
-					u.zynkx.dic_map.get(u.zynkx.copy.get(i)).toString().replaceAll("\\s*", "").replace("^", " "),
-					u.zynkx.dic_chu_fang.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_chu_fang.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",
-					u.zynkx.dic_mz.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_mz.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",
-					u.zynkx.dic_zf.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_zf.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",
-					u.zynkx.dic_yy.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_yy.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",
-					u.zynkx.dic_sy.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_sy.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",	
-					u.zynkx.dic_tl.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_tl.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",	
-					u.zynkx.dic_ff.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_ff.get(u.zynkx.copy.get(i)).toString().replace("-", " "):"",	
-					u.zynkx.dic_fg.containsKey(u.zynkx.copy.get(i))?u.zynkx.dic_fg.get(u.zynkx.copy.get(i)).toString().replace("-", " "):""	
+					"" + 0, u.zynkxPage.copy.get(i).trim().replace("^", " "),
+					u.zynkxPage.dic_map.get(u.zynkxPage.copy.get(i)).toString().replaceAll("\\s*", "").replace("^", " "),
+					u.zynkxPage.dic_chu_fang.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_chu_fang.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",
+					u.zynkxPage.dic_mz.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_mz.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",
+					u.zynkxPage.dic_zf.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_zf.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",
+					u.zynkxPage.dic_yy.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_yy.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",
+					u.zynkxPage.dic_sy.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_sy.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",	
+					u.zynkxPage.dic_tl.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_tl.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",	
+					u.zynkxPage.dic_ff.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_ff.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):"",	
+					u.zynkxPage.dic_fg.containsKey(u.zynkxPage.copy.get(i))?u.zynkxPage.dic_fg.get(u.zynkxPage.copy.get(i)).toString().replace("-", " "):""	
 			};
 		}	
-		u.zynkx.newTableModel.getDataVector().clear();
+		u.zynkxPage.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.zynkx.newTableModel.insertRow(i, tableData_old[i]);
+			u.zynkxPage.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.zynkx.tableData_old= tableData_old;
-		u.zynkx.newTableModel.fireTableDataChanged();
-		u.zynkx.revalidate();
+		u.zynkxPage.tableData_old= tableData_old;
+		u.zynkxPage.newTableModel.fireTableDataChanged();
+		u.zynkxPage.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

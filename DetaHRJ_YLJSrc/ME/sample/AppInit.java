@@ -167,8 +167,8 @@ public class AppInit {
 				text="\r\n"+ "..."+ text;
 				app.appConfig.SectionJPanel.jTextPane.setText(text);
 			}
-			app.ts= new TranslatorImp();
-			app.ts.init(app.analyzer);
+			app.translator= new TranslatorImp();
+			app.translator.init(app.analyzer);
 			app.text= new JTextPane();
 			app.jText= new JTextPane();
 			app.jxText= new JTextPane();
@@ -343,9 +343,9 @@ public class AppInit {
 					preAdd+= "内科诊断：\r\n\r\n";
 					//内科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==app.xynk.table.getValueAt(i, 2)?"":app.xynk.table.getValueAt(i, 2).toString())
-								//	+ "证候意义："+	(null==xynk.table.getValueAt(i, 9)?"":xynk.table.getValueAt(i, 9).toString())
-								+ "可能性："+	(null==app.xynk.table.getValueAt(i, 1)?"":app.xynk.table.getValueAt(i, 1).toString());
+						preAdd+= "证候名："+ (null==app.xynkPage.table.getValueAt(i, 2)?"":app.xynkPage.table.getValueAt(i, 2).toString())
+								//	+ "证候意义："+	(null==xynkPage.table.getValueAt(i, 9)?"":xynkPage.table.getValueAt(i, 9).toString())
+								+ "可能性："+	(null==app.xynkPage.table.getValueAt(i, 1)?"":app.xynkPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "西医诊断：\r\n\r\n";
@@ -397,9 +397,9 @@ public class AppInit {
 					preAdd+= "方剂推荐：\r\n\r\n";
 					//方剂分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "推荐名："+ (null==app.zynkx.table.getValueAt(i, 2)?"":app.zynkx.table.getValueAt(i, 2).toString())
-								+ "推荐内容："+(null==app.zynkx.table.getValueAt(i, 4)?"":app.zynkx.table.getValueAt(i, 4).toString())
-								+ "可能性："+	(null==app.zynkx.table.getValueAt(i, 1)?"":app.zynkx.table.getValueAt(i, 1).toString());
+						preAdd+= "推荐名："+ (null==app.zynkxPage.table.getValueAt(i, 2)?"":app.zynkxPage.table.getValueAt(i, 2).toString())
+								+ "推荐内容："+(null==app.zynkxPage.table.getValueAt(i, 4)?"":app.zynkxPage.table.getValueAt(i, 4).toString())
+								+ "可能性："+	(null==app.zynkxPage.table.getValueAt(i, 1)?"":app.zynkxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "\r\n\r\n";

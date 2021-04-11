@@ -41,7 +41,7 @@ import ME.sample.TableSorterZYNK;
 //import ME.sample.wskx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import comp.detaButton.DetaButton;
-public class Wskx extends Container implements MouseListener, KeyListener{
+public class WskxPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
 	public JTextPane data ;
@@ -91,7 +91,7 @@ public class Wskx extends Container implements MouseListener, KeyListener{
 	private ReadChinese readChinese;
 	private DetaButton buttonCTV;
 	protected int row;
-	public Wskx(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
+	public WskxPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, App u, JTabbedPane jTabbedpane) throws IOException{
 		this.text = text;	this.pose = pose;
 		this.etc = etc;

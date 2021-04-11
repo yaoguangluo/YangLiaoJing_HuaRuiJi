@@ -29,7 +29,7 @@ public class RestMedicinePortImpl {
 				if(forE != null && !forE.replace(" ", "").equals("") && forE.length()>110) {
 					forE = forE.substring(0, 110);
 				}
-				key = key.length()==0?"":app.ts.MixedStringToChineseString(app.analyzer, key);
+				key = key.length()==0?"":app.translator.MixedStringToChineseString(app.analyzer, key);
 				if(key.replaceAll("\\s+", " ").equalsIgnoreCase(" ")){
 					key="";
 				}
@@ -100,13 +100,13 @@ public class RestMedicinePortImpl {
 							key+= "淤";
 						}
 					}
-				if(app.xynk!=null) {
-					app.xynk.key= zhongyao.toString();
-					app.xynk.keyReleased(null);
+				if(app.xynkPage!=null) {
+					app.xynkPage.key= zhongyao.toString();
+					app.xynkPage.keyReleased(null);
 				}
-				if(app.zynkx!=null) {
-					app.zynkx.key= zhongyao.toString();
-					app.zynkx.keyReleased(null);
+				if(app.zynkxPage!=null) {
+					app.zynkxPage.key= zhongyao.toString();
+					app.zynkxPage.keyReleased(null);
 				}
 				if(app.zyzdx!= null) {
 					app.zyzdx.key= zhongyao.toString();
@@ -339,8 +339,8 @@ public class RestMedicinePortImpl {
 		preAdd+= "方剂推荐：\r\n\r\n";
 		//方剂分析：
 		for(int i=0;i<10;i++) {
-			preAdd+= "证候内容："+ app.zynkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+ app.zynkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.zynkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+ app.zynkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "\r\n\r\n";
@@ -394,8 +394,8 @@ public class RestMedicinePortImpl {
 		preAdd+= "内科诊断：\r\n\r\n";
 		//内科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.xynk.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.xynk.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.xynkPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.xynkPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "妇幼诊断：\r\n\r\n";
@@ -621,8 +621,8 @@ public class RestMedicinePortImpl {
 		preAdd+= "内科诊断：\r\n\r\n";
 		//内科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.xynk.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.xynk.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.xynkPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.xynkPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "妇幼诊断：\r\n\r\n";
@@ -644,8 +644,8 @@ public class RestMedicinePortImpl {
 		preAdd+= "方剂推荐：\r\n\r\n";
 		//方剂分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.zynkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.zynkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.zynkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.zynkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 

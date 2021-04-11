@@ -51,53 +51,53 @@ public class addXYNKBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 	}
 	public void IMP_PSU() throws IOException {
 		dictionary d=new dictionary();
-		u.xynk.dic_list=d.txtToList();
-		u.xynk.dic_map= d.listToMap(u.xynk.dic_map, u.xynk.dic_list);
-		u.xynk.dic_gn= d.mapToMap_gn(u.xynk.dic_map);
-		u.xynk.dic_lx= d.mapToMap_lx(u.xynk.dic_map);
-		u.xynk.dic_by= d.mapToMap_by(u.xynk.dic_map);
-		u.xynk.dic_wx= d.mapToMap_wx(u.xynk.dic_map);
-		u.xynk.dic_bl= d.mapToMap_bl(u.xynk.dic_map);
-		u.xynk.dic_lc= d.mapToMap_lc(u.xynk.dic_map);
-		u.xynk.dic_sy= d.mapToMap_sy(u.xynk.dic_map);
-		u.xynk.dic_zd= d.mapToMap_zd(u.xynk.dic_map);
-		u.xynk.dic_bf= d.mapToMap_bf(u.xynk.dic_map);
-		u.xynk.dic_zl= d.mapToMap_zl(u.xynk.dic_map);
-		u.xynk.dic_jy= d.mapToMap_jy(u.xynk.dic_map);
-		u.xynk.dic_yh= d.mapToMap_yh(u.xynk.dic_map);
-		u.xynk.dic_yf= d.mapToMap_yf(u.xynk.dic_map);
-		u.xynk.dic_yx= d.mapToMap_yx(u.xynk.dic_map);
-		tableData_old= new Object[u.xynk.dic_map.size()][18];
-		Iterator<String> iter= u.xynk.dic_map.keySet().iterator();
-		u.xynk.copy= new ArrayList<String>();
+		u.xynkPage.dic_list=d.txtToList();
+		u.xynkPage.dic_map= d.listToMap(u.xynkPage.dic_map, u.xynkPage.dic_list);
+		u.xynkPage.dic_gn= d.mapToMap_gn(u.xynkPage.dic_map);
+		u.xynkPage.dic_lx= d.mapToMap_lx(u.xynkPage.dic_map);
+		u.xynkPage.dic_by= d.mapToMap_by(u.xynkPage.dic_map);
+		u.xynkPage.dic_wx= d.mapToMap_wx(u.xynkPage.dic_map);
+		u.xynkPage.dic_bl= d.mapToMap_bl(u.xynkPage.dic_map);
+		u.xynkPage.dic_lc= d.mapToMap_lc(u.xynkPage.dic_map);
+		u.xynkPage.dic_sy= d.mapToMap_sy(u.xynkPage.dic_map);
+		u.xynkPage.dic_zd= d.mapToMap_zd(u.xynkPage.dic_map);
+		u.xynkPage.dic_bf= d.mapToMap_bf(u.xynkPage.dic_map);
+		u.xynkPage.dic_zl= d.mapToMap_zl(u.xynkPage.dic_map);
+		u.xynkPage.dic_jy= d.mapToMap_jy(u.xynkPage.dic_map);
+		u.xynkPage.dic_yh= d.mapToMap_yh(u.xynkPage.dic_map);
+		u.xynkPage.dic_yf= d.mapToMap_yf(u.xynkPage.dic_map);
+		u.xynkPage.dic_yx= d.mapToMap_yx(u.xynkPage.dic_map);
+		tableData_old= new Object[u.xynkPage.dic_map.size()][18];
+		Iterator<String> iter= u.xynkPage.dic_map.keySet().iterator();
+		u.xynkPage.copy= new ArrayList<String>();
 		while (iter.hasNext())
-			u.xynk.copy.add(iter.next());
-		for(int i= 0; i< u.xynk.copy.size(); i++) {
-			tableData_old[i]= new Object[]{""+ (i+ 1),""+ 0, u.xynk.copy.get(i).trim(),
-					u.xynk.dic_map.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_gn.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_lx.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_by.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_wx.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_bl.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_lc.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_sy.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_zd.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_bf.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_zl.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_jy.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_yh.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_yf.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", ""),
-					u.xynk.dic_yx.get(u.xynk.copy.get(i)).toString().replaceAll("\\s*", "")
+			u.xynkPage.copy.add(iter.next());
+		for(int i= 0; i< u.xynkPage.copy.size(); i++) {
+			tableData_old[i]= new Object[]{""+ (i+ 1),""+ 0, u.xynkPage.copy.get(i).trim(),
+					u.xynkPage.dic_map.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_gn.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_lx.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_by.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_wx.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_bl.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_lc.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_sy.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_zd.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_bf.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_zl.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_jy.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_yh.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_yf.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", ""),
+					u.xynkPage.dic_yx.get(u.xynkPage.copy.get(i)).toString().replaceAll("\\s*", "")
 			};
 		}	
-		u.xynk.newTableModel.getDataVector().clear();
+		u.xynkPage.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.xynk.newTableModel.insertRow(i, tableData_old[i]);
+			u.xynkPage.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.xynk.tableData_old= tableData_old;
-		u.xynk.newTableModel.fireTableDataChanged();
-		u.xynk.revalidate();
+		u.xynkPage.tableData_old= tableData_old;
+		u.xynkPage.newTableModel.fireTableDataChanged();
+		u.xynkPage.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

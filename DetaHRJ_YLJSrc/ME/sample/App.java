@@ -7,19 +7,20 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
+import src.stables.StableDataSrc;
 import AVQ.OEQ.cap.Monitor;
-import ME.sample.cecil.Cecil;
+import ME.sample.cecil.CecilPage;
 import ME.sample.editPane.EditPane;
-import ME.sample.fckx.Fckx;
-import ME.sample.fqz.Fqz;
-import ME.sample.fyyd.Fyyd;
-import ME.sample.jzkx.Jzkx;
-import ME.sample.nk.Xynk;
-import ME.sample.wkx.Wkx;
-import ME.sample.wskx.Wskx;
-import ME.sample.xysc.Xysc;
-import ME.sample.zynkx.Zynkx;
-import ME.sample.zyzdx.Zyzdx;
+import ME.sample.fckx.FckxPage;
+import ME.sample.fqz.FqzPage;
+import ME.sample.fyyd.FyydPage;
+import ME.sample.jzkx.JzkxPage;
+import ME.sample.nk.XynkPage;
+import ME.sample.wkx.WkxPage;
+import ME.sample.wskx.WskxPage;
+import ME.sample.xysc.XyscPage;
+import ME.sample.zynkx.ZynkxPage;
+import ME.sample.zyzdx.ZyzdxPage;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
@@ -85,7 +86,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public SoundWaveJPanel soundWaveJPanel;
 	public int col= 0;
 	public boolean disableCursor= true;
-	public Translator ts;
+	public Translator translator;
 	public JTextPane text;
 	public JTextPane jText;
 	protected JTextPane jxText;
@@ -120,17 +121,17 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public JCheckBox shuming_filter_box;
 	public DetabbedPane jTabbedpane;
 	public List<String> sets;
-	public Xynk xynk;
-	public Zynkx zynkx;
-	public Zyzdx zyzdx;
-	public Fyyd fyyd;
-	public Fqz fqz;
-	public Fckx fckx;
-	public Jzkx jzkx;
-	public Wkx wkx;
-	public Wskx wskx;
-	public Xysc xysc;
-	public Cecil cecil;
+	public XynkPage xynkPage;
+	public ZynkxPage zynkxPage;
+	public ZyzdxPage zyzdx;
+	public FyydPage fyyd;
+	public FqzPage fqz;
+	public FckxPage fckx;
+	public JzkxPage jzkx;
+	public WkxPage wkx;
+	public WskxPage wskx;
+	public XyscPage xysc;
+	public CecilPage cecil;
 	public EditPane editPane;
 	public JLabel yaoCaiLabel;
 	public JTextPane data;
@@ -204,8 +205,10 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public ImageIcon bagua_KYCQ= new ImageIcon(this.getClass().getResource(PathLinkFile.bagua_KYCQ_png));
 	public ImageIcon qp4= new ImageIcon(this.getClass().getResource(PathLinkFile._4qp_png));  
 	public ImageIcon pngy_2_1= new ImageIcon(this.getClass().getResource(PathLinkFile.yc_2_1_png));  
-	public Object[] columnTitle= {"ID", "打分", "中药名称", "笔记原文", "功效", "风险规避", "用法"
-			, "性味", "脉络", "中医馆药理", "经解", "崇源", "愚按", "搭配", "常见药"};
+	public Object[] columnTitle= {StableDataSrc.columnTitle_0, StableDataSrc.columnTitle_1, StableDataSrc.columnTitle_2
+			, StableDataSrc.columnTitle_3, StableDataSrc.columnTitle_4, StableDataSrc.columnTitle_5, StableDataSrc.columnTitle_6
+			, StableDataSrc.columnTitle_7, StableDataSrc.columnTitle_8, StableDataSrc.columnTitle_9, StableDataSrc.columnTitle_10
+			, StableDataSrc.columnTitle_11, StableDataSrc.columnTitle_12, StableDataSrc.columnTitle_13, StableDataSrc.columnTitle_14};
 	public CfxTextField name_filter_not_have;
 	public Map<String, String> ctr;
 	public CfxTextField nameFeelFilter;
@@ -244,7 +247,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}
 
 	public JTextPane data() throws IOException {
-		data= new CfxTextPane("内容", 1350, 2980, null);  
+		data= new CfxTextPane(StableDataSrc.NEI_RONG, 1350, 2980, null);  
 		data.setBounds(850, 150, 1350, 2980);	
 		data.setBackground(Color.white);
 		Box buttonBoxLineTwo= new Box(BoxLayout.X_AXIS);  
@@ -257,7 +260,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	}
 
 	public Box getBox() {	
-		buttonADD= new DetaButton("添加到编辑页", 100, 50, Color.red);
+		buttonADD= new DetaButton(StableDataSrc.TIAN_JIA_DAO_BIAN_JI_YE, 100, 50, Color.red);
 		buttonADD.setBounds(295-15, 0, 135, 30);
 		buttonADD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -299,24 +302,24 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							continue Here;
 						}
 						if (!setOfi.equals("")) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
 								page.append("<span style=\"background:red\"><font color=\"white\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("名")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+ "\"><font color=\"black\" size=\"5\">"+ "<A href=\"http://localhost:8000/search?word="+ setOfi+"\">"
 										+ setOfi+ "</A>" + (posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"")+ "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("动")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("形")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("副")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
 								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							} 
@@ -403,23 +406,23 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							continue Here;
 						}
 						if (!setOfi.equals("")) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
 								page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi +"</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("名")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("动")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("形")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("副")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
 								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
@@ -451,23 +454,23 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							continue Here;
 						}
 						if (!setOfi.equals("")) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
 								page.append("<span style=\"background:red\"><font color=\"white\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") +  "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("名")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("动")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("形")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
 								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
-							if(pos.get(setOfi).contains("副")) {
+							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
 								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") +  "</font></span>");
 								continue Here;
 							} 
@@ -677,7 +680,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		if(forE!= null&& !forE.replace(" ", "").equals("") && forE.length()>110) {
 			forE= forE.substring(0, 110);
 		}
-		key = key.length()== 0? "": ts.MixedStringToChineseString(analyzer, key);
+		key = key.length()== 0? "": translator.MixedStringToChineseString(analyzer, key);
 		if(key.replaceAll("\\s+", " ").equalsIgnoreCase(" ")){
 			key="";
 		}
@@ -748,13 +751,13 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					key+= "淤";
 				}
 			}
-		if(xynk!= null) {
-			this.xynk.key= zhongyao.toString();
-			this.xynk.keyReleased(null);
+		if(xynkPage!= null) {
+			this.xynkPage.key= zhongyao.toString();
+			this.xynkPage.keyReleased(null);
 		}
-		if(zynkx!= null) {
-			this.zynkx.key= zhongyao.toString();
-			this.zynkx.keyReleased(null);
+		if(zynkxPage!= null) {
+			this.zynkxPage.key= zhongyao.toString();
+			this.zynkxPage.keyReleased(null);
 		}
 		if(zyzdx!= null) {
 			this.zyzdx.key= zhongyao.toString();

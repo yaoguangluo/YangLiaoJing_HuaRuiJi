@@ -39,7 +39,7 @@ import ME.sample.App;
 import ME.sample.TableSorterZYNK;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 import comp.detaButton.DetaButton;
-public class Cecil extends Container implements MouseListener, KeyListener{
+public class CecilPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
 	public JTextPane data ;
@@ -72,7 +72,7 @@ public class Cecil extends Container implements MouseListener, KeyListener{
 	public JTextPane text ;
 	public List<Verbal> verbals;
 	public App app;
-	public Cecil(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
+	public CecilPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, Map<String, String> posec
 			, Map<String, String> posFullec, App app) throws IOException{
 		this.text = text;	this.pose = pose;
