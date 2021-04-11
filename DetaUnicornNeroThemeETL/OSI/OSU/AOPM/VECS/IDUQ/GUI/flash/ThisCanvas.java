@@ -290,7 +290,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 					if(node.mNode.actionNodeLeft) {
 						graphics2D.setColor(new Color(240, 240, 240));
 						drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
-								, node.x- 4, node.y- 25);
+								, node.x- 4, node.y+ 25);
 						graphics2D.setColor(new	Color(25, 25, 112));
 						drawArrow.doDrawArrow(graphics2D,  node.mNode.x+ 62, node.mNode.y+ 28
 								, node.x- 4, node.y+ 25);
