@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.xysc.XyscPage;
+import ME.sample.xiYiYaoCai.XyscPage;
 public class MakeContainerXYCF extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -38,9 +38,9 @@ public class MakeContainerXYCF extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
-			u.xysc = new XyscPage(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
-			u.xysc.setName(tabNames.get(14));
-			jTabbedpane.addTab(tabNames.get(14),new ImageIcon() , u.xysc, "西医处方药");// 加入第一个页面  
+			u.xyscPage = new XyscPage(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
+			u.xyscPage.setName(tabNames.get(14));
+			jTabbedpane.addTab(tabNames.get(14),new ImageIcon() , u.xyscPage, "西医处方药");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

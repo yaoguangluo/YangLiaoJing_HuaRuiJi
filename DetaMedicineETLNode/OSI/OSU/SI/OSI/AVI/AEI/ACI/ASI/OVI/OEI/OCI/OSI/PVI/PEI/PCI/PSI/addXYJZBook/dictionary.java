@@ -33,7 +33,7 @@ public class dictionary{
 	public Map<String,Object> dic_yx;
 	public List<String> txtToList() throws IOException{
 		List<String> TEMP_list= new ArrayList<>();
-		InputStream in= this.getClass().getResourceAsStream("jzkx.txt");
+		InputStream in= this.getClass().getResourceAsStream("jzkxPage.txt");
 		BufferedReader cReader= new BufferedReader(new InputStreamReader(in, "UTF8"));  
 		String ctempString= null; 
 		while ((ctempString= cReader.readLine()) != null) {  

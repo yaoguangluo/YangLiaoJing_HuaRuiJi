@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.zynkx.ZynkxPage;
+import ME.sample.zhongYiNeiKeXue.ZynkxPage;
 public class MakeContainerZYNKFJ extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

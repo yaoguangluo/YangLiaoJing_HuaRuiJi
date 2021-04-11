@@ -51,29 +51,29 @@ public class addXYWKBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 	}
 	public void IMP_PSU() throws IOException {
 		dictionary d= new dictionary();
-		u.wkx.dic_list= d.txtToList();
-		u.wkx.dic_map = d.listToMap(u.wkx.dic_map, u.wkx.dic_list);
-		u.wkx.dic_xj = d.mapToMap_xj(u.wkx.dic_map);
-		Iterator<String> iter= u.wkx.dic_xj.keySet().iterator();
-		u.wkx.copy_xj= new ArrayList<String>();
+		u.wkxPage.dic_list= d.txtToList();
+		u.wkxPage.dic_map = d.listToMap(u.wkxPage.dic_map, u.wkxPage.dic_list);
+		u.wkxPage.dic_xj = d.mapToMap_xj(u.wkxPage.dic_map);
+		Iterator<String> iter= u.wkxPage.dic_xj.keySet().iterator();
+		u.wkxPage.copy_xj= new ArrayList<String>();
 		while (iter.hasNext()) {
-			u.wkx.copy_xj.add(iter.next());
+			u.wkxPage.copy_xj.add(iter.next());
 		}
-		tableData_old = new Object[u.wkx.dic_xj.size()][18];
-		for(int i= 0; i< u.wkx.dic_xj.size(); i++) {
+		tableData_old = new Object[u.wkxPage.dic_xj.size()][18];
+		for(int i= 0; i< u.wkxPage.dic_xj.size(); i++) {
 			tableData_old[i]= new Object[]{""+ (i+ 1)
 					, ""+ 0
-					, u.wkx.copy_xj.get(i).trim()
-					, u.wkx.dic_xj.get(u.wkx.copy_xj.get(i)).toString().replaceAll("\\s*", "")
+					, u.wkxPage.copy_xj.get(i).trim()
+					, u.wkxPage.dic_xj.get(u.wkxPage.copy_xj.get(i)).toString().replaceAll("\\s*", "")
 			};
 		}	
-		u.wkx.newTableModel.getDataVector().clear();
+		u.wkxPage.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.wkx.newTableModel.insertRow(i, tableData_old[i]);
+			u.wkxPage.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.wkx.tableData_old= tableData_old;
-		u.wkx.newTableModel.fireTableDataChanged();
-		u.wkx.revalidate();
+		u.wkxPage.tableData_old= tableData_old;
+		u.wkxPage.newTableModel.fireTableDataChanged();
+		u.wkxPage.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

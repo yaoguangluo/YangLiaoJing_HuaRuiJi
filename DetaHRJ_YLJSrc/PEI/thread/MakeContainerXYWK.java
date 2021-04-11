@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.wkx.WkxPage;
+import ME.sample.xiYiWaiKe.WkxPage;
 public class MakeContainerXYWK extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
@@ -37,9 +37,9 @@ public class MakeContainerXYWK extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*5);
-			u.wkx= new WkxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
-			u.wkx.setName(tabNames.get(12));
-			jTabbedpane.addTab(tabNames.get(12),new ImageIcon() , u.wkx, "大外科概论");// 加入第一个页面  
+			u.wkxPage= new WkxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.wkxPage.setName(tabNames.get(12));
+			jTabbedpane.addTab(tabNames.get(12),new ImageIcon() , u.wkxPage, "大外科概论");// 加入第一个页面  
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

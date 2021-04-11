@@ -335,9 +335,9 @@ public class AppInit {
 					//中医诊断：
 					preAdd+= "中医诊断：\r\n\r\n";
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==app.zyzdx.table.getValueAt(i, 2)?"":app.zyzdx.table.getValueAt(i, 2).toString())
+						preAdd+= "证候名："+ (null==app.zyzdxPage.table.getValueAt(i, 2)?"":app.zyzdxPage.table.getValueAt(i, 2).toString())
 								//	+ "证候内容："+	(null==zyzdx.table.getValueAt(i, 5)?"":zyzdx.table.getValueAt(i, 5).toString())
-								+ "可能性："+	(null==app.zyzdx.table.getValueAt(i, 1)?"":app.zyzdx.table.getValueAt(i, 1).toString());
+								+ "可能性："+	(null==app.zyzdxPage.table.getValueAt(i, 1)?"":app.zyzdxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "内科诊断：\r\n\r\n";
@@ -351,15 +351,15 @@ public class AppInit {
 					preAdd+= "西医诊断：\r\n\r\n";
 					//西医急诊：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候名："+ (null==app.jzkx.table.getValueAt(i, 2)?"":app.jzkx.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==app.jzkx.table.getValueAt(i, 1)?"":app.jzkx.table.getValueAt(i, 1).toString());
+						preAdd+= "证候名："+ (null==app.jzkxPage.table.getValueAt(i, 2)?"":app.jzkxPage.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==app.jzkxPage.table.getValueAt(i, 1)?"":app.jzkxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "外科诊断：\r\n\r\n";
 					//外科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==app.wkx.table.getValueAt(i, 2)?"":app.wkx.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==app.wkx.table.getValueAt(i, 1)?"":app.wkx.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==app.wkxPage.table.getValueAt(i, 2)?"":app.wkxPage.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==app.wkxPage.table.getValueAt(i, 1)?"":app.wkxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 					preAdd+= "\r\n\r\n *************************\r\n\r\n";
@@ -368,16 +368,16 @@ public class AppInit {
 					preAdd+= "妇幼诊断：\r\n\r\n";
 					//妇幼分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==app.fckx.table.getValueAt(i, 2)?"":app.fckx.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==app.fckx.table.getValueAt(i, 1)?"":app.fckx.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==app.fckxPage.table.getValueAt(i, 2)?"":app.fckxPage.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==app.fckxPage.table.getValueAt(i, 1)?"":app.fckxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 
 					preAdd+= "伤科：\r\n\r\n";
 					//伤科分析：
 					for(int i=0;i<5;i++) {
-						preAdd+= "证候内容："+ (null==app.wskx.table.getValueAt(i, 2)?"":app.wskx.table.getValueAt(i, 2).toString())
-								+ "可能性："+	(null==app.wskx.table.getValueAt(i, 1)?"":app.wskx.table.getValueAt(i, 1).toString());
+						preAdd+= "证候内容："+ (null==app.wskxPage.table.getValueAt(i, 2)?"":app.wskxPage.table.getValueAt(i, 2).toString())
+								+ "可能性："+	(null==app.wskxPage.table.getValueAt(i, 1)?"":app.wskxPage.table.getValueAt(i, 1).toString());
 						preAdd+= "\r\n\r\n";
 					}
 
@@ -388,9 +388,9 @@ public class AppInit {
 					xiYaoTuiJian+= "西药推荐：\r\n\r\n";
 					//分析：
 					for(int i=0;i<20;i++) {
-						xiYaoTuiJian+= "推荐名："+ (null==app.xysc.table.getValueAt(i, 2)?"":app.xysc.table.getValueAt(i, 2).toString())
-								+ "适应内容："+	(null==app.xysc.table.getValueAt(i, 8)?"":app.xysc.table.getValueAt(i, 8).toString())
-								+ "可能性："+	(null==app.xysc.table.getValueAt(i, 1)?"":app.xysc.table.getValueAt(i, 1).toString());
+						xiYaoTuiJian+= "推荐名："+ (null==app.xyscPage.table.getValueAt(i, 2)?"":app.xyscPage.table.getValueAt(i, 2).toString())
+								+ "适应内容："+	(null==app.xyscPage.table.getValueAt(i, 8)?"":app.xyscPage.table.getValueAt(i, 8).toString())
+								+ "可能性："+	(null==app.xyscPage.table.getValueAt(i, 1)?"":app.xyscPage.table.getValueAt(i, 1).toString());
 						xiYaoTuiJian+= "\r\n\r\n";
 					}
 					preAdd+= xiYaoTuiJian;

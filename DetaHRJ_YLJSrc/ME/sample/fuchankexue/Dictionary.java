@@ -1,6 +1,5 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYWKBook;
+package ME.sample.fuchankexue;
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,13 +11,29 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class dictionary{	
+import ME.sample.PathLinkFile;
+public class Dictionary{	
 	public List<String> dic_list;
 	public Map<String,Object> dic_map;
+	public Map<String,Object> dic_bz;
+	public Map<String,Object> dic_gn;
+	public Map<String,Object> dic_lx;
+	public Map<String,Object> dic_by;
+	public Map<String,Object> dic_wx;
+	public Map<String,Object> dic_bl;
+	public Map<String,Object> dic_lc;
+	public Map<String,Object> dic_sy;
+	public Map<String,Object> dic_zd;
+	public Map<String,Object> dic_bf;
+	public Map<String,Object> dic_zl;
+	public Map<String,Object> dic_jy;
+	public Map<String,Object> dic_yh;
+	public Map<String,Object> dic_yf;
+	public Map<String,Object> dic_yx;
 	public List<String> txtToList() throws IOException{
 		List<String> TEMP_list = new ArrayList<>();
-		InputStream in = this.getClass().getResourceAsStream("wkxPage.txt");
-		BufferedReader cReader = new BufferedReader(new InputStreamReader(in, "UTF-8"));  
+		InputStream in = this.getClass().getResourceAsStream(PathLinkFile.fckxPage8_txt);
+		BufferedReader cReader = new BufferedReader(new InputStreamReader(in, "UTF8"));  
 		String ctempString = null; 
 		while ((ctempString = cReader.readLine()) != null) {  
 			if(!ctempString.replace(" ","").equals("")) {
@@ -32,9 +47,9 @@ public class dictionary{
 		return TEMP_list;
 	}
 	
-	public Map<String, Object>listToMap(Map<String, Object> dic_map, List<String> dic_list) throws IOException{
-		//Map<String, Object> dic_map = new ConcurrentHashMap<String, Object>();
-		for(int i = 0;i < dic_list.size(); i++) {
+	public Map<String, Object> listToMap(List<String> dic_list) throws IOException{
+		Map<String,Object> dic_map = new ConcurrentHashMap<String, Object>();
+		for(int i = 0; i < dic_list.size(); i++) {
 			if(dic_list.get(i).contains("病症段落")) {
 				String med_name = dic_list.get(i).replace("病症段落", "")+dic_list.get(i+1)+dic_list.get(i+2);
 				String med_text = "" + med_name;
@@ -48,32 +63,7 @@ public class dictionary{
 		}
 		return dic_map;
 	}
-	
-	public Map<String, Object>mapToMap_xj(Map<String, Object> dic_map) {
-		Iterator<String> iter = dic_map.keySet().iterator();
-		List<String> copy = new ArrayList<String>();
-		while (iter.hasNext())
-			copy.add(iter.next());
-			
-		Map<String, Object> dic_xj = new ConcurrentHashMap<String, Object>();
-		for(int i = 0;i < copy.size(); i++) {
-			String med_name = copy.get(i);
-			String med_text = dic_map.get(med_name).toString().replace("\n", "");	
-			Pattern p = Pattern.compile("病症小节(.*?)〔〔"); 
-			Matcher m = p.matcher(med_text);
-			int j = 0;
-			while (m.find()) {
-					String temp = m.group().replace("\\s+", " ").replace("病症小节", "").replace("〔", "").replace("(", "").replace(" ", "");
-					if(!temp.equals("")) {
-						 dic_xj.put((med_name.split("病症小节")[0]+j).replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
-						 j++;
-				} 
-		    }
-		}
-		return dic_xj;
-	}
-	
-	
+
 	public Map<String, Object> mapToMap_zl(Map<String, Object> dic_map) {
 		Map<String,Object> dic_zl = new ConcurrentHashMap<String, Object>();
 		Iterator<String> iter = dic_map.keySet().iterator();
@@ -89,8 +79,6 @@ public class dictionary{
 			Matcher m1 = p1.matcher(med_text); 
 			Pattern p2 = Pattern.compile("处理〕(.*?)〔〔"); 
 			Matcher m2 = p2.matcher(med_text); 
-			Pattern p3 = Pattern.compile("〔救治(.*?)〔〔"); 
-			Matcher m3 = p3.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);		
@@ -98,8 +86,6 @@ public class dictionary{
 				temp=m1.group(0);	
 			}else if(m2.find()) {
 				temp=m2.group(0);	
-			}else if(m3.find()) {
-				temp=m3.group(0);	
 			}
 			dic_zl.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));		
 		}
@@ -121,8 +107,6 @@ public class dictionary{
 			Matcher m1 = p1.matcher(med_text); 
 			Pattern p2 = Pattern.compile("方法〕(.*?)〔〔"); 
 			Matcher m2 = p2.matcher(med_text); 
-			Pattern p3 = Pattern.compile("〔诊查(.*?)〔〔"); 
-			Matcher m3 = p3.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);		
@@ -130,8 +114,6 @@ public class dictionary{
 				temp=m1.group(0);	
 			}else if(m2.find()) {
 				temp=m2.group(0);	
-			}else if(m3.find()) {
-				temp=m3.group(0);	
 			}
 			dic_zd.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -151,11 +133,16 @@ public class dictionary{
 			Matcher m = p.matcher(med_text); 
 			Pattern p1 = Pattern.compile("并发症〕(.*?)〔〔"); 
 			Matcher m1 = p1.matcher(med_text); 
+			Pattern p2 = Pattern.compile("病〕(.*?)〔〔"); 
+			Matcher m2 = p2.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);		
 			}else if(m1.find()) {
 				temp=m1.group(0);	
+			}
+			if(m2.find()) {
+				temp+=m2.group(0);	
 			}
 			dic_bf.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -173,13 +160,9 @@ public class dictionary{
 			String med_text = dic_map.get(med_name).toString().replace("\n", "");	
 			Pattern p = Pattern.compile("〔教育(.*?)〔〔"); 
 			Matcher m = p.matcher(med_text); 
-			Pattern p1 = Pattern.compile("〔处置(.*?)〔〔"); 
-			Matcher m1 = p1.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
-				temp = m.group(0);		
-			}else if (m1.find()) {
-				temp = m1.group(0);		
+				temp=m.group(0);		
 			}
 			dic_jy.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -199,11 +182,16 @@ public class dictionary{
 			Matcher m = p.matcher(med_text); 
 			Pattern p1 = Pattern.compile("预后〕(.*?)〔〔"); 
 			Matcher m1 = p1.matcher(med_text); 
+			Pattern p2 = Pattern.compile("影响〕(.*?)〔〔"); 
+			Matcher m2 = p2.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);		
 			}else if(m1.find()) {
 				temp=m1.group(0);	
+			}
+			if(m2.find()) {
+				temp+=m2.group(0);	
 			}
 			dic_yh.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -328,14 +316,16 @@ public class dictionary{
 				temp=m.group(0);
 			}else if(m1.find()) {
 				temp=m1.group(0);
-			}else if(m2.find()) {
-				temp=m2.group(0);
+			}
+			if(m2.find()) {
+				temp+=m2.group(0);
 			}else if(m3.find()) {
-				temp=m3.group(0);
-			}else if(m4.find()) {
-				temp=m4.group(0);
+				temp+=m3.group(0);
+			}
+			if(m4.find()) {
+				temp+=m4.group(0);
 			}else if(m5.find()) {
-				temp=m5.group(0);
+				temp+=m5.group(0);
 			}
 			dic_bl.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -357,17 +347,14 @@ public class dictionary{
 			Matcher m1 = p1.matcher(med_text); 
 			Pattern p2 = Pattern.compile("反应〕(.*?)〔〔"); 
 			Matcher m2 = p2.matcher(med_text); 
-			Pattern p3 = Pattern.compile("〔注意(.*?)〔〔"); 
-			Matcher m3 = p3.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);
 			}else if(m1.find()) {
 				temp=m1.group(0);
-			}else if(m2.find()) {
-				temp=m2.group(0);
-			}else if(m3.find()) {
-				temp=m3.group(0);
+			}
+			if(m2.find()) {
+				temp+=m2.group(0);
 			}
 			dic_wx.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}
@@ -391,7 +378,6 @@ public class dictionary{
 			Matcher m2 = p2.matcher(med_text); 
 			Pattern p3 = Pattern.compile("机制〕(.*?)〔〔"); 
 			Matcher m3 = p3.matcher(med_text); 
-			
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);
@@ -439,13 +425,9 @@ public class dictionary{
 			Pattern p = Pattern.compile("〔概念(.*?)〔〔"); 
 			Pattern p1 = Pattern.compile("概念〕(.*?)〔〔"); 
 			Pattern p2 = Pattern.compile("解剖〕(.*?)〔〔"); 
-			Pattern p3 = Pattern.compile("〔概述(.*?)〔〔"); 
-			Pattern p4 = Pattern.compile("概述〕(.*?)〔〔"); 
 			Matcher m = p.matcher(med_text); 
 			Matcher m1 = p1.matcher(med_text); 
 			Matcher m2 = p2.matcher(med_text); 
-			Matcher m3 = p3.matcher(med_text); 
-			Matcher m4 = p4.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);
@@ -453,10 +435,6 @@ public class dictionary{
 				temp=m1.group(0);
 			}else if(m2.find()) {
 				temp=m2.group(0);
-			}else if(m3.find()) {
-				temp=m3.group(0);
-			}else if(m4.find()) {
-				temp=m4.group(0);
 			}
 			dic_gn.put(med_name.replaceAll("\\s*", "").replace("〔","").replace("〕",":"), temp.replaceAll("\\s*", "").replace("〔","").replace("〕",":"));
 		}

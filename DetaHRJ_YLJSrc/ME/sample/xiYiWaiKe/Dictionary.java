@@ -1,6 +1,5 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYWKBook;
+package ME.sample.xiYiWaiKe;
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,12 +11,13 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class dictionary{	
+import ME.sample.PathLinkFile;
+public class Dictionary{	
 	public List<String> dic_list;
 	public Map<String,Object> dic_map;
 	public List<String> txtToList() throws IOException{
 		List<String> TEMP_list = new ArrayList<>();
-		InputStream in = this.getClass().getResourceAsStream("wkxPage.txt");
+		InputStream in = this.getClass().getResourceAsStream(PathLinkFile.wkxPage_txt);
 		BufferedReader cReader = new BufferedReader(new InputStreamReader(in, "UTF-8"));  
 		String ctempString = null; 
 		while ((ctempString = cReader.readLine()) != null) {  
@@ -32,8 +32,8 @@ public class dictionary{
 		return TEMP_list;
 	}
 	
-	public Map<String, Object>listToMap(Map<String, Object> dic_map, List<String> dic_list) throws IOException{
-		//Map<String, Object> dic_map = new ConcurrentHashMap<String, Object>();
+	public Map<String, Object>listToMap(List<String> dic_list) throws IOException{
+		Map<String, Object> dic_map = new ConcurrentHashMap<String, Object>();
 		for(int i = 0;i < dic_list.size(); i++) {
 			if(dic_list.get(i).contains("²¡Ö¢¶ÎÂä")) {
 				String med_name = dic_list.get(i).replace("²¡Ö¢¶ÎÂä", "")+dic_list.get(i+1)+dic_list.get(i+2);

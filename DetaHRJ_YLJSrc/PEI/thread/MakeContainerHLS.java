@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.cecil.CecilPage;
+import ME.sample.Harrison.CecilPage;
 public class MakeContainerHLS extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

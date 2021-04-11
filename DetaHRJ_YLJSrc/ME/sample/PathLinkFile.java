@@ -45,8 +45,8 @@ public class PathLinkFile{
 	public static final String bagua_ZSBZ_png= "bagua_ZSBZ.png";
 	public static final String bagua_KYCQ_png= "bagua_KYCQ.png";
 	public static final String _4qp_png= "4qp.png";
-	public static final String yc_2_1_png= "yc/2_1.png";
-	public static final String yc= "yc";
+	public static final String yc_2_1_png= "yaoCai/2_1.png";
+	public static final String yc= "yaoCai";
 	public static final String poscc_lyg= "poscc.lyg";
 	public static final String poscp_lyg= "poscp.lyg";
 	public static final String PinYinCN_lyg= "PinYinCN.lyg";
@@ -61,7 +61,7 @@ public class PathLinkFile{
 	public static String wbx142f_txt="wbx142f.txt";
 	public static String 中医方剂学_txt="中医方剂学.txt";
 	public static String zydcd_txt="zydcd.txt";
-	//xysc
+	//xyscPage
 	public static String _127个西医常用药品功能主治_txt="127个西医常用药品功能主治.txt";
 	public static String 西医常用药_txt="西医常用药.txt";
 	public static String 药理学_第七版_txt="药理学(第七版-).txt";
@@ -75,15 +75,15 @@ public class PathLinkFile{
 	public static String bg_gen_png="bg_gen.png";
 	public static String bg_kan_png="bg_kan.png";
 	public static String bg_qian_png="bg_qian.png";
-	//wskx
-	public static String wskx_txt="wskx.txt";
-	//wkx
-	public static String wkx_txt="wkx.txt";
+	//wskxPage
+	public static String wskxPage_txt="wskxPage.txt";
+	//wkxPage
+	public static String wkxPage_txt="wkxPage.txt";
 	//nk
-	public static String k_txt="nk.txt";
-	//jzkx
-	public static String jzkx_txt="jzkx.txt";
-	//fqz
+	public static String k_txt="nkPage.txt";
+	//jzkxPage
+	public static String jzkxPage_txt="jzkxPage.txt";
+	//fqzPage
 	public static String 保婴撮要_明_薛铠_txt="保婴撮要-明-薛铠.txt";
 	public static String 慈幼便览_清_佚名_txt="慈幼便览-清-佚名.txt";
 	public static String 傅青主女科歌括_清_傅山_txt="傅青主女科歌括-清-傅山.txt";
@@ -95,7 +95,7 @@ public class PathLinkFile{
 	public static String 妇人良方集要_宋_陈自明_txt="妇人良方集要-宋-陈自明.txt";
 	public static String 傅青主女科_明_傅山_txt="傅青主女科-明-傅山.txt";
 	public static String 傅青主男科重编考释_明_傅山_txt="傅青主男科重编考释-明-傅山.txt";
-	//fyyd
+	//fyydPage
 	public static String 黄帝内经_txt="黄帝内经.txt";
 	public static String 景岳全书_txt="景岳全书.txt";
 	public static String 房中补益_唐_孙思邈_txt="房中补益-唐-孙思邈.txt";
@@ -103,8 +103,8 @@ public class PathLinkFile{
 	public static String 八十一难经_汉_扁鹊_txt="八十一难经-汉-扁鹊.txt";
 	public static String 中藏经_txt="中藏经.txt";
 	public static String 金匮要略_txt="金匮要略.txt";
-	//fckx
-	public static String fckx8_txt="fckx8.txt";
+	//fckxPage
+	public static String fckxPage8_txt="fckxPage8.txt";
 	//nankekx
 	public static String nankekx8_txt="nankekx8.txt";
 	//cecil
@@ -185,11 +185,11 @@ public class PathLinkFile{
 //	public static String wbx142f_txt="/src/ME/sample/zynkx/wbx142f.txt";
 //	public static String 中医方剂学_txt="/src/ME/sample/zynkx/中医方剂学.txt";
 //	public static String zydcd_txt="/src/ME/sample/zynkx/zydcd.txt";
-//	//xysc
-//	public static String _127个西医常用药品功能主治_txt="/src/ME/sample/xysc/127个西医常用药品功能主治.txt";
-//	public static String 西医常用药_txt="/src/ME/sample/xysc/西医常用药.txt";
-//	public static String 药理学_第七版_txt="/src/ME/sample/xysc/药理学(第七版-).txt";
-//	public static String 临床药物手册_txt="/src/ME/sample/xysc/临床药物手册.txt";
+//	//xyscPage
+//	public static String _127个西医常用药品功能主治_txt="/src/ME/sample/xyscPage/127个西医常用药品功能主治.txt";
+//	public static String 西医常用药_txt="/src/ME/sample/xyscPage/西医常用药.txt";
+//	public static String 药理学_第七版_txt="/src/ME/sample/xyscPage/药理学(第七版-).txt";
+//	public static String 临床药物手册_txt="/src/ME/sample/xyscPage/临床药物手册.txt";
 //	//xlx
 //	public static String bg_xun_png="/src/ME/sample/xlx/bg_xun.png";
 //	public static String bg_li_png="/src/ME/sample/xlx/bg_li.png";
@@ -199,36 +199,36 @@ public class PathLinkFile{
 //	public static String bg_gen_png="/src/ME/sample/xlx/bg_gen.png";
 //	public static String bg_kan_png="/src/ME/sample/xlx/bg_kan.png";
 //	public static String bg_qian_png="/src/ME/sample/xlx/bg_qian.png";
-//	//wskx
-//	public static String wskx_txt="/src/ME/sample/wskx/wskx.txt";
-//	//wkx
-//	public static String wkx_txt="/src/ME/sample/wkx/wkx.txt";
+//	//wskxPage
+//	public static String wskxPage_txt="/src/ME/sample/wskxPage/wskxPage.txt";
+//	//wkxPage
+//	public static String wkxPage_txt="/src/ME/sample/wkxPage/wkxPage.txt";
 //	//nk
 //	public static String k_txt="/src/ME/sample/nk/nk.txt";
-//	//jzkx
-//	public static String jzkx_txt="/src/ME/sample/jzkx/jzkx.txt";
-//	//fqz
-//	public static String 保婴撮要_明_薛铠_txt="/src/ME/sample/fqz/保婴撮要-明-薛铠.txt";
-//	public static String 慈幼便览_清_佚名_txt="/src/ME/sample/fqz/慈幼便览-清-佚名.txt";
-//	public static String 傅青主女科歌括_清_傅山_txt="/src/ME/sample/fqz/傅青主女科歌括-清-傅山.txt";
-//	public static String 保幼新编_清_卢光履_txt="/src/ME/sample/fqz/保幼新编-清-卢光履.txt";
-//	public static String 儿科萃精__陈守真_txt="/src/ME/sample/fqz/儿科萃精--陈守真.txt";
-//	public static String 妇科百辩_明_庄履严_txt="/src/ME/sample/fqz/妇科百辩-明-庄履严.txt";
-//	public static String 妇科秘书___txt="/src/ME/sample/fqz/妇科秘书--.txt";
-//	public static String 妇科玉尺_清_沈金鳌_txt="/src/ME/sample/fqz/妇科玉尺-清-沈金鳌.txt";
-//	public static String 妇人良方集要_宋_陈自明_txt="/src/ME/sample/fqz/妇人良方集要-宋-陈自明.txt";
-//	public static String 傅青主女科_明_傅山_txt="/src/ME/sample/fqz/傅青主女科-明-傅山.txt";
-//	public static String 傅青主男科重编考释_明_傅山_txt="/src/ME/sample/fqz/傅青主男科重编考释-明-傅山.txt";
-//	//fyyd
-//	public static String 黄帝内经_txt="/src/ME/sample/fyyd/黄帝内经.txt";
-//	public static String 景岳全书_txt="/src/ME/sample/fyyd/景岳全书.txt";
-//	public static String 房中补益_唐_孙思邈_txt="/src/ME/sample/fyyd/房中补益-唐-孙思邈.txt";
-//	public static String 脉经_txt="/src/ME/sample/fyyd/脉经.txt";
-//	public static String 八十一难经_汉_扁鹊_txt="/src/ME/sample/fyyd/八十一难经-汉-扁鹊.txt";
-//	public static String 中藏经_txt="/src/ME/sample/fyyd/中藏经.txt";
-//	public static String 金匮要略_txt="/src/ME/sample/fyyd/金匮要略.txt";
-//	//fckx
-//	public static String fckx8_txt="/src/ME/sample/fckx/fckx8.txt";
+//	//jzkxPage
+//	public static String jzkxPage_txt="/src/ME/sample/jzkxPage/jzkxPage.txt";
+//	//fqzPage
+//	public static String 保婴撮要_明_薛铠_txt="/src/ME/sample/fqzPage/保婴撮要-明-薛铠.txt";
+//	public static String 慈幼便览_清_佚名_txt="/src/ME/sample/fqzPage/慈幼便览-清-佚名.txt";
+//	public static String 傅青主女科歌括_清_傅山_txt="/src/ME/sample/fqzPage/傅青主女科歌括-清-傅山.txt";
+//	public static String 保幼新编_清_卢光履_txt="/src/ME/sample/fqzPage/保幼新编-清-卢光履.txt";
+//	public static String 儿科萃精__陈守真_txt="/src/ME/sample/fqzPage/儿科萃精--陈守真.txt";
+//	public static String 妇科百辩_明_庄履严_txt="/src/ME/sample/fqzPage/妇科百辩-明-庄履严.txt";
+//	public static String 妇科秘书___txt="/src/ME/sample/fqzPage/妇科秘书--.txt";
+//	public static String 妇科玉尺_清_沈金鳌_txt="/src/ME/sample/fqzPage/妇科玉尺-清-沈金鳌.txt";
+//	public static String 妇人良方集要_宋_陈自明_txt="/src/ME/sample/fqzPage/妇人良方集要-宋-陈自明.txt";
+//	public static String 傅青主女科_明_傅山_txt="/src/ME/sample/fqzPage/傅青主女科-明-傅山.txt";
+//	public static String 傅青主男科重编考释_明_傅山_txt="/src/ME/sample/fqzPage/傅青主男科重编考释-明-傅山.txt";
+//	//fyydPage
+//	public static String 黄帝内经_txt="/src/ME/sample/fyydPage/黄帝内经.txt";
+//	public static String 景岳全书_txt="/src/ME/sample/fyydPage/景岳全书.txt";
+//	public static String 房中补益_唐_孙思邈_txt="/src/ME/sample/fyydPage/房中补益-唐-孙思邈.txt";
+//	public static String 脉经_txt="/src/ME/sample/fyydPage/脉经.txt";
+//	public static String 八十一难经_汉_扁鹊_txt="/src/ME/sample/fyydPage/八十一难经-汉-扁鹊.txt";
+//	public static String 中藏经_txt="/src/ME/sample/fyydPage/中藏经.txt";
+//	public static String 金匮要略_txt="/src/ME/sample/fyydPage/金匮要略.txt";
+//	//fckxPage
+//	public static String fckxPage8_txt="/src/ME/sample/fckxPage/fckxPage8.txt";
 //    //
 //	public static String nankekx8_txt="nankekx8.txt";
 ////	//cecil

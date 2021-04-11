@@ -11,7 +11,7 @@ import javax.swing.JTabbedPane;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
-import ME.sample.nk.XynkPage;
+import ME.sample.xiYiNeiKe.XynkPage;
 public class MakeContainerXYNK extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

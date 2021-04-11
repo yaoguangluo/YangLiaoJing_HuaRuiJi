@@ -1,6 +1,5 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYWKBook;
+package ME.sample.jiZhenKeXue;
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,13 +11,30 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class dictionary{	
+import ME.sample.PathLinkFile;
+
+public class Dictionary{	
 	public List<String> dic_list;
 	public Map<String,Object> dic_map;
+	public Map<String,Object> dic_bz;
+	public Map<String,Object> dic_gn;
+	public Map<String,Object> dic_lx;
+	public Map<String,Object> dic_by;
+	public Map<String,Object> dic_wx;
+	public Map<String,Object> dic_bl;
+	public Map<String,Object> dic_lc;
+	public Map<String,Object> dic_sy;
+	public Map<String,Object> dic_zd;
+	public Map<String,Object> dic_bf;
+	public Map<String,Object> dic_zl;
+	public Map<String,Object> dic_jy;
+	public Map<String,Object> dic_yh;
+	public Map<String,Object> dic_yf;
+	public Map<String,Object> dic_yx;
 	public List<String> txtToList() throws IOException{
 		List<String> TEMP_list = new ArrayList<>();
-		InputStream in = this.getClass().getResourceAsStream("wkxPage.txt");
-		BufferedReader cReader = new BufferedReader(new InputStreamReader(in, "UTF-8"));  
+		InputStream in = this.getClass().getResourceAsStream(PathLinkFile.jzkxPage_txt);
+		BufferedReader cReader = new BufferedReader(new InputStreamReader(in, "UTF8"));  
 		String ctempString = null; 
 		while ((ctempString = cReader.readLine()) != null) {  
 			if(!ctempString.replace(" ","").equals("")) {
@@ -32,8 +48,8 @@ public class dictionary{
 		return TEMP_list;
 	}
 	
-	public Map<String, Object>listToMap(Map<String, Object> dic_map, List<String> dic_list) throws IOException{
-		//Map<String, Object> dic_map = new ConcurrentHashMap<String, Object>();
+	public Map<String, Object> listToMap(List<String> dic_list) throws IOException{
+		Map<String,Object> dic_map = new ConcurrentHashMap<String, Object>();
 		for(int i = 0;i < dic_list.size(); i++) {
 			if(dic_list.get(i).contains("≤°÷¢∂Œ¬‰")) {
 				String med_name = dic_list.get(i).replace("≤°÷¢∂Œ¬‰", "")+dic_list.get(i+1)+dic_list.get(i+2);
@@ -48,32 +64,7 @@ public class dictionary{
 		}
 		return dic_map;
 	}
-	
-	public Map<String, Object>mapToMap_xj(Map<String, Object> dic_map) {
-		Iterator<String> iter = dic_map.keySet().iterator();
-		List<String> copy = new ArrayList<String>();
-		while (iter.hasNext())
-			copy.add(iter.next());
-			
-		Map<String, Object> dic_xj = new ConcurrentHashMap<String, Object>();
-		for(int i = 0;i < copy.size(); i++) {
-			String med_name = copy.get(i);
-			String med_text = dic_map.get(med_name).toString().replace("\n", "");	
-			Pattern p = Pattern.compile("≤°÷¢–°Ω⁄(.*?)°≤°≤"); 
-			Matcher m = p.matcher(med_text);
-			int j = 0;
-			while (m.find()) {
-					String temp = m.group().replace("\\s+", " ").replace("≤°÷¢–°Ω⁄", "").replace("°≤", "").replace("(", "").replace(" ", "");
-					if(!temp.equals("")) {
-						 dic_xj.put((med_name.split("≤°÷¢–°Ω⁄")[0]+j).replaceAll("\\s*", "").replace("°≤","").replace("°≥",":"), temp.replaceAll("\\s*", "").replace("°≤","").replace("°≥",":"));
-						 j++;
-				} 
-		    }
-		}
-		return dic_xj;
-	}
-	
-	
+
 	public Map<String, Object> mapToMap_zl(Map<String, Object> dic_map) {
 		Map<String,Object> dic_zl = new ConcurrentHashMap<String, Object>();
 		Iterator<String> iter = dic_map.keySet().iterator();
@@ -121,8 +112,6 @@ public class dictionary{
 			Matcher m1 = p1.matcher(med_text); 
 			Pattern p2 = Pattern.compile("∑Ω∑®°≥(.*?)°≤°≤"); 
 			Matcher m2 = p2.matcher(med_text); 
-			Pattern p3 = Pattern.compile("°≤’Ô≤È(.*?)°≤°≤"); 
-			Matcher m3 = p3.matcher(med_text); 
 			String temp ="";
 			if (m.find()) {
 				temp=m.group(0);		
@@ -130,8 +119,6 @@ public class dictionary{
 				temp=m1.group(0);	
 			}else if(m2.find()) {
 				temp=m2.group(0);	
-			}else if(m3.find()) {
-				temp=m3.group(0);	
 			}
 			dic_zd.put(med_name.replaceAll("\\s*", "").replace("°≤","").replace("°≥",":"), temp.replaceAll("\\s*", "").replace("°≤","").replace("°≥",":"));
 		}

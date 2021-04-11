@@ -9,18 +9,18 @@ import java.awt.image.BufferedImage;
 
 import src.stables.StableDataSrc;
 import AVQ.OEQ.cap.Monitor;
-import ME.sample.cecil.CecilPage;
+import ME.sample.Harrison.CecilPage;
 import ME.sample.editPane.EditPane;
-import ME.sample.fckx.FckxPage;
-import ME.sample.fqz.FqzPage;
-import ME.sample.fyyd.FyydPage;
-import ME.sample.jzkx.JzkxPage;
-import ME.sample.nk.XynkPage;
-import ME.sample.wkx.WkxPage;
-import ME.sample.wskx.WskxPage;
-import ME.sample.xysc.XyscPage;
-import ME.sample.zynkx.ZynkxPage;
-import ME.sample.zyzdx.ZyzdxPage;
+import ME.sample.fuchankexue.FckxPage;
+import ME.sample.guJiJingDian.FyydPage;
+import ME.sample.jiZhenKeXue.JzkxPage;
+import ME.sample.waiShangKeXue.WskxPage;
+import ME.sample.xiYiNeiKe.XynkPage;
+import ME.sample.xiYiWaiKe.WkxPage;
+import ME.sample.xiYiYaoCai.XyscPage;
+import ME.sample.zhongYiFuChan.FqzPage;
+import ME.sample.zhongYiNeiKeXue.ZynkxPage;
+import ME.sample.zhongYiZhenDuanXue.ZyzdxPage;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
@@ -123,14 +123,14 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public List<String> sets;
 	public XynkPage xynkPage;
 	public ZynkxPage zynkxPage;
-	public ZyzdxPage zyzdx;
-	public FyydPage fyyd;
-	public FqzPage fqz;
-	public FckxPage fckx;
-	public JzkxPage jzkx;
-	public WkxPage wkx;
-	public WskxPage wskx;
-	public XyscPage xysc;
+	public ZyzdxPage zyzdxPage;
+	public FyydPage fyydPage;
+	public FqzPage fqzPage;
+	public FckxPage fckxPage;
+	public JzkxPage jzkxPage;
+	public WkxPage wkxPage;
+	public WskxPage wskxPage;
+	public XyscPage xyscPage;
 	public CecilPage cecil;
 	public EditPane editPane;
 	public JLabel yaoCaiLabel;
@@ -759,37 +759,37 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			this.zynkxPage.key= zhongyao.toString();
 			this.zynkxPage.keyReleased(null);
 		}
-		if(zyzdx!= null) {
-			this.zyzdx.key= zhongyao.toString();
-			this.zyzdx.keyReleased(null);
+		if(zyzdxPage!= null) {
+			this.zyzdxPage.key= zhongyao.toString();
+			this.zyzdxPage.keyReleased(null);
 		}
-		if(fyyd!= null) {
-			this.fyyd.key= zhongyao.toString();
-			this.fyyd.keyReleased(null);
+		if(fyydPage!= null) {
+			this.fyydPage.key= zhongyao.toString();
+			this.fyydPage.keyReleased(null);
 		}
-		if(fqz!= null) {
-			this.fqz.key= zhongyao.toString();
-			this.fqz.keyReleased(null);
+		if(fqzPage!= null) {
+			this.fqzPage.key= zhongyao.toString();
+			this.fqzPage.keyReleased(null);
 		}
-		if(fckx!= null) {
-			this.fckx.key= zhongyao.toString();
-			this.fckx.keyReleased(null);
+		if(fckxPage!= null) {
+			this.fckxPage.key= zhongyao.toString();
+			this.fckxPage.keyReleased(null);
 		}
-		if(jzkx!= null) {
-			this.jzkx.key= zhongyao.toString();
-			this.jzkx.keyReleased(null);
+		if(jzkxPage!= null) {
+			this.jzkxPage.key= zhongyao.toString();
+			this.jzkxPage.keyReleased(null);
 		}
-		if(wkx!= null) {
-			this.wkx.key= zhongyao.toString();
-			this.wkx.keyReleased(null);
+		if(wkxPage!= null) {
+			this.wkxPage.key= zhongyao.toString();
+			this.wkxPage.keyReleased(null);
 		}
-		if(wskx!= null) {
-			this.wskx.key= zhongyao.toString();
-			this.wskx.keyReleased(null);
+		if(wskxPage!= null) {
+			this.wskxPage.key= zhongyao.toString();
+			this.wskxPage.keyReleased(null);
 		}
-		if(xysc!= null) {
-			this.xysc.key= zhongyao.toString();
-			this.xysc.keyReleased(null);
+		if(xyscPage!= null) {
+			this.xyscPage.key= zhongyao.toString();
+			this.xyscPage.keyReleased(null);
 		}
 		if(editPane!= null) {
 			this.editPane.key= zhongyao.toString();

@@ -825,17 +825,17 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 						if(!findLeaf.containsKey(tempRec)) {
 							findLeaf.put(tempRec, 1);
 							frequencyLeaf.put(tempRec, -1);
-							Iterator<String> iterator= u.xysc.dic_shi_ying.keySet().iterator();
+							Iterator<String> iterator= u.xyscPage.dic_shi_ying.keySet().iterator();
 							Map<String, Object> gongxiao= new ConcurrentHashMap<String, Object>();
 							Here:
 								while(iterator.hasNext()) {
 									String yaoming= iterator.next();
 									Map<String, Object> gongxiaoyaoming= new ConcurrentHashMap<String, Object>();
-									String li= u.xysc.dic_shi_ying.get(yaoming).toString();
-									li+= u.xysc.dic_yao_li.get(yaoming).toString();
+									String li= u.xyscPage.dic_shi_ying.get(yaoming).toString();
+									li+= u.xyscPage.dic_yao_li.get(yaoming).toString();
 									if(li.contains(tempRec)) {
-										String hai= u.xysc.dic_bu_liang_fan_ying.get(yaoming).toString();
-										hai+= u.xysc.dic_zhu_yi.get(yaoming).toString();
+										String hai= u.xyscPage.dic_bu_liang_fan_ying.get(yaoming).toString();
+										hai+= u.xyscPage.dic_zhu_yi.get(yaoming).toString();
 										String xw= li;
 										if(!frequencyLeaf.containsKey(yaoming) ) {
 											frequencyLeaf.put(yaoming, 1);

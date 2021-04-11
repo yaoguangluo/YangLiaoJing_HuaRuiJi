@@ -95,35 +95,35 @@ public class addZYZDBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_
 		
 		
 		dictionary d=new dictionary();
-		u.zyzdx.dic_list=d.txtToList();
-		u.zyzdx.dic_map = d.listToMap(u.zyzdx.dic_map, u.zyzdx.dic_list);
-		u.zyzdx.dic_gn = d.mapToMap_gn(u.zyzdx.dic_map);
-		u.zyzdx.dic_lcbx =d.mapToMap_lcbx(u.zyzdx.dic_map);
-		u.zyzdx.dic_lcyy =d.mapToMap_lcyy(u.zyzdx.dic_map);
-		u.zyzdx.dic_zhfx =d.mapToMap_zhfx(u.zyzdx.dic_map);
-		u.zyzdx.dic_zhjb =d.mapToMap_zhjb(u.zyzdx.dic_map);
-		tableData_old = new Object[u.zyzdx.dic_map.size()][9];
-		Iterator<String> iter = u.zyzdx.dic_map.keySet().iterator();
-		u.zyzdx.copy = new ArrayList<String>();
+		u.zyzdxPage.dic_list=d.txtToList();
+		u.zyzdxPage.dic_map = d.listToMap(u.zyzdxPage.dic_map, u.zyzdxPage.dic_list);
+		u.zyzdxPage.dic_gn = d.mapToMap_gn(u.zyzdxPage.dic_map);
+		u.zyzdxPage.dic_lcbx =d.mapToMap_lcbx(u.zyzdxPage.dic_map);
+		u.zyzdxPage.dic_lcyy =d.mapToMap_lcyy(u.zyzdxPage.dic_map);
+		u.zyzdxPage.dic_zhfx =d.mapToMap_zhfx(u.zyzdxPage.dic_map);
+		u.zyzdxPage.dic_zhjb =d.mapToMap_zhjb(u.zyzdxPage.dic_map);
+		tableData_old = new Object[u.zyzdxPage.dic_map.size()][9];
+		Iterator<String> iter = u.zyzdxPage.dic_map.keySet().iterator();
+		u.zyzdxPage.copy = new ArrayList<String>();
 		while (iter.hasNext())
-			u.zyzdx.copy.add(iter.next());
-		for(int i= 0;i< u.zyzdx.copy.size(); i++) {
-			tableData_old[i]= new Object[]{""+(i+1),""+0,u.zyzdx.copy.get(i).trim().replace("¡²","").replace("¡³",":"),
-					u.zyzdx.dic_map.get(u.zyzdx.copy.get(i)).toString().replaceAll("\\s*", "").replace("¡²","").replace("¡³",":") , 
-					u.zyzdx.dic_gn.get(u.zyzdx.copy.get(i)).toString(),
-					u.zyzdx.dic_lcbx.get(u.zyzdx.copy.get(i)).toString(),
-					u.zyzdx.dic_zhfx.get(u.zyzdx.copy.get(i)).toString(), 
-					u.zyzdx.dic_lcyy.get(u.zyzdx.copy.get(i)).toString(), 
-					u.zyzdx.dic_zhjb.get(u.zyzdx.copy.get(i)).toString()};
+			u.zyzdxPage.copy.add(iter.next());
+		for(int i= 0;i< u.zyzdxPage.copy.size(); i++) {
+			tableData_old[i]= new Object[]{""+(i+1),""+0,u.zyzdxPage.copy.get(i).trim().replace("¡²","").replace("¡³",":"),
+					u.zyzdxPage.dic_map.get(u.zyzdxPage.copy.get(i)).toString().replaceAll("\\s*", "").replace("¡²","").replace("¡³",":") , 
+					u.zyzdxPage.dic_gn.get(u.zyzdxPage.copy.get(i)).toString(),
+					u.zyzdxPage.dic_lcbx.get(u.zyzdxPage.copy.get(i)).toString(),
+					u.zyzdxPage.dic_zhfx.get(u.zyzdxPage.copy.get(i)).toString(), 
+					u.zyzdxPage.dic_lcyy.get(u.zyzdxPage.copy.get(i)).toString(), 
+					u.zyzdxPage.dic_zhjb.get(u.zyzdxPage.copy.get(i)).toString()};
 		}	
 		
-		u.zyzdx.newTableModel.getDataVector().clear();
+		u.zyzdxPage.newTableModel.getDataVector().clear();
 		for(int i= 0; i< tableData_old.length; i++) {
-			u.zyzdx.newTableModel.insertRow(i, tableData_old[i]);
+			u.zyzdxPage.newTableModel.insertRow(i, tableData_old[i]);
 		}
-		u.zyzdx.tableData_old= tableData_old;
-		u.zyzdx.newTableModel.fireTableDataChanged();
-		u.zyzdx.revalidate();
+		u.zyzdxPage.tableData_old= tableData_old;
+		u.zyzdxPage.newTableModel.fireTableDataChanged();
+		u.zyzdxPage.revalidate();
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	

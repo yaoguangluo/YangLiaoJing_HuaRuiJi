@@ -108,37 +108,37 @@ public class RestMedicinePortImpl {
 					app.zynkxPage.key= zhongyao.toString();
 					app.zynkxPage.keyReleased(null);
 				}
-				if(app.zyzdx!= null) {
-					app.zyzdx.key= zhongyao.toString();
-					app.zyzdx.keyReleased(null);
+				if(app.zyzdxPage!= null) {
+					app.zyzdxPage.key= zhongyao.toString();
+					app.zyzdxPage.keyReleased(null);
 				}
-				if(app.fyyd!= null) {
-					app.fyyd.key= zhongyao.toString();
-					app.fyyd.keyReleased(null);
+				if(app.fyydPage!= null) {
+					app.fyydPage.key= zhongyao.toString();
+					app.fyydPage.keyReleased(null);
 				}
-				if(app.fqz!= null) {
-					app.fqz.key= zhongyao.toString();
-					app.fqz.keyReleased(null);
+				if(app.fqzPage!= null) {
+					app.fqzPage.key= zhongyao.toString();
+					app.fqzPage.keyReleased(null);
 				}
-				if(app.fckx!= null) {
-					app.fckx.key= zhongyao.toString();
-					app.fckx.keyReleased(null);
+				if(app.fckxPage!= null) {
+					app.fckxPage.key= zhongyao.toString();
+					app.fckxPage.keyReleased(null);
 				}
-				if(app.jzkx!= null) {
-					app.jzkx.key= zhongyao.toString();
-					app.jzkx.keyReleased(null);
+				if(app.jzkxPage!= null) {
+					app.jzkxPage.key= zhongyao.toString();
+					app.jzkxPage.keyReleased(null);
 				}
-				if(app.wkx!= null) {
-					app.wkx.key= zhongyao.toString();
-					app.wkx.keyReleased(null);
+				if(app.wkxPage!= null) {
+					app.wkxPage.key= zhongyao.toString();
+					app.wkxPage.keyReleased(null);
 				}
-				if(app.wskx!= null) {
-					app.wskx.key= zhongyao.toString();
-					app.wskx.keyReleased(null);
+				if(app.wskxPage!= null) {
+					app.wskxPage.key= zhongyao.toString();
+					app.wskxPage.keyReleased(null);
 				}
-				if(app.xysc!= null) {
-					app.xysc.key= zhongyao.toString();
-					app.xysc.keyReleased(null);
+				if(app.xyscPage!= null) {
+					app.xyscPage.key= zhongyao.toString();
+					app.xyscPage.keyReleased(null);
 				}
 				if(app.editPane!= null) {
 					app.editPane.key= zhongyao.toString();
@@ -331,8 +331,8 @@ public class RestMedicinePortImpl {
 		//中医诊断：
 		preAdd+= "中医诊断：\r\n\r\n";
 		for(int i=0;i<10;i++) {
-			preAdd+= "证候内容：" + app.zyzdx.table.getValueAt(i, 2).toString()
-					+ "可能性：" + app.zyzdx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容：" + app.zyzdxPage.table.getValueAt(i, 2).toString()
+					+ "可能性：" + app.zyzdxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 
@@ -380,15 +380,15 @@ public class RestMedicinePortImpl {
 		preAdd+= "西医诊断：\r\n\r\n";
 		//西医急诊：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.jzkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.jzkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.jzkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.jzkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "外科诊断：\r\n\r\n";
 		//外科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.wkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.wkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.wkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.wkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "内科诊断：\r\n\r\n";
@@ -401,16 +401,16 @@ public class RestMedicinePortImpl {
 		preAdd+= "妇幼诊断：\r\n\r\n";
 		//妇幼分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.fckx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.fckx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.fckxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.fckxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 
 		preAdd+= "伤科：\r\n\r\n";
 		//伤科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.wskx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.wskx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.wskxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.wskxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		Map<String, Object> output= new HashMap<>();
@@ -503,9 +503,9 @@ public class RestMedicinePortImpl {
 		preAdd+= "西药推荐：\r\n\r\n";
 		//分析：
 		for(int i=0;i<25;i++) {
-			preAdd+= "证候内容："+ app.xysc.table.getValueAt(i, 2).toString()
-					+ "可能性："+	 app.xysc.table.getValueAt(i, 1).toString()
-					+ "适应性："+	 app.xysc.table.getValueAt(i, 8).toString();
+			preAdd+= "证候内容："+ app.xyscPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	 app.xyscPage.table.getValueAt(i, 1).toString()
+					+ "适应性："+	 app.xyscPage.table.getValueAt(i, 8).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "\r\n\r\n";
@@ -600,22 +600,22 @@ public class RestMedicinePortImpl {
 		//中医诊断：
 		preAdd+= "中医诊断：\r\n\r\n";
 		for(int i=0; i<5; i++) {
-			preAdd+= "证候内容：" + app.zyzdx.table.getValueAt(i, 2).toString()
-					+ "可能性：" + app.zyzdx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容：" + app.zyzdxPage.table.getValueAt(i, 2).toString()
+					+ "可能性：" + app.zyzdxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "西医诊断：\r\n\r\n";
 		//西医急诊：
 		for(int i=0; i<5; i++) {
-			preAdd+= "证候内容："+ app.jzkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+ app.jzkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.jzkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+ app.jzkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "外科诊断：\r\n\r\n";
 		//外科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.wkx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.wkx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.wkxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.wkxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "内科诊断：\r\n\r\n";
@@ -628,16 +628,16 @@ public class RestMedicinePortImpl {
 		preAdd+= "妇幼诊断：\r\n\r\n";
 		//妇幼分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.fckx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.fckx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.fckxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.fckxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 
 		preAdd+= "伤科：\r\n\r\n";
 		//伤科分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.wskx.table.getValueAt(i, 2).toString()
-					+ "可能性："+	app.wskx.table.getValueAt(i, 1).toString();
+			preAdd+= "证候内容："+ app.wskxPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	app.wskxPage.table.getValueAt(i, 1).toString();
 			preAdd+= "\r\n\r\n";
 		}
 
@@ -652,9 +652,9 @@ public class RestMedicinePortImpl {
 		preAdd+= "西药推荐：\r\n\r\n";
 		//分析：
 		for(int i=0;i<5;i++) {
-			preAdd+= "证候内容："+ app.xysc.table.getValueAt(i, 2).toString()
-					+ "可能性："+	 app.xysc.table.getValueAt(i, 1).toString()
-					+ "适应性："+	 app.xysc.table.getValueAt(i, 8).toString();
+			preAdd+= "证候内容："+ app.xyscPage.table.getValueAt(i, 2).toString()
+					+ "可能性："+	 app.xyscPage.table.getValueAt(i, 1).toString()
+					+ "适应性："+	 app.xyscPage.table.getValueAt(i, 8).toString();
 			preAdd+= "\r\n\r\n";
 		}
 		preAdd+= "\r\n\r\n";
