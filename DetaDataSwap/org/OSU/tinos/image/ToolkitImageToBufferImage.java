@@ -23,7 +23,7 @@ public class ToolkitImageToBufferImage{
 		ImageObserver imageObserver= (ImageObserver)object;
 		BufferedImage  bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-		image.getGraphics().drawImage(image, positionX, positionY, width, height, imageObserver);
+		bufferedImage.getGraphics().drawImage(image, positionX, positionY, imageObserver);
 		return bufferedImage;
 	}
 	
