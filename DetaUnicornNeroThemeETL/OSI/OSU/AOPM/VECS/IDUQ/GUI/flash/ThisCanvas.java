@@ -198,6 +198,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 				actionNode.actionNodeRight= false;
 			}
 		}
+		newx= currentX;
+		newy= currentY;
 	}
 
 	public void mouseMoved(MouseEvent arg0) {
@@ -224,7 +226,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 			}
 			if(node.actionNodeLeft) {
 				graphics2D.setColor(new Color(240, 240, 240));
-				g.fillRect(node.x+19, node.y+12, 25, 25);
+				g.fillRect(node.x+19, node.y+12, 30, 30);
 			}else {
 				g.drawImage(node.thisFace.thisImage, node.x+19, node.y+12, this);
 			}
@@ -273,12 +275,13 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 						node.tBeconnectY= node.tNode.y;
 					}
 					if(!node.leftChoose&& node.rightChoose){
+						graphics2D.setColor(new	Color(240, 240, 240));
+						drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
 						graphics2D.setColor(new	Color(25, 25, 112));	
 					}
-				}
-				if(node.mBeconnect){
+				}if(node.mBeconnect){
 					if(node.actionNodeLeft) {
 						graphics2D.setColor(new Color(240, 240, 240));
 						drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
@@ -302,8 +305,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
 						graphics2D.setColor(new	Color(25, 25, 112));	
 					}
-				}
-				if(node.dBeconnect){
+				}if(node.dBeconnect){
 					if(node.actionNodeLeft) {
 						graphics2D.setColor(new Color(240, 240, 240));
 						drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
@@ -321,15 +323,18 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 								, node.x+ 6, node.y+ 55);
 						node.dBeconnectX= node.dNode.x;
 						node.dBeconnectY= node.dNode.y;
-					}
-					
+					}			
 					if(!node.leftChoose&& node.rightChoose){
+						graphics2D.setColor(new	Color(240, 240, 240));
+						drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
 						graphics2D.setColor(new	Color(25, 25, 112));	
 					}
 				}
 			}else if(!node.leftChoose&& node.rightChoose){
+				graphics2D.setColor(new	Color(240, 240, 240));
+				drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
 				graphics2D.setColor(Color.black);
 				drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
 				graphics2D.setColor(new	Color(25, 25, 112));
