@@ -28,7 +28,7 @@ import OSI.OSU.OVU.MVU.GUI.nodeEdit.DynamicLineUpdaterVPS;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkList;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.Sort;
-
+//作者: 罗瑶光
 public class ThisCanvas extends JPanel implements MouseMotionListener
 , MouseListener, ItemListener, ActionListener, Runnable{
 	private static final long serialVersionUID = 1L;
@@ -135,7 +135,6 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 		rightBotJTextPane.setText("坐标位："+ arg0.getX()+ "|"+ arg0.getY());
 		rightBotJTextPane.validate();
 	}
-
 
 	public void mouseReleased(MouseEvent arg0){
 		isOperation= 0;
@@ -303,6 +302,8 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 						node.mBeconnectY= node.mNode.y;	
 					}
 					if(!node.leftChoose&& node.rightChoose){
+						graphics2D.setColor(new	Color(240, 240, 240));
+						drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
 						graphics2D.setColor(Color.black);
 						drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
 						graphics2D.setColor(new	Color(25, 25, 112));	

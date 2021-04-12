@@ -114,15 +114,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 			Thread.sleep(100);
 			nodeProject.setBounds(0, 0, leftSplitPane.getWidth()
 					, leftSplitPane.getDividerLocation());
-			nodeProject.addimg();
 			Thread.sleep(1000);
-//			nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.getWidth()
-//					, nodeProject.getHeight(), java.awt.Image.SCALE_SMOOTH);
-
-			nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.width
-					, nodeProject.height, java.awt.Image.SCALE_SMOOTH);
-			
-			nodeProject.jPanel.update(nodeProject.jPanel.getGraphics());
 			nodeProject.validate();
 			while(true){   
 				try{
@@ -431,10 +423,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 					//action code 
 					nodeProject.setBounds(0, 0,leftSplitPane.getWidth(),leftSplitPane
 							.getDividerLocation());
-					nodeProject.jPanel.newimg = nodeProject.img.getScaledInstance
-							(nodeProject.getWidth(), nodeProject.getHeight()
-									,java.awt.Image.SCALE_SMOOTH );
-					nodeProject.jPanel.repaint();
 					nodeProject.validate();
 
 				}  
@@ -446,9 +434,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 					//action code 
 					nodeProject.setBounds(0, 0,mainSplitPane.getDividerLocation()
 							, leftSplitPane.getDividerLocation());
-					nodeProject.jPanel.newimg= nodeProject.img.getScaledInstance(nodeProject.getWidth()
-							, nodeProject.getHeight(),java.awt.Image.SCALE_SMOOTH );
-					nodeProject.jPanel.repaint();
 					nodeProject.validate();
 				}  
 			}  
@@ -476,10 +461,6 @@ public class GUISample extends JApplet implements MouseMotionListener
 				righttopSplitPane.setDividerLocation(0.9);
 				nodeProject.setBounds(0, 0, mainSplitPane.getDividerLocation()
 						, leftSplitPane.getDividerLocation());
-				nodeProject.jPanel.newimg = nodeProject.img.getScaledInstance
-						(nodeProject.getWidth(), nodeProject.getHeight()
-								, java.awt.Image.SCALE_SMOOTH );
-				nodeProject.jPanel.repaint();
 				nodeProject.validate();
 				mainSplitPane.validate();
 				System.out.println(w + "<>" + h);
