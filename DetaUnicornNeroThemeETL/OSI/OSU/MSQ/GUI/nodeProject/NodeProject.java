@@ -23,14 +23,14 @@ public class NodeProject extends JPanel implements ComponentListener {
 		jlabel.setIcon(images);
 		this.add(jlabel);
 		this.validate();
-		jlabel.addComponentListener(this);
 		this.addComponentListener(this);
 	}
 	@Override
 	public void componentResized(ComponentEvent e) {
-		img = images.getImage().getScaledInstance(this.getWidth()<= 0? 100: this.getWidth()
-				, this.getHeight()<= 0? 100: this.getHeight(), java.awt.Image.SCALE_SMOOTH);
+		img = images.getImage().getScaledInstance(this.width<= 0? 100: this.width
+				, this.height<= 0? 100: this.height, java.awt.Image.SCALE_SMOOTH);
 		jlabel.setIcon(new ImageIcon(img));
+		jlabel.validate();
 		this.validate();
 	}
 	@Override

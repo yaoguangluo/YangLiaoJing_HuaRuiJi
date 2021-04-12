@@ -421,6 +421,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 			public void propertyChange(java.beans.PropertyChangeEvent evt) {  
 				if (evt.getPropertyName().equals(JSplitPane.DIVIDER_LOCATION_PROPERTY)) {  
 					//action code 
+					nodeProject.width=leftSplitPane.getWidth();
+					nodeProject.height=leftSplitPane.getDividerLocation();
 					nodeProject.setBounds(0, 0,leftSplitPane.getWidth(),leftSplitPane
 							.getDividerLocation());
 					nodeProject.validate();
@@ -432,6 +434,8 @@ public class GUISample extends JApplet implements MouseMotionListener
 			public void propertyChange(java.beans.PropertyChangeEvent evt) {  
 				if (evt.getPropertyName().equals(JSplitPane.DIVIDER_LOCATION_PROPERTY)) {  
 					//action code 
+					nodeProject.width=mainSplitPane.getDividerLocation();
+					nodeProject.height=leftSplitPane.getDividerLocation();
 					nodeProject.setBounds(0, 0,mainSplitPane.getDividerLocation()
 							, leftSplitPane.getDividerLocation());
 					nodeProject.validate();
@@ -459,6 +463,9 @@ public class GUISample extends JApplet implements MouseMotionListener
 				leftSplitPane.setDividerLocation(0.25);
 				rightSplitPane.setDividerLocation(0.85);
 				righttopSplitPane.setDividerLocation(0.9);
+				
+				nodeProject.width= mainSplitPane.getDividerLocation();
+				nodeProject.height= leftSplitPane.getDividerLocation();
 				nodeProject.setBounds(0, 0, mainSplitPane.getDividerLocation()
 						, leftSplitPane.getDividerLocation());
 				nodeProject.validate();
