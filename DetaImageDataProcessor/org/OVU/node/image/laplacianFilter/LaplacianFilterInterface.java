@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.swing.*;
 
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 public class LaplacianFilterInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public LaplacianFilterInterface() throws IOException{
@@ -16,7 +17,7 @@ public class LaplacianFilterInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MC
 		thisImage=img.getScaledInstance(30,30,java.awt.Image.SCALE_SMOOTH );
 		thisIcon = new ImageIcon(newimg);
 	}
-	public void MEI_MSU(JTextPane jTextPane) throws IOException{
+	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ=new LaplacianFilterView();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI=new LaplacianFilterRun();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES=new LaplacianFilterPanel((LaplacianFilterRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI);

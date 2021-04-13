@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.swing.*;
 
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 public class ImageReadNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public ImageReadNodeInterface() throws IOException{
@@ -16,7 +17,7 @@ public class ImageReadNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_
 		thisImage=img.getScaledInstance(30,30,java.awt.Image.SCALE_SMOOTH );
 		thisIcon = new ImageIcon(newimg);
 	}
-	public void MEI_MSU(JTextPane jTextPane) throws IOException{
+	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ=new ImageReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI=new ImageReadOSU_MSQ_OPE_OPC_ECI();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES=new ImageReadOSU_MSQ_AOI_AOD_AOU_AOQ_VES((ImageReadOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI);

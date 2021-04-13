@@ -7,6 +7,7 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 
 
@@ -22,7 +23,7 @@ public class LYGWriteNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_M
 		thisImage=img.getScaledInstance(30,30,java.awt.Image.SCALE_SMOOTH );
 		thisIcon = new ImageIcon(newimg);
  	}
-	public void MEI_MSU(JTextPane jTextPane) throws IOException
+	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException
 	{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ=new LYGWriteOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI=new LYGWriteOSU_MSQ_OPE_OPC_ECI();

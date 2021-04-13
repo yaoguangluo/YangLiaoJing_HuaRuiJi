@@ -29,7 +29,7 @@ public class AddChanHouKangFuKePageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_A
 		panel = new Panel();
 		panel.setLayout(null);
 		panel.setBackground(Color.white);
-		JButton button = new JButton("瀹屾垚");
+		JButton button = new JButton("完成");
 		button.setBounds(0, 0, 150, 30);
 		button.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -39,7 +39,7 @@ public class AddChanHouKangFuKePageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_A
 			}
 		});
 		panel.add(button);
-		JButton readfile= new JButton("閰嶇疆鐢熸垚");
+		JButton readfile= new JButton("配置生成");
 		readfile.setBounds(0, 35, 150, 65);
 		readfile.addActionListener(new ActionListener(){
 			@Override

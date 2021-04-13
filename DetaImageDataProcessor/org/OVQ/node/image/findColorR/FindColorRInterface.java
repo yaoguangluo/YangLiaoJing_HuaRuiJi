@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import javax.swing.*;
 
+import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 public class FindColorRInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public FindColorRInterface() throws IOException{
@@ -16,7 +17,7 @@ public class FindColorRInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU
 		thisImage = img.getScaledInstance(30,30,java.awt.Image.SCALE_SMOOTH);
 		thisIcon = new ImageIcon(newimg);
  	}
-	public void MEI_MSU(JTextPane jTextPane) throws IOException
+	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException
 	{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ=new FindColorRView();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI=new FindColorRRun();
