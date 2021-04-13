@@ -29,7 +29,7 @@ public class AddPGSearchPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_
 		panel = new Panel();
 		panel.setLayout(null);
 		panel.setBackground(Color.white);
-		JButton button = new JButton("ÕÍ≥…");
+		JButton button = new JButton("ÂÆåÊàê");
 		button.setBounds(0, 0, 150, 30);
 		button.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -39,7 +39,7 @@ public class AddPGSearchPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_
 			}
 		});
 		panel.add(button);
-		JButton readfile= new JButton("≈‰÷√DNN");
+		JButton readfile= new JButton("ÈÖçÁΩÆDNN");
 		readfile.setBounds(0, 35, 150, 65);
 		readfile.addActionListener(new ActionListener(){
 			@Override

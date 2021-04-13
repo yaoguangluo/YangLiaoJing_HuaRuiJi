@@ -15,7 +15,7 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 	MakeContainerYXTP c4;
 	public AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("addPGSearchPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("Ìí¼ÓÒ½Ñ§Í¼Æ¬ËÑË÷Ò³");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("æ·»åŠ åŒ»å­¦å›¾ç‰‡æœç´¢é¡µ");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
@@ -29,7 +29,7 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("addPGSearchPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("Ìí¼ÓÒ½Ñ§Í¼Æ¬ËÑË÷Ò³");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("æ·»åŠ åŒ»å­¦å›¾ç‰‡æœç´¢é¡µ");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);

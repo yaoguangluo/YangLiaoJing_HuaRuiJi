@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//DetaNeiWaiKeETLNode/OSI/OSU/SI/OSI/AVI/AEI/ACI/ASI/OVI/OEI/OCI/OSI/PVI/PEI/PCI/PSI/addLaoNianKePage/Dictionary.java=UTF-8
 encoding//DetaParserNeroMap/org/OEI/vpcs/neroMap/controller/imp/VerbalMapControllerImp.java=GBK
 encoding//DetaParserSensingMap/org/PEQ/tinos/sensing/test/RNN_IDETest.java=UTF-8
 encoding//DetaParserWordSegment/org/ASQ/PSU/tinos/test/DemoCogs.java=GBK
@@ -9,3 +10,6 @@ encoding//DetaYLJDataProcessor/PEU/NLPProcessorYLJ/StopSymbol_UTF8.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/SimpleTokenizer.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/USEnglishTokenizer.java=UTF-8
 encoding/DetaJavaVPCSBackend=UTF-8
+encoding/DetaNeiWaiKeETLNode=UTF-8
+encoding/DetaPGMedicineETLNode=UTF-8
+encoding/DetaSmallMedicineETLNode=UTF-8
