@@ -30,25 +30,12 @@ public class DrawFlashSide{
 		graphics2D.drawOval(x + 2, y + 52, 4, 4);
 		graphics2D.drawOval(x + 62, y + 26, 4, 4);	
 	}
-	public static void deleteFlashSide(Graphics2D graphics2D, int x, int y, int flash) {
-		if(0>= flash){
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawCosLine(x, y , graphics2D);
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawSinLine(x, y , graphics2D);
-		}
-		if(1== flash){
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawCosLine(x, y , graphics2D);
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawSinLine(x, y , graphics2D);
-		}
-		if(2<= flash){
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawCosLine(x, y , graphics2D);
-			graphics2D.setColor(new Color(240, 240, 240));
-			DrawSinLineVPS.drawSinLine(x, y , graphics2D);
-		}	
+	
+	public static void deleteFlashSide(Graphics2D graphics2D, int x, int y) {
+		graphics2D.setColor(new Color(240, 240, 240));
+		DrawSinLineVPS.drawCosLine(x, y , graphics2D);
+		graphics2D.setColor(new Color(240, 240, 240));
+		DrawSinLineVPS.drawSinLine(x, y , graphics2D);
 		drawConnect(graphics2D, x, y);	
 	}
 }

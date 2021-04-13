@@ -29,7 +29,7 @@ import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkList;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.Sort;
 //作者: 罗瑶光
-public class ThisCanvas extends JPanel implements MouseMotionListener
+public class ThisCanvasBackUp extends JPanel implements MouseMotionListener
 , MouseListener, ItemListener, ActionListener, Runnable{
 	private static final long serialVersionUID = 1L;
 	public Thread threadApplet;
@@ -68,7 +68,7 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 	public DynamicLineUpdaterVPS dynamicLineUpdater;
 	public DrawArrowVPS drawArrow;
 	public CheckRangeVPS checkRange;
-	public ThisCanvas(Thread threadApplet, LinkList first, NodeShow nodeView
+	public ThisCanvasBackUp(Thread threadApplet, LinkList first, NodeShow nodeView
 			, PopupMenu nodeMenu, JTextPane rightBotJTextPane){
 		this.setLayout(null);
 		this.addMouseListener(this);
@@ -217,17 +217,19 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 			LinkNode node= first.first;
 			while(node!= null){
 				node.x= node.x< 0? 10: node.x;
-				node.x= node.x> this.getWidth()- 100? this.getWidth()- 100: node.x;
+				node.x= node.x> this.getWidth()-100? this.getWidth()-100: node.x;
 				node.y= node.y< 0? 10: node.y;
-				node.y= node.y> this.getHeight()- 100? this.getHeight()- 100: node.y;
+				node.y= node.y> this.getHeight()-100? this.getHeight()-100: node.y;
 			
 				if(!node.actionNodeLeft&& !node.leftChoose) { 
-					g.drawImage(node.thisFace.thisImage, node.x+ 19, node.y+ 12, this);
+					g.drawImage(node.thisFace.thisImage, node.x+19, node.y+12, this);
 				}
-				node.flash= node.flash> 100? 0: node.flash;
+				if(node.flash> 100){
+					node.flash= 0;
+				}
 				//如果一个节点是移动节点 或者这个节点的连接前序节点是移动节点 
 				if(node.actionNodeLeft) {
-						DrawFlashSide.deleteFlashSide(graphics2D, node.oldx, node.oldy);
+					DrawFlashSide.deleteFlashSide(graphics2D, node.oldx, node.oldy);
 				}
 				if(0== isOperation) {
 					DrawFlashSide.drawFlashSide(graphics2D, node.x, node.y, node.flash++ % 3);
@@ -243,11 +245,84 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 				graphics2D.setColor(new	Color(25, 25, 112));
 				if(node.beconnect){
 					if(node.tBeconnect){
-						arrowTargetTop(node, graphics2D);
+						//记录arrow 同时 下一次画图, 清除该上一次 arrow
+						if(node.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
+									, node.oldx+ 14, node.oldy- 6);
+							graphics2D.setColor(new	Color(25, 25, 112));
+						}
+						drawArrow.doDrawArrow(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
+								, node.x+ 14, node.y- 6);
+						if(node.tNode.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
+									, node.x+ 14, node.y- 6);
+							graphics2D.setColor(new	Color(25, 25, 112));
+							drawArrow.doDrawArrow(graphics2D, node.tNode.x+ 62, node.tNode.y+ 28
+									, node.x+ 14, node.y- 6);
+							node.tBeconnectX= node.tNode.x;
+							node.tBeconnectY= node.tNode.y;
+						}
+						if(!node.leftChoose&& node.rightChoose){
+							graphics2D.setColor(new	Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
+							graphics2D.setColor(Color.black);
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
+							graphics2D.setColor(new	Color(25, 25, 112));	
+						}
 					}if(node.mBeconnect){
-						arrowTargetMed(node, graphics2D);
+						if(node.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
+									, node.oldx- 4, node.oldy+ 25);
+							graphics2D.setColor(new	Color(25, 25, 112));
+						}
+						drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
+								, node.x- 4, node.y+ 25);
+						if(node.mNode.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
+									, node.x- 4, node.y+ 25);
+							graphics2D.setColor(new	Color(25, 25, 112));
+							drawArrow.doDrawArrow(graphics2D,  node.mNode.x+ 62, node.mNode.y+ 28
+									, node.x- 4, node.y+ 25);
+							node.mBeconnectX= node.mNode.x;
+							node.mBeconnectY= node.mNode.y;	
+						}
+						if(!node.leftChoose&& node.rightChoose){
+							graphics2D.setColor(new	Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
+							graphics2D.setColor(Color.black);
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
+							graphics2D.setColor(new	Color(25, 25, 112));	
+						}
 					}if(node.dBeconnect){
-						arrowTargetBot(node, graphics2D);
+						if(node.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
+									, node.oldx+ 6, node.oldy+ 55);
+							graphics2D.setColor(new	Color(25, 25, 112));
+						}
+						drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
+								, node.x+ 6, node.y+ 55);
+						if(node.dNode.actionNodeLeft) {
+							graphics2D.setColor(new Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
+									, node.oldx+ 6, node.oldy+ 55);
+							graphics2D.setColor(new	Color(25, 25, 112));
+							drawArrow.doDrawArrow(graphics2D,  node.dNode.x+ 62, node.dNode.y+ 28
+									, node.x+ 6, node.y+ 55);
+							node.dBeconnectX= node.dNode.x;
+							node.dBeconnectY= node.dNode.y;
+						}			
+						if(!node.leftChoose&& node.rightChoose){
+							graphics2D.setColor(new	Color(240, 240, 240));
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, newx, newy);
+							graphics2D.setColor(Color.black);
+							drawArrow.doDrawArrow(graphics2D, oldX, oldY, currentX, currentY);
+							graphics2D.setColor(new	Color(25, 25, 112));	
+						}
 					}
 				}else if(!node.leftChoose&& node.rightChoose){
 					graphics2D.setColor(new	Color(240, 240, 240));
@@ -265,78 +340,5 @@ public class ThisCanvas extends JPanel implements MouseMotionListener
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	//下面 这些函数是 已调试通过的 按sonar qube最高认证编写方法进行ThisCanvas函数迭代化简, 因为函数call 严重消耗指令计算时间
-	//, 浪费算能, 大家可以继续用原来的ThisCanvasBackup函数替换,
-	//作者罗瑶光
-	private void arrowTargetTop(LinkNode node, Graphics2D graphics2D) {
-		//记录arrow 同时 下一次画图, 清除该上一次 arrow
-		arrowTargetThis(node, graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
-				, node.oldx+ 14, node.oldy- 6, node.x+ 14, node.y- 6);
-		if(node.tNode.actionNodeLeft) {
-			arrowTargetNext(graphics2D, node.tBeconnectX+ 62, node.tBeconnectY+ 28
-					, node.x+ 14, node.y- 6);
-			node.tBeconnectX= node.tNode.x;
-			node.tBeconnectY= node.tNode.y;
-		}
-		if(!node.leftChoose&& node.rightChoose){
-			arrowTargetLink(graphics2D, oldX , oldY, newx, newy, currentX, currentY);	
-		}
 	}	
-	
-	
-	private void arrowTargetMed(LinkNode node, Graphics2D graphics2D) {
-		arrowTargetThis(node, graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
-				, node.oldx- 4, node.oldy+ 25, node.x- 4, node.y+ 25);
-		if(node.mNode.actionNodeLeft) {
-			arrowTargetNext(graphics2D, node.mBeconnectX+ 62, node.mBeconnectY+ 28
-					, node.x- 4, node.y+ 25);
-			node.mBeconnectX= node.mNode.x;
-			node.mBeconnectY= node.mNode.y;	
-		}
-		if(!node.leftChoose&& node.rightChoose){
-			arrowTargetLink(graphics2D, oldX , oldY, newx, newy, currentX, currentY);	
-		}
-	}	
-	
-	private void arrowTargetBot(LinkNode node, Graphics2D graphics2D) {
-		arrowTargetThis(node, graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
-				, node.oldx+ 6, node.oldy+ 55, node.x+ 6, node.y+ 55);
-		if(node.dNode.actionNodeLeft) {
-			arrowTargetNext(graphics2D, node.dBeconnectX+ 62, node.dBeconnectY+ 28
-					, node.x+ 6, node.y+ 55);
-			node.dBeconnectX= node.dNode.x;
-			node.dBeconnectY= node.dNode.y;
-		}			
-		if(!node.leftChoose&& node.rightChoose){
-			arrowTargetLink(graphics2D, oldX , oldY, newx, newy, currentX, currentY);	
-		}
-	}	
-	
-	private void arrowTargetThis(LinkNode node, Graphics2D graphics2D, int tX, int tY
-			, int oX, int oY,int x, int y) {	
-		if(node.actionNodeLeft) {
-			graphics2D.setColor(new Color(240, 240, 240));
-			drawArrow.doDrawArrow(graphics2D, tX , tY, oX, oY);
-			graphics2D.setColor(new	Color(25, 25, 112));
-		}
-		drawArrow.doDrawArrow(graphics2D, tX , tY, x, y);
-	}
-	
-    private void arrowTargetNext(Graphics2D graphics2D, int tX , int tY, int oX, int oY) {	
-    	graphics2D.setColor(new Color(240, 240, 240));
-		drawArrow.doDrawArrow(graphics2D, tX, tY, oX, oY);
-		graphics2D.setColor(new	Color(25, 25, 112));
-		drawArrow.doDrawArrow(graphics2D, tX, tY, oX, oY);
-	}
-    
-    private void arrowTargetLink(Graphics2D graphics2D, int oX , int oY, int nX, int nY
-    		, int cX, int cY) {	
-    	graphics2D.setColor(new	Color(240, 240, 240));
-		drawArrow.doDrawArrow(graphics2D, oX, oY, nX, nY);
-		graphics2D.setColor(Color.black);
-		drawArrow.doDrawArrow(graphics2D, oX, oY, cX, cY);
-		graphics2D.setColor(new	Color(25, 25, 112));	
-   	}
 }
