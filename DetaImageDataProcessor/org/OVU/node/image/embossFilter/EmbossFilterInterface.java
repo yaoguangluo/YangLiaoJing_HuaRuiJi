@@ -19,12 +19,14 @@ public class EmbossFilterInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_M
 	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ = new EmbossFilterView();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI = new EmbossFilterRun();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES = new EmbossFilterPanel((EmbossFilterRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI);
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES 
+		= new EmbossFilterPanel((EmbossFilterRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI);
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.config();
 		showed = false;
 	}
 	public void OPE_E(JTextPane jTextPane)  throws FileNotFoundException, IOException{
-		((EmbossFilterRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((EmbossFilterView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+		((EmbossFilterRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI)
+		.run((EmbossFilterView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane)  throws Exception{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.view();

@@ -10,12 +10,10 @@ import java.awt.Frame;
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
-public class Show3DPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES
-{
+public class Show3DPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private FileDialog filedialog;
-	public Show3DPanel(final Show3DRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI)
-	{
+	public Show3DPanel(final Show3DRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI){
 		setLayout(null);
 		scrollPane = new ScrollPane();
 		add(scrollPane);
@@ -27,8 +25,7 @@ public class Show3DPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES
 		JButton button = new JButton("Finish");
 		button.setBounds(0, 0, 100, 30);
 		button.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e){
             	System.out.println(e.getSource());
                 	close=true;
                 	SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value=1;
@@ -51,8 +48,7 @@ public class Show3DPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES
 		close=false;
 		
  	}
-	public void config()
-	{    
+	public void config(){    
 		System.out.println("configued");      
 	}
 }

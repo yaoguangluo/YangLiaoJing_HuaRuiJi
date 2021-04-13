@@ -15,8 +15,9 @@ public class MovieTransferOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	public MovieTransferOSU_MSQ_OPE_OPC_ECI()throws IOException{	
  	}
 	@SuppressWarnings({ "deprecation", "unused" })
-	public void run(final MovieTransferOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException, UnsupportedAudioFileException
-	, NoProcessorException, NoDataSinkException, NotRealizedError, InterruptedException{		
+	public void run(final MovieTransferOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) 
+			throws IOException, UnsupportedAudioFileException, NoProcessorException, NoDataSinkException
+			, NotRealizedError, InterruptedException{		
 		File f = new File(this.filepath);
 		Export e=new Export(f.toURL().toString());	
 	    SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout=toplygin;

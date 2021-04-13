@@ -13,12 +13,10 @@ import java.awt.Frame;
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
-public class AVItoLYGOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES
-{
+public class AVItoLYGOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private FileDialog filedialog;
-	public AVItoLYGOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AVItoLYGOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI)
-	{
+	public AVItoLYGOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AVItoLYGOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI){
 		setLayout(null);
 		scrollPane = new ScrollPane();
 		add(scrollPane);
@@ -28,8 +26,7 @@ public class AVItoLYGOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU
 		JButton button = new JButton("Finish");
 		button.setBounds(0, 0, 200, 30);
 		button.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
             	System.out.println(e.getSource());
                 	close=true;
                 	SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value=1;
