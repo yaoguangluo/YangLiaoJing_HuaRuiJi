@@ -36,17 +36,26 @@ public class DetaLabelConjunction{
 				subString= name.substring(0, 2);
 			}
 			if(name.length()> 5) {
-				subString= name.substring(0, 3);
+				subString= name.substring(0, 5);
 			}
 			if(name.length()> 7) {
-				subString= name.substring(0, 4);
+				subString= name.substring(0, 7);
 			}
-			if(name.length()> 9) {
-				subString= name.substring(0, 6);
-			}
+			if(name.length()> 8) {
+				subString= name.substring(0, 8);
+			}	
+			if(name.length()> 10) {//之后太长截的取中文的部分
+				subString= name.substring(0, 7);
+			}		
 			if(string.substring(5, 6+ subString.length()).toUpperCase().contains(subString.toUpperCase())) {
 				detaLabel.setTag(string, true);
 			}
+//			subString= name.replace(":", "");
+//			
+//			if(string.toUpperCase().contains(subString.toUpperCase())) {
+//				detaLabel.setTag(string, true);
+//			}
+			
 		}
 	}
 }
