@@ -8,13 +8,13 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
 import ME.sample.App;
 import comp.detaButton.DetaButton;
+import comp.detaLabel.DetaLabel;
 
 public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, KeyListener, ActionListener{
 
@@ -24,12 +24,12 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.setLayout(null);
 		this.setBounds(0, 0, 1180, 610);
 		this.setBackground(Color.BLACK);	
-		
+
 		//1做表 左边名称 右边输入框
 		//1做表 左边名称 右边输入框
-		JLabel 诊断结果= new JLabel("诊断结果 :");  
+		DetaLabel 诊断结果= new DetaLabel("诊断结果 :");  
 		诊断结果.setForeground(Color.white);
-		诊断结果.setBounds(10, 20+ 300+ 90, 100, 50);
+		诊断结果.setBounds(10, 20+ 300+ 90, 100, 20);
 		诊断结果_box= new JTextField();
 		诊断结果_box.setBounds(10, 33+ 325+ 90, 1070, 120);
 		诊断结果_box.addActionListener(new ActionListener(){
@@ -111,9 +111,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai22= new JLabel("全血黏度:");  
+		DetaLabel baiDanBai22= new DetaLabel("全血黏度:");  
 		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*0, 20+ 0, 100, 50);
+		baiDanBai22.setBounds(10+220*0, 32+ 0, 100, 20);
 		JTextField baiDanBai22_box= new JTextField();
 		baiDanBai22_box.setBounds(10+ 110+220*0, 33+ 0, 80, 20);
 		baiDanBai22_box.addActionListener(new ActionListener(){
@@ -127,9 +127,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(baiDanBai22);
 		this.add(baiDanBai22_box);	
 
-		JLabel label222= new JLabel("肿瘤标记抗原242检测ca242:");  
+		DetaLabel label222= new DetaLabel("肿瘤标记抗原242检测ca242:");  
 		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*0, 20+ 25*1, 100, 50);
+		label222.setBounds(10+220*0, 32+ 25*1, 100, 20);
 		JTextField label222_box= new JTextField();
 		label222_box.setBounds(10+ 110+220*0, 33+ 25*1, 80, 20);
 		label222_box.addActionListener(new ActionListener(){
@@ -142,9 +142,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label222);
 		this.add(label222_box);	
 
-		JLabel label322= new JLabel("过敏原检测（1）吸入组ⅰ（2）吸入组ⅱ（3）食物组ⅲ（4）食物组ⅳivtivt-ⅰivt-ⅱivt-ⅲivt-ⅳ :");  
+		DetaLabel label322= new DetaLabel("过敏原检测（1）吸入组ⅰ（2）吸入组ⅱ（3）食物组ⅲ（4）食物组ⅳivtivt-ⅰivt-ⅱivt-ⅲivt-ⅳ :");  
 		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*0, 20+ 25*2, 100, 50);
+		label322.setBounds(10+220*0, 32+ 25*2, 100, 20);
 		JTextField label322_box= new JTextField();
 		label322_box.setBounds(10+ 110+220*0, 33+ 25*2, 80, 20);
 		label322_box.addActionListener(new ActionListener(){
@@ -157,9 +157,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label322);
 		this.add(label322_box);	
 
-		JLabel label422= new JLabel("钙ca:");  
+		DetaLabel label422= new DetaLabel("钙ca:");  
 		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*0, 20+ 25* 3, 100, 50);
+		label422.setBounds(10+220*0, 32+ 25* 3, 100, 20);
 		JTextField label422_box= new JTextField();
 		label422_box.setBounds(10+ 110+220*0, 33+ 25* 3, 80, 20);
 		label422_box.addActionListener(new ActionListener(){
@@ -172,9 +172,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label422);
 		this.add(label422_box);	
 
-		JLabel label522= new JLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
+		DetaLabel label522= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
 		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*0, 20+ 25*4, 100, 50);
+		label522.setBounds(10+220*0, 32+ 25*4, 100, 20);
 		JTextField label522_box= new JTextField();
 		label522_box.setBounds(10+ 110+220*0, 33+ 25*4, 80, 20);
 		label522_box.addActionListener(new ActionListener(){
@@ -187,9 +187,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label522);
 		this.add(label522_box);	
 
-		JLabel label622= new JLabel("尿17-羟固醇17-oh :");  
+		DetaLabel label622= new DetaLabel("尿17-羟固醇17-oh :");  
 		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*0, 20+ 25*5, 100, 50);
+		label622.setBounds(10+220*0, 32+ 25*5, 100, 20);
 		JTextField label622_box= new JTextField();
 		label622_box.setBounds(10+ 110+220*0, 33+ 25*5, 80, 20);
 		label622_box.addActionListener(new ActionListener(){
@@ -203,9 +203,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label622_box);	
 
 		//7
-		JLabel label722= new JLabel("促黄体生成素lh :");  
+		DetaLabel label722= new DetaLabel("促黄体生成素lh :");  
 		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*0, 20+ 25*6, 100, 50);
+		label722.setBounds(10+220*0, 32+ 25*6, 100, 20);
 		JTextField label722_box= new JTextField();
 		label722_box.setBounds(10+ 110+220*0, 33+ 25*6, 80, 20);
 		label722_box.addActionListener(new ActionListener(){
@@ -218,9 +218,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label722);
 		this.add(label722_box);	
 		//8
-		JLabel label6822= new JLabel("乙肝表面抗原hbsag:");  
+		DetaLabel label6822= new DetaLabel("乙肝表面抗原hbsag:");  
 		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*0, 20+ 25*7, 100, 50);
+		label6822.setBounds(10+220*0, 32+ 25*7, 100, 20);
 		JTextField label6822_box= new JTextField();
 		label6822_box.setBounds(10+ 110+220*0, 33+ 25*7, 80, 20);
 		label6822_box.addActionListener(new ActionListener(){
@@ -233,9 +233,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6822);
 		this.add(label6822_box);	
 		//9
-		JLabel label6922= new JLabel("毛囊虫镜检demodexfolliculorumexamination :");  
+		DetaLabel label6922= new DetaLabel("毛囊虫镜检demodexfolliculorumexamination :");  
 		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*0, 20+ 25*8, 100, 50);
+		label6922.setBounds(10+220*0, 32+ 25*8, 100, 20);
 		JTextField label6922_box= new JTextField();
 		label6922_box.setBounds(10+ 110+220*0, 33+ 25*8, 80, 20);
 		label6922_box.addActionListener(new ActionListener(){
@@ -248,9 +248,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6922);
 		this.add(label6922_box);	
 		//10
-		JLabel label61022= new JLabel("促肾上腺皮质激素acth :");  
+		DetaLabel label61022= new DetaLabel("促肾上腺皮质激素acth :");  
 		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*0, 20+ 25*9, 100, 50);
+		label61022.setBounds(10+220*0, 32+ 25*9, 100, 20);
 		JTextField label61022_box= new JTextField();
 		label61022_box.setBounds(10+ 110+220*0, 33+ 25*9, 80, 20);
 		label61022_box.addActionListener(new ActionListener(){
@@ -263,9 +263,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61022);
 		this.add(label61022_box);	
 		//11
-		JLabel label61122= new JLabel("弓形体igm,抗体阳性定性toxo:");  
+		DetaLabel label61122= new DetaLabel("弓形体igm,抗体阳性定性toxo:");  
 		label61122.setForeground(Color.WHITE);
-		label61122.setBounds(10+220*0, 20+ 25*10, 100, 50);
+		label61122.setBounds(10+220*0, 32+ 25*10, 100, 20);
 		JTextField label61122_box= new JTextField();
 		label61122_box.setBounds(10+ 110+220*0, 33+ 25*10, 80, 20);
 		label61122_box.addActionListener(new ActionListener(){
@@ -278,9 +278,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61122);
 		this.add(label61122_box);	
 		//12
-		JLabel label61222= new JLabel("载脂蛋白ap0bap0b:");  
+		DetaLabel label61222= new DetaLabel("载脂蛋白ap0bap0b:");  
 		label61222.setForeground(Color.WHITE);
-		label61222.setBounds(10+220*0, 20+ 25*11, 100, 50);
+		label61222.setBounds(10+220*0, 32+ 25*11, 100, 20);
 		JTextField label61222_box= new JTextField();
 		label61222_box.setBounds(10+ 110+220*0, 33+ 25*11, 80, 20);
 		label61222_box.addActionListener(new ActionListener(){
@@ -298,9 +298,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61222);
 		this.add(label61222_box);	
 		//13
-		JLabel label61322= new JLabel("尿酸uric :");  
+		DetaLabel label61322= new DetaLabel("尿酸uric :");  
 		label61322.setForeground(Color.WHITE);
-		label61322.setBounds(10+220*0, 20+ 25*12, 100, 50);
+		label61322.setBounds(10+220*0, 32+ 25*12, 100, 20);
 		JTextField label61322_box= new JTextField();
 		label61322_box.setBounds(10+ 110+220*0, 33+ 25*12, 80, 20);
 		label61322_box.addActionListener(new ActionListener(){
@@ -318,9 +318,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61322);
 		this.add(label61322_box);	
 		//14
-		JLabel label61422= new JLabel("胰高糖素 :");  
+		DetaLabel label61422= new DetaLabel("胰高糖素 :");  
 		label61422.setForeground(Color.WHITE);
-		label61422.setBounds(10+220*0, 20+ 25*13, 100, 50);
+		label61422.setBounds(10+220*0, 32+ 25*13, 100, 20);
 		JTextField label61422_box= new JTextField();
 		label61422_box.setBounds(10+ 110+220*0, 33+ 25*13, 80, 20);
 		label61422_box.addActionListener(new ActionListener(){
@@ -346,9 +346,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 	private void addFifthColomns(JTextField 诊断结果_box2) {
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai222223= new JLabel("军团菌抗原检测:");  
+		DetaLabel baiDanBai222223= new DetaLabel("军团菌抗原检测:");  
 		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*1, 20+ 0, 100, 50);
+		baiDanBai222223.setBounds(10+220*1, 32+ 0, 100, 20);
 		JTextField baiDanBai222223_box= new JTextField();
 		baiDanBai222223_box.setBounds(10+ 110+220*1, 33+ 0, 80, 20);
 		baiDanBai222223_box.addActionListener(new ActionListener(){
@@ -361,9 +361,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(baiDanBai222223);
 		this.add(baiDanBai222223_box);	
 
-		JLabel label2222223= new JLabel("真菌培养取材cultureoffungi :");  
+		DetaLabel label2222223= new DetaLabel("真菌培养取材cultureoffungi :");  
 		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*1, 20+ 25*1, 100, 50);
+		label2222223.setBounds(10+220*1, 32+ 25*1, 100, 20);
 		JTextField label2222223_box= new JTextField();
 		label2222223_box.setBounds(10+ 110+220*1, 33+ 25*1, 80, 20);
 		label2222223_box.addActionListener(new ActionListener(){
@@ -376,9 +376,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label2222223);
 		this.add(label2222223_box);	
 
-		JLabel label3222223= new JLabel("转肽酶ggt :");  
+		DetaLabel label3222223= new DetaLabel("转肽酶ggt :");  
 		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*1, 20+ 25*2, 100, 50);
+		label3222223.setBounds(10+220*1, 32+ 25*2, 100, 20);
 		JTextField label3222223_box= new JTextField();
 		label3222223_box.setBounds(10+ 110+220*1, 33+ 25*2, 80, 20);
 		label3222223_box.addActionListener(new ActionListener(){
@@ -396,9 +396,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label3222223);
 		this.add(label3222223_box);	
 
-		JLabel label4222223= new JLabel("免疫组化验查immunohistophathol-ogicstain :");  
+		DetaLabel label4222223= new DetaLabel("免疫组化验查immunohistophathol-ogicstain :");  
 		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+220*1, 20+ 25* 3, 100, 50);
+		label4222223.setBounds(10+220*1, 32+ 25* 3, 100, 20);
 		JTextField label4222223_box= new JTextField();
 		label4222223_box.setBounds(10+ 110+220*1, 33+ 25* 3, 80, 20);
 		label4222223_box.addActionListener(new ActionListener(){
@@ -411,9 +411,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label4222223);
 		this.add(label4222223_box);	
 
-		JLabel label5222223= new JLabel("四项诱导血小板聚集功能测试（mulitipleagentplateletaggregationtest）4-pagt :");  
+		DetaLabel label5222223= new DetaLabel("四项诱导血小板聚集功能测试（mulitipleagentplateletaggregationtest）4-pagt :");  
 		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*1, 20+ 25*4, 100, 50);
+		label5222223.setBounds(10+220*1, 32+ 25*4, 100, 20);
 		JTextField label5222223_box= new JTextField();
 		label5222223_box.setBounds(10+ 110+220*1, 33+ 25*4, 80, 20);
 		label5222223_box.addActionListener(new ActionListener(){
@@ -426,9 +426,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label5222223);
 		this.add(label5222223_box);	
 
-		JLabel label6222223= new JLabel("髓鞘碱性蛋白mbp :");  
+		DetaLabel label6222223= new DetaLabel("髓鞘碱性蛋白mbp :");  
 		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*1, 20+ 25*5, 100, 50);
+		label6222223.setBounds(10+220*1, 32+ 25*5, 100, 20);
 		JTextField label6222223_box= new JTextField();
 		label6222223_box.setBounds(10+ 110+220*1, 33+ 25*5, 80, 20);
 		label6222223_box.addActionListener(new ActionListener(){
@@ -442,9 +442,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6222223_box);	
 
 		//7
-		JLabel label7222223= new JLabel("皮肤病理活检dermatopathologicalexamination :");  
+		DetaLabel label7222223= new DetaLabel("皮肤病理活检dermatopathologicalexamination :");  
 		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*1, 20+ 25*6, 100, 50);
+		label7222223.setBounds(10+220*1, 32+ 25*6, 100, 20);
 		JTextField label7222223_box= new JTextField();
 		label7222223_box.setBounds(10+ 110+220*1, 33+ 25*6, 80, 20);
 		label7222223_box.addActionListener(new ActionListener(){
@@ -457,9 +457,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label7222223);
 		this.add(label7222223_box);	
 		//8
-		JLabel label68222223= new JLabel("血（尿）锌zn :");  
+		DetaLabel label68222223= new DetaLabel("血（尿）锌zn :");  
 		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*1, 20+ 25*7, 100, 50);
+		label68222223.setBounds(10+220*1, 32+ 25*7, 100, 20);
 		JTextField label68222223_box= new JTextField();
 		label68222223_box.setBounds(10+ 110+220*1, 33+ 25*7, 80, 20);
 		label68222223_box.addActionListener(new ActionListener(){
@@ -477,9 +477,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label68222223);
 		this.add(label68222223_box);	
 		//9
-		JLabel label69222223= new JLabel("尿皮质醇尿皮质醇 :");  
+		DetaLabel label69222223= new DetaLabel("尿皮质醇尿皮质醇 :");  
 		label69222223.setForeground(Color.WHITE);
-		label69222223.setBounds(10+220*1, 20+ 25*8, 100, 50);
+		label69222223.setBounds(10+220*1, 32+ 25*8, 100, 20);
 		JTextField label69222223_box= new JTextField();
 		label69222223_box.setBounds(10+ 110+220*1, 33+ 25*8, 80, 20);
 		label69222223_box.addActionListener(new ActionListener(){
@@ -497,9 +497,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label69222223);
 		this.add(label69222223_box);	
 		//10
-		JLabel label610222223= new JLabel("白色念珠菌抗原:");  
+		DetaLabel label610222223= new DetaLabel("白色念珠菌抗原:");  
 		label610222223.setForeground(Color.WHITE);
-		label610222223.setBounds(10+220*1, 20+ 25*9, 100, 50);
+		label610222223.setBounds(10+220*1, 32+ 25*9, 100, 20);
 		JTextField label610222223_box= new JTextField();
 		label610222223_box.setBounds(10+ 110+220*1, 33+ 25*9, 80, 20);
 		label610222223_box.addActionListener(new ActionListener(){
@@ -512,9 +512,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label610222223);
 		this.add(label610222223_box);	
 		//11
-		JLabel label611222223= new JLabel("乙肝两对半hbeab :");  
+		DetaLabel label611222223= new DetaLabel("乙肝两对半hbeab :");  
 		label611222223.setForeground(Color.WHITE);
-		label611222223.setBounds(10+220*1, 20+ 25*10, 100, 50);
+		label611222223.setBounds(10+220*1, 32+ 25*10, 100, 20);
 		JTextField label611222223_box= new JTextField();
 		label611222223_box.setBounds(10+ 110+220*1, 33+ 25*10, 80, 20);
 		label611222223_box.addActionListener(new ActionListener(){
@@ -527,9 +527,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label611222223);
 		this.add(label611222223_box);	
 		//12
-		JLabel label612222223= new JLabel("早老素-1ps-1:");  
+		DetaLabel label612222223= new DetaLabel("早老素-1ps-1:");  
 		label612222223.setForeground(Color.WHITE);
-		label612222223.setBounds(10+220*1, 20+ 25*11, 100, 50);
+		label612222223.setBounds(10+220*1, 32+ 25*11, 100, 20);
 		JTextField label612222223_box= new JTextField();
 		label612222223_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
 		label612222223_box.addActionListener(new ActionListener(){
@@ -542,9 +542,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label612222223);
 		this.add(label612222223_box);	
 		//13
-		JLabel label613222223= new JLabel("总蛋白tp:");  
+		DetaLabel label613222223= new DetaLabel("总蛋白tp:");  
 		label613222223.setForeground(Color.WHITE);
-		label613222223.setBounds(10+220*1, 20+ 25*12, 100, 50);
+		label613222223.setBounds(10+220*1, 32+ 25*12, 100, 20);
 		JTextField label613222223_box= new JTextField();
 		label613222223_box.setBounds(10+ 110+220*1, 33+ 25*12, 80, 20);
 		label613222223_box.addActionListener(new ActionListener(){
@@ -562,9 +562,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label613222223);
 		this.add(label613222223_box);	
 		//14
-		JLabel label614222223= new JLabel("肺炎支原体igg:");  
+		DetaLabel label614222223= new DetaLabel("肺炎支原体igg:");  
 		label614222223.setForeground(Color.WHITE);
-		label614222223.setBounds(10+220*1, 20+ 25*13, 100, 50);
+		label614222223.setBounds(10+220*1, 32+ 25*13, 100, 20);
 		JTextField label614222223_box= new JTextField();
 		label614222223_box.setBounds(10+ 110+220*1, 33+ 25*13, 80, 20);
 		label614222223_box.addActionListener(new ActionListener(){
@@ -581,9 +581,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 	void addFourthColomns(JTextField 诊断结果_box2) {
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai22= new JLabel("淋球菌培养取材cultureofneisseriagonorrhoen:");  
+		DetaLabel baiDanBai22= new DetaLabel("淋球菌培养取材cultureofneisseriagonorrhoen:");  
 		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*2, 20+ 0, 100, 50);
+		baiDanBai22.setBounds(10+220*2, 32+ 0, 100, 20);
 		JTextField baiDanBai22_box= new JTextField();
 		baiDanBai22_box.setBounds(10+ 110+220*2, 33+ 0, 80, 20);
 		baiDanBai22_box.addActionListener(new ActionListener(){
@@ -596,9 +596,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(baiDanBai22);
 		this.add(baiDanBai22_box);	
 
-		JLabel label222= new JLabel("尿酸（尿）:");  
+		DetaLabel label222= new DetaLabel("尿酸（尿）:");  
 		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*2, 20+ 25*1, 100, 50);
+		label222.setBounds(10+220*2, 32+ 25*1, 100, 20);
 		JTextField label222_box= new JTextField();
 		label222_box.setBounds(10+ 110+220*2, 33+ 25*1, 80, 20);
 		label222_box.addActionListener(new ActionListener(){
@@ -616,9 +616,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label222);
 		this.add(label222_box);	
 
-		JLabel label322= new JLabel("血小板聚集:");  
+		DetaLabel label322= new DetaLabel("血小板聚集:");  
 		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*2, 20+ 25*2, 100, 50);
+		label322.setBounds(10+220*2, 32+ 25*2, 100, 20);
 		JTextField label322_box= new JTextField();
 		label322_box.setBounds(10+ 110+220*2, 33+ 25*2, 80, 20);
 		label322_box.addActionListener(new ActionListener(){
@@ -636,9 +636,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label322);
 		this.add(label322_box);	
 
-		JLabel label422= new JLabel("谷草转氨酶ast:");  
+		DetaLabel label422= new DetaLabel("谷草转氨酶ast:");  
 		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*2, 20+ 25* 3, 100, 50);
+		label422.setBounds(10+220*2, 32+ 25* 3, 100, 20);
 		JTextField label422_box= new JTextField();
 		label422_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
 		label422_box.addActionListener(new ActionListener(){
@@ -656,9 +656,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label422);
 		this.add(label422_box);	
 
-		JLabel label522= new JLabel("甲肝抗体-igmhav-igm:");  
+		DetaLabel label522= new DetaLabel("甲肝抗体-igmhav-igm:");  
 		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*2, 20+ 25*4, 100, 50);
+		label522.setBounds(10+220*2, 32+ 25*4, 100, 20);
 		JTextField label522_box= new JTextField();
 		label522_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
 		label522_box.addActionListener(new ActionListener(){
@@ -671,9 +671,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label522);
 		this.add(label522_box);	
 
-		JLabel label622= new JLabel("生长激素gh:");  
+		DetaLabel label622= new DetaLabel("生长激素gh:");  
 		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*2, 20+ 25*5, 100, 50);
+		label622.setBounds(10+220*2, 32+ 25*5, 100, 20);
 		JTextField label622_box= new JTextField();
 		label622_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
 		label622_box.addActionListener(new ActionListener(){
@@ -694,9 +694,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label622_box);	
 
 		//7
-		JLabel label722= new JLabel("脂肪酶lipase:");  
+		DetaLabel label722= new DetaLabel("脂肪酶lipase:");  
 		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*2, 20+ 25*6, 100, 50);
+		label722.setBounds(10+220*2, 32+ 25*6, 100, 20);
 		JTextField label722_box= new JTextField();
 		label722_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
 		label722_box.addActionListener(new ActionListener(){
@@ -720,9 +720,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label722);
 		this.add(label722_box);	
 		//8
-		JLabel label6822= new JLabel("血浆叶酸测定fa:");  
+		DetaLabel label6822= new DetaLabel("血浆叶酸测定fa:");  
 		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*2, 20+ 25*7, 100, 50);
+		label6822.setBounds(10+220*2, 32+ 25*7, 100, 20);
 		JTextField label6822_box= new JTextField();
 		label6822_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
 		label6822_box.addActionListener(new ActionListener(){
@@ -735,9 +735,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6822);
 		this.add(label6822_box);	
 		//9
-		JLabel label6922= new JLabel("ck-mm同工酶:");  
+		DetaLabel label6922= new DetaLabel("ck-mm同工酶:");  
 		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*2, 20+ 25*8, 100, 50);
+		label6922.setBounds(10+220*2, 32+ 25*8, 100, 20);
 		JTextField label6922_box= new JTextField();
 		label6922_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
 		label6922_box.addActionListener(new ActionListener(){
@@ -750,9 +750,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6922);
 		this.add(label6922_box);	
 		//10
-		JLabel label61022= new JLabel("特异性酯酶双染色:");  
+		DetaLabel label61022= new DetaLabel("特异性酯酶双染色:");  
 		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*2, 20+ 25*9, 100, 50);
+		label61022.setBounds(10+220*2, 32+ 25*9, 100, 20);
 		JTextField label61022_box= new JTextField();
 		label61022_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
 		label61022_box.addActionListener(new ActionListener(){
@@ -765,9 +765,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61022);
 		this.add(label61022_box);	
 		//11
-		JLabel label61122= new JLabel("铁染色:");  
+		DetaLabel label61122= new DetaLabel("铁染色:");  
 		label61122.setForeground(Color.WHITE);
-		label61122.setBounds(10+220*2, 20+ 25*10, 100, 50);
+		label61122.setBounds(10+220*2, 32+ 25*10, 100, 20);
 		JTextField label61122_box= new JTextField();
 		label61122_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
 		label61122_box.addActionListener(new ActionListener(){
@@ -780,9 +780,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61122);
 		this.add(label61122_box);	
 		//12
-		JLabel label61222= new JLabel("铁染色:");  
+		DetaLabel label61222= new DetaLabel("铁染色:");  
 		label61222.setForeground(Color.WHITE);
-		label61222.setBounds(10+220*2, 20+ 25*11, 100, 50);
+		label61222.setBounds(10+220*2, 32+ 25*11, 100, 20);
 		JTextField label61222_box= new JTextField();
 		label61222_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
 		label61222_box.addActionListener(new ActionListener(){
@@ -795,9 +795,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61222);
 		this.add(label61222_box);	
 		//13
-		JLabel label61322= new JLabel("乙肝两对半hbeag:");  
+		DetaLabel label61322= new DetaLabel("乙肝两对半hbeag:");  
 		label61322.setForeground(Color.WHITE);
-		label61322.setBounds(10+220*2, 20+ 25*12, 100, 50);
+		label61322.setBounds(10+220*2, 32+ 25*12, 100, 20);
 		JTextField label61322_box= new JTextField();
 		label61322_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
 		label61322_box.addActionListener(new ActionListener(){
@@ -810,9 +810,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61322);
 		this.add(label61322_box);	
 		//14
-		JLabel label61422= new JLabel("α-醋酸萘酚酯酶染色 :");  
+		DetaLabel label61422= new DetaLabel("α-醋酸萘酚酯酶染色 :");  
 		label61422.setForeground(Color.WHITE);
-		label61422.setBounds(10+220*2, 20+ 25*13, 100, 50);
+		label61422.setBounds(10+220*2, 32+ 25*13, 100, 20);
 		JTextField label61422_box= new JTextField();
 		label61422_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
 		label61422_box.addActionListener(new ActionListener(){
@@ -829,40 +829,40 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 	private void addThirdColomns(JTextField 诊断结果_box2) {
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai222223= new JLabel("血浆同型半胱氨酸hcy:");  
+		DetaLabel baiDanBai222223= new DetaLabel("血浆同型半胱氨酸hcy:");  
 		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*3, 20+ 0, 100, 50);
+		baiDanBai222223.setBounds(10+220*3, 32+ 0, 100, 20);
 		baiDanBai222223.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				JLabel 单位= new JLabel("白蛋白alb :");  
+				DetaLabel 单位= new DetaLabel("白蛋白alb :");  
 				单位.setForeground(Color.WHITE);
-				单位.setBounds(10, 20+ 0, 100, 50);
+				单位.setBounds(10, 20+ 0, 100, 20);
 				add(单位);		
 			}
 
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mouseExited(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mousePressed(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
 		});
 		JTextField baiDanBai222223_box= new JTextField();
@@ -882,9 +882,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(baiDanBai222223);
 		this.add(baiDanBai222223_box);	
 
-		JLabel label2222223= new JLabel("尿微量白蛋白排泄率uaer :");  
+		DetaLabel label2222223= new DetaLabel("尿微量白蛋白排泄率uaer :");  
 		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*3, 20+ 25*1, 100, 50);
+		label2222223.setBounds(10+220*3, 32+ 25*1, 100, 20);
 		JTextField label2222223_box= new JTextField();
 		label2222223_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
 		label2222223_box.addActionListener(new ActionListener(){
@@ -902,9 +902,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label2222223);
 		this.add(label2222223_box);	
 
-		JLabel label3222223= new JLabel("氯cl :");  
+		DetaLabel label3222223= new DetaLabel("氯cl :");  
 		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*3, 20+ 25*2, 100, 50);
+		label3222223.setBounds(10+220*3, 32+ 25*2, 100, 20);
 		JTextField label3222223_box= new JTextField();
 		label3222223_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
 		label3222223_box.addActionListener(new ActionListener(){
@@ -922,9 +922,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label3222223);
 		this.add(label3222223_box);	
 
-		JLabel label4222223= new JLabel("灌洗液常规检查balf :");  
+		DetaLabel label4222223= new DetaLabel("灌洗液常规检查balf :");  
 		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+220*3, 20+ 25* 3, 100, 50);
+		label4222223.setBounds(10+220*3, 32+ 25* 3, 100, 20);
 		JTextField label4222223_box= new JTextField();
 		label4222223_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
 		label4222223_box.addActionListener(new ActionListener(){
@@ -937,9 +937,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label4222223);
 		this.add(label4222223_box);	
 
-		JLabel label5222223= new JLabel("呼吸道病毒检测:");  
+		DetaLabel label5222223= new DetaLabel("呼吸道病毒检测:");  
 		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*3, 20+ 25*4, 100, 50);
+		label5222223.setBounds(10+220*3, 32+ 25*4, 100, 20);
 		JTextField label5222223_box= new JTextField();
 		label5222223_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
 		label5222223_box.addActionListener(new ActionListener(){
@@ -952,9 +952,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label5222223);
 		this.add(label5222223_box);	
 
-		JLabel label6222223= new JLabel("肌酐（尿） :");  
+		DetaLabel label6222223= new DetaLabel("肌酐（尿） :");  
 		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*3, 20+ 25*5, 100, 50);
+		label6222223.setBounds(10+220*3, 32+ 25*5, 100, 20);
 		JTextField label6222223_box= new JTextField();
 		label6222223_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
 		label6222223_box.addActionListener(new ActionListener(){
@@ -973,9 +973,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6222223_box);	
 
 		//7
-		JLabel label7222223= new JLabel("血免疫球蛋白gigg :");  
+		DetaLabel label7222223= new DetaLabel("血免疫球蛋白gigg :");  
 		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*3, 20+ 25*6, 100, 50);
+		label7222223.setBounds(10+220*3, 32+ 25*6, 100, 20);
 		JTextField label7222223_box= new JTextField();
 		label7222223_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
 		label7222223_box.addActionListener(new ActionListener(){
@@ -993,9 +993,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label7222223);
 		this.add(label7222223_box);	
 		//8
-		JLabel label68222223= new JLabel("胸水ldh:");  
+		DetaLabel label68222223= new DetaLabel("胸水ldh:");  
 		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*3, 20+ 25*7, 100, 50);
+		label68222223.setBounds(10+220*3, 32+ 25*7, 100, 20);
 		JTextField label68222223_box= new JTextField();
 		label68222223_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
 		label68222223_box.addActionListener(new ActionListener(){
@@ -1008,9 +1008,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label68222223);
 		this.add(label68222223_box);	
 		//9
-		JLabel label69222223= new JLabel("促进泡生成素fsm :");  
+		DetaLabel label69222223= new DetaLabel("促进泡生成素fsm :");  
 		label69222223.setForeground(Color.WHITE);
-		label69222223.setBounds(10+220*3, 20+ 25*8, 100, 50);
+		label69222223.setBounds(10+220*3, 32+ 25*8, 100, 20);
 		JTextField label69222223_box= new JTextField();
 		label69222223_box.setBounds(10+ 110+220*3, 33+ 25*8, 80, 20);
 		label69222223_box.addActionListener(new ActionListener(){
@@ -1023,9 +1023,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label69222223);
 		this.add(label69222223_box);	
 		//10
-		JLabel label610222223= new JLabel("d-二聚体（d-dimer）:");  
+		DetaLabel label610222223= new DetaLabel("d-二聚体（d-dimer）:");  
 		label610222223.setForeground(Color.WHITE);
-		label610222223.setBounds(10+220*3, 20+ 25*9, 100, 50);
+		label610222223.setBounds(10+220*3, 32+ 25*9, 100, 20);
 		JTextField label610222223_box= new JTextField();
 		label610222223_box.setBounds(10+ 110+220*3, 33+ 25*9, 80, 20);
 		label610222223_box.addActionListener(new ActionListener(){
@@ -1038,9 +1038,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label610222223);
 		this.add(label610222223_box);	
 		//11
-		JLabel label611222223= new JLabel("间接胆红质ibil :");  
+		DetaLabel label611222223= new DetaLabel("间接胆红质ibil :");  
 		label611222223.setForeground(Color.WHITE);
-		label611222223.setBounds(10+220*3, 20+ 25*10, 100, 50);
+		label611222223.setBounds(10+220*3, 32+ 25*10, 100, 20);
 		JTextField label611222223_box= new JTextField();
 		label611222223_box.setBounds(10+ 110+220*3, 33+ 25*10, 80, 20);
 		label611222223_box.addActionListener(new ActionListener(){
@@ -1058,9 +1058,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label611222223);
 		this.add(label611222223_box);	
 		//12
-		JLabel label612222223= new JLabel("t细胞亚群测定:");  
+		DetaLabel label612222223= new DetaLabel("t细胞亚群测定:");  
 		label612222223.setForeground(Color.WHITE);
-		label612222223.setBounds(10+220*3, 20+ 25*11, 100, 50);
+		label612222223.setBounds(10+220*3, 32+ 25*11, 100, 20);
 		JTextField label612222223_box= new JTextField();
 		label612222223_box.setBounds(10+ 110+220*3, 33+ 25*11, 80, 20);
 		label612222223_box.addActionListener(new ActionListener(){
@@ -1073,9 +1073,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label612222223);
 		this.add(label612222223_box);	
 		//13
-		JLabel label613222223= new JLabel("氧合:");  
+		DetaLabel label613222223= new DetaLabel("氧合:");  
 		label613222223.setForeground(Color.WHITE);
-		label613222223.setBounds(10+220*3, 20+ 25*12, 100, 50);
+		label613222223.setBounds(10+220*3, 32+ 25*12, 100, 20);
 		JTextField label613222223_box= new JTextField();
 		label613222223_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
 		label613222223_box.addActionListener(new ActionListener(){
@@ -1088,9 +1088,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label613222223);
 		this.add(label613222223_box);	
 		//14
-		JLabel label614222223= new JLabel("set:");  
+		DetaLabel label614222223= new DetaLabel("set:");  
 		label614222223.setForeground(Color.WHITE);
-		label614222223.setBounds(10+220*3, 20+ 25*13, 100, 50);
+		label614222223.setBounds(10+220*3, 32+ 25*13, 100, 20);
 		JTextField label614222223_box= new JTextField();
 		label614222223_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
 		label614222223_box.addActionListener(new ActionListener(){
@@ -1107,9 +1107,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 	private void addSecondColomns(JTextField 诊断结果_box2) {
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai22= new JLabel("胎盘糖旦白胎盘糖旦白:");  
+		DetaLabel baiDanBai22= new DetaLabel("胎盘糖旦白胎盘糖旦白:");  
 		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*4, 20+ 0, 100, 50);
+		baiDanBai22.setBounds(10+220*4, 32+ 0, 100, 20);
 		JTextField baiDanBai22_box= new JTextField();
 		baiDanBai22_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
 		baiDanBai22_box.addActionListener(new ActionListener(){
@@ -1122,9 +1122,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(baiDanBai22);
 		this.add(baiDanBai22_box);	
 
-		JLabel label222= new JLabel("单核细胞化学趋化因子-1mcp-1 :");  
+		DetaLabel label222= new DetaLabel("单核细胞化学趋化因子-1mcp-1 :");  
 		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*4, 20+ 25*1, 100, 50);
+		label222.setBounds(10+220*4, 32+ 25*1, 100, 20);
 		JTextField label222_box= new JTextField();
 		label222_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
 		label222_box.addActionListener(new ActionListener(){
@@ -1137,9 +1137,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label222);
 		this.add(label222_box);	
 
-		JLabel label322= new JLabel("骨髓细胞形态学诊断检查:");  
+		DetaLabel label322= new DetaLabel("骨髓细胞形态学诊断检查:");  
 		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*4, 20+ 25*2, 100, 50);
+		label322.setBounds(10+220*4, 32+ 25*2, 100, 20);
 		JTextField label322_box= new JTextField();
 		label322_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
 		label322_box.addActionListener(new ActionListener(){
@@ -1152,9 +1152,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label322);
 		this.add(label322_box);	
 
-		JLabel label422= new JLabel("髓鞘碱性蛋白抗体mbp:");  
+		DetaLabel label422= new DetaLabel("髓鞘碱性蛋白抗体mbp:");  
 		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*4, 20+ 25* 3, 100, 50);
+		label422.setBounds(10+220*4, 32+ 25* 3, 100, 20);
 		JTextField label422_box= new JTextField();
 		label422_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
 		label422_box.addActionListener(new ActionListener(){
@@ -1167,9 +1167,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label422);
 		this.add(label422_box);	
 
-		JLabel label522= new JLabel("羟丁酸脱氢酶hbdh :");  
+		DetaLabel label522= new DetaLabel("羟丁酸脱氢酶hbdh :");  
 		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*4, 20+ 25*4, 100, 50);
+		label522.setBounds(10+220*4, 32+ 25*4, 100, 20);
 		JTextField label522_box= new JTextField();
 		label522_box.setBounds(10+ 110+ 220* 4, 33+ 25*4, 80, 20);
 		label522_box.addActionListener(new ActionListener(){
@@ -1188,9 +1188,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label522);
 		this.add(label522_box);	
 
-		JLabel label622= new JLabel("c-肽c-p:");  
+		DetaLabel label622= new DetaLabel("c-肽c-p:");  
 		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*4, 20+ 25*5, 100, 50);
+		label622.setBounds(10+220*4, 32+ 25*5, 100, 20);
 		JTextField label622_box= new JTextField();
 		label622_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
 		label622_box.addActionListener(new ActionListener(){
@@ -1204,9 +1204,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label622_box);	
 
 		//7
-		JLabel label722= new JLabel("性病衣原体快速检测（ct）:");  
+		DetaLabel label722= new DetaLabel("性病衣原体快速检测（ct）:");  
 		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*4, 20+ 25*6, 100, 50);
+		label722.setBounds(10+220*4, 32+ 25*6, 100, 20);
 		JTextField label722_box= new JTextField();
 		label722_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
 		label722_box.addActionListener(new ActionListener(){
@@ -1219,9 +1219,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label722);
 		this.add(label722_box);	
 		//8
-		JLabel label6822= new JLabel("催孔素phl :");  
+		DetaLabel label6822= new DetaLabel("催孔素phl :");  
 		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*4, 20+ 25*7, 100, 50);
+		label6822.setBounds(10+220*4, 32+ 25*7, 100, 20);
 		JTextField label6822_box= new JTextField();
 		label6822_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
 		label6822_box.addActionListener(new ActionListener(){
@@ -1234,9 +1234,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6822);
 		this.add(label6822_box);	
 		//9
-		JLabel label6922= new JLabel("骨髓巨核细胞定量计数分类分析:");  
+		DetaLabel label6922= new DetaLabel("骨髓巨核细胞定量计数分类分析:");  
 		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*4, 20+ 25*8, 100, 50);
+		label6922.setBounds(10+220*4, 32+ 25*8, 100, 20);
 		JTextField label6922_box= new JTextField();
 		label6922_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
 		label6922_box.addActionListener(new ActionListener(){
@@ -1249,9 +1249,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6922);
 		this.add(label6922_box);	
 		//10
-		JLabel label61022= new JLabel("血气分析加离子分析:");  
+		DetaLabel label61022= new DetaLabel("血气分析加离子分析:");  
 		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*4, 20+ 25*9, 100, 50);
+		label61022.setBounds(10+220*4, 32+ 25*9, 100, 20);
 		JTextField label61022_box= new JTextField();
 		label61022_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
 		label61022_box.addActionListener(new ActionListener(){
@@ -1264,9 +1264,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61022);
 		this.add(label61022_box);	
 		//11
-		JLabel label61122= new JLabel("脑脊液生化糖:");  
+		DetaLabel label61122= new DetaLabel("脑脊液生化糖:");  
 		label61122.setForeground(Color.WHITE);
-		label61122.setBounds(10+220*4, 20+ 25*10, 100, 50);
+		label61122.setBounds(10+220*4, 32+ 25*10, 100, 20);
 		JTextField label61122_box= new JTextField();
 		label61122_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
 		label61122_box.addActionListener(new ActionListener(){
@@ -1279,9 +1279,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61122);
 		this.add(label61122_box);	
 		//12***********************************
-		JLabel label61222= new JLabel("血管紧张素转化酶sace:");  
+		DetaLabel label61222= new DetaLabel("血管紧张素转化酶sace:");  
 		label61222.setForeground(Color.WHITE);
-		label61222.setBounds(10+220*4, 20+ 25*11, 100, 50);
+		label61222.setBounds(10+220*4, 32+ 25*11, 100, 20);
 		JTextField label61222_box= new JTextField();
 		label61222_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
 		label61222_box.addActionListener(new ActionListener(){
@@ -1299,9 +1299,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61222);
 		this.add(label61222_box);	
 		//13
-		JLabel label61322= new JLabel("糖元染色:");  
+		DetaLabel label61322= new DetaLabel("糖元染色:");  
 		label61322.setForeground(Color.WHITE);
-		label61322.setBounds(10+220*4, 20+ 25*12, 100, 50);
+		label61322.setBounds(10+220*4, 32+ 25*12, 100, 20);
 		JTextField label61322_box= new JTextField();
 		label61322_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
 		label61322_box.addActionListener(new ActionListener(){
@@ -1314,9 +1314,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label61322);
 		this.add(label61322_box);	
 		//14
-		JLabel label61422= new JLabel("脑脊液细胞学检查:");  
+		DetaLabel label61422= new DetaLabel("脑脊液细胞学检查:");  
 		label61422.setForeground(Color.WHITE);
-		label61422.setBounds(10+220*4, 20+ 25*13, 100, 50);
+		label61422.setBounds(10+220*4, 32+ 25*13, 100, 20);
 		JTextField label61422_box= new JTextField();
 		label61422_box.setBounds(10+ 110+220*4, 33+ 25*13, 80, 20);
 		label61422_box.addActionListener(new ActionListener(){

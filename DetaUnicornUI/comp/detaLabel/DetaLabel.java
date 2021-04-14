@@ -15,26 +15,18 @@ public class DetaLabel extends JLabel{
 	//先碎片函数调试, 之后面板函数集成
 	public JFrame frameTag;
 	public boolean ShowTag= false;
-	public int posx= 0;
-	public int posy= 0;
-	public int posw= 0;
-	public int posh= 0;
-	
+
 	public int openx=0;
 	public int openy=0;
 	public int closex=0;
 	public int closey=0;
+
 	//罗瑶光
 	//为了避免花屏,影响操作, 逻辑设计为点击打开,鼠标移动触发关闭.
-	public DetaLabel(String name, int posx, int posy, int posw, int posh) { 
+	public DetaLabel(String name) { 
 		super(name); 
 		this.setForeground(Color.lightGray);
 		this.setBackground(Color.black);
-		this.posx= posx;
-		this.posy= posy;
-		this.posw= posw;
-		this.posh= posh;
-		this.setBounds(posx, posy, posw, posh);
 		this.addMouseListener(new MouseListener() {
 			@SuppressWarnings("deprecation")
 			@Override
@@ -76,33 +68,33 @@ public class DetaLabel extends JLabel{
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				
+
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 		});
-		
+
 		this.addMouseMotionListener(new MouseMotionListener() {
 			public void mouseDragged(MouseEvent e) {
 			}
-			
+
 			@SuppressWarnings("deprecation")
 			public void mouseMoved(MouseEvent e) {
 				if(null!= frameTag) {
@@ -114,6 +106,8 @@ public class DetaLabel extends JLabel{
 			}
 		});
 	}
+
+
 	public void setTag(String string, boolean True) {
 		// TODO Auto-generated method stub
 		ShowTag= True;
