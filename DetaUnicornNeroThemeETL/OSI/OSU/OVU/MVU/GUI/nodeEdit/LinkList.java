@@ -71,7 +71,7 @@ public class LinkList{
 				currentOSGI= currentOSGI.next;
 			}
 		}
-		while(null!= linkNode.next){
+		while(null!= linkNode&& null!= linkNode.next){
 			linkNode= linkNode.next;
 		}
 		while(null!= currentOSGI){
@@ -87,7 +87,7 @@ public class LinkList{
 			}
 			currentOSGI = currentOSGI.next;
 		}
-		while(null != linkNode.pre){
+		while(null!= linkNode&& null!= linkNode.pre){
 			linkNode = linkNode.pre;
 		}
 		sum_of_nude++;

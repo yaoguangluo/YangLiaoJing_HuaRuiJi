@@ -735,7 +735,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6822);
 		this.add(label6822_box);	
 		//9
-		DetaLabel label6922= new DetaLabel("ck-mm同工酶:");  
+		DetaLabel label6922= new DetaLabel("同工酶ck-mm:");  
 		label6922.setForeground(Color.WHITE);
 		label6922.setBounds(10+220*2, 32+ 25*8, 100, 20);
 		JTextField label6922_box= new JTextField();
