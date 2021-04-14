@@ -19,10 +19,9 @@ public class ToolkitImageToBufferImage{
 		return bufferedImage;
 	}
 	
-	public BufferedImage toolkitImageToBufferImage(Image image, int positionX, int positionY, int width, int height, ImageObserver imageObserver) {
-//		ImageObserver imageObserver= (ImageObserver)object;
+	public BufferedImage toolkitImageToBufferImage(Image image, int positionX, int positionY
+			, int width, int height, ImageObserver imageObserver) {
 		BufferedImage  bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-		bufferedImage= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		bufferedImage.getGraphics().drawImage(image, positionX, positionY, imageObserver);
 		return bufferedImage;
 	}
