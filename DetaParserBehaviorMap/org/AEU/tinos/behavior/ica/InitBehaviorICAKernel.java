@@ -59,8 +59,8 @@ public class InitBehaviorICAKernel{
 		double positiveCount = emotionInit.getPositiveCount();
 		double negativeCount = emotionInit.getNegativeCount();
 		double totalCount = emotionInit.getTotalCount();
-		forRestReturn.add("æ­£é¢æƒ…æ„Ÿï¼š" + positiveCount);
-		forRestReturn.add("è´Ÿé¢æƒ…æ„Ÿï¼š" + negativeCount);
+		forRestReturn.add("ÕıÃæÇé¸Ğ£º" + positiveCount);
+		forRestReturn.add("¸ºÃæÇé¸Ğ£º" + negativeCount);
 		if(positiveCount == StableData.INT_ZERO) {
 			positiveCount = StableData.INT_ONE;
 		}
@@ -68,18 +68,18 @@ public class InitBehaviorICAKernel{
 			negativeCount = StableData.INT_ONE;
 		}
 		double adjRatio = Math.abs(positiveCount/negativeCount-negativeCount/positiveCount);
-		forRestReturn.add("æ¸²æŸ“æ¯”ç‡ï¼š" + adjRatio);
+		forRestReturn.add("äÖÈ¾±ÈÂÊ£º" + adjRatio);
 		double phychologicRatio = (positiveCount + negativeCount)/totalCount;
-		forRestReturn.add("æƒ…ç»ªæ¯”ç‡ï¼š" + phychologicRatio);
+		forRestReturn.add("ÇéĞ÷±ÈÂÊ£º" + phychologicRatio);
 		double infectionRatio = adjRatio*phychologicRatio;
-		forRestReturn.add("æ„ŸæŸ“æ¯”ç‡ï¼š" + infectionRatio);
+		forRestReturn.add("¸ĞÈ¾±ÈÂÊ£º" + infectionRatio);
 		kernel[StableData.INT_ZERO] = adjRatio;
 		kernel[StableData.INT_ONE] = phychologicRatio;
 		kernel[StableData.INT_TWO] = infectionRatio;
 		EnvironmentInit environmentInit = new EnvironmentInit();
 		environmentInit.initFromEmotion(emotionInit.getWordFrequencyMap());
 		Map<String, EmotionSample> environmentSampleMap = environmentInit.getEmotionSampleMap();
-		forRestReturn.add("è§‚æµ‹è§’åº¦ï¼š");
+		forRestReturn.add("¹Û²â½Ç¶È£º");
 		String environmentText = "";
 		Iterator<String> Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -92,7 +92,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(environmentText);
 		kernel[StableData.INT_THREE] = getTrustRate(environmentText);
 		forRestReturn.add(StableData.EMPTY_STRING + kernel[StableData.INT_THREE]);
-		forRestReturn.add("ä¿¡ä»»æ¯”ç‡ï¼š");
+		forRestReturn.add("ĞÅÈÎ±ÈÂÊ£º");
 		String motivationText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -105,7 +105,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(motivationText);
 		kernel[StableData.INT_FOUR] = getTrustRate(motivationText);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_FOUR]);
-		forRestReturn.add("æ‰§è¡Œæ¯”ç‡ï¼š");
+		forRestReturn.add("Ö´ĞĞ±ÈÂÊ£º");
 		String trendingText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -118,7 +118,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(trendingText);
 		kernel[StableData.INT_FIVE] = getTrustRate(trendingText);
 		forRestReturn.add(StableData.EMPTY_STRING + kernel[StableData.INT_FIVE]);
-		forRestReturn.add("æˆåŠŸæ¯”ç‡ï¼š");
+		forRestReturn.add("³É¹¦±ÈÂÊ£º");
 		String predictionText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -142,8 +142,8 @@ public class InitBehaviorICAKernel{
 		double positiveCount = emotionInit.getPositiveCount();
 		double negativeCount = emotionInit.getNegativeCount();
 		double totalCount = emotionInit.getTotalCount();
-		forRestReturn.add("æ­£é¢æƒ…æ„Ÿï¼š" + positiveCount);
-		forRestReturn.add("è´Ÿé¢æƒ…æ„Ÿï¼š" + negativeCount);
+		forRestReturn.add("ÕıÃæÇé¸Ğ£º" + positiveCount);
+		forRestReturn.add("¸ºÃæÇé¸Ğ£º" + negativeCount);
 		if(positiveCount == StableData.INT_ZERO) {
 			positiveCount = StableData.INT_ONE;
 		}
@@ -151,18 +151,18 @@ public class InitBehaviorICAKernel{
 			negativeCount = StableData.INT_ONE;
 		}
 		double adjRatio = Math.abs(positiveCount/negativeCount-negativeCount/positiveCount);
-		forRestReturn.add("æ¸²æŸ“æ¯”ç‡ï¼š" + adjRatio);
+		forRestReturn.add("äÖÈ¾±ÈÂÊ£º" + adjRatio);
 		double phychologicRatio = (positiveCount + negativeCount)/totalCount;
-		forRestReturn.add("æƒ…ç»ªæ¯”ç‡ï¼š" + phychologicRatio);
+		forRestReturn.add("ÇéĞ÷±ÈÂÊ£º" + phychologicRatio);
 		double infectionRatio = adjRatio*phychologicRatio;
-		forRestReturn.add("æ„ŸæŸ“æ¯”ç‡ï¼š" + infectionRatio);
+		forRestReturn.add("¸ĞÈ¾±ÈÂÊ£º" + infectionRatio);
 		kernel[StableData.INT_ZERO] = adjRatio;
 		kernel[StableData.INT_ONE] = phychologicRatio;
 		kernel[StableData.INT_TWO] = infectionRatio;
 		EnvironmentInit environmentInit = new EnvironmentInit();
 		environmentInit.initFromEmotionExcludeEmotion(emotionInit.getWordFrequencyMap(), emotionMap);
 		Map<String, EmotionSample> environmentSampleMap = environmentInit.getEmotionSampleMap();
-		forRestReturn.add("è§‚æµ‹è§’åº¦ï¼š");
+		forRestReturn.add("¹Û²â½Ç¶È£º");
 		String environmentText = StableData.EMPTY_STRING;
 		Iterator<String> Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -175,7 +175,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(environmentText);
 		kernel[StableData.INT_THREE] = getTrustRate(environmentText, analyzer, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_THREE]);
-		forRestReturn.add("ä¿¡ä»»æ¯”ç‡ï¼š");
+		forRestReturn.add("ĞÅÈÎ±ÈÂÊ£º");
 		String motivationText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -188,7 +188,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(motivationText);
 		kernel[StableData.INT_FOUR] = getTrustRate(motivationText, analyzer, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_FOUR]);
-		forRestReturn.add("æ‰§è¡Œæ¯”ç‡ï¼š");
+		forRestReturn.add("Ö´ĞĞ±ÈÂÊ£º");
 		String trendingText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
@@ -201,7 +201,7 @@ public class InitBehaviorICAKernel{
 		forRestReturn.add(trendingText);
 		kernel[StableData.INT_FIVE] = getTrustRate(trendingText, analyzer, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_FIVE]);
-		forRestReturn.add("æˆåŠŸæ¯”ç‡ï¼š");
+		forRestReturn.add("³É¹¦±ÈÂÊ£º");
 		String predictionText = StableData.EMPTY_STRING;
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
