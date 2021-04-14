@@ -224,8 +224,12 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public boolean DNASearchIsClick;
     public AppInit appInit;
 	public void init(){
-		appInit= new AppInit();
-		appInit.init(this);
+		try {
+			appInit= new AppInit();
+			appInit.init(this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 //
 	public JTextField nameFeelFilter() {

@@ -8,6 +8,8 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import org.tinos.reportMap.DetaLabelConjunction;
 public class DetaLabel extends JLabel{
 	private static final long serialVersionUID = 1L;
 	public String tagName= "";
@@ -105,6 +107,8 @@ public class DetaLabel extends JLabel{
 				}
 			}
 		});
+		//find and set tag
+		DetaLabelConjunction.detaLabelConjunction.findAndSetTag(this, name);
 	}
 
 

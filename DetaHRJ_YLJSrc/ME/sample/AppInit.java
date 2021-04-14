@@ -50,13 +50,17 @@ import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import org.deta.boot.server.BootVPCSBackEnd;
 import org.deta.bootFrontEnd.server.BootVPCSFrontEnd;
 import org.tinos.listen.ReadToWav;
+import org.tinos.reportMap.DetaLabelConjunction;
 
 import comp.detaButton.CfxButton;
 import comp.detaSlider.DetaSlider;
 import comp.detaTabbedpane.DetabbedPane;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
-	public void init(App app){
+	public void init(App app) throws IOException{
+		//Regist Medicine Report
+		DetaLabelConjunction.detaLabelConjunction = new DetaLabelConjunction();
+		DetaLabelConjunction.detaLabelConjunction.init();
 		//Register DNA
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
 		if(!new GetDisk().getKey().replaceAll(" ", "").contains("BFBFF000806E9-79530339318")) {
