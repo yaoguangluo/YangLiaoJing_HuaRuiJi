@@ -117,112 +117,112 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai22= new DetaLabel("全血黏度:");  
-		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*0, 32+ 0, 100, 20);jFrameList.add(baiDanBai22);
-		JTextField baiDanBai22_box= new JTextField();
-		baiDanBai22_box.setBounds(10+ 110+220*0, 33+ 0, 80, 20);
-		baiDanBai22_box.addActionListener(new ActionListener(){
+		DetaLabel 全血黏度= new DetaLabel("全血黏度:");  
+		全血黏度.setForeground(Color.WHITE);
+		全血黏度.setBounds(10+220*0, 32+ 0, 100, 20);jFrameList.add(全血黏度);
+		JTextField 全血黏度_box= new JTextField();
+		全血黏度_box.setBounds(10+ 110+220*0, 33+ 0, 80, 20);
+		全血黏度_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= baiDanBai22_box.getText();
+				String temp= 全血黏度_box.getText();
 				诊断结果_box.setText(诊断结果_box.getText()+ temp);
 			}
 		});
-		this.add(baiDanBai22);
-		this.add(baiDanBai22_box);	
+		this.add(全血黏度);
+		this.add(全血黏度_box);	
 
-		DetaLabel label222= new DetaLabel("肿瘤标记抗原242检测ca242:");  
-		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*0, 32+ 25*1, 100, 20);jFrameList.add(label222);
-		JTextField label222_box= new JTextField();
-		label222_box.setBounds(10+ 110+220*0, 33+ 25*1, 80, 20);
-		label222_box.addActionListener(new ActionListener(){
+		DetaLabel 肿瘤标记抗原242检测= new DetaLabel("肿瘤标记抗原242检测ca242:");  
+		肿瘤标记抗原242检测.setForeground(Color.WHITE);
+		肿瘤标记抗原242检测.setBounds(10+220*0, 32+ 25*1, 100, 20);jFrameList.add(肿瘤标记抗原242检测);
+		JTextField 肿瘤标记抗原242检测_box= new JTextField();
+		肿瘤标记抗原242检测_box.setBounds(10+ 110+220*0, 33+ 25*1, 80, 20);
+		肿瘤标记抗原242检测_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label222);
-		this.add(label222_box);	
+		this.add(肿瘤标记抗原242检测);
+		this.add(肿瘤标记抗原242检测_box);	
 
-		DetaLabel label322= new DetaLabel("过敏原检测（1）吸入组ⅰ（2）吸入组ⅱ（3）食物组ⅲ（4）食物组ⅳivtivt-ⅰivt-ⅱivt-ⅲivt-ⅳ:");  
-		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*0, 32+ 25*2, 100, 20);jFrameList.add(label322);
-		JTextField label322_box= new JTextField();
-		label322_box.setBounds(10+ 110+220*0, 33+ 25*2, 80, 20);
-		label322_box.addActionListener(new ActionListener(){
+		DetaLabel 过敏原检测= new DetaLabel("过敏原检测（1）吸入组ⅰ（2）吸入组ⅱ（3）食物组ⅲ（4）食物组ⅳivtivt-ⅰivt-ⅱivt-ⅲivt-ⅳ:");  
+		过敏原检测.setForeground(Color.WHITE);
+		过敏原检测.setBounds(10+220*0, 32+ 25*2, 100, 20);jFrameList.add(过敏原检测);
+		JTextField 过敏原检测_box= new JTextField();
+		过敏原检测_box.setBounds(10+ 110+220*0, 33+ 25*2, 80, 20);
+		过敏原检测_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label322);
-		this.add(label322_box);	
+		this.add(过敏原检测);
+		this.add(过敏原检测_box);	
 
-		DetaLabel label422= new DetaLabel("钙ca:");  
-		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*0, 32+ 25* 3, 100, 20);jFrameList.add(label422);
-		JTextField label422_box= new JTextField();
-		label422_box.setBounds(10+ 110+220*0, 33+ 25* 3, 80, 20);
-		label422_box.addActionListener(new ActionListener(){
+		DetaLabel 钙ca= new DetaLabel("钙ca:");  
+		钙ca.setForeground(Color.WHITE);
+		钙ca.setBounds(10+220*0, 32+ 25* 3, 100, 20);jFrameList.add(钙ca);
+		JTextField 钙ca_box= new JTextField();
+		钙ca_box.setBounds(10+ 110+220*0, 33+ 25* 3, 80, 20);
+		钙ca_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label422);
-		this.add(label422_box);	
+		this.add(钙ca);
+		this.add(钙ca_box);	
 
-		DetaLabel label522= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
-		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*0, 32+ 25*4, 100, 20);jFrameList.add(label522);
-		JTextField label522_box= new JTextField();
-		label522_box.setBounds(10+ 110+220*0, 33+ 25*4, 80, 20);
-		label522_box.addActionListener(new ActionListener(){
+		DetaLabel 巨噬细胞感染趋化因子= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
+		巨噬细胞感染趋化因子.setForeground(Color.WHITE);
+		巨噬细胞感染趋化因子.setBounds(10+220*0, 32+ 25*4, 100, 20);jFrameList.add(巨噬细胞感染趋化因子);
+		JTextField 巨噬细胞感染趋化因子_box= new JTextField();
+		巨噬细胞感染趋化因子_box.setBounds(10+ 110+220*0, 33+ 25*4, 80, 20);
+		巨噬细胞感染趋化因子_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label522);
-		this.add(label522_box);	
+		this.add(巨噬细胞感染趋化因子);
+		this.add(巨噬细胞感染趋化因子_box);	
 
-		DetaLabel label622= new DetaLabel("尿17-羟固醇17-oh:");  
-		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*0, 32+ 25*5, 100, 20);jFrameList.add(label622);
-		JTextField label622_box= new JTextField();
-		label622_box.setBounds(10+ 110+220*0, 33+ 25*5, 80, 20);
-		label622_box.addActionListener(new ActionListener(){
+		DetaLabel 羟固醇17= new DetaLabel("尿17-羟固醇17-oh:");  
+		羟固醇17.setForeground(Color.WHITE);
+		羟固醇17.setBounds(10+220*0, 32+ 25*5, 100, 20);jFrameList.add(羟固醇17);
+		JTextField 羟固醇17_box= new JTextField();
+		羟固醇17_box.setBounds(10+ 110+220*0, 33+ 25*5, 80, 20);
+		羟固醇17_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label622);
-		this.add(label622_box);	
+		this.add(羟固醇17);
+		this.add(羟固醇17_box);	
 
 		//7
-		DetaLabel label722= new DetaLabel("促黄体生成素lh:");  
-		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*0, 32+ 25*6, 100, 20);jFrameList.add(label722);
-		JTextField label722_box= new JTextField();
-		label722_box.setBounds(10+ 110+220*0, 33+ 25*6, 80, 20);
-		label722_box.addActionListener(new ActionListener(){
+		DetaLabel 促黄体生成素= new DetaLabel("促黄体生成素lh:");  
+		促黄体生成素.setForeground(Color.WHITE);
+		促黄体生成素.setBounds(10+220*0, 32+ 25*6, 100, 20);jFrameList.add(促黄体生成素);
+		JTextField 促黄体生成素_box= new JTextField();
+		促黄体生成素_box.setBounds(10+ 110+220*0, 33+ 25*6, 80, 20);
+		促黄体生成素_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label722);
-		this.add(label722_box);	
+		this.add(促黄体生成素);
+		this.add(促黄体生成素_box);	
 		//8
 		DetaLabel label6822= new DetaLabel("乙肝表面抗原hbsag:");  
 		label6822.setForeground(Color.WHITE);
