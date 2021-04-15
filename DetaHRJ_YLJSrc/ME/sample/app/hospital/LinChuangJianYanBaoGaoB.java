@@ -224,50 +224,50 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(促黄体生成素);
 		this.add(促黄体生成素_box);	
 		//8
-		DetaLabel label6822= new DetaLabel("乙肝表面抗原hbsag:");  
-		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*0, 32+ 25*7, 100, 20);jFrameList.add(label6822);
-		JTextField label6822_box= new JTextField();
-		label6822_box.setBounds(10+ 110+220*0, 33+ 25*7, 80, 20);
-		label6822_box.addActionListener(new ActionListener(){
+		DetaLabel 乙肝表面抗原= new DetaLabel("乙肝表面抗原hbsag:");  
+		乙肝表面抗原.setForeground(Color.WHITE);
+		乙肝表面抗原.setBounds(10+220*0, 32+ 25*7, 100, 20);jFrameList.add(乙肝表面抗原);
+		JTextField 乙肝表面抗原_box= new JTextField();
+		乙肝表面抗原_box.setBounds(10+ 110+220*0, 33+ 25*7, 80, 20);
+		乙肝表面抗原_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label6822);
-		this.add(label6822_box);	
+		this.add(乙肝表面抗原);
+		this.add(乙肝表面抗原_box);	
 		//9
-		DetaLabel label6922= new DetaLabel("毛囊虫镜检demodexfolliculorumexamination:");  
-		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*0, 32+ 25*8, 100, 20);jFrameList.add(label6922);
-		JTextField label6922_box= new JTextField();
-		label6922_box.setBounds(10+ 110+220*0, 33+ 25*8, 80, 20);
-		label6922_box.addActionListener(new ActionListener(){
+		DetaLabel 毛囊虫镜检demo= new DetaLabel("毛囊虫镜检demodexfolliculorumexamination:");  
+		毛囊虫镜检demo.setForeground(Color.WHITE);
+		毛囊虫镜检demo.setBounds(10+220*0, 32+ 25*8, 100, 20);jFrameList.add(毛囊虫镜检demo);
+		JTextField 毛囊虫镜检demo_box= new JTextField();
+		毛囊虫镜检demo_box.setBounds(10+ 110+220*0, 33+ 25*8, 80, 20);
+		毛囊虫镜检demo_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label6922);
-		this.add(label6922_box);	
+		this.add(毛囊虫镜检demo);
+		this.add(毛囊虫镜检demo_box);	
 		//10
-		DetaLabel label61022= new DetaLabel("促肾上腺皮质激素acth:");  
-		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*0, 32+ 25*9, 100, 20);jFrameList.add(label61022);
-		JTextField label61022_box= new JTextField();
-		label61022_box.setBounds(10+ 110+220*0, 33+ 25*9, 80, 20);
-		label61022_box.addActionListener(new ActionListener(){
+		DetaLabel 促肾上腺皮质激素= new DetaLabel("促肾上腺皮质激素acth:");  
+		促肾上腺皮质激素.setForeground(Color.WHITE);
+		促肾上腺皮质激素.setBounds(10+220*0, 32+ 25*9, 100, 20);jFrameList.add(促肾上腺皮质激素);
+		JTextField 促肾上腺皮质激素_box= new JTextField();
+		促肾上腺皮质激素_box.setBounds(10+ 110+220*0, 33+ 25*9, 80, 20);
+		促肾上腺皮质激素_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61022);
-		this.add(label61022_box);	
+		this.add(促肾上腺皮质激素);
+		this.add(促肾上腺皮质激素_box);	
 		//11
 		DetaLabel label61122= new DetaLabel("弓形体igm,抗体阳性定性toxo:");  
 		label61122.setForeground(Color.WHITE);
