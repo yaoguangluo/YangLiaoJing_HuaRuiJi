@@ -178,18 +178,18 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(baiDanBai);
 		this.add(baiDanBai_box);	
 
-		DetaLabel label2= new DetaLabel("乙肝两对半hbcab:");
-		label2.setForeground(Color.WHITE);
-		label2.setBounds(10, 32+ 25*1, 100, 25);
-		label2.setTag("西医检验：乙肝两对半HbcAb->临床意义:->实验室检查:阴性", true);
+		DetaLabel 乙肝两对半= new DetaLabel("乙肝两对半hbcab:");
+		乙肝两对半.setForeground(Color.WHITE);
+		乙肝两对半.setBounds(10, 32+ 25*1, 100, 25);
+		乙肝两对半.setTag("西医检验：乙肝两对半HbcAb->临床意义:->实验室检查:阴性", true);
 		
-		JTextField label2_box= new JTextField();
-		label2_box.setBounds(10+ 110, 33+ 25*1, 80, 20);
-		label2_box.addActionListener(new ActionListener(){
+		JTextField 乙肝两对半_box= new JTextField();
+		乙肝两对半_box.setBounds(10+ 110, 33+ 25*1, 80, 20);
+		乙肝两对半_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label2_box.getText();
+				String temp= 乙肝两对半_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "乙肝阳性";
 				if(temp.contains("阳")) {
@@ -200,19 +200,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label2);
-		this.add(label2_box);	
-		DetaLabel label3= new DetaLabel("糖耐量实验:");
-		label3.setForeground(Color.WHITE);
-		label3.setBounds(10, 32+ 25*2, 100, 25);
+		this.add(乙肝两对半);
+		this.add(乙肝两对半_box);	
+		DetaLabel 糖耐量实验= new DetaLabel("糖耐量实验:");
+		糖耐量实验.setForeground(Color.WHITE);
+		糖耐量实验.setBounds(10, 32+ 25*2, 100, 25);
 		
-		JTextField label3_box= new JTextField();
-		label3_box.setBounds(10+ 110, 33+ 25*2, 80, 20);
-		label3_box.addActionListener(new ActionListener(){
+		JTextField 糖耐量实验_box= new JTextField();
+		糖耐量实验_box.setBounds(10+ 110, 33+ 25*2, 80, 20);
+		糖耐量实验_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label3_box.getText();
+				String temp= 糖耐量实验_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "糖尿病监测诊断指标异常";
 				if(temp_double> 140&& temp_double< 50) {
@@ -223,20 +223,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label3);
-		this.add(label3_box);	
+		this.add(糖耐量实验);
+		this.add(糖耐量实验_box);	
 
-		DetaLabel label4= new DetaLabel("螨虫镜检:");
-		label4.setForeground(Color.WHITE);
-		label4.setBounds(10, 32+ 25* 3, 100, 20);jFrameList.add(label2);
+		DetaLabel 螨虫镜检= new DetaLabel("螨虫镜检:");
+		螨虫镜检.setForeground(Color.WHITE);
+		螨虫镜检.setBounds(10, 32+ 25* 3, 100, 20);jFrameList.add(螨虫镜检);
 		
-		JTextField label4_box= new JTextField();
-		label4_box.setBounds(10+ 110, 33+ 25* 3, 80, 20);
-		label4_box.addActionListener(new ActionListener(){
+		JTextField 螨虫镜检_box= new JTextField();
+		螨虫镜检_box.setBounds(10+ 110, 33+ 25* 3, 80, 20);
+		螨虫镜检_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label4_box.getText();
+				String temp= 螨虫镜检_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "螨虫感染阳性";
 				if(temp.contains("阳")) {
@@ -247,20 +247,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label4);
-		this.add(label4_box);	
+		this.add(螨虫镜检);
+		this.add(螨虫镜检_box);	
 
-		DetaLabel label5= new DetaLabel("性病支原体检测（uu）:");
-		label5.setForeground(Color.WHITE);
-		label5.setBounds(10, 32+ 25*4, 100, 20);jFrameList.add(label2);
+		DetaLabel 性病支原体= new DetaLabel("性病支原体检测（uu）:");
+		性病支原体.setForeground(Color.WHITE);
+		性病支原体.setBounds(10, 32+ 25*4, 100, 20);jFrameList.add(性病支原体);
 		
-		JTextField label5_box= new JTextField();
-		label5_box.setBounds(10+ 110, 33+ 25*4, 80, 20);
-		label5_box.addActionListener(new ActionListener(){
+		JTextField 性病支原体_box= new JTextField();
+		性病支原体_box.setBounds(10+ 110, 33+ 25*4, 80, 20);
+		性病支原体_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label5_box.getText();
+				String temp= 性病支原体_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "性病支原体感染阳性";
 				if(temp.contains("阳")) {
@@ -271,20 +271,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label5);
-		this.add(label5_box);	
+		this.add(性病支原体);
+		this.add(性病支原体_box);	
 
-		DetaLabel label6= new DetaLabel("低密度脂蛋白ldl-c:");  
-		label6.setForeground(Color.WHITE);
-		label6.setBounds(10, 32+ 25*5, 100, 20);jFrameList.add(label2);
+		DetaLabel 低密度脂蛋白= new DetaLabel("低密度脂蛋白ldl-c:");  
+		低密度脂蛋白.setForeground(Color.WHITE);
+		低密度脂蛋白.setBounds(10, 32+ 25*5, 100, 20);jFrameList.add(低密度脂蛋白);
 		
-		JTextField label6_box= new JTextField();
-		label6_box.setBounds(10+ 110, 33+ 25*5, 80, 20);
-		label6_box.addActionListener(new ActionListener(){
+		JTextField 低密度脂蛋白_box= new JTextField();
+		低密度脂蛋白_box.setBounds(10+ 110, 33+ 25*5, 80, 20);
+		低密度脂蛋白_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label6_box.getText();
+				String temp=低密度脂蛋白_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "同血清总胆固醇测定指标异常";
 				if(temp_double> 120&& temp_double< 40) {
@@ -295,21 +295,21 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label6);
-		this.add(label6_box);	
+		this.add(低密度脂蛋白);
+		this.add(低密度脂蛋白_box);	
 
 		//7
-		DetaLabel label7= new DetaLabel("血氨nh3:");  
-		label7.setForeground(Color.WHITE);
-		label7.setBounds(10, 32+ 25*6, 100, 20);jFrameList.add(label2);
+		DetaLabel 血氨= new DetaLabel("血氨nh3:");  
+		血氨.setForeground(Color.WHITE);
+		血氨.setBounds(10, 32+ 25*6, 100, 20);jFrameList.add(血氨);
 		
-		JTextField label7_box= new JTextField();
-		label7_box.setBounds(10+ 110, 33+ 25*6, 80, 20);
-		label7_box.addActionListener(new ActionListener(){
+		JTextField 血氨_box= new JTextField();
+		血氨_box.setBounds(10+ 110, 33+ 25*6, 80, 20);
+		血氨_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label7_box.getText();
+				String temp= 血氨_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "增高：见于肝昏迷，重症肝炎，休克。";
 				if(temp_double< 100) {
@@ -320,20 +320,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label7);
-		this.add(label7_box);	
+		this.add(血氨);
+		this.add(血氨_box);	
 		//8
-		DetaLabel label68= new DetaLabel("胰岛素抗体ins-ab:");  
-		label68.setForeground(Color.WHITE);
-		label68.setBounds(10, 32+ 25*7, 100, 20);jFrameList.add(label2);
+		DetaLabel 胰岛素抗体= new DetaLabel("胰岛素抗体ins-ab:");  
+		胰岛素抗体.setForeground(Color.WHITE);
+		胰岛素抗体.setBounds(10, 32+ 25*7, 100, 20);jFrameList.add(胰岛素抗体);
 		
-		JTextField label68_box= new JTextField();
-		label68_box.setBounds(10+ 110, 33+ 25*7, 80, 20);
-		label68_box.addActionListener(new ActionListener(){
+		JTextField 胰岛素抗体_box= new JTextField();
+		胰岛素抗体_box.setBounds(10+ 110, 33+ 25*7, 80, 20);
+		胰岛素抗体_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label68_box.getText();
+				String temp= 胰岛素抗体_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "胰岛素抵抗指标异常";
 				if(temp_double> 10) {
@@ -344,20 +344,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label68);
-		this.add(label68_box);	
+		this.add(胰岛素抗体);
+		this.add(胰岛素抗体_box);	
 		//9
-		DetaLabel label69= new DetaLabel("钾（尿）钾（尿）:");  
-		label69.setForeground(Color.WHITE);
-		label69.setBounds(10, 32+ 25*8, 100, 20);jFrameList.add(label2);
+		DetaLabel 钾尿= new DetaLabel("钾（尿）钾（尿）:");  
+		钾尿.setForeground(Color.WHITE);
+		钾尿.setBounds(10, 32+ 25*8, 100, 20);jFrameList.add(钾尿);
 		
-		JTextField label69_box= new JTextField();
-		label69_box.setBounds(10+ 110, 33+ 25*8, 80, 20);
-		label69_box.addActionListener(new ActionListener(){
+		JTextField 钾尿_box= new JTextField();
+		钾尿_box.setBounds(10+ 110, 33+ 25*8, 80, 20);
+		钾尿_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label69_box.getText();
+				String temp= 钾尿_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "当使用利尿时，尿钾排泄增多，原发性醛固酮增高症人尿钾排泄增加。指标异常";
 				if(temp_double> 100&& temp_double< 25) {
@@ -368,20 +368,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label69);
-		this.add(label69_box);	
+		this.add(钾尿);
+		this.add(钾尿_box);	
 		//10
-		DetaLabel label610= new DetaLabel("磷ip:");  
-		label610.setForeground(Color.WHITE);
-		label610.setBounds(10, 32+ 25*9, 100, 20);jFrameList.add(label2);
+		DetaLabel 磷= new DetaLabel("磷ip:");  
+		磷.setForeground(Color.WHITE);
+		磷.setBounds(10, 32+ 25*9, 100, 20);jFrameList.add(磷);
 		
-		JTextField label610_box= new JTextField();
-		label610_box.setBounds(10+ 110, 33+ 25*9, 80, 20);
-		label610_box.addActionListener(new ActionListener(){
+		JTextField 磷_box= new JTextField();
+		磷_box.setBounds(10+ 110, 33+ 25*9, 80, 20);
+		磷_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label610_box.getText();
+				String temp= 磷_box.getText();
 				double temp_double= Double.valueOf(temp.isEmpty()?"0":temp);
 				String reportz= "磷增高：见于甲状旁腺机能减退，急慢性肾功能不全，尿毒症，骨髓瘤及骨折愈合期。";
 				String reportj= "磷降低：见于甲亢，代谢性酸中毒佝楼病，软骨病，肾功能衰竭，长期腹泻及吸收不良。";
@@ -400,20 +400,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label610);
-		this.add(label610_box);	
+		this.add(磷);
+		this.add(磷_box);	
 		//11
-		DetaLabel label611= new DetaLabel("氯（尿）氯（尿）:");  
-		label611.setForeground(Color.WHITE);
-		label611.setBounds(10, 32+ 25*10, 100, 20);jFrameList.add(label2);
+		DetaLabel 氯尿= new DetaLabel("氯（尿）氯（尿）:");  
+		氯尿.setForeground(Color.WHITE);
+		氯尿.setBounds(10, 32+ 25*10, 100, 20);jFrameList.add(氯尿);
 		
-		JTextField label611_box= new JTextField();
-		label611_box.setBounds(10+ 110, 33+ 25*10, 80, 20);
-		label611_box.addActionListener(new ActionListener(){
+		JTextField 氯尿_box= new JTextField();
+		氯尿_box.setBounds(10+ 110, 33+ 25*10, 80, 20);
+		氯尿_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label611_box.getText();
+				String temp= 氯尿_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "一般情况下，尿钠与尿氯保持相对平衡，但连续服用NaCL或KCL后，尿氯比尿钠高"
 						+ "；相反，连服大量碱性钠盐，尿钠比尿氯高。";
@@ -426,20 +426,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 			}
 		});
-		this.add(label611);
-		this.add(label611_box);	
+		this.add(氯尿);
+		this.add(氯尿_box);	
 		//12
-		DetaLabel label612= new DetaLabel("肌钙蛋白ttnt:");  
-		label612.setForeground(Color.WHITE);
-		label612.setBounds(10, 32+ 25*11, 100, 20);jFrameList.add(label2);
+		DetaLabel 肌钙蛋白= new DetaLabel("肌钙蛋白ttnt:");  
+		肌钙蛋白.setForeground(Color.WHITE);
+		肌钙蛋白.setBounds(10, 32+ 25*11, 100, 20);jFrameList.add(肌钙蛋白);
 		
-		JTextField label612_box= new JTextField();
-		label612_box.setBounds(10+ 110, 33+ 25*11, 80, 20);
-		label612_box.addActionListener(new ActionListener(){
+		JTextField 肌钙蛋白_box= new JTextField();
+		肌钙蛋白_box.setBounds(10+ 110, 33+ 25*11, 80, 20);
+		肌钙蛋白_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label612_box.getText();
+				String temp= 肌钙蛋白_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "诊断心肌梗塞的灵敏指标，同时它又是判断不稳定心绞痛患者预后的一个重要指标异常";
 				if(temp_double>= 0.05) {
@@ -450,20 +450,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label612);
-		this.add(label612_box);	
+		this.add(肌钙蛋白);
+		this.add(肌钙蛋白_box);	
 		//13
-		DetaLabel label613= new DetaLabel("钠（尿）钠（尿）:");  
-		label613.setForeground(Color.WHITE);
-		label613.setBounds(10, 32+ 25*12, 100, 20);jFrameList.add(label2);
+		DetaLabel 钠尿= new DetaLabel("钠（尿）钠（尿）:");  
+		钠尿.setForeground(Color.WHITE);
+		钠尿.setBounds(10, 32+ 25*12, 100, 20);jFrameList.add(钠尿);
 		
-		JTextField label613_box= new JTextField();
-		label613_box.setBounds(10+ 110, 33+ 25*12, 80, 20);
-		label613_box.addActionListener(new ActionListener(){
+		JTextField 钠尿_box= new JTextField();
+		钠尿_box.setBounds(10+ 110, 33+ 25*12, 80, 20);
+		钠尿_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label613_box.getText();
+				String temp= 钠尿_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "判断是否有大量盐的丢失，判断呕吐，腹泻患者的电解质平衡，中枢神经系统疾病，脑出血，炎症，肿瘤，肾小管严重损害患者尿钠增多。";
 				String reportj= "尿钠低。";
@@ -482,20 +482,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label613);
-		this.add(label613_box);	
+		this.add(钠尿);
+		this.add(钠尿_box);	
 		//14
-		DetaLabel label614= new DetaLabel("碱性磷酸酶alp:");  
-		label614.setForeground(Color.WHITE);
-		label614.setBounds(10, 32+ 25*13, 100, 20);jFrameList.add(label2);
+		DetaLabel 碱性磷酸酶= new DetaLabel("碱性磷酸酶alp:");  
+		碱性磷酸酶.setForeground(Color.WHITE);
+		碱性磷酸酶.setBounds(10, 32+ 25*13, 100, 20);jFrameList.add(碱性磷酸酶);
 		
-		JTextField label614_box= new JTextField();
-		label614_box.setBounds(10+ 110, 33+ 25*13, 80, 20);
-		label614_box.addActionListener(new ActionListener(){
+		JTextField 碱性磷酸酶_box= new JTextField();
+		碱性磷酸酶_box.setBounds(10+ 110, 33+ 25*13, 80, 20);
+		碱性磷酸酶_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= label614_box.getText();
+				String temp= 碱性磷酸酶_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "碱性磷酸酶增高：常见于肝癌，肝硬化，阻塞性黄疸，急慢性黄疸型肝炎，骨细胞瘤，骨折及少年儿童。。";
 				String reportj= "碱性磷酸酶低。";
@@ -514,8 +514,8 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label614);
-		this.add(label614_box);	
+		this.add(碱性磷酸酶);
+		this.add(碱性磷酸酶_box);	
 		//
 		addSecondColomns(诊断结果_box, jFrameList);
 		addThirdColomns(诊断结果_box, jFrameList);
@@ -1434,46 +1434,46 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(baiDanBai22);
 		this.add(baiDanBai22_box);	
 
-		DetaLabel label222= new DetaLabel("基质细胞源性因子-1sdf-1:");  
-		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*1, 32+ 25*1, 100, 20);jFrameList.add(label222);
-		JTextField label222_box= new JTextField();
-		label222_box.setBounds(10+ 110+220*1, 33+ 25*1, 80, 20);
-		label222_box.addActionListener(new ActionListener(){
+		DetaLabel 基质细胞源性= new DetaLabel("基质细胞源性因子-1sdf-1:");  
+		基质细胞源性.setForeground(Color.WHITE);
+		基质细胞源性.setBounds(10+220*1, 32+ 25*1, 100, 20);jFrameList.add(基质细胞源性);
+		JTextField 基质细胞源性_box= new JTextField();
+		基质细胞源性_box.setBounds(10+ 110+220*1, 33+ 25*1, 80, 20);
+		基质细胞源性_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label222);
-		this.add(label222_box);	
+		this.add(基质细胞源性);
+		this.add(基质细胞源性_box);	
 
-		DetaLabel label322= new DetaLabel("栽脂蛋白eapoe:");  
-		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*1, 32+ 25*2, 100, 20);jFrameList.add(label322);
-		JTextField label322_box= new JTextField();
-		label322_box.setBounds(10+ 110+220*1, 33+ 25*2, 80, 20);
-		label322_box.addActionListener(new ActionListener(){
+		DetaLabel 栽脂蛋白= new DetaLabel("栽脂蛋白eapoe:");  
+		栽脂蛋白.setForeground(Color.WHITE);
+		栽脂蛋白.setBounds(10+220*1, 32+ 25*2, 100, 20);jFrameList.add(栽脂蛋白);
+		JTextField 栽脂蛋白_box= new JTextField();
+		栽脂蛋白_box.setBounds(10+ 110+220*1, 33+ 25*2, 80, 20);
+		栽脂蛋白_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label322);
-		this.add(label322_box);	
+		this.add(栽脂蛋白);
+		this.add(栽脂蛋白_box);	
 
-		DetaLabel label422= new DetaLabel("甘油三酯tg:");  
-		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*1, 32+ 25* 3, 100, 20);jFrameList.add(label422);
-		JTextField label422_box= new JTextField();
-		label422_box.setBounds(10+ 110+220*1, 33+ 25* 3, 80, 20);
-		label422_box.addActionListener(new ActionListener(){
+		DetaLabel 甘油三酯= new DetaLabel("甘油三酯tg:");  
+		甘油三酯.setForeground(Color.WHITE);
+		甘油三酯.setBounds(10+220*1, 32+ 25* 3, 100, 20);jFrameList.add(甘油三酯);
+		JTextField 甘油三酯_box= new JTextField();
+		甘油三酯_box.setBounds(10+ 110+220*1, 33+ 25* 3, 80, 20);
+		甘油三酯_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label422_box
+				printValue(甘油三酯_box
 						, "降低：见于甲亢，肾上腺皮质功能低下，肝实质性病变，原发性β脂蛋白缺乏及吸收不良。"
 						, "增高：可由遗传，饮食因素或继发于某些疾病，如糖尿病，肾病等。" 
 						, "" 
@@ -1481,19 +1481,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label422);
-		this.add(label422_box);	
+		this.add(甘油三酯);
+		this.add(甘油三酯_box);	
 
-		DetaLabel label522= new DetaLabel("cl（胸水）:");  
-		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*1, 32+ 25*4, 100, 20);jFrameList.add(label522);
-		JTextField label522_box= new JTextField();
-		label522_box.setBounds(10+ 110+220*1, 33+ 25*4, 80, 20);
-		label522_box.addActionListener(new ActionListener(){
+		DetaLabel 胸水= new DetaLabel("cl（胸水）:");  
+		胸水.setForeground(Color.WHITE);
+		胸水.setBounds(10+220*1, 32+ 25*4, 100, 20);jFrameList.add(胸水);
+		JTextField 胸水_box= new JTextField();
+		胸水_box.setBounds(10+ 110+220*1, 33+ 25*4, 80, 20);
+		胸水_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label522_box
+				printValue(胸水_box
 						, "降低：常见于结核性脑膜炎，化脓性脑膜炎"
 						, "尿毒症病人脑脊液氯化物长高" 
 						, "" 
@@ -1501,35 +1501,35 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label522);
-		this.add(label522_box);	
+		this.add(胸水);
+		this.add(胸水_box);	
 
-		DetaLabel label622= new DetaLabel("巨噬细胞感染趋化因子-1αmip-1α:");  
-		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*1, 32+ 25*5, 100, 20);jFrameList.add(label622);
-		JTextField label622_box= new JTextField();
-		label622_box.setBounds(10+ 110+220*1, 33+ 25*5, 80, 20);
-		label622_box.addActionListener(new ActionListener(){
+		DetaLabel 巨噬细胞感染= new DetaLabel("巨噬细胞感染趋化因子-1αmip-1α:");  
+		巨噬细胞感染.setForeground(Color.WHITE);
+		巨噬细胞感染.setBounds(10+220*1, 32+ 25*5, 100, 20);jFrameList.add(巨噬细胞感染);
+		JTextField 巨噬细胞感染_box= new JTextField();
+		巨噬细胞感染_box.setBounds(10+ 110+220*1, 33+ 25*5, 80, 20);
+		巨噬细胞感染_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label622);
-		this.add(label622_box);	
+		this.add(巨噬细胞感染);
+		this.add(巨噬细胞感染_box);	
 
 		//7
-		DetaLabel label722= new DetaLabel("纳na:");  
-		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*1, 32+ 25*6, 100, 20);jFrameList.add(label722);
-		JTextField label722_box= new JTextField();
-		label722_box.setBounds(10+ 110+220*1, 33+ 25*6, 80, 20);
-		label722_box.addActionListener(new ActionListener(){
+		DetaLabel 纳na= new DetaLabel("纳na:");  
+		纳na.setForeground(Color.WHITE);
+		纳na.setBounds(10+220*1, 32+ 25*6, 100, 20);jFrameList.add(纳na);
+		JTextField 纳na_box= new JTextField();
+		纳na_box.setBounds(10+ 110+220*1, 33+ 25*6, 80, 20);
+		纳na_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label722_box
+				printValue(纳na_box
 						, "降低：1.肾皮质功能不全，重症肾盂肾炎，糖尿病。2.胃肠道引流，呕吐及腹泻。3.肮利尿激素过多。"
 						, "增高：1.严重脱水，大量出汗，高烧，烧伤，糖尿病性多尿。2.肾上腺皮质功能亢进，原发及继发性醛固酮增多病。" 
 						, "" 
@@ -1537,19 +1537,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label722);
-		this.add(label722_box);	
+		this.add(纳na);
+		this.add(纳na_box);	
 		//8
-		DetaLabel label6822= new DetaLabel("尿17-酮类固醇17-ks:");  
-		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*1, 32+ 25*7, 100, 20);jFrameList.add(label6822);
-		JTextField label6822_box= new JTextField();
-		label6822_box.setBounds(10+ 110+220*1, 33+ 25*7, 80, 20);
-		label6822_box.addActionListener(new ActionListener(){
+		DetaLabel 酮类固醇= new DetaLabel("尿17-酮类固醇17-ks:");  
+		酮类固醇.setForeground(Color.WHITE);
+		酮类固醇.setBounds(10+220*1, 32+ 25*7, 100, 20);jFrameList.add(酮类固醇);
+		JTextField 酮类固醇_box= new JTextField();
+		酮类固醇_box.setBounds(10+ 110+220*1, 33+ 25*7, 80, 20);
+		酮类固醇_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label6822_box
+				printValue(酮类固醇_box
 						, "降低：见于上腺皮质功能不全，如阿狄森氏病等。"
 						, "增高：见于柯兴氏综合症，肥胖症，甲亢，肾上腺皮功能亢进，尤以其肿瘤升高显著。" 
 						, "" 
@@ -1557,19 +1557,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label6822);
-		this.add(label6822_box);	
+		this.add(酮类固醇);
+		this.add(酮类固醇_box);	
 		//9
-		DetaLabel label6922= new DetaLabel("胆汁酸tba:");  
-		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*1, 32+ 25*8, 100, 20);jFrameList.add(label6922);
-		JTextField label6922_box= new JTextField();
-		label6922_box.setBounds(10+ 110+220*1, 33+ 25*8, 80, 20);
-		label6922_box.addActionListener(new ActionListener(){
+		DetaLabel 胆汁酸= new DetaLabel("胆汁酸tba:");  
+		胆汁酸.setForeground(Color.WHITE);
+		胆汁酸.setBounds(10+220*1, 32+ 25*8, 100, 20);jFrameList.add(胆汁酸);
+		JTextField 胆汁酸_box= new JTextField();
+		胆汁酸_box.setBounds(10+ 110+220*1, 33+ 25*8, 80, 20);
+		胆汁酸_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label6922_box
+				printValue(胆汁酸_box
 						, ""
 						, "增高：急慢性肝炎，肝硬化，阻塞性黄疸及药物引起肝损害时。" 
 						, "" 
@@ -1577,34 +1577,34 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label6922);
-		this.add(label6922_box);	
+		this.add(胆汁酸);
+		this.add(胆汁酸_box);	
 		//10
-		DetaLabel label61022= new DetaLabel("血浆维生素b12vb12:");  
-		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*1, 32+ 25*9, 100, 20);jFrameList.add(label61022);
-		JTextField label61022_box= new JTextField();
-		label61022_box.setBounds(10+ 110+220*1, 33+ 25*9, 80, 20);
-		label61022_box.addActionListener(new ActionListener(){
+		DetaLabel 血浆维生素= new DetaLabel("血浆维生素b12vb12:");  
+		血浆维生素.setForeground(Color.WHITE);
+		血浆维生素.setBounds(10+220*1, 32+ 25*9, 100, 20);jFrameList.add(血浆维生素);
+		JTextField 血浆维生素_box= new JTextField();
+		血浆维生素_box.setBounds(10+ 110+220*1, 33+ 25*9, 80, 20);
+		血浆维生素_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61022);
-		this.add(label61022_box);	
+		this.add(血浆维生素);
+		this.add(血浆维生素_box);	
 		//11
-		DetaLabel label61122= new DetaLabel("血糖glu:");  
-		label61122.setForeground(Color.WHITE);
-		label61122.setBounds(10+220*1, 32+ 25*10, 100, 20);jFrameList.add(label61122);
-		JTextField label61122_box= new JTextField();
-		label61122_box.setBounds(10+ 110+220*1, 33+ 25*10, 80, 20);
-		label61122_box.addActionListener(new ActionListener(){
+		DetaLabel 血糖= new DetaLabel("血糖glu:");  
+		血糖.setForeground(Color.WHITE);
+		血糖.setBounds(10+220*1, 32+ 25*10, 100, 20);jFrameList.add(血糖);
+		JTextField 血糖_box= new JTextField();
+		血糖_box.setBounds(10+ 110+220*1, 33+ 25*10, 80, 20);
+		血糖_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label61122_box
+				printValue(血糖_box
 						, "过低"
 						, "增高：某些生理因素（情绪紧张，饭后1-2小时）及注射肾上腺素后，病理性增高见于各种糖尿病，慢性胰腺炎，心梗，甲亢，垂体前叶嗜酸性细胞瘤，颅内出血，颅外伤等。" 
 						, "" 
@@ -1612,19 +1612,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label61122);
-		this.add(label61122_box);	
+		this.add(血糖);
+		this.add(血糖_box);	
 		//12
-		DetaLabel label61222= new DetaLabel("24小时合成率igg:");  
-		label61222.setForeground(Color.WHITE);
-		label61222.setBounds(10+220*1, 32+ 25*11, 100, 20);jFrameList.add(label61222);
-		JTextField label61222_box= new JTextField();
-		label61222_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
-		label61222_box.addActionListener(new ActionListener(){
+		DetaLabel 小时合成率= new DetaLabel("24小时合成率igg:");  
+		小时合成率.setForeground(Color.WHITE);
+		小时合成率.setBounds(10+220*1, 32+ 25*11, 100, 20);jFrameList.add(小时合成率);
+		JTextField 小时合成率_box= new JTextField();
+		小时合成率_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
+		小时合成率_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label61222_box
+				printValue(小时合成率_box
 						, "鞘内免疫病观测指标低"
 						, "鞘内免疫病观测指标高" 
 						, "" 
@@ -1632,19 +1632,19 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label61222);
-		this.add(label61222_box);	
+		this.add(小时合成率);
+		this.add(小时合成率_box);	
 		//13
-		DetaLabel label61322= new DetaLabel("谷丙转氨酶alt:");  
-		label61322.setForeground(Color.WHITE);
-		label61322.setBounds(10+220*1, 32+ 25*12, 100, 20);jFrameList.add(label61322);
-		JTextField label61322_box= new JTextField();
-		label61322_box.setBounds(10+ 110+220*1, 33+ 25*12, 80, 20);
-		label61322_box.addActionListener(new ActionListener(){
+		DetaLabel 谷丙转氨酶= new DetaLabel("谷丙转氨酶alt:");  
+		谷丙转氨酶.setForeground(Color.WHITE);
+		谷丙转氨酶.setBounds(10+220*1, 32+ 25*12, 100, 20);jFrameList.add(谷丙转氨酶);
+		JTextField 谷丙转氨酶_box= new JTextField();
+		谷丙转氨酶_box.setBounds(10+ 110+220*1, 33+ 25*12, 80, 20);
+		谷丙转氨酶_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label61322_box
+				printValue(谷丙转氨酶_box
 						, ""
 						, "增高：常见于急慢性肝炎，药物性肝损伤，脂肪肝，肝硬化，心梗，胆道疾病等。" 
 						, "" 
@@ -1652,23 +1652,23 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label61322);
-		this.add(label61322_box);	
+		this.add(谷丙转氨酶);
+		this.add(谷丙转氨酶_box);	
 		//14
-		DetaLabel label61422= new DetaLabel("胰岛细胞抗体ica:");  
-		label61422.setForeground(Color.WHITE);
-		label61422.setBounds(10+220*1, 32+ 25*13, 100, 20);jFrameList.add(label61422);
-		JTextField label61422_box= new JTextField();
-		label61422_box.setBounds(10+ 110+220*1, 33+ 25*13, 80, 20);
-		label61422_box.addActionListener(new ActionListener(){
+		DetaLabel 胰岛细胞抗体= new DetaLabel("胰岛细胞抗体ica:");  
+		胰岛细胞抗体.setForeground(Color.WHITE);
+		胰岛细胞抗体.setBounds(10+220*1, 32+ 25*13, 100, 20);jFrameList.add(胰岛细胞抗体);
+		JTextField 胰岛细胞抗体_box= new JTextField();
+		胰岛细胞抗体_box.setBounds(10+ 110+220*1, 33+ 25*13, 80, 20);
+		胰岛细胞抗体_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61422);
-		this.add(label61422_box);	
+		this.add(胰岛细胞抗体);
+		this.add(胰岛细胞抗体);	
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
