@@ -6,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
+import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -13,7 +14,10 @@ import org.tinos.reportMap.DetaLabelConjunction;
 public class DetaLabel extends JLabel{
 	private static final long serialVersionUID = 1L;
 	public String tagName= "";
-	public JLabel jLabel;
+	public JLabel jLabelTop;
+	public JLabel jLabelMed;
+	public JLabel jLabelBot;
+	public Box box;
 	//先碎片函数调试, 之后面板函数集成
 	public JFrame frameTag;
 	public boolean ShowTag= false;
@@ -37,16 +41,33 @@ public class DetaLabel extends JLabel{
 					return;
 				}	
 				if(null== frameTag) {
-					jLabel= new JLabel(tagName);
+					//jlable最简分行
+					jLabelTop= new JLabel(tagName.substring(0, tagName.length()>60? 60: tagName.length()));
+					jLabelTop.setBounds(0, 0, 900, 30);
 					frameTag= new JFrame("提示栏");
-					//frame.setLayout(null);
-					frameTag.setSize(960, 70);
+					frameTag.setLayout(null);
+					frameTag.setSize(900, 60);
+					if(tagName.length()> 60) {
+						jLabelMed= new JLabel(tagName.substring(60, tagName.length()>120? 120: tagName.length()));
+						jLabelMed.setBounds(0, 30, 900, 30);
+						frameTag.setSize(900, 120);
+					}
+					if(tagName.length()> 120) {
+						jLabelBot= new JLabel(tagName.substring(120, tagName.length()));
+						jLabelBot.setBounds(0, 60, 900, 30);
+					}
 					//摘自第37行 https://blog.csdn.net/code_better/article/details/53505962
 					Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
 					//
 					frameTag.setLocation(point.x, point.y);
 					frameTag.setResizable(false);
-					frameTag.add(jLabel);
+					frameTag.add(jLabelTop);
+					if(tagName.length()> 60) {
+						frameTag.add(jLabelMed);
+					}
+					if(tagName.length()> 120) {
+						frameTag.add(jLabelBot);
+					}
 					frameTag.setVisible(true);
 					frameTag.show();
 					frameTag.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
@@ -56,7 +77,7 @@ public class DetaLabel extends JLabel{
 				}else {
 					if(!frameTag.isShowing()) {
 						Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
-						frameTag.setSize(830, 50);
+						frameTag.setSize(900, 150);
 						frameTag.setLocation(point.x, point.y);
 						frameTag.setVisible(true);
 						frameTag.show();
@@ -69,26 +90,18 @@ public class DetaLabel extends JLabel{
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 			}
 
 		});
@@ -113,13 +126,26 @@ public class DetaLabel extends JLabel{
 
 
 	public void setTag(String string, boolean True) {
-		// TODO Auto-generated method stub
 		ShowTag= True;
-		tagName= null== string? "":string.toString();
-		if(null!= jLabel) {
-			jLabel.setName(tagName);
+		tagName= null== string? "": string.toString();
+		if(null!= jLabelTop) {
+			jLabelTop.setText(tagName.substring(0, tagName.length()> 60? 60: tagName.length()));
 		}else {
-			jLabel= new JLabel(tagName);
+			jLabelTop= new JLabel(tagName.substring(0, tagName.length()> 60? 60: tagName.length()));
+		}
+		if(tagName.length()> 60) {
+			if(null!= jLabelBot) {
+				jLabelMed.setText(tagName.substring(60, tagName.length()> 120? 120: tagName.length()));
+			}else {
+				jLabelMed= new JLabel(tagName.substring(60, tagName.length()> 120? 120: tagName.length()));
+			}
+		}
+		if(tagName.length()> 120) {
+			if(null!= jLabelBot) {
+				jLabelBot.setText(tagName.substring(120, tagName.length()));
+			}else {
+				jLabelBot= new JLabel(tagName.substring(120, tagName.length()));
+			}
 		}
 	}
 }

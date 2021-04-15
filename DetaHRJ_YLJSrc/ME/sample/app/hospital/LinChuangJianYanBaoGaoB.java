@@ -973,7 +973,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(label6222223_box);	
 
 		//7
-		DetaLabel label7222223= new DetaLabel("ÑªÃâÒßÇòµ°°×gigg:");  
+		DetaLabel label7222223= new DetaLabel("ÃâÒßÇòµ°°×gigg:");  
 		label7222223.setForeground(Color.WHITE);
 		label7222223.setBounds(10+220*3, 32+ 25*6, 100, 20);
 		JTextField label7222223_box= new JTextField();
