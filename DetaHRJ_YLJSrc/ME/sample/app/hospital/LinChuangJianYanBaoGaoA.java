@@ -559,7 +559,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 		DetaLabel 肌酐清除率= new DetaLabel("肌酐清除率cor:");  
 		肌酐清除率.setForeground(Color.WHITE);
-		肌酐清除率.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(胰岛素ins);
+		肌酐清除率.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(肌酐清除率);
 		
 		JTextField 肌酐清除率_box= new JTextField();
 		肌酐清除率_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
@@ -589,17 +589,17 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(肌酐清除率);
 		this.add(肌酐清除率_box);	
 
-		DetaLabel 总胆红质= new DetaLabel("血（尿）铜cu:");  
-		总胆红质.setForeground(Color.WHITE);
-		总胆红质.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(总胆红质);
+		DetaLabel 血尿铜= new DetaLabel("血（尿）铜cu:");  
+		血尿铜.setForeground(Color.WHITE);
+		血尿铜.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(血尿铜);
 		
-		JTextField 总胆红质_box= new JTextField();
-		总胆红质_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
-		总胆红质_box.addActionListener(new ActionListener(){
+		JTextField 血尿铜_box= new JTextField();
+		血尿铜_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
+		血尿铜_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 总胆红质_box.getText();
+				String temp= 血尿铜_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "血（尿）铜 增高：见于恶性肿瘤，肝硬化，甲亢，结核等。";
 				String reportj= "血（尿）铜 降低：见于先天性铜吸收及肝脏代谢障碍，肾病综合症及肝豆状核变性。";
@@ -618,20 +618,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(总胆红质);
-		this.add(总胆红质_box);	
+		this.add(血尿铜);
+		this.add(血尿铜_box);	
 
-		DetaLabel 淀粉酶amy= new DetaLabel("组分区带igg:");  
-		淀粉酶amy.setForeground(Color.WHITE);
-		淀粉酶amy.setBounds(10+ 220*4, 32+ 25* 3, 100, 20);jFrameList.add(淀粉酶amy);
+		DetaLabel 组分区带igg= new DetaLabel("组分区带igg:");  
+		组分区带igg.setForeground(Color.WHITE);
+		组分区带igg.setBounds(10+ 220*4, 32+ 25* 3, 100, 20);jFrameList.add(组分区带igg);
 		
-		JTextField 淀粉酶amy_box= new JTextField();
-		淀粉酶amy_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
-		淀粉酶amy_box.addActionListener(new ActionListener(){
+		JTextField 组分区带igg_box= new JTextField();
+		组分区带igg_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
+		组分区带igg_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 淀粉酶amy_box.getText();
+				String temp= 组分区带igg_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "鞘内免疫病观测指标阳性";
 				if(temp.contains("阳")) {
@@ -642,20 +642,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(淀粉酶amy);
-		this.add(淀粉酶amy_box);	
+		this.add(组分区带igg);
+		this.add(组分区带igg_box);	
 
-		DetaLabel 乳酸脱氢酶ldh= new DetaLabel("甲状旁腺激素pth:");  
-		乳酸脱氢酶ldh.setForeground(Color.WHITE);
-		乳酸脱氢酶ldh.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(乳酸脱氢酶ldh);
+		DetaLabel 甲状旁腺激素pth= new DetaLabel("甲状旁腺激素pth:");  
+		甲状旁腺激素pth.setForeground(Color.WHITE);
+		甲状旁腺激素pth.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(甲状旁腺激素pth);
 		
-		JTextField 乳酸脱氢酶ldh_box= new JTextField();
-		乳酸脱氢酶ldh_box.setBounds(10+ 110+220*4, 33+ 25*4, 80, 20);
-		乳酸脱氢酶ldh_box.addActionListener(new ActionListener(){
+		JTextField 甲状旁腺激素pth_box= new JTextField();
+		甲状旁腺激素pth_box.setBounds(10+ 110+220*4, 33+ 25*4, 80, 20);
+		甲状旁腺激素pth_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 乳酸脱氢酶ldh_box.getText();
+				String temp= 甲状旁腺激素pth_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "测定甲状旁腺功能骨质过密。";
 				String reportj= "测定甲状旁腺功能骨质疏松。";
@@ -674,20 +674,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(乳酸脱氢酶ldh);
-		this.add(乳酸脱氢酶ldh_box);	
+		this.add(甲状旁腺激素pth);
+		this.add(甲状旁腺激素pth_box);	
 
-		DetaLabel 铁tron= new DetaLabel("尿3-甲氧基4-羟基苦杏仁酸（vma）:");  
-		铁tron.setForeground(Color.WHITE);
-		铁tron.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(铁tron);
+		DetaLabel 羟基苦杏仁酸= new DetaLabel("尿3-甲氧基4-羟基苦杏仁酸（vma）:");  
+		羟基苦杏仁酸.setForeground(Color.WHITE);
+		羟基苦杏仁酸.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(羟基苦杏仁酸);
 		
-		JTextField 铁tron_box= new JTextField();
-		铁tron_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
-		铁tron_box.addActionListener(new ActionListener(){
+		JTextField 羟基苦杏仁酸_box= new JTextField();
+		羟基苦杏仁酸_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
+		羟基苦杏仁酸_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 铁tron_box.getText();
+				String temp= 羟基苦杏仁酸_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "尿3-甲氧基4-羟基苦杏仁酸（vma）过高。";
 				String reportj= "尿3-甲氧基4-羟基苦杏仁酸（vma）过低。";
@@ -706,21 +706,21 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(铁tron);
-		this.add(铁tron_box);	
+		this.add(羟基苦杏仁酸);
+		this.add(羟基苦杏仁酸_box);	
 
 		//7
-		DetaLabel 酸性磷酸酶和酒石酸= new DetaLabel("载脂蛋白ap0alap0al:");  
-		酸性磷酸酶和酒石酸.setForeground(Color.WHITE);
-		酸性磷酸酶和酒石酸.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(酸性磷酸酶和酒石酸);
+		DetaLabel 载脂蛋白ap0= new DetaLabel("载脂蛋白ap0alap0al:");  
+		载脂蛋白ap0.setForeground(Color.WHITE);
+		载脂蛋白ap0.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(载脂蛋白ap0);
 		
-		JTextField 酸性磷酸酶和酒石酸_box= new JTextField();
-		酸性磷酸酶和酒石酸_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
-		酸性磷酸酶和酒石酸_box.addActionListener(new ActionListener(){
+		JTextField 载脂蛋白ap0_box= new JTextField();
+		载脂蛋白ap0_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
+		载脂蛋白ap0_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 酸性磷酸酶和酒石酸_box.getText();
+				String temp= 载脂蛋白ap0_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "载脂蛋白过高。";
 				String reportj= "载脂蛋白降低：常见于高脂血症，冠心病及肝实质性病变。";
@@ -739,20 +739,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(酸性磷酸酶和酒石酸);
-		this.add(酸性磷酸酶和酒石酸_box);	
+		this.add(载脂蛋白ap0);
+		this.add(载脂蛋白ap0_box);	
 		//8
-		DetaLabel 粒细胞刺激因子= new DetaLabel("肌钙蛋白itni:");  
-		粒细胞刺激因子.setForeground(Color.WHITE);
-		粒细胞刺激因子.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(粒细胞刺激因子);
+		DetaLabel 肌钙蛋白itni= new DetaLabel("肌钙蛋白itni:");  
+		肌钙蛋白itni.setForeground(Color.WHITE);
+		肌钙蛋白itni.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(肌钙蛋白itni);
 		
-		JTextField 粒细胞刺激因子_box= new JTextField();
-		粒细胞刺激因子_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
-		粒细胞刺激因子_box.addActionListener(new ActionListener(){
+		JTextField 肌钙蛋白itni_box= new JTextField();
+		肌钙蛋白itni_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
+		肌钙蛋白itni_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 粒细胞刺激因子_box.getText();
+				String temp= 肌钙蛋白itni_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "同TNI。诊断心肌梗塞的灵敏指标，同时它又是判断不稳定心绞痛患者预后的一个重要指标。";
 				String reportj= "肌钙蛋白过低。";
@@ -772,20 +772,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 			}
 		});
-		this.add(粒细胞刺激因子);
-		this.add(粒细胞刺激因子_box);	
+		this.add(肌钙蛋白itni);
+		this.add(肌钙蛋白itni_box);	
 		//9
-		DetaLabel 雌激素el= new DetaLabel("氯醋酸萘酚as-d酯酶染色:");  
-		雌激素el.setForeground(Color.WHITE);
-		雌激素el.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(雌激素el);
+		DetaLabel 氯醋酸萘酚= new DetaLabel("氯醋酸萘酚as-d酯酶染色:");  
+		氯醋酸萘酚.setForeground(Color.WHITE);
+		氯醋酸萘酚.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(氯醋酸萘酚);
 		
-		JTextField 雌激素el_box= new JTextField();
-		雌激素el_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
-		雌激素el_box.addActionListener(new ActionListener(){
+		JTextField 氯醋酸萘酚_box= new JTextField();
+		氯醋酸萘酚_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
+		氯醋酸萘酚_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 雌激素el_box.getText();
+				String temp= 氯醋酸萘酚_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "白血病";
 				if(temp.contains("阳")) {
@@ -796,20 +796,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(雌激素el);
-		this.add(雌激素el_box);	
+		this.add(氯醋酸萘酚);
+		this.add(氯醋酸萘酚_box);	
 		//10
-		DetaLabel 同工酶ck_mb= new DetaLabel("乳酸lact:");  
-		同工酶ck_mb.setForeground(Color.WHITE);
-		同工酶ck_mb.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(同工酶ck_mb);
+		DetaLabel 乳酸lact= new DetaLabel("乳酸lact:");  
+		乳酸lact.setForeground(Color.WHITE);
+		乳酸lact.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(乳酸lact);
 		
-		JTextField 同工酶ck_mb_box= new JTextField();
-		同工酶ck_mb_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
-		同工酶ck_mb_box.addActionListener(new ActionListener(){
+		JTextField 乳酸lact_box= new JTextField();
+		乳酸lact_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
+		乳酸lact_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 酸性磷酸酶和酒石酸_box.getText();
+				String temp= 乳酸lact_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "乳酸LACT过高。见于缺氧，酸中毒，休克，严重贫血，肺功能不全，肌肉痉挛，糖尿病，剧烈运动";
 				String reportj= "";
@@ -828,20 +828,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(同工酶ck_mb);
-		this.add(同工酶ck_mb_box);	
+		this.add(乳酸lact);
+		this.add(乳酸lact_box);	
 		//11
-		DetaLabel 尿渗透压尿= new DetaLabel("肿瘤标记抗原242检测ca242:");  
-		尿渗透压尿.setForeground(Color.WHITE);
-		尿渗透压尿.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(尿渗透压尿);
+		DetaLabel 肿瘤标记抗原= new DetaLabel("肿瘤标记抗原242检测ca242:");  
+		肿瘤标记抗原.setForeground(Color.WHITE);
+		肿瘤标记抗原.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(肿瘤标记抗原);
 		
-		JTextField 尿渗透压尿_box= new JTextField();
-		尿渗透压尿_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
-		尿渗透压尿_box.addActionListener(new ActionListener(){
+		JTextField 肿瘤标记抗原_box= new JTextField();
+		肿瘤标记抗原_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
+		肿瘤标记抗原_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				String temp= 尿渗透压尿_box.getText();
+				String temp= 肿瘤标记抗原_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "";
 				String reportj= "主要用于胰腺癌、结直肠癌的诊断与鉴别";
@@ -860,20 +860,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(尿渗透压尿);
-		this.add(尿渗透压尿_box);	
+		this.add(肿瘤标记抗原);
+		this.add(肿瘤标记抗原_box);	
 		//12
-		DetaLabel 结核印迹试验= new DetaLabel("钙ca:");  
-		结核印迹试验.setForeground(Color.WHITE);
-		结核印迹试验.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(结核印迹试验);
+		DetaLabel 钙ca= new DetaLabel("钙ca:");  
+		钙ca.setForeground(Color.WHITE);
+		钙ca.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(钙ca);
 		
-		JTextField 结核印迹试验_box= new JTextField();
-		结核印迹试验_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
-		结核印迹试验_box.addActionListener(new ActionListener(){
+		JTextField 钙ca_box= new JTextField();
+		钙ca_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
+		钙ca_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(结核印迹试验_box
+				printValue(钙ca_box
 						, "降低：常见于维生素D缺乏，佝楼病，软骨病，小儿手足抽搐症，老年骨质疏松，甲状旁腺功能减退，慢性肾炎，尿毒症，低钙饮食及吸收不良" 
 						, "增高：见于骨肿瘤，甲状旁腺机能亢进，急性骨萎缩，肾上腺皮脂功能减退及维生素D摄入过量等。"
 						, "" 
@@ -881,43 +881,43 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(结核印迹试验);
-		this.add(结核印迹试验_box);	
+		this.add(钙ca);
+		this.add(钙ca_box);	
 		//13
-		DetaLabel 腺苷脱氨酸= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
-		腺苷脱氨酸.setForeground(Color.WHITE);
-		腺苷脱氨酸.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(腺苷脱氨酸);
+		DetaLabel 巨噬细胞感染趋化因子= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
+		巨噬细胞感染趋化因子.setForeground(Color.WHITE);
+		巨噬细胞感染趋化因子.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(巨噬细胞感染趋化因子);
 		
-		JTextField 腺苷脱氨酸_box= new JTextField();
-		腺苷脱氨酸_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
-		腺苷脱氨酸_box.addActionListener(new ActionListener(){
+		JTextField 巨噬细胞感染趋化因子_box= new JTextField();
+		巨噬细胞感染趋化因子_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
+		巨噬细胞感染趋化因子_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(腺苷脱氨酸);
-		this.add(腺苷脱氨酸_box);	
+		this.add(巨噬细胞感染趋化因子);
+		this.add(巨噬细胞感染趋化因子_box);	
 		//14
-		DetaLabel 尖锐湿疣醋酸白= new DetaLabel("尿17-羟固醇17-oh:");  
-		尖锐湿疣醋酸白.setForeground(Color.WHITE);
-		尖锐湿疣醋酸白.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(尖锐湿疣醋酸白);
+		DetaLabel 羟固醇17= new DetaLabel("尿17-羟固醇17-oh:");  
+		羟固醇17.setForeground(Color.WHITE);
+		羟固醇17.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(羟固醇17);
 		
-		JTextField 尖锐湿疣醋酸白_box= new JTextField();
-		尖锐湿疣醋酸白_box.setBounds(10+ 110+ 220* 4, 33+ 25* 13, 80, 20);
-		尖锐湿疣醋酸白_box.addActionListener(new ActionListener(){
+		JTextField 羟固醇17_box= new JTextField();
+		羟固醇17_box.setBounds(10+ 110+ 220* 4, 33+ 25* 13, 80, 20);
+		羟固醇17_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(尖锐湿疣醋酸白_box
+				printValue(羟固醇17_box
 						, "降低：见于上腺皮质功能不全，如阿狄森氏病等" 
 						, "增高：见于柯兴氏综合症，肥胖症，甲亢，肾上腺皮功能亢进，尤以其肿瘤升高显著。"
 						, "" ,3 ,11, 诊断结果_box, "");
 			}
 		});
-		this.add(尖锐湿疣醋酸白);
-		this.add(尖锐湿疣醋酸白_box);	
+		this.add(羟固醇17);
+		this.add(羟固醇17_box);	
 	}
 
 	protected void printValue(JTextField 结核印迹试验_box, String minString, String maxString, String elseString
@@ -955,20 +955,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	void addFourthColomns(JTextField 诊断结果_box, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel 疥疮镜检sarcoptes= new DetaLabel("ldh同工酶is0-ldh:");  
-		疥疮镜检sarcoptes.setForeground(Color.WHITE);
-		疥疮镜检sarcoptes.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(疥疮镜检sarcoptes);
-		JTextField 疥疮镜检sarcoptes_box= new JTextField();
-		疥疮镜检sarcoptes_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
-		疥疮镜检sarcoptes_box.addActionListener(new ActionListener(){
+		DetaLabel ldh同工酶is= new DetaLabel("ldh同工酶is0-ldh:");  
+		ldh同工酶is.setForeground(Color.WHITE);
+		ldh同工酶is.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(ldh同工酶is);
+		JTextField ldh同工酶is_box= new JTextField();
+		ldh同工酶is_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
+		ldh同工酶is_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(疥疮镜检sarcoptes);
-		this.add(疥疮镜检sarcoptes_box);	
+		this.add(ldh同工酶is);
+		this.add(ldh同工酶is_box);	
 
 		DetaLabel 胰岛素ins= new DetaLabel("胰岛素ins:");  
 		胰岛素ins.setForeground(Color.WHITE);
@@ -985,20 +985,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(胰岛素ins);
 		this.add(胰岛素ins_box);	
 
-		DetaLabel 总胆红质= new DetaLabel("同t:");  
-		总胆红质.setForeground(Color.WHITE);
-		总胆红质.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(总胆红质);
-		JTextField 总胆红质_box= new JTextField();
-		总胆红质_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
-		总胆红质_box.addActionListener(new ActionListener(){
+		DetaLabel 同t= new DetaLabel("同t:");  
+		同t.setForeground(Color.WHITE);
+		同t.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(同t);
+		JTextField 同t_box= new JTextField();
+		同t_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
+		同t_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(总胆红质);
-		this.add(总胆红质_box);	
+		this.add(同t);
+		this.add(同t_box);	
 
 		DetaLabel 淀粉酶amy= new DetaLabel("淀粉酶amy:");  
 		淀粉酶amy.setForeground(Color.WHITE);
