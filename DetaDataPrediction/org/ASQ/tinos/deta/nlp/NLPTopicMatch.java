@@ -11,12 +11,12 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
-import org.ASQ.tinos.deta.statistic.LYG9DWithDoubleQuickSort4D;
+import org.ASQ.tinos.deta.statistic.LYG4DWithDoubleQuickSort4D;
 import org.OSU.tinos.list.ListSwap;
 public class NLPTopicMatch{
 	//<<NLP Algorithm of Matching The POS Scored Sentence>>.
 	//This prediction algorithm mostly used for matching the best sample sentence by using score method.  
-	//Theory: Yaoguang.Luo 20191228 20200712
+	//Theory: Yaoguang.Luo 20191228
 	//Application: Yaoguang.Luo
 	//Attention: need Deta Parser API OSS 
 	public static String NLPBestSentenceMatch(String searchString
@@ -31,6 +31,16 @@ public class NLPTopicMatch{
 		Map<String, WordFrequency> keyMap= analyzer.getWordFrequencyMap(keys);
 		//get a POS score rights array from keyMap.
 		String[] stringKeys= ListSwap.listToArray(keys);
+		// I create a new algorithm of 'list to array' in my Data Swap Project. 20191228 Yaoguang. Luo
+		//	public static String[] listToArray(List<String> list) {
+		//		String[] output= new String[list.size()];
+		//		int outputPoint= 0;
+		//		Iterator<String> iterator= list.iterator();
+		//		while(iterator.hasNext()) {
+		//			output[outputPoint++]= iterator.next();
+		//		}
+		//		return output;
+		//	}
 		double[] scoreRights= getNLPBestSentencesMatchScoreRights(searchString
 				, sampleSentences, analyzer, nlp, keyMap);
 		//loop score array
@@ -56,7 +66,7 @@ public class NLPTopicMatch{
 
 	//<<NLP Algorithm of Matching The POS Scored Sentences>>.
 	//This prediction algorithm mostly used for matching the ranged sample sentences by using score method.  
-	//Theory: Yaoguang.Luo 20191229 20200712
+	//Theory: Yaoguang.Luo 20191229
 	//Application: Yaoguang.Luo
 	//Attention: need Deta Parser API OSS 
 	//sortStackRange: for the sort stacks filter scale
@@ -77,7 +87,7 @@ public class NLPTopicMatch{
 			tempBase.put(matchScore[i], tempList);
 		}
 		//sort
-		matchScore= new LYG9DWithDoubleQuickSort4D().sort(matchScore, sortStackRange, 70);
+		matchScore= new LYG4DWithDoubleQuickSort4D().sort(matchScore, sortStackRange);
 		double filterCount= filterRate* matchScore.length;
 		//filter
 		List<String> output= new ArrayList<>();

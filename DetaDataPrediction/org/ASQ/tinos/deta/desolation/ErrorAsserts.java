@@ -1,6 +1,6 @@
 package org.ASQ.tinos.deta.desolation;
 
-import org.ASQ.tinos.deta.statistic.LYG9DWithDoubleQuickSort4D;
+import org.ASQ.tinos.deta.statistic.LYG4DWithDoubleQuickSort4D;
 
 public class ErrorAsserts{
 	//这个函数用于进行精度误差匹配 获取质量是否属于合格状态。
@@ -22,7 +22,7 @@ public class ErrorAsserts{
 	public boolean getBinaryErrorAsserts(double inputValue, double[] matchValues
 			, double scale, int sortStackRange, boolean isSort) {
 		if(!isSort) {
-			matchValues= new LYG9DWithDoubleQuickSort4D().sort(matchValues, sortStackRange, 70);	
+			matchValues= new LYG4DWithDoubleQuickSort4D().sort(matchValues, sortStackRange);	
 		}
 		double max= inputValue+ scale;
 		double min= inputValue- scale;

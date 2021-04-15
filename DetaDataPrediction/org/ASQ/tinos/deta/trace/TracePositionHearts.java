@@ -8,9 +8,7 @@ import org.ASQ.tinos.deta.demension.Position2D;
 import org.ASQ.tinos.deta.demension.Position3D;
 public class TracePositionHearts{
 	//Source: 《2维 3维 坐标集 切裂 重心 轨迹 跟踪算法JAVA源码》
-	//似乎又被猫腻了,出版日期改成创作日期
-	//创作日期2019 年 12 月 21 日 
-	///*出版日期2019 年 12 月 21 日*/  作品说明Gitee, Github, DetaOSS
+	//出版日期2019 年 12 月 21 日  作品说明Gitee, Github, DetaOSS
 	//作品说明适用于 坐标团 动态分析，增量轨迹分析，熵增信息单元记录。
 	//作者 罗瑶光
 	public static List<Position2D> trackTracePosition2DHeartsWithSingerGroup(List<Position2D> coods){
@@ -22,9 +20,9 @@ public class TracePositionHearts{
 				isFirst= !isFirst;
 				hearts.add(iterator.next());
 			}else {
-				Position2D AMV_MVS_VSQ2D= iterator.next();
+				Position2D position2D= iterator.next();
 				Position2D CryptHeart
-				= Euclid.findCryptionPosition2D(hearts.get(hearts.size()- 1), AMV_MVS_VSQ2D);
+				= Euclid.findCryptionPosition2D(hearts.get(hearts.size()- 1), position2D);
 				hearts.add(CryptHeart);
 			}
 		}
@@ -40,9 +38,9 @@ public class TracePositionHearts{
 				isFirst= !isFirst;
 				hearts.add(iterator.next());
 			}else {
-				Position3D AMV_MVS_VSQ3D= iterator.next();
+				Position3D position3D= iterator.next();
 				Position3D CryptHeart
-				= Euclid.findCryptionPosition3D(hearts.get(hearts.size()- 1), AMV_MVS_VSQ3D);
+				= Euclid.findCryptionPosition3D(hearts.get(hearts.size()- 1), position3D);
 				hearts.add(CryptHeart);
 			}
 		}

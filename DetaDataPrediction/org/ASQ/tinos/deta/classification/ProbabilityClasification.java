@@ -4,8 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.ASQ.tinos.deta.basic.RatioMatrix;
+
 //这个函数用于通过概率轭相似度来进行坐标分类
-//思想：贝叶斯
+//思想：贝叶斯  ， 数据挖掘绿皮书， 任课教授 ：卡拉森。
 //实现：罗瑶光
 public class ProbabilityClasification{
 	public static boolean predictionResult(RatioMatrix input, List<RatioMatrix> groups, double scale) {
@@ -48,8 +49,7 @@ public class ProbabilityClasification{
 		boolean isFirst= true;
 		//轭
 		double esyn= input.getRightRightRatio()+ input.getErrorErrorRatio();
-		//double esny= input.getErrorRightRatio()+ input.getRightErrorRatio();若使用该行 
-		//轭 误差集合请自行校正。罗瑶光20191217
+		//double esny= input.getErrorRightRatio()+ input.getRightErrorRatio();若使用该行 轭 误差集合请自行校正。罗瑶光20191217
 		double yesyn= input.getRightRightRatio()/ esyn;
 		double nesyn= input.getErrorErrorRatio()/ esyn;
 		double totalRatio= -yesyn* Math.log(yesyn)- nesyn* Math.log(nesyn);

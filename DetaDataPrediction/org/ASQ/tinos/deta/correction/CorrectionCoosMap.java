@@ -18,25 +18,25 @@ public class CorrectionCoosMap{
 		double yMin= 0;
 		double[] range= new double[2];
 		if(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D= iterator.next();
-			xMax= AMV_MVS_VSQ2D.getX();
-			xMin= AMV_MVS_VSQ2D.getX();
-			yMax= AMV_MVS_VSQ2D.getY();
-			yMin= AMV_MVS_VSQ2D.getY();
+			Position2D position2D= iterator.next();
+			xMax= position2D.getX();
+			xMin= position2D.getX();
+			yMax= position2D.getY();
+			yMin= position2D.getY();
 		}
 		while(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D= iterator.next();
-			if(AMV_MVS_VSQ2D.getX()> xMax) {
-				xMax= AMV_MVS_VSQ2D.getX();
+			Position2D position2D= iterator.next();
+			if(position2D.getX()> xMax) {
+				xMax= position2D.getX();
 			}
-			if(AMV_MVS_VSQ2D.getX()< xMin) {
-				xMin= AMV_MVS_VSQ2D.getX();
+			if(position2D.getX()< xMin) {
+				xMin= position2D.getX();
 			}
-			if(AMV_MVS_VSQ2D.getY()> yMax) {
-				yMax= AMV_MVS_VSQ2D.getY();
+			if(position2D.getY()> yMax) {
+				yMax= position2D.getY();
 			}
-			if(AMV_MVS_VSQ2D.getY()< yMin) {
-				yMin= AMV_MVS_VSQ2D.getY();
+			if(position2D.getY()< yMin) {
+				yMin= position2D.getY();
 			}
 		}
 		range[0]= xMax- xMin;
@@ -54,33 +54,33 @@ public class CorrectionCoosMap{
 		double zMin= 0;
 		double[] range= new double[3];
 		if(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D= iterator.next();
-			xMax= AMV_MVS_VSQ3D.getX();
-			xMin= AMV_MVS_VSQ3D.getX();
-			yMax= AMV_MVS_VSQ3D.getY();
-			yMin= AMV_MVS_VSQ3D.getY();
-			zMax= AMV_MVS_VSQ3D.getZ();
-			zMin= AMV_MVS_VSQ3D.getZ();
+			Position3D position3D= iterator.next();
+			xMax= position3D.getX();
+			xMin= position3D.getX();
+			yMax= position3D.getY();
+			yMin= position3D.getY();
+			zMax= position3D.getZ();
+			zMin= position3D.getZ();
 		}
 		while(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D= iterator.next();
-			if(AMV_MVS_VSQ3D.getX()> xMax) {
-				xMax= AMV_MVS_VSQ3D.getX();
+			Position3D position3D= iterator.next();
+			if(position3D.getX()> xMax) {
+				xMax= position3D.getX();
 			}
-			if(AMV_MVS_VSQ3D.getX()< xMin) {
-				xMin= AMV_MVS_VSQ3D.getX();
+			if(position3D.getX()< xMin) {
+				xMin= position3D.getX();
 			}
-			if(AMV_MVS_VSQ3D.getY()> yMax) {
-				yMax= AMV_MVS_VSQ3D.getY();
+			if(position3D.getY()> yMax) {
+				yMax= position3D.getY();
 			}
-			if(AMV_MVS_VSQ3D.getY()< yMin) {
-				yMin= AMV_MVS_VSQ3D.getY();
+			if(position3D.getY()< yMin) {
+				yMin= position3D.getY();
 			}
-			if(AMV_MVS_VSQ3D.getZ()> zMax) {
-				zMax= AMV_MVS_VSQ3D.getZ();
+			if(position3D.getZ()> zMax) {
+				zMax= position3D.getZ();
 			}
-			if(AMV_MVS_VSQ3D.getZ()< zMin) {
-				zMin= AMV_MVS_VSQ3D.getZ();
+			if(position3D.getZ()< zMin) {
+				zMin= position3D.getZ();
 			}
 		}
 		range[0]= xMax- xMin;
@@ -94,10 +94,10 @@ public class CorrectionCoosMap{
 		List<Position2D> output= new ArrayList<>();
 		Iterator<Position2D> iterator= inputs.iterator();
 		while(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D= iterator.next();
-			AMV_MVS_VSQ2D.setX(AMV_MVS_VSQ2D.getX()+ xRange);
-			AMV_MVS_VSQ2D.setY(AMV_MVS_VSQ2D.getY()+ yRange);
-			output.add(AMV_MVS_VSQ2D);
+			Position2D position2D= iterator.next();
+			position2D.setX(position2D.getX()+ xRange);
+			position2D.setY(position2D.getY()+ yRange);
+			output.add(position2D);
 		}
 		return output;
 	}
@@ -107,11 +107,11 @@ public class CorrectionCoosMap{
 		List<Position3D> output=new ArrayList<>();
 		Iterator<Position3D> iterator= inputs.iterator();
 		while(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D= iterator.next();
-			AMV_MVS_VSQ3D.setX(AMV_MVS_VSQ3D.getX()+ xRange);
-			AMV_MVS_VSQ3D.setY(AMV_MVS_VSQ3D.getY()+ yRange);
-			AMV_MVS_VSQ3D.setZ(AMV_MVS_VSQ3D.getZ()+ zRange);
-			output.add(AMV_MVS_VSQ3D);
+			Position3D position3D= iterator.next();
+			position3D.setX(position3D.getX()+ xRange);
+			position3D.setY(position3D.getY()+ yRange);
+			position3D.setZ(position3D.getZ()+ zRange);
+			output.add(position3D);
 		}
 		return output;
 	}

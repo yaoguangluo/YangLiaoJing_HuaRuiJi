@@ -6,10 +6,9 @@ public class FindMean{
 	//sortRangeScale：确定坐标距离排序时的相似成份多少来确定堆栈冗余比，避免堆栈溢出。
 	//思想：罗瑶光 20191226
 	//实现：罗瑶光
-	public static double findMeanOfFilterDoubleArrayWithScale(double[] input
-			, double filterScale, int sortRangeScale) {
+	public static double findMeanOfFilterDoubleArrayWithScale(double[] input, double filterScale, int sortRangeScale) {
 		int rangeScale= (int)(filterScale* input.length);
-		input= new LYG9DWithDoubleQuickSort4D().sort(input, sortRangeScale, 70);
+		input= new LYG4DWithDoubleQuickSort4D().sort(input, sortRangeScale);
 		double output= 0;
 		for(int i= rangeScale; i< input.length- rangeScale; i++) {
 			output+= input[i];

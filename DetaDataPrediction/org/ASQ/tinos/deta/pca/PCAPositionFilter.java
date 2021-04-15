@@ -18,10 +18,10 @@ public class PCAPositionFilter{
 		List<Position2D> output= new ArrayList<>();
 		Iterator<Position2D> iterator= input.iterator();
 		while(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D= iterator.next();
-			double distance= Distance.getDistance2D(heart, AMV_MVS_VSQ2D);
+			Position2D position2D= iterator.next();
+			double distance= Distance.getDistance2D(heart, position2D);
 			if(distance< scaleDistacne) {
-				output.add(AMV_MVS_VSQ2D);
+				output.add(position2D);
 			}
 		}
 		return output;
@@ -32,10 +32,10 @@ public class PCAPositionFilter{
 		List<Position3D> output= new ArrayList<>();
 		Iterator<Position3D> iterator= input.iterator();
 		while(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D= iterator.next();
-			double distance= Distance.getDistance3D(heart, AMV_MVS_VSQ3D);
+			Position3D position3D= iterator.next();
+			double distance= Distance.getDistance3D(heart, position3D);
 			if(distance< scaleDistacne) {
-				output.add(AMV_MVS_VSQ3D);
+				output.add(position3D);
 			}
 		}
 		return output;
@@ -47,11 +47,11 @@ public class PCAPositionFilter{
 		Iterator<Double> iterator= input.keySet().iterator();
 		while(iterator.hasNext()) {
 			double mapKey= iterator.next();
-			List<Position2D> AMV_MVS_VSQ2DList= input.get(mapKey);
-			Position2D tempHeart= Euclid.findHeartPosition2D(AMV_MVS_VSQ2DList);
+			List<Position2D> position2DList= input.get(mapKey);
+			Position2D tempHeart= Euclid.findHeartPosition2D(position2DList);
 			double distance= Distance.getDistance2D(heart, tempHeart);
 			if(distance< scaleDistacne) {
-				output.put(mapKey, AMV_MVS_VSQ2DList);
+				output.put(mapKey, position2DList);
 			}
 		}
 		return output;
@@ -63,11 +63,11 @@ public class PCAPositionFilter{
 		Iterator<Double> iterator= input.keySet().iterator();
 		while(iterator.hasNext()) {
 			double mapKey= iterator.next();
-			List<Position3D> AMV_MVS_VSQ3DList= input.get(mapKey);
-			Position3D tempHeart= Euclid.findHeartPosition3D(AMV_MVS_VSQ3DList);
+			List<Position3D> position3DList= input.get(mapKey);
+			Position3D tempHeart= Euclid.findHeartPosition3D(position3DList);
 			double distance= Distance.getDistance3D(heart, tempHeart);
 			if(distance< scaleDistacne) {
-				output.put(mapKey, AMV_MVS_VSQ3DList);
+				output.put(mapKey, position3DList);
 			}
 		}
 		return output;
