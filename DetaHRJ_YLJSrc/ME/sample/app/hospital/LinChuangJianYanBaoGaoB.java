@@ -958,16 +958,16 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(呼吸道病毒检测);
 		this.add(呼吸道病毒检测_box);	
 
-		DetaLabel label6222223= new DetaLabel("肌酐（尿）:");  
-		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(label6222223);
-		JTextField label6222223_box= new JTextField();
-		label6222223_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
-		label6222223_box.addActionListener(new ActionListener(){
+		DetaLabel 肌酐尿= new DetaLabel("肌酐（尿）:");  
+		肌酐尿.setForeground(Color.WHITE);
+		肌酐尿.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(肌酐尿);
+		JTextField 肌酐尿_box= new JTextField();
+		肌酐尿_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
+		肌酐尿_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label6222223_box
+				printValue(肌酐尿_box
 						, "降低：见于肾功能不全，白血症"
 						, "增高：见于破伤风，伤寒，皮肌炎。" 
 						, "" 
@@ -975,20 +975,20 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(label6222223);
-		this.add(label6222223_box);	
+		this.add(肌酐尿);
+		this.add(肌酐尿_box);	
 
 		//7
-		DetaLabel label7222223= new DetaLabel("免疫球蛋白gigg:");  
-		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(label7222223);
-		JTextField label7222223_box= new JTextField();
-		label7222223_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
-		label7222223_box.addActionListener(new ActionListener(){
+		DetaLabel 免疫球蛋白gigg= new DetaLabel("免疫球蛋白gigg:");  
+		免疫球蛋白gigg.setForeground(Color.WHITE);
+		免疫球蛋白gigg.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(免疫球蛋白gigg);
+		JTextField 免疫球蛋白gigg_box= new JTextField();
+		免疫球蛋白gigg_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
+		免疫球蛋白gigg_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label6222223_box
+				printValue(免疫球蛋白gigg_box
 						, "降低：免疫病"
 						, "过高" 
 						, "" 
@@ -996,23 +996,23 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(label7222223);
-		this.add(label7222223_box);	
+		this.add(免疫球蛋白gigg);
+		this.add(免疫球蛋白gigg_box);	
 		//8
-		DetaLabel label68222223= new DetaLabel("胸水ldh:");  
-		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(label68222223);
-		JTextField label68222223_box= new JTextField();
-		label68222223_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
-		label68222223_box.addActionListener(new ActionListener(){
+		DetaLabel 胸水ldh= new DetaLabel("胸水ldh:");  
+		胸水ldh.setForeground(Color.WHITE);
+		胸水ldh.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(胸水ldh);
+		JTextField 胸水ldh_box= new JTextField();
+		胸水ldh_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
+		胸水ldh_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label68222223);
-		this.add(label68222223_box);	
+		this.add(胸水ldh);
+		this.add(胸水ldh_box);	
 		//9
 		DetaLabel 促进泡生成素fsm= new DetaLabel("促进泡生成素fsm:");  
 		促进泡生成素fsm.setForeground(Color.WHITE);
@@ -1079,99 +1079,99 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(t细胞亚群测定);
 		this.add(t细胞亚群测定_box);	
 		//13
-		DetaLabel 糖元染色2223= new DetaLabel("氧合:");  
-		糖元染色2223.setForeground(Color.WHITE);
-		糖元染色2223.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(糖元染色2223);
-		JTextField 糖元染色2223_box= new JTextField();
-		糖元染色2223_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
-		糖元染色2223_box.addActionListener(new ActionListener(){
+		DetaLabel 氧合= new DetaLabel("氧合:");  
+		氧合.setForeground(Color.WHITE);
+		氧合.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(氧合);
+		JTextField 氧合_box= new JTextField();
+		氧合_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
+		氧合_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(糖元染色2223);
-		this.add(糖元染色2223_box);	
+		this.add(氧合);
+		this.add(氧合_box);	
 		//14
-		DetaLabel 脑脊液细胞学检查2223= new DetaLabel("set:");  
-		脑脊液细胞学检查2223.setForeground(Color.WHITE);
-		脑脊液细胞学检查2223.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(脑脊液细胞学检查2223);
-		JTextField 脑脊液细胞学检查2223_box= new JTextField();
-		脑脊液细胞学检查2223_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
-		脑脊液细胞学检查2223_box.addActionListener(new ActionListener(){
+		DetaLabel setSet= new DetaLabel("set:");  
+		setSet.setForeground(Color.WHITE);
+		setSet.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(setSet);
+		JTextField setSet_box= new JTextField();
+		setSet_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
+		setSet_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(脑脊液细胞学检查2223);
-		this.add(脑脊液细胞学检查2223_box);	
+		this.add(setSet);
+		this.add(setSet_box);	
 	}
 
 	private void addSecondColomns(JTextField 诊断结果_box2, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai22= new DetaLabel("胎盘糖旦白胎盘糖旦白:");  
-		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(baiDanBai22);
-		JTextField baiDanBai22_box= new JTextField();
-		baiDanBai22_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
-		baiDanBai22_box.addActionListener(new ActionListener(){
+		DetaLabel 胎盘糖旦白胎盘糖旦白= new DetaLabel("胎盘糖旦白胎盘糖旦白:");  
+		胎盘糖旦白胎盘糖旦白.setForeground(Color.WHITE);
+		胎盘糖旦白胎盘糖旦白.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(胎盘糖旦白胎盘糖旦白);
+		JTextField 胎盘糖旦白胎盘糖旦白_box= new JTextField();
+		胎盘糖旦白胎盘糖旦白_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
+		胎盘糖旦白胎盘糖旦白_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(baiDanBai22);
-		this.add(baiDanBai22_box);	
+		this.add(胎盘糖旦白胎盘糖旦白);
+		this.add(胎盘糖旦白胎盘糖旦白_box);	
 
-		DetaLabel label222= new DetaLabel("单核细胞化学趋化因子-1mcp-1:");  
-		label222.setForeground(Color.WHITE);
-		label222.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(label222);
-		JTextField label222_box= new JTextField();
-		label222_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
-		label222_box.addActionListener(new ActionListener(){
+		DetaLabel 单核细胞化学趋化因子= new DetaLabel("单核细胞化学趋化因子-1mcp-1:");  
+		单核细胞化学趋化因子.setForeground(Color.WHITE);
+		单核细胞化学趋化因子.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(单核细胞化学趋化因子);
+		JTextField 单核细胞化学趋化因子_box= new JTextField();
+		单核细胞化学趋化因子_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
+		单核细胞化学趋化因子_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label222);
-		this.add(label222_box);	
+		this.add(单核细胞化学趋化因子);
+		this.add(单核细胞化学趋化因子_box);	
 
-		DetaLabel label322= new DetaLabel("骨髓细胞形态学诊断检查:");  
-		label322.setForeground(Color.WHITE);
-		label322.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(label322);
-		JTextField label322_box= new JTextField();
-		label322_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
-		label322_box.addActionListener(new ActionListener(){
+		DetaLabel 骨髓细胞形态学诊断检查= new DetaLabel("骨髓细胞形态学诊断检查:");  
+		骨髓细胞形态学诊断检查.setForeground(Color.WHITE);
+		骨髓细胞形态学诊断检查.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(骨髓细胞形态学诊断检查);
+		JTextField 骨髓细胞形态学诊断检查_box= new JTextField();
+		骨髓细胞形态学诊断检查_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
+		骨髓细胞形态学诊断检查_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label322);
-		this.add(label322_box);	
+		this.add(骨髓细胞形态学诊断检查);
+		this.add(骨髓细胞形态学诊断检查_box);	
 
-		DetaLabel label422= new DetaLabel("髓鞘碱性蛋白抗体mbp:");  
-		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*4, 32+ 25* 3, 100, 20);jFrameList.add(label422);
-		JTextField label422_box= new JTextField();
-		label422_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
-		label422_box.addActionListener(new ActionListener(){
+		DetaLabel 髓鞘碱性蛋白抗体= new DetaLabel("髓鞘碱性蛋白抗体mbp:");  
+		髓鞘碱性蛋白抗体.setForeground(Color.WHITE);
+		髓鞘碱性蛋白抗体.setBounds(10+220*4, 32+ 25* 3, 100, 20);jFrameList.add(髓鞘碱性蛋白抗体);
+		JTextField 髓鞘碱性蛋白抗体_box= new JTextField();
+		髓鞘碱性蛋白抗体_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
+		髓鞘碱性蛋白抗体_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label422);
-		this.add(label422_box);	
+		this.add(髓鞘碱性蛋白抗体);
+		this.add(髓鞘碱性蛋白抗体_box);	
 
 		DetaLabel 羟丁酸脱氢酶= new DetaLabel("羟丁酸脱氢酶hbdh:");  
 		羟丁酸脱氢酶.setForeground(Color.WHITE);
