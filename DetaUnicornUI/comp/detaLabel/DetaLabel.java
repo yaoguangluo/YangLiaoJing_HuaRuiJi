@@ -42,18 +42,18 @@ public class DetaLabel extends JLabel{
 				}	
 				if(!inited) {
 					//jlable最简分行
-					jLabelTop= new JLabel(tagName.substring(0, tagName.length()>60? 60: tagName.length()));
+					jLabelTop= new JLabel(tagName.substring(0, tagName.length()>70? 70: tagName.length()));
 					jLabelTop.setBounds(0, 0, 900, 30);
 					frameTag= new JFrame("提示栏");
 					frameTag.setLayout(null);
 					frameTag.setSize(900, 60);
-					if(tagName.length()> 60) {
-						jLabelMed= new JLabel(tagName.substring(60, tagName.length()>120? 120: tagName.length()));
+					if(tagName.length()> 70) {
+						jLabelMed= new JLabel(tagName.substring(70, tagName.length()>140? 140: tagName.length()));
 						jLabelMed.setBounds(0, 30, 900, 30);
 						frameTag.setSize(900, 120);
 					}
-					if(tagName.length()> 120) {
-						jLabelBot= new JLabel(tagName.substring(120, tagName.length()));
+					if(tagName.length()> 140) {
+						jLabelBot= new JLabel(tagName.substring(140, tagName.length()));
 						jLabelBot.setBounds(0, 60, 900, 30);
 					}
 					//摘自第37行 https://blog.csdn.net/code_better/article/details/53505962
@@ -62,10 +62,10 @@ public class DetaLabel extends JLabel{
 					frameTag.setLocation(point.x, point.y);
 					frameTag.setResizable(false);
 					frameTag.add(jLabelTop);
-					if(tagName.length()> 60) {
+					if(tagName.length()> 70) {
 						frameTag.add(jLabelMed);
 					}
-					if(tagName.length()> 120) {
+					if(tagName.length()> 140) {
 						frameTag.add(jLabelBot);
 					}
 					frameTag.setVisible(true);
@@ -130,22 +130,22 @@ public class DetaLabel extends JLabel{
 		ShowTag= True;
 		tagName= null== string? "": string.toString();
 		if(null!= jLabelTop) {
-			jLabelTop.setText(tagName.substring(0, tagName.length()> 60? 60: tagName.length()));
+			jLabelTop.setText(tagName.substring(0, tagName.length()> 70? 70: tagName.length()));
 		}else {
-			jLabelTop= new JLabel(tagName.substring(0, tagName.length()> 60? 60: tagName.length()));
+			jLabelTop= new JLabel(tagName.substring(0, tagName.length()> 70? 70: tagName.length()));
 		}
-		if(tagName.length()> 60) {
+		if(tagName.length()> 70) {
 			if(null!= jLabelBot) {
-				jLabelMed.setText(tagName.substring(60, tagName.length()> 120? 120: tagName.length()));
+				jLabelMed.setText(tagName.substring(70, tagName.length()> 140? 140: tagName.length()));
 			}else {
-				jLabelMed= new JLabel(tagName.substring(60, tagName.length()> 120? 120: tagName.length()));
+				jLabelMed= new JLabel(tagName.substring(70, tagName.length()> 140? 140: tagName.length()));
 			}
 		}
-		if(tagName.length()> 120) {
+		if(tagName.length()> 140) {
 			if(null!= jLabelBot) {
-				jLabelBot.setText(tagName.substring(120, tagName.length()));
+				jLabelBot.setText(tagName.substring(140, tagName.length()));
 			}else {
-				jLabelBot= new JLabel(tagName.substring(120, tagName.length()));
+				jLabelBot= new JLabel(tagName.substring(140, tagName.length()));
 			}
 		}
 	}
