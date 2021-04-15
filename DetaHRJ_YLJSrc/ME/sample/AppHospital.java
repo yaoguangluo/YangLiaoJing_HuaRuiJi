@@ -9,6 +9,9 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
@@ -17,16 +20,17 @@ import ME.sample.app.hospital.LinChuangJianYanBaoGaoA;
 import ME.sample.app.hospital.LinChuangJianYanBaoGaoB;
 import ME.sample.app.hospital.XiYaoJPanel;
 import ME.sample.app.hospital.ZhongYaoJPanel;
+import comp.detaLabel.DetaLabel;
 
 
-public class AppHospital extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
+public class AppHospital extends ScrollPane implements MouseListener, KeyListener, ActionListener, MouseMotionListener{	
 	private static final long serialVersionUID= 1L;
-	
+	public List<DetaLabel> jFrameList= new LinkedList<>();
 	public void init(JTextPane name, App app){
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
 		JTabbedPane jTabbedpane= new JTabbedPane();
 		Container chuanRanJiZhenContainer= new Container();
-		LinChuangJianYanBaoGaoA chuanRanJiZhenPanel= new LinChuangJianYanBaoGaoA(name);
+		LinChuangJianYanBaoGaoA chuanRanJiZhenPanel= new LinChuangJianYanBaoGaoA(name, jFrameList);
 		chuanRanJiZhenContainer.setLayout(null);
 		chuanRanJiZhenContainer.setBounds(0, 0, 1490, 980);
 		chuanRanJiZhenContainer.add(chuanRanJiZhenPanel);
@@ -34,7 +38,7 @@ public class AppHospital extends ScrollPane implements MouseListener, KeyListene
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 			
 		Container jianYanBaoGaoContainer= new Container();
-		LinChuangJianYanBaoGaoB jianYanBaoGaoJPanel= new LinChuangJianYanBaoGaoB(name, app);
+		LinChuangJianYanBaoGaoB jianYanBaoGaoJPanel= new LinChuangJianYanBaoGaoB(name, app, jFrameList);
 		jianYanBaoGaoContainer.setLayout(null);
 		jianYanBaoGaoContainer.setBounds(0, 0, 1490, 980);
 		jianYanBaoGaoContainer.add(jianYanBaoGaoJPanel);
@@ -64,6 +68,7 @@ public class AppHospital extends ScrollPane implements MouseListener, KeyListene
 		this.setBounds(0, 0, 805, 505);
 		this.setVisible(true);
 		this.validate();
+		this.addMouseMotionListener(this);
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
@@ -109,6 +114,14 @@ public class AppHospital extends ScrollPane implements MouseListener, KeyListene
 	public void mouseReleased(MouseEvent arg0) {
 		// TODO Auto-generated method stub
 		
+	}
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void mouseMoved(MouseEvent e) {
 	}
 		
 }

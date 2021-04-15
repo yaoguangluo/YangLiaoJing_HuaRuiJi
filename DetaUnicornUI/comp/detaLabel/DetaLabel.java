@@ -19,9 +19,9 @@ public class DetaLabel extends JLabel{
 	public JLabel jLabelBot;
 	public Box box;
 	//先碎片函数调试, 之后面板函数集成
-	public JFrame frameTag;
+	public JFrame frameTag= new JFrame("提示栏");;
 	public boolean ShowTag= false;
-
+	public boolean inited= false;
 	public int openx=0;
 	public int openy=0;
 	public int closex=0;
@@ -40,7 +40,7 @@ public class DetaLabel extends JLabel{
 				if(!ShowTag) {
 					return;
 				}	
-				if(null== frameTag) {
+				if(!inited) {
 					//jlable最简分行
 					jLabelTop= new JLabel(tagName.substring(0, tagName.length()>60? 60: tagName.length()));
 					jLabelTop.setBounds(0, 0, 900, 30);
@@ -73,6 +73,7 @@ public class DetaLabel extends JLabel{
 					frameTag.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
 					openx= point.x;
 					openy= point.y;
+					inited= true;
 					return;
 				}else {
 					if(!frameTag.isShowing()) {
