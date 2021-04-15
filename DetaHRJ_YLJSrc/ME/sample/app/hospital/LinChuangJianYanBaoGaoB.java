@@ -642,16 +642,16 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		this.add(血小板聚集);
 		this.add(血小板聚集_box);	
 
-		DetaLabel label422= new DetaLabel("谷草转氨酶ast:");  
-		label422.setForeground(Color.WHITE);
-		label422.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(label422);
-		JTextField label422_box= new JTextField();
-		label422_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
-		label422_box.addActionListener(new ActionListener(){
+		DetaLabel 谷草转氨酶= new DetaLabel("谷草转氨酶ast:");  
+		谷草转氨酶.setForeground(Color.WHITE);
+		谷草转氨酶.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(谷草转氨酶);
+		JTextField 谷草转氨酶_box= new JTextField();
+		谷草转氨酶_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
+		谷草转氨酶_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label422_box
+				printValue(谷草转氨酶_box
 						, ""
 						, "增高：常见于心梗，急慢性肝炎，中毒性肝炎，心功能不全，皮肌炎等" 
 						, "" 
@@ -659,34 +659,34 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(label422);
-		this.add(label422_box);	
+		this.add(谷草转氨酶);
+		this.add(谷草转氨酶_box);	
 
-		DetaLabel label522= new DetaLabel("甲肝抗体-igmhav-igm:");  
-		label522.setForeground(Color.WHITE);
-		label522.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(label522);
-		JTextField label522_box= new JTextField();
-		label522_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
-		label522_box.addActionListener(new ActionListener(){
+		DetaLabel 甲肝抗体= new DetaLabel("甲肝抗体-igmhav-igm:");  
+		甲肝抗体.setForeground(Color.WHITE);
+		甲肝抗体.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(甲肝抗体);
+		JTextField 甲肝抗体_box= new JTextField();
+		甲肝抗体_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
+		甲肝抗体_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label522);
-		this.add(label522_box);	
+		this.add(甲肝抗体);
+		this.add(甲肝抗体_box);	
 
-		DetaLabel label622= new DetaLabel("生长激素gh:");  
-		label622.setForeground(Color.WHITE);
-		label622.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(label622);
-		JTextField label622_box= new JTextField();
-		label622_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
-		label622_box.addActionListener(new ActionListener(){
+		DetaLabel 生长激素gh= new DetaLabel("生长激素gh:");  
+		生长激素gh.setForeground(Color.WHITE);
+		生长激素gh.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(生长激素gh);
+		JTextField 生长激素gh_box= new JTextField();
+		生长激素gh_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
+		生长激素gh_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态； ng/ml
-				String temp= label622_box.getText();
+				String temp= 生长激素gh_box.getText();
 				double temp_double= Double.valueOf(temp);
 				if(temp_double>5|| temp_double<0.06) {
 					诊断结果_box.setText(诊断结果_box.getText().contains("诊断肢端肥大症垂体瘤等")
@@ -696,22 +696,22 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 				}		
 			}
 		});
-		this.add(label622);
-		this.add(label622_box);	
+		this.add(生长激素gh);
+		this.add(生长激素gh_box);	
 
 		//7
-		DetaLabel label722= new DetaLabel("脂肪酶lipase:");  
-		label722.setForeground(Color.WHITE);
-		label722.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(label722);
-		JTextField label722_box= new JTextField();
-		label722_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
-		label722_box.addActionListener(new ActionListener(){
+		DetaLabel 脂肪酶lipase= new DetaLabel("脂肪酶lipase:");  
+		脂肪酶lipase.setForeground(Color.WHITE);
+		脂肪酶lipase.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(脂肪酶lipase);
+		JTextField 脂肪酶lipase_box= new JTextField();
+		脂肪酶lipase_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
+		脂肪酶lipase_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 				//增高：见于急慢性胰腺炎，胰腺癌，胆道疾病，胃穿孔，肠梗阻，腮腺炎，唾液腺炎等。降低：见于肝脏疾病，如肝癌，肝硬化。
 				//加状态；
-				String temp= label722_box.getText();
+				String temp= 脂肪酶lipase_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String report= "增高：见于急慢性胰腺炎，胰腺癌，胆道疾病，胃穿孔，肠梗阻，腮腺炎，唾液腺炎等。降低：见于肝脏疾病，如肝癌，肝硬化。";
 				if(temp_double>40) {
@@ -723,127 +723,127 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 			}
 		});
-		this.add(label722);
-		this.add(label722_box);	
+		this.add(脂肪酶lipase);
+		this.add(脂肪酶lipase_box);	
 		//8
-		DetaLabel label6822= new DetaLabel("血浆叶酸测定fa:");  
-		label6822.setForeground(Color.WHITE);
-		label6822.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(label6822);
-		JTextField label6822_box= new JTextField();
-		label6822_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
-		label6822_box.addActionListener(new ActionListener(){
+		DetaLabel 血浆叶酸测定= new DetaLabel("血浆叶酸测定fa:");  
+		血浆叶酸测定.setForeground(Color.WHITE);
+		血浆叶酸测定.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(血浆叶酸测定);
+		JTextField 血浆叶酸测定_box= new JTextField();
+		血浆叶酸测定_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
+		血浆叶酸测定_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label6822);
-		this.add(label6822_box);	
+		this.add(血浆叶酸测定);
+		this.add(血浆叶酸测定_box);	
 		//9
-		DetaLabel label6922= new DetaLabel("同工酶ck-mm:");  
-		label6922.setForeground(Color.WHITE);
-		label6922.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(label6922);
-		JTextField label6922_box= new JTextField();
-		label6922_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
-		label6922_box.addActionListener(new ActionListener(){
+		DetaLabel 同工酶ck_mm= new DetaLabel("同工酶ck-mm:");  
+		同工酶ck_mm.setForeground(Color.WHITE);
+		同工酶ck_mm.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(同工酶ck_mm);
+		JTextField 同工酶ck_mm_box= new JTextField();
+		同工酶ck_mm_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
+		同工酶ck_mm_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label6922);
-		this.add(label6922_box);	
+		this.add(同工酶ck_mm);
+		this.add(同工酶ck_mm_box);	
 		//10
-		DetaLabel label61022= new DetaLabel("特异性酯酶双染色:");  
-		label61022.setForeground(Color.WHITE);
-		label61022.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(label61022);
-		JTextField label61022_box= new JTextField();
-		label61022_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
-		label61022_box.addActionListener(new ActionListener(){
+		DetaLabel 特异性酯酶双染色= new DetaLabel("特异性酯酶双染色:");  
+		特异性酯酶双染色.setForeground(Color.WHITE);
+		特异性酯酶双染色.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(特异性酯酶双染色);
+		JTextField 特异性酯酶双染色_box= new JTextField();
+		特异性酯酶双染色_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
+		特异性酯酶双染色_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61022);
-		this.add(label61022_box);	
+		this.add(特异性酯酶双染色);
+		this.add(特异性酯酶双染色_box);	
 		//11
-		DetaLabel label61122= new DetaLabel("铁染色:");  
-		label61122.setForeground(Color.WHITE);
-		label61122.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(label61122);
-		JTextField label61122_box= new JTextField();
-		label61122_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
-		label61122_box.addActionListener(new ActionListener(){
+		DetaLabel 铁染色= new DetaLabel("铁染色:");  
+		铁染色.setForeground(Color.WHITE);
+		铁染色.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(铁染色);
+		JTextField 铁染色_box= new JTextField();
+		铁染色_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
+		铁染色_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61122);
-		this.add(label61122_box);	
+		this.add(铁染色);
+		this.add(铁染色_box);	
 		//12
-		DetaLabel label61222= new DetaLabel("钾K:");  
-		label61222.setForeground(Color.WHITE);
-		label61222.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(label61222);
-		JTextField label61222_box= new JTextField();
-		label61222_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
-		label61222_box.addActionListener(new ActionListener(){
+		DetaLabel 钾K= new DetaLabel("钾K:");  
+		钾K.setForeground(Color.WHITE);
+		钾K.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(钾K);
+		JTextField 钾K_box= new JTextField();
+		钾K_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
+		钾K_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label61222);
-		this.add(label61222_box);	
+		this.add(钾K);
+		this.add(钾K_box);	
 		//13
-		DetaLabel 糖元染色= new DetaLabel("乙肝两对半hbeag:");  
-		糖元染色.setForeground(Color.WHITE);
-		糖元染色.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(糖元染色);
-		JTextField 糖元染色_box= new JTextField();
-		糖元染色_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
-		糖元染色_box.addActionListener(new ActionListener(){
+		DetaLabel 乙肝两对半hbeag= new DetaLabel("乙肝两对半hbeag:");  
+		乙肝两对半hbeag.setForeground(Color.WHITE);
+		乙肝两对半hbeag.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(乙肝两对半hbeag);
+		JTextField 乙肝两对半hbeag_box= new JTextField();
+		乙肝两对半hbeag_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
+		乙肝两对半hbeag_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(糖元染色);
-		this.add(糖元染色_box);	
+		this.add(乙肝两对半hbeag);
+		this.add(乙肝两对半hbeag_box);	
 		//14
-		DetaLabel 脑脊液细胞学检查= new DetaLabel("α-醋酸萘酚酯酶染色:");  
-		脑脊液细胞学检查.setForeground(Color.WHITE);
-		脑脊液细胞学检查.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(脑脊液细胞学检查);
-		JTextField 脑脊液细胞学检查_box= new JTextField();
-		脑脊液细胞学检查_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
-		脑脊液细胞学检查_box.addActionListener(new ActionListener(){
+		DetaLabel 醋酸萘酚酯酶染色= new DetaLabel("α-醋酸萘酚酯酶染色:");  
+		醋酸萘酚酯酶染色.setForeground(Color.WHITE);
+		醋酸萘酚酯酶染色.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(醋酸萘酚酯酶染色);
+		JTextField 醋酸萘酚酯酶染色_box= new JTextField();
+		醋酸萘酚酯酶染色_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
+		醋酸萘酚酯酶染色_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(脑脊液细胞学检查);
-		this.add(脑脊液细胞学检查_box);	
+		this.add(醋酸萘酚酯酶染色);
+		this.add(醋酸萘酚酯酶染色_box);	
 	}
 
 	private void addThirdColomns(JTextField 诊断结果_box2, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai222223= new DetaLabel("血浆同型半胱氨酸hcy:");  
-		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(baiDanBai222223);
-		baiDanBai222223.addMouseListener(new MouseListener() {
+		DetaLabel 血浆同型半胱氨酸= new DetaLabel("血浆同型半胱氨酸hcy:");  
+		血浆同型半胱氨酸.setForeground(Color.WHITE);
+		血浆同型半胱氨酸.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(血浆同型半胱氨酸);
+		血浆同型半胱氨酸.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				DetaLabel 单位= new DetaLabel("白蛋白alb:");  
 				单位.setForeground(Color.WHITE);
-				单位.setBounds(10, 20+ 0, 100, 20);jFrameList.add(baiDanBai222223);
+				单位.setBounds(10, 20+ 0, 100, 20);jFrameList.add(血浆同型半胱氨酸);
 				add(单位);		
 			}
 
@@ -871,13 +871,13 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 			}
 		});
-		JTextField baiDanBai222223_box= new JTextField();
-		baiDanBai222223_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
-		baiDanBai222223_box.addActionListener(new ActionListener(){
+		JTextField 血浆同型半胱氨酸_box= new JTextField();
+		血浆同型半胱氨酸_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
+		血浆同型半胱氨酸_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(baiDanBai222223_box
+				printValue(血浆同型半胱氨酸_box
 						, "心脑血管病独立危险因素"
 						, "" 
 						, "" 
@@ -885,19 +885,19 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(baiDanBai222223);
-		this.add(baiDanBai222223_box);	
+		this.add(血浆同型半胱氨酸);
+		this.add(血浆同型半胱氨酸_box);	
 
-		DetaLabel label2222223= new DetaLabel("尿微量白蛋白排泄率uaer:");  
-		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(label2222223);
-		JTextField label2222223_box= new JTextField();
-		label2222223_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
-		label2222223_box.addActionListener(new ActionListener(){
+		DetaLabel 尿微量白蛋白排泄率= new DetaLabel("尿微量白蛋白排泄率uaer:");  
+		尿微量白蛋白排泄率.setForeground(Color.WHITE);
+		尿微量白蛋白排泄率.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(尿微量白蛋白排泄率);
+		JTextField 尿微量白蛋白排泄率_box= new JTextField();
+		尿微量白蛋白排泄率_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
+		尿微量白蛋白排泄率_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label2222223_box
+				printValue(尿微量白蛋白排泄率_box
 						, ""
 						, "早期肾病的诊断 过高" 
 						, "" 
@@ -905,19 +905,19 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(label2222223);
-		this.add(label2222223_box);	
+		this.add(尿微量白蛋白排泄率);
+		this.add(尿微量白蛋白排泄率_box);	
 
-		DetaLabel label3222223= new DetaLabel("氯cl:");  
-		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(label3222223);
-		JTextField label3222223_box= new JTextField();
-		label3222223_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
-		label3222223_box.addActionListener(new ActionListener(){
+		DetaLabel 氯cl= new DetaLabel("氯cl:");  
+		氯cl.setForeground(Color.WHITE);
+		氯cl.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(氯cl);
+		JTextField 氯cl_box= new JTextField();
+		氯cl_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
+		氯cl_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
-				printValue(label2222223_box
+				printValue(氯cl_box
 						, "降低：见于低钠血症，严重呕吐，腹泻，胃液胰液胆汁液大量丢失，肾功能减退及阿狄森氏病等"
 						, "增高：见于高钠血症，呼吸碱中毒，高渗性脱水，肾炎少尿及尿道梗塞" 
 						, "" 
@@ -925,38 +925,38 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 						, "");
 			}
 		});
-		this.add(label3222223);
-		this.add(label3222223_box);	
+		this.add(氯cl);
+		this.add(氯cl_box);	
 
-		DetaLabel label4222223= new DetaLabel("灌洗液常规检查balf:");  
-		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(label4222223);
-		JTextField label4222223_box= new JTextField();
-		label4222223_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
-		label4222223_box.addActionListener(new ActionListener(){
+		DetaLabel 灌洗液常规检查balf= new DetaLabel("灌洗液常规检查balf:");  
+		灌洗液常规检查balf.setForeground(Color.WHITE);
+		灌洗液常规检查balf.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(灌洗液常规检查balf);
+		JTextField 灌洗液常规检查balf_box= new JTextField();
+		灌洗液常规检查balf_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
+		灌洗液常规检查balf_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label4222223);
-		this.add(label4222223_box);	
+		this.add(灌洗液常规检查balf);
+		this.add(灌洗液常规检查balf_box);	
 
-		DetaLabel label5222223= new DetaLabel("呼吸道病毒检测:");  
-		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(label5222223);
-		JTextField label5222223_box= new JTextField();
-		label5222223_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
-		label5222223_box.addActionListener(new ActionListener(){
+		DetaLabel 呼吸道病毒检测= new DetaLabel("呼吸道病毒检测:");  
+		呼吸道病毒检测.setForeground(Color.WHITE);
+		呼吸道病毒检测.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(呼吸道病毒检测);
+		JTextField 呼吸道病毒检测_box= new JTextField();
+		呼吸道病毒检测_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
+		呼吸道病毒检测_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//加状态；
 
 			}
 		});
-		this.add(label5222223);
-		this.add(label5222223_box);	
+		this.add(呼吸道病毒检测);
+		this.add(呼吸道病毒检测_box);	
 
 		DetaLabel label6222223= new DetaLabel("肌酐（尿）:");  
 		label6222223.setForeground(Color.WHITE);
