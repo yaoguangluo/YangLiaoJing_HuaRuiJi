@@ -525,17 +525,17 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	private void addFifthColomns(JTextField Õï¶Ï½á¹û_box, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai222223= new DetaLabel("ÑªÉøÍ¸Ñ¹Ñªosm:");  
-		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(baiDanBai222223);
+		DetaLabel ½ê´¯¾µ¼ìsarcoptes= new DetaLabel("ÑªÉøÍ¸Ñ¹Ñªosm:");  
+		½ê´¯¾µ¼ìsarcoptes.setForeground(Color.WHITE);
+		½ê´¯¾µ¼ìsarcoptes.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(½ê´¯¾µ¼ìsarcoptes);
 		
-		JTextField baiDanBai222223_box= new JTextField();
-		baiDanBai222223_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
-		baiDanBai222223_box.addActionListener(new ActionListener(){
+		JTextField ½ê´¯¾µ¼ìsarcoptes_box= new JTextField();
+		½ê´¯¾µ¼ìsarcoptes_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
+		½ê´¯¾µ¼ìsarcoptes_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= baiDanBai222223_box.getText();
+				String temp= ½ê´¯¾µ¼ìsarcoptes_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "·´Ó¦ÑªÖĞÈÜÖÊ·Ö×Ó¼°Àë×Ó×ÜÊıÔö¸ß¡£";
 				String reportj= "·´Ó¦ÑªÖĞÈÜÖÊ·Ö×Ó¼°Àë×Ó×ÜÊı½µµÍ¡£";
@@ -554,20 +554,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(baiDanBai222223);
-		this.add(baiDanBai222223_box);	
+		this.add(½ê´¯¾µ¼ìsarcoptes);
+		this.add(½ê´¯¾µ¼ìsarcoptes_box);	
 
-		DetaLabel label2222223= new DetaLabel("¼¡ôûÇå³ıÂÊcor:");  
-		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(label2222223);
+		DetaLabel ÒÈµºËØins= new DetaLabel("¼¡ôûÇå³ıÂÊcor:");  
+		ÒÈµºËØins.setForeground(Color.WHITE);
+		ÒÈµºËØins.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(ÒÈµºËØins);
 		
-		JTextField label2222223_box= new JTextField();
-		label2222223_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
-		label2222223_box.addActionListener(new ActionListener(){
+		JTextField ÒÈµºËØins_box= new JTextField();
+		ÒÈµºËØins_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
+		ÒÈµºËØins_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label2222223_box.getText();
+				String temp= ÒÈµºËØins_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "¼¡ôûÇå³ıÂÊ¸ß¡£";
 				String reportj= "¼¡ôûÇå³ıÂÊµÍ¡£";
@@ -586,20 +586,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label2222223);
-		this.add(label2222223_box);	
+		this.add(ÒÈµºËØins);
+		this.add(ÒÈµºËØins_box);	
 
-		DetaLabel label3222223= new DetaLabel("Ñª£¨Äò£©Í­cu:");  
-		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(label3222223);
+		DetaLabel ×Üµ¨ºìÖÊ= new DetaLabel("Ñª£¨Äò£©Í­cu:");  
+		×Üµ¨ºìÖÊ.setForeground(Color.WHITE);
+		×Üµ¨ºìÖÊ.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(×Üµ¨ºìÖÊ);
 		
-		JTextField label3222223_box= new JTextField();
-		label3222223_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
-		label3222223_box.addActionListener(new ActionListener(){
+		JTextField ×Üµ¨ºìÖÊ_box= new JTextField();
+		×Üµ¨ºìÖÊ_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
+		×Üµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label3222223_box.getText();
+				String temp= ×Üµ¨ºìÖÊ_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "Ñª£¨Äò£©Í­ Ôö¸ß£º¼ûÓÚ¶ñĞÔÖ×Áö£¬¸ÎÓ²»¯£¬¼×¿º£¬½áºËµÈ¡£";
 				String reportj= "Ñª£¨Äò£©Í­ ½µµÍ£º¼ûÓÚÏÈÌìĞÔÍ­ÎüÊÕ¼°¸ÎÔà´úĞ»ÕÏ°­£¬Éö²¡×ÛºÏÖ¢¼°¸Î¶¹×´ºË±äĞÔ¡£";
@@ -618,20 +618,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label3222223);
-		this.add(label3222223_box);	
+		this.add(×Üµ¨ºìÖÊ);
+		this.add(×Üµ¨ºìÖÊ_box);	
 
-		DetaLabel label4222223= new DetaLabel("×é·ÖÇø´øigg:");  
-		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+ 220*4, 32+ 25* 3, 100, 20);jFrameList.add(label4222223);
+		DetaLabel µí·ÛÃ¸amy= new DetaLabel("×é·ÖÇø´øigg:");  
+		µí·ÛÃ¸amy.setForeground(Color.WHITE);
+		µí·ÛÃ¸amy.setBounds(10+ 220*4, 32+ 25* 3, 100, 20);jFrameList.add(µí·ÛÃ¸amy);
 		
-		JTextField label4222223_box= new JTextField();
-		label4222223_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
-		label4222223_box.addActionListener(new ActionListener(){
+		JTextField µí·ÛÃ¸amy_box= new JTextField();
+		µí·ÛÃ¸amy_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
+		µí·ÛÃ¸amy_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label4222223_box.getText();
+				String temp= µí·ÛÃ¸amy_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "ÇÊÄÚÃâÒß²¡¹Û²âÖ¸±êÑôĞÔ";
 				if(temp.contains("Ñô")) {
@@ -642,20 +642,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label4222223);
-		this.add(label4222223_box);	
+		this.add(µí·ÛÃ¸amy);
+		this.add(µí·ÛÃ¸amy_box);	
 
-		DetaLabel label5222223= new DetaLabel("¼××´ÅÔÏÙ¼¤ËØpth:");  
-		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(label5222223);
+		DetaLabel ÈéËáÍÑÇâÃ¸ldh= new DetaLabel("¼××´ÅÔÏÙ¼¤ËØpth:");  
+		ÈéËáÍÑÇâÃ¸ldh.setForeground(Color.WHITE);
+		ÈéËáÍÑÇâÃ¸ldh.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(ÈéËáÍÑÇâÃ¸ldh);
 		
-		JTextField label5222223_box= new JTextField();
-		label5222223_box.setBounds(10+ 110+220*4, 33+ 25*4, 80, 20);
-		label5222223_box.addActionListener(new ActionListener(){
+		JTextField ÈéËáÍÑÇâÃ¸ldh_box= new JTextField();
+		ÈéËáÍÑÇâÃ¸ldh_box.setBounds(10+ 110+220*4, 33+ 25*4, 80, 20);
+		ÈéËáÍÑÇâÃ¸ldh_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label5222223_box.getText();
+				String temp= ÈéËáÍÑÇâÃ¸ldh_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "²â¶¨¼××´ÅÔÏÙ¹¦ÄÜ¹ÇÖÊ¹ıÃÜ¡£";
 				String reportj= "²â¶¨¼××´ÅÔÏÙ¹¦ÄÜ¹ÇÖÊÊèËÉ¡£";
@@ -674,20 +674,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label5222223);
-		this.add(label5222223_box);	
+		this.add(ÈéËáÍÑÇâÃ¸ldh);
+		this.add(ÈéËáÍÑÇâÃ¸ldh_box);	
 
-		DetaLabel label6222223= new DetaLabel("Äò3-¼×Ñõ»ù4-ôÇ»ù¿àĞÓÈÊËá£¨vma£©:");  
-		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(label6222223);
+		DetaLabel Ìútron= new DetaLabel("Äò3-¼×Ñõ»ù4-ôÇ»ù¿àĞÓÈÊËá£¨vma£©:");  
+		Ìútron.setForeground(Color.WHITE);
+		Ìútron.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(Ìútron);
 		
-		JTextField label6222223_box= new JTextField();
-		label6222223_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
-		label6222223_box.addActionListener(new ActionListener(){
+		JTextField Ìútron_box= new JTextField();
+		Ìútron_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
+		Ìútron_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label6222223_box.getText();
+				String temp= Ìútron_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "Äò3-¼×Ñõ»ù4-ôÇ»ù¿àĞÓÈÊËá£¨vma£©¹ı¸ß¡£";
 				String reportj= "Äò3-¼×Ñõ»ù4-ôÇ»ù¿àĞÓÈÊËá£¨vma£©¹ıµÍ¡£";
@@ -706,21 +706,21 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label6222223);
-		this.add(label6222223_box);	
+		this.add(Ìútron);
+		this.add(Ìútron_box);	
 
 		//7
-		DetaLabel label7222223= new DetaLabel("ÔØÖ¬µ°°×ap0alap0al:");  
-		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(label7222223);
+		DetaLabel ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá= new DetaLabel("ÔØÖ¬µ°°×ap0alap0al:");  
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setForeground(Color.WHITE);
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá);
 		
-		JTextField label7222223_box= new JTextField();
-		label7222223_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
-		label7222223_box.addActionListener(new ActionListener(){
+		JTextField ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box= new JTextField();
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label7222223_box.getText();
+				String temp= ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "ÔØÖ¬µ°°×¹ı¸ß¡£";
 				String reportj= "ÔØÖ¬µ°°×½µµÍ£º³£¼ûÓÚ¸ßÖ¬ÑªÖ¢£¬¹ÚĞÄ²¡¼°¸ÎÊµÖÊĞÔ²¡±ä¡£";
@@ -739,20 +739,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label7222223);
-		this.add(label7222223_box);	
+		this.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá);
+		this.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box);	
 		//8
-		DetaLabel label68222223= new DetaLabel("¼¡¸Æµ°°×itni:");  
-		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(label68222223);
+		DetaLabel Á£Ï¸°û´Ì¼¤Òò×Ó= new DetaLabel("¼¡¸Æµ°°×itni:");  
+		Á£Ï¸°û´Ì¼¤Òò×Ó.setForeground(Color.WHITE);
+		Á£Ï¸°û´Ì¼¤Òò×Ó.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(Á£Ï¸°û´Ì¼¤Òò×Ó);
 		
-		JTextField label68222223_box= new JTextField();
-		label68222223_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
-		label68222223_box.addActionListener(new ActionListener(){
+		JTextField Á£Ï¸°û´Ì¼¤Òò×Ó_box= new JTextField();
+		Á£Ï¸°û´Ì¼¤Òò×Ó_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
+		Á£Ï¸°û´Ì¼¤Òò×Ó_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label68222223_box.getText();
+				String temp= Á£Ï¸°û´Ì¼¤Òò×Ó_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "Í¬TNI¡£Õï¶ÏĞÄ¼¡¹£ÈûµÄÁéÃôÖ¸±ê£¬Í¬Ê±ËüÓÖÊÇÅĞ¶Ï²»ÎÈ¶¨ĞÄ½ÊÍ´»¼ÕßÔ¤ºóµÄÒ»¸öÖØÒªÖ¸±ê¡£";
 				String reportj= "¼¡¸Æµ°°×¹ıµÍ¡£";
@@ -772,20 +772,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 			}
 		});
-		this.add(label68222223);
-		this.add(label68222223_box);	
+		this.add(Á£Ï¸°û´Ì¼¤Òò×Ó);
+		this.add(Á£Ï¸°û´Ì¼¤Òò×Ó_box);	
 		//9
-		DetaLabel label69222223= new DetaLabel("ÂÈ´×ËáİÁ·Óas-dõ¥Ã¸È¾É«:");  
-		label69222223.setForeground(Color.WHITE);
-		label69222223.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(label69222223);
+		DetaLabel ´Æ¼¤ËØel= new DetaLabel("ÂÈ´×ËáİÁ·Óas-dõ¥Ã¸È¾É«:");  
+		´Æ¼¤ËØel.setForeground(Color.WHITE);
+		´Æ¼¤ËØel.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(´Æ¼¤ËØel);
 		
-		JTextField label69222223_box= new JTextField();
-		label69222223_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
-		label69222223_box.addActionListener(new ActionListener(){
+		JTextField ´Æ¼¤ËØel_box= new JTextField();
+		´Æ¼¤ËØel_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
+		´Æ¼¤ËØel_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label69222223_box.getText();
+				String temp= ´Æ¼¤ËØel_box.getText();
 				//double temp_double= Double.valueOf(temp);
 				String report= "°×Ñª²¡";
 				if(temp.contains("Ñô")) {
@@ -796,20 +796,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label69222223);
-		this.add(label69222223_box);	
+		this.add(´Æ¼¤ËØel);
+		this.add(´Æ¼¤ËØel_box);	
 		//10
-		DetaLabel label610222223= new DetaLabel("ÈéËálact:");  
-		label610222223.setForeground(Color.WHITE);
-		label610222223.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(label610222223);
+		DetaLabel Í¬¹¤Ã¸ck_mb= new DetaLabel("ÈéËálact:");  
+		Í¬¹¤Ã¸ck_mb.setForeground(Color.WHITE);
+		Í¬¹¤Ã¸ck_mb.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(Í¬¹¤Ã¸ck_mb);
 		
-		JTextField label610222223_box= new JTextField();
-		label610222223_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
-		label610222223_box.addActionListener(new ActionListener(){
+		JTextField Í¬¹¤Ã¸ck_mb_box= new JTextField();
+		Í¬¹¤Ã¸ck_mb_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
+		Í¬¹¤Ã¸ck_mb_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label7222223_box.getText();
+				String temp= ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "ÈéËáLACT¹ı¸ß¡£¼ûÓÚÈ±Ñõ£¬ËáÖĞ¶¾£¬Ğİ¿Ë£¬ÑÏÖØÆ¶Ñª£¬·Î¹¦ÄÜ²»È«£¬¼¡Èâ¾·ÂÎ£¬ÌÇÄò²¡£¬¾çÁÒÔË¶¯";
 				String reportj= "";
@@ -828,20 +828,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label610222223);
-		this.add(label610222223_box);	
+		this.add(Í¬¹¤Ã¸ck_mb);
+		this.add(Í¬¹¤Ã¸ck_mb_box);	
 		//11
-		DetaLabel label611222223= new DetaLabel("Ö×Áö±ê¼Ç¿¹Ô­242¼ì²âca242:");  
-		label611222223.setForeground(Color.WHITE);
-		label611222223.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(label611222223);
+		DetaLabel ÄòÉøÍ¸Ñ¹Äò= new DetaLabel("Ö×Áö±ê¼Ç¿¹Ô­242¼ì²âca242:");  
+		ÄòÉøÍ¸Ñ¹Äò.setForeground(Color.WHITE);
+		ÄòÉøÍ¸Ñ¹Äò.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(ÄòÉøÍ¸Ñ¹Äò);
 		
-		JTextField label611222223_box= new JTextField();
-		label611222223_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
-		label611222223_box.addActionListener(new ActionListener(){
+		JTextField ÄòÉøÍ¸Ñ¹Äò_box= new JTextField();
+		ÄòÉøÍ¸Ñ¹Äò_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
+		ÄòÉøÍ¸Ñ¹Äò_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				String temp= label611222223_box.getText();
+				String temp= ÄòÉøÍ¸Ñ¹Äò_box.getText();
 				double temp_double= Double.valueOf(temp);
 				String reportz= "";
 				String reportj= "Ö÷ÒªÓÃÓÚÒÈÏÙ°©¡¢½áÖ±³¦°©µÄÕï¶ÏÓë¼ø±ğ";
@@ -860,20 +860,20 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 				}	
 			}
 		});
-		this.add(label611222223);
-		this.add(label611222223_box);	
+		this.add(ÄòÉøÍ¸Ñ¹Äò);
+		this.add(ÄòÉøÍ¸Ñ¹Äò_box);	
 		//12
-		DetaLabel label612222223= new DetaLabel("¸Æca:");  
-		label612222223.setForeground(Color.WHITE);
-		label612222223.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(label612222223);
+		DetaLabel ½áºËÓ¡¼£ÊÔÑé= new DetaLabel("¸Æca:");  
+		½áºËÓ¡¼£ÊÔÑé.setForeground(Color.WHITE);
+		½áºËÓ¡¼£ÊÔÑé.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(½áºËÓ¡¼£ÊÔÑé);
 		
-		JTextField label612222223_box= new JTextField();
-		label612222223_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
-		label612222223_box.addActionListener(new ActionListener(){
+		JTextField ½áºËÓ¡¼£ÊÔÑé_box= new JTextField();
+		½áºËÓ¡¼£ÊÔÑé_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
+		½áºËÓ¡¼£ÊÔÑé_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label612222223_box
+				printValue(½áºËÓ¡¼£ÊÔÑé_box
 						, "½µµÍ£º³£¼ûÓÚÎ¬ÉúËØDÈ±·¦£¬ØşÂ¥²¡£¬Èí¹Ç²¡£¬Ğ¡¶ùÊÖ×ã³é´¤Ö¢£¬ÀÏÄê¹ÇÖÊÊèËÉ£¬¼××´ÅÔÏÙ¹¦ÄÜ¼õÍË£¬ÂıĞÔÉöÑ×£¬Äò¶¾Ö¢£¬µÍ¸ÆÒûÊ³¼°ÎüÊÕ²»Á¼" 
 						, "Ôö¸ß£º¼ûÓÚ¹ÇÖ×Áö£¬¼××´ÅÔÏÙ»úÄÜ¿º½ø£¬¼±ĞÔ¹ÇÎ®Ëõ£¬ÉöÉÏÏÙÆ¤Ö¬¹¦ÄÜ¼õÍË¼°Î¬ÉúËØDÉãÈë¹ıÁ¿µÈ¡£"
 						, "" 
@@ -881,49 +881,49 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label612222223);
-		this.add(label612222223_box);	
+		this.add(½áºËÓ¡¼£ÊÔÑé);
+		this.add(½áºËÓ¡¼£ÊÔÑé_box);	
 		//13
-		DetaLabel label613222223= new DetaLabel("¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó-1¦Âmip-1¦Â:");  
-		label613222223.setForeground(Color.WHITE);
-		label613222223.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(label613222223);
+		DetaLabel ÏÙÜÕÍÑ°±Ëá= new DetaLabel("¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó-1¦Âmip-1¦Â:");  
+		ÏÙÜÕÍÑ°±Ëá.setForeground(Color.WHITE);
+		ÏÙÜÕÍÑ°±Ëá.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(ÏÙÜÕÍÑ°±Ëá);
 		
-		JTextField label613222223_box= new JTextField();
-		label613222223_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
-		label613222223_box.addActionListener(new ActionListener(){
+		JTextField ÏÙÜÕÍÑ°±Ëá_box= new JTextField();
+		ÏÙÜÕÍÑ°±Ëá_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
+		ÏÙÜÕÍÑ°±Ëá_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label613222223);
-		this.add(label613222223_box);	
+		this.add(ÏÙÜÕÍÑ°±Ëá);
+		this.add(ÏÙÜÕÍÑ°±Ëá_box);	
 		//14
-		DetaLabel label614222223= new DetaLabel("Äò17-ôÇ¹Ì´¼17-oh:");  
-		label614222223.setForeground(Color.WHITE);
-		label614222223.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(label614222223);
+		DetaLabel ¼âÈñÊªğà´×Ëá°×= new DetaLabel("Äò17-ôÇ¹Ì´¼17-oh:");  
+		¼âÈñÊªğà´×Ëá°×.setForeground(Color.WHITE);
+		¼âÈñÊªğà´×Ëá°×.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(¼âÈñÊªğà´×Ëá°×);
 		
-		JTextField label614222223_box= new JTextField();
-		label614222223_box.setBounds(10+ 110+ 220* 4, 33+ 25* 13, 80, 20);
-		label614222223_box.addActionListener(new ActionListener(){
+		JTextField ¼âÈñÊªğà´×Ëá°×_box= new JTextField();
+		¼âÈñÊªğà´×Ëá°×_box.setBounds(10+ 110+ 220* 4, 33+ 25* 13, 80, 20);
+		¼âÈñÊªğà´×Ëá°×_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label614222223_box
+				printValue(¼âÈñÊªğà´×Ëá°×_box
 						, "½µµÍ£º¼ûÓÚÉÏÏÙÆ¤ÖÊ¹¦ÄÜ²»È«£¬Èç°¢µÒÉ­ÊÏ²¡µÈ" 
 						, "Ôö¸ß£º¼ûÓÚ¿ÂĞËÊÏ×ÛºÏÖ¢£¬·ÊÅÖÖ¢£¬¼×¿º£¬ÉöÉÏÏÙÆ¤¹¦ÄÜ¿º½ø£¬ÓÈÒÔÆäÖ×ÁöÉı¸ßÏÔÖø¡£"
 						, "" ,3 ,11, Õï¶Ï½á¹û_box, "");
 			}
 		});
-		this.add(label614222223);
-		this.add(label614222223_box);	
+		this.add(¼âÈñÊªğà´×Ëá°×);
+		this.add(¼âÈñÊªğà´×Ëá°×_box);	
 	}
 
-	protected void printValue(JTextField label612222223_box, String minString, String maxString, String elseString
+	protected void printValue(JTextField ½áºËÓ¡¼£ÊÔÑé_box, String minString, String maxString, String elseString
 			, double min, double max, JTextField Õï¶Ï½á¹û_box, String yinyang) {
 		//¼Ó×´Ì¬£»
-		String temp= label612222223_box.getText();
+		String temp= ½áºËÓ¡¼£ÊÔÑé_box.getText();
 		//double temp_double= Double.valueOf(temp);
 		if(yinyang.contains("Òõ ")||yinyang.contains("Ñô")) {
 			if(temp.contains(yinyang)) {
@@ -955,170 +955,170 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	void addFourthColomns(JTextField Õï¶Ï½á¹û_box, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai222223= new DetaLabel("ldhÍ¬¹¤Ã¸is0-ldh:");  
-		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(baiDanBai222223);
-		JTextField baiDanBai222223_box= new JTextField();
-		baiDanBai222223_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
-		baiDanBai222223_box.addActionListener(new ActionListener(){
+		DetaLabel ½ê´¯¾µ¼ìsarcoptes= new DetaLabel("ldhÍ¬¹¤Ã¸is0-ldh:");  
+		½ê´¯¾µ¼ìsarcoptes.setForeground(Color.WHITE);
+		½ê´¯¾µ¼ìsarcoptes.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(½ê´¯¾µ¼ìsarcoptes);
+		JTextField ½ê´¯¾µ¼ìsarcoptes_box= new JTextField();
+		½ê´¯¾µ¼ìsarcoptes_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
+		½ê´¯¾µ¼ìsarcoptes_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(baiDanBai222223);
-		this.add(baiDanBai222223_box);	
+		this.add(½ê´¯¾µ¼ìsarcoptes);
+		this.add(½ê´¯¾µ¼ìsarcoptes_box);	
 
-		DetaLabel label2222223= new DetaLabel("ÒÈµºËØins:");  
-		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(label2222223);
-		JTextField label2222223_box= new JTextField();
-		label2222223_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
-		label2222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÒÈµºËØins= new DetaLabel("ÒÈµºËØins:");  
+		ÒÈµºËØins.setForeground(Color.WHITE);
+		ÒÈµºËØins.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(ÒÈµºËØins);
+		JTextField ÒÈµºËØins_box= new JTextField();
+		ÒÈµºËØins_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
+		ÒÈµºËØins_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label2222223);
-		this.add(label2222223_box);	
+		this.add(ÒÈµºËØins);
+		this.add(ÒÈµºËØins_box);	
 
-		DetaLabel label3222223= new DetaLabel("Í¬t:");  
-		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(label3222223);
-		JTextField label3222223_box= new JTextField();
-		label3222223_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
-		label3222223_box.addActionListener(new ActionListener(){
+		DetaLabel ×Üµ¨ºìÖÊ= new DetaLabel("Í¬t:");  
+		×Üµ¨ºìÖÊ.setForeground(Color.WHITE);
+		×Üµ¨ºìÖÊ.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(×Üµ¨ºìÖÊ);
+		JTextField ×Üµ¨ºìÖÊ_box= new JTextField();
+		×Üµ¨ºìÖÊ_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
+		×Üµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label3222223);
-		this.add(label3222223_box);	
+		this.add(×Üµ¨ºìÖÊ);
+		this.add(×Üµ¨ºìÖÊ_box);	
 
-		DetaLabel label4222223= new DetaLabel("µí·ÛÃ¸amy:");  
-		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(label4222223);
-		JTextField label4222223_box= new JTextField();
-		label4222223_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
-		label4222223_box.addActionListener(new ActionListener(){
+		DetaLabel µí·ÛÃ¸amy= new DetaLabel("µí·ÛÃ¸amy:");  
+		µí·ÛÃ¸amy.setForeground(Color.WHITE);
+		µí·ÛÃ¸amy.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(µí·ÛÃ¸amy);
+		JTextField µí·ÛÃ¸amy_box= new JTextField();
+		µí·ÛÃ¸amy_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
+		µí·ÛÃ¸amy_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label4222223_box
+				printValue(µí·ÛÃ¸amy_box
 						, "½µµÍ£º¼ûÓÚ¸ÎÔà¼²²¡£¬Èç¸Î°©£¬¸ÎÓ²»¯¡£"
 						, "Ôö¸ß£º¼ûÓÚ¼±ÂıĞÔÒÈÏÙÑ×£¬ÒÈÏÙ°©£¬µ¨µÀ¼²²¡£¬Î¸´©¿×£¬³¦¹£×è£¬ÈùÏÙÑ×£¬ÍÙÒºÏÙÑ×µÈ¡£" 
 						,"" ,110 ,110, Õï¶Ï½á¹û_box, "");
 			}
 		});
-		this.add(label4222223);
-		this.add(label4222223_box);	
+		this.add(µí·ÛÃ¸amy);
+		this.add(µí·ÛÃ¸amy_box);	
 
-		DetaLabel label5222223= new DetaLabel("ÈéËáÍÑÇâÃ¸ldh:");  
-		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(label5222223);
-		JTextField label5222223_box= new JTextField();
-		label5222223_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
-		label5222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÈéËáÍÑÇâÃ¸ldh= new DetaLabel("ÈéËáÍÑÇâÃ¸ldh:");  
+		ÈéËáÍÑÇâÃ¸ldh.setForeground(Color.WHITE);
+		ÈéËáÍÑÇâÃ¸ldh.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(ÈéËáÍÑÇâÃ¸ldh);
+		JTextField ÈéËáÍÑÇâÃ¸ldh_box= new JTextField();
+		ÈéËáÍÑÇâÃ¸ldh_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
+		ÈéËáÍÑÇâÃ¸ldh_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label5222223);
-		this.add(label5222223_box);	
+		this.add(ÈéËáÍÑÇâÃ¸ldh);
+		this.add(ÈéËáÍÑÇâÃ¸ldh_box);	
 
-		DetaLabel label6222223= new DetaLabel("Ìútron:");  
-		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(label6222223);
-		JTextField label6222223_box= new JTextField();
-		label6222223_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
-		label6222223_box.addActionListener(new ActionListener(){
+		DetaLabel Ìútron= new DetaLabel("Ìútron:");  
+		Ìútron.setForeground(Color.WHITE);
+		Ìútron.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(Ìútron);
+		JTextField Ìútron_box= new JTextField();
+		Ìútron_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
+		Ìútron_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label6222223);
-		this.add(label6222223_box);	
+		this.add(Ìútron);
+		this.add(Ìútron_box);	
 
 		//7
-		DetaLabel label7222223= new DetaLabel("ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëál+:");  
-		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(label7222223);
-		JTextField label7222223_box= new JTextField();
-		label7222223_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
-		label7222223_box.addActionListener(new ActionListener(){
+		DetaLabel ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá= new DetaLabel("ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëál+:");  
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setForeground(Color.WHITE);
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá);
+		JTextField ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box= new JTextField();
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label7222223);
-		this.add(label7222223_box);	
+		this.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá);
+		this.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box);	
 		//8
-		DetaLabel label68222223= new DetaLabel("Á£Ï¸°û´Ì¼¤Òò×Óg-csf:");  
-		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(label68222223);
-		JTextField label68222223_box= new JTextField();
-		label68222223_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
-		label68222223_box.addActionListener(new ActionListener(){
+		DetaLabel Á£Ï¸°û´Ì¼¤Òò×Ó= new DetaLabel("Á£Ï¸°û´Ì¼¤Òò×Óg-csf:");  
+		Á£Ï¸°û´Ì¼¤Òò×Ó.setForeground(Color.WHITE);
+		Á£Ï¸°û´Ì¼¤Òò×Ó.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(Á£Ï¸°û´Ì¼¤Òò×Ó);
+		JTextField Á£Ï¸°û´Ì¼¤Òò×Ó_box= new JTextField();
+		Á£Ï¸°û´Ì¼¤Òò×Ó_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
+		Á£Ï¸°û´Ì¼¤Òò×Ó_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label68222223);
-		this.add(label68222223_box);	
+		this.add(Á£Ï¸°û´Ì¼¤Òò×Ó);
+		this.add(Á£Ï¸°û´Ì¼¤Òò×Ó_box);	
 		//9
-		DetaLabel label69222223= new DetaLabel("´Æ¼¤ËØel:");  
-		label69222223.setForeground(Color.WHITE);
-		label69222223.setBounds(10+220*3, 32+ 25*8, 100, 20);jFrameList.add(label69222223);
-		JTextField label69222223_box= new JTextField();
-		label69222223_box.setBounds(10+ 110+220*3, 33+ 25*8, 80, 20);
-		label69222223_box.addActionListener(new ActionListener(){
+		DetaLabel ´Æ¼¤ËØel= new DetaLabel("´Æ¼¤ËØel:");  
+		´Æ¼¤ËØel.setForeground(Color.WHITE);
+		´Æ¼¤ËØel.setBounds(10+220*3, 32+ 25*8, 100, 20);jFrameList.add(´Æ¼¤ËØel);
+		JTextField ´Æ¼¤ËØel_box= new JTextField();
+		´Æ¼¤ËØel_box.setBounds(10+ 110+220*3, 33+ 25*8, 80, 20);
+		´Æ¼¤ËØel_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label69222223);
-		this.add(label69222223_box);	
+		this.add(´Æ¼¤ËØel);
+		this.add(´Æ¼¤ËØel_box);	
 		//10
-		DetaLabel label610222223= new DetaLabel("Í¬¹¤Ã¸ck-mb:");  
-		label610222223.setForeground(Color.WHITE);
-		label610222223.setBounds(10+220*3, 32+ 25*9, 100, 20);jFrameList.add(label610222223);
-		JTextField label610222223_box= new JTextField();
-		label610222223_box.setBounds(10+ 110+220*3, 33+ 25*9, 80, 20);
-		label610222223_box.addActionListener(new ActionListener(){
+		DetaLabel Í¬¹¤Ã¸ck_mb= new DetaLabel("Í¬¹¤Ã¸ck-mb:");  
+		Í¬¹¤Ã¸ck_mb.setForeground(Color.WHITE);
+		Í¬¹¤Ã¸ck_mb.setBounds(10+220*3, 32+ 25*9, 100, 20);jFrameList.add(Í¬¹¤Ã¸ck_mb);
+		JTextField Í¬¹¤Ã¸ck_mb_box= new JTextField();
+		Í¬¹¤Ã¸ck_mb_box.setBounds(10+ 110+220*3, 33+ 25*9, 80, 20);
+		Í¬¹¤Ã¸ck_mb_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label610222223);
-		this.add(label610222223_box);	
+		this.add(Í¬¹¤Ã¸ck_mb);
+		this.add(Í¬¹¤Ã¸ck_mb_box);	
 		//11
-		DetaLabel label611222223= new DetaLabel("ÄòÉøÍ¸Ñ¹Äòosm:");  
-		label611222223.setForeground(Color.WHITE);
-		label611222223.setBounds(10+220*3, 32+ 25*10, 100, 20);jFrameList.add(label611222223);
-		JTextField label611222223_box= new JTextField();
-		label611222223_box.setBounds(10+ 110+220*3, 33+ 25*10, 80, 20);
-		label611222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÄòÉøÍ¸Ñ¹Äò= new DetaLabel("ÄòÉøÍ¸Ñ¹Äòosm:");  
+		ÄòÉøÍ¸Ñ¹Äò.setForeground(Color.WHITE);
+		ÄòÉøÍ¸Ñ¹Äò.setBounds(10+220*3, 32+ 25*10, 100, 20);jFrameList.add(ÄòÉøÍ¸Ñ¹Äò);
+		JTextField ÄòÉøÍ¸Ñ¹Äò_box= new JTextField();
+		ÄòÉøÍ¸Ñ¹Äò_box.setBounds(10+ 110+220*3, 33+ 25*10, 80, 20);
+		ÄòÉøÍ¸Ñ¹Äò_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label611222223_box
+				printValue(ÄòÉøÍ¸Ñ¹Äò_box
 						, "Ï¡ÊÍ£¬¿É·´Ó¦Ô¶ÇúÉöĞ¡¹ÜµÄÅ¨ËõÏ¡ÊÍÖ¢µÈ¼²²¡µÄÕï¶Ï¼°¼ø±ğÕï¶Ï"
 						, "Å¨³í£¬¿É·´Ó¦Ô¶ÇúÉöĞ¡¹ÜµÄÅ¨ËõÏ¡ÊÍÖ¢µÈ¼²²¡µÄÕï¶Ï¼°¼ø±ğÕï¶Ï" 
 						, "" 
@@ -1126,113 +1126,113 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label611222223);
-		this.add(label611222223_box);	
+		this.add(ÄòÉøÍ¸Ñ¹Äò);
+		this.add(ÄòÉøÍ¸Ñ¹Äò_box);	
 		//12
-		DetaLabel label612222223= new DetaLabel("½áºËÓ¡¼£ÊÔÑétb-poc:");  
-		label612222223.setForeground(Color.WHITE);
-		label612222223.setBounds(10+220*3, 32+ 25*11, 100, 20);jFrameList.add(label612222223);
-		JTextField label612222223_box= new JTextField();
-		label612222223_box.setBounds(10+ 110+220*3, 33+ 25*11, 80, 20);
-		label612222223_box.addActionListener(new ActionListener(){
+		DetaLabel ½áºËÓ¡¼£ÊÔÑé= new DetaLabel("½áºËÓ¡¼£ÊÔÑétb-poc:");  
+		½áºËÓ¡¼£ÊÔÑé.setForeground(Color.WHITE);
+		½áºËÓ¡¼£ÊÔÑé.setBounds(10+220*3, 32+ 25*11, 100, 20);jFrameList.add(½áºËÓ¡¼£ÊÔÑé);
+		JTextField ½áºËÓ¡¼£ÊÔÑé_box= new JTextField();
+		½áºËÓ¡¼£ÊÔÑé_box.setBounds(10+ 110+220*3, 33+ 25*11, 80, 20);
+		½áºËÓ¡¼£ÊÔÑé_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label612222223);
-		this.add(label612222223_box);	
+		this.add(½áºËÓ¡¼£ÊÔÑé);
+		this.add(½áºËÓ¡¼£ÊÔÑé_box);	
 		//13
-		DetaLabel label613222223= new DetaLabel("ÏÙÜÕÍÑ°±Ëáada:");  
-		label613222223.setForeground(Color.WHITE);
-		label613222223.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(label613222223);
-		JTextField label613222223_box= new JTextField();
-		label613222223_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
-		label613222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÏÙÜÕÍÑ°±Ëá= new DetaLabel("ÏÙÜÕÍÑ°±Ëáada:");  
+		ÏÙÜÕÍÑ°±Ëá.setForeground(Color.WHITE);
+		ÏÙÜÕÍÑ°±Ëá.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(ÏÙÜÕÍÑ°±Ëá);
+		JTextField ÏÙÜÕÍÑ°±Ëá_box= new JTextField();
+		ÏÙÜÕÍÑ°±Ëá_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
+		ÏÙÜÕÍÑ°±Ëá_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label613222223);
-		this.add(label613222223_box);	
+		this.add(ÏÙÜÕÍÑ°±Ëá);
+		this.add(ÏÙÜÕÍÑ°±Ëá_box);	
 		//14
-		DetaLabel label614222223= new DetaLabel("¼âÈñÊªğà´×Ëá°×:");  
-		label614222223.setForeground(Color.WHITE);
-		label614222223.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(label614222223);
-		JTextField label614222223_box= new JTextField();
-		label614222223_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
-		label614222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¼âÈñÊªğà´×Ëá°×= new DetaLabel("¼âÈñÊªğà´×Ëá°×:");  
+		¼âÈñÊªğà´×Ëá°×.setForeground(Color.WHITE);
+		¼âÈñÊªğà´×Ëá°×.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(¼âÈñÊªğà´×Ëá°×);
+		JTextField ¼âÈñÊªğà´×Ëá°×_box= new JTextField();
+		¼âÈñÊªğà´×Ëá°×_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
+		¼âÈñÊªğà´×Ëá°×_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label614222223);
-		this.add(label614222223_box);	
+		this.add(¼âÈñÊªğà´×Ëá°×);
+		this.add(¼âÈñÊªğà´×Ëá°×_box);	
 	}
 
 	private void addThirdColomns(JTextField Õï¶Ï½á¹û_box, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai222223= new DetaLabel("½ê´¯¾µ¼ìsarcoptesscabidiexamination:");  
-		baiDanBai222223.setForeground(Color.WHITE);
-		baiDanBai222223.setBounds(10+220*2, 32+ 0, 100, 20);jFrameList.add(baiDanBai222223);
-		JTextField baiDanBai222223_box= new JTextField();
-		baiDanBai222223_box.setBounds(10+ 110+220*2, 33+ 0, 80, 20);
-		baiDanBai222223_box.addActionListener(new ActionListener(){
+		DetaLabel ½ê´¯¾µ¼ìsarcoptes= new DetaLabel("½ê´¯¾µ¼ìsarcoptesscabidiexamination:");  
+		½ê´¯¾µ¼ìsarcoptes.setForeground(Color.WHITE);
+		½ê´¯¾µ¼ìsarcoptes.setBounds(10+220*2, 32+ 0, 100, 20);jFrameList.add(½ê´¯¾µ¼ìsarcoptes);
+		JTextField ½ê´¯¾µ¼ìsarcoptes_box= new JTextField();
+		½ê´¯¾µ¼ìsarcoptes_box.setBounds(10+ 110+220*2, 33+ 0, 80, 20);
+		½ê´¯¾µ¼ìsarcoptes_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(baiDanBai222223);
-		this.add(baiDanBai222223_box);	
+		this.add(½ê´¯¾µ¼ìsarcoptes);
+		this.add(½ê´¯¾µ¼ìsarcoptes_box);	
 
-		DetaLabel label2222223= new DetaLabel("°×É«ÄîÖé¾ú¿¹Ìå:");  
-		label2222223.setForeground(Color.WHITE);
-		label2222223.setBounds(10+220*2, 32+ 25*1, 100, 20);jFrameList.add(label2222223);
-		JTextField label2222223_box= new JTextField();
-		label2222223_box.setBounds(10+ 110+220*2, 33+ 25*1, 80, 20);
-		label2222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÒÈµºËØins= new DetaLabel("°×É«ÄîÖé¾ú¿¹Ìå:");  
+		ÒÈµºËØins.setForeground(Color.WHITE);
+		ÒÈµºËØins.setBounds(10+220*2, 32+ 25*1, 100, 20);jFrameList.add(ÒÈµºËØins);
+		JTextField ÒÈµºËØins_box= new JTextField();
+		ÒÈµºËØins_box.setBounds(10+ 110+220*2, 33+ 25*1, 80, 20);
+		ÒÈµºËØins_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label2222223);
-		this.add(label2222223_box);	
+		this.add(ÒÈµºËØins);
+		this.add(ÒÈµºËØins_box);	
 
-		DetaLabel label3222223= new DetaLabel("×Üµ¨ºìÖÊtbil:");  
-		label3222223.setForeground(Color.WHITE);
-		label3222223.setBounds(10+220*2, 32+ 25*2, 100, 20);jFrameList.add(label3222223);
-		JTextField label3222223_box= new JTextField();
-		label3222223_box.setBounds(10+ 110+220*2, 33+ 25*2, 80, 20);
-		label3222223_box.addActionListener(new ActionListener(){
+		DetaLabel ×Üµ¨ºìÖÊ= new DetaLabel("×Üµ¨ºìÖÊtbil:");  
+		×Üµ¨ºìÖÊ.setForeground(Color.WHITE);
+		×Üµ¨ºìÖÊ.setBounds(10+220*2, 32+ 25*2, 100, 20);jFrameList.add(×Üµ¨ºìÖÊ);
+		JTextField ×Üµ¨ºìÖÊ_box= new JTextField();
+		×Üµ¨ºìÖÊ_box.setBounds(10+ 110+220*2, 33+ 25*2, 80, 20);
+		×Üµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label3222223);
-		this.add(label3222223_box);	
+		this.add(×Üµ¨ºìÖÊ);
+		this.add(×Üµ¨ºìÖÊ_box);	
 
-		DetaLabel label4222223= new DetaLabel("Ö±½Óµ¨ºìÖÊdbil:");  
-		label4222223.setForeground(Color.WHITE);
-		label4222223.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(label4222223);
-		JTextField label4222223_box= new JTextField();
-		label4222223_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
-		label4222223_box.addActionListener(new ActionListener(){
+		DetaLabel Ö±½Óµ¨ºìÖÊ= new DetaLabel("Ö±½Óµ¨ºìÖÊdbil:");  
+		Ö±½Óµ¨ºìÖÊ.setForeground(Color.WHITE);
+		Ö±½Óµ¨ºìÖÊ.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(Ö±½Óµ¨ºìÖÊ);
+		JTextField Ö±½Óµ¨ºìÖÊ_box= new JTextField();
+		Ö±½Óµ¨ºìÖÊ_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
+		Ö±½Óµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label4222223_box
+				printValue(Ö±½Óµ¨ºìÖÊ_box
 						, ""
 						, "Ôö¸ß£º³£¼ûÓÚ×èÈûĞÔ»Æğã£¬¸Î°©£¬ÒÈÍ·°©£¬µ¨Ê¯Ö¢µÈ" 
 						, "" 
@@ -1240,65 +1240,65 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label4222223);
-		this.add(label4222223_box);	
+		this.add(Ö±½Óµ¨ºìÖÊ);
+		this.add(Ö±½Óµ¨ºìÖÊ_box);	
 
-		DetaLabel label5222223= new DetaLabel("°ßÌùÊÔÑépatchtest:");  
-		label5222223.setForeground(Color.WHITE);
-		label5222223.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(label5222223);
-		JTextField label5222223_box= new JTextField();
-		label5222223_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
-		label5222223_box.addActionListener(new ActionListener(){
+		DetaLabel °ßÌùÊÔÑé= new DetaLabel("°ßÌùÊÔÑépatchtest:");  
+		°ßÌùÊÔÑé.setForeground(Color.WHITE);
+		°ßÌùÊÔÑé.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(°ßÌùÊÔÑé);
+		JTextField °ßÌùÊÔÑé_box= new JTextField();
+		°ßÌùÊÔÑé_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
+		°ßÌùÊÔÑé_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label5222223);
-		this.add(label5222223_box);	
+		this.add(°ßÌùÊÔÑé);
+		this.add(°ßÌùÊÔÑé_box);	
 
-		DetaLabel label6222223= new DetaLabel("ÑªÃ¾mg:");  
-		label6222223.setForeground(Color.WHITE);
-		label6222223.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(label6222223);
-		JTextField label6222223_box= new JTextField();
-		label6222223_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
-		label6222223_box.addActionListener(new ActionListener(){
+		DetaLabel ÑªÃ¾= new DetaLabel("ÑªÃ¾mg:");  
+		ÑªÃ¾.setForeground(Color.WHITE);
+		ÑªÃ¾.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(ÑªÃ¾);
+		JTextField ÑªÃ¾_box= new JTextField();
+		ÑªÃ¾_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
+		ÑªÃ¾_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label6222223);
-		this.add(label6222223_box);	
+		this.add(ÑªÃ¾);
+		this.add(ÑªÃ¾_box);	
 
 		//7
-		DetaLabel label7222223= new DetaLabel("¼×¸Î¿¹Ìå-igmhav-igmigmhav-igm:");  
-		label7222223.setForeground(Color.WHITE);
-		label7222223.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(label7222223);
-		JTextField label7222223_box= new JTextField();
-		label7222223_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
-		label7222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¼×¸Î¿¹Ìå= new DetaLabel("¼×¸Î¿¹Ìå-igmhav-igmigmhav-igm:");  
+		¼×¸Î¿¹Ìå.setForeground(Color.WHITE);
+		¼×¸Î¿¹Ìå.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(¼×¸Î¿¹Ìå);
+		JTextField ¼×¸Î¿¹Ìå_box= new JTextField();
+		¼×¸Î¿¹Ìå_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
+		¼×¸Î¿¹Ìå_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label7222223);
-		this.add(label7222223_box);	
+		this.add(¼×¸Î¿¹Ìå);
+		this.add(¼×¸Î¿¹Ìå_box);	
 		//8
-		DetaLabel label68222223= new DetaLabel("¼¡Ëá¼¤Ã¸ck:");  
-		label68222223.setForeground(Color.WHITE);
-		label68222223.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(label68222223);
-		JTextField label68222223_box= new JTextField();
-		label68222223_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
-		label68222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¼¡Ëá¼¤Ã¸= new DetaLabel("¼¡Ëá¼¤Ã¸ck:");  
+		¼¡Ëá¼¤Ã¸.setForeground(Color.WHITE);
+		¼¡Ëá¼¤Ã¸.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(¼¡Ëá¼¤Ã¸);
+		JTextField ¼¡Ëá¼¤Ã¸_box= new JTextField();
+		¼¡Ëá¼¤Ã¸_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
+		¼¡Ëá¼¤Ã¸_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label68222223_box
+				printValue(¼¡Ëá¼¤Ã¸_box
 						, "¹ıµÍ"
 						, "Ôö¸ß£ºĞÄ¹£4-6Ğ¡Ê±¿ªÊ¼Éı¸ß£¬18-36Ğ¡Ê±¿É´ïÕı³£ÖµµÄ20-30±¶£¬Îª×î¸ß·å£¬2-4Ìì»Ö¸´Õı³££¬ÁíÍâ£¬²¡¶¾ĞÔĞÄ¼¡Ñ×£¬Æ¤¼¡Ñ×£¬¼¡ÈâËğÉË£¬¼¡ÓªÑø²»Á¼£¬ĞÄ°üÑ×£¬ÄÔÑª¹ÜÒâÍâ¼°ĞÄÔàÊÖÊõµÈ¶¼¿ÉÒÔÊ¹CKÔö¸ß" 
 						, "" 
@@ -1306,34 +1306,34 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label68222223);
-		this.add(label68222223_box);	
+		this.add(¼¡Ëá¼¤Ã¸);
+		this.add(¼¡Ëá¼¤Ã¸_box);	
 		//9
-		DetaLabel label69222223= new DetaLabel("µ¨¹Ì´¼tc:");  
-		label69222223.setForeground(Color.WHITE);
-		label69222223.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(label69222223);
-		JTextField label69222223_box= new JTextField();
-		label69222223_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
-		label69222223_box.addActionListener(new ActionListener(){
+		DetaLabel µ¨¹Ì´¼= new DetaLabel("µ¨¹Ì´¼tc:");  
+		µ¨¹Ì´¼.setForeground(Color.WHITE);
+		µ¨¹Ì´¼.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(µ¨¹Ì´¼);
+		JTextField µ¨¹Ì´¼_box= new JTextField();
+		µ¨¹Ì´¼_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
+		µ¨¹Ì´¼_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label69222223);
-		this.add(label69222223_box);	
+		this.add(µ¨¹Ì´¼);
+		this.add(µ¨¹Ì´¼_box);	
 		//10
-		DetaLabel label610222223= new DetaLabel("¸ßÃÜ¶ÈÖ¬µ°°×hdl-c:");  
-		label610222223.setForeground(Color.WHITE);
-		label610222223.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(label610222223);
-		JTextField label610222223_box= new JTextField();
-		label610222223_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
-		label610222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¸ßÃÜ¶ÈÖ¬µ°°×= new DetaLabel("¸ßÃÜ¶ÈÖ¬µ°°×hdl-c:");  
+		¸ßÃÜ¶ÈÖ¬µ°°×.setForeground(Color.WHITE);
+		¸ßÃÜ¶ÈÖ¬µ°°×.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(¸ßÃÜ¶ÈÖ¬µ°°×);
+		JTextField ¸ßÃÜ¶ÈÖ¬µ°°×_box= new JTextField();
+		¸ßÃÜ¶ÈÖ¬µ°°×_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
+		¸ßÃÜ¶ÈÖ¬µ°°×_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label610222223_box
+				printValue(¸ßÃÜ¶ÈÖ¬µ°°×_box
 						, "½µµÍ£º¼ûÓÚÄÔÑª¹Ü²¡£¬¹ÚĞÄ²¡£¬¸ßTGÑªÖ¢£¬ÑÏÖØ¼²²¡»òÊÖÊõºó£¬ÎüÑÌ£¬È±ÉÙÔË¶¯µÈ¡£"
 						, "" 
 						, "" 
@@ -1342,64 +1342,64 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 			}
 		});
-		this.add(label610222223);
-		this.add(label610222223_box);	
+		this.add(¸ßÃÜ¶ÈÖ¬µ°°×);
+		this.add(¸ßÃÜ¶ÈÖ¬µ°°×_box);	
 		//11
-		DetaLabel label611222223= new DetaLabel("rents:");  
-		label611222223.setForeground(Color.WHITE);
-		label611222223.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(label611222223);
-		JTextField label611222223_box= new JTextField();
-		label611222223_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
-		label611222223_box.addActionListener(new ActionListener(){
+		DetaLabel rents= new DetaLabel("rents:");  
+		rents.setForeground(Color.WHITE);
+		rents.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(rents);
+		JTextField rents_box= new JTextField();
+		rents_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
+		rents_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label611222223);
-		this.add(label611222223_box);	
+		this.add(rents);
+		this.add(rents_box);	
 		//12
-		DetaLabel label612222223= new DetaLabel("¼¡ôûcre:");  
-		label612222223.setForeground(Color.WHITE);
-		label612222223.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(label612222223);
-		JTextField label612222223_box= new JTextField();
-		label612222223_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
-		label612222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¼¡ôû= new DetaLabel("¼¡ôûcre:");  
+		¼¡ôû.setForeground(Color.WHITE);
+		¼¡ôû.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(¼¡ôû);
+		JTextField ¼¡ôû_box= new JTextField();
+		¼¡ôû_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
+		¼¡ôû_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label612222223);
-		this.add(label612222223_box);	
+		this.add(¼¡ôû);
+		this.add(¼¡ôû_box);	
 		//13
-		DetaLabel label613222223= new DetaLabel("¾ŞÏ¸°û²¡¶¾igm¿¹Ìå¶¨ĞÔcmc:");  
-		label613222223.setForeground(Color.WHITE);
-		label613222223.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(label613222223);
-		JTextField label613222223_box= new JTextField();
-		label613222223_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
-		label613222223_box.addActionListener(new ActionListener(){
+		DetaLabel ¾ŞÏ¸°û²¡¶¾= new DetaLabel("¾ŞÏ¸°û²¡¶¾igm¿¹Ìå¶¨ĞÔcmc:");  
+		¾ŞÏ¸°û²¡¶¾.setForeground(Color.WHITE);
+		¾ŞÏ¸°û²¡¶¾.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(¾ŞÏ¸°û²¡¶¾);
+		JTextField ¾ŞÏ¸°û²¡¶¾_box= new JTextField();
+		¾ŞÏ¸°û²¡¶¾_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
+		¾ŞÏ¸°û²¡¶¾_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
 
 			}
 		});
-		this.add(label613222223);
-		this.add(label613222223_box);	
+		this.add(¾ŞÏ¸°û²¡¶¾);
+		this.add(¾ŞÏ¸°û²¡¶¾_box);	
 		//14
-		DetaLabel label614222223= new DetaLabel("Ò¶Ëá:");  
-		label614222223.setForeground(Color.WHITE);
-		label614222223.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(label614222223);
-		JTextField label614222223_box= new JTextField();
-		label614222223_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
-		label614222223_box.addActionListener(new ActionListener(){
+		DetaLabel Ò¶Ëá= new DetaLabel("Ò¶Ëá:");  
+		Ò¶Ëá.setForeground(Color.WHITE);
+		Ò¶Ëá.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(Ò¶Ëá);
+		JTextField Ò¶Ëá_box= new JTextField();
+		Ò¶Ëá_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
+		Ò¶Ëá_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(label614222223_box
+				printValue(Ò¶Ëá_box
 						, "½µµÍ£ºÆ¶Ñª¡£"
 						, "" 
 						, "" 
@@ -1407,23 +1407,23 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(label614222223);
-		this.add(label614222223_box);	
+		this.add(Ò¶Ëá);
+		this.add(Ò¶Ëá_box);	
 	}
 
 	private void addSecondColomns(JTextField Õï¶Ï½á¹û_box, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
 		//copy tab
-		DetaLabel baiDanBai22= new DetaLabel("Á×£¨Äò£©:");  
-		baiDanBai22.setForeground(Color.WHITE);
-		baiDanBai22.setBounds(10+220*1, 32+ 0, 100, 20);jFrameList.add(baiDanBai22);
-		JTextField baiDanBai22_box= new JTextField();
-		baiDanBai22_box.setBounds(10+ 110+220*1, 33+ 0, 80, 20);
-		baiDanBai22_box.addActionListener(new ActionListener(){
+		DetaLabel Á×Äò= new DetaLabel("Á×£¨Äò£©:");  
+		Á×Äò.setForeground(Color.WHITE);
+		Á×Äò.setBounds(10+220*1, 32+ 0, 100, 20);jFrameList.add(Á×Äò);
+		JTextField Á×Äò_box= new JTextField();
+		Á×Äò_box.setBounds(10+ 110+220*1, 33+ 0, 80, 20);
+		Á×Äò_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				//¼Ó×´Ì¬£»
-				printValue(baiDanBai22_box
+				printValue(Á×Äò_box
 						, "½µµÍ£º¼ûÓÚ¼××´ÅÔÏÙ»úÄÜ¼õÍË£¬Éö²¡ÒıÆğµÄÄò¶¾Ö¢"
 						, "Ôö¸ß£º¼ûÓÚ¼××´ÅÔÏÙ»úÄÜ¿º½ø" 
 						, "" 
@@ -1431,8 +1431,8 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 						, "");
 			}
 		});
-		this.add(baiDanBai22);
-		this.add(baiDanBai22_box);	
+		this.add(Á×Äò);
+		this.add(Á×Äò_box);	
 
 		DetaLabel »ùÖÊÏ¸°ûÔ´ĞÔ= new DetaLabel("»ùÖÊÏ¸°ûÔ´ĞÔÒò×Ó-1sdf-1:");  
 		»ùÖÊÏ¸°ûÔ´ĞÔ.setForeground(Color.WHITE);
