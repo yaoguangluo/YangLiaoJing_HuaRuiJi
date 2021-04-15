@@ -1668,7 +1668,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 			}
 		});
 		this.add(ÒÈµºÏ¸°û¿¹Ìå);
-		this.add(ÒÈµºÏ¸°û¿¹Ìå);	
+		this.add(ÒÈµºÏ¸°û¿¹Ìå_box);	
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {

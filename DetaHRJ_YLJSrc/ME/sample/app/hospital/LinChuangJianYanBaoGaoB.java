@@ -1026,7 +1026,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 			}
 		});
-		this.add(促进泡生成素fsm_box);
+		this.add(促进泡生成素fsm);
 		this.add(促进泡生成素fsm_box);	
 		//10
 		DetaLabel d二聚体= new DetaLabel("d-二聚体（d-dimer）:");  
