@@ -8,7 +8,7 @@ import org.ASQ.tinos.deta.demension.Position3D;
 
 public class TraceFissilePositionByHearts{
 	//Source: 《2维 3维 坐标集 切裂 重心 轨迹 跟踪算法JAVA源码》
-	//出版日期2020 年 04 月 14 日 作品说明Gitee, Github, DetaOSS
+	//创作日期2020 年 04 月 14 日 作品说明Gitee, Github, DetaOSS
 	//这个算法之前个人软著申请有相关的根据坐标计算重心轨迹的算法
 	//，这个函数是其反演函数，根据坐标的重心轨迹来求解其坐标集。
 	//作品说明适用于 坐标团 动态分析，增量轨迹分析，熵增信息单元记录。
