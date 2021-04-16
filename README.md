@@ -68,7 +68,7 @@
 ### 项目内容展示. 见工程的 doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
-###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/DetaOSSFINALV0_0_1.pdf
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/DetaOSSFINALV0_0_1.pdf
 ###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下,
 ###### 具体著作权使用Gitee链接见: https://gitee.com/DetaChina/sort/ 工程 2020年7月14 9点37分
 ###### Github镜像: https://github.com/yaoguangluo/sort/
