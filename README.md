@@ -69,7 +69,8 @@
 
 ##### 养疗经和华瑞的科研价值描述
 ###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSS v11.final.pdf
-###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下
+###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下,
+###### 具体著作权使用链接见: https://gitee.com/DetaChina/sort/ 工程 2020年7月14 9点37分
 ###### private int partition(double[] array, int leftPoint, int rightPoint) {
 ###### double x= array[leftPoint]< array[rightPoint]? array[leftPoint]: array[rightPoint];
 ###### 	int leftPointReflection= leftPoint;
@@ -87,7 +88,7 @@
 ###### 		return rightPoint;
 ###### 	}
 ###### 
-###### 对比PDF发现出现了手误, 已经纠正如下
+###### 对比PDF发现出现了加加减减手误, 已经纠正如下, 问题最早出现在2020年10月7日22.41至2020年10月8日12.26之间
 ###### private int partition(int[] a, int lp, int rp) {
 ###### 		double x= a[lp]< a[rp]? a[lp]: a[rp];
 ###### 		int lp1= lp;
