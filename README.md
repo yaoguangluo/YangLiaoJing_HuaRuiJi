@@ -69,6 +69,42 @@
 
 ##### 养疗经和华瑞的科研价值描述
 ###### https://gitee.com/DetaChina/YangLiaoJing/tree/main/doc/Deta_OSS v11.final.pdf
+###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下
+private int partition(double[] array, int leftPoint, int rightPoint) {
+		double x= array[leftPoint]< array[rightPoint]? array[leftPoint]: array[rightPoint];
+		int leftPointReflection= leftPoint;
+		while(leftPointReflection++ < rightPoint){
+			while(!(array[leftPointReflection++]> x|| leftPointReflection> rightPoint)) {}
+			while(array[rightPoint--]> x) {}
+			if(--leftPointReflection< ++rightPoint){
+				double temp= array[rightPoint];
+				array[rightPoint]= array[leftPointReflection];
+				array[leftPointReflection]= temp;
+			}
+		}
+		array[leftPoint]= array[rightPoint];
+		array[rightPoint]= x;
+		return rightPoint;
+	}
+
+###### 对比PDF发现出现了手误, 已经纠正如下
+private int partition(int[] a, int lp, int rp) {
+		double x= a[lp]< a[rp]? a[lp]: a[rp];
+		int lp1= lp;
+		while(lp1++ < rp){
+			while(!(a[lp++]> x|| lp1> rp)) {}
+			while(a[rp--]> x) {}
+			if(--lp1< ++rp){
+				double temp= a[rp];
+				a[rp]= a[lp1];
+				a[lp1]= temp;
+			}
+		}
+		a[lp]= a[rp];
+		a[rp]= x;
+		return rp;
+	}
+
 
 ##### DNA 第一卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
