@@ -70,8 +70,8 @@
 ##### 养疗经和华瑞的科研价值描述
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/DetaOSSFINALV0_0_1.pdf
 ###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下,
-###### 具体著作权使用Gitee链接见: https://gitee.com/DetaChina/sort/ 工程 2020年7月14 9点37分
-###### Github镜像: https://github.com/yaoguangluo/sort/
+###### 具体著作权使用Gitee链接见: https://gitee.com/DetaChina/sort/blob/master/LYG9DWithDoubleQuickSort4D.java 工程 2020年7月14 9点37分
+###### Github镜像: https://github.com/yaoguangluo/sort/blob/master/LYG9DWithDoubleQuickSort4D.java
 ###### private int partition(double[] array, int leftPoint, int rightPoint) {
 ###### double x= array[leftPoint]< array[rightPoint]? array[leftPoint]: array[rightPoint];
 ###### 	int leftPointReflection= leftPoint;
