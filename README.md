@@ -68,6 +68,8 @@
 ### 项目内容展示. 见工程的 doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
+##### 快速排序1~4代的思想 Refer 'Mr.Tony Hoare', 不好意思, 我以为他是先贤, 一直refer用 '算法导论' 4个字,一直没有提过他的大名. (这里注释下.)
+
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/DetaOSSFINALV0_0_1.pdf
 ###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下,
 ###### 具体著作权使用Gitee链接见: https://gitee.com/DetaChina/sort/blob/master/LYG9DWithDoubleQuickSort4D.java 工程 2020年7月14 9点37分
