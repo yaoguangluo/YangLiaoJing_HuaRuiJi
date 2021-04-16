@@ -92,7 +92,7 @@ private int partition(int[] a, int lp, int rp) {
 		double x= a[lp]< a[rp]? a[lp]: a[rp];
 		int lp1= lp;
 		while(lp1++ < rp){
-			while(!(a[lp++]> x|| lp1> rp)) {}
+			while(!(a[lp1++]> x|| lp1> rp)) {}
 			while(a[rp--]> x) {}
 			if(--lp1< ++rp){
 				double temp= a[rp];
