@@ -111,8 +111,8 @@
 
 
 ##### DNA 第一卷
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA 催化与肽计算 (第一卷) 仅--++修正版本.pdf
+###### https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi/tree/18111/doc/罗瑶光---DNA 催化与肽计算 (第一卷) 仅--++修正版本.pdf
 
 ##### DNA 第二卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
@@ -154,8 +154,8 @@
 ###### (中华人民共和国 国家版权局) 作者CN: 2020Z11L0333706 DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2  
 ###### (中华人民共和国 国家版权局) 作者CN: 2020Z11L0356797 国作登字 2021-A-00942587  DNA 元基公式 AOPM VECS IDUQ 肽展公式推导与元基编码进化计算以及它的应用发现 1.2.2 
 ###### (中华人民共和国 国家版权局) 作者CN: 2020Z11L0386462 国作登字 2021-A-00942586  DNA 元基解码 DNA催化与肽展计算 和 AOPM-TXH-VECS-IDUQ 元基解码 V013_026中文版本  
-###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
-###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光---DNA%20催化与肽计算%20(第一卷).pdf
+###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光---DNA 催化与肽计算 (第一卷) 仅--++修正版本.pdf
+###### https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi/tree/18111/doc/罗瑶光---DNA 催化与肽计算 (第一卷) 仅--++修正版本.pdf
 
 ###### (中华人民共和国 国家版权局) CN:2021Z11L1057159 德塔DNA元基催化与肽计算第二卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
