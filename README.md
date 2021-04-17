@@ -112,7 +112,7 @@
 
 ##### DNA 第一卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷)%20仅--++修正版本.pdf
-###### https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi/tree/18111/doc/罗瑶光---DNA 催化与肽计算 (第一卷) 仅--++修正版本.pdf
+###### https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi/tree/18111/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷)%20仅--++修正版本.pdf
 
 ##### DNA 第二卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
