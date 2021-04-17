@@ -6,6 +6,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import org.tinos.vpcs.restServer.RestServer;
 
+import ME.sample.app.hospital.DetaLabelStables;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -58,9 +59,13 @@ import comp.detaTabbedpane.DetabbedPane;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
 	public void init(App app) throws IOException{
-		//Regist Medicine Report
+		//Register Medicine Report
 		DetaLabelConjunction.detaLabelConjunction = new DetaLabelConjunction();
 		DetaLabelConjunction.detaLabelConjunction.init();
+		//Register ELEC hospital global actions clean 
+		DetaLabelStables.stableImages= new DetaLabelStables();
+		DetaLabelStables.stableImages.setStableImages();
+		DetaLabelStables.stableImages.setTarget(false);
 		//Register DNA
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
 		if(!new GetDisk().getKey().replaceAll(" ", "").contains("BFBFF000806E9-79530339318")) {

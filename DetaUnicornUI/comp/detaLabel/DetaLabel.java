@@ -4,13 +4,13 @@ import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
-
 import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import org.tinos.reportMap.DetaLabelConjunction;
+
+import ME.sample.app.hospital.DetaLabelStables;
 public class DetaLabel extends JLabel{
 	private static final long serialVersionUID = 1L;
 	public String tagName= "";
@@ -70,6 +70,7 @@ public class DetaLabel extends JLabel{
 					}
 					frameTag.setVisible(true);
 					frameTag.show();
+					DetaLabelStables.stableImages.setTarget(true);
 					frameTag.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);	
 					openx= point.x;
 					openy= point.y;
@@ -82,6 +83,7 @@ public class DetaLabel extends JLabel{
 						frameTag.setLocation(point.x, point.y);
 						frameTag.setVisible(true);
 						frameTag.show();
+						DetaLabelStables.stableImages.setTarget(true);
 						openx= point.x;
 						openy= point.y;
 						return;
@@ -105,21 +107,6 @@ public class DetaLabel extends JLabel{
 			public void mouseReleased(MouseEvent arg0) {
 			}
 
-		});
-
-		this.addMouseMotionListener(new MouseMotionListener() {
-			public void mouseDragged(MouseEvent e) {
-			}
-
-			@SuppressWarnings("deprecation")
-			public void mouseMoved(MouseEvent e) {
-				if(null!= frameTag) {
-					Point point= java.awt.MouseInfo.getPointerInfo().getLocation();
-					if(Math.abs(point.x- openx)> 15||Math.abs(point.y- openy)> 15) {
-						frameTag.hide();
-					}
-				}
-			}
 		});
 		//find and set tag
 		DetaLabelConjunction.detaLabelConjunction.findAndSetTag(this, name);

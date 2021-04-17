@@ -97,10 +97,10 @@
 ###### 		int lp1= lp;
 ###### 		while(lp1++ < rp){
 ###### 			while(!(a[lp1++]> x|| lp1> rp)) {}
-###### 		while(a[rp--]> x) {}
-###### 		if(--lp1< ++rp){
-###### 			double temp= a[rp];
-###### 			a[rp]= a[lp1];
+###### 			while(a[rp--]> x) {}
+###### 			if(--lp1< ++rp){
+###### 				double temp= a[rp];
+###### 				a[rp]= a[lp1];
 ###### 				a[lp1]= temp;
 ###### 			}
 ###### 		}

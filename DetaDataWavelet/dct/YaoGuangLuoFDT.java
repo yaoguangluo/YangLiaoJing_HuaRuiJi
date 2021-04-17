@@ -5,7 +5,7 @@ package dct;
 //cos(2knPi/N)= cos(k* n* t) ;
 //0~1024 0~1024
 //之后我会再来挑战下余弦化简,别急
-//
+//refer 傅里叶, 
 public class YaoGuangLuoFDT{
 	final static double pi= 3.1415926;
 	final static int N= 1024;

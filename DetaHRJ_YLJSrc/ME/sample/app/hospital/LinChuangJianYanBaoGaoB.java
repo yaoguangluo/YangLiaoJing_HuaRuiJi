@@ -1420,7 +1420,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 	@SuppressWarnings("deprecation")
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		// TODO Auto-generated method stub
+		if(!DetaLabelStables.stableImages.target) {
+			return;
+		}
 		if(!jFrameList.isEmpty()) {
 			Iterator<DetaLabel> iterator= jFrameList.iterator();
 			while(iterator.hasNext()) {
@@ -1430,6 +1432,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 					detaLabel.validate();
 				}
 			}
+			DetaLabelStables.stableImages.setTarget(false);;
 		}
 	}
 }

@@ -25,6 +25,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	//今天准备把医学检验报告的单位进行格式化 规范化,等下开始 20210401
 	//罗瑶光
 	public List<DetaLabel> jFrameList;
+	public boolean target= false;
 	private static final long serialVersionUID = 1L;
 	public LinChuangJianYanBaoGaoA(JTextPane name, List<DetaLabel> jFrameListRefer){
 		this.setLayout(null);
@@ -1723,22 +1724,9 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	@SuppressWarnings("deprecation")
 	@Override
 	public void mouseMoved(MouseEvent e) {
-//		if(!jFrameList.isEmpty()) {
-//			for(int i=0;i<jFrameList.size();i++) {
-//				JFrame jFrame= jFrameList.get(i);
-//				if(null!= jFrame&& jFrame.isShowing()) {
-//					jFrame.hide();
-//				}
-//			}
-//			//			Iterator<JFrame> iterator= jFrameList.iterator();
-//			//			while(iterator.hasNext()) {
-//			//				JFrame jFrame= iterator.next();
-//			//				if(null!= jFrame&& jFrame.isShowing()) {
-//			//					jFrame.hide();
-//			//				}
-//			//			}
-//		}
-		// TODO Auto-generated method stub
+		if(!DetaLabelStables.stableImages.target) {
+			return;
+		}
 		if(!jFrameList.isEmpty()) {
 			Iterator<DetaLabel> iterator= jFrameList.iterator();
 			while(iterator.hasNext()) {
@@ -1748,6 +1736,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 					detaLabel.validate();
 				}
 			}
+			DetaLabelStables.stableImages.setTarget(false);
 		}
 	}	
 }
