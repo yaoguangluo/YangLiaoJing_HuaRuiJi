@@ -115,6 +115,14 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		});
 		this.add(推荐过滤);	
 
+
+		//index
+		DetaLabel 索引= new DetaLabel("索引: A B C D E F G H I G J K L M N O P Q R S T U V W X Y Z (我思考用户肯定不想打字和下拉列表, 所以做成点鼠标来红名)");  
+		索引.setForeground(Color.WHITE);
+		索引.setBounds(0, 1, 1000, 25);  
+		jFrameList.add(索引);
+		this.add(索引);
+
 		// TODO Auto-generated method stub
 		//copy tab
 		DetaLabel 全血黏度= new DetaLabel("全血黏度:");  
