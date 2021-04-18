@@ -945,7 +945,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÂÈ´×ËáİÁ·Ó= new DetaLabel("ÂÈ´×ËáİÁ·Óas-dõ¥Ã¸È¾É«:");  
 		ÂÈ´×ËáİÁ·Ó.setForeground(Color.WHITE);
 		ÂÈ´×ËáİÁ·Ó.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(ÂÈ´×ËáİÁ·Ó);
-		ÂÈ´×ËáİÁ·Ó.indexString= "LCSNFADMR";
+		ÂÈ´×ËáİÁ·Ó.indexString= "LCSNFADZMR";
 		JTextField ÂÈ´×ËáİÁ·Ó_box= new JTextField();
 		ÂÈ´×ËáİÁ·Ó_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
 		ÂÈ´×ËáİÁ·Ó_box.addActionListener(new ActionListener(){

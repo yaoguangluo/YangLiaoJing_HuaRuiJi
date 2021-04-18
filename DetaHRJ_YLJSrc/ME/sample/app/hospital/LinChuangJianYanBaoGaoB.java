@@ -893,7 +893,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel Ñª½¬Ò¶Ëá²â¶¨= new DetaLabel("Ñª½¬Ò¶Ëá²â¶¨fa:");  
 		Ñª½¬Ò¶Ëá²â¶¨.setForeground(Color.WHITE);
-		Ñª½¬Ò¶Ëá²â¶¨.setBounds(10+220*2, 32+ 25*7, 100, 20); Ñª½¬Ò¶Ëá²â¶¨.indexString= "XJYSCD"; jFrameList.add(Ñª½¬Ò¶Ëá²â¶¨);
+		Ñª½¬Ò¶Ëá²â¶¨.setBounds(10+220*2, 32+ 25*7, 100, 20); Ñª½¬Ò¶Ëá²â¶¨.indexString= "XJYSCDFA"; jFrameList.add(Ñª½¬Ò¶Ëá²â¶¨);
 		JTextField Ñª½¬Ò¶Ëá²â¶¨_box= new JTextField();
 		Ñª½¬Ò¶Ëá²â¶¨_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
 		Ñª½¬Ò¶Ëá²â¶¨_box.addActionListener(new ActionListener(){
