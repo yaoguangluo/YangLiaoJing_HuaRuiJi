@@ -12,6 +12,7 @@ import java.awt.event.MouseMotionListener;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
@@ -118,10 +119,9 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 
 		//index
-		DetaIndexLabel 索引= new DetaIndexLabel("索引 : ", jFrameList);  
+		JLabel 索引= new JLabel("索引 : ");  
 		索引.setForeground(Color.WHITE);
-		索引.setBounds(10, 1, 50, 25);  
-		索引.setIndex("索引");
+		索引.setBounds(0, 1, 35, 25);  
 		this.add(索引);
 
 		DetaIndexLabel 索引a= new DetaIndexLabel(" A ", jFrameList);  
@@ -391,7 +391,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 乙肝表面抗原= new DetaLabel("乙肝表面抗原hbsag:");  
 		乙肝表面抗原.setForeground(Color.WHITE);
-		乙肝表面抗原.setBounds(10+220*0, 32+ 25*7, 100, 20); 乙肝表面抗原.indexString= "YGBMK"; jFrameList.add(乙肝表面抗原);
+		乙肝表面抗原.setBounds(10+220*0, 32+ 25*7, 100, 20); 乙肝表面抗原.indexString= "YGBMKHSAG"; jFrameList.add(乙肝表面抗原);
 		JTextField 乙肝表面抗原_box= new JTextField();
 		乙肝表面抗原_box.setBounds(10+ 110+220*0, 33+ 25*7, 80, 20);
 		乙肝表面抗原_box.addActionListener(new ActionListener(){
@@ -451,7 +451,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel 载脂蛋白ap0bap0b= new DetaLabel("载脂蛋白ap0bap0b:");  
 		载脂蛋白ap0bap0b.setForeground(Color.WHITE);
-		载脂蛋白ap0bap0b.setBounds(10+220*0, 32+ 25*11, 100, 20); 载脂蛋白ap0bap0b.indexString= "ZZDBAPB"; jFrameList.add(载脂蛋白ap0bap0b);
+		载脂蛋白ap0bap0b.setBounds(10+220*0, 32+ 25*11, 100, 20); 载脂蛋白ap0bap0b.indexString= "ZDBAPB"; jFrameList.add(载脂蛋白ap0bap0b);
 		JTextField 载脂蛋白ap0bap0b_box= new JTextField();
 		载脂蛋白ap0bap0b_box.setBounds(10+ 110+220*0, 33+ 25*11, 80, 20);
 		载脂蛋白ap0bap0b_box.addActionListener(new ActionListener(){
@@ -700,7 +700,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel 早老素= new DetaLabel("早老素-1ps-1:");  
 		早老素.setForeground(Color.WHITE);
-		早老素.setBounds(10+220*1, 32+ 25*11, 100, 20); 早老素.indexString= "ZLS"; jFrameList.add(早老素);
+		早老素.setBounds(10+220*1, 32+ 25*11, 100, 20); 早老素.indexString= "ZLSP"; jFrameList.add(早老素);
 		JTextField 早老素_box= new JTextField();
 		早老素_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
 		早老素_box.addActionListener(new ActionListener(){
@@ -1357,7 +1357,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 肽c= new DetaLabel("c-肽c-p:");  
 		肽c.setForeground(Color.WHITE);
-		肽c.setBounds(10+220*4, 32+ 25*5, 100, 20); 肽c.indexString= "TC"; jFrameList.add(肽c);
+		肽c.setBounds(10+220*4, 32+ 25*5, 100, 20); 肽c.indexString= "TCP"; jFrameList.add(肽c);
 		JTextField 肽c_box= new JTextField();
 		肽c_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
 		肽c_box.addActionListener(new ActionListener(){
@@ -1448,7 +1448,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12***********************************
 		DetaLabel 血管紧张素转化酶= new DetaLabel("血管紧张素转化酶sace:");  
 		血管紧张素转化酶.setForeground(Color.WHITE);
-		血管紧张素转化酶.setBounds(10+220*4, 32+ 25*11, 100, 20); 血管紧张素转化酶.indexString= "XGJZSHM"; jFrameList.add(血管紧张素转化酶);
+		血管紧张素转化酶.setBounds(10+220*4, 32+ 25*11, 100, 20); 血管紧张素转化酶.indexString= "XGJZSHMACE"; jFrameList.add(血管紧张素转化酶);
 		JTextField 血管紧张素转化酶_box= new JTextField();
 		血管紧张素转化酶_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
 		血管紧张素转化酶_box.addActionListener(new ActionListener(){
