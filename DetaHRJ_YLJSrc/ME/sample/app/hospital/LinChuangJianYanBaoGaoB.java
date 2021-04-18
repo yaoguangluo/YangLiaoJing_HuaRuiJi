@@ -284,7 +284,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//copy tab
 		DetaLabel 全血黏度= new DetaLabel("全血黏度:");  
 		全血黏度.setForeground(Color.WHITE);
-		全血黏度.setBounds(10+220*0, 32+ 0, 100, 20);jFrameList.add(全血黏度);
+		全血黏度.setBounds(10+220*0, 32+ 0, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(全血黏度);
 		JTextField 全血黏度_box= new JTextField();
 		全血黏度_box.setBounds(10+ 110+220*0, 33+ 0, 80, 20);
 		全血黏度_box.addActionListener(new ActionListener(){
@@ -300,7 +300,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 肿瘤标记抗原242检测= new DetaLabel("肿瘤标记抗原242检测ca242:");  
 		肿瘤标记抗原242检测.setForeground(Color.WHITE);
-		肿瘤标记抗原242检测.setBounds(10+220*0, 32+ 25*1, 100, 20);jFrameList.add(肿瘤标记抗原242检测);
+		肿瘤标记抗原242检测.setBounds(10+220*0, 32+ 25*1, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(肿瘤标记抗原242检测);
 		JTextField 肿瘤标记抗原242检测_box= new JTextField();
 		肿瘤标记抗原242检测_box.setBounds(10+ 110+220*0, 33+ 25*1, 80, 20);
 		肿瘤标记抗原242检测_box.addActionListener(new ActionListener(){
@@ -315,7 +315,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 过敏原检测= new DetaLabel("过敏原检测（1）吸入组ⅰ（2）吸入组ⅱ（3）食物组ⅲ（4）食物组ⅳivtivt-ⅰivt-ⅱivt-ⅲivt-ⅳ:");  
 		过敏原检测.setForeground(Color.WHITE);
-		过敏原检测.setBounds(10+220*0, 32+ 25*2, 100, 20);jFrameList.add(过敏原检测);
+		过敏原检测.setBounds(10+220*0, 32+ 25*2, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(过敏原检测);
 		JTextField 过敏原检测_box= new JTextField();
 		过敏原检测_box.setBounds(10+ 110+220*0, 33+ 25*2, 80, 20);
 		过敏原检测_box.addActionListener(new ActionListener(){
@@ -330,7 +330,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 钙ca= new DetaLabel("钙ca:");  
 		钙ca.setForeground(Color.WHITE);
-		钙ca.setBounds(10+220*0, 32+ 25* 3, 100, 20);jFrameList.add(钙ca);
+		钙ca.setBounds(10+220*0, 32+ 25* 3, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(钙ca);
 		JTextField 钙ca_box= new JTextField();
 		钙ca_box.setBounds(10+ 110+220*0, 33+ 25* 3, 80, 20);
 		钙ca_box.addActionListener(new ActionListener(){
@@ -345,7 +345,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 巨噬细胞感染趋化因子= new DetaLabel("巨噬细胞感染趋化因子-1βmip-1β:");  
 		巨噬细胞感染趋化因子.setForeground(Color.WHITE);
-		巨噬细胞感染趋化因子.setBounds(10+220*0, 32+ 25*4, 100, 20);jFrameList.add(巨噬细胞感染趋化因子);
+		巨噬细胞感染趋化因子.setBounds(10+220*0, 32+ 25*4, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(巨噬细胞感染趋化因子);
 		JTextField 巨噬细胞感染趋化因子_box= new JTextField();
 		巨噬细胞感染趋化因子_box.setBounds(10+ 110+220*0, 33+ 25*4, 80, 20);
 		巨噬细胞感染趋化因子_box.addActionListener(new ActionListener(){
@@ -360,7 +360,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 羟固醇17= new DetaLabel("尿17-羟固醇17-oh:");  
 		羟固醇17.setForeground(Color.WHITE);
-		羟固醇17.setBounds(10+220*0, 32+ 25*5, 100, 20);jFrameList.add(羟固醇17);
+		羟固醇17.setBounds(10+220*0, 32+ 25*5, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(羟固醇17);
 		JTextField 羟固醇17_box= new JTextField();
 		羟固醇17_box.setBounds(10+ 110+220*0, 33+ 25*5, 80, 20);
 		羟固醇17_box.addActionListener(new ActionListener(){
@@ -376,7 +376,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//7
 		DetaLabel 促黄体生成素= new DetaLabel("促黄体生成素lh:");  
 		促黄体生成素.setForeground(Color.WHITE);
-		促黄体生成素.setBounds(10+220*0, 32+ 25*6, 100, 20);jFrameList.add(促黄体生成素);
+		促黄体生成素.setBounds(10+220*0, 32+ 25*6, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(促黄体生成素);
 		JTextField 促黄体生成素_box= new JTextField();
 		促黄体生成素_box.setBounds(10+ 110+220*0, 33+ 25*6, 80, 20);
 		促黄体生成素_box.addActionListener(new ActionListener(){
@@ -391,7 +391,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 乙肝表面抗原= new DetaLabel("乙肝表面抗原hbsag:");  
 		乙肝表面抗原.setForeground(Color.WHITE);
-		乙肝表面抗原.setBounds(10+220*0, 32+ 25*7, 100, 20);jFrameList.add(乙肝表面抗原);
+		乙肝表面抗原.setBounds(10+220*0, 32+ 25*7, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(乙肝表面抗原);
 		JTextField 乙肝表面抗原_box= new JTextField();
 		乙肝表面抗原_box.setBounds(10+ 110+220*0, 33+ 25*7, 80, 20);
 		乙肝表面抗原_box.addActionListener(new ActionListener(){
@@ -406,7 +406,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//9
 		DetaLabel 毛囊虫镜检demo= new DetaLabel("毛囊虫镜检demodexfolliculorumexamination:");  
 		毛囊虫镜检demo.setForeground(Color.WHITE);
-		毛囊虫镜检demo.setBounds(10+220*0, 32+ 25*8, 100, 20);jFrameList.add(毛囊虫镜检demo);
+		毛囊虫镜检demo.setBounds(10+220*0, 32+ 25*8, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(毛囊虫镜检demo);
 		JTextField 毛囊虫镜检demo_box= new JTextField();
 		毛囊虫镜检demo_box.setBounds(10+ 110+220*0, 33+ 25*8, 80, 20);
 		毛囊虫镜检demo_box.addActionListener(new ActionListener(){
@@ -421,7 +421,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//10
 		DetaLabel 促肾上腺皮质激素= new DetaLabel("促肾上腺皮质激素acth:");  
 		促肾上腺皮质激素.setForeground(Color.WHITE);
-		促肾上腺皮质激素.setBounds(10+220*0, 32+ 25*9, 100, 20);jFrameList.add(促肾上腺皮质激素);
+		促肾上腺皮质激素.setBounds(10+220*0, 32+ 25*9, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(促肾上腺皮质激素);
 		JTextField 促肾上腺皮质激素_box= new JTextField();
 		促肾上腺皮质激素_box.setBounds(10+ 110+220*0, 33+ 25*9, 80, 20);
 		促肾上腺皮质激素_box.addActionListener(new ActionListener(){
@@ -436,7 +436,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//11
 		DetaLabel 弓形体igm= new DetaLabel("弓形体igm,抗体阳性定性toxo:");  
 		弓形体igm.setForeground(Color.WHITE);
-		弓形体igm.setBounds(10+220*0, 32+ 25*10, 100, 20);jFrameList.add(弓形体igm);
+		弓形体igm.setBounds(10+220*0, 32+ 25*10, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(弓形体igm);
 		JTextField 弓形体igm_box= new JTextField();
 		弓形体igm_box.setBounds(10+ 110+220*0, 33+ 25*10, 80, 20);
 		弓形体igm_box.addActionListener(new ActionListener(){
@@ -451,7 +451,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel 载脂蛋白ap0bap0b= new DetaLabel("载脂蛋白ap0bap0b:");  
 		载脂蛋白ap0bap0b.setForeground(Color.WHITE);
-		载脂蛋白ap0bap0b.setBounds(10+220*0, 32+ 25*11, 100, 20);jFrameList.add(载脂蛋白ap0bap0b);
+		载脂蛋白ap0bap0b.setBounds(10+220*0, 32+ 25*11, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(载脂蛋白ap0bap0b);
 		JTextField 载脂蛋白ap0bap0b_box= new JTextField();
 		载脂蛋白ap0bap0b_box.setBounds(10+ 110+220*0, 33+ 25*11, 80, 20);
 		载脂蛋白ap0bap0b_box.addActionListener(new ActionListener(){
@@ -471,7 +471,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//13
 		DetaLabel 尿酸uric= new DetaLabel("尿酸uric:");  
 		尿酸uric.setForeground(Color.WHITE);
-		尿酸uric.setBounds(10+220*0, 32+ 25*12, 100, 20);jFrameList.add(尿酸uric);
+		尿酸uric.setBounds(10+220*0, 32+ 25*12, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(尿酸uric);
 		JTextField 尿酸uric_box= new JTextField();
 		尿酸uric_box.setBounds(10+ 110+220*0, 33+ 25*12, 80, 20);
 		尿酸uric_box.addActionListener(new ActionListener(){
@@ -491,7 +491,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//14
 		DetaLabel 胰高糖素= new DetaLabel("胰高糖素:");  
 		胰高糖素.setForeground(Color.WHITE);
-		胰高糖素.setBounds(10+220*0, 32+ 25*13, 100, 20);jFrameList.add(胰高糖素);
+		胰高糖素.setBounds(10+220*0, 32+ 25*13, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(胰高糖素);
 		JTextField 胰高糖素_box= new JTextField();
 		胰高糖素_box.setBounds(10+ 110+220*0, 33+ 25*13, 80, 20);
 		胰高糖素_box.addActionListener(new ActionListener(){
@@ -519,7 +519,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//copy tab
 		DetaLabel 军团菌抗原检测= new DetaLabel("军团菌抗原检测:");  
 		军团菌抗原检测.setForeground(Color.WHITE);
-		军团菌抗原检测.setBounds(10+220*1, 32+ 0, 100, 20);jFrameList.add(军团菌抗原检测);
+		军团菌抗原检测.setBounds(10+220*1, 32+ 0, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(军团菌抗原检测);
 		JTextField 军团菌抗原检测_box= new JTextField();
 		军团菌抗原检测_box.setBounds(10+ 110+220*1, 33+ 0, 80, 20);
 		军团菌抗原检测_box.addActionListener(new ActionListener(){
@@ -534,7 +534,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 真菌培养取材= new DetaLabel("真菌培养取材cultureoffungi:");  
 		真菌培养取材.setForeground(Color.WHITE);
-		真菌培养取材.setBounds(10+220*1, 32+ 25*1, 100, 20);jFrameList.add(真菌培养取材);
+		真菌培养取材.setBounds(10+220*1, 32+ 25*1, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(真菌培养取材);
 		JTextField 真菌培养取材_box= new JTextField();
 		真菌培养取材_box.setBounds(10+ 110+220*1, 33+ 25*1, 80, 20);
 		真菌培养取材_box.addActionListener(new ActionListener(){
@@ -549,7 +549,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 转肽酶ggt= new DetaLabel("转肽酶ggt:");  
 		转肽酶ggt.setForeground(Color.WHITE);
-		转肽酶ggt.setBounds(10+220*1, 32+ 25*2, 100, 20);jFrameList.add(转肽酶ggt);
+		转肽酶ggt.setBounds(10+220*1, 32+ 25*2, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(转肽酶ggt);
 		JTextField 转肽酶ggt_box= new JTextField();
 		转肽酶ggt_box.setBounds(10+ 110+220*1, 33+ 25*2, 80, 20);
 		转肽酶ggt_box.addActionListener(new ActionListener(){
@@ -569,7 +569,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 免疫组化验查= new DetaLabel("免疫组化验查immunohistophathol-ogicstain:");  
 		免疫组化验查.setForeground(Color.WHITE);
-		免疫组化验查.setBounds(10+220*1, 32+ 25* 3, 100, 20);jFrameList.add(免疫组化验查);
+		免疫组化验查.setBounds(10+220*1, 32+ 25* 3, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(免疫组化验查);
 		JTextField 免疫组化验查_box= new JTextField();
 		免疫组化验查_box.setBounds(10+ 110+220*1, 33+ 25* 3, 80, 20);
 		免疫组化验查_box.addActionListener(new ActionListener(){
@@ -584,7 +584,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 四项诱导血小板聚集功能= new DetaLabel("四项诱导血小板聚集功能测试（mulitipleagentplateletaggregationtest）4-pagt:");  
 		四项诱导血小板聚集功能.setForeground(Color.WHITE);
-		四项诱导血小板聚集功能.setBounds(10+220*1, 32+ 25*4, 100, 20);jFrameList.add(四项诱导血小板聚集功能);
+		四项诱导血小板聚集功能.setBounds(10+220*1, 32+ 25*4, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(四项诱导血小板聚集功能);
 		JTextField 四项诱导血小板聚集功能_box= new JTextField();
 		四项诱导血小板聚集功能_box.setBounds(10+ 110+220*1, 33+ 25*4, 80, 20);
 		四项诱导血小板聚集功能_box.addActionListener(new ActionListener(){
@@ -599,7 +599,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 髓鞘碱性蛋白= new DetaLabel("髓鞘碱性蛋白mbp:");  
 		髓鞘碱性蛋白.setForeground(Color.WHITE);
-		髓鞘碱性蛋白.setBounds(10+220*1, 32+ 25*5, 100, 20);jFrameList.add(髓鞘碱性蛋白);
+		髓鞘碱性蛋白.setBounds(10+220*1, 32+ 25*5, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(髓鞘碱性蛋白);
 		JTextField 髓鞘碱性蛋白_box= new JTextField();
 		髓鞘碱性蛋白_box.setBounds(10+ 110+220*1, 33+ 25*5, 80, 20);
 		髓鞘碱性蛋白_box.addActionListener(new ActionListener(){
@@ -615,7 +615,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//7
 		DetaLabel 皮肤病理活检= new DetaLabel("皮肤病理活检dermatopathologicalexamination:");  
 		皮肤病理活检.setForeground(Color.WHITE);
-		皮肤病理活检.setBounds(10+220*1, 32+ 25*6, 100, 20);jFrameList.add(皮肤病理活检);
+		皮肤病理活检.setBounds(10+220*1, 32+ 25*6, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(皮肤病理活检);
 		JTextField 皮肤病理活检_box= new JTextField();
 		皮肤病理活检_box.setBounds(10+ 110+220*1, 33+ 25*6, 80, 20);
 		皮肤病理活检_box.addActionListener(new ActionListener(){
@@ -630,7 +630,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 血尿锌= new DetaLabel("血（尿）锌zn:");  
 		血尿锌.setForeground(Color.WHITE);
-		血尿锌.setBounds(10+220*1, 32+ 25*7, 100, 20);jFrameList.add(血尿锌);
+		血尿锌.setBounds(10+220*1, 32+ 25*7, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(血尿锌);
 		JTextField 血尿锌_box = new JTextField();
 		血尿锌_box.setBounds(10+ 110+220*1, 33+ 25*7, 80, 20);
 		血尿锌_box.addActionListener(new ActionListener(){
@@ -650,7 +650,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//9
 		DetaLabel 尿皮质醇尿皮质醇= new DetaLabel("尿皮质醇尿皮质醇:");  
 		尿皮质醇尿皮质醇.setForeground(Color.WHITE);
-		尿皮质醇尿皮质醇.setBounds(10+220*1, 32+ 25*8, 100, 20);jFrameList.add(尿皮质醇尿皮质醇);
+		尿皮质醇尿皮质醇.setBounds(10+220*1, 32+ 25*8, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(尿皮质醇尿皮质醇);
 		JTextField 尿皮质醇尿皮质醇_box= new JTextField();
 		尿皮质醇尿皮质醇_box.setBounds(10+ 110+220*1, 33+ 25*8, 80, 20);
 		尿皮质醇尿皮质醇_box.addActionListener(new ActionListener(){
@@ -670,7 +670,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//10
 		DetaLabel 白色念珠菌抗原= new DetaLabel("白色念珠菌抗原:");  
 		白色念珠菌抗原.setForeground(Color.WHITE);
-		白色念珠菌抗原.setBounds(10+220*1, 32+ 25*9, 100, 20);jFrameList.add(白色念珠菌抗原);
+		白色念珠菌抗原.setBounds(10+220*1, 32+ 25*9, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(白色念珠菌抗原);
 		JTextField 白色念珠菌抗原_box= new JTextField();
 		白色念珠菌抗原_box.setBounds(10+ 110+220*1, 33+ 25*9, 80, 20);
 		白色念珠菌抗原_box.addActionListener(new ActionListener(){
@@ -685,7 +685,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//11
 		DetaLabel 乙肝两对半hbeab= new DetaLabel("乙肝两对半hbeab:");  
 		乙肝两对半hbeab.setForeground(Color.WHITE);
-		乙肝两对半hbeab.setBounds(10+220*1, 32+ 25*10, 100, 20);jFrameList.add(乙肝两对半hbeab);
+		乙肝两对半hbeab.setBounds(10+220*1, 32+ 25*10, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(乙肝两对半hbeab);
 		JTextField 乙肝两对半hbeab_box= new JTextField();
 		乙肝两对半hbeab_box.setBounds(10+ 110+220*1, 33+ 25*10, 80, 20);
 		乙肝两对半hbeab_box.addActionListener(new ActionListener(){
@@ -700,7 +700,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel 早老素= new DetaLabel("早老素-1ps-1:");  
 		早老素.setForeground(Color.WHITE);
-		早老素.setBounds(10+220*1, 32+ 25*11, 100, 20);jFrameList.add(早老素);
+		早老素.setBounds(10+220*1, 32+ 25*11, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(早老素);
 		JTextField 早老素_box= new JTextField();
 		早老素_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
 		早老素_box.addActionListener(new ActionListener(){
@@ -715,7 +715,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//13
 		DetaLabel 总蛋白tp= new DetaLabel("总蛋白tp:");  
 		总蛋白tp.setForeground(Color.WHITE);
-		总蛋白tp.setBounds(10+220*1, 32+ 25*12, 100, 20);jFrameList.add(总蛋白tp);
+		总蛋白tp.setBounds(10+220*1, 32+ 25*12, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(总蛋白tp);
 		JTextField 总蛋白tp_box= new JTextField();
 		总蛋白tp_box.setBounds(10+ 110+220*1, 33+ 25*12, 80, 20);
 		总蛋白tp_box.addActionListener(new ActionListener(){
@@ -735,7 +735,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//14
 		DetaLabel 肺炎支原体igg= new DetaLabel("肺炎支原体igg:");  
 		肺炎支原体igg.setForeground(Color.WHITE);
-		肺炎支原体igg.setBounds(10+220*1, 32+ 25*13, 100, 20);jFrameList.add(肺炎支原体igg);
+		肺炎支原体igg.setBounds(10+220*1, 32+ 25*13, 100, 20); 糖耐量实验.indexString= ""; jFrameList.add(肺炎支原体igg);
 		JTextField 肺炎支原体igg_box= new JTextField();
 		肺炎支原体igg_box.setBounds(10+ 110+220*1, 33+ 25*13, 80, 20);
 		肺炎支原体igg_box.addActionListener(new ActionListener(){
@@ -754,7 +754,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//copy tab
 		DetaLabel 淋球菌培养取材= new DetaLabel("淋球菌培养取材cultureofneisseriagonorrhoen:");  
 		淋球菌培养取材.setForeground(Color.WHITE);
-		淋球菌培养取材.setBounds(10+220*2, 32+ 0, 100, 20);jFrameList.add(淋球菌培养取材);
+		淋球菌培养取材.setBounds(10+220*2, 32+ 0, 100, 20); 淋球菌培养取材.indexString= "LQJPYC"; jFrameList.add(淋球菌培养取材);
 		JTextField 淋球菌培养取材_box= new JTextField();
 		淋球菌培养取材_box.setBounds(10+ 110+220*2, 33+ 0, 80, 20);
 		淋球菌培养取材_box.addActionListener(new ActionListener(){
@@ -769,7 +769,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 尿酸尿= new DetaLabel("尿酸（尿）:");  
 		尿酸尿.setForeground(Color.WHITE);
-		尿酸尿.setBounds(10+220*2, 32+ 25*1, 100, 20);jFrameList.add(尿酸尿);
+		尿酸尿.setBounds(10+220*2, 32+ 25*1, 100, 20); 尿酸尿.indexString= "NS"; jFrameList.add(尿酸尿);
 		JTextField 尿酸尿_box= new JTextField();
 		尿酸尿_box.setBounds(10+ 110+220*2, 33+ 25*1, 80, 20);
 		尿酸尿_box.addActionListener(new ActionListener(){
@@ -789,7 +789,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 血小板聚集= new DetaLabel("血小板聚集:");  
 		血小板聚集.setForeground(Color.WHITE);
-		血小板聚集.setBounds(10+220*2, 32+ 25*2, 100, 20);jFrameList.add(血小板聚集);
+		血小板聚集.setBounds(10+220*2, 32+ 25*2, 100, 20); 血小板聚集.indexString= "XBJ"; jFrameList.add(血小板聚集);
 		JTextField 血小板聚集_box= new JTextField();
 		血小板聚集_box.setBounds(10+ 110+220*2, 33+ 25*2, 80, 20);
 		血小板聚集_box.addActionListener(new ActionListener(){
@@ -809,7 +809,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 谷草转氨酶= new DetaLabel("谷草转氨酶ast:");  
 		谷草转氨酶.setForeground(Color.WHITE);
-		谷草转氨酶.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(谷草转氨酶);
+		谷草转氨酶.setBounds(10+220*2, 32+ 25* 3, 100, 20); 谷草转氨酶.indexString= "GCZAM"; jFrameList.add(谷草转氨酶);
 		JTextField 谷草转氨酶_box= new JTextField();
 		谷草转氨酶_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
 		谷草转氨酶_box.addActionListener(new ActionListener(){
@@ -829,7 +829,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 甲肝抗体= new DetaLabel("甲肝抗体-igmhav-igm:");  
 		甲肝抗体.setForeground(Color.WHITE);
-		甲肝抗体.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(甲肝抗体);
+		甲肝抗体.setBounds(10+220*2, 32+ 25*4, 100, 20); 甲肝抗体.indexString= "JGKT"; jFrameList.add(甲肝抗体);
 		JTextField 甲肝抗体_box= new JTextField();
 		甲肝抗体_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
 		甲肝抗体_box.addActionListener(new ActionListener(){
@@ -844,7 +844,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 生长激素gh= new DetaLabel("生长激素gh:");  
 		生长激素gh.setForeground(Color.WHITE);
-		生长激素gh.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(生长激素gh);
+		生长激素gh.setBounds(10+220*2, 32+ 25*5, 100, 20); 生长激素gh.indexString= "SZJ"; jFrameList.add(生长激素gh);
 		JTextField 生长激素gh_box= new JTextField();
 		生长激素gh_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
 		生长激素gh_box.addActionListener(new ActionListener(){
@@ -867,7 +867,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//7
 		DetaLabel 脂肪酶lipase= new DetaLabel("脂肪酶lipase:");  
 		脂肪酶lipase.setForeground(Color.WHITE);
-		脂肪酶lipase.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(脂肪酶lipase);
+		脂肪酶lipase.setBounds(10+220*2, 32+ 25*6, 100, 20); 脂肪酶lipase.indexString= "ZFMLIPASE"; jFrameList.add(脂肪酶lipase);
 		JTextField 脂肪酶lipase_box= new JTextField();
 		脂肪酶lipase_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
 		脂肪酶lipase_box.addActionListener(new ActionListener(){
@@ -893,7 +893,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 血浆叶酸测定= new DetaLabel("血浆叶酸测定fa:");  
 		血浆叶酸测定.setForeground(Color.WHITE);
-		血浆叶酸测定.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(血浆叶酸测定);
+		血浆叶酸测定.setBounds(10+220*2, 32+ 25*7, 100, 20); 血浆叶酸测定.indexString= "XJYSCD"; jFrameList.add(血浆叶酸测定);
 		JTextField 血浆叶酸测定_box= new JTextField();
 		血浆叶酸测定_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
 		血浆叶酸测定_box.addActionListener(new ActionListener(){
@@ -908,7 +908,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//9
 		DetaLabel 同工酶ck_mm= new DetaLabel("同工酶ck-mm:");  
 		同工酶ck_mm.setForeground(Color.WHITE);
-		同工酶ck_mm.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(同工酶ck_mm);
+		同工酶ck_mm.setBounds(10+220*2, 32+ 25*8, 100, 20); 同工酶ck_mm.indexString= "TGMCK"; jFrameList.add(同工酶ck_mm);
 		JTextField 同工酶ck_mm_box= new JTextField();
 		同工酶ck_mm_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
 		同工酶ck_mm_box.addActionListener(new ActionListener(){
@@ -923,7 +923,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//10
 		DetaLabel 特异性酯酶双染色= new DetaLabel("特异性酯酶双染色:");  
 		特异性酯酶双染色.setForeground(Color.WHITE);
-		特异性酯酶双染色.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(特异性酯酶双染色);
+		特异性酯酶双染色.setBounds(10+220*2, 32+ 25*9, 100, 20); 特异性酯酶双染色.indexString= "TYXZMSR"; jFrameList.add(特异性酯酶双染色);
 		JTextField 特异性酯酶双染色_box= new JTextField();
 		特异性酯酶双染色_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
 		特异性酯酶双染色_box.addActionListener(new ActionListener(){
@@ -938,7 +938,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//11
 		DetaLabel 铁染色= new DetaLabel("铁染色:");  
 		铁染色.setForeground(Color.WHITE);
-		铁染色.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(铁染色);
+		铁染色.setBounds(10+220*2, 32+ 25*10, 100, 20); 铁染色.indexString= "TRS"; jFrameList.add(铁染色);
 		JTextField 铁染色_box= new JTextField();
 		铁染色_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
 		铁染色_box.addActionListener(new ActionListener(){
@@ -953,7 +953,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel 钾K= new DetaLabel("钾K:");  
 		钾K.setForeground(Color.WHITE);
-		钾K.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(钾K);
+		钾K.setBounds(10+220*2, 32+ 25*11, 100, 20); 钾K.indexString= "JK"; jFrameList.add(钾K);
 		JTextField 钾K_box= new JTextField();
 		钾K_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
 		钾K_box.addActionListener(new ActionListener(){
@@ -968,7 +968,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//13
 		DetaLabel 乙肝两对半hbeag= new DetaLabel("乙肝两对半hbeag:");  
 		乙肝两对半hbeag.setForeground(Color.WHITE);
-		乙肝两对半hbeag.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(乙肝两对半hbeag);
+		乙肝两对半hbeag.setBounds(10+220*2, 32+ 25*12, 100, 20); 乙肝两对半hbeag.indexString= "YGLDBHEAG"; jFrameList.add(乙肝两对半hbeag);
 		JTextField 乙肝两对半hbeag_box= new JTextField();
 		乙肝两对半hbeag_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
 		乙肝两对半hbeag_box.addActionListener(new ActionListener(){
@@ -983,7 +983,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//14
 		DetaLabel 醋酸萘酚酯酶染色= new DetaLabel("α-醋酸萘酚酯酶染色:");  
 		醋酸萘酚酯酶染色.setForeground(Color.WHITE);
-		醋酸萘酚酯酶染色.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(醋酸萘酚酯酶染色);
+		醋酸萘酚酯酶染色.setBounds(10+220*2, 32+ 25*13, 100, 20); 醋酸萘酚酯酶染色.indexString= "CSNFZMR"; jFrameList.add(醋酸萘酚酯酶染色);
 		JTextField 醋酸萘酚酯酶染色_box= new JTextField();
 		醋酸萘酚酯酶染色_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
 		醋酸萘酚酯酶染色_box.addActionListener(new ActionListener(){
@@ -1002,14 +1002,10 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//copy tab
 		DetaLabel 血浆同型半胱氨酸= new DetaLabel("血浆同型半胱氨酸hcy:");  
 		血浆同型半胱氨酸.setForeground(Color.WHITE);
-		血浆同型半胱氨酸.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(血浆同型半胱氨酸);
+		血浆同型半胱氨酸.setBounds(10+220*3, 32+ 0, 100, 20); 血浆同型半胱氨酸.indexString= "XJTBGAS"; jFrameList.add(血浆同型半胱氨酸);
 		血浆同型半胱氨酸.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				DetaLabel 单位= new DetaLabel("白蛋白alb:");  
-				单位.setForeground(Color.WHITE);
-				单位.setBounds(10, 20+ 0, 100, 20);jFrameList.add(血浆同型半胱氨酸);
-				add(单位);		
 			}
 
 			@Override
@@ -1055,7 +1051,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 尿微量白蛋白排泄率= new DetaLabel("尿微量白蛋白排泄率uaer:");  
 		尿微量白蛋白排泄率.setForeground(Color.WHITE);
-		尿微量白蛋白排泄率.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(尿微量白蛋白排泄率);
+		尿微量白蛋白排泄率.setBounds(10+220*3, 32+ 25*1, 100, 20); 尿微量白蛋白排泄率.indexString= "NWLBDPX"; jFrameList.add(尿微量白蛋白排泄率);
 		JTextField 尿微量白蛋白排泄率_box= new JTextField();
 		尿微量白蛋白排泄率_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
 		尿微量白蛋白排泄率_box.addActionListener(new ActionListener(){
@@ -1075,7 +1071,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 氯cl= new DetaLabel("氯cl:");  
 		氯cl.setForeground(Color.WHITE);
-		氯cl.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(氯cl);
+		氯cl.setBounds(10+220*3, 32+ 25*2, 100, 20); 氯cl.indexString= "CL"; jFrameList.add(氯cl);
 		JTextField 氯cl_box= new JTextField();
 		氯cl_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
 		氯cl_box.addActionListener(new ActionListener(){
@@ -1095,7 +1091,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 灌洗液常规检查balf= new DetaLabel("灌洗液常规检查balf:");  
 		灌洗液常规检查balf.setForeground(Color.WHITE);
-		灌洗液常规检查balf.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(灌洗液常规检查balf);
+		灌洗液常规检查balf.setBounds(10+220*3, 32+ 25* 3, 100, 20); 灌洗液常规检查balf.indexString= "GXYCGJCBALF"; jFrameList.add(灌洗液常规检查balf);
 		JTextField 灌洗液常规检查balf_box= new JTextField();
 		灌洗液常规检查balf_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
 		灌洗液常规检查balf_box.addActionListener(new ActionListener(){
@@ -1110,7 +1106,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 呼吸道病毒检测= new DetaLabel("呼吸道病毒检测:");  
 		呼吸道病毒检测.setForeground(Color.WHITE);
-		呼吸道病毒检测.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(呼吸道病毒检测);
+		呼吸道病毒检测.setBounds(10+220*3, 32+ 25*4, 100, 20); 呼吸道病毒检测.indexString= "HXDBJC"; jFrameList.add(呼吸道病毒检测);
 		JTextField 呼吸道病毒检测_box= new JTextField();
 		呼吸道病毒检测_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
 		呼吸道病毒检测_box.addActionListener(new ActionListener(){
@@ -1125,7 +1121,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 肌酐尿= new DetaLabel("肌酐（尿）:");  
 		肌酐尿.setForeground(Color.WHITE);
-		肌酐尿.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(肌酐尿);
+		肌酐尿.setBounds(10+220*3, 32+ 25*5, 100, 20); 肌酐尿.indexString= "JGN"; jFrameList.add(肌酐尿);
 		JTextField 肌酐尿_box= new JTextField();
 		肌酐尿_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
 		肌酐尿_box.addActionListener(new ActionListener(){
@@ -1146,7 +1142,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//7
 		DetaLabel 免疫球蛋白gigg= new DetaLabel("免疫球蛋白gigg:");  
 		免疫球蛋白gigg.setForeground(Color.WHITE);
-		免疫球蛋白gigg.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(免疫球蛋白gigg);
+		免疫球蛋白gigg.setBounds(10+220*3, 32+ 25*6, 100, 20); 免疫球蛋白gigg.indexString= "MYQDBGI"; jFrameList.add(免疫球蛋白gigg);
 		JTextField 免疫球蛋白gigg_box= new JTextField();
 		免疫球蛋白gigg_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
 		免疫球蛋白gigg_box.addActionListener(new ActionListener(){
@@ -1166,7 +1162,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 胸水ldh= new DetaLabel("胸水ldh:");  
 		胸水ldh.setForeground(Color.WHITE);
-		胸水ldh.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(胸水ldh);
+		胸水ldh.setBounds(10+220*3, 32+ 25*7, 100, 20); 胸水ldh.indexString= "XSLDH"; jFrameList.add(胸水ldh);
 		JTextField 胸水ldh_box= new JTextField();
 		胸水ldh_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
 		胸水ldh_box.addActionListener(new ActionListener(){
@@ -1181,7 +1177,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//9
 		DetaLabel 促进泡生成素fsm= new DetaLabel("促进泡生成素fsm:");  
 		促进泡生成素fsm.setForeground(Color.WHITE);
-		促进泡生成素fsm.setBounds(10+220*3, 32+ 25*8, 100, 20);jFrameList.add(促进泡生成素fsm);
+		促进泡生成素fsm.setBounds(10+220*3, 32+ 25*8, 100, 20); 促进泡生成素fsm.indexString= "CJPSFM"; jFrameList.add(促进泡生成素fsm);
 		JTextField 促进泡生成素fsm_box= new JTextField();
 		促进泡生成素fsm_box.setBounds(10+ 110+220*3, 33+ 25*8, 80, 20);
 		促进泡生成素fsm_box.addActionListener(new ActionListener(){
@@ -1196,7 +1192,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//10
 		DetaLabel d二聚体= new DetaLabel("d-二聚体（d-dimer）:");  
 		d二聚体.setForeground(Color.WHITE);
-		d二聚体.setBounds(10+220*3, 32+ 25*9, 100, 20);jFrameList.add(d二聚体);
+		d二聚体.setBounds(10+220*3, 32+ 25*9, 100, 20); d二聚体.indexString= "DEJT"; jFrameList.add(d二聚体);
 		JTextField d二聚体_box= new JTextField();
 		d二聚体_box.setBounds(10+ 110+220*3, 33+ 25*9, 80, 20);
 		d二聚体_box.addActionListener(new ActionListener(){
@@ -1211,7 +1207,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//11
 		DetaLabel 间接胆红质= new DetaLabel("间接胆红质ibil:");  
 		间接胆红质.setForeground(Color.WHITE);
-		间接胆红质.setBounds(10+220*3, 32+ 25*10, 100, 20);jFrameList.add(间接胆红质);
+		间接胆红质.setBounds(10+220*3, 32+ 25*10, 100, 20); 间接胆红质.indexString= "JDHZ"; jFrameList.add(间接胆红质);
 		JTextField 间接胆红质_box= new JTextField();
 		间接胆红质_box.setBounds(10+ 110+220*3, 33+ 25*10, 80, 20);
 		间接胆红质_box.addActionListener(new ActionListener(){
@@ -1231,7 +1227,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12
 		DetaLabel t细胞亚群测定= new DetaLabel("t细胞亚群测定:");  
 		t细胞亚群测定.setForeground(Color.WHITE);
-		t细胞亚群测定.setBounds(10+220*3, 32+ 25*11, 100, 20);jFrameList.add(t细胞亚群测定);
+		t细胞亚群测定.setBounds(10+220*3, 32+ 25*11, 100, 20); t细胞亚群测定.indexString= "TXBYQCD"; jFrameList.add(t细胞亚群测定);
 		JTextField t细胞亚群测定_box= new JTextField();
 		t细胞亚群测定_box.setBounds(10+ 110+220*3, 33+ 25*11, 80, 20);
 		t细胞亚群测定_box.addActionListener(new ActionListener(){
@@ -1246,7 +1242,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//13
 		DetaLabel 氧合= new DetaLabel("氧合:");  
 		氧合.setForeground(Color.WHITE);
-		氧合.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(氧合);
+		氧合.setBounds(10+220*3, 32+ 25*12, 100, 20); 氧合.indexString= "YH"; jFrameList.add(氧合);
 		JTextField 氧合_box= new JTextField();
 		氧合_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
 		氧合_box.addActionListener(new ActionListener(){
@@ -1261,7 +1257,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//14
 		DetaLabel setSet= new DetaLabel("set:");  
 		setSet.setForeground(Color.WHITE);
-		setSet.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(setSet);
+		setSet.setBounds(10+220*3, 32+ 25*13, 100, 20); setSet.indexString= "SET"; jFrameList.add(setSet);
 		JTextField setSet_box= new JTextField();
 		setSet_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
 		setSet_box.addActionListener(new ActionListener(){
@@ -1280,7 +1276,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//copy tab
 		DetaLabel 胎盘糖旦白胎盘糖旦白= new DetaLabel("胎盘糖旦白胎盘糖旦白:");  
 		胎盘糖旦白胎盘糖旦白.setForeground(Color.WHITE);
-		胎盘糖旦白胎盘糖旦白.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(胎盘糖旦白胎盘糖旦白);
+		胎盘糖旦白胎盘糖旦白.setBounds(10+220*4, 32+ 0, 100, 20); 胎盘糖旦白胎盘糖旦白.indexString= "TPDB"; jFrameList.add(胎盘糖旦白胎盘糖旦白);
 		JTextField 胎盘糖旦白胎盘糖旦白_box= new JTextField();
 		胎盘糖旦白胎盘糖旦白_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
 		胎盘糖旦白胎盘糖旦白_box.addActionListener(new ActionListener(){
@@ -1295,7 +1291,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 单核细胞化学趋化因子= new DetaLabel("单核细胞化学趋化因子-1mcp-1:");  
 		单核细胞化学趋化因子.setForeground(Color.WHITE);
-		单核细胞化学趋化因子.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(单核细胞化学趋化因子);
+		单核细胞化学趋化因子.setBounds(10+220*4, 32+ 25*1, 100, 20); 单核细胞化学趋化因子.indexString= "DHXBHQHYZ"; jFrameList.add(单核细胞化学趋化因子);
 		JTextField 单核细胞化学趋化因子_box= new JTextField();
 		单核细胞化学趋化因子_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
 		单核细胞化学趋化因子_box.addActionListener(new ActionListener(){
@@ -1310,7 +1306,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 骨髓细胞形态学诊断检查= new DetaLabel("骨髓细胞形态学诊断检查:");  
 		骨髓细胞形态学诊断检查.setForeground(Color.WHITE);
-		骨髓细胞形态学诊断检查.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(骨髓细胞形态学诊断检查);
+		骨髓细胞形态学诊断检查.setBounds(10+220*4, 32+ 25*2, 100, 20); 骨髓细胞形态学诊断检查.indexString= "GSXBTZDJC"; jFrameList.add(骨髓细胞形态学诊断检查);
 		JTextField 骨髓细胞形态学诊断检查_box= new JTextField();
 		骨髓细胞形态学诊断检查_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
 		骨髓细胞形态学诊断检查_box.addActionListener(new ActionListener(){
@@ -1325,7 +1321,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 髓鞘碱性蛋白抗体= new DetaLabel("髓鞘碱性蛋白抗体mbp:");  
 		髓鞘碱性蛋白抗体.setForeground(Color.WHITE);
-		髓鞘碱性蛋白抗体.setBounds(10+220*4, 32+ 25* 3, 100, 20);jFrameList.add(髓鞘碱性蛋白抗体);
+		髓鞘碱性蛋白抗体.setBounds(10+220*4, 32+ 25* 3, 100, 20); 髓鞘碱性蛋白抗体.indexString= "SXJDBKT"; jFrameList.add(髓鞘碱性蛋白抗体);
 		JTextField 髓鞘碱性蛋白抗体_box= new JTextField();
 		髓鞘碱性蛋白抗体_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
 		髓鞘碱性蛋白抗体_box.addActionListener(new ActionListener(){
@@ -1340,7 +1336,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 羟丁酸脱氢酶= new DetaLabel("羟丁酸脱氢酶hbdh:");  
 		羟丁酸脱氢酶.setForeground(Color.WHITE);
-		羟丁酸脱氢酶.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(羟丁酸脱氢酶);
+		羟丁酸脱氢酶.setBounds(10+220*4, 32+ 25*4, 100, 20); 羟丁酸脱氢酶.indexString= "QDSZTM"; jFrameList.add(羟丁酸脱氢酶);
 		JTextField 羟丁酸脱氢酶_box= new JTextField();
 		羟丁酸脱氢酶_box.setBounds(10+ 110+ 220* 4, 33+ 25*4, 80, 20);
 		羟丁酸脱氢酶_box.addActionListener(new ActionListener(){
@@ -1361,7 +1357,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 
 		DetaLabel 肽c= new DetaLabel("c-肽c-p:");  
 		肽c.setForeground(Color.WHITE);
-		肽c.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(肽c);
+		肽c.setBounds(10+220*4, 32+ 25*5, 100, 20); 肽c.indexString= "TC"; jFrameList.add(肽c);
 		JTextField 肽c_box= new JTextField();
 		肽c_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
 		肽c_box.addActionListener(new ActionListener(){
@@ -1377,7 +1373,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//7
 		DetaLabel 性病衣原体快速检测= new DetaLabel("性病衣原体快速检测（ct）:");  
 		性病衣原体快速检测.setForeground(Color.WHITE);
-		性病衣原体快速检测.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(性病衣原体快速检测);
+		性病衣原体快速检测.setBounds(10+220*4, 32+ 25*6, 100, 20); 性病衣原体快速检测.indexString= "XBYTKSJC"; jFrameList.add(性病衣原体快速检测);
 		JTextField 性病衣原体快速检测_box= new JTextField();
 		性病衣原体快速检测_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
 		性病衣原体快速检测_box.addActionListener(new ActionListener(){
@@ -1392,7 +1388,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//8
 		DetaLabel 催孔素= new DetaLabel("催孔素phl:");  
 		催孔素.setForeground(Color.WHITE);
-		催孔素.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(催孔素);
+		催孔素.setBounds(10+220*4, 32+ 25*7, 100, 20); 催孔素.indexString= "CKS"; jFrameList.add(催孔素);
 		JTextField 催孔素_box= new JTextField();
 		催孔素_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
 		催孔素_box.addActionListener(new ActionListener(){
@@ -1407,7 +1403,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//9
 		DetaLabel 骨髓巨核细胞定量= new DetaLabel("骨髓巨核细胞定量计数分类分析:");  
 		骨髓巨核细胞定量.setForeground(Color.WHITE);
-		骨髓巨核细胞定量.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(骨髓巨核细胞定量);
+		骨髓巨核细胞定量.setBounds(10+220*4, 32+ 25*8, 100, 20); 骨髓巨核细胞定量.indexString= "GSJHXBDL"; jFrameList.add(骨髓巨核细胞定量);
 		JTextField 骨髓巨核细胞定量_box= new JTextField();
 		骨髓巨核细胞定量_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
 		骨髓巨核细胞定量_box.addActionListener(new ActionListener(){
@@ -1422,7 +1418,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//10
 		DetaLabel 血气分析加离子分析= new DetaLabel("血气分析加离子分析:");  
 		血气分析加离子分析.setForeground(Color.WHITE);
-		血气分析加离子分析.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(血气分析加离子分析);
+		血气分析加离子分析.setBounds(10+220*4, 32+ 25*9, 100, 20); 血气分析加离子分析.indexString= "XQFXJLZ"; jFrameList.add(血气分析加离子分析);
 		JTextField 血气分析加离子分析_box= new JTextField();
 		血气分析加离子分析_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
 		血气分析加离子分析_box.addActionListener(new ActionListener(){
@@ -1437,7 +1433,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//11
 		DetaLabel 脑脊液生化糖= new DetaLabel("脑脊液生化糖:");  
 		脑脊液生化糖.setForeground(Color.WHITE);
-		脑脊液生化糖.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(脑脊液生化糖);
+		脑脊液生化糖.setBounds(10+220*4, 32+ 25*10, 100, 20); 脑脊液生化糖.indexString= "NJYSHT"; jFrameList.add(脑脊液生化糖);
 		JTextField 脑脊液生化糖_box= new JTextField();
 		脑脊液生化糖_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
 		脑脊液生化糖_box.addActionListener(new ActionListener(){
@@ -1452,7 +1448,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//12***********************************
 		DetaLabel 血管紧张素转化酶= new DetaLabel("血管紧张素转化酶sace:");  
 		血管紧张素转化酶.setForeground(Color.WHITE);
-		血管紧张素转化酶.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(血管紧张素转化酶);
+		血管紧张素转化酶.setBounds(10+220*4, 32+ 25*11, 100, 20); 血管紧张素转化酶.indexString= "XGJZSHM"; jFrameList.add(血管紧张素转化酶);
 		JTextField 血管紧张素转化酶_box= new JTextField();
 		血管紧张素转化酶_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
 		血管紧张素转化酶_box.addActionListener(new ActionListener(){
@@ -1472,7 +1468,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//13
 		DetaLabel 糖元染色= new DetaLabel("糖元染色:");  
 		糖元染色.setForeground(Color.WHITE);
-		糖元染色.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(糖元染色);
+		糖元染色.setBounds(10+220*4, 32+ 25*12, 100, 20); 糖元染色.indexString= "TYRS"; jFrameList.add(糖元染色);
 		JTextField 糖元染色_box= new JTextField();
 		糖元染色_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
 		糖元染色_box.addActionListener(new ActionListener(){
@@ -1487,7 +1483,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		//14
 		DetaLabel 脑脊液细胞学检查= new DetaLabel("脑脊液细胞学检查:");  
 		脑脊液细胞学检查.setForeground(Color.WHITE);
-		脑脊液细胞学检查.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(脑脊液细胞学检查);
+		脑脊液细胞学检查.setBounds(10+220*4, 32+ 25*13, 100, 20); 脑脊液细胞学检查.indexString= "NJYXBJC"; jFrameList.add(脑脊液细胞学检查);
 		JTextField 脑脊液细胞学检查_box= new JTextField();
 		脑脊液细胞学检查_box.setBounds(10+ 110+220*4, 33+ 25*13, 80, 20);
 		脑脊液细胞学检查_box.addActionListener(new ActionListener(){
