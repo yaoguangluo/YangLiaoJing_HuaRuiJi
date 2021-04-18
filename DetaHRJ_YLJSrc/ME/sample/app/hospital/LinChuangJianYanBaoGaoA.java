@@ -18,6 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
 import comp.detaButton.DetaButton;
+import comp.detaLabel.DetaIndexLabel;
 import comp.detaLabel.DetaLabel;
 
 public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, KeyListener
@@ -154,12 +155,16 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(蓝牙接收报告);	
 
 		//index
-		DetaLabel 索引= new DetaLabel("索引: A  B  C  D  E  F  G  H  I  G  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z (我思考用户肯定不想打字和下拉列表, 所以做成点鼠标来红名)");  
+		DetaIndexLabel 索引= new DetaIndexLabel("索引: ");  
 		索引.setForeground(Color.WHITE);
 		索引.setBounds(10, 1, 1000, 25);  
-		jFrameList.add(索引);
 		this.add(索引);
 
+		DetaIndexLabel 索引a= new DetaIndexLabel(" A ");  
+		索引a.setForeground(Color.WHITE);
+		索引a.setBounds(10+ 25*1, 1, 1000, 25);  
+		索引a.setIndex("A");
+		this.add(索引a);
 		
 		//copy tab
 		DetaLabel baiDanBai= new DetaLabel("白蛋白alb:");  
@@ -191,7 +196,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		乙肝两对半.setForeground(Color.WHITE);
 		乙肝两对半.setBounds(10, 32+ 25*1, 100, 25);
 		乙肝两对半.setTag("西医检验：乙肝两对半HbcAb->临床意义:->实验室检查:阴性", true);
-		
+		jFrameList.add(乙肝两对半);
 		JTextField 乙肝两对半_box= new JTextField();
 		乙肝两对半_box.setBounds(10+ 110, 33+ 25*1, 80, 20);
 		乙肝两对半_box.addActionListener(new ActionListener(){
@@ -214,7 +219,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel 糖耐量实验= new DetaLabel("糖耐量实验:");
 		糖耐量实验.setForeground(Color.WHITE);
 		糖耐量实验.setBounds(10, 32+ 25*2, 100, 25);
-		
+		jFrameList.add(糖耐量实验);
 		JTextField 糖耐量实验_box= new JTextField();
 		糖耐量实验_box.setBounds(10+ 110, 33+ 25*2, 80, 20);
 		糖耐量实验_box.addActionListener(new ActionListener(){
@@ -1701,8 +1706,6 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 	}
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 	@Override
 	public void mouseEntered(MouseEvent arg0) {
