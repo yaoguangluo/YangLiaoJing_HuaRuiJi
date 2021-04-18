@@ -13,6 +13,6 @@ public class DetaLabelStables{
 	}
 	public void setIndexString(String string) {
 		DetaLabelStables.stableImages.indexString= string;
-		DetaLabelStables.stableImages.target= true;
+		DetaLabelStables.stableImages.isIndexed= true;
 	}
 }

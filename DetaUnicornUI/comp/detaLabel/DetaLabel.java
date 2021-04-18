@@ -27,6 +27,7 @@ public class DetaLabel extends JLabel{
 	public int closex=0;
 	public int closey=0;
 	public boolean isIndex= false;
+	public String indexString;
 
 	//罗瑶光
 	//为了避免花屏,影响操作, 逻辑设计为点击打开,鼠标移动触发关闭.

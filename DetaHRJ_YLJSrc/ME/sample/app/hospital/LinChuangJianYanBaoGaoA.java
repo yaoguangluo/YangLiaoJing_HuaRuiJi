@@ -155,164 +155,165 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(À¶ÑÀ½ÓÊÕ±¨¸æ);	
 
 		//index
-		DetaIndexLabel Ë÷Òı= new DetaIndexLabel("Ë÷Òı: ");  
+		DetaIndexLabel Ë÷Òı= new DetaIndexLabel("Ë÷Òı : ", jFrameList);  
 		Ë÷Òı.setForeground(Color.WHITE);
-		Ë÷Òı.setBounds(10, 1, 1000, 25);  
+		Ë÷Òı.setBounds(10, 1, 50, 25);  
+		Ë÷Òı.setIndex("Ë÷Òı");
 		this.add(Ë÷Òı);
 
-		DetaIndexLabel Ë÷Òıa= new DetaIndexLabel(" A ");  
+		DetaIndexLabel Ë÷Òıa= new DetaIndexLabel(" A ", jFrameList);  
 		Ë÷Òıa.setForeground(Color.WHITE);
-		Ë÷Òıa.setBounds(10+ 25*1, 1, 1000, 25);  
+		Ë÷Òıa.setBounds(10+ 25*1, 1, 25, 25);  
 		Ë÷Òıa.setIndex("A");
 		this.add(Ë÷Òıa);
 		
-		DetaIndexLabel Ë÷Òıb= new DetaIndexLabel(" B ");  
+		DetaIndexLabel Ë÷Òıb= new DetaIndexLabel(" B ", jFrameList);    
 		Ë÷Òıb.setForeground(Color.WHITE);
-		Ë÷Òıb.setBounds(10+ 25*2, 1, 1000, 25);  
+		Ë÷Òıb.setBounds(10+ 25*2, 1, 25, 25);  
 		Ë÷Òıb.setIndex("B");
 		this.add(Ë÷Òıb);
 		
-		DetaIndexLabel Ë÷Òıc= new DetaIndexLabel(" C ");  
+		DetaIndexLabel Ë÷Òıc= new DetaIndexLabel(" C ", jFrameList);  
 		Ë÷Òıc.setForeground(Color.WHITE);
-		Ë÷Òıc.setBounds(10+ 25*3, 1, 1000, 25);  
+		Ë÷Òıc.setBounds(10+ 25*3, 1, 25, 25);  
 		Ë÷Òıc.setIndex("C");
 		this.add(Ë÷Òıc);
 		
-		DetaIndexLabel Ë÷Òıd= new DetaIndexLabel(" D");  
+		DetaIndexLabel Ë÷Òıd= new DetaIndexLabel(" D", jFrameList);    
 		Ë÷Òıd.setForeground(Color.WHITE);
-		Ë÷Òıd.setBounds(10+ 25*4, 1, 1000, 25);  
+		Ë÷Òıd.setBounds(10+ 25*4, 1, 25, 25);  
 		Ë÷Òıd.setIndex("D");
 		this.add(Ë÷Òıd);
 		
-		DetaIndexLabel Ë÷Òıe= new DetaIndexLabel(" E ");  
+		DetaIndexLabel Ë÷Òıe= new DetaIndexLabel(" E ", jFrameList);  
 		Ë÷Òıe.setForeground(Color.WHITE);
-		Ë÷Òıe.setBounds(10+ 25*5, 1, 1000, 25);  
+		Ë÷Òıe.setBounds(10+ 25*5, 1, 25, 25);  
 		Ë÷Òıe.setIndex("E");
 		this.add(Ë÷Òıe);
 		
-		DetaIndexLabel Ë÷Òıf= new DetaIndexLabel(" F ");  
+		DetaIndexLabel Ë÷Òıf= new DetaIndexLabel(" F ", jFrameList);   
 		Ë÷Òıf.setForeground(Color.WHITE);
-		Ë÷Òıf.setBounds(10+ 25*6, 1, 1000, 25);  
+		Ë÷Òıf.setBounds(10+ 25*6, 1, 25, 25);  
 		Ë÷Òıf.setIndex("F");
 		this.add(Ë÷Òıf);
 		
-		DetaIndexLabel Ë÷Òıg= new DetaIndexLabel(" G ");  
+		DetaIndexLabel Ë÷Òıg= new DetaIndexLabel(" G ", jFrameList);   
 		Ë÷Òıg.setForeground(Color.WHITE);
-		Ë÷Òıg.setBounds(10+ 25*7, 1, 1000, 25);  
+		Ë÷Òıg.setBounds(10+ 25*7, 1, 25, 25);  
 		Ë÷Òıg.setIndex("G");
 		this.add(Ë÷Òıg);
 		
-		DetaIndexLabel Ë÷Òıh= new DetaIndexLabel(" H ");  
+		DetaIndexLabel Ë÷Òıh= new DetaIndexLabel(" H ", jFrameList);   
 		Ë÷Òıh.setForeground(Color.WHITE);
-		Ë÷Òıh.setBounds(10+ 25*8, 1, 1000, 25);  
+		Ë÷Òıh.setBounds(10+ 25*8, 1, 25, 25);  
 		Ë÷Òıh.setIndex("H");
 		this.add(Ë÷Òıh);
 		
-		DetaIndexLabel Ë÷Òıi= new DetaIndexLabel(" I ");  
+		DetaIndexLabel Ë÷Òıi= new DetaIndexLabel(" I ", jFrameList);   
 		Ë÷Òıi.setForeground(Color.WHITE);
-		Ë÷Òıi.setBounds(10+ 25*9, 1, 1000, 25);  
+		Ë÷Òıi.setBounds(10+ 25*9, 1, 25, 25);  
 		Ë÷Òıi.setIndex("I");
 		this.add(Ë÷Òıi);
 		
-		DetaIndexLabel Ë÷Òıj= new DetaIndexLabel(" J ");  
+		DetaIndexLabel Ë÷Òıj= new DetaIndexLabel(" J ", jFrameList);   
 		Ë÷Òıj.setForeground(Color.WHITE);
-		Ë÷Òıj.setBounds(10+ 25*10, 1, 1000, 25);  
+		Ë÷Òıj.setBounds(10+ 25*10, 1, 25, 25);  
 		Ë÷Òıj.setIndex("J");
 		this.add(Ë÷Òıj);
 		
-		DetaIndexLabel Ë÷Òık= new DetaIndexLabel(" K ");  
+		DetaIndexLabel Ë÷Òık= new DetaIndexLabel(" K ", jFrameList);  
 		Ë÷Òık.setForeground(Color.WHITE);
-		Ë÷Òık.setBounds(10+ 25*11, 1, 1000, 25);  
+		Ë÷Òık.setBounds(10+ 25*11, 1, 25, 25);  
 		Ë÷Òık.setIndex("K");
 		this.add(Ë÷Òık);
 		
-		DetaIndexLabel Ë÷Òıl= new DetaIndexLabel(" L ");  
+		DetaIndexLabel Ë÷Òıl= new DetaIndexLabel(" L ", jFrameList);   
 		Ë÷Òıl.setForeground(Color.WHITE);
-		Ë÷Òıl.setBounds(10+ 25*12, 1, 1000, 25);  
+		Ë÷Òıl.setBounds(10+ 25*12, 1, 25, 25);  
 		Ë÷Òıl.setIndex("L");
 		this.add(Ë÷Òıl);
 		
-		DetaIndexLabel Ë÷Òım= new DetaIndexLabel(" M ");  
+		DetaIndexLabel Ë÷Òım= new DetaIndexLabel(" M ", jFrameList);  
 		Ë÷Òım.setForeground(Color.WHITE);
-		Ë÷Òım.setBounds(10+ 25*13, 1, 1000, 25);  
+		Ë÷Òım.setBounds(10+ 25*13, 1, 25, 25);  
 		Ë÷Òım.setIndex("M");
 		this.add(Ë÷Òım);
 		
-		DetaIndexLabel Ë÷Òın= new DetaIndexLabel(" N ");  
+		DetaIndexLabel Ë÷Òın= new DetaIndexLabel(" N ", jFrameList);  
 		Ë÷Òın.setForeground(Color.WHITE);
-		Ë÷Òın.setBounds(10+ 25*14, 1, 1000, 25);  
+		Ë÷Òın.setBounds(10+ 25*14, 1, 25, 25);  
 		Ë÷Òın.setIndex("N");
 		this.add(Ë÷Òın);
 		
-		DetaIndexLabel Ë÷Òıo= new DetaIndexLabel(" O ");  
+		DetaIndexLabel Ë÷Òıo= new DetaIndexLabel(" O ", jFrameList);    
 		Ë÷Òıo.setForeground(Color.WHITE);
-		Ë÷Òıo.setBounds(10+ 25*15, 1, 1000, 25);  
+		Ë÷Òıo.setBounds(10+ 25*15, 1, 25, 25);  
 		Ë÷Òıo.setIndex("O");
 		this.add(Ë÷Òıo);
 		
-		DetaIndexLabel Ë÷Òıp= new DetaIndexLabel(" P ");  
+		DetaIndexLabel Ë÷Òıp= new DetaIndexLabel(" P ", jFrameList);  
 		Ë÷Òıp.setForeground(Color.WHITE);
-		Ë÷Òıp.setBounds(10+ 25*16, 1, 1000, 25);  
+		Ë÷Òıp.setBounds(10+ 25*16, 1, 25, 25);  
 		Ë÷Òıp.setIndex("P");
 		this.add(Ë÷Òıp);
 		
-		DetaIndexLabel Ë÷Òıq= new DetaIndexLabel(" Q ");  
+		DetaIndexLabel Ë÷Òıq= new DetaIndexLabel(" Q ", jFrameList);   
 		Ë÷Òıq.setForeground(Color.WHITE);
-		Ë÷Òıq.setBounds(10+ 25*17, 1, 1000, 25);  
+		Ë÷Òıq.setBounds(10+ 25*17, 1, 25, 25);  
 		Ë÷Òıq.setIndex("Q");
 		this.add(Ë÷Òıq);
 		
-		DetaIndexLabel Ë÷Òır= new DetaIndexLabel(" R ");  
+		DetaIndexLabel Ë÷Òır= new DetaIndexLabel(" R ", jFrameList);   
 		Ë÷Òır.setForeground(Color.WHITE);
-		Ë÷Òır.setBounds(10+ 25*18, 1, 1000, 25);  
+		Ë÷Òır.setBounds(10+ 25*18, 1, 25, 25);  
 		Ë÷Òır.setIndex("R");
 		this.add(Ë÷Òır);
 		
-		DetaIndexLabel Ë÷Òıs= new DetaIndexLabel(" S ");  
+		DetaIndexLabel Ë÷Òıs= new DetaIndexLabel(" S ", jFrameList);  
 		Ë÷Òıs.setForeground(Color.WHITE);
-		Ë÷Òıs.setBounds(10+ 25*19, 1, 1000, 25);  
+		Ë÷Òıs.setBounds(10+ 25*19, 1, 25, 25);  
 		Ë÷Òıs.setIndex("S");
 		this.add(Ë÷Òıs);
 		
-		DetaIndexLabel Ë÷Òıt= new DetaIndexLabel(" T ");  
+		DetaIndexLabel Ë÷Òıt= new DetaIndexLabel(" T ", jFrameList);   
 		Ë÷Òıt.setForeground(Color.WHITE);
-		Ë÷Òıt.setBounds(10+ 25*20, 1, 1000, 25);  
+		Ë÷Òıt.setBounds(10+ 25*20, 1, 25, 25);  
 		Ë÷Òıt.setIndex("T");
 		this.add(Ë÷Òıt);
 		
-		DetaIndexLabel Ë÷Òıu= new DetaIndexLabel(" U ");  
+		DetaIndexLabel Ë÷Òıu= new DetaIndexLabel(" U ", jFrameList);   
 		Ë÷Òıu.setForeground(Color.WHITE);
-		Ë÷Òıu.setBounds(10+ 25*21, 1, 1000, 25);  
+		Ë÷Òıu.setBounds(10+ 25*21, 1, 25, 25);  
 		Ë÷Òıu.setIndex("U");
 		this.add(Ë÷Òıu);
 		
-		DetaIndexLabel Ë÷Òıv= new DetaIndexLabel(" V ");  
+		DetaIndexLabel Ë÷Òıv= new DetaIndexLabel(" V ", jFrameList);   
 		Ë÷Òıv.setForeground(Color.WHITE);
-		Ë÷Òıv.setBounds(10+ 25*22, 1, 1000, 25);  
+		Ë÷Òıv.setBounds(10+ 25*22, 1, 25, 25);  
 		Ë÷Òıv.setIndex("V");
 		this.add(Ë÷Òıv);
 		
-		DetaIndexLabel Ë÷Òıw= new DetaIndexLabel(" W ");  
+		DetaIndexLabel Ë÷Òıw= new DetaIndexLabel(" W ", jFrameList);   
 		Ë÷Òıw.setForeground(Color.WHITE);
-		Ë÷Òıw.setBounds(10+ 25*23, 1, 1000, 25);  
+		Ë÷Òıw.setBounds(10+ 25*23, 1, 25, 25);  
 		Ë÷Òıw.setIndex("W");
 		this.add(Ë÷Òıw);
 		
-		DetaIndexLabel Ë÷Òıx= new DetaIndexLabel(" X ");  
+		DetaIndexLabel Ë÷Òıx= new DetaIndexLabel(" X ", jFrameList);   
 		Ë÷Òıx.setForeground(Color.WHITE);
-		Ë÷Òıx.setBounds(10+ 25*24, 1, 1000, 25);  
+		Ë÷Òıx.setBounds(10+ 25*24, 1, 25, 25);  
 		Ë÷Òıx.setIndex("X");
 		this.add(Ë÷Òıx);
 		
-		DetaIndexLabel Ë÷Òıy= new DetaIndexLabel(" Y ");  
+		DetaIndexLabel Ë÷Òıy= new DetaIndexLabel(" Y ", jFrameList);  
 		Ë÷Òıy.setForeground(Color.WHITE);
-		Ë÷Òıy.setBounds(10+ 25*25, 1, 1000, 25);  
+		Ë÷Òıy.setBounds(10+ 25*25, 1, 25, 25);  
 		Ë÷Òıy.setIndex("Y");
 		this.add(Ë÷Òıy);
 		
-		DetaIndexLabel Ë÷Òız= new DetaIndexLabel(" Z ");  
+		DetaIndexLabel Ë÷Òız= new DetaIndexLabel(" Z ", jFrameList);   
 		Ë÷Òız.setForeground(Color.WHITE);
-		Ë÷Òız.setBounds(10+ 25*26, 1, 1000, 25);  
+		Ë÷Òız.setBounds(10+ 25*26, 1, 25, 25);  
 		Ë÷Òız.setIndex("Z");
 		this.add(Ë÷Òız);
 		
@@ -320,6 +321,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel baiDanBai= new DetaLabel("°×µ°°×alb:");  
 		baiDanBai.setForeground(Color.WHITE);
 		baiDanBai.setBounds(10, 32+ 25*0, 100, 25);  
+		baiDanBai.indexString= "BDAL";
 		baiDanBai.setTag("Î÷Ò½¼ìÑé£º°×µ°°×ALB->ÁÙ´²ÒâÒå:ÇÊÄÚÃâÒß²¡¹Û²âÖ¸±êÇÊÄÚÃâÒß²¡¹Û²âÖ¸±ê->ÊµÑéÊÒ¼ì²é:Ñª3350-4765mg/dlÄÔ¼¹Òº13.4-23.7mg/dl", true);
 		jFrameList.add(baiDanBai);
 		JTextField baiDanBai_box= new JTextField();
@@ -344,6 +346,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 
 		DetaLabel ÒÒ¸ÎÁ½¶Ô°ë= new DetaLabel("ÒÒ¸ÎÁ½¶Ô°ëhbcab:");
 		ÒÒ¸ÎÁ½¶Ô°ë.setForeground(Color.WHITE);
+		ÒÒ¸ÎÁ½¶Ô°ë.indexString= "YGLDB";
 		ÒÒ¸ÎÁ½¶Ô°ë.setBounds(10, 32+ 25*1, 100, 25);
 		ÒÒ¸ÎÁ½¶Ô°ë.setTag("Î÷Ò½¼ìÑé£ºÒÒ¸ÎÁ½¶Ô°ëHbcAb->ÁÙ´²ÒâÒå:->ÊµÑéÊÒ¼ì²é:ÒõĞÔ", true);
 		jFrameList.add(ÒÒ¸ÎÁ½¶Ô°ë);
@@ -367,6 +370,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		this.add(ÒÒ¸ÎÁ½¶Ô°ë);
 		this.add(ÒÒ¸ÎÁ½¶Ô°ë_box);	
 		DetaLabel ÌÇÄÍÁ¿ÊµÑé= new DetaLabel("ÌÇÄÍÁ¿ÊµÑé:");
+		ÌÇÄÍÁ¿ÊµÑé.indexString= "TNLSY";
 		ÌÇÄÍÁ¿ÊµÑé.setForeground(Color.WHITE);
 		ÌÇÄÍÁ¿ÊµÑé.setBounds(10, 32+ 25*2, 100, 25);
 		jFrameList.add(ÌÇÄÍÁ¿ÊµÑé);
@@ -393,7 +397,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel òı³æ¾µ¼ì= new DetaLabel("òı³æ¾µ¼ì:");
 		òı³æ¾µ¼ì.setForeground(Color.WHITE);
 		òı³æ¾µ¼ì.setBounds(10, 32+ 25* 3, 100, 20);jFrameList.add(òı³æ¾µ¼ì);
-		
+		òı³æ¾µ¼ì.indexString= "MCJ";
 		JTextField òı³æ¾µ¼ì_box= new JTextField();
 		òı³æ¾µ¼ì_box.setBounds(10+ 110, 33+ 25* 3, 80, 20);
 		òı³æ¾µ¼ì_box.addActionListener(new ActionListener(){
@@ -417,7 +421,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ĞÔ²¡Ö§Ô­Ìå= new DetaLabel("ĞÔ²¡Ö§Ô­Ìå¼ì²â£¨uu£©:");
 		ĞÔ²¡Ö§Ô­Ìå.setForeground(Color.WHITE);
 		ĞÔ²¡Ö§Ô­Ìå.setBounds(10, 32+ 25*4, 100, 20);jFrameList.add(ĞÔ²¡Ö§Ô­Ìå);
-		
+		ĞÔ²¡Ö§Ô­Ìå.indexString= "XBZYT";
 		JTextField ĞÔ²¡Ö§Ô­Ìå_box= new JTextField();
 		ĞÔ²¡Ö§Ô­Ìå_box.setBounds(10+ 110, 33+ 25*4, 80, 20);
 		ĞÔ²¡Ö§Ô­Ìå_box.addActionListener(new ActionListener(){
@@ -441,7 +445,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel µÍÃÜ¶ÈÖ¬µ°°×= new DetaLabel("µÍÃÜ¶ÈÖ¬µ°°×ldl-c:");  
 		µÍÃÜ¶ÈÖ¬µ°°×.setForeground(Color.WHITE);
 		µÍÃÜ¶ÈÖ¬µ°°×.setBounds(10, 32+ 25*5, 100, 20);jFrameList.add(µÍÃÜ¶ÈÖ¬µ°°×);
-		
+		µÍÃÜ¶ÈÖ¬µ°°×.indexString= "DMZB";
 		JTextField µÍÃÜ¶ÈÖ¬µ°°×_box= new JTextField();
 		µÍÃÜ¶ÈÖ¬µ°°×_box.setBounds(10+ 110, 33+ 25*5, 80, 20);
 		µÍÃÜ¶ÈÖ¬µ°°×_box.addActionListener(new ActionListener(){
@@ -466,7 +470,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ñª°±= new DetaLabel("Ñª°±nh3:");  
 		Ñª°±.setForeground(Color.WHITE);
 		Ñª°±.setBounds(10, 32+ 25*6, 100, 20);jFrameList.add(Ñª°±);
-		
+		Ñª°±.indexString= "XA";
 		JTextField Ñª°±_box= new JTextField();
 		Ñª°±_box.setBounds(10+ 110, 33+ 25*6, 80, 20);
 		Ñª°±_box.addActionListener(new ActionListener(){
@@ -490,7 +494,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÒÈµºËØ¿¹Ìå= new DetaLabel("ÒÈµºËØ¿¹Ìåins-ab:");  
 		ÒÈµºËØ¿¹Ìå.setForeground(Color.WHITE);
 		ÒÈµºËØ¿¹Ìå.setBounds(10, 32+ 25*7, 100, 20);jFrameList.add(ÒÈµºËØ¿¹Ìå);
-		
+		ÒÈµºËØ¿¹Ìå.indexString= "YDSKT";
 		JTextField ÒÈµºËØ¿¹Ìå_box= new JTextField();
 		ÒÈµºËØ¿¹Ìå_box.setBounds(10+ 110, 33+ 25*7, 80, 20);
 		ÒÈµºËØ¿¹Ìå_box.addActionListener(new ActionListener(){
@@ -514,7 +518,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼ØÄò= new DetaLabel("¼Ø£¨Äò£©¼Ø£¨Äò£©:");  
 		¼ØÄò.setForeground(Color.WHITE);
 		¼ØÄò.setBounds(10, 32+ 25*8, 100, 20);jFrameList.add(¼ØÄò);
-		
+		¼ØÄò.indexString= "KAJN";
 		JTextField ¼ØÄò_box= new JTextField();
 		¼ØÄò_box.setBounds(10+ 110, 33+ 25*8, 80, 20);
 		¼ØÄò_box.addActionListener(new ActionListener(){
@@ -538,7 +542,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Á×= new DetaLabel("Á×ip:");  
 		Á×.setForeground(Color.WHITE);
 		Á×.setBounds(10, 32+ 25*9, 100, 20);jFrameList.add(Á×);
-		
+		Á×.indexString= "LP";
 		JTextField Á×_box= new JTextField();
 		Á×_box.setBounds(10+ 110, 33+ 25*9, 80, 20);
 		Á×_box.addActionListener(new ActionListener(){
@@ -570,7 +574,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÂÈÄò= new DetaLabel("ÂÈ£¨Äò£©ÂÈ£¨Äò£©:");  
 		ÂÈÄò.setForeground(Color.WHITE);
 		ÂÈÄò.setBounds(10, 32+ 25*10, 100, 20);jFrameList.add(ÂÈÄò);
-		
+		ÂÈÄò.indexString= "CLN";
 		JTextField ÂÈÄò_box= new JTextField();
 		ÂÈÄò_box.setBounds(10+ 110, 33+ 25*10, 80, 20);
 		ÂÈÄò_box.addActionListener(new ActionListener(){
@@ -596,7 +600,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼¡¸Æµ°°×= new DetaLabel("¼¡¸Æµ°°×ttnt:");  
 		¼¡¸Æµ°°×.setForeground(Color.WHITE);
 		¼¡¸Æµ°°×.setBounds(10, 32+ 25*11, 100, 20);jFrameList.add(¼¡¸Æµ°°×);
-		
+		¼¡¸Æµ°°×.indexString= "JGDB";
 		JTextField ¼¡¸Æµ°°×_box= new JTextField();
 		¼¡¸Æµ°°×_box.setBounds(10+ 110, 33+ 25*11, 80, 20);
 		¼¡¸Æµ°°×_box.addActionListener(new ActionListener(){
@@ -620,7 +624,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÄÆÄò= new DetaLabel("ÄÆ£¨Äò£©ÄÆ£¨Äò£©:");  
 		ÄÆÄò.setForeground(Color.WHITE);
 		ÄÆÄò.setBounds(10, 32+ 25*12, 100, 20);jFrameList.add(ÄÆÄò);
-		
+		ÄÆÄò.indexString= "NA";
 		JTextField ÄÆÄò_box= new JTextField();
 		ÄÆÄò_box.setBounds(10+ 110, 33+ 25*12, 80, 20);
 		ÄÆÄò_box.addActionListener(new ActionListener(){
@@ -652,7 +656,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼îĞÔÁ×ËáÃ¸= new DetaLabel("¼îĞÔÁ×ËáÃ¸alp:");  
 		¼îĞÔÁ×ËáÃ¸.setForeground(Color.WHITE);
 		¼îĞÔÁ×ËáÃ¸.setBounds(10, 32+ 25*13, 100, 20);jFrameList.add(¼îĞÔÁ×ËáÃ¸);
-		
+		¼îĞÔÁ×ËáÃ¸.indexString= "JXLSM";
 		JTextField ¼îĞÔÁ×ËáÃ¸_box= new JTextField();
 		¼îĞÔÁ×ËáÃ¸_box.setBounds(10+ 110, 33+ 25*13, 80, 20);
 		¼îĞÔÁ×ËáÃ¸_box.addActionListener(new ActionListener(){
@@ -692,7 +696,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÑªÉøÍ¸Ñ¹Ñªosm= new DetaLabel("ÑªÉøÍ¸Ñ¹Ñªosm:");  
 		ÑªÉøÍ¸Ñ¹Ñªosm.setForeground(Color.WHITE);
 		ÑªÉøÍ¸Ñ¹Ñªosm.setBounds(10+220*4, 32+ 0, 100, 20);jFrameList.add(ÑªÉøÍ¸Ñ¹Ñªosm);
-		
+		ÑªÉøÍ¸Ñ¹Ñªosm.indexString= "XSTYOM";
 		JTextField ÑªÉøÍ¸Ñ¹Ñªosm_box= new JTextField();
 		ÑªÉøÍ¸Ñ¹Ñªosm_box.setBounds(10+ 110+220*4, 33+ 0, 80, 20);
 		ÑªÉøÍ¸Ñ¹Ñªosm_box.addActionListener(new ActionListener(){
@@ -724,7 +728,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼¡ôûÇå³ıÂÊ= new DetaLabel("¼¡ôûÇå³ıÂÊcor:");  
 		¼¡ôûÇå³ıÂÊ.setForeground(Color.WHITE);
 		¼¡ôûÇå³ıÂÊ.setBounds(10+220*4, 32+ 25*1, 100, 20);jFrameList.add(¼¡ôûÇå³ıÂÊ);
-		
+		¼¡ôûÇå³ıÂÊ.indexString= "JGQCL";
 		JTextField ¼¡ôûÇå³ıÂÊ_box= new JTextField();
 		¼¡ôûÇå³ıÂÊ_box.setBounds(10+ 110+220*4, 33+ 25*1, 80, 20);
 		¼¡ôûÇå³ıÂÊ_box.addActionListener(new ActionListener(){
@@ -756,7 +760,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÑªÄòÍ­= new DetaLabel("Ñª£¨Äò£©Í­cu:");  
 		ÑªÄòÍ­.setForeground(Color.WHITE);
 		ÑªÄòÍ­.setBounds(10+220*4, 32+ 25*2, 100, 20);jFrameList.add(ÑªÄòÍ­);
-		
+		ÑªÄòÍ­.indexString= "XTNCU";
 		JTextField ÑªÄòÍ­_box= new JTextField();
 		ÑªÄòÍ­_box.setBounds(10+ 110+220*4, 33+ 25*2, 80, 20);
 		ÑªÄòÍ­_box.addActionListener(new ActionListener(){
@@ -788,7 +792,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ×é·ÖÇø´øigg= new DetaLabel("×é·ÖÇø´øigg:");  
 		×é·ÖÇø´øigg.setForeground(Color.WHITE);
 		×é·ÖÇø´øigg.setBounds(10+ 220*4, 32+ 25* 3, 100, 20);jFrameList.add(×é·ÖÇø´øigg);
-		
+		×é·ÖÇø´øigg.indexString= "ZFQDIG";
 		JTextField ×é·ÖÇø´øigg_box= new JTextField();
 		×é·ÖÇø´øigg_box.setBounds(10+ 110+220*4, 33+ 25* 3, 80, 20);
 		×é·ÖÇø´øigg_box.addActionListener(new ActionListener(){
@@ -812,7 +816,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼××´ÅÔÏÙ¼¤ËØpth= new DetaLabel("¼××´ÅÔÏÙ¼¤ËØpth:");  
 		¼××´ÅÔÏÙ¼¤ËØpth.setForeground(Color.WHITE);
 		¼××´ÅÔÏÙ¼¤ËØpth.setBounds(10+220*4, 32+ 25*4, 100, 20);jFrameList.add(¼××´ÅÔÏÙ¼¤ËØpth);
-		
+		¼××´ÅÔÏÙ¼¤ËØpth.indexString= "JZPXS";
 		JTextField ¼××´ÅÔÏÙ¼¤ËØpth_box= new JTextField();
 		¼××´ÅÔÏÙ¼¤ËØpth_box.setBounds(10+ 110+220*4, 33+ 25*4, 80, 20);
 		¼××´ÅÔÏÙ¼¤ËØpth_box.addActionListener(new ActionListener(){
@@ -844,7 +848,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ôÇ»ù¿àĞÓÈÊËá= new DetaLabel("Äò3-¼×Ñõ»ù4-ôÇ»ù¿àĞÓÈÊËá£¨vma£©:");  
 		ôÇ»ù¿àĞÓÈÊËá.setForeground(Color.WHITE);
 		ôÇ»ù¿àĞÓÈÊËá.setBounds(10+220*4, 32+ 25*5, 100, 20);jFrameList.add(ôÇ»ù¿àĞÓÈÊËá);
-		
+		ôÇ»ù¿àĞÓÈÊËá.indexString= "QJKXRS";
 		JTextField ôÇ»ù¿àĞÓÈÊËá_box= new JTextField();
 		ôÇ»ù¿àĞÓÈÊËá_box.setBounds(10+ 110+220*4, 33+ 25*5, 80, 20);
 		ôÇ»ù¿àĞÓÈÊËá_box.addActionListener(new ActionListener(){
@@ -877,7 +881,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÔØÖ¬µ°°×ap0= new DetaLabel("ÔØÖ¬µ°°×ap0alap0al:");  
 		ÔØÖ¬µ°°×ap0.setForeground(Color.WHITE);
 		ÔØÖ¬µ°°×ap0.setBounds(10+220*4, 32+ 25*6, 100, 20);jFrameList.add(ÔØÖ¬µ°°×ap0);
-		
+		ÔØÖ¬µ°°×ap0.indexString= "ZDBAP";
 		JTextField ÔØÖ¬µ°°×ap0_box= new JTextField();
 		ÔØÖ¬µ°°×ap0_box.setBounds(10+ 110+220*4, 33+ 25*6, 80, 20);
 		ÔØÖ¬µ°°×ap0_box.addActionListener(new ActionListener(){
@@ -909,7 +913,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼¡¸Æµ°°×itni= new DetaLabel("¼¡¸Æµ°°×itni:");  
 		¼¡¸Æµ°°×itni.setForeground(Color.WHITE);
 		¼¡¸Æµ°°×itni.setBounds(10+220*4, 32+ 25*7, 100, 20);jFrameList.add(¼¡¸Æµ°°×itni);
-		
+		¼¡¸Æµ°°×itni.indexString= "JGDBIYN";
 		JTextField ¼¡¸Æµ°°×itni_box= new JTextField();
 		¼¡¸Æµ°°×itni_box.setBounds(10+ 110+220*4, 33+ 25*7, 80, 20);
 		¼¡¸Æµ°°×itni_box.addActionListener(new ActionListener(){
@@ -942,7 +946,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÂÈ´×ËáİÁ·Ó= new DetaLabel("ÂÈ´×ËáİÁ·Óas-dõ¥Ã¸È¾É«:");  
 		ÂÈ´×ËáİÁ·Ó.setForeground(Color.WHITE);
 		ÂÈ´×ËáİÁ·Ó.setBounds(10+220*4, 32+ 25*8, 100, 20);jFrameList.add(ÂÈ´×ËáİÁ·Ó);
-		
+		ÂÈ´×ËáİÁ·Ó.indexString= "LCSNF";
 		JTextField ÂÈ´×ËáİÁ·Ó_box= new JTextField();
 		ÂÈ´×ËáİÁ·Ó_box.setBounds(10+ 110+220*4, 33+ 25*8, 80, 20);
 		ÂÈ´×ËáİÁ·Ó_box.addActionListener(new ActionListener(){
@@ -966,7 +970,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÈéËálact= new DetaLabel("ÈéËálact:");  
 		ÈéËálact.setForeground(Color.WHITE);
 		ÈéËálact.setBounds(10+220*4, 32+ 25*9, 100, 20);jFrameList.add(ÈéËálact);
-		
+		ÈéËálact.indexString= "RSLACT";
 		JTextField ÈéËálact_box= new JTextField();
 		ÈéËálact_box.setBounds(10+ 110+220*4, 33+ 25*9, 80, 20);
 		ÈéËálact_box.addActionListener(new ActionListener(){
@@ -998,7 +1002,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ö×Áö±ê¼Ç¿¹Ô­= new DetaLabel("Ö×Áö±ê¼Ç¿¹Ô­242¼ì²âca242:");  
 		Ö×Áö±ê¼Ç¿¹Ô­.setForeground(Color.WHITE);
 		Ö×Áö±ê¼Ç¿¹Ô­.setBounds(10+220*4, 32+ 25*10, 100, 20);jFrameList.add(Ö×Áö±ê¼Ç¿¹Ô­);
-		
+		Ö×Áö±ê¼Ç¿¹Ô­.indexString= "ZLBJKY";
 		JTextField Ö×Áö±ê¼Ç¿¹Ô­_box= new JTextField();
 		Ö×Áö±ê¼Ç¿¹Ô­_box.setBounds(10+ 110+220*4, 33+ 25*10, 80, 20);
 		Ö×Áö±ê¼Ç¿¹Ô­_box.addActionListener(new ActionListener(){
@@ -1030,7 +1034,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¸Æca= new DetaLabel("¸Æca:");  
 		¸Æca.setForeground(Color.WHITE);
 		¸Æca.setBounds(10+220*4, 32+ 25*11, 100, 20);jFrameList.add(¸Æca);
-		
+		¸Æca.indexString= "GCA";
 		JTextField ¸Æca_box= new JTextField();
 		¸Æca_box.setBounds(10+ 110+220*4, 33+ 25*11, 80, 20);
 		¸Æca_box.addActionListener(new ActionListener(){
@@ -1051,7 +1055,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó= new DetaLabel("¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó-1¦Âmip-1¦Â:");  
 		¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó.setForeground(Color.WHITE);
 		¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó.setBounds(10+220*4, 32+ 25*12, 100, 20);jFrameList.add(¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó);
-		
+		¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó.indexString= "JSXBGRQHYZ";
 		JTextField ¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó_box= new JTextField();
 		¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó_box.setBounds(10+ 110+220*4, 33+ 25*12, 80, 20);
 		¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó_box.addActionListener(new ActionListener(){
@@ -1067,7 +1071,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ôÇ¹Ì´¼17= new DetaLabel("Äò17-ôÇ¹Ì´¼17-oh:");  
 		ôÇ¹Ì´¼17.setForeground(Color.WHITE);
 		ôÇ¹Ì´¼17.setBounds(10+220*4, 32+ 25*13, 100, 20);jFrameList.add(ôÇ¹Ì´¼17);
-		
+		ôÇ¹Ì´¼17.indexString= "QGC";
 		JTextField ôÇ¹Ì´¼17_box= new JTextField();
 		ôÇ¹Ì´¼17_box.setBounds(10+ 110+ 220* 4, 33+ 25* 13, 80, 20);
 		ôÇ¹Ì´¼17_box.addActionListener(new ActionListener(){
@@ -1122,6 +1126,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ldhÍ¬¹¤Ã¸is= new DetaLabel("ldhÍ¬¹¤Ã¸is0-ldh:");  
 		ldhÍ¬¹¤Ã¸is.setForeground(Color.WHITE);
 		ldhÍ¬¹¤Ã¸is.setBounds(10+220*3, 32+ 0, 100, 20);jFrameList.add(ldhÍ¬¹¤Ã¸is);
+		ldhÍ¬¹¤Ã¸is.indexString= "LDHTGMIS";
 		JTextField ldhÍ¬¹¤Ã¸is_box= new JTextField();
 		ldhÍ¬¹¤Ã¸is_box.setBounds(10+ 110+220*3, 33+ 0, 80, 20);
 		ldhÍ¬¹¤Ã¸is_box.addActionListener(new ActionListener(){
@@ -1137,6 +1142,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÒÈµºËØins= new DetaLabel("ÒÈµºËØins:");  
 		ÒÈµºËØins.setForeground(Color.WHITE);
 		ÒÈµºËØins.setBounds(10+220*3, 32+ 25*1, 100, 20);jFrameList.add(ÒÈµºËØins);
+		ÒÈµºËØins.indexString= "YDSIN";
 		JTextField ÒÈµºËØins_box= new JTextField();
 		ÒÈµºËØins_box.setBounds(10+ 110+220*3, 33+ 25*1, 80, 20);
 		ÒÈµºËØins_box.addActionListener(new ActionListener(){
@@ -1152,6 +1158,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Í¬t= new DetaLabel("Í¬t:");  
 		Í¬t.setForeground(Color.WHITE);
 		Í¬t.setBounds(10+220*3, 32+ 25*2, 100, 20);jFrameList.add(Í¬t);
+		Í¬t.indexString= "T";
 		JTextField Í¬t_box= new JTextField();
 		Í¬t_box.setBounds(10+ 110+220*3, 33+ 25*2, 80, 20);
 		Í¬t_box.addActionListener(new ActionListener(){
@@ -1167,6 +1174,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel µí·ÛÃ¸amy= new DetaLabel("µí·ÛÃ¸amy:");  
 		µí·ÛÃ¸amy.setForeground(Color.WHITE);
 		µí·ÛÃ¸amy.setBounds(10+220*3, 32+ 25* 3, 100, 20);jFrameList.add(µí·ÛÃ¸amy);
+		µí·ÛÃ¸amy.indexString= "DMFAY";
 		JTextField µí·ÛÃ¸amy_box= new JTextField();
 		µí·ÛÃ¸amy_box.setBounds(10+ 110+220*3, 33+ 25* 3, 80, 20);
 		µí·ÛÃ¸amy_box.addActionListener(new ActionListener(){
@@ -1185,6 +1193,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÈéËáÍÑÇâÃ¸ldh= new DetaLabel("ÈéËáÍÑÇâÃ¸ldh:");  
 		ÈéËáÍÑÇâÃ¸ldh.setForeground(Color.WHITE);
 		ÈéËáÍÑÇâÃ¸ldh.setBounds(10+220*3, 32+ 25*4, 100, 20);jFrameList.add(ÈéËáÍÑÇâÃ¸ldh);
+		ÈéËáÍÑÇâÃ¸ldh.indexString= "RSTQMLDH";
 		JTextField ÈéËáÍÑÇâÃ¸ldh_box= new JTextField();
 		ÈéËáÍÑÇâÃ¸ldh_box.setBounds(10+ 110+220*3, 33+ 25*4, 80, 20);
 		ÈéËáÍÑÇâÃ¸ldh_box.addActionListener(new ActionListener(){
@@ -1200,6 +1209,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ìútron= new DetaLabel("Ìútron:");  
 		Ìútron.setForeground(Color.WHITE);
 		Ìútron.setBounds(10+220*3, 32+ 25*5, 100, 20);jFrameList.add(Ìútron);
+		Ìútron.indexString= "TRON";
 		JTextField Ìútron_box= new JTextField();
 		Ìútron_box.setBounds(10+ 110+220*3, 33+ 25*5, 80, 20);
 		Ìútron_box.addActionListener(new ActionListener(){
@@ -1216,6 +1226,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá= new DetaLabel("ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëál+:");  
 		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setForeground(Color.WHITE);
 		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.setBounds(10+220*3, 32+ 25*6, 100, 20);jFrameList.add(ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá);
+		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá.indexString= "SXLMJH";
 		JTextField ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box= new JTextField();
 		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.setBounds(10+ 110+220*3, 33+ 25*6, 80, 20);
 		ËáĞÔÁ×ËáÃ¸ºÍ¾ÆÊ¯Ëá_box.addActionListener(new ActionListener(){
@@ -1231,6 +1242,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Á£Ï¸°û´Ì¼¤Òò×Ó= new DetaLabel("Á£Ï¸°û´Ì¼¤Òò×Óg-csf:");  
 		Á£Ï¸°û´Ì¼¤Òò×Ó.setForeground(Color.WHITE);
 		Á£Ï¸°û´Ì¼¤Òò×Ó.setBounds(10+220*3, 32+ 25*7, 100, 20);jFrameList.add(Á£Ï¸°û´Ì¼¤Òò×Ó);
+		Á£Ï¸°û´Ì¼¤Òò×Ó.indexString= "LXBCJYZ";
 		JTextField Á£Ï¸°û´Ì¼¤Òò×Ó_box= new JTextField();
 		Á£Ï¸°û´Ì¼¤Òò×Ó_box.setBounds(10+ 110+220*3, 33+ 25*7, 80, 20);
 		Á£Ï¸°û´Ì¼¤Òò×Ó_box.addActionListener(new ActionListener(){
@@ -1246,6 +1258,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ´Æ¼¤ËØel= new DetaLabel("´Æ¼¤ËØel:");  
 		´Æ¼¤ËØel.setForeground(Color.WHITE);
 		´Æ¼¤ËØel.setBounds(10+220*3, 32+ 25*8, 100, 20);jFrameList.add(´Æ¼¤ËØel);
+		´Æ¼¤ËØel.indexString= "CJSEL";
 		JTextField ´Æ¼¤ËØel_box= new JTextField();
 		´Æ¼¤ËØel_box.setBounds(10+ 110+220*3, 33+ 25*8, 80, 20);
 		´Æ¼¤ËØel_box.addActionListener(new ActionListener(){
@@ -1261,6 +1274,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Í¬¹¤Ã¸ck_mb= new DetaLabel("Í¬¹¤Ã¸ck-mb:");  
 		Í¬¹¤Ã¸ck_mb.setForeground(Color.WHITE);
 		Í¬¹¤Ã¸ck_mb.setBounds(10+220*3, 32+ 25*9, 100, 20);jFrameList.add(Í¬¹¤Ã¸ck_mb);
+		Í¬¹¤Ã¸ck_mb.indexString= "TGMCKB";
 		JTextField Í¬¹¤Ã¸ck_mb_box= new JTextField();
 		Í¬¹¤Ã¸ck_mb_box.setBounds(10+ 110+220*3, 33+ 25*9, 80, 20);
 		Í¬¹¤Ã¸ck_mb_box.addActionListener(new ActionListener(){
@@ -1276,6 +1290,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÄòÉøÍ¸Ñ¹Äò= new DetaLabel("ÄòÉøÍ¸Ñ¹Äòosm:");  
 		ÄòÉøÍ¸Ñ¹Äò.setForeground(Color.WHITE);
 		ÄòÉøÍ¸Ñ¹Äò.setBounds(10+220*3, 32+ 25*10, 100, 20);jFrameList.add(ÄòÉøÍ¸Ñ¹Äò);
+		ÄòÉøÍ¸Ñ¹Äò.indexString= "NSTY";
 		JTextField ÄòÉøÍ¸Ñ¹Äò_box= new JTextField();
 		ÄòÉøÍ¸Ñ¹Äò_box.setBounds(10+ 110+220*3, 33+ 25*10, 80, 20);
 		ÄòÉøÍ¸Ñ¹Äò_box.addActionListener(new ActionListener(){
@@ -1296,6 +1311,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ½áºËÓ¡¼£ÊÔÑé= new DetaLabel("½áºËÓ¡¼£ÊÔÑétb-poc:");  
 		½áºËÓ¡¼£ÊÔÑé.setForeground(Color.WHITE);
 		½áºËÓ¡¼£ÊÔÑé.setBounds(10+220*3, 32+ 25*11, 100, 20);jFrameList.add(½áºËÓ¡¼£ÊÔÑé);
+		½áºËÓ¡¼£ÊÔÑé.indexString= "JHYJS";
 		JTextField ½áºËÓ¡¼£ÊÔÑé_box= new JTextField();
 		½áºËÓ¡¼£ÊÔÑé_box.setBounds(10+ 110+220*3, 33+ 25*11, 80, 20);
 		½áºËÓ¡¼£ÊÔÑé_box.addActionListener(new ActionListener(){
@@ -1311,6 +1327,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÏÙÜÕÍÑ°±Ëá= new DetaLabel("ÏÙÜÕÍÑ°±Ëáada:");  
 		ÏÙÜÕÍÑ°±Ëá.setForeground(Color.WHITE);
 		ÏÙÜÕÍÑ°±Ëá.setBounds(10+220*3, 32+ 25*12, 100, 20);jFrameList.add(ÏÙÜÕÍÑ°±Ëá);
+		ÏÙÜÕÍÑ°±Ëá.indexString= "XGTAS";
 		JTextField ÏÙÜÕÍÑ°±Ëá_box= new JTextField();
 		ÏÙÜÕÍÑ°±Ëá_box.setBounds(10+ 110+220*3, 33+ 25*12, 80, 20);
 		ÏÙÜÕÍÑ°±Ëá_box.addActionListener(new ActionListener(){
@@ -1326,6 +1343,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼âÈñÊªğà´×Ëá°×= new DetaLabel("¼âÈñÊªğà´×Ëá°×:");  
 		¼âÈñÊªğà´×Ëá°×.setForeground(Color.WHITE);
 		¼âÈñÊªğà´×Ëá°×.setBounds(10+220*3, 32+ 25*13, 100, 20);jFrameList.add(¼âÈñÊªğà´×Ëá°×);
+		¼âÈñÊªğà´×Ëá°×.indexString= "JRSYCB";
 		JTextField ¼âÈñÊªğà´×Ëá°×_box= new JTextField();
 		¼âÈñÊªğà´×Ëá°×_box.setBounds(10+ 110+220*3, 33+ 25*13, 80, 20);
 		¼âÈñÊªğà´×Ëá°×_box.addActionListener(new ActionListener(){
@@ -1345,6 +1363,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ½ê´¯¾µ¼ìsarcoptes= new DetaLabel("½ê´¯¾µ¼ìsarcoptesscabidiexamination:");  
 		½ê´¯¾µ¼ìsarcoptes.setForeground(Color.WHITE);
 		½ê´¯¾µ¼ìsarcoptes.setBounds(10+220*2, 32+ 0, 100, 20);jFrameList.add(½ê´¯¾µ¼ìsarcoptes);
+		½ê´¯¾µ¼ìsarcoptes.indexString= "JC";
 		JTextField ½ê´¯¾µ¼ìsarcoptes_box= new JTextField();
 		½ê´¯¾µ¼ìsarcoptes_box.setBounds(10+ 110+220*2, 33+ 0, 80, 20);
 		½ê´¯¾µ¼ìsarcoptes_box.addActionListener(new ActionListener(){
@@ -1360,6 +1379,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel °×É«ÄîÖé¾ú¿¹Ìå= new DetaLabel("°×É«ÄîÖé¾ú¿¹Ìå:");  
 		°×É«ÄîÖé¾ú¿¹Ìå.setForeground(Color.WHITE);
 		°×É«ÄîÖé¾ú¿¹Ìå.setBounds(10+220*2, 32+ 25*1, 100, 20);jFrameList.add(°×É«ÄîÖé¾ú¿¹Ìå);
+		°×É«ÄîÖé¾ú¿¹Ìå.indexString= "BSNZJKT";
 		JTextField °×É«ÄîÖé¾ú¿¹Ìå_box= new JTextField();
 		°×É«ÄîÖé¾ú¿¹Ìå_box.setBounds(10+ 110+220*2, 33+ 25*1, 80, 20);
 		°×É«ÄîÖé¾ú¿¹Ìå_box.addActionListener(new ActionListener(){
@@ -1375,6 +1395,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ×Üµ¨ºìÖÊ= new DetaLabel("×Üµ¨ºìÖÊtbil:");  
 		×Üµ¨ºìÖÊ.setForeground(Color.WHITE);
 		×Üµ¨ºìÖÊ.setBounds(10+220*2, 32+ 25*2, 100, 20);jFrameList.add(×Üµ¨ºìÖÊ);
+		×Üµ¨ºìÖÊ.indexString= "ZDHZ";
 		JTextField ×Üµ¨ºìÖÊ_box= new JTextField();
 		×Üµ¨ºìÖÊ_box.setBounds(10+ 110+220*2, 33+ 25*2, 80, 20);
 		×Üµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
@@ -1390,6 +1411,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ö±½Óµ¨ºìÖÊ= new DetaLabel("Ö±½Óµ¨ºìÖÊdbil:");  
 		Ö±½Óµ¨ºìÖÊ.setForeground(Color.WHITE);
 		Ö±½Óµ¨ºìÖÊ.setBounds(10+220*2, 32+ 25* 3, 100, 20);jFrameList.add(Ö±½Óµ¨ºìÖÊ);
+		Ö±½Óµ¨ºìÖÊ.indexString= "ZJDHZ";
 		JTextField Ö±½Óµ¨ºìÖÊ_box= new JTextField();
 		Ö±½Óµ¨ºìÖÊ_box.setBounds(10+ 110+220*2, 33+ 25* 3, 80, 20);
 		Ö±½Óµ¨ºìÖÊ_box.addActionListener(new ActionListener(){
@@ -1410,6 +1432,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel °ßÌùÊÔÑé= new DetaLabel("°ßÌùÊÔÑépatchtest:");  
 		°ßÌùÊÔÑé.setForeground(Color.WHITE);
 		°ßÌùÊÔÑé.setBounds(10+220*2, 32+ 25*4, 100, 20);jFrameList.add(°ßÌùÊÔÑé);
+		°ßÌùÊÔÑé.indexString= "BTSY";
 		JTextField °ßÌùÊÔÑé_box= new JTextField();
 		°ßÌùÊÔÑé_box.setBounds(10+ 110+220*2, 33+ 25*4, 80, 20);
 		°ßÌùÊÔÑé_box.addActionListener(new ActionListener(){
@@ -1425,6 +1448,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÑªÃ¾= new DetaLabel("ÑªÃ¾mg:");  
 		ÑªÃ¾.setForeground(Color.WHITE);
 		ÑªÃ¾.setBounds(10+220*2, 32+ 25*5, 100, 20);jFrameList.add(ÑªÃ¾);
+		ÑªÃ¾.indexString= "XM";
 		JTextField ÑªÃ¾_box= new JTextField();
 		ÑªÃ¾_box.setBounds(10+ 110+220*2, 33+ 25*5, 80, 20);
 		ÑªÃ¾_box.addActionListener(new ActionListener(){
@@ -1441,6 +1465,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼×¸Î¿¹Ìå= new DetaLabel("¼×¸Î¿¹Ìå-igmhav-igmigmhav-igm:");  
 		¼×¸Î¿¹Ìå.setForeground(Color.WHITE);
 		¼×¸Î¿¹Ìå.setBounds(10+220*2, 32+ 25*6, 100, 20);jFrameList.add(¼×¸Î¿¹Ìå);
+		¼×¸Î¿¹Ìå.indexString= "JGKT";
 		JTextField ¼×¸Î¿¹Ìå_box= new JTextField();
 		¼×¸Î¿¹Ìå_box.setBounds(10+ 110+220*2, 33+ 25*6, 80, 20);
 		¼×¸Î¿¹Ìå_box.addActionListener(new ActionListener(){
@@ -1456,6 +1481,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼¡Ëá¼¤Ã¸= new DetaLabel("¼¡Ëá¼¤Ã¸ck:");  
 		¼¡Ëá¼¤Ã¸.setForeground(Color.WHITE);
 		¼¡Ëá¼¤Ã¸.setBounds(10+220*2, 32+ 25*7, 100, 20);jFrameList.add(¼¡Ëá¼¤Ã¸);
+		¼¡Ëá¼¤Ã¸.indexString= "JSJM";
 		JTextField ¼¡Ëá¼¤Ã¸_box= new JTextField();
 		¼¡Ëá¼¤Ã¸_box.setBounds(10+ 110+220*2, 33+ 25*7, 80, 20);
 		¼¡Ëá¼¤Ã¸_box.addActionListener(new ActionListener(){
@@ -1476,6 +1502,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel µ¨¹Ì´¼= new DetaLabel("µ¨¹Ì´¼tc:");  
 		µ¨¹Ì´¼.setForeground(Color.WHITE);
 		µ¨¹Ì´¼.setBounds(10+220*2, 32+ 25*8, 100, 20);jFrameList.add(µ¨¹Ì´¼);
+		µ¨¹Ì´¼.indexString= "DGC";
 		JTextField µ¨¹Ì´¼_box= new JTextField();
 		µ¨¹Ì´¼_box.setBounds(10+ 110+220*2, 33+ 25*8, 80, 20);
 		µ¨¹Ì´¼_box.addActionListener(new ActionListener(){
@@ -1491,6 +1518,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¸ßÃÜ¶ÈÖ¬µ°°×= new DetaLabel("¸ßÃÜ¶ÈÖ¬µ°°×hdl-c:");  
 		¸ßÃÜ¶ÈÖ¬µ°°×.setForeground(Color.WHITE);
 		¸ßÃÜ¶ÈÖ¬µ°°×.setBounds(10+220*2, 32+ 25*9, 100, 20);jFrameList.add(¸ßÃÜ¶ÈÖ¬µ°°×);
+		¸ßÃÜ¶ÈÖ¬µ°°×.indexString= "GMDB";
 		JTextField ¸ßÃÜ¶ÈÖ¬µ°°×_box= new JTextField();
 		¸ßÃÜ¶ÈÖ¬µ°°×_box.setBounds(10+ 110+220*2, 33+ 25*9, 80, 20);
 		¸ßÃÜ¶ÈÖ¬µ°°×_box.addActionListener(new ActionListener(){
@@ -1512,6 +1540,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel rents= new DetaLabel("rents:");  
 		rents.setForeground(Color.WHITE);
 		rents.setBounds(10+220*2, 32+ 25*10, 100, 20);jFrameList.add(rents);
+		rents.indexString= "RENT";
 		JTextField rents_box= new JTextField();
 		rents_box.setBounds(10+ 110+220*2, 33+ 25*10, 80, 20);
 		rents_box.addActionListener(new ActionListener(){
@@ -1527,6 +1556,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¼¡ôû= new DetaLabel("¼¡ôûcre:");  
 		¼¡ôû.setForeground(Color.WHITE);
 		¼¡ôû.setBounds(10+220*2, 32+ 25*11, 100, 20);jFrameList.add(¼¡ôû);
+		¼¡ôû.indexString= "JG";
 		JTextField ¼¡ôû_box= new JTextField();
 		¼¡ôû_box.setBounds(10+ 110+220*2, 33+ 25*11, 80, 20);
 		¼¡ôû_box.addActionListener(new ActionListener(){
@@ -1542,6 +1572,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¾ŞÏ¸°û²¡¶¾= new DetaLabel("¾ŞÏ¸°û²¡¶¾igm¿¹Ìå¶¨ĞÔcmc:");  
 		¾ŞÏ¸°û²¡¶¾.setForeground(Color.WHITE);
 		¾ŞÏ¸°û²¡¶¾.setBounds(10+220*2, 32+ 25*12, 100, 20);jFrameList.add(¾ŞÏ¸°û²¡¶¾);
+		¾ŞÏ¸°û²¡¶¾.indexString= "JXBD";
 		JTextField ¾ŞÏ¸°û²¡¶¾_box= new JTextField();
 		¾ŞÏ¸°û²¡¶¾_box.setBounds(10+ 110+220*2, 33+ 25*12, 80, 20);
 		¾ŞÏ¸°û²¡¶¾_box.addActionListener(new ActionListener(){
@@ -1557,6 +1588,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ò¶Ëá= new DetaLabel("Ò¶Ëá:");  
 		Ò¶Ëá.setForeground(Color.WHITE);
 		Ò¶Ëá.setBounds(10+220*2, 32+ 25*13, 100, 20);jFrameList.add(Ò¶Ëá);
+		Ò¶Ëá.indexString= "YS";
 		JTextField Ò¶Ëá_box= new JTextField();
 		Ò¶Ëá_box.setBounds(10+ 110+220*2, 33+ 25*13, 80, 20);
 		Ò¶Ëá_box.addActionListener(new ActionListener(){
@@ -1581,6 +1613,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Á×Äò= new DetaLabel("Á×£¨Äò£©:");  
 		Á×Äò.setForeground(Color.WHITE);
 		Á×Äò.setBounds(10+220*1, 32+ 0, 100, 20);jFrameList.add(Á×Äò);
+		Á×Äò.indexString= "LN";
 		JTextField Á×Äò_box= new JTextField();
 		Á×Äò_box.setBounds(10+ 110+220*1, 33+ 0, 80, 20);
 		Á×Äò_box.addActionListener(new ActionListener(){
@@ -1601,6 +1634,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel »ùÖÊÏ¸°ûÔ´ĞÔ= new DetaLabel("»ùÖÊÏ¸°ûÔ´ĞÔÒò×Ó-1sdf-1:");  
 		»ùÖÊÏ¸°ûÔ´ĞÔ.setForeground(Color.WHITE);
 		»ùÖÊÏ¸°ûÔ´ĞÔ.setBounds(10+220*1, 32+ 25*1, 100, 20);jFrameList.add(»ùÖÊÏ¸°ûÔ´ĞÔ);
+		»ùÖÊÏ¸°ûÔ´ĞÔ.indexString= "JZXBY";
 		JTextField »ùÖÊÏ¸°ûÔ´ĞÔ_box= new JTextField();
 		»ùÖÊÏ¸°ûÔ´ĞÔ_box.setBounds(10+ 110+220*1, 33+ 25*1, 80, 20);
 		»ùÖÊÏ¸°ûÔ´ĞÔ_box.addActionListener(new ActionListener(){
@@ -1616,6 +1650,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÔÔÖ¬µ°°×= new DetaLabel("ÔÔÖ¬µ°°×eapoe:");  
 		ÔÔÖ¬µ°°×.setForeground(Color.WHITE);
 		ÔÔÖ¬µ°°×.setBounds(10+220*1, 32+ 25*2, 100, 20);jFrameList.add(ÔÔÖ¬µ°°×);
+		ÔÔÖ¬µ°°×.indexString= "ZZDB";
 		JTextField ÔÔÖ¬µ°°×_box= new JTextField();
 		ÔÔÖ¬µ°°×_box.setBounds(10+ 110+220*1, 33+ 25*2, 80, 20);
 		ÔÔÖ¬µ°°×_box.addActionListener(new ActionListener(){
@@ -1631,6 +1666,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¸ÊÓÍÈıõ¥= new DetaLabel("¸ÊÓÍÈıõ¥tg:");  
 		¸ÊÓÍÈıõ¥.setForeground(Color.WHITE);
 		¸ÊÓÍÈıõ¥.setBounds(10+220*1, 32+ 25* 3, 100, 20);jFrameList.add(¸ÊÓÍÈıõ¥);
+		¸ÊÓÍÈıõ¥.indexString= "GYSZ";
 		JTextField ¸ÊÓÍÈıõ¥_box= new JTextField();
 		¸ÊÓÍÈıõ¥_box.setBounds(10+ 110+220*1, 33+ 25* 3, 80, 20);
 		¸ÊÓÍÈıõ¥_box.addActionListener(new ActionListener(){
@@ -1651,6 +1687,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ĞØË®= new DetaLabel("cl£¨ĞØË®£©:");  
 		ĞØË®.setForeground(Color.WHITE);
 		ĞØË®.setBounds(10+220*1, 32+ 25*4, 100, 20);jFrameList.add(ĞØË®);
+		ĞØË®.indexString= "XS";
 		JTextField ĞØË®_box= new JTextField();
 		ĞØË®_box.setBounds(10+ 110+220*1, 33+ 25*4, 80, 20);
 		ĞØË®_box.addActionListener(new ActionListener(){
@@ -1671,6 +1708,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¾ŞÊÉÏ¸°û¸ĞÈ¾= new DetaLabel("¾ŞÊÉÏ¸°û¸ĞÈ¾Ç÷»¯Òò×Ó-1¦Ámip-1¦Á:");  
 		¾ŞÊÉÏ¸°û¸ĞÈ¾.setForeground(Color.WHITE);
 		¾ŞÊÉÏ¸°û¸ĞÈ¾.setBounds(10+220*1, 32+ 25*5, 100, 20);jFrameList.add(¾ŞÊÉÏ¸°û¸ĞÈ¾);
+		¾ŞÊÉÏ¸°û¸ĞÈ¾.indexString= "JSXBGR";
 		JTextField ¾ŞÊÉÏ¸°û¸ĞÈ¾_box= new JTextField();
 		¾ŞÊÉÏ¸°û¸ĞÈ¾_box.setBounds(10+ 110+220*1, 33+ 25*5, 80, 20);
 		¾ŞÊÉÏ¸°û¸ĞÈ¾_box.addActionListener(new ActionListener(){
@@ -1687,6 +1725,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÄÉna= new DetaLabel("ÄÉna:");  
 		ÄÉna.setForeground(Color.WHITE);
 		ÄÉna.setBounds(10+220*1, 32+ 25*6, 100, 20);jFrameList.add(ÄÉna);
+		ÄÉna.indexString= "NA";
 		JTextField ÄÉna_box= new JTextField();
 		ÄÉna_box.setBounds(10+ 110+220*1, 33+ 25*6, 80, 20);
 		ÄÉna_box.addActionListener(new ActionListener(){
@@ -1707,6 +1746,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÍªÀà¹Ì´¼= new DetaLabel("Äò17-ÍªÀà¹Ì´¼17-ks:");  
 		ÍªÀà¹Ì´¼.setForeground(Color.WHITE);
 		ÍªÀà¹Ì´¼.setBounds(10+220*1, 32+ 25*7, 100, 20);jFrameList.add(ÍªÀà¹Ì´¼);
+		ÍªÀà¹Ì´¼.indexString= "TLGC";
 		JTextField ÍªÀà¹Ì´¼_box= new JTextField();
 		ÍªÀà¹Ì´¼_box.setBounds(10+ 110+220*1, 33+ 25*7, 80, 20);
 		ÍªÀà¹Ì´¼_box.addActionListener(new ActionListener(){
@@ -1727,6 +1767,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel µ¨Ö­Ëá= new DetaLabel("µ¨Ö­Ëátba:");  
 		µ¨Ö­Ëá.setForeground(Color.WHITE);
 		µ¨Ö­Ëá.setBounds(10+220*1, 32+ 25*8, 100, 20);jFrameList.add(µ¨Ö­Ëá);
+		µ¨Ö­Ëá.indexString= "DZS";
 		JTextField µ¨Ö­Ëá_box= new JTextField();
 		µ¨Ö­Ëá_box.setBounds(10+ 110+220*1, 33+ 25*8, 80, 20);
 		µ¨Ö­Ëá_box.addActionListener(new ActionListener(){
@@ -1747,6 +1788,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ñª½¬Î¬ÉúËØ= new DetaLabel("Ñª½¬Î¬ÉúËØb12vb12:");  
 		Ñª½¬Î¬ÉúËØ.setForeground(Color.WHITE);
 		Ñª½¬Î¬ÉúËØ.setBounds(10+220*1, 32+ 25*9, 100, 20);jFrameList.add(Ñª½¬Î¬ÉúËØ);
+		Ñª½¬Î¬ÉúËØ.indexString= "XJWSS";
 		JTextField Ñª½¬Î¬ÉúËØ_box= new JTextField();
 		Ñª½¬Î¬ÉúËØ_box.setBounds(10+ 110+220*1, 33+ 25*9, 80, 20);
 		Ñª½¬Î¬ÉúËØ_box.addActionListener(new ActionListener(){
@@ -1762,6 +1804,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÑªÌÇ= new DetaLabel("ÑªÌÇglu:");  
 		ÑªÌÇ.setForeground(Color.WHITE);
 		ÑªÌÇ.setBounds(10+220*1, 32+ 25*10, 100, 20);jFrameList.add(ÑªÌÇ);
+		ÑªÌÇ.indexString= "XT";
 		JTextField ÑªÌÇ_box= new JTextField();
 		ÑªÌÇ_box.setBounds(10+ 110+220*1, 33+ 25*10, 80, 20);
 		ÑªÌÇ_box.addActionListener(new ActionListener(){
@@ -1782,6 +1825,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel Ğ¡Ê±ºÏ³ÉÂÊ= new DetaLabel("24Ğ¡Ê±ºÏ³ÉÂÊigg:");  
 		Ğ¡Ê±ºÏ³ÉÂÊ.setForeground(Color.WHITE);
 		Ğ¡Ê±ºÏ³ÉÂÊ.setBounds(10+220*1, 32+ 25*11, 100, 20);jFrameList.add(Ğ¡Ê±ºÏ³ÉÂÊ);
+		Ğ¡Ê±ºÏ³ÉÂÊ.indexString= "XSHCL";
 		JTextField Ğ¡Ê±ºÏ³ÉÂÊ_box= new JTextField();
 		Ğ¡Ê±ºÏ³ÉÂÊ_box.setBounds(10+ 110+220*1, 33+ 25*11, 80, 20);
 		Ğ¡Ê±ºÏ³ÉÂÊ_box.addActionListener(new ActionListener(){
@@ -1802,6 +1846,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ¹È±û×ª°±Ã¸= new DetaLabel("¹È±û×ª°±Ã¸alt:");  
 		¹È±û×ª°±Ã¸.setForeground(Color.WHITE);
 		¹È±û×ª°±Ã¸.setBounds(10+220*1, 32+ 25*12, 100, 20);jFrameList.add(¹È±û×ª°±Ã¸);
+		¹È±û×ª°±Ã¸.indexString= "GBZAM";
 		JTextField ¹È±û×ª°±Ã¸_box= new JTextField();
 		¹È±û×ª°±Ã¸_box.setBounds(10+ 110+220*1, 33+ 25*12, 80, 20);
 		¹È±û×ª°±Ã¸_box.addActionListener(new ActionListener(){
@@ -1822,6 +1867,7 @@ public class LinChuangJianYanBaoGaoA extends JPanel implements MouseListener, Ke
 		DetaLabel ÒÈµºÏ¸°û¿¹Ìå= new DetaLabel("ÒÈµºÏ¸°û¿¹Ìåica:");  
 		ÒÈµºÏ¸°û¿¹Ìå.setForeground(Color.WHITE);
 		ÒÈµºÏ¸°û¿¹Ìå.setBounds(10+220*1, 32+ 25*13, 100, 20);jFrameList.add(ÒÈµºÏ¸°û¿¹Ìå);
+		ÒÈµºÏ¸°û¿¹Ìå.indexString= "YDXB";
 		JTextField ÒÈµºÏ¸°û¿¹Ìå_box= new JTextField();
 		ÒÈµºÏ¸°û¿¹Ìå_box.setBounds(10+ 110+220*1, 33+ 25*13, 80, 20);
 		ÒÈµºÏ¸°û¿¹Ìå_box.addActionListener(new ActionListener(){
