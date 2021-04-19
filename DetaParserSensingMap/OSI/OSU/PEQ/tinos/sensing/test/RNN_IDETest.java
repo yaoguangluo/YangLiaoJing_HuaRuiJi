@@ -57,9 +57,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("Âä?")? 16: 0;
-				popFactor += pos.get(word).contains("Âê?")? 4: 0;
-				popFactor += pos.get(word).contains("ÂΩ?")? 2: 0;	
+				popFactor += pos.get(word).contains("Âä®")? 16: 0;
+				popFactor += pos.get(word).contains("Âêç")? 4: 0;
+				popFactor += pos.get(word).contains("ÂΩ¢")? 2: 0;	
 			}
 			ideMatrix[ideMatrixCount][0] = word;
 			ideMatrix[ideMatrixCount][1] = "" + popFactor;
@@ -114,9 +114,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("Âä?")? 16: 0;
-				popFactor += pos.get(word).contains("Âê?")? 4: 0;
-				popFactor += pos.get(word).contains("ÂΩ?")? 2: 0;	
+				popFactor += pos.get(word).contains("Âä®")? 16: 0;
+				popFactor += pos.get(word).contains("Âêç")? 4: 0;
+				popFactor += pos.get(word).contains("ÂΩ¢")? 2: 0;	
 			}
 
 			ideMatrix[ideMatrixCount][0] = word;
@@ -171,11 +171,11 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor+= pos.get(word).contains("Âä?")? 16: 0;
-				popFactor+= pos.get(word).contains("Âê?")? 5: 0;
-				popFactor+= pos.get(word).contains("Âå?")? 3: 0;
-				popFactor+= pos.get(word).contains("ÂΩ?")? 3: 0;
-				popFactor+= pos.get(word).contains("Ë∞?")? 2: 0;
+				popFactor+= pos.get(word).contains("Âêç")? 16: 0;
+				popFactor+= pos.get(word).contains("Âä®")? 5: 0;
+				popFactor+= pos.get(word).contains("Âåª")? 3: 0;
+				popFactor+= pos.get(word).contains("Ë∞ì")? 3: 0;
+				popFactor+= pos.get(word).contains("ÂΩ¢")? 2: 0;
 			}
 			ideMatrix[ideMatrixCount][0]= word;
 			ideMatrix[ideMatrixCount][1]= ""+ popFactor;
