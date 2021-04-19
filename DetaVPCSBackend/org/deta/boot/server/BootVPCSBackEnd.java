@@ -10,6 +10,7 @@ import org.OCI.emotion.ortho.fhmm.EmotionMap;
 import org.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
 import org.deta.boot.thread.SocketThread;
 import org.deta.boot.thread.SocketThreadPool;
+import org.deta.config.Config;
 public class BootVPCSBackEnd extends Thread{
 	private static ServerSocket server;
 	@SuppressWarnings("unused")
@@ -19,11 +20,6 @@ public class BootVPCSBackEnd extends Thread{
 	private int port;
 	static {
 		properties = new Properties();
-//		try {
-//			properties.load(new FileInputStream(new File("src/main/resources/property.proterties")));
-//		}catch (IOException e) {
-//			e.printStackTrace();
-//		}
 	}
 
 	public BootVPCSBackEnd() {
@@ -33,7 +29,7 @@ public class BootVPCSBackEnd extends Thread{
 	public void init() {
 		try {
 			//port = Integer.parseInt(properties.getProperty("port"));
-			port= 8080;
+			port= Config.detaVPCSBackEndPort;
 			server = new ServerSocket(port);
 			analyzer = new CogsBinaryForestAnalyzerImp();
 			analyzer.initMixed();

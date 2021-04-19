@@ -3,17 +3,18 @@ package org.deta.config;
 //罗瑶光
 public class Config{
 	//数据库配置
-	
+	public static final int detaVPCSBackEndPort= 8080; 
 	//前端配置
-	
+	public static final int detaVPCSFrontEndPort= 80; 
 	//后端配置
-	
+	public static final int detaVPCSDBPort= 8000; 
 	//字符集配置
-	
+	public static final String detaMainCharset= "GBK";
+	public static final String detaReferCharset= "UTF8";
 	//缓存配置
 	
 	//时钟配置
-	
+	public static final String timeETC= "G8+";
 	//本地路径配置
 	
 	//系统硬件信息适配

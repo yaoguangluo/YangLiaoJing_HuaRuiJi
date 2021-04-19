@@ -10,6 +10,7 @@ import org.MS.plsql.cache.DetaDBBufferCacheManager;
 import org.deta.boot.vpc.process.TimeProcess;
 import org.deta.boot.vpc.sleeper.Sleeper;
 import org.deta.boot.vpc.sleeper.SleeperHall;
+import org.deta.config.Config;
 import org.deta.vpcs.hall.DatabaseLogHall;
 import org.plsql.common.utils.DetaUtil;
 import org.plsql.stable.StableData;
@@ -33,7 +34,7 @@ public class ServerInitController {
 	public static void initService(JTextPane jTextPane) throws IOException {
 		try {
 			//port= Integer.parseInt(properties.getProperty(StableData.TCP_PORT));
-			port= 8000;
+			port= Config.detaVPCSDBPort;
 			server= new ServerSocket(port);
 			System.out.println("----德塔VPCS数据库服务器端口启动:" + port);
 			if(jTextPane!= null) {

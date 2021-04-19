@@ -6,25 +6,20 @@ import java.util.Properties;
 import org.deta.bootFrontEnd.vpc.process.TimeProcess;
 import org.deta.bootFrontEnd.vpc.sleeper.Sleeper;
 import org.deta.bootFrontEnd.vpc.sleeper.SleeperHall;
+import org.deta.config.Config;
 import org.lygFrontend.common.utils.DetaUtil;
 public class ServerInitControllerVPCSFrontEnd {
 	private ServerSocket server;
 	@SuppressWarnings("unused")
 	private Properties properties;
-	private int port;
-	{
+	private int port;{
 		properties= new Properties();
-		//try {
-			//properties.load(new FileInputStream(new File("src/main/resourcesFrontEnd/property.proterties")));
 			System.out.println("----德塔VPCS前端服务器资源载入:成功！");
-		//}catch (IOException e) {
-		//	e.printStackTrace();
-		//}
 	}
 
 	public void init() throws IOException {
 		try {
-			port= 80;
+			port= Config.detaVPCSFrontEndPort;
 			server= new ServerSocket(port);
 			System.out.println("----德塔VPCS前端服务器端口启动:" + port);
 			DetaUtil.initDB();
