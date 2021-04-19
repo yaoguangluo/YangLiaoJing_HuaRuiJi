@@ -83,8 +83,7 @@ public class Jpm extends Panel{
 			double sin[][]= new double [N][N] ; 
 			for(int k=0;k<N;k++){
 				double v1 = pi*k/N/2;
-				for(int n=0;n<N;n++)
-				{
+				for(int n=0;n<N;n++){
 					double v = v1*n;
 					cos[k][n]=Math.cos(v);
 					sin[k][n]=Math.sin(v);

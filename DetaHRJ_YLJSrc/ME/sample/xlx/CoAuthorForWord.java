@@ -27,8 +27,8 @@ import javax.media.opengl.*;
 
 import ME.sample.App;
 import ME.sample.PathLinkFile;
-import comp.detaButton.DetaButton;
-import comp.detaSlider.DetaSlider;
+import MVQ.detaButton.DetaButton;
+import MVQ.detaSlider.DetaSlider;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
@@ -416,7 +416,8 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 		gl.glFlush();
 	}  	
 	@SuppressWarnings({"unchecked", "static-access"})
-	private void drawWords(int []s, int se, double[] root, float a, int j, int k, Map<String, Object> root3, Map<String, Integer> didLeaf) throws IOException {
+	private void drawWords(int []s, int se, double[] root, float a, int j, int k, Map<String, Object> root3
+			, Map<String, Integer> didLeaf) throws IOException {
 		if(root3 == null || root3.size() == 0) {
 			return;
 		}

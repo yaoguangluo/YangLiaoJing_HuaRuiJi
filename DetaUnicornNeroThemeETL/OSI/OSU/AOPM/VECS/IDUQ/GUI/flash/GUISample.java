@@ -46,6 +46,8 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
 import ME.sample.DetaBuy;
+import MVQ.detaButton.DetaButton;
+import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.MSI.OEI.document.save.SaveAndUpdateFile;
 import OSI.OSU.MSI.OEI.document.save.SaveAsANewFile;
 import OSI.OSU.MSQ.GUI.nodeInfo.NodeInfo;
@@ -62,8 +64,6 @@ import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.Sort;
 import OSI.OSU.OVU.MVU.GUI.nodeEdit.UpdateRelatedLineVPS;
 import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroCell;
-import comp.detaButton.DetaButton;
-import comp.filenameFilter.TXTFilter;
 @SuppressWarnings("deprecation")
 public class GUISample extends JApplet implements MouseMotionListener
 , MouseListener, ItemListener, ActionListener, Runnable{	

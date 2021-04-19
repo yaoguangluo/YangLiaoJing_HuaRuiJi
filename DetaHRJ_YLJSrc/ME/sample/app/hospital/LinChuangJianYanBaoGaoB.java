@@ -18,9 +18,9 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
 import ME.sample.App;
-import comp.detaButton.DetaButton;
-import comp.detaLabel.DetaIndexLabel;
-import comp.detaLabel.DetaLabel;
+import MVQ.detaButton.DetaButton;
+import MVQ.detaLabel.DetaIndexLabel;
+import MVQ.detaLabel.DetaLabel;
 
 public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, KeyListener, ActionListener, MouseMotionListener{
 

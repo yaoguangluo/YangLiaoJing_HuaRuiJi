@@ -34,11 +34,11 @@ import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.OSU.tinos.list.ListSwap;
 
 import ME.sample.App;
+import MVQ.detaButton.DetaButton;
+import MVQ.detaButton.YLJShowButton;
+import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
-import comp.detaButton.DetaButton;
-import comp.detaButton.YLJShowButton;
-import comp.filenameFilter.TXTFilter;
 
 public class MakeContainerYXTP extends Thread implements Runnable{
 	public Container jpanelFourth;
@@ -88,36 +88,36 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			jpanelFourth.setLayout(null);
 			jpanelFourth.setBounds(0, 0, 1446, 980);
 			//
-			//¼ÓÉÏÊý¾Ý
-			//±í¸ñ×Ü
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			//ï¿½ï¿½ï¿½ï¿½ï¿½
 			JPanel top= new JPanel();
 			top.setBounds(5, 0, 1300- 30, 410);
 			top.setBackground(Color.BLUE);
-			//±í1 ´ó PANEL
+			//ï¿½ï¿½1 ï¿½ï¿½ PANEL
 			DemoPanel leftPanel= new DemoPanel();
 			leftPanel.setBounds(5+ 5, 0+ 15, 615, 380);
 			leftPanel.setBackground(Color.magenta);
 			cacuMap.putIfAbsent("", null);
-			//Á¿»¯
-			//¸ßË¹ ÏûºÄËÙ¶È
-			//±ÈÀý²Ã¼ô ²»ÕæÊµ	
+			//ï¿½ï¿½ï¿½ï¿½
+			//ï¿½ï¿½Ë¹ ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+			//ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ ï¿½ï¿½ï¿½ï¿½Êµ	
 			//icon set img
 			//button add
-			//Î´×÷Í¼Æ¬¸ñÊ½Ñ¹Ëõ´¦ÀíÏÈ
+			//Î´ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ê½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			//bufferImage read
 
-			//Ö´ÐÐÎÄ¼þ¼Ð¸ù
+			//Ö´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¸ï¿½
 			String pgCategoryLink= "";	
-			FileDialog filedialog= new FileDialog(new Frame(), "Ñ¡ÔñÍ¼Æ¬Î»ÖÃ"
+			FileDialog filedialog= new FileDialog(new Frame(), "Ñ¡ï¿½ï¿½Í¼Æ¬Î»ï¿½ï¿½"
 					, FileDialog.LOAD);
 			filedialog.setFilenameFilter(new TXTFilter(StableData.FILE_FORMAT_ETL));
 			filedialog.setVisible(true);
 			pgCategoryLink= filedialog.getDirectory();
 			String root= pgCategoryLink.split("pgSearch")[0]+ "pgSearch\\";
 			System.out.println(root);
-			nullPG= root+ "Ìî³äÍ¼Æ¬.jpg";
+			nullPG= root+ "ï¿½ï¿½ï¿½Í¼Æ¬.jpg";
 			bufferedImageNullPG= ImageIO.read(new File(nullPG));
-			//¶ÁÈ¡×ÓÄ¿Â¼
+			//ï¿½ï¿½È¡ï¿½ï¿½Ä¿Â¼
 			File rootFile= new File(root);
 			if(rootFile.exists()&& rootFile.isDirectory()) {
 				String[] strings= rootFile.list();
@@ -138,8 +138,8 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 					}
 				}
 			}
-			//ÁÐ¾Ù×ÓÄ¿Â¼wenjian 
-			//¼ÓÈëlist
+			//ï¿½Ð¾ï¿½ï¿½ï¿½Ä¿Â¼wenjian 
+			//ï¿½ï¿½ï¿½ï¿½list
 
 			BufferedImage image= ImageIO.read(new File(listMap.get(typeList.get(0)).get(0)));
 			//imge format
@@ -153,9 +153,9 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			leftPanel.add(leftPanel.button);
 			top.setLayout(null);
 			top.add(leftPanel);
-			//±í1 ´óµÄÎÄ×Ö
+			//ï¿½ï¿½1 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-			//±í2 PANEL
+			//ï¿½ï¿½2 PANEL
 			JPanel topLeftPanel= new JPanel();
 			topLeftPanel.setBounds(5+ 5+ 600+ 20+ 10, 0+ 15, 300, 160);
 			topLeftPanel.setBackground(Color.ORANGE);
@@ -202,7 +202,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			topLeftPanel.add(buttonTopLeftPanel);
 			top.add(topLeftPanel);
 
-			//±í3 PANEL
+			//ï¿½ï¿½3 PANEL
 			JPanel topRightPanel= new JPanel();
 			topRightPanel.setBounds(5+ 5+ 600+ 20+ 300+ 20+ 5, 0+ 15, 300, 160);
 			topRightPanel.setBackground(Color.YELLOW);
@@ -248,7 +248,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			topRightPanel.add(buttontopRightPanel);
 			top.add(topRightPanel);
 
-			//±í4 PANEL
+			//ï¿½ï¿½4 PANEL
 			JPanel botLeftPanel= new JPanel();
 			botLeftPanel.setBounds(5+ 5+ 600+ 20+ 10, 0+ 15+ 175, 300, 160);
 			botLeftPanel.setBackground(Color.BLACK);
@@ -293,7 +293,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			botLeftPanel.add(buttonbotLeftPanel);
 			top.add(botLeftPanel);
 
-			//±í5 PANEL
+			//ï¿½ï¿½5 PANEL
 			JPanel botRightPanel= new JPanel();
 			botRightPanel.setBounds(5+ 5+ 600+ 20+ 300+ 20+ 5, 0+ 15+ 175, 300, 160);
 			botRightPanel.setBackground(Color.GREEN);
@@ -339,20 +339,20 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			botRightPanel.add(buttonbotRightPanel);
 			top.add(botRightPanel);
 
-			//ÉÏÒ»Ò³ BUTTON
-			//ÏÂÒ»Ò³ BUTTON
+			//ï¿½ï¿½Ò»Ò³ BUTTON
+			//ï¿½ï¿½Ò»Ò³ BUTTON
 
 
-			//µã»÷Èë½¹µã ONCLICK
+			//ï¿½ï¿½ï¿½ï¿½ë½¹ï¿½ï¿½ ONCLICK
 
-			//¼ÓÏÂÊý¾Ý
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			JPanel buttom= new JPanel();
 			buttom.setBounds(5, 420, 1300- 30, 185);
 			buttom.setBackground(Color.PINK);
 			buttom.setLayout(null);
 
 
-			//±í1 PANEL
+			//ï¿½ï¿½1 PANEL
 			JPanel bot1Panel= new JPanel();
 			bot1Panel.setBounds(5+ 5, 0+ 5, 300, 175);
 			bot1Panel.setBackground(Color.RED);
@@ -538,7 +538,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			bot1Panel.add(buttonbot1Panel);
 			buttom.add(bot1Panel);
 
-			//±í2 PANEL
+			//ï¿½ï¿½2 PANEL
 			JPanel bot1Panel2= new JPanel();
 			bot1Panel2.setBounds(5+ 5+ 300+ 15, 0+ 5, 300, 175);
 			bot1Panel2.setBackground(Color.CYAN);
@@ -728,7 +728,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			buttom.add(bot1Panel2);
 
 
-			//±í3 PANEL
+			//ï¿½ï¿½3 PANEL
 			JPanel bot1Panel3= new JPanel();
 			bot1Panel3.setBounds(5+ 5+ 300+ 15+ 300+ 15, 0+ 5, 300, 175);
 			bot1Panel3.setBackground(Color.YELLOW);
@@ -915,7 +915,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			buttom.add(bot1Panel3);
 
 
-			//±í4 PANEL
+			//ï¿½ï¿½4 PANEL
 			JPanel bot1Panel4= new JPanel();
 			bot1Panel4.setBounds(5+ 5+ 300+ 15+ 300+ 15+ 300+ 15, 0+ 5, 300, 175);
 			bot1Panel4.setBackground(Color.BLUE);
@@ -1103,12 +1103,12 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			bot1Panel4.add(buttonbot1Panel4);
 			buttom.add(bot1Panel4);
 
-			//×ó±ä BUTTON
-			//ÓÒ±ä BUTTON
-			//ÍÏ»®Ñ­»· MOTION
-			//Ä¦²ÁÁ¦ 0.
+			//ï¿½ï¿½ï¿½ BUTTON
+			//ï¿½Ò±ï¿½ BUTTON
+			//ï¿½Ï»ï¿½Ñ­ï¿½ï¿½ MOTION
+			//Ä¦ï¿½ï¿½ï¿½ï¿½ 0.
 
-			topButton= new DetaButton("ÉÏ", 100, 50, Color.red);
+			topButton= new DetaButton("ï¿½ï¿½", 100, 50, Color.red);
 			topButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1235,7 +1235,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							}	
 						}
 					});
-			DetaButton downButton= new DetaButton("ÏÂ", 100, 50, Color.white);
+			DetaButton downButton= new DetaButton("ï¿½ï¿½", 100, 50, Color.white);
 			downButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1364,7 +1364,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						}
 					});
 
-			leftButton= new DetaButton("×ó", 100, 50, Color.GREEN);
+			leftButton= new DetaButton("ï¿½ï¿½", 100, 50, Color.GREEN);
 			leftButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1492,7 +1492,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						}
 					});
 
-			DetaButton rightButton= new DetaButton("ÓÒ", 100, 50, Color.YELLOW);
+			DetaButton rightButton= new DetaButton("ï¿½ï¿½", 100, 50, Color.YELLOW);
 			rightButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1636,8 +1636,8 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			jpanelFourth.add(top);
 			jpanelFourth.add(buttom);
 
-			jpanelFourth.setName("Í¼Æ¬ËÑË÷");
-			jTabbedpane.addTab("Í¼Æ¬ËÑË÷", new ImageIcon(), jpanelFourth, "Í¼Æ¬ËÑË÷");// ¼ÓÈëµÚÒ»¸öÒ³Ãæ  
+			jpanelFourth.setName("Í¼Æ¬ï¿½ï¿½ï¿½ï¿½");
+			jTabbedpane.addTab("Í¼Æ¬ï¿½ï¿½ï¿½ï¿½", new ImageIcon(), jpanelFourth, "Í¼Æ¬ï¿½ï¿½ï¿½ï¿½");// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½  
 			Color[] colors= new Color[3];
 			colors[0]= new Color(253, 233, 254);
 			colors[1]= new Color(233, 254, 234);
@@ -1731,13 +1731,13 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							score_code[copyCount] += 1 << mapSearchaAtII.length() << wordFrequencySearch.getFrequency() ;
 							continue Here;
 						}
-						if(pos.get(mapSearchaAtII).contains("Ãû")||pos.get(mapSearchaAtII).contains("¶¯")
-								||pos.get(mapSearchaAtII).contains("ÐÎ")||pos.get(mapSearchaAtII).contains("Î½")) {
+						if(pos.get(mapSearchaAtII).contains("ï¿½ï¿½")||pos.get(mapSearchaAtII).contains("ï¿½ï¿½")
+								||pos.get(mapSearchaAtII).contains("ï¿½ï¿½")||pos.get(mapSearchaAtII).contains("Î½")) {
 							reg[copyCount] += 2;
 						}
 						reg[copyCount] += 1;
 						score_code[copyCount] += (iteratorForCopyString.contains(mapSearchaAtII) ? 2 : 1) 
-								* (!pos.get(mapSearchaAtII).contains("Ãû") ? pos.get(mapSearchaAtII).contains("¶¯")? 50 : 1 : 50) 
+								* (!pos.get(mapSearchaAtII).contains("ï¿½ï¿½") ? pos.get(mapSearchaAtII).contains("ï¿½ï¿½")? 50 : 1 : 50) 
 								<< mapSearchaAtII.length() * wordFrequencySearch.getFrequency();
 						continue Here;
 					}
@@ -1750,9 +1750,9 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 								score[copyCount] = iteratorForCopyString;
 								score_code[copyCount]+=1;
 								if(pos.containsKey(String.valueOf(mapSearchaAtII.charAt(j)))&&(
-										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("Ãû")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("¶¯")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("ÐÎ")
+										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("ï¿½ï¿½")
+										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("ï¿½ï¿½")
+										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("ï¿½ï¿½")
 										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("Î½")
 										)) {
 									reg[copyCount] += 2;
@@ -1764,18 +1764,18 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 					}
 				}
 			score_code[copyCount] = score_code[copyCount] * reg[copyCount];
-			//´Ê¾à
+			//ï¿½Ê¾ï¿½
 			int code= 100;
 			int tempb= 0;
 			int tempa= score_code[copyCount];
 			if(key.length()> 4) {
-				//È«´Ê
+				//È«ï¿½ï¿½
 				for(int i= 0; i< string.length; i++) {
 					if(temps.contains(string[i])) {
 						tempb+= code;
 					}
 				}
-				//¶Ï¾ä
+				//ï¿½Ï¾ï¿½
 				for(int i= 0; i< stringReg.length; i++) {
 					if(temps.contains(stringReg[i])) {
 						tempb+= code;

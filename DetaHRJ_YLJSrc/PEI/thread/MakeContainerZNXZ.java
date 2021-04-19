@@ -30,8 +30,8 @@ import AVQ.OEQ.cap.Monitor;
 import AVQ.PVU.vedio.PlayerControl;
 import AVQ.PVU.vedio.PlayerShow;
 import ME.sample.App;
-import comp.detaButton.DetaButton;
-import comp.filenameFilter.TXTFilter;
+import MVQ.detaButton.DetaButton;
+import MVQ.filenameFilter.TXTFilter;
 public class MakeContainerZNXZ extends Thread implements Runnable{
 	public Container jpanelThird;
 	public App u;

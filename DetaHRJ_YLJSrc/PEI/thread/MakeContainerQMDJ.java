@@ -23,7 +23,7 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import ME.sample.App;
 import ME.sample.xlx.CoAuthorForWord;
-import comp.detaButton.DetaButton;
+import MVQ.detaButton.DetaButton;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;
 	public App u;

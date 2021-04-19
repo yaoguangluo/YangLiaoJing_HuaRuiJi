@@ -21,6 +21,10 @@ import ME.sample.xiYiYaoCai.XyscPage;
 import ME.sample.zhongYiFuChan.FqzPage;
 import ME.sample.zhongYiNeiKeXue.ZynkxPage;
 import ME.sample.zhongYiZhenDuanXue.ZyzdxPage;
+import MVQ.detaButton.DetaButton;
+import MVQ.detaTabbedpane.DetabbedPane;
+import MVQ.detaTextfield.CfxTextField;
+import MVQ.detaTextpane.CfxTextPane;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
@@ -64,16 +68,12 @@ import org.ASQ.PSU.tinos.view.obj.Verbal;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.MSU.OCI.engine.base.translator.Translator;
 import org.MSU.OEI.engine.base.translator.imp.TranslatorImp;
+import org.OSU.dna.search.ZhongYaoSearch;
 import org.OSU.tinos.string.StringSwap;
-import org.tinos.dna.search.ZhongYaoSearch;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.rest.medicine.RestMedicinePortImpl;
 
 import biProcessor.CoAuthorForWord;
-import comp.detaButton.DetaButton;
-import comp.detaTabbedpane.DetabbedPane;
-import comp.detaTextfield.CfxTextField;
-import comp.detaTextpane.CfxTextPane;
 import mapProcessor.VtoV;
 @SuppressWarnings("deprecation")
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	

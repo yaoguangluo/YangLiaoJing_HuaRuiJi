@@ -20,7 +20,7 @@ import ME.sample.app.hospital.LinChuangJianYanBaoGaoA;
 import ME.sample.app.hospital.LinChuangJianYanBaoGaoB;
 import ME.sample.app.hospital.XiYaoJPanel;
 import ME.sample.app.hospital.ZhongYaoJPanel;
-import comp.detaLabel.DetaLabel;
+import MVQ.detaLabel.DetaLabel;
 
 
 public class AppHospital extends ScrollPane implements MouseListener, KeyListener, ActionListener, MouseMotionListener{	

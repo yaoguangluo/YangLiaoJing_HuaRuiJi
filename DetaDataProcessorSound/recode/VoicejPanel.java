@@ -21,7 +21,7 @@ import javax.sound.sampled.TargetDataLine;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import comp.detaButton.DetaButton;
+import MVQ.detaButton.DetaButton;
 import movieProcessor.LYGFileIO;
 
 

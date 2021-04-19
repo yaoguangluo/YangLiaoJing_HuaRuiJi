@@ -26,10 +26,10 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
+import MVQ.detaButton.DetaButton;
+import MVQ.filenameFilter.TXTFilter;
 import PEU.soundProcessorYLJ.SoundRecord;
 import PEU.waveProcessorYLJ.DFT;
-import comp.detaButton.DetaButton;
-import comp.filenameFilter.TXTFilter;
 
 public class JpZNSZ extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

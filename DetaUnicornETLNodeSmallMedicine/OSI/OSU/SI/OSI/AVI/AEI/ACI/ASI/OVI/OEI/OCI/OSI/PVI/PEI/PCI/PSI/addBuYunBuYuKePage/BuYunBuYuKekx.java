@@ -38,8 +38,8 @@ import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
+import MVQ.detaButton.DetaButton;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
-import comp.detaButton.DetaButton;
 public class BuYunBuYuKekx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;

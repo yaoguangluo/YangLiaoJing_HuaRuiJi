@@ -21,16 +21,16 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.ASQ.tinos.deta.image.ImagePixGroupFilter;
+import org.OSU.initon.pde.DecadeToPDS;
 import org.OSU.tinos.image.ToolkitImageToBufferImage;
 import org.bytedeco.javacpp.opencv_core.IplImage;
 import org.bytedeco.javacv.Java2DFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
-import org.math.initon.pde.DecadeToPDS;
 import org.tinos.freetts.thread.read.ReadEnglish;
 
+import MVQ.detaButton.DetaButton;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.RangePDI;
-import comp.detaButton.DetaButton;
 
 @SuppressWarnings("deprecation")
 public class Monitor extends JApplet{

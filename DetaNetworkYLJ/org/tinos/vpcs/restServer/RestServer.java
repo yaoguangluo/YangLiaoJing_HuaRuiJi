@@ -1,7 +1,8 @@
 package org.tinos.vpcs.restServer;
 
 import java.io.IOException;
-import org.deta.boot.vpc.controller.ServerInitController;
+
+import org.MS.boot.vpc.controller.ServerInitController;
 
 import ME.sample.App;
 

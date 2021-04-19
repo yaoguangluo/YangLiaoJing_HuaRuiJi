@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.ME.plsql.db.plsql.imp.ExecPLSQLImp;
-import org.deta.vpcs.hall.DatabaseLogHall;
+import org.MS.vpcs.hall.DatabaseLogHall;
 import org.json.JSONObject;
 import org.plsql.common.utils.StringUtil;
 import org.plsql.vpc.process.companyImpl.LoginServiceImpl;

@@ -29,12 +29,12 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
+import MVQ.detaButton.DetaButton;
+import MVQ.filenameFilter.TXTFilter;
 import PEI.thread.MakeContainerZNSZ;
 import PEU.movieProcessorYLJ.LYGFileIO;
 import PEU.soundProcessorYLJ.SoundRecord;
 import PEU.waveProcessorYLJ.DFT;
-import comp.detaButton.DetaButton;
-import comp.filenameFilter.TXTFilter;
 public class SoundWaveJPanel extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;

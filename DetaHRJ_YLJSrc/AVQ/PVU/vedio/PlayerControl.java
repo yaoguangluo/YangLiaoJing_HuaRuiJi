@@ -25,7 +25,7 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import comp.filenameFilter.TXTFilter;
+import MVQ.filenameFilter.TXTFilter;
 
 public class PlayerControl{
 	int[] control; 

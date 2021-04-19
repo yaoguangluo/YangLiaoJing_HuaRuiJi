@@ -1,7 +1,7 @@
 package dbPath;
 
-import org.deta.boot.vpc.controller.RequestFilterController;
-import org.deta.vpcs.hall.DatabaseLogHall;
+import org.MS.boot.vpc.controller.RequestFilterController;
+import org.MS.vpcs.hall.DatabaseLogHall;
 
 public class CreateTable{
 	public static void main(String[] argv) throws Exception {

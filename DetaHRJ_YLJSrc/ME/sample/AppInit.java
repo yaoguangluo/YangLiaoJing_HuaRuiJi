@@ -7,6 +7,9 @@ import java.awt.event.WindowEvent;
 import org.tinos.vpcs.restServer.RestServer;
 
 import ME.sample.app.hospital.DetaLabelStables;
+import MVQ.detaButton.CfxButton;
+import MVQ.detaSlider.DetaSlider;
+import MVQ.detaTabbedpane.DetabbedPane;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -52,10 +55,6 @@ import org.deta.boot.server.BootVPCSBackEnd;
 import org.deta.bootFrontEnd.server.BootVPCSFrontEnd;
 import org.tinos.listen.ReadToWav;
 import org.tinos.reportMap.DetaLabelConjunction;
-
-import comp.detaButton.CfxButton;
-import comp.detaSlider.DetaSlider;
-import comp.detaTabbedpane.DetabbedPane;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
 	public void init(App app) throws IOException{
@@ -204,7 +203,7 @@ public class AppInit {
 			app.jsp_name= new JScrollPane(app.name());
 			app.jsp_name.setBounds(10+50, 6, 580- 300, 50);
 
-			comp.detaButton.DetaButton jlabel_button= new comp.detaButton.DetaButton("หั:");
+			MVQ.detaButton.DetaButton jlabel_button= new MVQ.detaButton.DetaButton("หั:");
 			jlabel_button.setBounds(2, 6, 56, 23);
 			jlabel_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -230,7 +229,7 @@ public class AppInit {
 				}
 			});
 
-			comp.detaButton.DetaButton yin_button= new comp.detaButton.DetaButton("า๔:");
+			MVQ.detaButton.DetaButton yin_button= new MVQ.detaButton.DetaButton("า๔:");
 			yin_button.setBounds(2, 33, 56, 23);
 			yin_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
