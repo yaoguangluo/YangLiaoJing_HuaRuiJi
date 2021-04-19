@@ -1,9 +1,5 @@
 package ME.sample.xiYiYaoCai;
 import java.io.BufferedReader;
-
-import org.tinos.language.plorm.PLORMImpl;
-import org.tinos.language.plorm.PLORMInterf;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -15,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import OSI.OSU.tinos.language.plorm.PLORMImpl;
+import OSI.OSU.tinos.language.plorm.PLORMInterf;
 @SuppressWarnings("unused")
 public class DictionaryFromDB{	
 //	public List<String> dic_list;

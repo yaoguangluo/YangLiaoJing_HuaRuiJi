@@ -28,6 +28,8 @@ import MVQ.detaTextpane.CfxTextPane;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
+import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
+import OSI.OSU.tinos.string.StringSwap;
 import SP.SoundWaveJPanel;
 
 import java.awt.Color;
@@ -68,8 +70,6 @@ import org.ASQ.PSU.tinos.view.obj.Verbal;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.MSU.OCI.engine.base.translator.Translator;
 import org.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import org.OSU.tinos.string.StringSwap;
-import org.VSQ.dna.search.ZhongYaoSearch;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.rest.medicine.RestMedicinePortImpl;
 

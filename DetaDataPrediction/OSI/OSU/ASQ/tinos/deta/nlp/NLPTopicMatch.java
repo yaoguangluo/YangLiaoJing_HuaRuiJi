@@ -11,9 +11,9 @@ import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
-import org.OSU.tinos.list.ListSwap;
 
 import OSI.OSU.ASQ.tinos.deta.statistic.LYG4DWithDoubleQuickSort4D;
+import OSI.OSU.tinos.list.ListSwap;
 public class NLPTopicMatch{
 	//<<NLP Algorithm of Matching The POS Scored Sentence>>.
 	//This prediction algorithm mostly used for matching the best sample sentence by using score method.  

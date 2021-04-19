@@ -31,14 +31,14 @@ import javax.swing.table.JTableHeader;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
-import org.OSU.tinos.list.ListSwap;
-import org.OSU.tinos.string.StringSwap;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.tcp.http.RestCall;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
 import MVQ.detaButton.DetaButton;
+import OSI.OSU.tinos.list.ListSwap;
+import OSI.OSU.tinos.string.StringSwap;
 //import ME.sample.nk.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class XynkPage extends Container implements MouseListener, KeyListener{

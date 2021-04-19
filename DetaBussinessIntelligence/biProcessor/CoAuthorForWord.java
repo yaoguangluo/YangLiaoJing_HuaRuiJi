@@ -21,13 +21,13 @@ import javax.swing.event.ChangeListener;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-import org.VSQ.dna.search.ZhongYaoSearch;
 
 import javax.media.opengl.*;
 
 import ME.sample.App;
 import MVQ.detaButton.DetaButton;
 import MVQ.detaSlider.DetaSlider;
+import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

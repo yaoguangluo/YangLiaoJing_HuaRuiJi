@@ -2,7 +2,8 @@ package org.ME.plsql.db.plsql.imp;
 import java.util.Map;
 
 import java.util.concurrent.ConcurrentHashMap;
-import org.tinos.language.plorm.PLORMInterf;
+
+import OSI.OSU.tinos.language.plorm.PLORMInterf;
 public class ExecPLSQLImp {
 	public static Map<String, Object> ExecPLSQL(String plsql, boolean mod) throws Exception{
 		//working for here

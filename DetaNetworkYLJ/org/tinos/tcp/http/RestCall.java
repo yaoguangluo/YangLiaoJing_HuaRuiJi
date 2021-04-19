@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.OSU.tinos.stable.Stable;
+import OSI.OSU.tinos.stable.Stable;
 public class RestCall {
 	
 	public static String getJson(String urlString, String jsonString) 
