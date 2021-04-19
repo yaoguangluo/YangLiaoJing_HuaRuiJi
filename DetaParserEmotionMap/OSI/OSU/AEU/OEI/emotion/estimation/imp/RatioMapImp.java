@@ -6,8 +6,8 @@ import java.util.Map;
 
 import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
 import OSI.OSU.AEU.OCI.emotion.estimation.RatioMap;
-import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.tinos.view.stable.StableData;
+import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.view.stable.StableData;
 
 public class RatioMapImp implements RatioMap{
 

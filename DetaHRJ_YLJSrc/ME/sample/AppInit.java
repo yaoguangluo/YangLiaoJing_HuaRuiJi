@@ -9,11 +9,11 @@ import ME.sample.app.hospital.DetaLabelStables;
 import MVQ.detaButton.CfxButton;
 import MVQ.detaSlider.DetaSlider;
 import MVQ.detaTabbedpane.DetabbedPane;
-import OSI.OSU.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import OSI.OSU.deta.boot.server.BootVPCSBackEnd;
-import OSI.OSU.deta.bootFrontEnd.server.BootVPCSFrontEnd;
-import OSI.OSU.tinos.vpcs.restServer.RestServer;
+import OSI.OSU.boot.server.BootVPCSBackEnd;
+import OSI.OSU.bootFrontEnd.server.BootVPCSFrontEnd;
+import OSI.OSU.vpcs.restServer.RestServer;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -53,8 +53,8 @@ import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import org.reportMap.DetaLabelConjunction;
 import org.tinos.listen.ReadToWav;
-import org.tinos.reportMap.DetaLabelConjunction;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
 	public void init(App app) throws IOException{

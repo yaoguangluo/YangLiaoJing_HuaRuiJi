@@ -6,9 +6,9 @@ import java.util.Map;
 import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
 import OSI.OSU.AEU.OCI.emotion.estimation.RatioMap;
 import OSI.OSU.AEU.OEI.emotion.estimation.imp.RatioMapImp;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
-import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
 import OSI.OSU.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
 public class EnvironmentInit{

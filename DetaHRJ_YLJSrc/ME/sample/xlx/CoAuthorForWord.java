@@ -25,8 +25,8 @@ import ME.sample.App;
 import ME.sample.PathLinkFile;
 import MVQ.detaButton.DetaButton;
 import MVQ.detaSlider.DetaSlider;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

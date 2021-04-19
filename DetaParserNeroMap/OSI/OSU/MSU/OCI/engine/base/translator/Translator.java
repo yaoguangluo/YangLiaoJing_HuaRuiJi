@@ -2,8 +2,8 @@ package OSI.OSU.MSU.OCI.engine.base.translator;
 import java.io.IOException;
 import java.util.List;
 
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.tinos.view.obj.Verbal;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 public interface Translator{	
 	void init(Analyzer analyzer) throws IOException;
 	String EnglishStringToChineseString(Analyzer analyzer, String EnglishString);

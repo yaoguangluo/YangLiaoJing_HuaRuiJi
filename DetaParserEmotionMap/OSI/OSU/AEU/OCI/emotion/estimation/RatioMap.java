@@ -2,7 +2,7 @@ package OSI.OSU.AEU.OCI.emotion.estimation;
 
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 
 public interface RatioMap {
 	Map<String, EmotionSample> getEmotionSampleMap(Map<Integer, WordFrequency> wordFrequencyMap

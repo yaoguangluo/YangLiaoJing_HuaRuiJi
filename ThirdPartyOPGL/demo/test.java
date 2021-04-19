@@ -6,14 +6,12 @@ import java.util.Map;
 import javax.swing.*;  
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import javax.media.opengl.*;
 
 import com.jogamp.opengl.util.FPSAnimator;  
 import com.jogamp.opengl.util.gl2.GLUT;
 
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import jogl.obj.yaoguangLuo.JOGLDrawOBJ;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 

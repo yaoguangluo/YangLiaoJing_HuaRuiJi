@@ -8,7 +8,7 @@ import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import org.tinos.reportMap.DetaLabelConjunction;
+import org.reportMap.DetaLabelConjunction;
 
 import ME.sample.app.hospital.DetaLabelStables;
 public class DetaLabel extends JLabel{

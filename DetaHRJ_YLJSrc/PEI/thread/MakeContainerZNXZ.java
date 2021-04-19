@@ -30,7 +30,7 @@ import AVQ.PVU.vedio.PlayerShow;
 import ME.sample.App;
 import MVQ.detaButton.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 public class MakeContainerZNXZ extends Thread implements Runnable{
 	public Container jpanelThird;
 	public App u;

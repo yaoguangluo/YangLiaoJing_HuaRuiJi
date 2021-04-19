@@ -10,7 +10,7 @@ import java.util.Vector;
 
 import com.google.gson.Gson;
 
-import OSI.OSU.tinos.stable.Stable;
+import OSI.OSU.stable.Stable;
 public class VectorSwap{
 	public static Map<String, Object> vectorToMap(
 			Vector<Object> vector){

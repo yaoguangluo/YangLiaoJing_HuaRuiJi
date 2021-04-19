@@ -2,9 +2,9 @@ package OSI.OSU.VPC.common.utils;
 
 import java.util.Date;
 
-import OSI.OSU.VPC.vpc.view.Token;
-import OSI.OSU.VPC.vpc.view.Usr;
-import OSI.OSU.VPC.vpc.view.UsrToken;
+import OSI.OSU.VPC.view.Token;
+import OSI.OSU.VPC.view.Usr;
+import OSI.OSU.VPC.view.UsrToken;
 
 public class TokenUtil {
 	public static Token getNewTokenFromUsrAndUsrToken(Usr usr, UsrToken usrToken) throws Exception {

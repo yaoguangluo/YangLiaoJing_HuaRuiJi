@@ -1,8 +1,8 @@
 package OSI.OSU.PEQ.behavior.test;
 import java.io.IOException;
 
-import OSI.OSU.AEU.tinos.behavior.ica.EducationRatio;
-import OSI.OSU.ASQ.PSU.tinos.view.stable.StableData;
+import OSI.OSU.AEU.behavior.ica.EducationRatio;
+import OSI.OSU.ASQ.PSU.view.stable.StableData;
 public class EducationLevelTest{
 	double[] EducationLevel;
 	double EducationDuration;

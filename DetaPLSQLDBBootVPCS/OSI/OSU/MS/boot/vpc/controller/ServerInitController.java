@@ -13,7 +13,7 @@ import OSI.OSU.MS.boot.vpc.process.TimeProcess;
 import OSI.OSU.MS.boot.vpc.sleeper.Sleeper;
 import OSI.OSU.MS.boot.vpc.sleeper.SleeperHall;
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
-import OSI.OSU.deta.config.Config;
+import OSI.OSU.config.Config;
 public class ServerInitController {
 	private static ServerSocket server;
 	//private static Properties properties;

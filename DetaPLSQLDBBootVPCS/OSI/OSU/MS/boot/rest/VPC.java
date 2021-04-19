@@ -15,7 +15,7 @@ import OSI.OSU.MS.boot.controller.DeleteController;
 import OSI.OSU.MS.boot.controller.InsertController;
 import OSI.OSU.MS.boot.controller.SelectController;
 import OSI.OSU.MS.boot.controller.UpdateController;
-import OSI.OSU.tinos.rest.medicine.RestMedicinePortImpl;
+import OSI.OSU.rest.medicine.RestMedicinePortImpl;
 import mapProcessor.VtoV;
 public class VPC {
 	public static String forward(App app, String string, Map<String, String> data)

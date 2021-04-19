@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.tinos.view.stable.StableData;
+import OSI.OSU.ASQ.PSU.view.stable.StableData;
 import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
 
 public class EmotionMapImp implements EmotionMap{

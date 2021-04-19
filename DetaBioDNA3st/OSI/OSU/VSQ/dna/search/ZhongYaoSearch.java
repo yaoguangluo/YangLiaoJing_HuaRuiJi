@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import ME.sample.App;
-import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.TokenPDI;
-import OSI.OSU.tinos.list.ListSwap;
+import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.TokenPDI;
+import OSI.OSU.list.ListSwap;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 
 public class ZhongYaoSearch{

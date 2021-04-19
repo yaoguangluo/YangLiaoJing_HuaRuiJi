@@ -19,8 +19,8 @@ import javax.swing.JTextPane;
 
 import MVQ.detaButton.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import OSI.OSU.tinos.neo.tts.ReadChinese;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.neo.tts.ReadChinese;
 public class EditPane extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;

@@ -11,7 +11,7 @@ import javax.swing.JTextPane;
 
 import ME.sample.App;
 import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
 public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{

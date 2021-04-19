@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.swing.JTextPane;
 
 import ME.sample.App;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 import OSI.OSU.OEU.node.sound.FFT.FFTFilterNodeInterface;
 import OSI.OSU.OEU.node.sound.GuassianWav2DFilter.GuassianWav2DFilterNodeInterface;
@@ -40,9 +40,7 @@ import OSI.OSU.PSU.node.movie.aviToLyg.AVItoLYGNodeInterface;
 import OSI.OSU.PSU.node.movie.movieTransfer.MovieTransferNodeInterface;
 import OSI.OSU.VSQ.node.movie.lygPlayer.LYGPlayerNodeInterface;
 import OSI.OSU.VSQ.node.movie.lygRead.LYGReadNodeInterface;
-//import OSI.OSU.SI.OVI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addPGSearchPage.addPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
-//import OSI.OSU.SI.OVI.OSQ.AVQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dNA3DShow.dNA3DShowNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
-import OSI.OSU.deta.node.ai.xlsReaderNode.XlsReaderNodeInterface;
+import OSI.OSU.node.ai.xlsReaderNode.XlsReaderNodeInterface;
 
 public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 	JTextPane text;

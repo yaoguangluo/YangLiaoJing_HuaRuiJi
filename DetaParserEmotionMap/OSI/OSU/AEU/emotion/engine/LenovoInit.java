@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.Map;
 
 import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
-import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import OSI.OSU.OCI.tinos.sensing.ortho.fhmm.SensingMap;
-import OSI.OSU.OEI.tinos.sensing.ortho.fhmm.imp.SensingMapImp;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.OCI.sensing.ortho.fhmm.SensingMap;
+import OSI.OSU.OEI.sensing.ortho.fhmm.imp.SensingMapImp;
 public class LenovoInit{
 	public SensingMap getSensingMap() {
 		return sensingMap;
