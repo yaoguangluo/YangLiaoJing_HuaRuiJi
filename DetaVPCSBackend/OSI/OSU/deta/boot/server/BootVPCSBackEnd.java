@@ -22,17 +22,28 @@ public class BootVPCSBackEnd extends Thread{
 		properties = new Properties();
 	}
 
-	public BootVPCSBackEnd() {
+	public BootVPCSBackEnd(Analyzer analyzer) throws IOException {
+		if(null== analyzer) {
+			this.analyzer = new CogsBinaryForestAnalyzerImp();
+			this.analyzer.initMixed();
+		}else {
+			this.analyzer= analyzer;
+		}
 		
 	}
+	public BootVPCSBackEnd() throws IOException {	
+	}
+	
     // 因为首页已经init了,我之后会改成analyzer带入就是了. 罗瑶光20210420
 	public void init() {
 		try {
 			//port = Integer.parseInt(properties.getProperty("port"));
 			port= Config.detaVPCSBackEndPort;
 			server = new ServerSocket(port);
-			analyzer = new CogsBinaryForestAnalyzerImp();
-			analyzer.initMixed();
+			if(null== this.analyzer) {
+				this.analyzer = new CogsBinaryForestAnalyzerImp();
+				this.analyzer.initMixed();
+			}
 			emotionMap = new EmotionMapImp(); 
 			emotionMap.initNegativeMap();
 			emotionMap.initPositiveMap();

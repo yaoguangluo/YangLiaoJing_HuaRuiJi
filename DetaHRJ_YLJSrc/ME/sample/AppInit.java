@@ -615,7 +615,7 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				//backend
-				new BootVPCSBackEnd().start();
+				new BootVPCSBackEnd(app.analyzer).start();
 				Thread.sleep(6);
 				if(app.appConfig.SectionJPanel.jTextPane!= null) {
 					String text= app.appConfig.SectionJPanel.jTextPane.getText();
