@@ -7,7 +7,7 @@ import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 
 import javax.media.opengl.*;
 
@@ -52,7 +52,7 @@ public class test extends JPanel implements GLEventListener {
 		setSize(700,450);  
 		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 		GLProfile glp = GLProfile.getDefault();
-		GLCapabilities glcaps=new GLCapabilities(glp);          //鑴欒尃鑴楃瘬鑴欓垾姣伄妫靛厽鈷氣懇鍋撳暘鑴�?瀯鑴欒尃鑴楁紡鑴欏�?�鑺掗垾姣優鍋埗鍐ｏ拷鑺掗埀顑藉妷鑴欒尃鑴楁ゼ鑴欏�?�鑺掗垾姣優鈶╋拷鍨勮剻閳ノ斥懇鍋撻埄鈷氬叅鎹�?伄銇ｅ啠锟�?�剹楣胯剻鍨勮姃閳ユ顑炲伄濮戝叅鎹�?伄銉冨厽鈷氣懇锟藉崲鑴楁幊鑴欑�?�鑴楅┐鑴楅檰鑴欒尃鑴楁悅鑴欓垾姣伄顐�鍐ｏ拷鑴楄伣鑴欒尃鑴楃瘬鑴欓垾纬鍋妴鍏熲挌鈶╋拷鍗㈣�?闅嗚剻鑼犺剹鎼傝剻閳ノ冲伄鈭跺厽鈷氣懇锟藉崲鑴滄埉鑴欒尃鑴楅檱鑴欓垾姣伄骞诲啠锟�?�剹鎷㈣剻鑼犺剹鎼傝剻閳ユ鍋妴鍏燁嚫鍋５鍋煫鍏ゆ崡鍋冲啠锟借姃閳ь儬鎾佸厽鈷氣懇锟藉崲鑴楁幊鑴欒尃鑴楁ゼ鑴欓垾纬鈶╁亾閳┾挌鍐ｏ拷鑴楁綖鑴欒尃鑴楁ゼ鑴欓垾濮戔懇鍋撹伣鑴欓垾姣伄锟�?  
+		GLCapabilities glcaps=new GLCapabilities(glp);          
 		GLCanvas canvas=new GLCanvas(glcaps);  
 		canvas.addGLEventListener(this);  
 		canvas.setBounds(0, 0, 620, 430);
@@ -70,7 +70,6 @@ public class test extends JPanel implements GLEventListener {
 		sliderx.addChangeListener( 
 				new ChangeListener()  {    
 					public void stateChanged(ChangeEvent event)  {    
-						//閸欐牕鍤鎴濆З閺夛紕娈戦崐纭风礉楠炶泛�?弬鍥ㄦ拱娑擃厽妯夌粈鍝勫毉閺夛�? 
 						JSlider source = (JSlider) event.getSource();  
 						xrot= source.getValue();  
 					}
@@ -83,7 +82,6 @@ public class test extends JPanel implements GLEventListener {
 		slidery.addChangeListener( 
 				new ChangeListener()  {    
 					public void stateChanged(ChangeEvent event)  {    
-						//閸欐牕鍤鎴濆З閺夛紕娈戦崐纭风礉楠炶泛�?弬鍥ㄦ拱娑擃厽妯夌粈鍝勫毉閺夛�? 
 						JSlider source = (JSlider) event.getSource();  
 						yrot= source.getValue();  
 					}
@@ -96,7 +94,6 @@ public class test extends JPanel implements GLEventListener {
 		sliderz.addChangeListener( 
 				new ChangeListener()  {    
 					public void stateChanged(ChangeEvent event)  {    
-						//閸欐牕鍤鎴濆З閺夛紕娈戦崐纭风礉楠炶泛�?弬鍥ㄦ拱娑擃厽妯夌粈鍝勫毉閺夛�? 
 						JSlider source = (JSlider) event.getSource();  
 						zrot= source.getValue();  
 					}

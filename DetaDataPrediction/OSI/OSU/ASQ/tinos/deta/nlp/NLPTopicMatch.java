@@ -7,11 +7,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
-import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-import org.ASQ.PSU.tinos.view.stable.StableData;
-
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.tinos.view.stable.StableData;
 import OSI.OSU.ASQ.tinos.deta.statistic.LYG4DWithDoubleQuickSort4D;
 import OSI.OSU.tinos.list.ListSwap;
 public class NLPTopicMatch{

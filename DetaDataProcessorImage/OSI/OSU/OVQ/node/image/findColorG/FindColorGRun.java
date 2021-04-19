@@ -1,0 +1,35 @@
+package OSI.OSU.OVQ.node.image.findColorG;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import PEU.movieProcessorYLJ.LYGFileIO;
+public class FindColorGRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
+	private static final long serialVersionUID = 1L;
+	public int value=0;
+	public String filepath;
+	public FindColorGRun( ) throws IOException{	
+		super();
+ 	}
+	public void run(final FindColorGView SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException{
+		System.out.println("runed"+value); 
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.path=new String(filepath); 
+  		BufferedImage image = ImageIO.read(new File(filepath));
+  		
+  		//image = new Strech().Processor(image,0.1,0.9); 
+  		
+  		//image = new Median().Processor(image,0.1,0.9); 
+	      	//guassian filter
+  		//image = new Guassian().Processor(image,3,3,1.6);
+    	//lygimage to jpeg
+  		
+  		
+  		//String pathBin = filepath;//output path
+	    //File outputBin = new File(pathBin);
+	    //mageIO.write(image, "jpg", outputBin);
+  		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout = new LYGFileIO();
+	    SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.lygout.image = image;
+	}
+}

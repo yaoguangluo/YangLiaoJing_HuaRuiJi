@@ -25,10 +25,16 @@ import MVQ.detaButton.DetaButton;
 import MVQ.detaTabbedpane.DetabbedPane;
 import MVQ.detaTextfield.CfxTextField;
 import MVQ.detaTextpane.CfxTextPane;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.Verbal;
 import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSU.OCI.engine.base.translator.Translator;
+import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.FullDNATokenPDI;
 import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
+import OSI.OSU.tinos.neo.tts.ReadChinese;
+import OSI.OSU.tinos.rest.medicine.RestMedicinePortImpl;
 import OSI.OSU.tinos.string.StringSwap;
 import SP.SoundWaveJPanel;
 
@@ -65,13 +71,6 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.BadLocationException;
-
-import org.ASQ.PSU.tinos.view.obj.Verbal;
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import org.MSU.OCI.engine.base.translator.Translator;
-import org.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import org.tinos.neo.tts.ReadChinese;
-import org.tinos.rest.medicine.RestMedicinePortImpl;
 
 import biProcessor.CoAuthorForWord;
 import mapProcessor.VtoV;

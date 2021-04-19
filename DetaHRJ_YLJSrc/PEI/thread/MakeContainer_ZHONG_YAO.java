@@ -18,11 +18,10 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import AVQ.OVU.semaphone.TaskMakeCoWorker;
 import ME.sample.App;
 import ME.sample.zhongYao.ZhongYaoTable;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseListener{
 	public Container jpanelFirst;
 	public App u;

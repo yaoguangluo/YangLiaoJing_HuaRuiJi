@@ -28,14 +28,12 @@ import javax.swing.JPanel;
 
 import javax.swing.JTabbedPane;
 
-
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-
 import ME.sample.App;
 import MVQ.detaButton.DetaButton;
 import MVQ.detaButton.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.tinos.list.ListSwap;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;

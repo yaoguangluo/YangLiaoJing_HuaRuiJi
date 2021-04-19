@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
 encoding//DetaDataProcessorYLJ/PEU/NLPProcessorYLJ/StopSymbol_UTF8.java=UTF-8
-encoding//DetaParserSensingMap/org/PEQ/tinos/sensing/test/RNN_IDETest.java=UTF-8
-encoding//DetaParserWordSegment/org/ASQ/PSU/tinos/test/DemoEX.java=UTF-8
-encoding//DetaParserWordSegment/org/ASQ/PSU/tinos/test/DemoPOS.java=UTF-8
-encoding//DetaParserWordSegment/org/ASQ/PSU/tinos/test/DemoPOSforSpecial_UTF8.java=UTF-8
+encoding//DetaParserSensingMap/OSI/OSU/PEQ/tinos/sensing/test/RNN_IDETest.java=UTF-8
+encoding//DetaParserWordSegment/OSI/OSU/ASQ/PSU/tinos/test/DemoEX.java=UTF-8
+encoding//DetaParserWordSegment/OSI/OSU/ASQ/PSU/tinos/test/DemoPOS.java=UTF-8
+encoding//DetaParserWordSegment/OSI/OSU/ASQ/PSU/tinos/test/DemoPOSforSpecial_UTF8.java=UTF-8
 encoding//DetaUnicornETLNodeNeiWaiKe/OSI/OSU/SI/OSI/AVI/AEI/ACI/ASI/OVI/OEI/OCI/OSI/PVI/PEI/PCI/PSI/addLaoNianKePage/Dictionary.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/SimpleTokenizer.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/USEnglishTokenizer.java=UTF-8

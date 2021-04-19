@@ -28,16 +28,15 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import org.ASQ.PSU.tinos.view.obj.Verbal;
-import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-import org.ASQ.PSU.tinos.view.stable.StableData;
-import org.tinos.neo.tts.ReadChinese;
-
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
 import MVQ.detaButton.DetaButton;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.Verbal;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.tinos.view.stable.StableData;
 import OSI.OSU.tinos.list.ListSwap;
+import OSI.OSU.tinos.neo.tts.ReadChinese;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class CecilPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

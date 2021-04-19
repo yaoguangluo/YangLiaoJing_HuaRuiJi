@@ -24,14 +24,13 @@ import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import AVQ.OEQ.cap.Monitor;
 import AVQ.PVU.vedio.PlayerControl;
 import AVQ.PVU.vedio.PlayerShow;
 import ME.sample.App;
 import MVQ.detaButton.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 public class MakeContainerZNXZ extends Thread implements Runnable{
 	public Container jpanelThird;
 	public App u;

@@ -8,10 +8,9 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import ME.sample.App;
 import ME.sample.xiYiNeiKe.XynkPage;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 public class MakeContainerXYNK extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

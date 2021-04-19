@@ -7,10 +7,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import ME.sample.App;
 import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.GUISample;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 public class MakeContainerSJFX extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

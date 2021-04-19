@@ -4,9 +4,8 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import ME.sample.App;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
 import biProcessor.CoAuthorForWord;
 

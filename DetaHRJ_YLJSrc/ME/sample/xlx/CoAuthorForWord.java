@@ -19,16 +19,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-
 import javax.media.opengl.*;
 
 import ME.sample.App;
 import ME.sample.PathLinkFile;
 import MVQ.detaButton.DetaButton;
 import MVQ.detaSlider.DetaSlider;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.tinos.view.obj.WordFrequency;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

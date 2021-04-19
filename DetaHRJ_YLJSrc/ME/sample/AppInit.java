@@ -4,12 +4,16 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import org.tinos.vpcs.restServer.RestServer;
 
 import ME.sample.app.hospital.DetaLabelStables;
 import MVQ.detaButton.CfxButton;
 import MVQ.detaSlider.DetaSlider;
 import MVQ.detaTabbedpane.DetabbedPane;
+import OSI.OSU.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
+import OSI.OSU.deta.boot.server.BootVPCSBackEnd;
+import OSI.OSU.deta.bootFrontEnd.server.BootVPCSFrontEnd;
+import OSI.OSU.tinos.vpcs.restServer.RestServer;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -49,10 +53,6 @@ import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import org.ASQ.PSU.OEI.tinos.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
-import org.deta.boot.server.BootVPCSBackEnd;
-import org.deta.bootFrontEnd.server.BootVPCSFrontEnd;
 import org.tinos.listen.ReadToWav;
 import org.tinos.reportMap.DetaLabelConjunction;
 public class AppInit {	

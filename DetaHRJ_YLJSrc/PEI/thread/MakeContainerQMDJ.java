@@ -19,11 +19,10 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import ME.sample.App;
 import ME.sample.xlx.CoAuthorForWord;
 import MVQ.detaButton.DetaButton;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;
 	public App u;

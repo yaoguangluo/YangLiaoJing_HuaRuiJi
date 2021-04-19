@@ -24,12 +24,12 @@ import org.bytedeco.javacpp.opencv_core.IplImage;
 import org.bytedeco.javacv.Java2DFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
-import org.tinos.freetts.thread.read.ReadEnglish;
 
 import MVQ.detaButton.DetaButton;
 import OSI.OSU.ASQ.tinos.deta.image.ImagePixGroupFilter;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.tin.catalytic.procedure.pde.RangePDI;
 import OSI.OSU.initon.pde.DecadeToPDS;
+import OSI.OSU.tinos.freetts.thread.read.ReadEnglish;
 import OSI.OSU.tinos.image.ToolkitImageToBufferImage;
 
 @SuppressWarnings("deprecation")

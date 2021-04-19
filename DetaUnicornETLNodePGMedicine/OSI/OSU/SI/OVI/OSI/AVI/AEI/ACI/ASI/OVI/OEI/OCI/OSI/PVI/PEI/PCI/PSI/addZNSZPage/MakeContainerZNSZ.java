@@ -21,9 +21,8 @@ import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
-
 import ME.sample.App;
+import OSI.OSU.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import PEU.waveProcessorYLJ.DFT;
 
 public class MakeContainerZNSZ extends Thread implements Runnable{
