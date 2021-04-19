@@ -1,7 +1,7 @@
 package OSI.OSU.language.plorm;
 import java.util.Map;
 
-import org.ME.plsql.db.plsql.imp.ExecPLSQLImp;
+import OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp;
 public class PLORMImpl implements PLORMInterf{
 	private String PLSQL= "";
 	private String[] PLSQLArray;

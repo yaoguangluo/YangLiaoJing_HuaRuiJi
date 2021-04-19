@@ -29,8 +29,8 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
 import ME.sample.App;
-import MVQ.detaButton.DetaButton;
-import MVQ.detaButton.YLJShowButton;
+import MVQ.button.DetaButton;
+import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;

@@ -31,7 +31,7 @@ import javax.swing.table.JTableHeader;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
@@ -800,7 +800,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 						   		"culumnValue:ÆäËû:"+ table.getValueAt(i, 12).toString().replace(":", "@biky@")+ ";";
 						   		
 					try {
-						org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+						OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
 					}catch(Exception e1) {
 						jTabbedpanel.validate();
 						data.validate();

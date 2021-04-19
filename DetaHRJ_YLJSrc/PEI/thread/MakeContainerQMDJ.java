@@ -21,7 +21,7 @@ import javax.swing.JTabbedPane;
 
 import ME.sample.App;
 import ME.sample.xlx.CoAuthorForWord;
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;

@@ -21,10 +21,10 @@ import ME.sample.xiYiYaoCai.XyscPage;
 import ME.sample.zhongYiFuChan.FqzPage;
 import ME.sample.zhongYiNeiKeXue.ZynkxPage;
 import ME.sample.zhongYiZhenDuanXue.ZyzdxPage;
-import MVQ.detaButton.DetaButton;
-import MVQ.detaTabbedpane.DetabbedPane;
-import MVQ.detaTextfield.CfxTextField;
-import MVQ.detaTextpane.CfxTextPane;
+import MVQ.button.DetaButton;
+import MVQ.tabbedpane.DetabbedPane;
+import MVQ.textfield.CfxTextField;
+import MVQ.textpane.CfxTextPane;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.MSQ.sets.stable.StableData;
@@ -558,7 +558,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							"culumnValue:¥Ó≈‰:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 13).toString().replace(":", "@biky@"))+ ";" +  
 							"culumnValue:≥£º˚“©:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 14).toString().replace(":", "@biky@"))+ ";";
 					try {
-						org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+						OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
 					}catch(Exception e1) {
 						e1.printStackTrace();
 					}

@@ -29,7 +29,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import PEI.thread.MakeContainerZNSZ;
 import PEU.movieProcessorYLJ.LYGFileIO;

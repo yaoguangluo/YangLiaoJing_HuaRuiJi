@@ -17,7 +17,7 @@ import java.util.Map;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.neo.tts.ReadChinese;
@@ -75,7 +75,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 
 	private void addArabicButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("∞¢”Ô");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("∞¢”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -144,7 +144,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addRussianButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("∂Ì”Ô");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("∂Ì”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -213,7 +213,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addTranditionButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("∑±ÃÂ");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("∑±ÃÂ");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -283,7 +283,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addJapanButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("»’”Ô");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("»’”Ô");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -353,7 +353,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addPinYinButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("∆¥“Ù");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("∆¥“Ù");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			@Override
@@ -417,7 +417,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	}
 	
 	private void addReadButton() {
-		MVQ.detaButton.DetaButton button= new MVQ.detaButton.DetaButton("‘ƒ∂¡");
+		MVQ.button.DetaButton button= new MVQ.button.DetaButton("‘ƒ∂¡");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
 			ReadChinese readChinese= new ReadChinese();

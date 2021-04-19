@@ -6,13 +6,13 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import ME.sample.app.hospital.DetaLabelStables;
-import MVQ.detaButton.CfxButton;
-import MVQ.detaSlider.DetaSlider;
-import MVQ.detaTabbedpane.DetabbedPane;
+import MVQ.button.CfxButton;
+import MVQ.slider.DetaSlider;
+import MVQ.tabbedpane.DetabbedPane;
 import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import OSI.OSU.boot.server.BootVPCSBackEnd;
-import OSI.OSU.bootFrontEnd.server.BootVPCSFrontEnd;
+import OSI.OSU.PCS.server.BootVPCSBackEnd;
+import OSI.OSU.VPC.server.BootVPCSFrontEnd;
 import OSI.OSU.vpcs.restServer.RestServer;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
@@ -203,7 +203,7 @@ public class AppInit {
 			app.jsp_name= new JScrollPane(app.name());
 			app.jsp_name.setBounds(10+50, 6, 580- 300, 50);
 
-			MVQ.detaButton.DetaButton jlabel_button= new MVQ.detaButton.DetaButton("หั:");
+			MVQ.button.DetaButton jlabel_button= new MVQ.button.DetaButton("หั:");
 			jlabel_button.setBounds(2, 6, 56, 23);
 			jlabel_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -229,7 +229,7 @@ public class AppInit {
 				}
 			});
 
-			MVQ.detaButton.DetaButton yin_button= new MVQ.detaButton.DetaButton("า๔:");
+			MVQ.button.DetaButton yin_button= new MVQ.button.DetaButton("า๔:");
 			yin_button.setBounds(2, 33, 56, 23);
 			yin_button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {

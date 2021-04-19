@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import MVQ.detaLabel.DetaLabel;
+import MVQ.label.DetaLabel;
 //Éè¼Æ ÂÞÑþ¹â
 public class DetaLabelConjunction{
 	public static DetaLabelConjunction detaLabelConjunction;

@@ -20,7 +20,7 @@ import ME.sample.App;
 import ME.sample.DictionaryFromDB;
 import ME.sample.PathLinkFile;
 import ME.sample.TableSorterZYNK;
-import MVQ.detaTableRender.ColorTableRender;
+import MVQ.tableRender.ColorTableRender;
 
 public class ZhongYaoTable implements MouseListener {
 	private App app;

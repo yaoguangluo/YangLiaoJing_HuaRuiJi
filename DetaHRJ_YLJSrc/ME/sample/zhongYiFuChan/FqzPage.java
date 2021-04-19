@@ -33,7 +33,7 @@ import javax.swing.table.JTableHeader;
 
 import ME.sample.App;
 import ME.sample.TableSorterZYNK;
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;

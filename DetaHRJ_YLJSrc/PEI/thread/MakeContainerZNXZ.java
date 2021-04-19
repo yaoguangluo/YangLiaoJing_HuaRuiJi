@@ -28,7 +28,7 @@ import AVQ.OEQ.cap.Monitor;
 import AVQ.PVU.vedio.PlayerControl;
 import AVQ.PVU.vedio.PlayerShow;
 import ME.sample.App;
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 public class MakeContainerZNXZ extends Thread implements Runnable{

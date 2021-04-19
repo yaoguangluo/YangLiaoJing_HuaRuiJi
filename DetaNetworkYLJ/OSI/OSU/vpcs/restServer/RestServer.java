@@ -3,7 +3,7 @@ package OSI.OSU.vpcs.restServer;
 import java.io.IOException;
 
 import ME.sample.App;
-import OSI.OSU.MS.boot.vpc.controller.ServerInitController;
+import OSI.OSU.MSV.PCS.controller.ServerInitController;
 
 public class RestServer extends Thread implements Runnable{
 	private App app;

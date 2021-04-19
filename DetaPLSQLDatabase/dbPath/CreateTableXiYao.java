@@ -1,16 +1,16 @@
 package dbPath;
 
-import OSI.OSU.MS.boot.vpc.controller.RequestFilterController;
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
+import OSI.OSU.MSV.PCS.controller.RequestFilterController;
 
 public class CreateTableXiYao{
 	public static void main(String[] argv) throws Exception {
 		//init
-		org.plsql.common.utils.DetaUtil.initDB();
+		OSI.OSU.plsql.common.utils.DetaUtil.initDB();
 		System.out.println("----德塔VPCS数据库服务器DMA确认:成功！");
 		RequestFilterController.initBlockList();
 		System.out.println("----德塔VPCS数据库服务器IP过滤服务启动:成功！");
-		org.MS.plsql.cache.DetaDBBufferCacheManager.reflection();
+		OSI.OSU.MS.plsql.cache.DetaDBBufferCacheManager.reflection();
 		System.out.println("----德塔VPCS数据库服务器启动整库过程映射服务:成功！");
 		DatabaseLogHall.createBinLogHall();
 		System.out.println("----德塔VPCS数据库服务器启动整库过程映射服务:成功！");
@@ -33,7 +33,7 @@ public class CreateTableXiYao{
 			   		"culumnName:uk:其他:string;"; 
 
 		try {
-			org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

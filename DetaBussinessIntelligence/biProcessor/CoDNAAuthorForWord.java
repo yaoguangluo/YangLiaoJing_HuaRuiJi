@@ -22,8 +22,8 @@ import javax.swing.event.ChangeListener;
 import javax.media.opengl.*;
 
 import ME.sample.App;
-import MVQ.detaButton.DetaButton;
-import MVQ.detaSlider.DetaSlider;
+import MVQ.button.DetaButton;
+import MVQ.slider.DetaSlider;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;

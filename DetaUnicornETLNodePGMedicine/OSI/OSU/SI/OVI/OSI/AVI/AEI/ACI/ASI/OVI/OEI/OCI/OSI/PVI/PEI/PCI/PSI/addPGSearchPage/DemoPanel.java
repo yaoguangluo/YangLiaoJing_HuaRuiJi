@@ -10,7 +10,7 @@ import java.awt.event.MouseWheelListener;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-import MVQ.detaButton.YLJShowButton;
+import MVQ.button.YLJShowButton;
 
 public class DemoPanel extends JPanel implements MouseListener, MouseMotionListener, MouseWheelListener{
 	/**

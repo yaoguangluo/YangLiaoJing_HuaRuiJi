@@ -44,7 +44,7 @@ public class DictionaryFromDB{
 				"condition:or:ID|<=|3000;";
 				//"condition:or:ID|==|2;";
 		try {
-			map= org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			map= OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}
@@ -69,7 +69,7 @@ public class DictionaryFromDB{
 				"condition:or:ID|<=|3000;";
 				//"condition:or:ID|==|2;";
 		try {
-			map= org.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			map= OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

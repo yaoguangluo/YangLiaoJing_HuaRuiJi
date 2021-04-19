@@ -21,8 +21,8 @@ import javax.swing.event.ChangeListener;
 import javax.media.opengl.*;
 
 import ME.sample.App;
-import MVQ.detaButton.DetaButton;
-import MVQ.detaSlider.DetaSlider;
+import MVQ.button.DetaButton;
+import MVQ.slider.DetaSlider;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;

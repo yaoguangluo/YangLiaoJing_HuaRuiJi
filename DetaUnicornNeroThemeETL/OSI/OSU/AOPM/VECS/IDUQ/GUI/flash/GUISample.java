@@ -44,7 +44,7 @@ import javax.swing.tree.TreePath;
 
 import ME.sample.App;
 import ME.sample.DetaBuy;
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.MSI.OEI.document.save.SaveAndUpdateFile;

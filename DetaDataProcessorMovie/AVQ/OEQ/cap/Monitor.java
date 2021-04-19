@@ -25,7 +25,7 @@ import org.bytedeco.javacv.Java2DFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
 
-import MVQ.detaButton.DetaButton;
+import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.image.ImagePixGroupFilter;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.RangePDI;
 import OSI.OSU.freetts.thread.read.ReadEnglish;
