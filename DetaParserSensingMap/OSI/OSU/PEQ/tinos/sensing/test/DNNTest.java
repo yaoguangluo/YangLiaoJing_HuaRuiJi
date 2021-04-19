@@ -44,8 +44,10 @@ public class DNNTest{
 		return dNNMatrix;
 	}
 	
-	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, Analyzer analyzer, String string) throws IOException, InstantiationException
+	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, Analyzer analyzer, String string) 
+			throws IOException, InstantiationException
 	, IllegalAccessException{
+		//RNN  深度此距离计算 开始注释 罗瑶光
 		RNN_IDETest rNN_IDETest = new RNN_IDETest();
 		String[][] rnn= rNN_IDETest.getIDEMatrixExcludeAnalyzer(sensingTest, ann, analyzer, string);
 		rnn= getPOSPCARnnMatrix(rnn);

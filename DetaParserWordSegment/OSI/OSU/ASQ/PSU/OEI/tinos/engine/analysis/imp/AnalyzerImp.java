@@ -49,15 +49,15 @@ public class AnalyzerImp implements Analyzer {
 		neroController= new NEROControllerOneTimeImp();
 		nlpController= new NLPControllerImp();
 		posController= new POSControllerImp();
-		quick6DLuoYaoguangSort = new Quick6DLuoYaoguangSort3DMapImp();
-		forestRoots=fHMMList.getMap();
-		forestsRoots=fHMMList.getMaps();
-		wordsForest=fHMMList.getPosCnToCn();
-		wordsForests=fHMMList.getWordsForests();
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
+		forestRoots= fHMMList.getMap();
+		forestsRoots= fHMMList.getMaps();
+		wordsForest= fHMMList.getPosCnToCn();
+		wordsForests= fHMMList.getWordsForests();
 	}
 
 	public void initMixed() throws IOException {
-		this.fHMMList=new FMHMMListOneTimeImp();
+		this.fHMMList= new FMHMMListOneTimeImp();
 		fHMMList.indexMixed();
 		fHMMList.indexPosEnToCn();
 		fHMMList.indexPosEnToEn();
@@ -74,12 +74,12 @@ public class AnalyzerImp implements Analyzer {
 		neroController= new NEROControllerOneTimeImp();
 		nlpController= new NLPControllerImp();
 		posController= new POSControllerImp();
-		quick6DLuoYaoguangSort = new Quick6DLuoYaoguangSort3DMapImp();
-		forestRoots=fHMMList.getMap();
-		forestsRoots=fHMMList.getMaps();
-		wordsForest=fHMMList.getPosCnToCn();
-		wordsForests=fHMMList.getWordsForests();
-		emotionMap = new EmotionMapImp(); 
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
+		forestRoots= fHMMList.getMap();
+		forestsRoots= fHMMList.getMaps();
+		wordsForest= fHMMList.getPosCnToCn();
+		wordsForests= fHMMList.getWordsForests();
+		emotionMap= new EmotionMapImp(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();

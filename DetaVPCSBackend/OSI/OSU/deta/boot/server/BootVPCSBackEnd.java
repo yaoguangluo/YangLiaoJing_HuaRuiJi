@@ -25,7 +25,7 @@ public class BootVPCSBackEnd extends Thread{
 	public BootVPCSBackEnd() {
 		
 	}
-
+    // 因为首页已经init了,我之后会改成analyzer带入就是了. 罗瑶光20210420
 	public void init() {
 		try {
 			//port = Integer.parseInt(properties.getProperty("port"));

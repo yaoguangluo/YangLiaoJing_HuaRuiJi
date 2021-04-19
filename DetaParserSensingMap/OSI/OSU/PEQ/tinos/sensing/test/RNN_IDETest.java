@@ -57,9 +57,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("Âä®")? 16: 0;
-				popFactor += pos.get(word).contains("Âêç")? 4: 0;
-				popFactor += pos.get(word).contains("ÂΩ¢")? 2: 0;	
+				popFactor += pos.get(word).contains("∂Ø")? 16: 0;
+				popFactor += pos.get(word).contains("√˚")? 4: 0;
+				popFactor += pos.get(word).contains("–Œ")? 2: 0;	
 			}
 			ideMatrix[ideMatrixCount][0] = word;
 			ideMatrix[ideMatrixCount][1] = "" + popFactor;
@@ -114,9 +114,9 @@ public class RNN_IDETest{
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor += pos.get(word).contains("Âä®")? 16: 0;
-				popFactor += pos.get(word).contains("Âêç")? 4: 0;
-				popFactor += pos.get(word).contains("ÂΩ¢")? 2: 0;	
+				popFactor += pos.get(word).contains("∂Ø")? 16: 0;
+				popFactor += pos.get(word).contains("√˚")? 4: 0;
+				popFactor += pos.get(word).contains("–Œ")? 2: 0;	
 			}
 
 			ideMatrix[ideMatrixCount][0] = word;
@@ -129,6 +129,7 @@ public class RNN_IDETest{
 	}
 
 	public String[][] getIDEMatrixExcludeAnalyzer(SensingTest sensingTest, String[][] ann, Analyzer analyzer, String string) {
+		//√Ù∏–∂» “‚ ∂ sensing
 		String[][] sensingMatrix = ann;
 		Map<String, List<Double>> map = new HashMap<>();
 		for(int i = 0; i < sensingMatrix.length; i++) {
@@ -142,6 +143,7 @@ public class RNN_IDETest{
 		Iterator<String> setsIterator= sets.iterator();
 		double count= 1;
 		//map position
+		//ø™ ºº∆À„Õºæ‡¿Î
 		while(setsIterator.hasNext()) {
 			String word= setsIterator.next();
 			if(map.containsKey(word)) {
@@ -157,32 +159,33 @@ public class RNN_IDETest{
 		while(mapIterator.hasNext()) {
 			String word= mapIterator.next();
 			List<Double> list= map.get(word);
-			double dovFactor= 1;
-			double popFactor= 0;
-			double eopFactor= 1;
-			double dovCount= 1;
+			double dovFactor= 1; //æ‡¿Îdistanceµƒæ‡¿Î distance of same vebals
+			double popFactor= 0; // ”Ô“Âæ‡¿Î part of speech
+			double eopFactor= 1; // Œª“∆æ‡¿Î eclid of parts Œ“»´≤øª·◊¢ Õ µΩ¥¶ «√®ƒÂ
+			double dovCount= 1; // º∆ ˝
 			for(int i= 0; i< list.size(); i++) {
 				for(int j= i + 1; j< list.size(); j++) {
 					dovCount++;
 					dovFactor+= list.get(j);
 				}
-				dovFactor+= Math.abs(list.get(i)- dovFactor);
-				eopFactor+= (eopFactor+ list.get(i))/ 2;
+				dovFactor+= Math.abs(list.get(i)- dovFactor); //∆Ω∑Ω∫Õæ‡¿Îø™∑Ω
+				eopFactor+= (eopFactor+ list.get(i))/ 2;// ≈∑ª˘¿Ôµ¬”√¿¥º∆À„Ïÿ‘ˆ
 			}
 			//pos normalization
 			if(pos.containsKey(word)) {
-				popFactor+= pos.get(word).contains("Âêç")? 16: 0;
-				popFactor+= pos.get(word).contains("Âä®")? 5: 0;
-				popFactor+= pos.get(word).contains("Âåª")? 3: 0;
-				popFactor+= pos.get(word).contains("Ë∞ì")? 3: 0;
-				popFactor+= pos.get(word).contains("ÂΩ¢")? 2: 0;
+				popFactor+= pos.get(word).contains("√˚")? 16: 0;
+				popFactor+= pos.get(word).contains("∂Ø")? 5: 0;
+				popFactor+= pos.get(word).contains("“Ω")? 3: 0;
+				popFactor+= pos.get(word).contains("ŒΩ")? 3: 0;
+				popFactor+= pos.get(word).contains("–Œ")? 2: 0;
 			}
 			ideMatrix[ideMatrixCount][0]= word;
 			ideMatrix[ideMatrixCount][1]= ""+ popFactor;
-			ideMatrix[ideMatrixCount][2]= ""+ dovFactor/ dovCount;
+			ideMatrix[ideMatrixCount][2]= ""+ dovFactor/ dovCount;// ∆Ωæ˘distance ˝
 			ideMatrix[ideMatrixCount][3]= ""+ eopFactor;
 			ideMatrixCount++;
 		}
+		//’‚¿Ô‘Ÿ2018ƒÍ ◊Ó¿œµƒ∞Ê±æŒ“”√µƒ «system¿¥Ω¯––print, ∫Û¿¥∞¸◊∞≥…∫Ø ˝Œ“æÕ◊¢ ÕµÙ¡À,∫Û¿¥”≈ªØæÕ…æ»•¡Àsystem µ¬¥Ú”°∫Ø ˝,  ¬ﬁ—˛π‚20210420
 		return ideMatrix;
 	}
 }
