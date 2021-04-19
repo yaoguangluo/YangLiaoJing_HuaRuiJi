@@ -10,7 +10,8 @@ import org.OCI.emotion.ortho.fhmm.EmotionMap;
 import org.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
 import org.deta.boot.thread.SocketThread;
 import org.deta.boot.thread.SocketThreadPool;
-import org.deta.config.Config;
+
+import OSI.OSU.deta.config.Config;
 public class BootVPCSBackEnd extends Thread{
 	private static ServerSocket server;
 	@SuppressWarnings("unused")

@@ -8,7 +8,8 @@ import org.VPC.common.utils.DetaUtil;
 import org.deta.bootFrontEnd.vpc.process.TimeProcess;
 import org.deta.bootFrontEnd.vpc.sleeper.Sleeper;
 import org.deta.bootFrontEnd.vpc.sleeper.SleeperHall;
-import org.deta.config.Config;
+
+import OSI.OSU.deta.config.Config;
 public class ServerInitControllerVPCSFrontEnd {
 	private ServerSocket server;
 	@SuppressWarnings("unused")

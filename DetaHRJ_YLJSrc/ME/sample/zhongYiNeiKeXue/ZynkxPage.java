@@ -32,9 +32,9 @@ import javax.swing.table.JTableHeader;
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
 import org.ASQ.PSU.tinos.view.stable.StableData;
-import org.OSU.dna.search.ZhongYaoSearch;
 import org.OSU.tinos.list.ListSwap;
 import org.OSU.tinos.string.StringSwap;
+import org.VSQ.dna.search.ZhongYaoSearch;
 import org.tinos.neo.tts.ReadChinese;
 import org.tinos.tcp.http.RestCall;
 

@@ -21,7 +21,7 @@ import javax.swing.event.ChangeListener;
 
 import org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
 import org.ASQ.PSU.tinos.view.obj.WordFrequency;
-import org.OSU.dna.search.ZhongYaoSearch;
+import org.VSQ.dna.search.ZhongYaoSearch;
 
 import javax.media.opengl.*;
 

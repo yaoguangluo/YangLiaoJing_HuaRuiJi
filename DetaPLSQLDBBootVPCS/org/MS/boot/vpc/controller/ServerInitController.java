@@ -9,11 +9,11 @@ import org.MS.boot.vpc.sleeper.Sleeper;
 import org.MS.boot.vpc.sleeper.SleeperHall;
 import org.MS.plsql.cache.DetaDBBufferCacheManager;
 import org.MS.vpcs.hall.DatabaseLogHall;
-import org.deta.config.Config;
 import org.plsql.common.utils.DetaUtil;
 import org.plsql.stable.StableData;
 
 import ME.sample.App;
+import OSI.OSU.deta.config.Config;
 public class ServerInitController {
 	private static ServerSocket server;
 	//private static Properties properties;
