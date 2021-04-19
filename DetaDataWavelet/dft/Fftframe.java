@@ -7,11 +7,9 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-public class Fftframe
-{
+public class Fftframe{
 	@SuppressWarnings("deprecation")
-	public static void main(String [] argv)
-	{
+	public static void main(String [] argv){
 		//创造线程录音每5秒录一次
 		
 		//创造线程显示数值
