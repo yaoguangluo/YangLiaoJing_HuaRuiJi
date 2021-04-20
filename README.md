@@ -1,4 +1,4 @@
-# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18111
+# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18200
 ## 协议 GNU GPL-2.0 License
 
 ###### 这是一个 智慧医学 领域的 大数据电子医院辅助诊疗系统, 愿景:让人类更健康~ （这是一个完整调通的可直接运行版本源码，如果出现任何问题，请及时联系作者，电话：15116110525）
@@ -69,48 +69,7 @@
 ### 项目内容展示. 见工程的 doc 文件夹：
 
 ##### 养疗经和华瑞的科研价值描述
-##### 快速排序1~4代的思想 Refer 'Mr.Tony Hoare', 不好意思, 我以为他是先贤, 一直refer用 '算法导论' 4个字,一直没有提过他的大名. (这里注释下.)
-
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/DetaOSSFINALV0_0_1.pdf
-###### 这个文件是去年11月2日的演讲PDF,当时受到干扰,已经报警,今天源码检查, 如下,
-###### 具体著作权使用Gitee链接见: https://gitee.com/DetaChina/sort/blob/master/LYG9DWithDoubleQuickSort4D.java 工程 2020年7月14 9点37分
-###### Github镜像: https://github.com/yaoguangluo/sort/blob/master/LYG9DWithDoubleQuickSort4D.java
-###### private int partition(double[] array, int leftPoint, int rightPoint) {
-###### double x= array[leftPoint]< array[rightPoint]? array[leftPoint]: array[rightPoint];
-###### 	int leftPointReflection= leftPoint;
-###### 	while(leftPointReflection++ < rightPoint){
-###### 			while(!(array[leftPointReflection++]> x|| leftPointReflection> rightPoint)) {}
-###### 			while(array[rightPoint--]> x) {}
-###### 			if(--leftPointReflection< ++rightPoint){
-###### 				double temp= array[rightPoint];
-###### 				array[rightPoint]= array[leftPointReflection];
-###### 				array[leftPointReflection]= temp;
-###### 			}
-###### 		}
-###### 		array[leftPoint]= array[rightPoint];
-###### 		array[rightPoint]= x;
-###### 		return rightPoint;
-###### 	}
-###### 
-###### 对比PDF发现出现了加加减减手误, 已经纠正如下, 问题最早出现在2020年10月7日22.41至2020年10月8日12.26之间
-###### 问题已经找到: 永中office的 复制粘贴后 回车 自动将符号进行更改成箭头,当时没注意, 所有office 都有这种语法检测并自动更改的组件, 用office写文章开启这个功能要特别小心.
-###### private int partition(int[] a, int lp, int rp) {
-###### 		double x= a[lp]< a[rp]? a[lp]: a[rp];
-###### 		int lp1= lp;
-###### 		while(lp1++ < rp){
-###### 			while(!(a[lp1++]> x|| lp1> rp)) {}
-###### 			while(a[rp--]> x) {}
-###### 			if(--lp1< ++rp){
-###### 				double temp= a[rp];
-###### 				a[rp]= a[lp1];
-###### 				a[lp1]= temp;
-###### 			}
-###### 		}
-###### 		a[lp]= a[rp];
-###### 		a[rp]= x;
-###### 		return rp;
-###### 	}
-
 
 ##### DNA 第一卷
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷)%20仅--++修正版本.pdf
@@ -244,3 +203,4 @@ https://bitbucket.org/luoyaoguang/yangliaojing
 https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
 最新纯净版本见分支号 18111
+最新纯净版本功能组件分类 和 元基化版本见分支号 18200
