@@ -1,7 +1,0 @@
-package OSI.OSU.VPC.process;
-public class JsonProcess {
-	public static void main(String[] args){
-
-	}
-
-}

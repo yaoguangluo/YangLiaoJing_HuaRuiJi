@@ -147,7 +147,7 @@
 ###### (中华人民共和国 国家版权局).软著登字第4584594号 德塔数据分析算法 Java 引擎系统 作者CN: 2019R11L1122752  
 ###### 见工程文件夹: DetaDataProcessorYLJ
 ###### (中华人民共和国 国家版权局).软著登字第4317518号 德塔 PLSQL Socket数据库引擎研发 作者CN: 2019R11L885247  
-###### 见工程文件夹: DetaPLSQL, DetaVPCSBackend, DetaVPCSFrontend, DetaPLSQLDBBootVPCS
+###### 见工程文件夹: DetaPLSQL, DetaVPCSBackend, DetaVPCSFrontend, DetaPLSQLDBBootVPCS (最新VPCS public整合) DetaVPCSPublic,
 ###### (中华人民共和国 国家版权局).软著登字第4607950号 德塔数据结构变量快速转换 作者CN: 2019R11L1293422  
 ###### 见工程文件夹: DetaDataSwap,
 ###### (中华人民共和国 国家版权局).软著登字第5447819号 快速数据预测算法引擎系统 V1.0.0 作者CN: 2020R11L186818  
