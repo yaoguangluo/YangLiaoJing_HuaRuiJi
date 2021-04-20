@@ -2,7 +2,10 @@ package OSI.OSU.VPC.cache;
 //import org.lygFrontend.cache.Cache;
 //import org.lygFrontend.cache.CacheManager;
 
-public class test {
+import cacheProcessor.Cache;
+import cacheProcessor.CacheManager;
+
+public class Test {
 	public static void main(String[] args) { 
 		// CacheManager.putCache("abc", new Cache());
 		Cache c= new Cache();

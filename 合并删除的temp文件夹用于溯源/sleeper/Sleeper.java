@@ -3,8 +3,11 @@ import java.io.IOException;
 
 import java.net.Socket;
 
-import OSI.OSU.VPC.vision.VPCSRequest;
-import OSI.OSU.VPC.vision.VPCSResponse;
+import OSI.OSU.MS.VPC.vision.ForwardVision;
+import OSI.OSU.MS.VPC.vision.RestMapVision;
+import OSI.OSU.MS.VPC.vision.VPCSRequest;
+import OSI.OSU.MS.VPC.vision.VPCSResponse;
+
 
 public class Sleeper extends Thread implements Runnable{
 	private VPCSRequest vPCSRequest;
@@ -58,25 +61,25 @@ public class Sleeper extends Thread implements Runnable{
 				return;
 			}
 			Thread.sleep(70);
-			OSI.OSU.VPC.vision.ForwardVision.getForwardType(vPCSRequest, vPCSResponse);
+			ForwardVision.getForwardType(vPCSRequest, vPCSResponse);
 			if(vPCSResponse.getSocket().isClosed()) {
 				vPCSResponse.returnErrorCode(200);
 				return;
 			}
 			Thread.sleep(70);
-			OSI.OSU.VPC.vision.ForwardVision.forwardToRestMap(vPCSRequest, vPCSResponse);
+			ForwardVision.forwardToRestMap(vPCSRequest, vPCSResponse);
 			if(vPCSResponse.getSocket().isClosed()) {
 				vPCSResponse.returnErrorCode(200);
 				return;
 			}
 			Thread.sleep(70);
-			OSI.OSU.VPC.vision.RestMapVision.getResponse(vPCSRequest, vPCSResponse);
+			RestMapVision.getResponse(vPCSRequest, vPCSResponse);
 			if(vPCSResponse.getSocket().isClosed()) {
 				vPCSResponse.returnErrorCode(200);
 				return;
 			}
 			Thread.sleep(30);
-			OSI.OSU.VPC.vision.RestMapVision.returnResponse(vPCSRequest, vPCSResponse);
+			RestMapVision.returnResponse(vPCSRequest, vPCSResponse);
 			if(vPCSResponse.getSocket().isClosed()) {
 				vPCSResponse.returnErrorCode(200);
 				return;

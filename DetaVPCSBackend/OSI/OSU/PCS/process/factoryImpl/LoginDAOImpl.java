@@ -9,10 +9,10 @@ import java.util.Map;
 import org.json.JSONObject;
 
 import OSI.OSU.PCS.common.maps.VtoV;
-import OSI.OSU.PCS.common.utils.DetaDBUtil;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrFull;
 import OSI.OSU.PCS.view.UsrToken;
+import OSI.OSU.VPC.common.utils.DetaDBUtil;
 //import org.springframework.stereotype.Service;
 @SuppressWarnings({"unused", "deprecation"})
 //@Service
@@ -23,7 +23,7 @@ public class LoginDAOImpl{// implements LoginDAO{
 	+ "usr" + "&culumnName=" + URLEncoder.encode("u_id") + "&value=" + uId + "&email=" 
 				+ URLEncoder.encode("313699483@qq.com") + "&password=" 
 				+ URLEncoder.encode("Fengyue1985!") + "&auth=" + "0");
-		Map<String, Object> map = (Map<String, Object>) new VtoV().JsonObjectToMap(new JSONObject(json));
+		Map<String, Object> map = (Map<String, Object>) VtoV.JsonObjectToMap(new JSONObject(json));
 		List<Map<String, Object>> list = (List<Map<String, Object>>) map.get("obj");
 		Usr usr = new Usr();
 		if(list.size() > 0) {
@@ -46,7 +46,7 @@ public class LoginDAOImpl{// implements LoginDAO{
 		String json = DetaDBUtil.DBRequest("/selectRowsByAttribute?baseName=" + "backend" + "&tableName=" 
 				+ "usrToken" + "&culumnName=" + "u_id" + "&value=" + uId + "&email=" + URLEncoder.encode("313699483@qq.com") 
 				+ "&password=" + URLEncoder.encode("Fengyue1985!") + "&auth=" + "0");		
-		Map<String, Object> map = (Map<String, Object>) new VtoV().JsonObjectToMap(new JSONObject(json));
+		Map<String, Object> map = (Map<String, Object>) VtoV.JsonObjectToMap(new JSONObject(json));
 		List<Map<String, Object>> list = (List<Map<String, Object>>) map.get("obj");
 		UsrToken usrToken = new UsrToken();
 		if(list.size() > 0) {	
@@ -69,7 +69,7 @@ public class LoginDAOImpl{// implements LoginDAO{
 		String json = DetaDBUtil.DBRequest("/selectRowsByAttribute?baseName=" + "backend" + "&tableName=" 
 				+ "usr" + "&culumnName=" + URLEncoder.encode("u_email") + "&value=" + URLEncoder.encode(uEmail) + "&email=" + URLEncoder.encode("313699483@qq.com") 
 				+ "&password=" + URLEncoder.encode("Fengyue1985!") + "&auth=" + "0");
-		Map<String, Object> map = (Map<String, Object>) new VtoV().JsonObjectToMap(new JSONObject(json));
+		Map<String, Object> map = (Map<String, Object>) VtoV.JsonObjectToMap(new JSONObject(json));
 		List<Map<String, Object>> list = (List<Map<String, Object>>) map.get("obj");
 		Usr usr = new Usr();
 		if(list.size() > 0) {
@@ -134,5 +134,4 @@ public class LoginDAOImpl{// implements LoginDAO{
 				+ URLEncoder.encode("313699483@qq.com") + "&password=" + URLEncoder.encode("Fengyue1985!") 
 				+ "&auth=" + "0");		
 	}
-	
 }

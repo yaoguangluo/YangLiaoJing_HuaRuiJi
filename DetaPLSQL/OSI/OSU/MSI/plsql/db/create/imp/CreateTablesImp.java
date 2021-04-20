@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.plsql.common.utils.DetaDBUtil;
+import OSI.OSU.VPC.common.utils.DetaDBUtil;
 import cacheProcessor.CacheManager;
 @SuppressWarnings("unchecked")
 public class CreateTablesImp {

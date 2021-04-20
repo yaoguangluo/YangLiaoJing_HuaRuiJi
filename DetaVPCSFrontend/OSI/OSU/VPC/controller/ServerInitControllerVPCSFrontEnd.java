@@ -1,18 +1,20 @@
-package OSI.OSU.VPC.frontend.controller;
+package OSI.OSU.VPC.controller;
 import java.io.IOException;
 
 import java.net.ServerSocket;
 import java.util.Properties;
 
+import ME.sample.App;
 import OSI.OSU.MS.VPC.process.TimeProcess;
+import OSI.OSU.MS.VPC.sleeper.Sleeper;
+import OSI.OSU.MS.VPC.sleeper.SleeperHall;
 import OSI.OSU.VPC.common.utils.DetaUtil;
-import OSI.OSU.VPC.sleeper.Sleeper;
-import OSI.OSU.VPC.sleeper.SleeperHall;
 import OSI.OSU.config.Config;
 public class ServerInitControllerVPCSFrontEnd {
 	private ServerSocket server;
 	@SuppressWarnings("unused")
 	private Properties properties;
+	private App app;
 	private int port;{
 		properties= new Properties();
 			System.out.println("----德塔VPCS前端服务器资源载入:成功！");
@@ -34,7 +36,9 @@ public class ServerInitControllerVPCSFrontEnd {
 		sleeperHall.callSkivvy(); 
 	}
 
-	public void initServer() throws IOException {
+	public void initServer(App app) throws IOException {
+		this.app= app;
+		System.out.println("");
 		System.out.println("----DETA VPCS--1.7");
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
@@ -46,7 +50,7 @@ public class ServerInitControllerVPCSFrontEnd {
 		System.out.println("----德塔VPCS前端服务器启动一切正常-总耗时:"+ timeProcess.duration()+ "毫秒");
 		while(true){	
 			if(sleeperHall.getThreadsCount()< 500){
-				Sleeper sleeper= new Sleeper();
+				Sleeper sleeper= new Sleeper(this.app);
 				sleeper.hugPillow(sleeperHall, server.accept(), sleeper.hashCode());
 				sleeper.start();
 			}else {

@@ -2,11 +2,12 @@ package dbPath;
 
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
 import OSI.OSU.MSV.PCS.controller.RequestFilterController;
+import OSI.OSU.VPC.common.utils.DetaUtil;
 
 public class CreateTable{
 	public static void main(String[] argv) throws Exception {
 		//init
-		OSI.OSU.plsql.common.utils.DetaUtil.initDB();
+		DetaUtil.initDB();
 		System.out.println("----德塔VPCS数据库服务器DMA确认:成功！");
 		RequestFilterController.initBlockList();
 		System.out.println("----德塔VPCS数据库服务器IP过滤服务启动:成功！");

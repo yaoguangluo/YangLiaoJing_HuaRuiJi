@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import OSI.OSU.VPC.sleeper.SleeperHall;
+import OSI.OSU.MS.VPC.sleeper.SleeperHall;
+
 public class ResponseController {
 	public static void main(String[] args){
 

@@ -12,7 +12,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import OSI.OSU.MS.VPC.vision.VPCSRequest;
 import OSI.OSU.MS.VPC.vision.VPCSResponse;
-import OSI.OSU.plsql.common.utils.DetaDBUtil;
 
 @SuppressWarnings("unused")
 public class RequestFilterController {

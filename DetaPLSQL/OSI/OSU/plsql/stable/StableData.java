@@ -27,7 +27,7 @@ public interface StableData {
 	public static final String REST_GET_DB_CATEGORY = "/getDBCategory";
 	public static final String REST_GET_ALL_DB_CATEGORY = "/getAllDBCategory";
 	//SLEEPERS
-	public static final int SLEEPERS_RANGE = 1500;
+	public static final int SLEEPERS_RANGE = 500;
 	//TCP
 	public static final String TCP_PORT = "port";
 	public static final String STRING_SPACE = " ";

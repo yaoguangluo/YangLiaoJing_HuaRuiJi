@@ -5,8 +5,8 @@ import java.util.Date;
 import java.util.Map;
 import org.json.JSONObject;
 
-import OSI.OSU.plsql.common.utils.StringUtil;
-import OSI.OSU.plsql.common.utils.TokenUtil;
+import OSI.OSU.VPC.common.utils.StringUtil;
+import OSI.OSU.VPC.common.utils.TokenUtil;
 import OSI.OSU.plsql.vpc.process.factoryImpl.LoginDAOImpl;
 import md5Processor.Usr;
 import md5Processor.UsrToken;

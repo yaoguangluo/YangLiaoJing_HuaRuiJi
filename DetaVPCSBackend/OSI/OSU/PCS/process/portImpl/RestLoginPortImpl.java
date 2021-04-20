@@ -9,8 +9,8 @@ import OSI.OSU.ASQ.PSU.test.DemoEX;
 import OSI.OSU.ASQ.PSU.test.TimeCheck;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.PCS.common.maps.VtoV;
-import OSI.OSU.PCS.common.utils.DetaDBUtil;
 import OSI.OSU.PCS.transaction.TransactionDelegate;
+import OSI.OSU.VPC.common.utils.DetaDBUtil;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -70,11 +70,11 @@ public class RestLoginPortImpl{// implements RestLoginPort {
 			jsonCheck = false;
 		}
 		if(json.contains("unsuccess")){
-			output = new VtoV().JsonObjectToMap(new JSONObject(json));
+			output = VtoV.JsonObjectToMap(new JSONObject(json));
 			jsonCheck = false;
 		}
 		if(jsonCheck){
-			output = new VtoV().JsonObjectToMap(new JSONObject(json));
+			output = VtoV.JsonObjectToMap(new JSONObject(json));
 			return output;
 		}
 		output = new HashMap<String, Object>();

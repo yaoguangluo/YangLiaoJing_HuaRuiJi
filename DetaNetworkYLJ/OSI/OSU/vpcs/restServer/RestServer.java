@@ -15,7 +15,7 @@ public class RestServer extends Thread implements Runnable{
 	
 	public void run() {
 		try {
-			ServerInitController.initServer(app);
+			ServerInitController.initServer(this.app);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

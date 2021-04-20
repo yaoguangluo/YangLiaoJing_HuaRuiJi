@@ -10,13 +10,14 @@ import OSI.OSU.MS.VPC.sleeper.Sleeper;
 import OSI.OSU.MS.VPC.sleeper.SleeperHall;
 import OSI.OSU.MS.plsql.cache.DetaDBBufferCacheManager;
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
+import OSI.OSU.VPC.common.utils.DetaUtil;
 import OSI.OSU.config.Config;
-import OSI.OSU.plsql.common.utils.DetaUtil;
 import OSI.OSU.plsql.stable.StableData;
 public class ServerInitController {
 	private static ServerSocket server;
 	//private static Properties properties;
 	private static int port;
+//	private App app;
 	static {
 		//properties = new Properties();
 //		try {

@@ -7,8 +7,9 @@ import java.net.URLDecoder;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OSU.VPC.vision.VPCSRequest;
-import OSI.OSU.VPC.vision.VPCSResponse;
+import OSI.OSU.MS.VPC.vision.VPCSRequest;
+import OSI.OSU.MS.VPC.vision.VPCSResponse;
+
 
 public class RequestRecordController {
 	

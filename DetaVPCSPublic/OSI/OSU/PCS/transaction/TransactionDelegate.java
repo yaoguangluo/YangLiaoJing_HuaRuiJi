@@ -2,10 +2,10 @@ package OSI.OSU.PCS.transaction;
 import org.json.JSONObject;
 
 import OSI.OSU.PCS.common.maps.VtoV;
-import OSI.OSU.PCS.common.utils.DetaDBUtil;
-import OSI.OSU.PCS.common.utils.TokenUtil;
 import OSI.OSU.PCS.process.companyImpl.LoginServiceImpl;
 import OSI.OSU.PCS.view.Usr;
+import OSI.OSU.VPC.common.utils.DetaDBUtil;
+import OSI.OSU.VPC.common.utils.TokenUtil;
 
 //import org.springframework.stereotype.Service;
 import java.net.URLEncoder;
@@ -20,7 +20,7 @@ public class TransactionDelegate {
 	public static Map<String, Object> transactionLogin(String uEmail, String uPassword)throws Exception {
 		String response = DetaDBUtil.DBRequest("/login?uEmail=" + URLEncoder.encode(uEmail) + "&uPassword=" 
 				+ URLEncoder.encode(uPassword));
-		Map<String, Object> out = new VtoV().JsonObjectToMap(new JSONObject(response));
+		Map<String, Object> out= VtoV.JsonObjectToMap(new JSONObject(response));
 
 		//		Usr usr = loginService.findUsrByUEmail(uEmail);
 		//		UsrToken usrToken = loginService.findUsrTokenByUId(usr.getuId());

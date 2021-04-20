@@ -2,8 +2,9 @@ package OSI.OSU.VPC.frontend.controller;
 
 import java.net.Socket;
 
-import OSI.OSU.VPC.vision.VPCSRequest;
-import OSI.OSU.VPC.vision.VPCSResponse;
+import OSI.OSU.MS.VPC.vision.VPCSRequest;
+import OSI.OSU.MS.VPC.vision.VPCSResponse;
+
 
 public class RequestFilterController {
 	public static void main(String[] args){

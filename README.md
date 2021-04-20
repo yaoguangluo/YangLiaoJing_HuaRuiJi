@@ -207,14 +207,14 @@
 ### 第三方开源包引用情况
 ###### (源码仅引用未修改) BSD APACHE GPL CDDL JOGL /官方 gleem DEMO 
 ###### (源码仅引用未修改) APACHE SUN /官方AWT DEMO
-###### (源码仅引用未修改) APACHE /Json    
+###### (源码仅引用未修改) APACHE /Json, CacheManager  
 ###### (源码仅引用未修改) APACHE /Jacob 中文发音 DEMO 
 ###### (源码仅引用未修改) 美国卡内基梅隆大学 LGPL /CMU 语音识别 DEMO 
 ###### (源码仅引用未修改) 新西兰维卡托大学 GPL /Weka 训练  
 ###### (源码仅引用未修改) GPL /Japps ffmpeg 与 JavaCV 视频中图片提取
 ###### (源码仅引用未修改) EPL /Junit 测试组件 
 ###### (源码仅引用未修改) BSD /JDK原生组件等
-###### (源码仅引用未修改) APACHE /功能节点引用如POI, JFREECHAT等 略.
+###### (源码仅引用未修改) APACHE /功能节点引用如POI, JFREECHAT, Gzip 等 略.
 
 ### 开源动机：
 ###### 1为什么开源并用GPL 协议，因为健康属于每一人。

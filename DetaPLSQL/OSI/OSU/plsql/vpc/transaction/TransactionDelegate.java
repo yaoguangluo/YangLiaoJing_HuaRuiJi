@@ -1,10 +1,10 @@
 package OSI.OSU.plsql.vpc.transaction;
 import com.google.gson.Gson;
 
-import OSI.OSU.plsql.common.utils.StringUtil;
-import OSI.OSU.plsql.common.utils.TokenUtil;
+import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.plsql.vpc.process.companyImpl.LoginServiceImpl;
 import md5Processor.Token;
+import md5Processor.TokenUtil;
 import md5Processor.Usr;
 import md5Processor.UsrToken;
 
@@ -12,6 +12,8 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+//之后准备整体性 用deta 元基 取代 MD5
 public class TransactionDelegate {
 	public static Map<String, Object> transactionLogin(String uEmail, String uPassword)throws Exception {
 		Usr usr = LoginServiceImpl.findUsrByUEmail(uEmail);

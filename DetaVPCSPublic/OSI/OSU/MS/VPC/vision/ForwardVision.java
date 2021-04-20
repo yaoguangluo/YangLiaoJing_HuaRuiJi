@@ -5,7 +5,7 @@ import java.net.Socket;
 import ME.sample.App;
 import OSI.OSU.MS.VPC.rest.VPC;
 import OSI.OSU.plsql.stable.StableData;
-
+//合并 数据库和 前端的 vison文件
 public class ForwardVision {
 	public static void main(String[] args){
 	}
@@ -66,10 +66,30 @@ public class ForwardVision {
 			if(filePath.contains(StableData.FILE_HTML)){
 				vPCSRequest.setRequestForwardType(StableData.STREAM_BUFFER);
 				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_HTML);
+			}	
+			if(filePath.contains(".pdf")){
+				vPCSRequest.setRequestForwardType("bytesWithoutZip");
+				vPCSResponse.setResponseContentType("content-type: application/pdf \n\n");
+			}
+			if(filePath.contains(".zip")){
+				vPCSRequest.setRequestForwardType("bytesWithoutZip");
+				vPCSResponse.setResponseContentType("content-type: application/zip \n\n");
 			}
 			if(filePath.contains(StableData.FILE_WAV)){
 				vPCSRequest.setRequestForwardType(StableData.STREAM_BUFFER);
 				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_WAV);
+			}
+				if(filePath.contains(".rar")){
+				vPCSRequest.setRequestForwardType("bytesWithoutZip");
+				vPCSResponse.setResponseContentType("content-type: application/rar \n\n");
+			}
+			if(filePath.contains(".xml")){
+				vPCSRequest.setRequestForwardType("bytesWithoutZip");
+				vPCSResponse.setResponseContentType("content-type: application/xml \n\n");
+			}
+			if(filePath.contains(".txt")){
+				vPCSRequest.setRequestForwardType("bytesWithoutZip");
+				vPCSResponse.setResponseContentType("content-type: text/plain \n\n");
 			}
 		}	
 	}
@@ -91,6 +111,31 @@ public class ForwardVision {
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BYTES_BUFFER)){
 			RestMapVision.processBufferBytes(vPCSRequest, vPCSResponse);
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
+			RestMapVision.processBytesWithoutZip(vPCSRequest, vPCSResponse);
+		}
+	}
+	
+	public static void forwardToRestMap(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
+		if(vPCSRequest.getRequestForwardType() == null){
+			vPCSResponse.return404();
+			return;
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("rest")){
+			RestMapVision.processRest(vPCSRequest, vPCSResponse);
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytes")){
+			RestMapVision.processBytes(vPCSRequest, vPCSResponse);
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("buffer")){
+			RestMapVision.processBuffer(vPCSRequest, vPCSResponse);
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesBuffer")){
+			RestMapVision.processBufferBytes(vPCSRequest, vPCSResponse);
+		}
+		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
+			RestMapVision.processBytesWithoutZip(vPCSRequest, vPCSResponse);
 		}
 	}
 }

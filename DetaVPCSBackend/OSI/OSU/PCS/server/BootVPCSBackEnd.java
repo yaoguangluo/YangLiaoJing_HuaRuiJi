@@ -51,7 +51,7 @@ public class BootVPCSBackEnd extends Thread{
 			emotionMap.initTrendingMap();
 			emotionMap.initPredictionMap();
 			emotionMap.initDistinctionMap();
-			System.out.println("----德塔VPCS前端服务器端口启动:" + port);
+			System.out.println("----德塔VPCS后端服务器端口启动:" + port);
 			//MrTin.born.start();;
 			System.out.println("----Tin神 VPCS-AOPM-IDUQ 第一代类人催化生命特征开启:" + port);
 		} catch (Exception e) {
@@ -69,7 +69,7 @@ public class BootVPCSBackEnd extends Thread{
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
 		System.out.println("----德塔VPCS后端服务器----");
-		System.out.println("----德塔VPCS前端服务器启动一切正常-总耗时:"+ (now- before)+ "毫秒");
+		System.out.println("----德塔VPCS后端服务器启动一切正常-总耗时:"+ (now- before)+ "毫秒");
 		while(true){
 			if(socketThreadPool.getThreadsCount() < 300){
 				SocketThread clientSocket= new SocketThread(emotionMap, analyzer, socketThreadPool, server.accept()

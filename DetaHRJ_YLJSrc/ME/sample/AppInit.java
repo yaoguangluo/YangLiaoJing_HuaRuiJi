@@ -606,7 +606,7 @@ public class AppInit {
 
 			if(app.appConfig.SectionJPanel.jlabel_peizhi_di2511.isSelected()) {
 				//front
-				new BootVPCSFrontEnd().start();
+				new BootVPCSFrontEnd(app).start();
 				Thread.sleep(5);
 				if(app.appConfig.SectionJPanel.jTextPane!= null) {
 					String text= app.appConfig.SectionJPanel.jTextPane.getText();

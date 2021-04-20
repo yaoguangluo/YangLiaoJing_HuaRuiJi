@@ -7,8 +7,8 @@ import org.json.JSONObject;
 
 import OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp;
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
-import OSI.OSU.plsql.common.utils.StringUtil;
 import OSI.OSU.plsql.vpc.process.companyImpl.LoginServiceImpl;
+import md5Processor.StringUtil;
 
 //
 //baseName:backend;

@@ -7,13 +7,19 @@ import OSI.OSU.MS.VPC.vision.VPCSRequest;
 import OSI.OSU.MS.VPC.vision.VPCSResponse;
 
 public class Sleeper extends Thread implements Runnable{
-	private VPCSRequest vPCSRequest;
-	private VPCSResponse vPCSResponse;
+	public VPCSRequest vPCSRequest;
+	public VPCSResponse vPCSResponse;
 	private App app;
 	public Sleeper(App app){
 		this.app= app;
 		vPCSRequest = new VPCSRequest();
 		vPCSResponse = new VPCSResponse();
+		vPCSResponse.setHashCode(this.hashCode());
+	}
+	//ºÏ²¢
+	public Sleeper(){
+		vPCSRequest= new VPCSRequest();
+		vPCSResponse= new VPCSResponse();
 		vPCSResponse.setHashCode(this.hashCode());
 	}
 	public void run(){

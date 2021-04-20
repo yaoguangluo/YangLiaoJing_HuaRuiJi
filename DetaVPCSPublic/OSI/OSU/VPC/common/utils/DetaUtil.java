@@ -7,8 +7,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import OSI.OSU.VPC.cache.Cache;
-import OSI.OSU.VPC.cache.CacheManager;
+import cacheProcessor.Cache;
+import cacheProcessor.CacheManager;
+
+//import cacheProcessor.Cache;
+//import cacheProcessor.CacheManager;
 
 public class DetaUtil {
 	public static void initDB(){

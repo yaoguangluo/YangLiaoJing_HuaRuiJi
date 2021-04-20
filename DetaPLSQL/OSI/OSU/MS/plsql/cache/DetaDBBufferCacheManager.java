@@ -22,14 +22,14 @@ public class DetaDBBufferCacheManager {
 	}
 	
 	public static void reflection() throws IOException {
-		ConcurrentHashMap<String, Base> bases = new ConcurrentHashMap<>();
+		ConcurrentHashMap<String, Base> bases= new ConcurrentHashMap<>();
 		db.setBases(bases);
 		//1»ñÈ¡dbÂ·¾¶£»
-		String dBPath = CacheManager.getCacheInfo("DBPath").getValue().toString();
-		File fileDBPath = new File(dBPath);
+		String dBPath= CacheManager.getCacheInfo("DBPath").getValue().toString();
+		File fileDBPath= new File(dBPath);
 		if (fileDBPath.isDirectory()) {
-			String[] baseNames = fileDBPath.list();
-			for(int i = 0; i < baseNames.length; i++) {
+			String[] baseNames= fileDBPath.list();
+			for(int i= 0; i< baseNames.length; i++) {
 				loopBases(db, dBPath, baseNames[i]);
 			}
 		}
@@ -38,13 +38,13 @@ public class DetaDBBufferCacheManager {
 	
 	private static void loopBases(DB db, String dBPath, String baseName) throws IOException {
 		Base base = new Base();
-		ConcurrentHashMap<String, Table> tables = new ConcurrentHashMap<>();
+		ConcurrentHashMap<String, Table> tables= new ConcurrentHashMap<>();
 		base.setTables(tables);
 		String dBasePath = dBPath + "/" + baseName;
 		//get base
 		File fileDBasePath = new File(dBasePath);
 		if (fileDBasePath.isDirectory()) {
-			ConcurrentHashMap<String, Object> tableMap = new ConcurrentHashMap<>();
+			ConcurrentHashMap<String, Object> tableMap= new ConcurrentHashMap<>();
 			//get tables
 			String[] tableNames = fileDBasePath.list();
 			for(int i = 0; i < tableNames.length; i++) {

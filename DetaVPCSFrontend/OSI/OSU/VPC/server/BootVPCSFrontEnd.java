@@ -1,21 +1,24 @@
 package OSI.OSU.VPC.server;
 import java.io.IOException;
 
-import OSI.OSU.VPC.frontend.controller.ServerInitControllerVPCSFrontEnd;
+import ME.sample.App;
+import OSI.OSU.VPC.controller.ServerInitControllerVPCSFrontEnd;
+//VPCS整合后修正, 稍后优化.
 public class BootVPCSFrontEnd extends Thread{
-	public BootVPCSFrontEnd() {
+	private App app;
+	public BootVPCSFrontEnd(App app) {
+		this.app= app;
 	}
 	public static void main(String[] args) throws IOException {
-		new BootVPCSFrontEnd().bootFrontEnd();
+		new BootVPCSFrontEnd(null).bootFrontEnd();
 	}
 	public void bootFrontEnd() throws IOException {
-		new ServerInitControllerVPCSFrontEnd().initServer();
+		new ServerInitControllerVPCSFrontEnd().initServer(this.app);
 	}
 	public void run() {
 		try {
-			new ServerInitControllerVPCSFrontEnd().initServer();
+			new ServerInitControllerVPCSFrontEnd().initServer(this.app);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

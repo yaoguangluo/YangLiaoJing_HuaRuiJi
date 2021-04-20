@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-import OSI.OSU.VPC.common.maps.VtoV;
+import ME.sample.App;
 import OSI.OSU.VPC.controller.ConfigController;
 import OSI.OSU.VPC.controller.DBCategoryController;
 import OSI.OSU.VPC.controller.DeleteController;
@@ -14,8 +14,9 @@ import OSI.OSU.VPC.controller.SelectController;
 import OSI.OSU.VPC.controller.UpdateController;
 import OSI.OSU.VPC.process.portImpl.RestAskPortImpl;
 import OSI.OSU.VPC.process.portImpl.RestLoginPortImpl;
+import mapProcessor.VtoV;
 public class VPC {
-	public static String forward(String string, Map<String, String> data) throws Exception {
+	public static String forward(App app, String string, Map<String, String> data) throws Exception {
 		//controller
 		if(string.contains("/select")){
 			return SelectController.exec(string, data);	

@@ -12,37 +12,38 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import OSI.OSU.VPC.common.maps.VtoV;
+import OSI.OSU.PCS.common.maps.VtoV;
 import OSI.OSU.VPC.common.utils.DetaFrontEndUtil;
+import OSI.OSU.json.JsonSwap;
 
 public class RestAskPortImpl{// implements RestAskPort {
 	@SuppressWarnings("deprecation")
 	public static Map<String, Object> ask(String ip, String token, String message, String pointIp) throws Exception {
-		String json = null;
-		if(token != null && !token.equalsIgnoreCase("undefined")){
-			json = DetaFrontEndUtil.backEndRequest("checkStatus?token=" + URLEncoder.encode(token));
+		String json= null;
+		if(token!= null && !token.equalsIgnoreCase("undefined")){
+			json= DetaFrontEndUtil.backEndRequest("checkStatus?token=" + URLEncoder.encode(token));
 		}
 		Map<String, Object> jsonCheckMap;
-		boolean jsonCheck = true;
-		if(null == json){
-			jsonCheckMap = new HashMap<String, Object>();
+		boolean jsonCheck= true;
+		if(null== json){
+			jsonCheckMap= new HashMap<String, Object>();
 			jsonCheckMap.put("usrName", "匿名咨询师");
-			jsonCheck = false;
+			jsonCheck= false;
 		}else if(json.contains("unsuccess")){
-			jsonCheck = false;
+			jsonCheck= false;
 		}
 		if(jsonCheck){
-			jsonCheckMap = VtoV.JsonObjectToMap(new JSONObject(json));	
+			jsonCheckMap= VtoV.JsonObjectToMap(new JSONObject(json));	
 			Map<String, Object> out = new HashMap<>();
-			String object = DetaFrontEndUtil.cacheRequest("get?key=" + pointIp + "&email=" 
+			String object= DetaFrontEndUtil.cacheRequest("get?key=" + pointIp + "&email=" 
 					+ URLEncoder.encode("313699483@qq.com", "UTF-8") + "&password=" + URLEncoder.encode("Fengyue1985!", "UTF-8"));
-			boolean check = true;
-			if(null == object){
-				check = false;
+			boolean check= true;
+			if(null== object){
+				check= false;
 			}else if(object.contains("unsuccess")){
-				check = false;
+				check= false;
 			}
-			JSONArray jobj = null;
+			JSONArray jobj= null;
 			if(check){
 				JSONArray newjobj = new JSONArray();
 				Object listArray = new JSONTokener(object).nextValue();
@@ -72,7 +73,7 @@ public class RestAskPortImpl{// implements RestAskPort {
 			DetaFrontEndUtil.cacheRequest("put?key=" + pointIp + "&value=" + URLEncoder.encode(jobj.toString(), "UTF-8") 
 			+ "&time=" + (System.currentTimeMillis()+900000) 
 			+ "&email=" + URLEncoder.encode("313699483@qq.com", "UTF-8") + "&password=" + URLEncoder.encode("Fengyue1985!", "UTF-8"));
-			out.put("obj", VtoV.JsonArrayToList(jobj));
+			out.put("obj", JsonSwap.jsonArrayToList(jobj));// 修正首字母大小写, 上面账号的个人qq sample密码已经更换,只是个示例而已.
 			out.put("loginInfo", "success");
 			out.put("returnResult", "发送成功");
 			return out;
@@ -116,7 +117,7 @@ public class RestAskPortImpl{// implements RestAskPort {
 		DetaFrontEndUtil.cacheRequest("put?key=" + "Ask:" + ip + "&value=" + URLEncoder.encode(jobj.toString(), "UTF-8") 
 		+ "&time=" +(System.currentTimeMillis()+900000) 
 		+ "&email=" + URLEncoder.encode("313699483@qq.com", "UTF-8") + "&password=" + URLEncoder.encode("Fengyue1985!", "UTF-8"));
-		out.put("obj", VtoV.JsonArrayToList(jobj));
+		out.put("obj",JsonSwap.jsonArrayToList(jobj));
 		out.put("loginInfo", "success");
 		out.put("returnResult", "发送成功");
 		return out;
@@ -159,12 +160,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 					JSONObject jsobj = new JSONObject(object);
 					jobj.put(jsobj);
 				}
-				out.put("obj", VtoV.JsonArrayToList(jobj));
+				out.put("obj", JsonSwap.jsonArrayToList(jobj));
 				out.put("loginInfo", "success");
 				out.put("returnResult", "发送成功");
 			}else{
 				jobj = new JSONArray();
-				out.put("obj", VtoV.JsonArrayToList(jobj));
+				out.put("obj", JsonSwap.jsonArrayToList(jobj));
 				out.put("loginInfo", "unsuccess");
 				out.put("returnResult", "数据超时");
 			}
@@ -189,12 +190,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 				JSONObject jsobj = new JSONObject(object);
 				jobj.put(jsobj);
 			}
-			out.put("obj", VtoV.JsonArrayToList(jobj));
+			out.put("obj",JsonSwap.jsonArrayToList(jobj));
 			out.put("loginInfo", "success");
 			out.put("returnResult", "发送成功");
 		}else{
 			jobj = new JSONArray();
-			out.put("obj", VtoV.JsonArrayToList(jobj));
+			out.put("obj", JsonSwap.jsonArrayToList(jobj));
 			out.put("loginInfo", "unsuccess");
 			out.put("returnResult", "数据超时");
 		}
@@ -237,12 +238,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 					JSONObject jsobj = new JSONObject(object);
 					jobj.put(jsobj);
 				}
-				out.put("obj", VtoV.JsonArrayToList(jobj));
+				out.put("obj", JsonSwap.jsonArrayToList(jobj));
 				out.put("loginInfo", "success");
 				out.put("returnResult", "发送成功");
 			}else{
 				jobj = new JSONArray();
-				out.put("obj", VtoV.JsonArrayToList(jobj));
+				out.put("obj", JsonSwap.jsonArrayToList(jobj));
 				out.put("loginInfo", "unsuccess");
 				out.put("returnResult", "数据超时");
 			}

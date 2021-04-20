@@ -3,11 +3,9 @@ package OSI.OSU.VPC.common.utils;
 import java.util.Date;
 
 import OSI.OSU.VPC.view.Token;
-import OSI.OSU.VPC.view.Usr;
-import OSI.OSU.VPC.view.UsrToken;
 
 public class TokenUtil {
-	public static Token getNewTokenFromUsrAndUsrToken(Usr usr, UsrToken usrToken) throws Exception {
+	public static Token getNewTokenFromUsrAndUsrToken(md5Processor.Usr usr, md5Processor.UsrToken usrToken) throws Exception {
 		String key = String.valueOf(Double.valueOf(Math.random() * 10000000).intValue());
 		String mPassword = TokenUtil.getFirstMD5Password(key, usrToken.getuPassword());
 		Token token = new Token();
