@@ -35,11 +35,11 @@ import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
+import OSI.OSU.MSU.tcp.http.RestCall;
 import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
 import OSI.OSU.list.ListSwap;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.string.StringSwap;
-import OSI.OSU.tcp.http.RestCall;
 //import ME.sample.zynkx.dictionary;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 public class ZynkxPage extends Container implements MouseListener, KeyListener{

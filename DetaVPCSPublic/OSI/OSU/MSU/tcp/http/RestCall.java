@@ -1,4 +1,4 @@
-package OSI.OSU.tcp.http;
+package OSI.OSU.MSU.tcp.http;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -126,8 +126,8 @@ public class RestCall {
 		if (conn.getResponseCode() != 200) {
 			throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
 		}
-		BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream()),"UTF-8"));
-		String out = "";
+		BufferedReader br= new BufferedReader(new InputStreamReader((conn.getInputStream()),"UTF-8"));
+		String out= "";
 		String out1;
 		while ((out1 = br.readLine()) != null) {
 			out += out1;
