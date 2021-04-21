@@ -71,9 +71,11 @@ public class TokenPDI {
 		for(i= 0; i< pDE_RNA_Formular.pdw.length(); i++) {
 			pDE_RNA_Formular.code+= pDE_RNA_Formular.lock + pDE_RNA_Formular.pdw.charAt(i);
 		}
-		System.out.println("肽语: " + pDE_RNA_Formular.pdw);
-		System.out.println("肽锁: " + pDE_RNA_Formular.lock);
-		System.out.println("散列肽语: 保密" );
+		System.out.println("肽语:"+ pDE_RNA_Formular.pdw);
+		System.out.println("肽锁:"+ pDE_RNA_Formular.lock);
+		System.out.println("散列肽语:"+ pDE_RNA_Formular.code);
+		
+		
 		pDE_RNA_Formular.bys= "0.6/0.3/0.5/0.632";
 		System.out.println("静态密钥: " + pDE_RNA_Formular.bys);
 		pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);
@@ -101,7 +103,7 @@ public class TokenPDI {
 		pDE_RNA_Formular1.pdedsKey= pDE_RNA_Formular.pdedsKey.toString();
 		pDE_RNA_Formular1.pdeieKey= pDE_RNA_Formular.pdeieKey.toString();
 		pDE_RNA_Formular1.pdeisKey= pDE_RNA_Formular.pdeisKey.toString();
-		
+		System.out.println("观测：" + pDE_RNA_Formular.code);
 		pDE_RNA_Formular.doKeyUnPress(pDE_RNA_Formular.code, pDE_RNA_Formular1, true);
 		System.out.println("得到原降元元基DNA序列："+ pDE_RNA_Formular.pds);
 		System.out.println("得到新降元元基DNA序列："+ pDE_RNA_Formular1.pds);
@@ -125,7 +127,7 @@ public class TokenPDI {
 		System.out.println(pDE_RNA_Formular1.pds.equals(pDE_RNA_Formular2.pds)? "正确": "失败");	
 	}
 
-	private void doSessionKeyUnPress(String initons, TokenPDI pDE_RNA_Formular2, boolean bYS) {
+	public void doSessionKeyUnPress(String initons, TokenPDI pDE_RNA_Formular2, boolean bYS) {
 		Initon[] initon= new Initon[initons.length()];
 		for(int i= 0; i< initons.length(); i++) {
 			if(initon[i]== null) {
@@ -185,7 +187,7 @@ public class TokenPDI {
 //		}
 	}
 
-	private void doKeyUnPress(String initons, TokenPDI pDE_RNA_Formular, boolean bYS) {
+	public void doKeyUnPress(String initons, TokenPDI pDE_RNA_Formular, boolean bYS) {
 		Initon[] initon= new Initon[initons.length()];
 		for(int i= 0; i< initons.length(); i++) {
 			if(initon[i]== null) {

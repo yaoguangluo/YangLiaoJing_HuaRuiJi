@@ -27,7 +27,14 @@ public class TokenCerts {
 	public void setPdnPassword(String pdnPassword) {
 		this.pdnPassword = pdnPassword;
 	}
+	public String getPds() {
+		return pds;
+	}
+	public void setPds(String pds) {
+		this.pds = pds;
+	}
 	private String password;
+	private String pds;
 	private String pdnKey;
 	private String pdnLock;
 	private String pdnPassword;
