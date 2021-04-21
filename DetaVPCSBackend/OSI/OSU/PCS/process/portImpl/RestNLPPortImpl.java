@@ -63,7 +63,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		Map<String, Object> lenovo = lenovoInit.getSensingMap().getLenovoMap();
 		Map<String, Object> output = new HashMap<>();
 		List<String> ciyi = new LinkedList<>();
-		ciyi.add("\r\n    境：");
+		ciyi.add("\r\n环    境：");
 		Iterator<String> Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
 			String word = Iterator.next();
@@ -218,8 +218,8 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 						//write
 						if(!pos.containsKey(study+ token)) {
 							if(studyPos.containsKey(study)&&studyPos.containsKey(token)) {
-								if(studyPos.get(study).contains("")|| studyPos.get(study).contains("")|| studyPos.get(study).contains("")
-										|| studyPos.get(study).contains("")|| studyPos.get(study).contains("")) {
+								if(studyPos.get(study).contains("助")|| studyPos.get(study).contains("量")|| studyPos.get(study).contains("时")
+										|| studyPos.get(study).contains("连")|| studyPos.get(study).contains("介")) {
 									analyzer.studyNewWord(study, token, posStudy);
 									String stringFile= "C:/Users/Administrator/git/Deta_Parser/wordSegment/org/tinos/ortho/fhmm/imp/poscc.lyg";
 									FileOutputStream fileOutputStream= new FileOutputStream(stringFile, true);
@@ -304,17 +304,17 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				danCi+= 1;
 			}
 			if(pos.containsKey(temp)) {
-				if(pos.get(temp).contains("")) {
+				if(pos.get(temp).contains("名")) {
 					mingCi+= 1;
 					if(temp.length()> 1) {
 						mingCiDuo+= 1;
 					}
-				}else if(pos.get(temp).contains("")) {
+				}else if(pos.get(temp).contains("动")) {
 					dongCi+= 1;
 					if(temp.length()> 1) {
 						dongCiDuo+= 1;
 					}
-				}else if(pos.get(temp).contains("")||pos.get(temp).contains("")||pos.get(temp).contains("")) {
+				}else if(pos.get(temp).contains("形")||pos.get(temp).contains("谓")||pos.get(temp).contains("副")) {
 					importantCi+= 1;
 					if(temp.length()> 1) {
 						importantCiDuo+= 1;
@@ -327,7 +327,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				}
 			}
 		}
-		zf+= "参属:"+ "\r\n";
+		zf+= "参考属性:"+ "\r\n";
 		zf+= "定义:"+mingCi;
 		zf+= "状词:"+dongCi;
 		zf+= "修饰:"+importantCi;
@@ -367,13 +367,13 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		zf+= level+ "\r\n";
 		
 		zf+= "评价:"+ "\r\n";
-		String pj= "这段文章主题"+(zy<0.20?"":(zy<0.30?"良好":(zy<0.40?"优秀":(zy<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "抒情"+(sy<0.20?"":(sy<0.30?"良好":(sy<0.40?"优秀":(sy<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "刻画"+(xs<0.20?"":(xs<0.30?"良好":(xs<0.40?"优秀":(xs<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "解释"+(yl<0.20?"":(yl<0.30?"良好":(yl<0.40?"优秀":(yl<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "组织"+(fx<0.20?"":(fx<0.30?"良好":(fx<0.40?"优秀":(fx<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "教育水平"+(xx<0.20?"":(xx<0.30?"良好":(xx<0.40?"优秀":(xx<0.65?"卓越":"无与伦比"))))+";";
-		pj+= "文学修养"+(level<0.20?"":(level<0.30?"良好":(level<0.40?"优秀":(level<0.65?"卓越":"无与伦比"))))+";";
+		String pj= "这段文章主题"+(zy<0.20?"一般":(zy<0.30?"良好":(zy<0.40?"优秀":(zy<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "抒情"+(sy<0.20?"一般":(sy<0.30?"良好":(sy<0.40?"优秀":(sy<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "刻画"+(xs<0.20?"一般":(xs<0.30?"良好":(xs<0.40?"优秀":(xs<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "解释"+(yl<0.20?"一般":(yl<0.30?"良好":(yl<0.40?"优秀":(yl<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "组织"+(fx<0.20?"一般":(fx<0.30?"良好":(fx<0.40?"优秀":(fx<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "教育水平"+(xx<0.20?"一般":(xx<0.30?"良好":(xx<0.40?"优秀":(xx<0.65?"卓越":"无与伦比"))))+";";
+		pj+= "文学修养"+(level<0.20?"一般":(level<0.30?"良好":(level<0.40?"优秀":(level<0.65?"卓越":"无与伦比"))))+";";
 		zf+= pj+ "\r\n";
 		Map<String, Object> outputMap = new HashMap<>();
 		outputMap.put(URLEncoder.encode("zf","UTF-8"), URLEncoder.encode(zf,"UTF-8"));
