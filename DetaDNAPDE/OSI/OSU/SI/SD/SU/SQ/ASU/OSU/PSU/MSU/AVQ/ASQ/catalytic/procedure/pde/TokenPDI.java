@@ -239,9 +239,6 @@ public class TokenPDI {
 			InitonPDE2= InitonPDE2.prev;
 		}
 	}
-
-	
-		
 /////INITONS SWAP	
 	
 	private Initon doIncrementA(Initon InitonPDE, InitonLinkDNA initonLinkDNA, TokenPDI pDE_RNA_Formular) {
@@ -261,6 +258,7 @@ public class TokenPDI {
 		}
 		return InitonPDE;
 	}
+	
 	private Initon doIncrementO(Initon InitonPDE, InitonLinkDNA initonLinkDNA, TokenPDI pDE_RNA_Formular) {
 		while(InitonPDE.hasPrev()) {
 			InitonPDE= InitonPDE.prev;
