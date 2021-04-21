@@ -58,6 +58,10 @@ public class LoginServiceImpl {// implements LoginService {
 		//String password = TokenUtil.getFirstMD5Password(js.getString("uKey"), usrToken.getuPassword());
 		
 		//下面用DNA 替换了下, 之后进行组件测试.
+		//大家注意, 这里的ukey是 筛子加密方式, 加密后 仅仅密码一个输出而且相同的筛子加密结果不变, 
+		//我的dna加密更换后, 会产生可还原的 肽key, 这个肽key,同样需要备份, 到数据库, 
+		//因为我的dna加密有两种,一种的生成肽key加密的方式, 一种是按已经生成的肽key还原. 不然会加密后密文有变化.
+		//现在养疗经还没有用到这函数, 优先级靠后, 先说明下. 罗瑶光
 		String key= "";
 		String[] lock= new String[12];
         lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
@@ -67,11 +71,12 @@ public class LoginServiceImpl {// implements LoginService {
         	int i= (int)(Math.random()* 12)% 12;
             key+= lock[i];
         }
-        Token sessiontoken = new Token();
+        Token sessiontoken= new Token();
         js.put("uKey", key);
-		String dnaPassword = TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), sessiontoken);
+		String dnaPassword= TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), sessiontoken);
 		sessiontoken.setuEmail(usr.getuEmail());
 		sessiontoken.setuKey(key);
+		//sessiontoken.
 		sessiontoken.setuTime(new Date().getTime());
 		//token.setmPassword(mPassword);
 		sessiontoken.setmPassword(dnaPassword);

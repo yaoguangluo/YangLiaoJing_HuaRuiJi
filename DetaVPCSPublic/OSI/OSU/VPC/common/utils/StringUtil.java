@@ -63,22 +63,22 @@ public class StringUtil {
 		for(int i= 0; i< pDE_RNA_Formular.pdw.length(); i++) {
 			pDE_RNA_Formular.code+= pDE_RNA_Formular.lock + pDE_RNA_Formular.pdw.charAt(i);
 		}
-		System.out.println("ëÄÓï: " + pDE_RNA_Formular.pdw);
-		System.out.println("ëÄËø: " + key);
+		System.out.println("ëÄÓï: "+ pDE_RNA_Formular.pdw);
+		System.out.println("ëÄËø: "+ key);
 		System.out.println("É¢ÁÐëÄÓï: ±£ÃÜ" );
 		pDE_RNA_Formular.bys= "0.6/0.3/0.5/0.632";
 		System.out.println("¾²Ì¬ÃÜÔ¿: " + pDE_RNA_Formular.bys);
 		pDE_RNA_Formular.doKeyPress(pDE_RNA_Formular.code, pDE_RNA_Formular, false);
-		token.setUpdsde( pDE_RNA_Formular.pdedeKey);
-		token.setUpdsds( pDE_RNA_Formular.pdedsKey);
-		token.setUpdsie( pDE_RNA_Formular.pdeieKey);
-		token.setUpdsis( pDE_RNA_Formular.pdeisKey);
+		token.setUpdsde(pDE_RNA_Formular.pdedeKey);
+		token.setUpdsds(pDE_RNA_Formular.pdedsKey);
+		token.setUpdsie(pDE_RNA_Formular.pdeieKey);
+		token.setUpdsis(pDE_RNA_Formular.pdeisKey);
 		pDE_RNA_Formular.time= "" + System.currentTimeMillis();
 		pDE_RNA_Formular.cacheId= "ID" + Math.random() + ":" + Math.random();
 		System.out.println("Ê±¼ä:  " + pDE_RNA_Formular.time);
-		System.out.println("ÕËºÅËæ»ú»º´æ×Ö·û´®:  " + pDE_RNA_Formular.cacheId);
+		System.out.println("ÕËºÅËæ»ú»º´æ×Ö·û´®:  "+ pDE_RNA_Formular.cacheId);
 		pDE_RNA_Formular.session_key= pDE_RNA_Formular.pde;
-		System.out.println("Session: " + pDE_RNA_Formular.session_key);
+		System.out.println("Session: "+ pDE_RNA_Formular.session_key);
 		return pDE_RNA_Formular.session_key;
 	}
 	

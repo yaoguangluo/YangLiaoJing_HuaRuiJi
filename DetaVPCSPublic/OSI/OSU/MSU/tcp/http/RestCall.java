@@ -9,7 +9,6 @@ import java.net.URL;
 
 import OSI.OSU.stable.Stable;
 public class RestCall {
-	
 	public static String getJson(String urlString, String jsonString) 
 			throws IOException{
 		String code= Stable.STRING_EMPTY;
