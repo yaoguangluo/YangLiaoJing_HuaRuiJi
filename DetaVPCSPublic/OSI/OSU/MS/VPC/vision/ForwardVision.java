@@ -67,29 +67,29 @@ public class ForwardVision {
 				vPCSRequest.setRequestForwardType(StableData.STREAM_BUFFER);
 				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_HTML);
 			}	
-			if(filePath.contains(".pdf")){
-				vPCSRequest.setRequestForwardType("bytesWithoutZip");
-				vPCSResponse.setResponseContentType("content-type: application/pdf \n\n");
+			if(filePath.contains(StableData.FILE_PDF)){
+				vPCSRequest.setRequestForwardType(StableData.STREAM_BYTES_WITHOUT_ZIP);
+				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_PDF);
 			}
-			if(filePath.contains(".zip")){
-				vPCSRequest.setRequestForwardType("bytesWithoutZip");
-				vPCSResponse.setResponseContentType("content-type: application/zip \n\n");
+			if(filePath.contains(StableData.FILE_ZIP)){
+				vPCSRequest.setRequestForwardType(StableData.STREAM_BYTES_WITHOUT_ZIP);
+				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_ZIP);
 			}
 			if(filePath.contains(StableData.FILE_WAV)){
 				vPCSRequest.setRequestForwardType(StableData.STREAM_BUFFER);
 				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_WAV);
 			}
-				if(filePath.contains(".rar")){
-				vPCSRequest.setRequestForwardType("bytesWithoutZip");
-				vPCSResponse.setResponseContentType("content-type: application/rar \n\n");
+				if(filePath.contains(StableData.FILE_RAR)){
+				vPCSRequest.setRequestForwardType(StableData.STREAM_BYTES_WITHOUT_ZIP);
+				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_RAR);
 			}
-			if(filePath.contains(".xml")){
-				vPCSRequest.setRequestForwardType("bytesWithoutZip");
-				vPCSResponse.setResponseContentType("content-type: application/xml \n\n");
+			if(filePath.contains(StableData.FILE_XML)){
+				vPCSRequest.setRequestForwardType(StableData.STREAM_BYTES_WITHOUT_ZIP);
+				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_XML);
 			}
-			if(filePath.contains(".txt")){
-				vPCSRequest.setRequestForwardType("bytesWithoutZip");
-				vPCSResponse.setResponseContentType("content-type: text/plain \n\n");
+			if(filePath.contains(StableData.FILE_TXT)){
+				vPCSRequest.setRequestForwardType(StableData.STREAM_BYTES_WITHOUT_ZIP);
+				vPCSResponse.setResponseContentType(StableData.HEADER_CONTENT_TYPE_TXT);
 			}
 		}	
 	}

@@ -44,6 +44,8 @@ public class GzipUtil {
 		return out.toByteArray();
 	}
 }
+//apache 2.0: refer GZIP 官方压缩 demo
+//另外refer 哈夫曼 先生.
 //--------------------- 
 //作者：树先生i ,罗瑶光进行了修正。
 //来源：CSDN 

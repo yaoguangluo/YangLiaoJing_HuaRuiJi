@@ -45,23 +45,38 @@ public class RestMapVision {
 		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getHashCode());
 	}
 
+	public static void processRest(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
+		String output = VPC.forward(null, vPCSRequest.getRequestLink(), vPCSRequest.getRequestValue());
+		PrintWriter printWriter = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
+				.getOutputStream(),"UTF-8")),true);
+		printWriter.println("HTTP/1.1 200 OK\n\n"); 
+		output=output.charAt(0)=='"'?output.substring(1,output.length()):output;
+		output=output.charAt(output.length()-1)=='"'?output.substring(0
+				, output.length()-1):output;
+		output.replace("\\\"","\"");
+		printWriter.println(output);
+		printWriter.flush();
+		printWriter.close();	
+		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getSocket().hashCode());
+	}
+	
 	public static void processRest(App app, VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
 		//VPC属于子继承, 如果不用 overrider 来分配, 也有很多方法, 如osgi, 当然,我现在用最快map标识,更爽.
 		//indexVPCMapPillows.get(vPCSRequest.gettag())...;
 		//现在仅仅deta的网站处理服务器有web页, 养疗经app还没有涉及, 因此 pillow tag 区分VPC 函数的rest map 设计优先级稍后 
 		String output = VPC.forward(app, vPCSRequest.getRequestLink()
 				, vPCSRequest.getRequestValue());
-		PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
+		PrintWriter printWriter = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
 				.getOutputStream(),StableData.CHARSET_UTF_8)),true);
-		pw.println("HTTP/1.1 200 OK\n\n"); 
+		printWriter.println("HTTP/1.1 200 OK\n\n"); 
 		output=output.charAt(StableData.INT_ZERO)=='"'?output.substring(StableData.INT_ONE, output.length())
 				:output;
 		output=output.charAt(output.length()-StableData.INT_ONE)=='"'?output.substring(StableData.INT_ZERO
 				, output.length()-StableData.INT_ONE):output;
-		pw.println(output.replace("\\\"","\""));
+		printWriter.println(output.replace("\\\"","\""));
 		System.out.println("db:"+4);
-		pw.flush();
-		pw.close();	
+		printWriter.flush();
+		printWriter.close();	
 		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getSocket().hashCode());	
 	}
 
@@ -237,20 +252,5 @@ public class RestMapVision {
 		}	
 		dataOutputStream.flush();
 		dataOutputStream.close();
-	}
-	
-	public static void processRest(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
-		String output = VPC.forward(null, vPCSRequest.getRequestLink(), vPCSRequest.getRequestValue());
-		PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
-				.getOutputStream(),"UTF-8")),true);
-		pw.println("HTTP/1.1 200 OK\n\n"); 
-		output=output.charAt(0)=='"'?output.substring(1,output.length()):output;
-		output=output.charAt(output.length()-1)=='"'?output.substring(0
-				, output.length()-1):output;
-		output.replace("\\\"","\"");
-		pw.println(output);
-		pw.flush();
-		pw.close();	
-		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getSocket().hashCode());
 	}
 }

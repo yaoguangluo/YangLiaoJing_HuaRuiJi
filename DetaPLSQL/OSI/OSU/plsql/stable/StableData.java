@@ -59,12 +59,25 @@ public interface StableData {
 	public static final String FILE_JS = ".js";
 	public static final String FILE_CSS = ".css";
 	public static final String FILE_HTML = ".html";	
+	public static final String FILE_PDF = ".pdf";
+	public static final String FILE_ZIP = ".zip";
+	public static final String FILE_RAR = ".rar";
+	public static final String FILE_XML = ".xml";
+	public static final String FILE_TXT = ".txt";
 	//FILE Stream
 	public static final String STREAM_BUFFER = "buffer";	
 	public static final String STREAM_BYTES = "bytes";	
 	public static final String STREAM_BYTES_BUFFER = "bytesBuffer";	
-	public static final String STREAM_REST = "rest";	
+	public static final String STREAM_REST = "rest";
+	public static final String STREAM_BYTES_WITHOUT_ZIP = "bytesWithoutZip";
 	//HTTP HEADER
+	
+	public static final String HEADER_CONTENT_TYPE_PDF = "content-type: application/pdf \n\n";	
+	public static final String HEADER_CONTENT_TYPE_ZIP = "content-type: application/zip \n\n";	
+	public static final String HEADER_CONTENT_TYPE_RAR = "content-type: application/rar \n\n";	
+	public static final String HEADER_CONTENT_TYPE_XML = "content-type: application/xml \n\n";	
+	public static final String HEADER_CONTENT_TYPE_TXT = "content-type: text/plain \n\n";	
+	
 	public static final String HEADER_CONTENT_TYPE_PNG = "Content-Type: image/png \n\n";	
 	public static final String HEADER_CONTENT_TYPE_JPEG = "Content-Type: image/jpeg \n\n";	
 	public static final String HEADER_CONTENT_TYPE_JPG = "Content-Type: image/jpg \n\n";	

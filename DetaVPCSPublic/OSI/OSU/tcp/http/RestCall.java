@@ -107,8 +107,8 @@ public class RestCall {
 		if (conn.getResponseCode() != 200) {
 			throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
 		}
-		BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream()), "GBK"));
-		String out = "";
+		BufferedReader br= new BufferedReader(new InputStreamReader((conn.getInputStream()), "GBK"));
+		String out= "";
 		String out1;
 		while ((out1 = br.readLine()) != null) {
 			out += out1;
@@ -118,8 +118,8 @@ public class RestCall {
 	}
 	
 	public static String cacheRequest(String request) throws IOException {
-		URL url = new URL("http://localhost:6379/" + request);
-		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		URL url= new URL("http://localhost:6379/"+ request);
+		HttpURLConnection conn= (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Accept", "application/json;charset=utf-8");
 		conn.setRequestProperty("Content-Type", "application/json;charset=utf-8");
