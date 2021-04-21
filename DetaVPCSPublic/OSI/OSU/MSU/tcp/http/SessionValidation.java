@@ -26,7 +26,7 @@ public class SessionValidation{
 	//序列初始生成
 	//可以将密码和时间都加载在这个humanWordsPassword中, 这样时间就不需要比对了.
 	//我建议是码农别偷懒.
-	public TokenCerts sessionTokenCertsInitWithHumanWordsByDNA(String humanWordsPassword) {
+	public TokenCerts sessionTokenCertsInitWithHumanWordsByDNA(String humanWordsPassword, boolean bys, String lockBys) {
 		FullDNATokenPDI pDE_RNA_FullFormular= new FullDNATokenPDI();
 		//String a= "luoyaoguang";
 		//pDE_RNA_FullFormular.encodeDNA(a);
@@ -38,20 +38,23 @@ public class SessionValidation{
 		pDE_RNA_FullFormular.pdw= pDE_RNA_FullFormular.initonSect(pDE_RNA_FullFormular.text);
 //		System.out.println("原文: "+ pDE_RNA_FullFormular.text);
 		//pDE_RNA_FullFormular.pdw= "字典保密：MSIOCUOCIPCUPCI";
-		String[] lock= new String[12];
-		lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
-		lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
-		lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
-		int i= (int)(Math.random()* 12)% 12;
-		pDE_RNA_FullFormular.lock+= lock[i];
-		i= (int)(Math.random()* 12)% 12;
-		pDE_RNA_FullFormular.lock+= lock[i];
-		i= (int)(Math.random()* 12)% 12;
-		pDE_RNA_FullFormular.lock+= lock[i];
-		i= (int)(Math.random()* 12)% 12;
-		pDE_RNA_FullFormular.lock+= lock[i];
-
-		for(i= 0; i< pDE_RNA_FullFormular.pdw.length(); i++) {
+		if(bys) {
+			pDE_RNA_FullFormular.lock= lockBys;
+		}else {
+			String[] lock= new String[12];
+			lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+			lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+			lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+			int i= (int)(Math.random()* 12)% 12;
+			pDE_RNA_FullFormular.lock+= lock[i];
+			i= (int)(Math.random()* 12)% 12;
+			pDE_RNA_FullFormular.lock+= lock[i];
+			i= (int)(Math.random()* 12)% 12;
+			pDE_RNA_FullFormular.lock+= lock[i];
+			i= (int)(Math.random()* 12)% 12;
+			pDE_RNA_FullFormular.lock+= lock[i];
+		}
+		for(int i= 0; i< pDE_RNA_FullFormular.pdw.length(); i++) {
 			pDE_RNA_FullFormular.code+= pDE_RNA_FullFormular.lock + pDE_RNA_FullFormular.pdw.charAt(i);
 		}
 //		System.out.println("肽语: "+ pDE_RNA_FullFormular.pdw);
@@ -151,14 +154,14 @@ public class SessionValidation{
 //		System.out.println("得到原续降元元基DNA序列："+ tokenCerts.getPds());
 //		System.out.println("得到后续降元元基DNA序列："+ pDE_RNA_Formular2.pds);
 //		System.out.println("验证正确？");
-//		System.out.println(tokenCerts.getPds().equals(pDE_RNA_Formular2.pds)? "正确": "失败");
+		System.out.println(tokenCerts.getPds().equals(pDE_RNA_Formular2.pds)? "正确": "失败");
 		return tokenCerts.getPds().equals(pDE_RNA_Formular2.pds)? true: false;	
 	}
 	
 	//写个main函数测试下
 	public static void main(String[] argv) {
 		SessionValidation sessionValidation= new SessionValidation();
-		TokenCerts tokenCerts= sessionValidation.sessionTokenCertsInitWithHumanWordsByDNA("控制吸收");
+		TokenCerts tokenCerts= sessionValidation.sessionTokenCertsInitWithHumanWordsByDNA("控制吸收", false, null);
 		Token token= sessionValidation.sessionInitByTokenPDICertsDNA(tokenCerts);
 		sessionValidation.sessionCheck(token, tokenCerts);
 		

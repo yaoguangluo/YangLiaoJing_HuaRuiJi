@@ -8,6 +8,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import OSI.OSU.stable.Stable;
+import OSI.OSU.string.StringSwap;
+import dnaProcessor.Token;
+import dnaProcessor.TokenCerts;
 public class RestCall {
 	public static String getJson(String urlString, String jsonString) 
 			throws IOException{
@@ -80,7 +83,26 @@ public class RestCall {
 	
 	
 	public static String backEndRequest(String request) throws IOException {
-		URL url = new URL("http://localhost/dataCG?message=" + request);
+		//Ä£Äâ¼Ó¸ö²âÊÔÕËºÅ: 313699483@QQ.COM, ÃÜÂë: fengyue1985
+		String id= "313699483@QQ.COM";
+		String idString= StringSwap.charsetSwap(id, "GBK", "GBK");
+		String idEncoder= StringSwap.stringToURIencode(idString, "UTF8");
+		String password= "fengyue1985";
+		//¼ÓÃÜ
+		SessionValidation sessionValidation= new SessionValidation();
+		TokenCerts tokenCerts= sessionValidation.sessionTokenCertsInitWithHumanWordsByDNA(password, false, null);
+		Token token= sessionValidation.sessionInitByTokenPDICertsDNA(tokenCerts);
+		String passwordString= StringSwap.charsetSwap(token.getmPassword(), "GBK", "GBK");
+		String passwordEncoder= StringSwap.stringToURIencode(passwordString, "UTF8");
+		System.out.println("pds--1>"+tokenCerts.getPds());
+		URL url = new URL("http://localhost/dataCG?message=" + request+
+				"&id="+ idEncoder+
+				"&password="+ passwordEncoder+
+				"&de="+ token.getUpdsde() +
+				"&ds="+ token.getUpdsds() +
+				"&ie="+ token.getUpdsie() +
+				"&is="+ token.getUpdsis() +
+				"&lock="+ tokenCerts.getPdnLock());
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Accept", "application/json");

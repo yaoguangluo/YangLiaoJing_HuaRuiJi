@@ -9,28 +9,28 @@ import java.net.URL;
 //import org.jboss.resteasy.spi.HttpRequest;
 public class POSTREST {
 	public String postJson(String urlString, String jsonString) throws IOException {
-		URL url = new URL(urlString);
-		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		URL url= new URL(urlString);
+		HttpURLConnection connection= (HttpURLConnection) url.openConnection();
 		connection.setRequestMethod("POST");
 		connection.setRequestProperty("Content-Type", "application/json");
 		connection.setDoOutput(true);
 		connection.setInstanceFollowRedirects(false);
-		StringBuffer sbuffer = new StringBuffer();
+		StringBuffer sbuffer= new StringBuffer();
 		sbuffer.append(jsonString);
-		OutputStream os = connection.getOutputStream();
+		OutputStream os= connection.getOutputStream();
 		os.write(sbuffer.toString().getBytes());
 		os.flush();
 		//requestBody=connection.getInputStream();
-		String requestBody = "";
-		StringBuilder stringBuilder = new StringBuilder();
-		BufferedReader bufferedReader = null;
+		String requestBody= "";
+		StringBuilder stringBuilder= new StringBuilder();
+		BufferedReader bufferedReader= null;
 		try {
-			InputStream inputStream = connection.getInputStream();
-			if (inputStream != null) {
-				bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-				char[] charBuffer = new char[128];
-				int bytesRead = -1;
-				while ((bytesRead = bufferedReader.read(charBuffer)) > 0) {
+			InputStream inputStream= connection.getInputStream();
+			if (inputStream!= null) {
+				bufferedReader= new BufferedReader(new InputStreamReader(inputStream));
+				char[] charBuffer= new char[128];
+				int bytesRead= -1;
+				while ((bytesRead= bufferedReader.read(charBuffer)) > 0) {
 					stringBuilder.append(charBuffer, 0, bytesRead);
 				}
 			} else {
@@ -54,26 +54,26 @@ public class POSTREST {
 
 
 	public String postXML(String urlString, String XMLString) throws IOException {
-		URL url = new URL(urlString);
-		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		URL url= new URL(urlString);
+		HttpURLConnection connection= (HttpURLConnection) url.openConnection();
 		connection.setRequestMethod("POST");
 		connection.setRequestProperty("Content-Type", "application/xml");
 		connection.setDoOutput(true);
 		connection.setInstanceFollowRedirects(false);
 
-		StringBuffer sbuffer = new StringBuffer();
+		StringBuffer sbuffer= new StringBuffer();
 		sbuffer.append(XMLString);
-		OutputStream os = connection.getOutputStream();
+		OutputStream os= connection.getOutputStream();
 		os.write(sbuffer.toString().getBytes());
 		os.flush();
 
 		//requestBody=connection.getInputStream();
 
-		String requestBody = "";
+		String requestBody= "";
 		StringBuilder stringBuilder = new StringBuilder();
 		BufferedReader bufferedReader = null;
 		try {
-			InputStream inputStream = connection.getInputStream();
+			InputStream inputStream= connection.getInputStream();
 			if (inputStream != null) {
 				bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 				char[] charBuffer = new char[128];

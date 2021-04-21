@@ -1,11 +1,12 @@
 package OSI.OSU.VPC.rest;
 import java.io.File;
 
-
 import java.io.IOException;
 import java.util.Map;
 
 import ME.sample.App;
+import OSI.OSU.MSU.tcp.http.SessionValidation;
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.TokenPDI;
 import OSI.OSU.VPC.controller.ConfigController;
 import OSI.OSU.VPC.controller.DBCategoryController;
 import OSI.OSU.VPC.controller.DeleteController;
@@ -14,9 +15,49 @@ import OSI.OSU.VPC.controller.SelectController;
 import OSI.OSU.VPC.controller.UpdateController;
 import OSI.OSU.VPC.process.portImpl.RestAskPortImpl;
 import OSI.OSU.VPC.process.portImpl.RestLoginPortImpl;
+import dnaProcessor.TokenCerts;
 import mapProcessor.VtoV;
 public class VPC {
 	public static String forward(App app, String string, Map<String, String> data) throws Exception {
+		//养疗经的DNA加密展示 全局检查密钥 调试已经成功,.
+		String id= data.get("id");
+		String password= data.get("password");
+		String de= data.get("de");
+		String ds= data.get("ds");
+		String ie= data.get("ie");
+		String is= data.get("is");
+		TokenPDI pDE_RNA_Formular= new TokenPDI();
+		TokenPDI pDE_RNA_Formular1= new TokenPDI();
+		TokenPDI pDE_RNA_Formular2= new TokenPDI();
+		pDE_RNA_Formular2.pdeieKey= de;
+		pDE_RNA_Formular2.pdeisKey= ds;
+		pDE_RNA_Formular2.pdedeKey= ie;
+		pDE_RNA_Formular2.pdedsKey= is;
+//		System.out.println("准备计算元基DNA序列："+ token.getmPassword());
+		pDE_RNA_Formular2.doSessionKeyUnPress(password, pDE_RNA_Formular2, true);
+		System.out.println("pds--2>"+ pDE_RNA_Formular2.pds);
+		
+		String DB_id= "313699483@qq.com";
+		//模拟本地数据库计算DB_password 在数据库user表中通过DB_id 来获取. 大家好理解吧. 
+		String DB_password= "fengyue1985";
+		
+		String lock= data.get("lock");//也可已放数据表中.不在rest里面发送.
+		//DB_password to lock DB
+		SessionValidation sessionValidation= new SessionValidation();
+		TokenCerts tokenCerts= sessionValidation.sessionTokenCertsInitWithHumanWordsByDNA(DB_password, true, lock);
+		pDE_RNA_Formular1.pdedeKey= de;
+		pDE_RNA_Formular1.pdedsKey= ds;
+		pDE_RNA_Formular1.pdeieKey= ie;
+		pDE_RNA_Formular1.pdeisKey= is;
+		pDE_RNA_Formular.doKeyUnPress(tokenCerts.getPdnPassword(), pDE_RNA_Formular1, true);
+		System.out.println("pds--3>"+ pDE_RNA_Formular1.pds);
+		//开始比对
+		if(!pDE_RNA_Formular1.pde.equalsIgnoreCase(password)? true: false) {
+			return "";
+			//成功就放下走,不成功就返回了失败.
+			//以后有时间我包装成完美的 DNA VPCS 包。优先级降低。
+			//罗瑶光 20210422
+		}
 		//controller
 		if(string.contains("/select")){
 			return SelectController.exec(string, data);	

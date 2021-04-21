@@ -125,8 +125,7 @@ public class RestMapVision {
 		dataOutputStream.close();
 	}
 
-	public static void processBuffer(VPCSRequest vPCSRequest
-			, VPCSResponse vPCSResponse) throws IOException {
+	public static void processBuffer(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws IOException {
 		String builderToString;
 		if(null != DetaCacheManager.getCacheOfString(vPCSRequest.getRequestFilePath())){
 			builderToString = DetaCacheManager.getCacheOfString(vPCSRequest.getRequestFilePath());
@@ -163,7 +162,7 @@ public class RestMapVision {
 		stringBuilder.append(StableData.HEADER_CACHE_CONTROL);
 		stringBuilder.append(StableData.HEADER_CONTENT_ENCODING_GZIP);
 		stringBuilder.append(vPCSResponse.getResponseContentType());
-		String builderToString = stringBuilder.toString();
+		String builderToString= stringBuilder.toString();
 		String contentBuilderToString;
 		if(null != DetaCacheManager.getCacheOfString(vPCSRequest.getRequestFilePath())){
 			contentBuilderToString = DetaCacheManager
@@ -199,7 +198,7 @@ public class RestMapVision {
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 			byte[] byteArray = new byte[1024];
 			int len = 0;
-			list = new ArrayList<>();
+			list= new ArrayList<>();
 			//下面三行while函数思想来自 这篇文章：https://blog.csdn.net/top_code/article/details/41042413
 			//非常轻松处理len的长度溢出。谢谢。
 			while((len = fileInputStream.read(byteArray, 0, 1024))!=-1){

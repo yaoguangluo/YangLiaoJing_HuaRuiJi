@@ -502,20 +502,20 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 				if(text.getText().length()>5000) {
 					return;
 				}
-				StringBuilder page = new StringBuilder().append("");
-				List<String> setsForGet = sets.subList(currentPage * 2000, (currentPage + 1)*2000<sets.size()? (currentPage + 1)*2000 : sets.size());
-				Iterator<String> iterator = setsForGet.iterator();
+				StringBuilder page= new StringBuilder().append("");
+				List<String> setsForGet= sets.subList(currentPage* 2000, (currentPage+ 1)* 2000< sets.size()? (currentPage+ 1)*2000: sets.size());
+				Iterator<String> iterator= setsForGet.iterator();
 				String setOfi= "";
 				int times= 0;
-				while(times++<1000&& iterator.hasNext()) {
-					setOfi += iterator.next();
+				while(times++< 1000&& iterator.hasNext()) {
+					setOfi+= iterator.next();
 				}
 				String response= "";
 				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
 				if(!app.CacheString.containsKey(keyCache)) {
 					try {
 						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
-						String encode= StringSwap.stringToURIencode(string, "UTF8");
+						String encode= StringSwap.stringToURIencode(string, "UTF8");	
 						response= RestCall.backEndRequest(encode);
 						String[] strings= response.split("\"");
 						response= strings.length> 3? strings[3]: "";

@@ -51,6 +51,7 @@ public class BootVPCSBackEnd extends Thread{
 			emotionMap.initTrendingMap();
 			emotionMap.initPredictionMap();
 			emotionMap.initDistinctionMap();
+			System.out.println();
 			System.out.println("----德塔VPCS后端服务器端口启动:" + port);
 			//MrTin.born.start();;
 			System.out.println("----Tin神 VPCS-AOPM-IDUQ 第一代类人催化生命特征开启:" + port);

@@ -63,7 +63,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		Map<String, Object> lenovo = lenovoInit.getSensingMap().getLenovoMap();
 		Map<String, Object> output = new HashMap<>();
 		List<String> ciyi = new LinkedList<>();
-		ciyi.add("\r\nï¿½?    å¢ƒï¼š");
+		ciyi.add("\r\n    ¾³£º");
 		Iterator<String> Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
 			String word = Iterator.next();
@@ -78,7 +78,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				}
 			}
 		}
-		ciyi.add("\r\nåŠ¨æœºè”æƒ³ï¿½?");
+		ciyi.add("\r\n¶¯»úÁªÏë");
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
 			String word = Iterator.next();
@@ -93,7 +93,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				}
 			}
 		}
-		ciyi.add("\r\nå€¾å‘æ¢ç´¢ï¿½?");
+		ciyi.add("\r\nÇãÏòÌ½Ë÷");
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
 			String word = Iterator.next();
@@ -106,7 +106,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				}
 			}
 		}
-		ciyi.add("\r\nå†³ç­–æŒ–æ˜ï¿½?");
+		ciyi.add("\r\n¾ö²ßÍÚ¾ò");
 		Iterator = environmentSampleMap.keySet().iterator();
 		while(Iterator.hasNext()) {
 			String word = Iterator.next();
@@ -160,7 +160,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 			value[count++][1] = iteratorString.split(":")[1];
 		}
 		value = new Quick_6D_luoyaoguang_Sort().sort(value);
-		String cg= "è¯å/ä¸­å¿ƒï¿½?";
+		String cg= "´ÊÃû/ÖĞĞÄ";
 	    cg+= "\r\n";
 		for(int i = 0; i<value.length; i++) {
 			cg += value[i][0] + ":" + value[i][1] + "\r\n";
@@ -218,8 +218,8 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 						//write
 						if(!pos.containsKey(study+ token)) {
 							if(studyPos.containsKey(study)&&studyPos.containsKey(token)) {
-								if(studyPos.get(study).contains("ï¿½?")|| studyPos.get(study).contains("ï¿½?")|| studyPos.get(study).contains("ï¿½?")
-										|| studyPos.get(study).contains("ï¿½?")|| studyPos.get(study).contains("ï¿½?")) {
+								if(studyPos.get(study).contains("")|| studyPos.get(study).contains("")|| studyPos.get(study).contains("")
+										|| studyPos.get(study).contains("")|| studyPos.get(study).contains("")) {
 									analyzer.studyNewWord(study, token, posStudy);
 									String stringFile= "C:/Users/Administrator/git/Deta_Parser/wordSegment/org/tinos/ortho/fhmm/imp/poscc.lyg";
 									FileOutputStream fileOutputStream= new FileOutputStream(stringFile, true);
@@ -304,17 +304,17 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				danCi+= 1;
 			}
 			if(pos.containsKey(temp)) {
-				if(pos.get(temp).contains("ï¿½?")) {
+				if(pos.get(temp).contains("")) {
 					mingCi+= 1;
 					if(temp.length()> 1) {
 						mingCiDuo+= 1;
 					}
-				}else if(pos.get(temp).contains("ï¿½?")) {
+				}else if(pos.get(temp).contains("")) {
 					dongCi+= 1;
 					if(temp.length()> 1) {
 						dongCiDuo+= 1;
 					}
-				}else if(pos.get(temp).contains("ï¿½?")||pos.get(temp).contains("ï¿½?")||pos.get(temp).contains("ï¿½?")) {
+				}else if(pos.get(temp).contains("")||pos.get(temp).contains("")||pos.get(temp).contains("")) {
 					importantCi+= 1;
 					if(temp.length()> 1) {
 						importantCiDuo+= 1;
@@ -327,53 +327,53 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 				}
 			}
 		}
-		zf+= "å‚ï¿½?ï¿½å±ï¿½?:"+ "\r\n";
-		zf+= "å®šä¹‰ï¿½?:"+mingCi;
-		zf+= "çŠ¶ï¿½?ï¿½è¯:"+dongCi;
-		zf+= "ä¿®é¥°ï¿½?:"+importantCi;
-		zf+= "ç‚¹ç¼€ï¿½?:"+uninportantCi;
-		zf+= "é«˜çº§å®šä¹‰ï¿½?:"+mingCiDuo;
-		zf+= "é«˜çº§çŠ¶ï¿½?ï¿½è¯:"+dongCiDuo;
-		zf+= "é«˜çº§ä¿®é¥°ï¿½?:"+importantCiDuo;
-		zf+= "é«˜çº§ç‚¹ç¼€ï¿½?:"+uninportantCiDuo;
+		zf+= "²ÎÊô:"+ "\r\n";
+		zf+= "¶¨Òå:"+mingCi;
+		zf+= "×´´Ê:"+dongCi;
+		zf+= "ĞŞÊÎ:"+importantCi;
+		zf+= "µã×º:"+uninportantCi;
+		zf+= "¸ß¼¶¶¨Òå:"+mingCiDuo;
+		zf+= "¸ß¼¶×´´Ê:"+dongCiDuo;
+		zf+= "¸ß¼¶ĞŞÊÎ:"+importantCiDuo;
+		zf+= "¸ß¼¶µã×º:"+uninportantCiDuo;
 		zf+= "\r\n";
-		zf+= "é‡è¦æŒ‡æ•°:"+ "\r\n";
+		zf+= "ÖØÒªÖ¸Êı:"+ "\r\n";
 		double pca= (mingCi+ dongCi+ importantCi);
 		double zy= (mingCi+ dongCi)/pca;
 		zf+= zy+ "\r\n";
 		
-		zf+= "æ•£æ–‡è‰ºæœ¯:"+ "\r\n";
+		zf+= "É¢ÎÄÒÕÊõ:"+ "\r\n";
 		double sy= (0+ importantCi)/pca;
 		zf+= sy+ "\r\n";
 		
-		zf+= "å™è¿°è‰ºæœ¯:"+ "\r\n";
+		zf+= "ĞğÊöÒÕÊõ:"+ "\r\n";
 		double xs= (0+ dongCi)/pca;
 		zf+= xs+ "\r\n";
 		
-		zf+= "è®®è®ºè‰ºæœ¯:"+ "\r\n";
+		zf+= "ÒéÂÛÒÕÊõ:"+ "\r\n";
 		double yl= (0+ mingCi)/pca;
 		zf+= yl+ "\r\n";
 		
-		zf+= "åˆ†æèƒ½åŠ›:"+ "\r\n";
+		zf+= "·ÖÎöÄÜÁ¦:"+ "\r\n";
 		double fx= (0+ uninportantCi)/(1+ pca+ uninportantCi);
 		zf+= fx+ "\r\n";
 		
-		zf+= "å­¦ä¹ èƒ½åŠ›:"+ "\r\n";
+		zf+= "Ñ§Ï°ÄÜÁ¦:"+ "\r\n";
 		double xx= (0+ duoCi+ sanCi+ siCi)/(1+ danCi+ duoCi+ sanCi+ siCi);
 		zf+= xx+ "\r\n";
 		
-		zf+= "æ–‡å­¦é€ è¯£:"+ "\r\n";
+		zf+= "ÎÄÑ§ÔìÒè:"+ "\r\n";
 		double level= pca/(pca+ uninportantCi);
 		zf+= level+ "\r\n";
 		
-		zf+= "è¯„ä»·:"+ "\r\n";
-		String pj= "è¿™æ®µæ–‡ç« ä¸»é¢˜"+(zy<0.20?"ï¿½?ï¿½?":(zy<0.30?"è‰¯å¥½":(zy<0.40?"ä¼˜ç§€":(zy<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "æŠ’æƒ…"+(sy<0.20?"ï¿½?ï¿½?":(sy<0.30?"è‰¯å¥½":(sy<0.40?"ä¼˜ç§€":(sy<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "åˆ»ç”»"+(xs<0.20?"ï¿½?ï¿½?":(xs<0.30?"è‰¯å¥½":(xs<0.40?"ä¼˜ç§€":(xs<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "è§£é‡Š"+(yl<0.20?"ï¿½?ï¿½?":(yl<0.30?"è‰¯å¥½":(yl<0.40?"ä¼˜ç§€":(yl<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "ç»„ç»‡"+(fx<0.20?"ï¿½?ï¿½?":(fx<0.30?"è‰¯å¥½":(fx<0.40?"ä¼˜ç§€":(fx<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "æ•™è‚²æ°´å¹³"+(xx<0.20?"ï¿½?ï¿½?":(xx<0.30?"è‰¯å¥½":(xx<0.40?"ä¼˜ç§€":(xx<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
-		pj+= "æ–‡å­¦ä¿®å…»"+(level<0.20?"ï¿½?ï¿½?":(level<0.30?"è‰¯å¥½":(level<0.40?"ä¼˜ç§€":(level<0.65?"å“è¶Š":"æ— ä¸ä¼¦æ¯”"))))+";";
+		zf+= "ÆÀ¼Û:"+ "\r\n";
+		String pj= "Õâ¶ÎÎÄÕÂÖ÷Ìâ"+(zy<0.20?"":(zy<0.30?"Á¼ºÃ":(zy<0.40?"ÓÅĞã":(zy<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "ÊãÇé"+(sy<0.20?"":(sy<0.30?"Á¼ºÃ":(sy<0.40?"ÓÅĞã":(sy<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "¿Ì»­"+(xs<0.20?"":(xs<0.30?"Á¼ºÃ":(xs<0.40?"ÓÅĞã":(xs<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "½âÊÍ"+(yl<0.20?"":(yl<0.30?"Á¼ºÃ":(yl<0.40?"ÓÅĞã":(yl<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "×éÖ¯"+(fx<0.20?"":(fx<0.30?"Á¼ºÃ":(fx<0.40?"ÓÅĞã":(fx<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "½ÌÓıË®Æ½"+(xx<0.20?"":(xx<0.30?"Á¼ºÃ":(xx<0.40?"ÓÅĞã":(xx<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
+		pj+= "ÎÄÑ§ĞŞÑø"+(level<0.20?"":(level<0.30?"Á¼ºÃ":(level<0.40?"ÓÅĞã":(level<0.65?"×¿Ô½":"ÎŞÓëÂ×±È"))))+";";
 		zf+= pj+ "\r\n";
 		Map<String, Object> outputMap = new HashMap<>();
 		outputMap.put(URLEncoder.encode("zf","UTF-8"), URLEncoder.encode(zf,"UTF-8"));
@@ -385,7 +385,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		ANNTest aNNTest= new ANNTest();
 		String[][] ann= aNNTest.getANNMatrix(string, analyzer);
 		Map<String, Object> output= new HashMap<>();
-		String xl= "è¯å/æƒ…æ„Ÿ/åŠ¨æœº/è¯æƒ/æŒç»­/è¶‹åŠ¿/é¢„æµ‹/çŒœæƒ³/æ„è¯†/";
+		String xl= "´ÊÃû/Çé¸Ğ/¶¯»ú/´ÊÈ¨/³ÖĞø/Ç÷ÊÆ/Ô¤²â/²ÂÏë/ÒâÊ¶/";
 	    xl+= "\r\n";
 		for(int i=0;i<ann.length;i++) {
 			if(ann[i].length>7) {
@@ -404,7 +404,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		RNN_IDETest rNN_IDETest= new RNN_IDETest();
 		String[][] rnn= rNN_IDETest.getIDEMatrixExcludeAnalyzer(analyzer, string);
 		Map<String, Object> output= new HashMap<>();
-		String rn= "è¯å/posè·ç¦»/covexè·ç¦»/euclidè·ç¦»";
+		String rn= "´ÊÃû/pos¾àÀë/covex¾àÀë/euclid¾àÀë";
 	    rn+= "\r\n";
 		
 		for(int i=0;i<rnn.length;i++) {
