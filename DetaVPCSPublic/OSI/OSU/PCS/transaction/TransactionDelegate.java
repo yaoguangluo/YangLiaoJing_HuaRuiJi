@@ -6,6 +6,7 @@ import OSI.OSU.PCS.process.companyImpl.LoginServiceImpl;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.VPC.common.utils.DetaDBUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
+import dnaProcessor.Token;
 
 //import org.springframework.stereotype.Service;
 import java.net.URLEncoder;
@@ -55,7 +56,21 @@ public class TransactionDelegate {
 		JSONObject jsobj= new JSONObject();
 		jsobj.put("u_email", uEmail);
 		jsobj.put("u_name", uName);
-		jsobj.put("u_password", TokenUtil.getSecondMD5Password(uPassword));
+		//jsobj.put("u_password", TokenUtil.getSecondMD5Password(uPassword));
+		
+		String key= "";
+		String[] lock= new String[12];
+        lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+        lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+        lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+        for(int loop= 0; loop< 4; loop++) {
+        	int i= (int)(Math.random()* 12)% 12;
+            key+= lock[i];
+        }
+        
+		Token sessiontoken= new Token();
+		jsobj.put("u_password", TokenUtil.getFirstDNAPassword(key, uPassword, sessiontoken));
+		
 		jsobj.put("u_address", uAddress);
 		jsobj.put("u_phone", uPhone);
 		jsobj.put("u_weChat", uWeChat);
@@ -68,7 +83,7 @@ public class TransactionDelegate {
 		JSONObject jsobjToken = new JSONObject();
 		jsobjToken.put("u_id", usr.getuId());
 		jsobjToken.put("u_level", "low");
-		jsobjToken.put("u_password", TokenUtil.getSecondMD5Password(uPassword));
+		jsobjToken.put("u_password", TokenUtil.getFirstDNAPassword(key, uPassword, sessiontoken));
 		LoginServiceImpl.insertRowByTablePath("backend", "usrToken", jsobjToken);
 		return transactionLogin(uEmail, uPassword);
 	}

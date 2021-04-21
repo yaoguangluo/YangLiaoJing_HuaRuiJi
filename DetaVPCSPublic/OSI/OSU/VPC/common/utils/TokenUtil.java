@@ -2,28 +2,28 @@ package OSI.OSU.VPC.common.utils;
 
 import java.util.Date;
 
-import md5Processor.Token;
+import dnaProcessor.Token;
 import md5Processor.Usr;
 import md5Processor.UsrToken;
 
 public class TokenUtil {
-	public static Token getNewTokenFromUsrAndUsrToken(md5Processor.Usr usr, md5Processor.UsrToken usrToken) throws Exception {
-		String key = String.valueOf(Double.valueOf(Math.random() * 10000000).intValue());
-		String mPassword = TokenUtil.getFirstMD5Password(key, usrToken.getuPassword());
-		Token token = new Token();
-		token.setuEmail(usr.getuEmail());
-		token.setuKey(key);
-		token.setuTime(new Date().getTime());
-		token.setmPassword(mPassword);
-		return token;
-	}
-
-	public static String getSecondMD5Password(String uPassword) throws Exception {
-		return StringUtil.EncoderByMd5("Author:Yaoguang Luo", uPassword, 8);
-	}
-	public static String getFirstMD5Password(String key, String uPassword) throws Exception {
-		return StringUtil.EncoderByMd5(key, uPassword, 8);
-	}
+//	public static Token getNewTokenFromUsrAndUsrToken(md5Processor.Usr usr, md5Processor.UsrToken usrToken) throws Exception {
+//		String key = String.valueOf(Double.valueOf(Math.random() * 10000000).intValue());
+//		String mPassword = TokenUtil.getFirstMD5Password(key, usrToken.getuPassword());
+//		Token token = new Token();
+//		token.setuEmail(usr.getuEmail());
+//		token.setuKey(key);
+//		token.setuTime(new Date().getTime());
+//		token.setmPassword(mPassword);
+//		return token;
+//	}
+//
+//	public static String getSecondMD5Password(String uPassword) throws Exception {
+//		return StringUtil.EncoderByMd5("Author:Yaoguang Luo", uPassword, 8);
+//	}
+//	public static String getFirstMD5Password(String key, String uPassword) throws Exception {
+//		return StringUtil.EncoderByMd5(key, uPassword, 8);
+//	}
 	//等下把上面的3个MD5涉及的工程所有文件 整体替换为 下面的DNA加密
 	//罗瑶光
 	public static String getFirstDNAPassword(String key, String uPassword, Token token) {
@@ -40,8 +40,8 @@ public class TokenUtil {
         	int i= (int)(Math.random()* 12)% 12;
             key+= lock[i];
         }
-        Token token = new Token();
-		String dnaPassword = TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), token);
+        Token token= new Token();
+		String dnaPassword= TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), token);
 		token.setuEmail(usr.getuEmail());
 		token.setuKey(key);
 		token.setuTime(new Date().getTime());

@@ -8,6 +8,7 @@ import org.json.JSONObject;
 import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
 import OSI.OSU.plsql.vpc.process.factoryImpl.LoginDAOImpl;
+import dnaProcessor.Token;
 import md5Processor.Usr;
 import md5Processor.UsrToken;
 public class LoginServiceImpl {
@@ -51,8 +52,29 @@ public class LoginServiceImpl {
 		String uEmail = js.getString("uEmail");
 		Usr usr = findUsrByUEmail(uEmail);
 		UsrToken usrToken = findUsrTokenByUId(usr.getuId());
-		String password = TokenUtil.getFirstMD5Password(js.getString("uKey"), usrToken.getuPassword());
-		if (!uPassword.equals(password)) {
+		
+		//下面用DNA 替换了下, 之后进行组件测试.
+				String key= "";
+				String[] lock= new String[12];
+		        lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+		        lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+		        lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+		        for(int loop= 0; loop< 4; loop++) {
+		        	int i= (int)(Math.random()* 12)% 12;
+		            key+= lock[i];
+		        }
+		        Token sessiontoken = new Token();
+		        js.put("uKey", key);
+				String dnaPassword = TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), sessiontoken);
+				sessiontoken.setuEmail(usr.getuEmail());
+				sessiontoken.setuKey(key);
+				sessiontoken.setuTime(new Date().getTime());
+				//token.setmPassword(mPassword);
+				sessiontoken.setmPassword(dnaPassword);
+		
+		//String password = TokenUtil.getFirstMD5Password(js.getString("uKey"), usrToken.getuPassword());
+		//if (!uPassword.equals(password)) {
+		if (!uPassword.equals(dnaPassword)) {
 			return "invalid 密码错误。";
 		}
 		long nowTime = new Date().getTime();
@@ -78,8 +100,31 @@ public class LoginServiceImpl {
 		String uEmail = inEmail;
 		Usr usr = findUsrByUEmail(uEmail);
 		//UsrToken usrToken = this.findUsrTokenByUId(usr.getuId());
-		String password = TokenUtil.getSecondMD5Password(inPassword);
-		if (!usr.getuPassword().equals(password)) {
+		
+		
+		
+		//下面用DNA 替换了下, 之后进行组件测试.
+		String key= "";
+		String[] lock= new String[12];
+		lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+		lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+		lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+		for(int loop= 0; loop< 4; loop++) {
+			int i= (int)(Math.random()* 12)% 12;
+			key+= lock[i];
+		}
+		Token sessiontoken = new Token();
+		String dnaPassword = TokenUtil.getFirstDNAPassword(key, inPassword, sessiontoken);
+		sessiontoken.setuEmail(usr.getuEmail());
+		sessiontoken.setuKey(key);
+		sessiontoken.setuTime(new Date().getTime());
+		//token.setmPassword(mPassword);
+		sessiontoken.setmPassword(dnaPassword);
+
+		
+		//String password = TokenUtil.getSecondMD5Password(inPassword);
+		//if (!usr.getuPassword().equals(password)) {
+		if (!usr.getuPassword().equals(dnaPassword)) {
 			return "invalid 密码错误。";
 		}
 		return "valid";
@@ -102,9 +147,33 @@ public class LoginServiceImpl {
 		String uEmail = js.getString("uEmail");
 		Usr usr = findUsrByUEmail(uEmail);
 		UsrToken usrToken = findUsrTokenByUId(usr.getuId());
-		String password = TokenUtil.getFirstMD5Password(js.getString("uKey")
-				, usrToken.getuPassword());
-		if (!uPassword.equals(password)) {
+		//String password = TokenUtil.getFirstMD5Password(js.getString("uKey")
+		//		, usrToken.getuPassword());
+		
+		
+		//下面用DNA 替换了下, 之后进行组件测试.
+		String key= "";
+		String[] lock= new String[12];
+		lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+		lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+		lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+		for(int loop= 0; loop< 4; loop++) {
+			int i= (int)(Math.random()* 12)% 12;
+			key+= lock[i];
+		}
+		Token sessiontoken = new Token();
+		js.put("uKey", key);
+		String dnaPassword = TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), sessiontoken);
+		sessiontoken.setuEmail(usr.getuEmail());
+		sessiontoken.setuKey(key);
+		sessiontoken.setuTime(new Date().getTime());
+		//token.setmPassword(mPassword);
+		sessiontoken.setmPassword(dnaPassword);
+
+		
+		
+		//if (!uPassword.equals(password)) {
+		if (!uPassword.equals(dnaPassword)) {
 			return "invalid 密码错误。";
 		}
 		long nowTime = new Date().getTime();

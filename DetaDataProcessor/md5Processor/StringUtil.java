@@ -4,7 +4,8 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
-
+//引用了中科大的筛子非对称加密论文思想，这里标注下，和 MD5 见 同包下的 TokenUtil 函数.
+//准备统一用DNA加密, 这里说明下.
 public class StringUtil {
 	public static String encode(String input) throws Exception {
 		String result = Base64.getEncoder().encodeToString(input.getBytes("UTF-8"));

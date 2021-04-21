@@ -7,7 +7,7 @@ import java.util.Base64;
 //import org.jboss.resteasy.util.Base64;
 
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.TokenPDI;
-import md5Processor.Token;
+import dnaProcessor.Token;
 
 public class StringUtil {
 	public static String encode(String input) throws Exception {
@@ -47,6 +47,7 @@ public class StringUtil {
 	}
 	//合并DNA加密 第二卷 著作
 	//refer 罗瑶光
+	//md5函数不删除仅注释, 1表示感谢 其开源30年 为密码界做出的贡献, 2 作者DNA著作权避嫌.
 	public static String EncoderByDNA(String key, String uPassword, Token token) {
 		TokenPDI pDE_RNA_Formular= new TokenPDI();
 		@SuppressWarnings("unused")

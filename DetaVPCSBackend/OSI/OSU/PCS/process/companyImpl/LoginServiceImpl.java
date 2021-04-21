@@ -1,22 +1,19 @@
 package OSI.OSU.PCS.process.companyImpl;
-
 import java.io.FileNotFoundException;
-
-
 import java.io.IOException;
 import java.util.Date;
-
 import org.json.JSONObject;
-
 import OSI.OSU.PCS.process.factoryImpl.LoginDAOImpl;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrToken;
 import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
+import dnaProcessor.Token;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Service;
+//Õâ¸öÎÄ¼şÊÇÎÒÔÚ3ÄêÇ°vpc5.0(ÎÒgithub Ã»É¾³ı,´ó¼Ò¿´µÃµ½)µÄspringÉè¼ÆÎÄ¼ş ½øĞĞÓÅ»¯µÄ, Õâ¸öÎÄ¼ş×îºóÊÇÎÒÉè¼ÆlolµÄºó¶Ë Ó¦ÓÃÁË, ºóÀ´ÑĞ·¢vpcs, È¥µôÁËannotation, ¾Í×¢ÊÍÁËºÜ¶àspringµÄÎÄ¼ş. ´ó¼Ò¶¼¿´µÃµ½.
+
 //@Service
-//è¿™ä¸ªæ–‡ä»¶æ˜¯æˆ‘åœ¨3å¹´å‰ vpc5.0 (æˆ‘github æ²¡åˆ é™¤,å¤§å®¶çœ‹å¾—åˆ° )çš„ spring è®¾è®¡æ–‡ä»¶ è¿›è¡Œä¼˜åŒ–çš„, è¿™ä¸ªæ–‡ä»¶æœ€åæ˜¯æˆ‘è®¾è®¡ lolçš„åç«¯ åº”ç”¨äº†, åæ¥ç ”å‘vpcs, å»æ‰äº†annotation, å°±æ³¨é‡Šäº†å¾ˆå¤šspringçš„æ–‡ä»¶. å¤§å®¶éƒ½çœ‹å¾—åˆ°.
 public class LoginServiceImpl {// implements LoginService {
 
 //	@Autowired
@@ -42,33 +39,56 @@ public class LoginServiceImpl {// implements LoginService {
 
 	public static String checkStatus(String token, String level) throws Exception {
 		if (null == token) {
-			return "invalid é”Ÿæ–¤æ‹·é’¥é”Ÿæ–¤æ‹·å¤±é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿé“°ç¢‰æ‹·é™†é”Ÿæ–¤æ‹·";
+			return "invalid ..";
 		}
 		String json = StringUtil.decode(token);
 		JSONObject js;
 		try {
 			js = new JSONObject(json);
 		}catch(Exception e) {
-			return "invalid é”Ÿæ–¤æ‹·é’¥é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿé“°ç¢‰æ‹·é™†é”Ÿæ–¤æ‹·";
+			return "invalid ..";
 		}
 		long uTime = js.getLong("uTime");
 		String uPassword = js.getString("mPassword");
 		String uEmail = js.getString("uEmail");
+		
+		
 		Usr usr = findUsrByUEmail(uEmail);
 		UsrToken usrToken = findUsrTokenByUId(usr.getuId());
-		String password = TokenUtil.getFirstMD5Password(js.getString("uKey"), usrToken.getuPassword());
-		if (!uPassword.equals(password)) {
-			return "invalid é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿï¿½";
+		//String password = TokenUtil.getFirstMD5Password(js.getString("uKey"), usrToken.getuPassword());
+		
+		//ÏÂÃæÓÃDNA Ìæ»»ÁËÏÂ, Ö®ºó½øĞĞ×é¼ş²âÊÔ.
+		String key= "";
+		String[] lock= new String[12];
+        lock[0] = "A"; lock[3] = "O"; lock[6] = "P"; lock[9]  = "M";
+        lock[1] = "V"; lock[4] = "E"; lock[7] = "C"; lock[10] = "S";
+        lock[2] = "I"; lock[5] = "D"; lock[8] = "U"; lock[11] = "Q";
+        for(int loop= 0; loop< 4; loop++) {
+        	int i= (int)(Math.random()* 12)% 12;
+            key+= lock[i];
+        }
+        Token sessiontoken = new Token();
+        js.put("uKey", key);
+		String dnaPassword = TokenUtil.getFirstDNAPassword(key, usrToken.getuPassword(), sessiontoken);
+		sessiontoken.setuEmail(usr.getuEmail());
+		sessiontoken.setuKey(key);
+		sessiontoken.setuTime(new Date().getTime());
+		//token.setmPassword(mPassword);
+		sessiontoken.setmPassword(dnaPassword);
+		//return sessiontoken
+		//if (!uPassword.equals(password)) {
+		if (!uPassword.equals(dnaPassword)) {
+			return "invalid ..";
 		}
 		long nowTime = new Date().getTime();
 		if(uTime + 600000 < nowTime) {
-			return "invalid 10é”Ÿæ–¤æ‹·é”Ÿæ¥ç­¹æ‹·æ—¶é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿé“°ç¢‰æ‹·é™†é”Ÿæ–¤æ‹·";
+			return "invalid 10..";
 		}
 		
 		if(level.contains("level")) {
 			String uLevel = usrToken.getuLevel();
 			if(!uLevel.contains("high")) {
-				return "invalid æƒé”Ÿç«è¯§æ‹·é”Ÿæ–¤æ‹·";
+				return "invalid ..";
 			}
 		}
 		return "valid";
