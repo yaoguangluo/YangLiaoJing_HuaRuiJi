@@ -3,21 +3,30 @@ import java.util.Iterator;
 
 import java.util.List;
 
+import ME.sample.App;
+import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+//编码设计：罗瑶光
+//refer Jacob 语音 api demo
+//refer 德塔图灵系统，极速中文分词  罗瑶光
 public class ReadChinese extends Thread implements Runnable{
 	public String text = "";
 	public int finish = 1;
 	private List<String> setsForGet; 
 	public com.jacob.activeX.ActiveXComponent sap;;
 	public com.jacob.com.Dispatch sapo;
+	public App app;
+	public Analyzer analyzer;
 	@SuppressWarnings("unused")
-	public ReadChinese(){ 
+	public ReadChinese(App app, Analyzer analyzer){ 
+		this.app= app;
+		this.analyzer= analyzer;
 		com.jacob.activeX.ActiveXComponent sap= new com.jacob.activeX.ActiveXComponent("Sapi.SpVoice");
 		sapo= sap.getObject();
 		try {
 			// 音量 0-100
 			sap.setProperty("Volume", new com.jacob.com.Variant(100));
 			// 语音朗读速度 -10 到 +10
-			sap.setProperty("Rate", new com.jacob.com.Variant(-2));
+			sap.setProperty("Rate", new com.jacob.com.Variant(-5));
 			com.jacob.com.Variant defalutVoice= sap.getProperty("Voice");
 			com.jacob.com.Dispatch dispdefaultVoice= defalutVoice.toDispatch();
 			com.jacob.com.Variant allVoices= com.jacob.com.Dispatch.call(sapo, "GetVoices");
@@ -44,27 +53,52 @@ public class ReadChinese extends Thread implements Runnable{
 			}	
 	}
 
+//	public void run() {
+//		if(finish == 1) {
+//			this.read(this.text);	
+//		}
+//		if(finish == 2) {
+//			Iterator<String> iterator = setsForGet.iterator();
+//			String readString = "";
+//			int c = 0;
+//			while(iterator.hasNext() && finish == 2) {
+//				readString += ""+ iterator.next();
+//				if(c++ == 20) {
+//					c=0;
+//					this.read(readString);	
+//					readString=" ";
+//				}
+//			}
+//			if(c!=0) {
+//				this.read(readString);	
+//			}
+//		}
+//		finish=0;
+//	}
+	
 	public void run() {
-		if(finish == 1) {
+		if(finish== 1) {
 			this.read(this.text);	
 		}
-		if(finish == 2) {
-			Iterator<String> iterator = setsForGet.iterator();
-			String readString = "";
-			int c = 0;
-			while(iterator.hasNext() && finish == 2) {
-				readString += ""+ iterator.next();
-				if(c++ == 20) {
-					c=0;
-					this.read(readString);	
-					readString=" ";
+		if(finish== 2) {
+			Iterator<String> iterator= setsForGet.iterator();
+			while(iterator.hasNext()&& finish== 2) {
+				String readString= iterator.next();
+				List<String> list = null;
+				if(null!= app) {
+					list= app.analyzer.parserMixedString(readString);
+				}else if(null!= analyzer) {
+					list= analyzer.parserMixedString(readString);
+				}
+				if(null!= list&& finish== 2) {
+					Iterator<String> listIterator= list.iterator();
+					while(listIterator.hasNext()) {
+						this.read(listIterator.next());	
+					}
 				}
 			}
-			if(c!=0) {
-				this.read(readString);	
-			}
 		}
-		finish=0;
+		finish= 0;
 	}
 	
 	public void setPreReadText(String text) {
@@ -84,7 +118,6 @@ public class ReadChinese extends Thread implements Runnable{
 	}
 
 	public void setNullSap() {
-	//	 TODO Auto-generated method stub
 		sap= null;
 	}
 }

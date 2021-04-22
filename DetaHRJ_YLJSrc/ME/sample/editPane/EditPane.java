@@ -420,7 +420,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 		MVQ.button.DetaButton button= new MVQ.button.DetaButton("ÔÄ¶Á");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
-			ReadChinese readChinese= new ReadChinese();
+			ReadChinese readChinese= new ReadChinese(null, analyzer);
 			@SuppressWarnings("deprecation")
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -428,7 +428,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				if(!readChinese.isAlive()) {
-					readChinese= new ReadChinese();
+					readChinese= new ReadChinese(null, analyzer);
 					readChinese.setPreReadText(text.getText());
 					readChinese.start();
 				}else {

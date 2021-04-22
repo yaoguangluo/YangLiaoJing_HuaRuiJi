@@ -779,7 +779,7 @@ public class ErKekx extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		readChinese= new ReadChinese();
+		readChinese= new ReadChinese(app, analyzer);
 		buttonCTV= new DetaButton("语音阅读关");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -792,7 +792,7 @@ public class ErKekx extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("语音阅读开");
-					readChinese= new ReadChinese();
+					readChinese= new ReadChinese(app, analyzer);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {

@@ -15,7 +15,7 @@
 	<classpathentry kind="src" path="DetaPLSQLDatabase"/>
 	<classpathentry kind="src" path="DetaDataProcessor"/>
 	<classpathentry kind="src" path="DetaDataSwap"/>
-	<classpathentry kind="src" path="DetaPLSQLDBBootVPCS"/>
+	<classpathentry kind="src" path="DetaVPCSBootPLSQL"/>
 	<classpathentry kind="src" path="DetaHRJ_YLJSrc"/>
 	<classpathentry kind="src" path="DetaDataProcessorImage"/>
 	<classpathentry kind="src" path="DetaUnicornETLNodeMedicine"/>

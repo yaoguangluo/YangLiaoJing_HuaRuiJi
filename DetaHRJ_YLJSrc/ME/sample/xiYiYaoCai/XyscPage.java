@@ -809,7 +809,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		readChinese= new ReadChinese();
+		readChinese= new ReadChinese(app, analyzer);
 		buttonCTV= new DetaButton("ÓïÒôÔÄ¶Á¹Ø");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -822,7 +822,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("ÓïÒôÔÄ¶Á¿ª");
-					readChinese= new ReadChinese();
+					readChinese= new ReadChinese(app, analyzer);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {

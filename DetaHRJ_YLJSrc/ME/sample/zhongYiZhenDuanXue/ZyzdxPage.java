@@ -628,7 +628,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		readChinese= new ReadChinese();
+		readChinese= new ReadChinese(u, analyzer);
 		buttonCTV= new DetaButton("ÓïÒôÔÄ¶Á¹Ø");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -641,7 +641,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("ÓïÒôÔÄ¶Á¿ª");
-					readChinese= new ReadChinese();
+					readChinese= new ReadChinese(u, analyzer);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {

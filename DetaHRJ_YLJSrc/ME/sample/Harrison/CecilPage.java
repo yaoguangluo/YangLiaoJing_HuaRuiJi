@@ -427,7 +427,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			data.validate();
 			}
 		});
-		readEnglish = new ReadChinese();
+		readEnglish= new ReadChinese(app, analyzer);
 		buttonETC = new DetaButton("ÓïÒôÔÄ¶Á¹Ø");
 		buttonETC.setBounds(740, 0, 100, 30);
 		buttonETC.addActionListener(new ActionListener() {
@@ -443,7 +443,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readEnglish.isAlive()) {
 					buttonETC.setLabel("ÓïÒôÔÄ¶Á¿ª");
-					readEnglish = new ReadChinese();
+					readEnglish= new ReadChinese(app, analyzer);
 					readEnglish.setPreReadList(sets);
 					readEnglish.start();
 				}else {

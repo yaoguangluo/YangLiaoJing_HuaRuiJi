@@ -613,7 +613,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		});
 		
 		
-		readEnglish = new ReadChinese();
+		readEnglish= new ReadChinese(u, analyzer);
 		buttonCTV= new DetaButton("ÓïÒôÔÄ¶Á¹Ø");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -626,7 +626,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readEnglish.isAlive()) {
 					buttonCTV.setLabel("ÓïÒôÔÄ¶Á¿ª");
-					readEnglish = new ReadChinese();
+					readEnglish= new ReadChinese(u, analyzer);
 					readEnglish.setPreReadList(sets);
 					readEnglish.start();
 				}else {

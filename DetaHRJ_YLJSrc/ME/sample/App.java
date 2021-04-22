@@ -566,7 +566,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			}
 		});
 
-		readChinese= new ReadChinese();
+		readChinese= new ReadChinese(appInstance, analyzer);
 		buttonCTV= new DetaButton("”Ô“Ù‘ƒ∂¡πÿ");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -581,7 +581,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				//						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("”Ô“Ù‘ƒ∂¡ø™");
-					readChinese= new ReadChinese();
+					readChinese= new ReadChinese(appInstance, analyzer);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {

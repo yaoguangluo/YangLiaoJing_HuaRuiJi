@@ -20,7 +20,9 @@ import mapProcessor.VtoV;
 public class VPC {
 	public static String forward(App app, String string, Map<String, String> data) throws Exception {
 		//养疗经的DNA加密展示 全局检查密钥 调试已经成功,.
+		@SuppressWarnings("unused")
 		String id= data.get("id");
+		
 		String password= data.get("password");
 		String de= data.get("de");
 		String ds= data.get("ds");
@@ -37,7 +39,10 @@ public class VPC {
 		pDE_RNA_Formular2.doSessionKeyUnPress(password, pDE_RNA_Formular2, true);
 		System.out.println("pds--2>"+ pDE_RNA_Formular2.pds);
 		
+		@SuppressWarnings("unused")
 		String DB_id= "313699483@qq.com";
+		
+		//String DB_id= id;
 		//模拟本地数据库计算DB_password 在数据库user表中通过DB_id 来获取. 大家好理解吧. 
 		String DB_password= "fengyue1985";
 		

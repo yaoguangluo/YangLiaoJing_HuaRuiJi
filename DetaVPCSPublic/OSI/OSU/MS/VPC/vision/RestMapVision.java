@@ -64,9 +64,9 @@ public class RestMapVision {
 		//VPC属于子继承, 如果不用 overrider 来分配, 也有很多方法, 如osgi, 当然,我现在用最快map标识,更爽.
 		//indexVPCMapPillows.get(vPCSRequest.gettag())...;
 		//现在仅仅deta的网站处理服务器有web页, 养疗经app还没有涉及, 因此 pillow tag 区分VPC 函数的rest map 设计优先级稍后 
-		String output = VPC.forward(app, vPCSRequest.getRequestLink()
+		String output= VPC.forward(app, vPCSRequest.getRequestLink()
 				, vPCSRequest.getRequestValue());
-		PrintWriter printWriter = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
+		PrintWriter printWriter= new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
 				.getOutputStream(),StableData.CHARSET_UTF_8)),true);
 		printWriter.println("HTTP/1.1 200 OK\n\n"); 
 		output=output.charAt(StableData.INT_ZERO)=='"'?output.substring(StableData.INT_ONE, output.length())
