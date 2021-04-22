@@ -15,7 +15,7 @@ public class ReadChinese extends Thread implements Runnable{
 	public com.jacob.activeX.ActiveXComponent sap;;
 	public com.jacob.com.Dispatch sapo;
 	public App app;
-	public Analyzer analyzer;
+	public Analyzer analyzer;//对象只是 地址位而已，不是clone， copy和 new
 	@SuppressWarnings("unused")
 	public ReadChinese(App app, Analyzer analyzer){ 
 		this.app= app;
@@ -26,7 +26,7 @@ public class ReadChinese extends Thread implements Runnable{
 			// 音量 0-100
 			sap.setProperty("Volume", new com.jacob.com.Variant(100));
 			// 语音朗读速度 -10 到 +10
-			sap.setProperty("Rate", new com.jacob.com.Variant(-5));
+			sap.setProperty("Rate", new com.jacob.com.Variant(-3));
 			com.jacob.com.Variant defalutVoice= sap.getProperty("Voice");
 			com.jacob.com.Dispatch dispdefaultVoice= defalutVoice.toDispatch();
 			com.jacob.com.Variant allVoices= com.jacob.com.Dispatch.call(sapo, "GetVoices");
@@ -118,6 +118,7 @@ public class ReadChinese extends Thread implements Runnable{
 	}
 
 	public void setNullSap() {
+		sapo= null;
 		sap= null;
 	}
 }
