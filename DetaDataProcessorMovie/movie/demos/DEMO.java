@@ -8,11 +8,9 @@ import javax.sound.sampled.AudioFormat.Encoding;
 import movieProcessor.LYGFileIO;
 import movieProcessor.LYGPlayer;
 
-public class DEMO
-{
+public class DEMO{
 	@SuppressWarnings("unused")
-	public DEMO() throws IOException
-	{
+	public DEMO() throws IOException{
 		String FilePath = new String("FilePath");
 		LYGFileIO IO = new LYGFileIO();
 		IO.reset();
@@ -24,8 +22,7 @@ public class DEMO
 		IO.lygWrite("filePath");
 		IO.reset();
 	}
-	public static void main(String []args)
-	{
+	public static void main(String []args){
 		 Encoding en=new Encoding("ULAW");
 		 AudioFormat F=new AudioFormat(en, 1, 2, 3, 4, 5, true);
 		 //en /1sample rate /2samplesize /3 channels /4framesize  /5 framrate/bigendianture 

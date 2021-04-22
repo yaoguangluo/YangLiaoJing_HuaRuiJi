@@ -42,7 +42,7 @@ public class SoundWaveJPanel extends JPanel implements Runnable{
 	public DFT dFT;
 	Thread time;
 	public int reg= 0;
-	public OSI.OSU.PEQ.node.sound.wavePlay.Jp waveJpanel;
+	public OSI.OSU.PEQ.OSU.MSQ.sound.wavePlay.Jp waveJpanel;
 	int type= 0;
 	SoundRecord rec;
 	Vector<Double> lines ;
@@ -60,7 +60,7 @@ public class SoundWaveJPanel extends JPanel implements Runnable{
 		double[] fft= new double[1024];
 		fft[4]= 500;
 		LYGFileIO lYGFileIO= new LYGFileIO().initWithFFT(new double[1024], makeContainerZNSZ);
-		waveJpanel= new OSI.OSU.PEQ.node.sound.wavePlay.Jp(lYGFileIO);
+		waveJpanel= new OSI.OSU.PEQ.OSU.MSQ.sound.wavePlay.Jp(lYGFileIO);
 		
 		JButton j = new DetaButton("¿ªÊ¼Â¼Òô",100,50,Color.red);
 		j.addActionListener(new ActionListener() {

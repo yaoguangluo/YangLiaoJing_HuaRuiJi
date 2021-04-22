@@ -7,7 +7,9 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+//这个文件同样要refer下 GLEEN(readme 里面已经有refer标识,就不多写了), 最早在加州路的大学我研究jogl GPL, apache2.0开源 的 MESH架构(readme 里面已经有refer标识,就不多写了), 
+//当时 我SourceForge 下的源码是错误的, 我在测试调通优化后 发给了彭教授, 卡教授 和 Renhart 教授描述了这个情况. 信息克查阅 加州路德大学 老师邮件.
+//这里备注下.
 public class JOGLObjLoader {
 	private ArrayList<V3> vertices = new ArrayList<V3>();
 	private ArrayList<V3> normals = new ArrayList<V3>();
@@ -84,9 +86,6 @@ public class JOGLObjLoader {
 				                           "(\\d+)" +
 				                           "(\\s*)?$");
 
-		
-		
-		
 		Pattern spat   = Pattern.compile("^s\\s+(\\S*)$");
 		Pattern blankpat = Pattern.compile("^\\s*$");
 		vertices.add(new V3()); 
