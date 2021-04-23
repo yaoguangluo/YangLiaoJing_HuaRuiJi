@@ -1,6 +1,6 @@
 package PEU.sortProcessorYLJ;
 import java.io.IOException;
-import timeProcessor.TimeCheck;
+import PEU.timeProcessorYLJ.*;
 public class Demo extends Thread{
 	public static void main(String args[]) throws IOException, InterruptedException{
         //init array

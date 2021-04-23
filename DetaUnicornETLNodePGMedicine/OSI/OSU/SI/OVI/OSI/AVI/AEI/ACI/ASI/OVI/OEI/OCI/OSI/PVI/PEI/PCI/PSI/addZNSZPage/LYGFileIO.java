@@ -19,7 +19,7 @@ import PEU.movieProcessorYLJ.Header;
 import PEU.movieProcessorYLJ.MdataFrame;
 import PEU.soundProcessorYLJ.*;
 //import thread.MakeContainerZNSZ;
-import waveProcessor.DFT;
+import PEU.waveProcessorYLJ.*;
 public class LYGFileIO{
 	public Header header;
 	public AdataFrame adataFrame;

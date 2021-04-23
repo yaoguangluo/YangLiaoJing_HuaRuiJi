@@ -23,7 +23,7 @@ public class MaxAndMin{
 	@SuppressWarnings("unused")
 	public double min_v(double[] input,double rank) {
 		double min = 999999999;
-		double[][] fengtong =new waveProcessor.PeakStatistic().fengTong1(input);	
+		double[][] fengtong= new PeakStatistic().fengTong1(input);	
 		for(int i=0; i<input.length; i++) {
 			if(input[i] < min) {
 				min=input[i];

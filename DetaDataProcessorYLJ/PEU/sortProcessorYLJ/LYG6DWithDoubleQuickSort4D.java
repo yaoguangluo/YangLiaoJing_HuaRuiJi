@@ -1,6 +1,6 @@
 package PEU.sortProcessorYLJ;
 
-import timeProcessor.TimeCheck;
+import PEU.timeProcessorYLJ.*;
 
 //基于算法导论快排4衍生极速小高峰缺陷过滤理论快速排序第5代 线性数字数组排序法函数Java完整版本实现。
 //思想：算法导论快排4理论，罗瑶光小高峰过滤理论。

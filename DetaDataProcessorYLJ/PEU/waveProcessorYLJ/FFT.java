@@ -14,7 +14,8 @@ public class FFT{
 		}
 		return output;
 	}
-
+	//refer 库里, 图基
+	//我在2018~2020著作权申请文档,github和首页均有refer. FFT 这个 国际 快速傅里叶 通用名字我从没有换过.
 	public cp[] fftk(cp[] x) {
 		int N = x.length;
 		if (N == 1) return new cp[] {x[0]};

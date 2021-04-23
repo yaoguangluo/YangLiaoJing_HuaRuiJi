@@ -13,7 +13,7 @@ public class Proportion{
 
 	public double[] newY(double[] input, double hight) {
 		double [] output= new double [input.length];
-		double max = new waveProcessor.MaxAndMin().max_v(input);
+		double max = new MaxAndMin().max_v(input);
 		double biliy=  hight/max;
 		for(int i=0;i<output.length;i++) {
 			output[i]=input[i]*biliy;
@@ -23,7 +23,7 @@ public class Proportion{
 
 	public double[] newXY(double[] input, double width, double hight ) {
 		double [] output= new double [(int)width];
-		double max= new waveProcessor.MaxAndMin().max_v(input);
+		double max= new MaxAndMin().max_v(input);
 		double biliy= hight/ max;
 		double bilix= input.length/width;
 		for(int i= 0; i< output.length; i++) {
@@ -34,7 +34,7 @@ public class Proportion{
 
 	public double[] newXYBest(double[] input, double width, double hight ) {
 		double [] output= new double [(int)width];
-		double max = new waveProcessor.MaxAndMin().max_v(input);
+		double max = new MaxAndMin().max_v(input);
 		double biliy=  hight/max;
 		double bilix=  width/input.length;
 		for(int i=0;i<input.length-1;i++) {

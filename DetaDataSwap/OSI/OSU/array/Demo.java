@@ -1,7 +1,6 @@
 package OSI.OSU.array;
 import java.io.IOException;
-
-import timeProcessor.TimeCheck;
+import PEU.timeProcessorYLJ.*;
 //import parserProcessor.timeCheck;
 public class Demo extends Thread{
 	public static void main(String args[]) throws IOException, InterruptedException{

@@ -1,4 +1,4 @@
-package timeProcessor;
+package PEU.timeProcessorYLJ;
 public class Speed{
 	static int t= 0;
 	public static void main(String[] argv){

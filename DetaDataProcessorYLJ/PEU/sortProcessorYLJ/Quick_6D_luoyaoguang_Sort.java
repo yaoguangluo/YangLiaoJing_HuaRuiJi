@@ -1,6 +1,6 @@
 package PEU.sortProcessorYLJ;
 
-import timeProcessor.TimeCheck;
+import PEU.timeProcessorYLJ.*;
 
 //第二代罗瑶光小高峰平均高峰过滤快排思想设计中。小高峰高峰过滤快速排序
 public class Quick_6D_luoyaoguang_Sort{
