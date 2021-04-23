@@ -1,5 +1,4 @@
 package PEU.imageProcessorYLJ;
-import imageProcessor.Reflection;
 public class Erosion{
 	int[][]kernel;
 	int[][]GetRegion;

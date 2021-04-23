@@ -1,7 +1,5 @@
 package PEU.imageProcessorYLJ;
 import java.io.IOException;
-
-import imageProcessor.Reflection;
 public class HitAndMiss{
 	int[][]kernel;
 	int[][]GetRegion;

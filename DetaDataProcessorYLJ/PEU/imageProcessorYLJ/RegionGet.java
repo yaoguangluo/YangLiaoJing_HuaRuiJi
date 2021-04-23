@@ -1,5 +1,4 @@
 package PEU.imageProcessorYLJ;
-import imageProcessor.ReadWritePng;
 
 import java.io.IOException;
 public class RegionGet {
