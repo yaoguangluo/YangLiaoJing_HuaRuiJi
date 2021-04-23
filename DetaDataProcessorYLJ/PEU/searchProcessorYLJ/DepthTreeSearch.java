@@ -1,5 +1,5 @@
 package PEU.searchProcessorYLJ;
-import sortProcessor.Leaf;
+import PEU.sortProcessorYLJ.*;
 public class DepthTreeSearch{
 	public boolean search(Leaf root,int n1) {
 		DepthRun pr=new DepthRun(root,n1);

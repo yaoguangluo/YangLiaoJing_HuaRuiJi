@@ -1,5 +1,5 @@
 package OVQ.OSU.sort;
-import sortProcessor.Quick_6D_luoyaoguang_Sort;;
+import PEU.sortProcessorYLJ.*;
 //×÷Õß ÂÞÑþ¹â
 public class Quick9DLYGWithStringSwap extends Quick_6D_luoyaoguang_Sort{
 	public int[] sort(int[]a, String[]sa) {

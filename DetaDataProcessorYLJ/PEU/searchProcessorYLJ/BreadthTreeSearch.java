@@ -1,5 +1,5 @@
 package PEU.searchProcessorYLJ;
-import sortProcessor.Leaf;
+import PEU.sortProcessorYLJ.*;
 public class BreadthTreeSearch{
 	public boolean search(Leaf root,int n1) {
 		BreadthRun pr=new BreadthRun(root,n1);

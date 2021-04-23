@@ -1,5 +1,5 @@
 package PEU.searchProcessorYLJ;
-import sortProcessor.Leaf;
+import PEU.sortProcessorYLJ.*;
 public class PreorderTreeSearch{
 	public boolean search(Leaf root,int n1) {
 		PreorderRun pr=new PreorderRun(root,n1);

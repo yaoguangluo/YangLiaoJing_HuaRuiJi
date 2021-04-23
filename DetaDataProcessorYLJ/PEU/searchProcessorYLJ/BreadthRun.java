@@ -1,5 +1,5 @@
 package PEU.searchProcessorYLJ;
-import sortProcessor.Leaf;
+import PEU.sortProcessorYLJ.*;
 //import com.sun.image.codec.jpeg.JPEGCodec;
 //import com.sun.image.codec.jpeg.JPEGImageDecoder;
 public class BreadthRun extends Thread{

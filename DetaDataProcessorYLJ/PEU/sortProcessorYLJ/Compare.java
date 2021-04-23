@@ -1,4 +1,4 @@
-package sortProcessor;
+package PEU.sortProcessorYLJ;
 public class Compare{
 	public int getMiddle(int[] list, int low, int high) {
 		//int tmp= list[low]<list[low]?list[low]:list[low];    //数组的第一个作为中轴

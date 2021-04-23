@@ -1,4 +1,4 @@
-package sortProcessor;
+package PEU.sortProcessorYLJ;
 import timeProcessor.TimeCheck;
 //第三代罗瑶光小高峰平均高峰过滤快排思想设计中。小高峰高峰过滤快速排序
 //同频函数减少

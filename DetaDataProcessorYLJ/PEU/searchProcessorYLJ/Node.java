@@ -1,5 +1,5 @@
 package PEU.searchProcessorYLJ;
-import sortProcessor.Leaf;
+import PEU.sortProcessorYLJ.*;
 public class Node {
   public Leaf value;
   public Node next;

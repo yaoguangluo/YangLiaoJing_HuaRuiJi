@@ -1,9 +1,9 @@
-package sortProcessor;
-//基于算法导论快排4衍生极速小高峰缺陷过滤理论快速排序第8代 线性数字数组排序法函数Java完整版本实现。
+package PEU.sortProcessorYLJ;
+//基于算法导论快排4衍生极速小高峰缺陷过滤理论快速排序第9代 线性数字数组排序法函数Java完整版本实现。
 //思想：算法导论快排4理论，罗瑶光小高峰过滤理论。
 //实现：罗瑶光
-//时间：20140101~ 20200711
-public class LYG9DWithDoubleQuickSort4D{
+//时间：20140101~ 20200714
+public class LYG9DQS4DWithDoubleTopSort1D{
 	int range;
 	int deeps;
 	int to=0;
@@ -12,6 +12,8 @@ public class LYG9DWithDoubleQuickSort4D{
 		this.range= range;
 		this.deeps= deeps;
 		processDouble(array, 0, array.length- 1, 0);
+		//System.out.println(to);
+		//System.out.println(tp);
 		return array;
 	}
 

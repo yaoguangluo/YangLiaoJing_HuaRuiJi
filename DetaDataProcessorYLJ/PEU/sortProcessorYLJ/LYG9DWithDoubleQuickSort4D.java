@@ -1,15 +1,13 @@
-package sortProcessor;
-
-import timeProcessor.TimeCheck;
-
-//基于算法导论快排4衍生极速小高峰缺陷过滤理论快速排序第5代 线性数字数组排序法函数Java完整版本实现。
+package PEU.sortProcessorYLJ;
+//基于算法导论快排4衍生极速小高峰缺陷过滤理论快速排序第8代 线性数字数组排序法函数Java完整版本实现。
 //思想：算法导论快排4理论，罗瑶光小高峰过滤理论。
 //实现：罗瑶光
-//时间：20140101~ 20200714
-@SuppressWarnings("unused")
-public class LYG6DWithDoubleQuickSort4D{
+//时间：20140101~ 20200711
+public class LYG9DWithDoubleQuickSort4D{
 	int range;
 	int deeps;
+	int to=0;
+	int tp=0;
 	public double[] sort(double[] array, int range, int deeps) {
 		this.range= range;
 		this.deeps= deeps;
@@ -18,7 +16,7 @@ public class LYG6DWithDoubleQuickSort4D{
 	}
 
 	private void processDouble(double[] array, int leftPoint, int rightPoint, int deep) {
-		int c= rightPoint- leftPoint;
+		int c= rightPoint- leftPoint+ 1;
 		if(!(c< this.range|| deep> this.deeps)) {//增加了deep
 			int pos= partition(array, leftPoint, rightPoint);
 			if(leftPoint< pos- 1) {
@@ -30,7 +28,7 @@ public class LYG6DWithDoubleQuickSort4D{
 			return;
 		}
 		int i= leftPoint;
-		for(int j= i+ 1; j<= leftPoint+ c; j= i++){
+		for(int j= i+ 1; j< leftPoint+ c; j= i++){
 			while(j> leftPoint){
 				if(array[j]< array[--j]){
 					double temp= array[j+ 1];
@@ -42,10 +40,9 @@ public class LYG6DWithDoubleQuickSort4D{
 	}
 
 	private int partition(double[] array, int leftPoint, int rightPoint) {
-		int mid= (leftPoint+ rightPoint)>> 1;
-		double x= array[rightPoint]>array[leftPoint]?array[mid]>array[leftPoint]?array[leftPoint]:array[mid]:array[rightPoint];
+		double x= array[leftPoint]< array[rightPoint]? array[leftPoint]: array[rightPoint];
 		int leftPointReflection= leftPoint;
-		while(leftPointReflection< rightPoint){
+		while(leftPointReflection++ < rightPoint){
 			while(!(array[leftPointReflection++]> x|| leftPointReflection> rightPoint)) {}
 			while(array[rightPoint--]> x) {}
 			if(--leftPointReflection< ++rightPoint){
