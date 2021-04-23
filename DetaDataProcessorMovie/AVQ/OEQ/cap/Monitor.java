@@ -435,7 +435,12 @@ public class Monitor extends JApplet{
 		public void paint(Graphics g){
 			try {
 				if(grabber!= null) {
-					if((frame= grabber.grab())!= null) {	 
+					try {
+						frame= grabber.grab();
+					}catch(Exception e) {
+						return;
+					}
+					if(frame!= null) {	 
 						if(this.isStop) {
 							//return;
 						}
