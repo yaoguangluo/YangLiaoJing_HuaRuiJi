@@ -1,13 +1,12 @@
 package OSI.OSU.PEQ.sensing.test;
 import java.io.IOException;
-
+import PEU.NLPProcessorYLJ.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import nlpProcessor.DETA_ANN_HMM;
 public class ANNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		ANNTest ANNTest = new ANNTest();

@@ -17,7 +17,7 @@ import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
 import OSI.OSU.ASQ.PSU.view.obj.FMHMMPOS;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
 import OSI.OSU.ASQ.PSU.view.stable.StableMaps;
-import nlpProcessor.StopSymbol;
+import PEU.NLPProcessorYLJ.*;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")
 public class FMHMMListOneTimeImp implements FHMMList {
@@ -1069,7 +1069,7 @@ public class FMHMMListOneTimeImp implements FHMMList {
 		string= string.replaceAll(StableData.NLP_SPASE_REP, StableData.SPACE_STRING);
 		StringBuilder sb= new StringBuilder();
 		for(int i= 0; i< string.length(); i++) {
-			if(StopSymbol.symbol.contains(StableData.EMPTY_STRING+ string.charAt(i))) {
+			if(StopSymbol_UTF8.symbol.contains(StableData.EMPTY_STRING+ string.charAt(i))) {
 				list.add(sb.toString().toLowerCase());
 				sb.delete(StableData.INT_ZERO, sb.length());
 				list.add(String.valueOf(string.charAt(i)));

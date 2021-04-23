@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import nlpProcessor.DETA_DNN;
+import PEU.NLPProcessorYLJ.*;
 public class DNNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		DNNTest dNNTest=new DNNTest();
