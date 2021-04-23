@@ -7,7 +7,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
-import soundProcessor.SoundPlay;
+import PEU.soundProcessorYLJ.*;
 import PEU.movieProcessorYLJ.*;
 public class Ps extends Thread{
 	public RandomAccessFile raf; 

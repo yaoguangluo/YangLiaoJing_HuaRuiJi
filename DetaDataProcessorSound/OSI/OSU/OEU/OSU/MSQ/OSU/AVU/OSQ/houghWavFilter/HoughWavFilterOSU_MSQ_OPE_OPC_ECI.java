@@ -9,8 +9,7 @@ import java.util.Vector;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
-import soundProcessor.BytestoAIS;
-import soundProcessor.HoughPro;
+import PEU.soundProcessorYLJ.*;
 
 
 public class HoughWavFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI

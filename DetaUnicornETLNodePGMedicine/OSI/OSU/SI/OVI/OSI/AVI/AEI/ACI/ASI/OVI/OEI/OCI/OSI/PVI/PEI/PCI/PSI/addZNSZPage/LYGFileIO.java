@@ -17,7 +17,7 @@ import javax.sound.sampled.AudioFormat.Encoding;
 import PEU.movieProcessorYLJ.AdataFrame;
 import PEU.movieProcessorYLJ.Header;
 import PEU.movieProcessorYLJ.MdataFrame;
-import soundProcessor.BytestoAIS;
+import PEU.soundProcessorYLJ.*;
 //import thread.MakeContainerZNSZ;
 import waveProcessor.DFT;
 public class LYGFileIO{

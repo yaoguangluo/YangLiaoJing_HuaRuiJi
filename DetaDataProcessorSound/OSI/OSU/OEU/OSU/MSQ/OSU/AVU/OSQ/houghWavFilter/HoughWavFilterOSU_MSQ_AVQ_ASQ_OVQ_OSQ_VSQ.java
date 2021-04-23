@@ -17,8 +17,7 @@ import java.util.Vector;
 import javax.swing.JButton;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
-import soundProcessor.BytestoAIS;
-import soundProcessor.SoundWaveVector;
+import PEU.soundProcessorYLJ.*;
 public class HoughWavFilterOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ
 {
 	private static final long serialVersionUID = 1L;

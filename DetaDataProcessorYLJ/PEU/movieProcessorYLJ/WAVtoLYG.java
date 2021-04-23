@@ -7,7 +7,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import soundProcessor.SoundWaveVector;
+import PEU.soundProcessorYLJ.*;
 public class WAVtoLYG{
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public WAVtoLYG(String WAVf, String LYGf) throws IOException, UnsupportedAudioFileException{

@@ -2,7 +2,7 @@ package PEU.movieProcessorYLJ;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import org.apache.commons.math.complex.Complex;
-import soundProcessor.BytestoAIS;
+import PEU.soundProcessorYLJ.*;
 public class AdataFrame{
 	public int seconds;
 	public AudioInputStream audioIS;

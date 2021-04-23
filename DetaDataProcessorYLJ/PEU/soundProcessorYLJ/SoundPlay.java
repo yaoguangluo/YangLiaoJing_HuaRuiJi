@@ -1,6 +1,5 @@
-package soundProcessor;
-import java.io.IOException
-;
+package PEU.soundProcessorYLJ;
+import java.io.IOException;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -8,8 +7,8 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
+import PEU.movieProcessorYLJ.*;
 
-import movieProcessorBackend.AdataFrame;
 public class SoundPlay{
 	public SoundPlay(){
 	}

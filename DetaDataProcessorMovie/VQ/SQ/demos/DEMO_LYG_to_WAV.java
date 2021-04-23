@@ -9,7 +9,7 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import PEU.movieProcessorYLJ.*;
 
-import soundProcessor.SoundPlay;
+import PEU.soundProcessorYLJ.*;
 
 public class DEMO_LYG_to_WAV{
 	public static void main(String args[]) throws IOException, UnsupportedAudioFileException{
