@@ -22,7 +22,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import MVQ.button.DetaButton;
-import movieProcessor.LYGFileIO;
+import PEU.movieProcessorYLJ.*;
 
 
 import soundProcessor.SoundRecord;

@@ -9,8 +9,7 @@ import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
 import OSI.OSU.plsql.vpc.process.factoryImpl.LoginDAOImpl;
 import PEU.dnaProcessor.Token;
-import md5Processor.Usr;
-import md5Processor.UsrToken;
+import PEU.MD5ProcessorYLJ.*;
 public class LoginServiceImpl {
 
 	//	@Autowired

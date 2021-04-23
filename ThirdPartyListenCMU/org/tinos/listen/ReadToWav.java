@@ -22,7 +22,7 @@ import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.api.StreamSpeechRecognizer;
 import edu.cmu.sphinx.decoder.adaptation.Stats;
 import edu.cmu.sphinx.decoder.adaptation.Transform;
-import movieProcessor.AdataFrame;
+import PEU.movieProcessorYLJ.*;
 //import soundProcessor.SoundPlay;
 public class ReadToWav {
 	public AudioInputStream audioInputStream;

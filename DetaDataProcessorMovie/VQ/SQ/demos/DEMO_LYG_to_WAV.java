@@ -7,9 +7,7 @@ import java.io.IOException;
 
 
 import javax.sound.sampled.UnsupportedAudioFileException;
-
-import movieProcessor.LYGFileIO;
-
+import PEU.movieProcessorYLJ.*;
 
 import soundProcessor.SoundPlay;
 
@@ -27,10 +25,9 @@ public class DEMO_LYG_to_WAV{
 				IO.adataFrame=IO.adataFrame.next;
 				new SoundPlay().Play(IO.adataFrame.audioIS);		
 			}
-			
+
 		}
-		
-		
+
 		IO.toHead();
 		IO.init();
 		if(IO.adataFrame!=null){
@@ -39,7 +36,7 @@ public class DEMO_LYG_to_WAV{
 				IO.adataFrame=IO.adataFrame.next;
 				new SoundPlay().Play(IO.adataFrame.audioIS);		
 			}
-			
+
 		}
 		if(IO.adataFrame!=null){
 			new SoundPlay().Play(IO.adataFrame.audioIS);
@@ -47,9 +44,9 @@ public class DEMO_LYG_to_WAV{
 				IO.adataFrame=IO.adataFrame.next;
 				new SoundPlay().Play(IO.adataFrame.audioIS);		
 			}
-			
+
 		}
-		
+
 		System.out.println("read");
 		//IO.reset();
 	}

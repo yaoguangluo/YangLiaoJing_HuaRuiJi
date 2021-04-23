@@ -3,7 +3,7 @@ package OSI.OSU.PEQ.behavior.test;
 import java.io.IOException;
 
 import OSI.OSU.AEU.behavior.ica.InitBehaviorICAKernel;
-import matrixProcessor.CnnMeasure;
+import PEU.matrixProcessorYLJ.*;
 
 public class SuccessICATest{
 	public double[][] kernelCNN;
