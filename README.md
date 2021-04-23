@@ -1,4 +1,4 @@
-# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18200
+# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18220
 ## 协议 GNU GPL-2.0 License
 
 ###### 这是一个 智慧医学 领域的 大数据电子医院辅助诊疗系统, 愿景:让人类更健康~ （这是一个完整调通的可直接运行版本源码，如果出现任何问题，请及时联系作者，电话：15116110525）
@@ -203,4 +203,4 @@ https://bitbucket.org/luoyaoguang/yangliaojing
 https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
 最新纯净版本见分支号 18111
-最新纯净版本功能组件分类 和 元基化版本见分支号 18200
+最新纯净版本功能组件分类 和 元基化版本见分支号 18220

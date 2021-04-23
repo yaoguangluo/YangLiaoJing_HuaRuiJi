@@ -9,8 +9,8 @@ import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 //refer Jacob 语音 api demo
 //refer 德塔图灵系统，极速中文分词  罗瑶光
 public class ReadChinese extends Thread implements Runnable{
-	public String text = "";
-	public int finish = 1;
+	public String text= "";
+	public int finish= 1;
 	private List<String> setsForGet; 
 	public com.jacob.activeX.ActiveXComponent sap;;
 	public com.jacob.com.Dispatch sapo;
@@ -46,9 +46,12 @@ public class ReadChinese extends Thread implements Runnable{
 		try {
 			com.jacob.com.Dispatch.call(sapo, "Speak", new com.jacob.com.Variant(string));
 			} catch (Exception e) {
-				e.printStackTrace();
-				sapo.safeRelease();
-				sap.safeRelease();
+			//	e.printStackTrace();
+//				sapo.safeRelease();
+//				sap.safeRelease();
+				sapo= null;
+				sap= null;
+				System.gc();
 			} finally {
 			}	
 	}
@@ -118,8 +121,12 @@ public class ReadChinese extends Thread implements Runnable{
 	}
 
 	public void setNullSap() {
-		sapo= null;
-		sap= null;
+		try {
+			sapo= null;
+			sap= null;
+		}catch(Exception E) {
+			System.gc();
+		}
 	}
 }
 
