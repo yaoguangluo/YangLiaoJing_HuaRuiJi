@@ -1,9 +1,7 @@
 package OSI.OSU.VPC.cache;
 //import org.lygFrontend.cache.Cache;
 //import org.lygFrontend.cache.CacheManager;
-
-import cacheProcessor.Cache;
-import cacheProcessor.CacheManager;
+import PEU.cacheProcessorYLJ.*;
 
 public class Test {
 	public static void main(String[] args) { 

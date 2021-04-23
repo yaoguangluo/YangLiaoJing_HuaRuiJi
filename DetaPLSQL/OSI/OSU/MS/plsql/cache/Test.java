@@ -1,7 +1,6 @@
 package OSI.OSU.MS.plsql.cache;
 
-import cacheProcessor.Cache;
-import cacheProcessor.CacheManager;
+import PEU.cacheProcessorYLJ.*;
 
 public class Test {
 	public static void main(String[] args) { 

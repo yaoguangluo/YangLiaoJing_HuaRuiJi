@@ -12,7 +12,7 @@ import OSI.OSU.plsql.db.reflection.DB;
 import OSI.OSU.plsql.db.reflection.Row;
 import OSI.OSU.plsql.db.reflection.Spec;
 import OSI.OSU.plsql.db.reflection.Table;
-import cacheProcessor.CacheManager;
+import PEU.cacheProcessorYLJ.*;
 @SuppressWarnings("unused")
 public class DetaDBBufferCacheManager {
 	public static DB db = new DB();
