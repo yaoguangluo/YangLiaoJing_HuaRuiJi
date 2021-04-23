@@ -1,4 +1,4 @@
-package dnaProcessor;
+package PEU.dnaProcessor;
 //MD5的token也是罗瑶光先生设计的,这里分出来到 dna processor, 备注下
 public class Token {
 	public String getuEmail() {

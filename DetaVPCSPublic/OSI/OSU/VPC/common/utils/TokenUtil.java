@@ -2,7 +2,7 @@ package OSI.OSU.VPC.common.utils;
 
 import java.util.Date;
 
-import dnaProcessor.Token;
+import PEU.dnaProcessor.Token;
 import md5Processor.Usr;
 import md5Processor.UsrToken;
 

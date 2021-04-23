@@ -1,7 +1,5 @@
 package OSI.OSU.OVU.OSU.MSQ.image.houghTransform;
-import imageProcessor.HoughTransform;
-import imageProcessor.RegionGet;
-
+import PEU.imageProcessorYLJ.*;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;

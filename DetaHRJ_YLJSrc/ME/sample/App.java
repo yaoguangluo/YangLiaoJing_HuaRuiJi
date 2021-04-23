@@ -73,7 +73,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.text.BadLocationException;
 
 import biProcessor.CoAuthorForWord;
-import mapProcessor.VtoV;
+import PEU.mapProcessorYLJ.*;
 @SuppressWarnings("deprecation")
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;

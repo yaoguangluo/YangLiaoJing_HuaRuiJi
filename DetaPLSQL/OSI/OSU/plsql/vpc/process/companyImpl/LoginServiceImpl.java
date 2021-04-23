@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
 import OSI.OSU.plsql.vpc.process.factoryImpl.LoginDAOImpl;
-import dnaProcessor.Token;
+import PEU.dnaProcessor.Token;
 import md5Processor.Usr;
 import md5Processor.UsrToken;
 public class LoginServiceImpl {

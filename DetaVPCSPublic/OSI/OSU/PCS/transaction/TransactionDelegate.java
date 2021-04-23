@@ -6,7 +6,7 @@ import OSI.OSU.PCS.process.companyImpl.LoginServiceImpl;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.VPC.common.utils.DetaDBUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
-import dnaProcessor.Token;
+import PEU.dnaProcessor.Token;
 
 //import org.springframework.stereotype.Service;
 import java.net.URLEncoder;

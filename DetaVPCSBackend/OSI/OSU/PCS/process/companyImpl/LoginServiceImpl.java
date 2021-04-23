@@ -8,10 +8,7 @@ import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrToken;
 import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
-import dnaProcessor.Token;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Service;
-//这个文件是我在3年前vpc5.0(我github 没删除,大家看得到)的spring设计文件 进行优化的, 这个文件最后是我设计lol的后端 应用了, 后来研发vpcs, 去掉了annotation, 就注释了很多spring的文件. 大家都看得到.
+import PEU.dnaProcessor.Token;
 
 //@Service
 public class LoginServiceImpl {// implements LoginService {

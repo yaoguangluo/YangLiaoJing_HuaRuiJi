@@ -1,7 +1,5 @@
 package OSI.OSU.OVU.OSU.MSQ.image.sobelFilter;
-import imageProcessor.Mask;
-import imageProcessor.Sobel;
-import imageProcessor.Threshold;
+import PEU.imageProcessorYLJ.*;
 
 import java.io.IOException;
 

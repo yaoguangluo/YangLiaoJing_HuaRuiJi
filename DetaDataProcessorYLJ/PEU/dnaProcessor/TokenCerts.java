@@ -1,4 +1,4 @@
-package dnaProcessor;
+package PEU.dnaProcessor;
 //MD5替换DNA已经开始,准备设计个记录单例类.
 //可以用lombok 也可以直接public setter getter
 //罗瑶光

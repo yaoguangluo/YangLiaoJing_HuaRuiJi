@@ -1,5 +1,5 @@
 package OSI.OSU.OVU.OSU.MSQ.image.laplacianFilter;
-import imageProcessor.Laplacian;
+import PEU.imageProcessorYLJ.*;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;

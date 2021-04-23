@@ -7,7 +7,7 @@ import java.util.Base64;
 //import org.jboss.resteasy.util.Base64;
 
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.TokenPDI;
-import dnaProcessor.Token;
+import PEU.dnaProcessor.Token;
 
 public class StringUtil {
 	public static String encode(String input) throws Exception {
