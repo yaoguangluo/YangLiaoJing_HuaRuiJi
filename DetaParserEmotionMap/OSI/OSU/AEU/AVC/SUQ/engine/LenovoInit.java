@@ -5,8 +5,8 @@ import java.util.Map;
 
 import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.OCI.sensing.ortho.fhmm.SensingMap;
-import OSI.OSU.OEI.sensing.ortho.fhmm.imp.SensingMapImp;
+import OSI.OSU.OCI.AMV.ECS.ortho.fhmm.SensingMap;
+import OSI.OSU.OEI.AMV.ECS.ortho.fhmm.imp.SensingMapImp;
 public class LenovoInit{
 	public SensingMap getSensingMap() {
 		return sensingMap;

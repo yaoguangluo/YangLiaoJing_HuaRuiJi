@@ -1,11 +1,11 @@
-package OSI.OSU.OEI.sensing.ortho.fhmm.imp;
+package OSI.OSU.OEI.AMV.ECS.ortho.fhmm.imp;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.OCI.sensing.ortho.fhmm.SensingMap;
+import OSI.OSU.OCI.AMV.ECS.ortho.fhmm.SensingMap;
 public class SensingMapImp implements SensingMap{
 	private Map<String, Object> lenovoMap;
 	

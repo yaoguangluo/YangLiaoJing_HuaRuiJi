@@ -5,11 +5,11 @@ import OSI.OSU.AEU.behavior.ica.InitBehaviorICAKernel;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
+import OSI.OSU.PEQ.AMV.ECS.test.ANNTest;
+import OSI.OSU.PEQ.AMV.ECS.test.DNNTest;
+import OSI.OSU.PEQ.AMV.ECS.test.RNN_IDETest;
+import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
 import OSI.OSU.PEQ.behavior.test.SuccessICATest;
-import OSI.OSU.PEQ.sensing.test.ANNTest;
-import OSI.OSU.PEQ.sensing.test.DNNTest;
-import OSI.OSU.PEQ.sensing.test.RNN_IDETest;
-import OSI.OSU.PEQ.sensing.test.SensingTest;
 import PEU.sortProcessorYLJ.*;
 
 import java.io.FileOutputStream;

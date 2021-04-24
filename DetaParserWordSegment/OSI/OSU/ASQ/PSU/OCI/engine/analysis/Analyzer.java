@@ -5,7 +5,7 @@ import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
-import OSI.OSU.PEQ.sensing.test.SensingTest;
+import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
 public interface Analyzer {
 	void init() throws IOException;
 	void initMixed() throws IOException;
