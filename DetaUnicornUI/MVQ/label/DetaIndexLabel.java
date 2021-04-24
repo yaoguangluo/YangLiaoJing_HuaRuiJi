@@ -10,7 +10,7 @@ import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import ME.sample.app.hospital.DetaLabelStables;
+import ME.APM.VSQ.app.hospital.DetaLabelStables;
 
 public class DetaIndexLabel extends JLabel implements MouseListener{
 	private static final long serialVersionUID = 1L;

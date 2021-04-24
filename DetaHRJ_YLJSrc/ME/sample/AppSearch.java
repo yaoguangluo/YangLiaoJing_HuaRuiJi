@@ -13,19 +13,19 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
-import ME.sample.app.search.ChanJPanel;
-import ME.sample.app.search.ChouchuJPanel;
-import ME.sample.app.search.ChuangJPanel;
-import ME.sample.app.search.DuJPanel;
-import ME.sample.app.search.HanJPanel;
-import ME.sample.app.search.KuangJPanel;
-import ME.sample.app.search.PaixieJPanel;
-import ME.sample.app.search.QitaJPanel;
-import ME.sample.app.search.ReJPanel;
-import ME.sample.app.search.TanJPanel;
-import ME.sample.app.search.TongJPanel;
-import ME.sample.app.search.XueJPanel;
-import ME.sample.app.search.YangJPanel;
+import ME.APM.VSQ.app.search.ChanJPanel;
+import ME.APM.VSQ.app.search.ChouchuJPanel;
+import ME.APM.VSQ.app.search.ChuangJPanel;
+import ME.APM.VSQ.app.search.DuJPanel;
+import ME.APM.VSQ.app.search.HanJPanel;
+import ME.APM.VSQ.app.search.KuangJPanel;
+import ME.APM.VSQ.app.search.PaixieJPanel;
+import ME.APM.VSQ.app.search.QitaJPanel;
+import ME.APM.VSQ.app.search.ReJPanel;
+import ME.APM.VSQ.app.search.TanJPanel;
+import ME.APM.VSQ.app.search.TongJPanel;
+import ME.APM.VSQ.app.search.XueJPanel;
+import ME.APM.VSQ.app.search.YangJPanel;
 public class AppSearch extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;
 	

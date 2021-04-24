@@ -16,10 +16,11 @@ import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
-import ME.sample.app.hospital.LinChuangJianYanBaoGaoA;
-import ME.sample.app.hospital.LinChuangJianYanBaoGaoB;
-import ME.sample.app.hospital.XiYaoJPanel;
-import ME.sample.app.hospital.ZhongYaoJPanel;
+
+import ME.APM.VSQ.app.hospital.LinChuangJianYanBaoGaoA;
+import ME.APM.VSQ.app.hospital.LinChuangJianYanBaoGaoB;
+import ME.APM.VSQ.app.hospital.XiYaoJPanel;
+import ME.APM.VSQ.app.hospital.ZhongYaoJPanel;
 import MVQ.label.DetaLabel;
 
 

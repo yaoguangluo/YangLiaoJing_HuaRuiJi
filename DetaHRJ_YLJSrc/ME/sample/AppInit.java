@@ -5,7 +5,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-import ME.sample.app.hospital.DetaLabelStables;
 import MVQ.button.CfxButton;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
@@ -55,6 +54,8 @@ import javax.swing.event.ChangeListener;
 
 import org.reportMap.DetaLabelConjunction;
 import org.tinos.listen.ReadToWav;
+
+import ME.APM.VSQ.app.hospital.DetaLabelStables;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
 	public void init(App app) throws IOException{

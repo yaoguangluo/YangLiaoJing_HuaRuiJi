@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import ME.sample.editPane.PrintTest4;
+import ME.APM.VSQ.editPane.PrintTest4;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 
 public class addChuFangPrintRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{

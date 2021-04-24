@@ -8,8 +8,8 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
+import ME.APM.VSQ.xiYiYaoCai.XyscPage;
 import ME.sample.App;
-import ME.sample.xiYiYaoCai.XyscPage;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class MakeContainerXYCF extends Thread implements Runnable{
 	public Container jpanelSecond;

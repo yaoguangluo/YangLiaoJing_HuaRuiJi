@@ -13,7 +13,7 @@ import java.awt.event.MouseListener;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
-import ME.sample.app.config.SectionJPanel;
+import ME.APM.VSQ.app.config.SectionJPanel;
 
 
 public class AppConfig extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
