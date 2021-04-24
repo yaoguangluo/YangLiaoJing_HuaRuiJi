@@ -1,8 +1,9 @@
 package OSI.OSU.MSU.tcp.http;
 
 import java.util.Date;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.FullDNATokenPDI;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.TokenPDI;
+
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 import OSI.OSU.VPC.common.utils.TokenUtil;
 import PEU.dnaProcessor.Token;
 import PEU.dnaProcessor.TokenCerts;

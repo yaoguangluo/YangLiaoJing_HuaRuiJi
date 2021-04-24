@@ -1,4 +1,4 @@
-package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde;
+package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde;
 @SuppressWarnings("unused")
 public class PowerPDI{
 	//1-r-1-r-1s-e-p-0-v

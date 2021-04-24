@@ -1,4 +1,4 @@
-package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.computing;
+package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.computing;
 public class AOPM_VECS_IDUQ{
 	public String[][][] initonToMartix(String initons){
 		

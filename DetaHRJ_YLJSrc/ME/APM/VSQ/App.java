@@ -31,7 +31,7 @@ import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.FullDNATokenPDI;
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
