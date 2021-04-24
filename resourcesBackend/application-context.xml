@@ -14,8 +14,11 @@
          http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 	<context:annotation-config />
 	<context:property-placeholder />
-	<context:component-scan base-package="org.lyg.common.*" />
-	<context:component-scan base-package="org.lyg.vpc.*" />
-	<context:component-scan base-package="org.lyg.db.*" />
-	<import resource="classpath*:dataSource.xml"/>
+	<context:component-scan
+		base-package="org.lyg.common.*" />
+	<context:component-scan
+		base-package="org.lyg.vpc.*" />
+	<context:component-scan
+		base-package="org.lyg.db.*" />
+	<import resource="classpath*:dataSource.xml" />
 </beans>
