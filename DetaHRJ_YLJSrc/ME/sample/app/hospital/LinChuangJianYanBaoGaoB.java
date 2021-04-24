@@ -367,6 +367,7 @@ public class LinChuangJianYanBaoGaoB  extends JPanel implements MouseListener, K
 		addThirdColomns(诊断结果_box, jFrameList);
 		addFourthColomns(诊断结果_box, jFrameList);
 		addFifthColomns(诊断结果_box, jFrameList);
+		this.validate();
 	}
 	private void addFifthColomns(JTextField 诊断结果_box2, List<DetaLabel> jFrameList) {
 		// TODO Auto-generated method stub
