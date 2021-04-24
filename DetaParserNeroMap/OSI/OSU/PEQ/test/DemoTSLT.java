@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.MSU.OCI.engine.base.translator.Translator;
+import OSI.OSU.MSU.OCI.AOP.MEC.base.translator.Translator;
 import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;

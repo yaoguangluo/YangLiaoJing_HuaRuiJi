@@ -8,7 +8,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.MSU.OCI.engine.base.translator.Translator;
+import OSI.OSU.MSU.OCI.AOP.MEC.base.translator.Translator;
 public class TranslatorImp implements Translator{
 	public Map<String, String> poscc;
 	public Map<String, String> posec;

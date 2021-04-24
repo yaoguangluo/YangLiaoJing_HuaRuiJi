@@ -28,7 +28,7 @@ import MVQ.textpane.CfxTextPane;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.MSQ.sets.stable.StableData;
-import OSI.OSU.MSU.OCI.engine.base.translator.Translator;
+import OSI.OSU.MSU.OCI.AOP.MEC.base.translator.Translator;
 import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.catalytic.procedure.pde.FullDNATokenPDI;

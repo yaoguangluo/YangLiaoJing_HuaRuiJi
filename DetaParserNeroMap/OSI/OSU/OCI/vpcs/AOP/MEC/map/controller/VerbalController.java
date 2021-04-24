@@ -1,4 +1,4 @@
-package OSI.OSU.OCI.vpcs.neroMap.controller;
+package OSI.OSU.OCI.vpcs.AOP.MEC.map.controller;
 
 public interface VerbalController{
 	 

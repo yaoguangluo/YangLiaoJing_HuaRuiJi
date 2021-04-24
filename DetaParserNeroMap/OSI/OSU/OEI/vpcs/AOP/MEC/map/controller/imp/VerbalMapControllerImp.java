@@ -1,5 +1,5 @@
-package OSI.OSU.OEI.vpcs.neroMap.controller.imp;
-import OSI.OSU.OCI.vpcs.neroMap.controller.VerbalMapController;
+package OSI.OSU.OEI.vpcs.AOP.MEC.map.controller.imp;
+import OSI.OSU.OCI.vpcs.AOP.MEC.map.controller.VerbalMapController;
 
 public class VerbalMapControllerImp implements VerbalMapController{
 	//½üÒå´ÊsynonymsMap

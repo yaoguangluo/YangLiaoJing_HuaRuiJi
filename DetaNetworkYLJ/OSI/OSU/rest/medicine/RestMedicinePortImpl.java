@@ -12,7 +12,7 @@ import ME.sample.App;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.MSQ.sets.stable.StableData;
-import OSI.OSU.MSU.OCI.engine.base.translator.Translator;
+import OSI.OSU.MSU.OCI.AOP.MEC.base.translator.Translator;
 import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 

@@ -1,6 +1,6 @@
-package OSI.OSU.OEI.vpcs.neroMap.controller.imp;
+package OSI.OSU.OEI.vpcs.AOP.MEC.map.controller.imp;
 
-import OSI.OSU.OCI.vpcs.neroMap.controller.VerbalController;
+import OSI.OSU.OCI.vpcs.AOP.MEC.map.controller.VerbalController;
 
 public class VerbalControllerImp implements VerbalController{
 	 
