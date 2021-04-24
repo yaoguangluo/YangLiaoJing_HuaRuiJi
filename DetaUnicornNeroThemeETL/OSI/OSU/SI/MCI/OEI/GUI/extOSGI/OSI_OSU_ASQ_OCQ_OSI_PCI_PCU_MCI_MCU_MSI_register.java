@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.swing.JTextPane;
 
 import ME.sample.App;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.MSQ.ai.xlsReaderNode.XlsReaderNodeInterface;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 import OSI.OSU.OEU.OSU.MSQ.OSU.AVU.OSQ.fFT.FFTFilterNodeInterface;

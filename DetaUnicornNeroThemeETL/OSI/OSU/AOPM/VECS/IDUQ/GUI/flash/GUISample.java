@@ -46,7 +46,7 @@ import ME.sample.App;
 import ME.sample.DetaBuy;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.MSI.OEI.document.save.SaveAndUpdateFile;
 import OSI.OSU.MSI.OEI.document.save.SaveAsANewFile;
 import OSI.OSU.MSQ.GUI.nodeInfo.NodeInfo;

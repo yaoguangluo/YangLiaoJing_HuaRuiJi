@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 
 import static java.lang.System.*;
 

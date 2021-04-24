@@ -25,7 +25,7 @@ import ME.sample.App;
 import ME.sample.PathLinkFile;
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 

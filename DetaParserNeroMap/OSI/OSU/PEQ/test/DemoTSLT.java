@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.MSU.OCI.AOP.MEC.base.translator.Translator;
-import OSI.OSU.MSU.OEI.engine.base.translator.imp.TranslatorImp;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
+import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 
 //import timeProcessor.TimeCheck;

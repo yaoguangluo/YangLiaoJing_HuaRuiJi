@@ -4,8 +4,8 @@ import java.net.ServerSocket;
 import java.util.Properties;
 import java.util.Random;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 import OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp.EmotionMapImp;
 import OSI.OSU.PCS.thread.SocketThread;

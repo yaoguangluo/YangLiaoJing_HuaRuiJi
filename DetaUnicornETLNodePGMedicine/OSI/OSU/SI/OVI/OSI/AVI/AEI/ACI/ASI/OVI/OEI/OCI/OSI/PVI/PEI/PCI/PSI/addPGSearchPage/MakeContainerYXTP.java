@@ -32,7 +32,7 @@ import ME.sample.App;
 import MVQ.button.DetaButton;
 import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.list.ListSwap;

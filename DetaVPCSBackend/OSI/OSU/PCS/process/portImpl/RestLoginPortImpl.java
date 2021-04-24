@@ -3,8 +3,8 @@ package OSI.OSU.PCS.process.portImpl;
 
 import org.json.JSONObject;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.ASQ.PSU.test.DemoEX;
 import OSI.OSU.ASQ.PSU.test.TimeCheck;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;

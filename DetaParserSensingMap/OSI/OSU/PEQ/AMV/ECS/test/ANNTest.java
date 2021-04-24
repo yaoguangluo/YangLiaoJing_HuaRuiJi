@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class ANNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		ANNTest ANNTest = new ANNTest();

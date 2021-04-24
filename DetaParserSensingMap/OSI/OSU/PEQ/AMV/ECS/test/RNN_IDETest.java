@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class RNN_IDETest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		RNN_IDETest rNN_IDETest= new RNN_IDETest();

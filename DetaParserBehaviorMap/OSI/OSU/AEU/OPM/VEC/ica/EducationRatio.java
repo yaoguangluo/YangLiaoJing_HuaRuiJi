@@ -8,8 +8,8 @@ import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 
 public class EducationRatio{
 

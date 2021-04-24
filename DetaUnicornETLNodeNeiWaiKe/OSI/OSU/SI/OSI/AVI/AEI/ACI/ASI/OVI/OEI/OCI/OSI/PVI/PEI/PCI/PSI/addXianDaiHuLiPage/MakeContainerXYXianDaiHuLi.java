@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
 import ME.sample.App;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 
 public class MakeContainerXYXianDaiHuLi extends Thread implements Runnable{
 	public XianDaiHuLikx jpanelSecond;

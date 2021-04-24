@@ -9,7 +9,7 @@ import java.net.URLDecoder;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 public class RestMap {
 	public static void process(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 

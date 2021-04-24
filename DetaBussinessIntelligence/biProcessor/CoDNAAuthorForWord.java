@@ -24,7 +24,7 @@ import javax.media.opengl.*;
 import ME.sample.App;
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
+import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
