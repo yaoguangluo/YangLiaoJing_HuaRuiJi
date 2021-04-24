@@ -10,9 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.swing.*;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 public class addXYSCBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public addXYSCBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{

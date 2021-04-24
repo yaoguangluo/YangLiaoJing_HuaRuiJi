@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 public class MorphologyFilterView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;

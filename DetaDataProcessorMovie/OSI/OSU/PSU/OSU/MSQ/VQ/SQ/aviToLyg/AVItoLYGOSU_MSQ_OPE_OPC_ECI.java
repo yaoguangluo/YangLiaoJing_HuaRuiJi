@@ -7,9 +7,7 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 
-//import org.LYG.node.movie.AVItoLYG.jp;
-
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 import PEU.movieProcessorYLJ.LYGFileIO;
 
 public class AVItoLYGOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{

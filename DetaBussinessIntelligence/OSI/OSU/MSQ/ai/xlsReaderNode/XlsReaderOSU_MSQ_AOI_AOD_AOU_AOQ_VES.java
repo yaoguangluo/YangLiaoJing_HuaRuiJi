@@ -14,7 +14,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 import java.awt.FileDialog;
 import java.awt.Frame;

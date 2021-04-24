@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
+import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
+import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 
 public class filterChuFangXingWeiKeyWordsAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public filterChuFangXingWeiKeyWordsAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) throws IOException{

@@ -7,7 +7,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import org.apache.commons.math.complex.Complex;
 import org.apache.commons.math.transform.FastFourierTransformer;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 public class LogFFTRun extends OSU_AVQ_ASQ_OPE_OPC_ECI
 {

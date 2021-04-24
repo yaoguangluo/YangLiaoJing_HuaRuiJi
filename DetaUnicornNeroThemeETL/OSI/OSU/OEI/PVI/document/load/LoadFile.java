@@ -9,10 +9,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import OSI.OSU.MSQ.sets.stable.StableData;
-import OSI.OSU.OVU.MVQ.GUI.nodeView.NodeShow;
-import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkList;
-import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
-import OSI.OSU.OVU.MVU.GUI.nodeEdit.Sort;
+import OSI.OSU.OVU.MVQ.gui.nodeView.NodeShow;
+import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkList;
+import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
+import OSI.OSU.OVU.MVU.gui.nodeEdit.Sort;
 public class LoadFile{
 	@SuppressWarnings({StableData.TAG_RESOURCE})
 	public static LinkNode Load(LinkNode first, NodeShow nodeView, File file, LinkList thislist) {

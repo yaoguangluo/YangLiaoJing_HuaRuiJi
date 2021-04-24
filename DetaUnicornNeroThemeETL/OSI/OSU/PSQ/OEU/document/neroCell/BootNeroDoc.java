@@ -3,12 +3,12 @@ import java.io.File;
 import java.util.Map;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEI.PVI.document.load.LoadFile;
-import OSI.OSU.OVU.MVQ.GUI.nodeView.NodeShow;
-import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkList;
-import OSI.OSU.OVU.MVU.GUI.nodeEdit.LinkNode;
+import OSI.OSU.OVU.MVQ.gui.nodeView.NodeShow;
+import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkList;
+import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
 import OSI.OSU.vpcs.skivvy.Skivvy;
 @SuppressWarnings("unused")
 public class BootNeroDoc extends Thread implements Runnable{

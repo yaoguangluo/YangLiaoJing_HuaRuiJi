@@ -9,9 +9,9 @@ import java.util.Map;
 import javax.swing.*;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
+import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
+import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 
 public class addZYNKBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public addZYNKBookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{

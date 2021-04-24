@@ -4,7 +4,7 @@ package OSI.OSU.OVU.OSU.MSQ.MV.SQ.morphologyFilter;
 
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 public class MorphologyFilterRun extends OSU_AVQ_ASQ_OPE_OPC_ECI
 {
 	private static final long serialVersionUID = 1L;

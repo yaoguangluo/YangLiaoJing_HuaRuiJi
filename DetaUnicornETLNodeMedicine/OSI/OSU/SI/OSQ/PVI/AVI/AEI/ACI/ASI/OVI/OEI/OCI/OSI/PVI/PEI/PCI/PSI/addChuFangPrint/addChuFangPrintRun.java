@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ME.APM.VSQ.editPane.PrintTest4;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 public class addChuFangPrintRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID= 1L;

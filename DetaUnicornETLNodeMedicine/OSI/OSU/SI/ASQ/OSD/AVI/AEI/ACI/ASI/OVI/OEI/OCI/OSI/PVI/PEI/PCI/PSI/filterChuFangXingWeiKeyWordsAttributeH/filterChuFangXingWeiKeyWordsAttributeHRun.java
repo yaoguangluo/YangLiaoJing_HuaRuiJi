@@ -1,7 +1,7 @@
 package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangXingWeiKeyWordsAttributeH;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_OPE_OPC_ECI;
+import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_OPE_OPC_ECI;
 public class filterChuFangXingWeiKeyWordsAttributeHRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value = 0;

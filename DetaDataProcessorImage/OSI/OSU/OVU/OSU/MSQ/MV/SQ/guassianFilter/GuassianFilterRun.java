@@ -1,7 +1,7 @@
 package OSI.OSU.OVU.OSU.MSQ.MV.SQ.guassianFilter;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 import PEU.imageProcessorYLJ.Guassian;
 import PEU.movieProcessorYLJ.LYGFileIO;
 public class GuassianFilterRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{

@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 import biProcessor.CoAuthorForWord;
 public class AddChanHouKangFuKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;

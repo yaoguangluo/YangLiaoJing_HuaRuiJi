@@ -1,7 +1,7 @@
 package OSI.OSU.SI.OVI.OSQ.AVQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dNA3DShow;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.OSU_AVQ_ASQ_OPE_OPC_ECI;
+import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_OPE_OPC_ECI;
 public class dNA3DShowOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value = 0;

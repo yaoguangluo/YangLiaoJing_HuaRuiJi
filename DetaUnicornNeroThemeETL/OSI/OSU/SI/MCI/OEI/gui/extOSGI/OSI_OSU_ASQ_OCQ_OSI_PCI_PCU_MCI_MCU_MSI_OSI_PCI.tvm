@@ -1,0 +1,180 @@
+OSU.MSQ.ASI.OSI.PSI.MSI OSI.OSU.SI.MCI.OEI.gui.extOSGI;
+ASI.OSI.PSI.MSI java.io.IOException;
+ASI.OSI.PSI.MSI java.util.Map;
+ASI.OSI.PSI.MSI javax.swing.JTextPane;
+ASI.OSI.PSI.MSI org.ASQ.PSU.OCI.tinos.engine.analysis.Analyzer;
+ASI.OSI.PSI.MSI org.LYG.node.ai.XlsReaderNode.XlsReaderNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.LYG.node.movie.AVItoLYG.AVItoLYGNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.LYG.node.movie.LYGPlayer.LYGPlayerNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.LYG.node.movie.LYGRead.LYGReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.LYG.node.movie.LYGWrite.LYGWriteNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.LYG.node.movie.MovieTransfer.MovieTransferNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEQ.MCQ.gui.OSGI.*;
+ASI.OSI.PSI.MSI org.OEU.node.sound.FFT.FFTFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.GuassianWav2DFilter.GuassianWav2DFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.HoughWavFilter.HoughWavFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.LaplacianFilter.LaplacianFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.MaxMiniFilter.MaxMiniFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.MedianFilter.MedianFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.WavRead.WavReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.fft2DFilter.ft2DFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.freqCount.freqCountNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.logFFT.logFFT...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.logFFTcount.logFFTcount...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.lygFilter.lygFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OEU.node.sound.lygSlaveFilter.lygSlaveFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVI.node.image.imageRead.imageReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVQ.node.image.FindColorB.FindColorB...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVQ.node.image.FindColorG.FindColorG...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVQ.node.image.FindColorR.FindColorR...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVQ.node.image.Show3D.Show3D...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.EmbossFilter.EmbossFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.GrayFilter.GrayFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.GuassianFilter.GuassianFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.HoughTransform.HoughTransform...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.LaplacianFilter.LaplacianFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.MedianImageFilter.MedianImageNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.MorphologyFilter.MorphologyFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.SobelFilter.SobelFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.image.imageStrech.imageStrechNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.OVU.node.sound.ButterworthFilter.ButterworthFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI org.PEQ.node.sound.wavePlay.wavePlayNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+ASI.OSI.PSI.MSI ME.sample.App;
+ASI.OSI.PSI.MSI OSI.OSU.SI.OVI.OSQ.AVQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dNA3DShow.dNA3DShowNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
+
+AS.OS.PS.MS.SI.SD.SU.SQ OSU.MSQ OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_SI_OSI_PCI...OVI......OVI......OVI...
+	JTextPane text;
+	...OSU...AVQ.ASQ......OVI......OVI......OVD......OVD......OVI......OVI......OVD......OVD... tableData_old;
+	AS.OS.PS.MS.SI.SD.SU.SQ App u;
+	AS.OS.PS.MS.SI.SD.SU.SQ Analyzer analyzer;
+	AS.OS.PS.MS.SI.SD.SU.SQ Map<String...OSU.OSI.MSI... String> pos;
+	
+	AS.OS.PS.MS.SI.SD.SU.SQ OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_...OSI.PCI......OVI......OSU...AVQ.ASQ......OVI......OVI......OVD......OVD......OVI......OVI......OVD......OVD... tableData_old...OSU.OSI.MSI... JTextPane text...OSU.OSI.MSI... App u
+			...OSU.OSI.MSI... Analyzer analyzer...OSU.OSI.MSI... Map<String...OSU.OSI.MSI... String> pos...OVD......OVI......OVI......OVI...
+		SQ...OSU.MSQ......OSU...AVQ.ASQ....text...OSU.PEQ.PSU... text;
+		SQ...OSU.MSQ......OSU...AVQ.ASQ....tableData_old...OSU.PEQ.PSU... tableData_old;
+		SQ...OSU.MSQ......OSU...AVQ.ASQ....u...OSU.PEQ.PSU... u;
+		SQ...OSU.MSQ......OSU...AVQ.ASQ....analyzer...OSU.PEQ.PSU... analyzer;
+		SQ...OSU.MSQ......OSU...AVQ.ASQ....pos...OSU.PEQ.PSU... pos;
+	...OVD......OVD......OVD...
+	
+	
+	AS.OS.PS.MS.SI.SD.SU.SQ NodeOSGI ...OSI.PCI......OVI...NodeOSGI first...OSU.OSI.MSI... LinkOSGI link...OVD... throws IOException...OVI......OVI......OVI...
+		//зЂВс
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... XlsReadernode ...OSU.PEQ.PSU... new XlsReaderNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... XlsReadernode...OVD...;
+
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... imageReadNode ...OSU.PEQ.PSU... new imageReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... imageReadNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... imageStrechNode ...OSU.PEQ.PSU... new imageStrechNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... imageStrechNode...OVD...;
+		
+        //		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... arffTransferNode ...OSU.PEQ.PSU... new arffTransferNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		//		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... arffTransferNode...OVD...;	
+		
+		//		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... WekaPilot2DNode ...OSU.PEQ.PSU... new WekaPilot2DNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		//		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... WekaPilot2DNode...OVD...;
+		
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... MedianImageNode ...OSU.PEQ.PSU... new MedianImageNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... MedianImageNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... GrayFilterNode ...OSU.PEQ.PSU... new GrayFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... GrayFilterNode...OVD...;
+				
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... GuassianFilterNode ...OSU.PEQ.PSU... new GuassianFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	GuassianFilterNode...OVD...;
+			
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... FindColorRNode ...OSU.PEQ.PSU... new FindColorR...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	FindColorRNode...OVD...;
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... FindColorGNode ...OSU.PEQ.PSU... new FindColorG...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	FindColorGNode...OVD...;
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... FindColorBNode ...OSU.PEQ.PSU... new FindColorB...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	FindColorBNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... SobelFilterNode ...OSU.PEQ.PSU... new SobelFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	SobelFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... EmbossFilterNode ...OSU.PEQ.PSU... new EmbossFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	EmbossFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... LaplacianFilterNode ...OSU.PEQ.PSU... new LaplacianFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI...	LaplacianFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... HoughTransformNode ...OSU.PEQ.PSU... new HoughTransform...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... HoughTransformNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... WavReadNode ...OSU.PEQ.PSU... new WavReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... WavReadNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... MedianFilterNode ...OSU.PEQ.PSU... new MedianFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... MedianFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... ButterworthFilterNode ...OSU.PEQ.PSU... new ButterworthFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... ButterworthFilterNode...OVD...;
+
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... LaplacianWaveFilterNode ...OSU.PEQ.PSU... new LaplacianFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... LaplacianWaveFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... HoughWavFilterNode ...OSU.PEQ.PSU... new HoughWavFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... HoughWavFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... GuassianWav2DFilterNode ...OSU.PEQ.PSU... new GuassianWav2DFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... GuassianWav2DFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... MaxMiniFilterNode ...OSU.PEQ.PSU... new MaxMiniFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... MaxMiniFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... wavePlayNode ...OSU.PEQ.PSU... new wavePlayNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... wavePlayNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... Show3DNode ...OSU.PEQ.PSU... new Show3D...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... Show3DNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... MorphologyFilter ...OSU.PEQ.PSU... new MorphologyFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... MorphologyFilter...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... LYGReadNode ...OSU.PEQ.PSU... new LYGReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... LYGReadNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... LYGWriteNode ...OSU.PEQ.PSU... new LYGWriteNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... LYGWriteNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... MovieTransferNode ...OSU.PEQ.PSU... new MovieTransferNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... MovieTransferNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... AVItoImagesNode ...OSU.PEQ.PSU... new AVItoLYGNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... AVItoImagesNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... LYGPlayerNode ...OSU.PEQ.PSU... new LYGPlayerNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... LYGPlayerNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... FFTFilterNode ...OSU.PEQ.PSU... new FFTFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... FFTFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... freqCountNode ...OSU.PEQ.PSU... new freqCountNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... freqCountNode...OVD...;
+			
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... lygFilterNode ...OSU.PEQ.PSU... new lygFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... lygFilterNode...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... lygFilterComp ...OSU.PEQ.PSU... new ft2DFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... lygFilterComp...OVD...;
+
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... lygSlave ...OSU.PEQ.PSU... new lygSlaveFilter...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... lygSlave...OVD...;
+		
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... logFFT ...OSU.PEQ.PSU... new logFFT...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... logFFT...OVD...;
+
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... logFFTcount ...OSU.PEQ.PSU... new logFFTcount...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... logFFTcount...OVD...;
+
+		...OSU...AVQ.ASQ......ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI... dNA3DShow ...OSU.PEQ.PSU... new dNA3DShowNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI......OVI......OVD...;
+		first ...OSU.PEQ.PSU... link.addNode...OVI...first...OSU.OSI.MSI... dNA3DShow...OVD...;
+
+		return first;	
+	...OVD......OVD......OVD...
+
+...OVD......OVD......OVD...

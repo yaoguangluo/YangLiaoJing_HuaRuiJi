@@ -7,8 +7,8 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 
 public class LYGPlayerNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	

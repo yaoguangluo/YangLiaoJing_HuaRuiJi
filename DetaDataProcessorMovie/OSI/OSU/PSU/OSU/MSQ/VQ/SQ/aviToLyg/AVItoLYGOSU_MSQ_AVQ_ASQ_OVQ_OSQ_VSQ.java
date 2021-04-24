@@ -11,7 +11,7 @@ import java.util.Vector;
 import javax.sound.sampled.AudioInputStream;
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 import PEU.soundProcessorYLJ.SoundWaveVector;
 
 public class AVItoLYGOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{

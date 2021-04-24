@@ -2,7 +2,7 @@ package OSI.OSU.OVU.OSU.MSQ.MV.SQ.grayFilter;
 import PEU.imageProcessorYLJ.*;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 public class GrayFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

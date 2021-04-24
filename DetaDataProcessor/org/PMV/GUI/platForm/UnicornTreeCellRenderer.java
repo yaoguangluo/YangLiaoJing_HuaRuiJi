@@ -1,4 +1,4 @@
-package org.PMV.GUI.platForm;
+package org.PMV.gui.platForm;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.tree.*;

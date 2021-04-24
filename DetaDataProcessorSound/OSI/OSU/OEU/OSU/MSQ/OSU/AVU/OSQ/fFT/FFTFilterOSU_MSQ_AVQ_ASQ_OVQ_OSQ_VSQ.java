@@ -15,7 +15,7 @@ import java.util.Vector;
 
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
+import OSI.OSU.OEQ.MCQ.gui.osgi.*;
 
 
 
