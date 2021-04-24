@@ -1,4 +1,4 @@
-package OSI.OSU.language.plorm;
+package OSI.OSU.AOP.MEC.SIQ.plorm;
 
 public class Const{
 	public final static String SET_ROOT= "setRoot";

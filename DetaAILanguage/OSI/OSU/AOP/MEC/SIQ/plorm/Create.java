@@ -1,4 +1,4 @@
-package OSI.OSU.language.plorm;
+package OSI.OSU.AOP.MEC.SIQ.plorm;
 public class Create{
 //动机：准备将下面的plsql翻译成orm，省的养疗经的query模式太固定，上手修改麻烦。
 //	String plsql= "setRoot:C:/DetaDB;";

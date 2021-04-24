@@ -1,4 +1,4 @@
-package OSI.OSU.language.pletl;
+package OSI.OSU.AOP.MEC.SIQ.pletl;
 import java.util.HashMap;
 
 import javax.swing.JTextPane;
