@@ -29,8 +29,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import ME.sample.App;
-import ME.sample.TableSorterZYNK;
+import ME.APM.VSQ.App;
+import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;

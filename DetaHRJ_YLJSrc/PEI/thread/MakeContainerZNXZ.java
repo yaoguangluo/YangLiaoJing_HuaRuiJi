@@ -27,7 +27,7 @@ import javax.swing.event.ChangeListener;
 import AVQ.OEQ.cap.Monitor;
 import AVQ.PVU.vedio.PlayerControl;
 import AVQ.PVU.vedio.PlayerShow;
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;

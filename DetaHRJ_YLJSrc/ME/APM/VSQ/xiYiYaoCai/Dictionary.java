@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ME.sample.PathLinkFile;
+import ME.APM.VSQ.PathLinkFile;
 public class Dictionary{	
 	public void txtToMap(Map<String, Object> dic_yao_ming, Map<String, Object> dic_chengfen_danwei,
 			Map<String, Object> dic_yong_fa, Map<String, Object> dic_yao_li, Map<String, Object> dic_zhu_yi,

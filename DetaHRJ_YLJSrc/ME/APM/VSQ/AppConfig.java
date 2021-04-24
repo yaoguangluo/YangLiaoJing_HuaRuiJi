@@ -1,4 +1,4 @@
-package ME.sample;
+package ME.APM.VSQ;
 import java.awt.Container;
 
 import java.awt.Dimension;
@@ -9,28 +9,46 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.IOException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
-import ME.APM.VSQ.app.config.DetaJPanel;
+import ME.APM.VSQ.app.config.SectionJPanel;
 
 
-public class DetaBuy extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
+public class AppConfig extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;
 	public boolean isConfig= true;
-	public DetaJPanel SectionJPanel;
-	public void init(App app) throws IOException{
+	public SectionJPanel SectionJPanel;
+	public SectionJPanel pLSQLJPanel;
+	public SectionJPanel pLShellJPanel;
+	public void init(App app){
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
 		JTabbedPane jTabbedpane= new JTabbedPane();
 		Container SectionJPanelContainer= new Container();
-		SectionJPanel= new DetaJPanel(app);
+		SectionJPanel= new SectionJPanel(app);
 		SectionJPanel.setLayout(null);
 		SectionJPanel.setBounds(0, 0, 800, 750);
 		SectionJPanelContainer.add(SectionJPanel);
-		jTabbedpane.addTab("购买版面", new ImageIcon(), SectionJPanelContainer, "购买版面");
+		jTabbedpane.addTab("专科选择版面", new ImageIcon(), SectionJPanelContainer, "专科选择与系统配置版面");
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
+		
+		Container pLSQLJPanelContainer= new Container();
+		pLSQLJPanel= new SectionJPanel(app);
+		pLSQLJPanel.setLayout(null);
+		pLSQLJPanel.setBounds(0, 0, 800, 750);
+		pLSQLJPanelContainer.add(pLSQLJPanel);
+		jTabbedpane.addTab("德塔PLSQL医学数据库语言控制台", new ImageIcon(), pLSQLJPanelContainer, "德塔PLSQL医学数据库语言控制台");
+		jTabbedpane.setMnemonicAt(1, KeyEvent.VK_1); 
+		
+		Container pLShellJPanelContainer= new Container();
+		pLShellJPanel= new SectionJPanel(app);
+		pLShellJPanel.setLayout(null);
+		pLShellJPanel.setBounds(0, 0, 800, 750);
+		pLShellJPanelContainer.add(pLShellJPanel);
+		jTabbedpane.addTab("德塔TIN SHELL医学智能语言控制台", new ImageIcon(), pLShellJPanelContainer, "德塔TIN SHELL医学智能语言控制台");
+		jTabbedpane.setMnemonicAt(2, KeyEvent.VK_2); 
+		
 		
 		//this.setLayout(null);
 		this.setPreferredSize(new Dimension(800, 750));

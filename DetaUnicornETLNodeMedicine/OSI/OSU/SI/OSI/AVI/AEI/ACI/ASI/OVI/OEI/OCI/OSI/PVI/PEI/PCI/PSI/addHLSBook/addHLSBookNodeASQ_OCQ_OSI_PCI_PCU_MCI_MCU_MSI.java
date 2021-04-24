@@ -10,7 +10,7 @@ import java.util.Map;
 
 import javax.swing.*;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;

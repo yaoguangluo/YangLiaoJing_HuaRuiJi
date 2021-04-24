@@ -16,7 +16,7 @@ import javax.swing.JTextPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import MVQ.slider.DetaSlider;
 
 public class SectionJPanel extends JPanel implements MouseListener, KeyListener, ActionListener{

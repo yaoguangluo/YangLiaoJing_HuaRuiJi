@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ME.sample.PathLinkFile;
+import ME.APM.VSQ.PathLinkFile;
 
 public class Dictionary{	
 	public List<String> dic_list;

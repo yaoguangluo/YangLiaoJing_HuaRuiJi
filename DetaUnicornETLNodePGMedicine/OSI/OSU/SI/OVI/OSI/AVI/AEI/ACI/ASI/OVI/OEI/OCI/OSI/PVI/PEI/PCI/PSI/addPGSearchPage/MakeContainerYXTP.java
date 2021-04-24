@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 import javax.swing.JTabbedPane;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;

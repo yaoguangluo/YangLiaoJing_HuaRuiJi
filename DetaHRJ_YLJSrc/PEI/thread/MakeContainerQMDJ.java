@@ -19,8 +19,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 
+import ME.APM.VSQ.App;
 import ME.APM.VSQ.xlx.CoAuthorForWord;
-import ME.sample.App;
 import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{

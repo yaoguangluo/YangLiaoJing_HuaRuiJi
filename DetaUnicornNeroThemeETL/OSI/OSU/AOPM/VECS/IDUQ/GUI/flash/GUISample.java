@@ -42,8 +42,8 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
-import ME.sample.App;
-import ME.sample.DetaBuy;
+import ME.APM.VSQ.App;
+import ME.APM.VSQ.DetaBuy;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;

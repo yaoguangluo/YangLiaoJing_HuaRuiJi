@@ -5,7 +5,7 @@ import java.awt.HeadlessException;
 import java.util.Map;
 import javax.swing.JScrollPane;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import biProcessor.CoAuthorForWord;
 public class TaskMakeCoWorker extends Thread implements Runnable{

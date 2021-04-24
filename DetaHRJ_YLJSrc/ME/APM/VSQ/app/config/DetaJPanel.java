@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSQ.disk.GetDisk;
 
 public class DetaJPanel extends JPanel implements MouseListener, KeyListener, ActionListener{

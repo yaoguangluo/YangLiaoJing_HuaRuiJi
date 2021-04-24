@@ -1,4 +1,4 @@
-package ME.sample;
+package ME.APM.VSQ;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

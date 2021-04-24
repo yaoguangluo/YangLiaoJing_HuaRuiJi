@@ -2,7 +2,7 @@ package OSI.OSU.MS.VPC.sleeper;
 import java.io.IOException;
 import java.net.Socket;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.MS.VPC.vision.VPCSRequest;
 import OSI.OSU.MS.VPC.vision.VPCSResponse;
 

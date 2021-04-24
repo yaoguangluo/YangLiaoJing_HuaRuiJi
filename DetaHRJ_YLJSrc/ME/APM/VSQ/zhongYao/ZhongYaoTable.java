@@ -16,10 +16,10 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import ME.sample.App;
-import ME.sample.DictionaryFromDB;
-import ME.sample.PathLinkFile;
-import ME.sample.TableSorterZYNK;
+import ME.APM.VSQ.App;
+import ME.APM.VSQ.DictionaryFromDB;
+import ME.APM.VSQ.PathLinkFile;
+import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
 
 public class ZhongYaoTable implements MouseListener {

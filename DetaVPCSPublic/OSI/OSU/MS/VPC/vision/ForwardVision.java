@@ -2,7 +2,7 @@ package OSI.OSU.MS.VPC.vision;
 import java.io.IOException;
 import java.net.Socket;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.MS.VPC.rest.VPC;
 import OSI.OSU.plsql.stable.StableData;
 //合并 数据库和 前端的 vison文件

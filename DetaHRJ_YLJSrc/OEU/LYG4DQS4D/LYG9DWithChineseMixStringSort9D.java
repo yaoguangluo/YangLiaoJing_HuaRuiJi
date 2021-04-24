@@ -8,8 +8,8 @@ import java.util.HashMap;
 //ยÞัþนโ
 import java.util.Map;
 
-import ME.sample.App;
-import ME.sample.PathLinkFile;
+import ME.APM.VSQ.App;
+import ME.APM.VSQ.PathLinkFile;
 public class LYG9DWithChineseMixStringSort9D{
 	Map<String, Boolean> find= new HashMap<>();
 	Map<String, String> pinyin;

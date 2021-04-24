@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.MSQ.sets.stable.StableData;

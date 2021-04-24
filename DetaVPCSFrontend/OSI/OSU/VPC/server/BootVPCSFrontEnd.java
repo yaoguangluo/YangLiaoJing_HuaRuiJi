@@ -1,7 +1,7 @@
 package OSI.OSU.VPC.server;
 import java.io.IOException;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.VPC.controller.ServerInitControllerVPCSFrontEnd;
 //VPCS整合后修正, 稍后优化.
 public class BootVPCSFrontEnd extends Thread{

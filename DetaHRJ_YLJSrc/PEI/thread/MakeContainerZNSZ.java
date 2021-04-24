@@ -20,7 +20,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import PEU.waveProcessorYLJ.DFT;
 import SP.SoundWaveJPanel;

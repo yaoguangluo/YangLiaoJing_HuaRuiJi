@@ -20,7 +20,6 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.media.opengl.*;
 
-import ME.sample.App;
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
@@ -31,6 +30,8 @@ import jogl.obj.yaoguangLuo.JOGLOBJShape;
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
+
+import ME.APM.VSQ.App;
 
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;

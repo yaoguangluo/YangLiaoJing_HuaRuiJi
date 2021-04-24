@@ -9,7 +9,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JTextPane;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import OSI.OSU.AOPM.VECS.IDUQ.GUI.flash.ThisCanvas;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 

@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-import ME.sample.App;
+import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.label.DetaIndexLabel;
 import MVQ.label.DetaLabel;

@@ -12,7 +12,7 @@ public class dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
-	public ME.sample.App u;
+	public ME.APM.VSQ.App u;
 	public Analyzer analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;

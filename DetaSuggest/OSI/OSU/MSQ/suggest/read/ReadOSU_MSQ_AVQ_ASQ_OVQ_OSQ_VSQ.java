@@ -13,7 +13,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-import ME.sample.TableSorterZYNK;
+import ME.APM.VSQ.TableSorterZYNK;
 import OSI.OSU.OEQ.MCQ.GUI.OSGI.*;
 public class ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ 
 implements MouseListener{
