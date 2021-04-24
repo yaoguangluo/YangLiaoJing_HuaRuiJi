@@ -1,4 +1,4 @@
-package OSI.OSU.AEU.behavior.ica;
+package OSI.OSU.AEU.OPM.VEC.ica;
 
 import java.io.IOException;
 import java.util.Iterator;

@@ -1,8 +1,8 @@
-package OSI.OSU.OEI.behavior.ortho.fhmm.imp;
+package OSI.OSU.OEI.OPM.VEC.ortho.fhmm.imp;
 import java.io.IOException;
 import java.util.Map;
 
-import OSI.OSU.OCI.behavior.ortho.fhmm.BehaviorMap;
+import OSI.OSU.OCI.OPM.VEC.ortho.fhmm.BehaviorMap;
 public class BehaviorMapImp implements BehaviorMap{
 
 	@Override

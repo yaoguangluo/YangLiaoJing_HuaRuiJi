@@ -1,4 +1,4 @@
-package OSI.OSU.OCI.behavior.ortho.fhmm;
+package OSI.OSU.OCI.OPM.VEC.ortho.fhmm;
 import java.io.IOException;
 import java.util.Map;
 public interface BehaviorMap{

@@ -1,8 +1,8 @@
-package OSI.OSU.PEQ.behavior.test;
+package OSI.OSU.PEQ.OPM.VEC.test;
 
 import java.io.IOException;
 
-import OSI.OSU.AEU.behavior.ica.InitBehaviorICAKernel;
+import OSI.OSU.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
 import PEU.matrixProcessorYLJ.*;
 
 public class SuccessICATest{
