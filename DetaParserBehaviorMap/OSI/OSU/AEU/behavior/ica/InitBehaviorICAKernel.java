@@ -6,13 +6,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
+import OSI.OSU.AEU.AVC.SUQ.engine.EmotionInit;
+import OSI.OSU.AEU.AVC.SUQ.engine.EnvironmentInit;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
-
-import OSI.OSU.AEU.emotion.engine.EmotionInit;
-import OSI.OSU.AEU.emotion.engine.EnvironmentInit;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 
 public class InitBehaviorICAKernel{
 	private double[] kernel;

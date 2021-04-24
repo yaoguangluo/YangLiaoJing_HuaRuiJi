@@ -21,8 +21,8 @@ import OSI.OSU.ASQ.PSU.engin.utils.WordFrequencyUtil;
 import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
-import OSI.OSU.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
+import OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp.EmotionMapImp;
 import OSI.OSU.PEQ.sensing.test.SensingTest;
 public class AnalyzerImp implements Analyzer {
 	protected FHMMList fHMMList;

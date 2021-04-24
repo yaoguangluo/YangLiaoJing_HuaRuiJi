@@ -6,8 +6,8 @@ import java.util.Random;
 
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
-import OSI.OSU.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
+import OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp.EmotionMapImp;
 import OSI.OSU.PCS.thread.SocketThread;
 import OSI.OSU.PCS.thread.SocketThreadPool;
 import OSI.OSU.config.Config;

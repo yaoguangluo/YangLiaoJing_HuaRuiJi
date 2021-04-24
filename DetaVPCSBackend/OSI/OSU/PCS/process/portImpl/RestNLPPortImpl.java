@@ -1,10 +1,10 @@
 package OSI.OSU.PCS.process.portImpl;
-import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
+import OSI.OSU.AEU.AVC.SUQ.engine.LenovoInit;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.OSU.AEU.behavior.ica.InitBehaviorICAKernel;
-import OSI.OSU.AEU.emotion.engine.LenovoInit;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 import OSI.OSU.PEQ.behavior.test.SuccessICATest;
 import OSI.OSU.PEQ.sensing.test.ANNTest;
 import OSI.OSU.PEQ.sensing.test.DNNTest;

@@ -1,4 +1,4 @@
-package OSI.OSU.OCI.emotion.ortho.fhmm;
+package OSI.OSU.OCI.AVC.SUQ.ortho.fhmm;
 import java.io.IOException;
 import java.util.Map;
 public interface EmotionMap{

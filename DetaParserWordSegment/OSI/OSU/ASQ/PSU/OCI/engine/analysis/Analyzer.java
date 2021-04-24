@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 import OSI.OSU.PEQ.sensing.test.SensingTest;
 public interface Analyzer {
 	void init() throws IOException;

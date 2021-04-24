@@ -5,15 +5,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
-import OSI.OSU.AEU.OCI.emotion.estimation.RatioMap;
-import OSI.OSU.AEU.OEI.emotion.estimation.imp.RatioMapImp;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
-import OSI.OSU.OEI.emotion.ortho.fhmm.imp.EmotionMapImp;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.RatioMap;
+import OSI.OSU.AEU.OEI.AVC.SUQ.estimation.imp.RatioMapImp;
 import OSI.OSU.ASQ.PSU.OCI.engine.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.engine.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
+import OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp.EmotionMapImp;
 public class SensingTest{
 	public List<String> getSets() {
 		return sets;

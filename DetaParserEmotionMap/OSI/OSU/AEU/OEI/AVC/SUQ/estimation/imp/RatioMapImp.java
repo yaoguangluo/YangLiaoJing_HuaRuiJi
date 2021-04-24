@@ -1,11 +1,11 @@
-package OSI.OSU.AEU.OEI.emotion.estimation.imp;
+package OSI.OSU.AEU.OEI.AVC.SUQ.estimation.imp;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
-import OSI.OSU.AEU.OCI.emotion.estimation.RatioMap;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.RatioMap;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
 

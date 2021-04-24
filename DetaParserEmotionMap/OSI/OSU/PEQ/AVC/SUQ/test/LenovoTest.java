@@ -1,10 +1,10 @@
-package OSI.OSU.PEQ.emotion.test;
+package OSI.OSU.PEQ.AVC.SUQ.test;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map;
 
-import OSI.OSU.AEU.OCI.emotion.estimation.EmotionSample;
-import OSI.OSU.AEU.emotion.engine.LenovoInit;
+import OSI.OSU.AEU.AVC.SUQ.engine.LenovoInit;
+import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 public class LenovoTest{
 	public static void main(String[] argv) throws IOException {
 		//init

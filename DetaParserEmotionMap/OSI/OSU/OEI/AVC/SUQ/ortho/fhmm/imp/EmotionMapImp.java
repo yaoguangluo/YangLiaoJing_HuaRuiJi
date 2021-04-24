@@ -1,4 +1,4 @@
-package OSI.OSU.OEI.emotion.ortho.fhmm.imp;
+package OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.OCI.emotion.ortho.fhmm.EmotionMap;
+import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
 
 public class EmotionMapImp implements EmotionMap{
 	private Map<String, Object> positiveMap;
