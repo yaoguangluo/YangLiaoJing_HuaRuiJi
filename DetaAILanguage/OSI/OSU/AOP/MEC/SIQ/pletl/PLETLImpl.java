@@ -5,9 +5,9 @@ import javax.swing.JTextPane;
 
 import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OEI.PVI.document.load.LoadFile;
-import OSI.OSU.OVU.MVQ.gui.nodeView.NodeShow;
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkList;
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
+import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroCell;
 public class PLETLImpl implements PLETLIntef{
 	@Override

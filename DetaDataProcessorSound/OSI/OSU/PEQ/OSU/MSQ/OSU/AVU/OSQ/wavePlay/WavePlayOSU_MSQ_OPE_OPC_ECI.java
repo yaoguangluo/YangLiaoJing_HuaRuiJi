@@ -4,7 +4,7 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 
 public class WavePlayOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI 
 {

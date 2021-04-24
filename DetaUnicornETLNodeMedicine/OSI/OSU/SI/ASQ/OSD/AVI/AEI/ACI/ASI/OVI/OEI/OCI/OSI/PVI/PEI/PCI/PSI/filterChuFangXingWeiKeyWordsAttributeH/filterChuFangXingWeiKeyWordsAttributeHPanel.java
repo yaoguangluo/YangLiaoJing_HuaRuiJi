@@ -10,7 +10,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES;
 
 import java.awt.Panel;
 import java.awt.ScrollPane;

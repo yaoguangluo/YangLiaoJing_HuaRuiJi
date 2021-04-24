@@ -5,7 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import biProcessor.CoAuthorForWord;
 public class addZYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;

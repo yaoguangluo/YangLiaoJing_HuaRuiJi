@@ -12,7 +12,7 @@ import java.awt.geom.Line2D;
 import java.util.Vector;
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.soundProcessorYLJ.*;
 public class GuassianWav2DFilterOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;

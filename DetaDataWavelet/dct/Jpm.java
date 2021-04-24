@@ -8,7 +8,7 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import OSI.OSU.OVQ.MSQ.gui.platForm.UnicornJSplitPane;
+import OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornJSplitPane;
 //思想 refer 傅里叶 
 //余弦思想 refer K. R. Rao
 //复数思想 refer J.W 库力 

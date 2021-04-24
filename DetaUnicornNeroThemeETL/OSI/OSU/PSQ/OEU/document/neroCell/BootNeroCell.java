@@ -10,9 +10,9 @@ import java.util.Map;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
-import OSI.OSU.SI.MCI.OEI.gui.extOSGI.OSGI_chansfer;
+import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
+import OSI.OSU.SI.MCI.OEI.OVU.PQE.extOSGI.OSGI_chansfer;
 public class BootNeroCell{
 	public static void bootCell(LinkNode linkNode, JTextPane rightBotJTextPane, ThisCanvas canvas) 
 			throws IOException, UnsupportedAudioFileException, InterruptedException {

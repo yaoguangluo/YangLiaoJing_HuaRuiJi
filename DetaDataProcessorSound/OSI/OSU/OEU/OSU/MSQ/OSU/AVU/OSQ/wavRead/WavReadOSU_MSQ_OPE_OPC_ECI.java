@@ -9,7 +9,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.movieProcessorYLJ.AdataFrame;
 import PEU.movieProcessorYLJ.Header;
 import PEU.movieProcessorYLJ.LYGFileIO;

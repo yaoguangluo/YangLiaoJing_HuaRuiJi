@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OEQ.MCQ.gui.osgi.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
 import biProcessor.CoAuthorForWord;
 
 public class addXYWKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{

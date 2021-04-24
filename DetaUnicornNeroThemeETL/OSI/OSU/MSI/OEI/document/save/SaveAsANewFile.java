@@ -6,7 +6,7 @@ import java.io.FileWriter;
 
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.MSQ.sets.stable.StableData;
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 //准备把响应事件移植到这里。
 public class SaveAsANewFile{
 	public static void Save(LinkNode first) {

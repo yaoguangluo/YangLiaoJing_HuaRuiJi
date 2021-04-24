@@ -1,7 +1,7 @@
 package OSI.OSU.SI.PSQ.OEI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.editPanelReader;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 public class editPanelReaderRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value = 0;

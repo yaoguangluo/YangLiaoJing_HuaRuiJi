@@ -3,9 +3,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.swing.JTextPane;
 
-import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
-import OSI.OSU.OVU.MVQ.gui.nodeView.NodeShow;
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkList;
+import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
 import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroDoc;
 import OSI.OSU.vpcs.sets.Sets;
 import OSI.OSU.vpcs.skivvy.Skivvy;

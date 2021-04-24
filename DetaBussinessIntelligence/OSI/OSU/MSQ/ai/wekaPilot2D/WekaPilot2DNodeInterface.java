@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 public class WekaPilot2DNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public WekaPilot2DNodeInterface() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("weka.jpg"));

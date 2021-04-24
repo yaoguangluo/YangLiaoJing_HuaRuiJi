@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.movieProcessorYLJ.LYGFileIO;
 public class FindColorBRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID= 1L;

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 
 
 

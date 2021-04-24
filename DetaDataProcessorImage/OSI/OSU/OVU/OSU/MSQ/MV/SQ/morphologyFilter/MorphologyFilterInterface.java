@@ -5,8 +5,8 @@ import java.io.IOException;
 
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.gui.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 public class MorphologyFilterInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public MorphologyFilterInterface() throws IOException{
 		thisIcon=new ImageIcon(this.getClass().getResource("strench.jpg"));

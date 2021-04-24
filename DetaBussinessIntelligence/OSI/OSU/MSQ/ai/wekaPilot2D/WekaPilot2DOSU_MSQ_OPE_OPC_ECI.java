@@ -1,7 +1,7 @@
 package OSI.OSU.MSQ.ai.wekaPilot2D;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.gui.osgi.*;
+import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 public class WekaPilot2DOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

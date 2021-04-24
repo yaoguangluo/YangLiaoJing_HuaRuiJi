@@ -3,7 +3,7 @@ package OSI.OSU.MSI.OEI.document.save;
 import java.io.File;
 import java.io.FileWriter;
 
-import OSI.OSU.OVU.MVU.gui.nodeEdit.LinkNode;
+import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 
 public class SaveAndUpdateFile{
 	public static void update(String fileCurrentpath, LinkNode first) {
