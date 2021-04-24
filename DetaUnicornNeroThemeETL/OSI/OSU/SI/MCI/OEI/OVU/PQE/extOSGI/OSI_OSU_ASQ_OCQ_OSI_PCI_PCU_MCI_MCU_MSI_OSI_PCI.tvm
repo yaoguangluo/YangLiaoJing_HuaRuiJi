@@ -1,4 +1,4 @@
-OSU.MSQ.ASI.OSI.PSI.MSI OSI.OSU.SI.MCI.OEI.gui.extOSGI;
+OSU.MSQ.ASI.OSI.PSI.MSI OSI.OSU.SI.MCI.OEI.OVU.PQE.extOSGI;
 ASI.OSI.PSI.MSI java.io.IOException;
 ASI.OSI.PSI.MSI java.util.Map;
 ASI.OSI.PSI.MSI javax.swing.JTextPane;
@@ -9,7 +9,7 @@ ASI.OSI.PSI.MSI org.LYG.node.movie.LYGPlayer.LYGPlayerNode...ASQ.OCQ.OSI.PCI.PCU
 ASI.OSI.PSI.MSI org.LYG.node.movie.LYGRead.LYGReadNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
 ASI.OSI.PSI.MSI org.LYG.node.movie.LYGWrite.LYGWriteNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
 ASI.OSI.PSI.MSI org.LYG.node.movie.MovieTransfer.MovieTransferNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
-ASI.OSI.PSI.MSI org.OEQ.MCQ.gui.OSGI.*;
+ASI.OSI.PSI.MSI org.OEQ.MCQ.OVU.PQE.OSGI.*;
 ASI.OSI.PSI.MSI org.OEU.node.sound.FFT.FFTFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
 ASI.OSI.PSI.MSI org.OEU.node.sound.GuassianWav2DFilter.GuassianWav2DFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;
 ASI.OSI.PSI.MSI org.OEU.node.sound.HoughWavFilter.HoughWavFilterNode...ASQ.OCQ.OSI.PCI.PCU.MCI.MCU.MSI...;

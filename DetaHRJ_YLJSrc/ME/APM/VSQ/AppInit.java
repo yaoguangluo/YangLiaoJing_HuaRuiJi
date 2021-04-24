@@ -180,7 +180,7 @@ public class AppInit {
 			app.text= new JTextPane();
 			app.jText= new JTextPane();
 			app.jxText= new JTextPane();
-			UIManager.put("ScrollBarUI", "OSI.OSU.OVQ.MSQ.gui.platForm.UnicornScrollBarUI");	
+			UIManager.put("ScrollBarUI", "OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornScrollBarUI");	
 			app.jTabbedpane.setBounds(0, 60, 1345, 980);
 			app.tabNames= new ArrayList<>();
 			app.tabNames.add("ÖÐÒ©±¾²Ý");

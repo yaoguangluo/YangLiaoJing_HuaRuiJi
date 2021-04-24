@@ -4,7 +4,7 @@
  * Copyright (c) 2006, Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package org.PMV.gui.platForm;
+package org.PMV.OVU.PQE.platForm;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Insets;

@@ -1,4 +1,4 @@
-package org.PMV.gui.platForm;
+package org.PMV.OVU.PQE.platForm;
 import java.awt.Rectangle;
 import javax.swing.JSplitPane;
 import javax.swing.plaf.basic.BasicSplitPaneDivider;

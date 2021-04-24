@@ -1,4 +1,4 @@
-package org.PMV.gui.platForm;
+package org.PMV.OVU.PQE.platForm;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;

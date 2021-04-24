@@ -13,7 +13,7 @@ import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import weka.clusterers.*;
 import weka.core.*;
 import weka.core.converters.ConverterUtils.*;
-import weka.gui.visualize.*;
+import weka.OVU.PQE.visualize.*;
 public class WekaPilot2DOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
