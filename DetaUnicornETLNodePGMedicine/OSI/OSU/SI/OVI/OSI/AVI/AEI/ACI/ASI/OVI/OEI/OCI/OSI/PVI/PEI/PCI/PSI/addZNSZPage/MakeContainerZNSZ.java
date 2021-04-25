@@ -357,7 +357,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			jpanelFourth.add(jsp_panel_sc);
 			jpanelFourth.add(jsp_panel_scm);
 			jpanelFourth.setName(tabNames.get(3));
-			jTabbedpane.addTab(tabNames.get(3),new ImageIcon() , jpanelFourth, "ÖÇÄÜÉùÕï");// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿
+			jTabbedpane.addTab(tabNames.get(3),new ImageIcon() , jpanelFourth, "ÖÇÄÜÉùÕïÒ³");// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);
