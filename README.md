@@ -122,6 +122,12 @@
 ###### https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 ###### https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf
 
+###### 元基,编码,公式,解码定义类 见工程文件夹 OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde
+###### 非卷积元基视觉, 见工程文件  AVQ.OEQ.cap.Monitor.java 1022行起始等
+###### 元基session, 见工程文件 OSI.OSU.MSU.tcp.http.SessionValidation.java
+###### 物理元基加密, 见工程文件 ME.APM.VSQ.DictionaryFromDB.java
+###### 肽展搜索, 见工程文件 OSI.OSU.VSQ.dna.search.ZhongYaoSearch.java 
+
 ###### 统一社会信用代码 91430181MA4Q3REH6K 浏阳德塔软件开发有限公司 欢迎社会各界监督.
 
 ###  著作权申明:
