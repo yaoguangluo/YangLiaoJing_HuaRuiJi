@@ -6,9 +6,9 @@ import java.util.Map;
 import org.json.JSONObject;
 import PEU.cacheProcessorYLJ.*;
 import PEU.MD5ProcessorYLJ.*;
-import OSI.OSU.MSI.plsql.db.insert.imp.InsertRowsImp;
-import OSI.OSU.MSQ.plsql.db.select.imp.SelectRowsImp;
-import OSI.OSU.MSU.plsql.db.update.imp.UpdateRowsImp;
+import OSI.OSU.MSI.plsql.SM.OSU.imp.InsertRowsImp;
+import OSI.OSU.MSQ.plsql.SM.OSQ.imp.SelectRowsImp;
+import OSI.OSU.MSU.plsql.SM.update.imp.UpdateRowsImp;
 import OSI.OSU.plsql.vpc.view.UsrFull;
 
 public class LoginDAOImpl {

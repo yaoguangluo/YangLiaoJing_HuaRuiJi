@@ -558,7 +558,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							"culumnValue:¥Ó≈‰:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 13).toString().replace(":", "@biky@"))+ ";" +  
 							"culumnValue:≥£º˚“©:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 14).toString().replace(":", "@biky@"))+ ";";
 					try {
-						OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+						OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
 					}catch(Exception e1) {
 						e1.printStackTrace();
 					}

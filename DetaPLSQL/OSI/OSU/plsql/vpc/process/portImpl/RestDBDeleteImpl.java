@@ -4,7 +4,7 @@ package OSI.OSU.plsql.vpc.process.portImpl;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OSU.MSD.plsql.db.delete.imp.DeleteRowsImp;
+import OSI.OSU.MSD.plsql.SM.OSD.imp.DeleteRowsImp;
 import OSI.OSU.plsql.vpc.process.companyImpl.LoginServiceImpl;
 
 public class RestDBDeleteImpl {

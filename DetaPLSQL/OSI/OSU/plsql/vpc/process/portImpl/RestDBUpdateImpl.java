@@ -2,7 +2,7 @@ package OSI.OSU.plsql.vpc.process.portImpl;
 
 import org.json.JSONObject;
 
-import OSI.OSU.MSU.plsql.db.update.imp.UpdateRowsImp;
+import OSI.OSU.MSU.plsql.SM.update.imp.UpdateRowsImp;
 import OSI.OSU.plsql.vpc.process.companyImpl.LoginServiceImpl;
 
 import java.util.HashMap;

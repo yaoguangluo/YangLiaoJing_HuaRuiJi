@@ -34,7 +34,7 @@ public class CreateTableXiYao{
 			   		"culumnName:uk:ÆäËû:string;"; 
 
 		try {
-			OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

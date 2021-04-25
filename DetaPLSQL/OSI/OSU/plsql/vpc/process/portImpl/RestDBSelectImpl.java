@@ -1,5 +1,5 @@
 package OSI.OSU.plsql.vpc.process.portImpl;
-import OSI.OSU.MSQ.plsql.db.select.imp.SelectRowsImp;
+import OSI.OSU.MSQ.plsql.SM.OSQ.imp.SelectRowsImp;
 import OSI.OSU.plsql.vpc.process.companyImpl.LoginServiceImpl;
 
 import java.util.HashMap;

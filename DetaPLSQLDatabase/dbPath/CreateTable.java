@@ -35,7 +35,7 @@ public class CreateTable{
 			   		"culumnName:uk:¥Ó≈‰:string;" + 
 			   		"culumnName:uk:≥£º˚“©:string;";
 		try {
-			OSI.OSU.ME.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

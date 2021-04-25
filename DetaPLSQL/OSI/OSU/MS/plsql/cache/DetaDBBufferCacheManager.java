@@ -6,12 +6,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OSU.plsql.db.reflection.Base;
-import OSI.OSU.plsql.db.reflection.Cell;
-import OSI.OSU.plsql.db.reflection.DB;
-import OSI.OSU.plsql.db.reflection.Row;
-import OSI.OSU.plsql.db.reflection.Spec;
-import OSI.OSU.plsql.db.reflection.Table;
+import OSI.OSU.plsql.SM.reflection.Base;
+import OSI.OSU.plsql.SM.reflection.Cell;
+import OSI.OSU.plsql.SM.reflection.DB;
+import OSI.OSU.plsql.SM.reflection.Row;
+import OSI.OSU.plsql.SM.reflection.Spec;
+import OSI.OSU.plsql.SM.reflection.Table;
 import PEU.cacheProcessorYLJ.*;
 @SuppressWarnings("unused")
 public class DetaDBBufferCacheManager {
