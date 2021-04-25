@@ -11,23 +11,23 @@ import javax.swing.JPanel;
 
 public class JpWave extends JPanel implements Runnable{
 	/**
-	 * ä½œè€… ç½—ç‘¶å…‰
+	 * ×÷ÕßÂÞÑþ¹â
 	 */
 	private static final long serialVersionUID = 1L;
-	LYGFileIO cur;
-	Thread t1;
+	LYGFileIO lYGFileIO;
+	Thread thread;
 	public Object bootSound=0;
 	public int reg= 0;
 	public JpWave(LYGFileIO toplygin){
-		cur= toplygin;	 
+		lYGFileIO= toplygin;	 
 		JButton j= new JButton("play bytes");
 		j.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				  reg= 1;
 				  bootSound= 1;
-				  t1= new Thread(JpWave.this);
-				  t1.setPriority(Thread.MIN_PRIORITY);
-				  t1.start();	  
+				  thread= new Thread(JpWave.this);
+				  thread.setPriority(Thread.MIN_PRIORITY);
+				  thread.start();	  
 			}
 		});
 		j.setSize(100,30);
@@ -38,8 +38,8 @@ public class JpWave extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				  reg= 0;
 				  bootSound= 0;
-				  t1.stop();
-				  t1=null;
+				  thread.stop();
+				  thread=null;
 			}
 		});
 		j1.setSize(100,30);
@@ -50,9 +50,9 @@ public class JpWave extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) { 
 				  reg= 2;
 				  bootSound= 2;
-				  t1= new Thread(JpWave.this);
-				  t1.setPriority(Thread.MIN_PRIORITY);
-				  t1.start();	  
+				  thread= new Thread(JpWave.this);
+				  thread.setPriority(Thread.MIN_PRIORITY);
+				  thread.start();	  
 			}
 		});
 		j2.setSize(100, 30);
@@ -63,9 +63,9 @@ public class JpWave extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				  reg= 3;
 				  bootSound= 3;
-				  t1= new Thread(JpWave.this);
-				  t1.setPriority(Thread.MIN_PRIORITY);
-				  t1.start();	  
+				  thread= new Thread(JpWave.this);
+				  thread.setPriority(Thread.MIN_PRIORITY);
+				  thread.start();	  
 			}
 		});
 		j3.setSize(100, 30);
@@ -75,9 +75,9 @@ public class JpWave extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) {
 				  reg=4;
 				  bootSound= 4;
-				  t1 = new Thread(JpWave.this);
-				  t1.setPriority(Thread.MIN_PRIORITY);
-				  t1.start();	  
+				  thread = new Thread(JpWave.this);
+				  thread.setPriority(Thread.MIN_PRIORITY);
+				  thread.start();	  
 			}
 		});
 		j4.setSize(100,30);
@@ -88,9 +88,9 @@ public class JpWave extends JPanel implements Runnable{
 			public void actionPerformed(ActionEvent e) { 
 				  reg= 5;
 				  bootSound= 5;
-				  t1= new Thread(JpWave.this);
-				  t1.setPriority(Thread.MIN_PRIORITY);
-				  t1.start();	  
+				  thread= new Thread(JpWave.this);
+				  thread.setPriority(Thread.MIN_PRIORITY);
+				  thread.start();	  
 			}
 		});
 		j5.setSize(100,30);
@@ -105,42 +105,42 @@ public class JpWave extends JPanel implements Runnable{
 	
 	public void run(){
 		 if(reg==1){
-			 cur.toHead();	 
-			 if(cur.adataFrame!=null){
+			 lYGFileIO.toHead();	 
+			 if(lYGFileIO.adataFrame!=null){
 				try {
-					new SoundPlay().Play(cur.adataFrame);
+					new SoundPlay().Play(lYGFileIO.adataFrame);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
-			 cur.toHead();
+			 lYGFileIO.toHead();
 			 return;
 		 }
 		 if(reg==2){
-			 cur.toHead();	 
-			 if(cur.adataFrame!=null){
-				new SoundPlay().PlayArray(cur.adataFrame);
+			 lYGFileIO.toHead();	 
+			 if(lYGFileIO.adataFrame!=null){
+				new SoundPlay().PlayArray(lYGFileIO.adataFrame);
 			}
-			 cur.toHead();
+			 lYGFileIO.toHead();
 			 return;
 		 }
 		 
 		 if(reg==3){
-			 cur.toHead();	 
-			 if(cur.adataFrame!=null){
-				new SoundPlay().PlayMasterArray(cur.adataFrame);
+			 lYGFileIO.toHead();	 
+			 if(lYGFileIO.adataFrame!=null){
+				new SoundPlay().PlayMasterArray(lYGFileIO.adataFrame);
 			}
-			 cur.toHead();
+			 lYGFileIO.toHead();
 			 return;
 		 }
 		 
 		 if(reg==4){
-			 cur.toHead();	 
-			 if(cur.adataFrame!=null){
-				new SoundPlay().PlaySlaveArray(cur.adataFrame);
+			 lYGFileIO.toHead();	 
+			 if(lYGFileIO.adataFrame!=null){
+				new SoundPlay().PlaySlaveArray(lYGFileIO.adataFrame);
 			}
-			 cur.toHead();
+			 lYGFileIO.toHead();
 			 return;
 		 }
 		 
@@ -151,11 +151,11 @@ public class JpWave extends JPanel implements Runnable{
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			 }
-			 cur.toHead();	 
-			 if(cur.adataFrame!=null){
+			 lYGFileIO.toHead();	 
+			 if(lYGFileIO.adataFrame!=null){
 				try {
 					SoundPlay soundPlay= new SoundPlay();
-					soundPlay.PlayFftArray(cur.adataFrame, cur, this, bootSound);
+					soundPlay.PlayFftArray(lYGFileIO.adataFrame, lYGFileIO, this, bootSound);
 					Thread thread= new Thread(soundPlay);
 					thread.setPriority(Thread.MIN_PRIORITY);
 					thread.start();
@@ -164,7 +164,7 @@ public class JpWave extends JPanel implements Runnable{
 					e.printStackTrace();
 				}
 			 }
-			 cur.toHead();
+			 lYGFileIO.toHead();
 			 return;
 		 }
 	}

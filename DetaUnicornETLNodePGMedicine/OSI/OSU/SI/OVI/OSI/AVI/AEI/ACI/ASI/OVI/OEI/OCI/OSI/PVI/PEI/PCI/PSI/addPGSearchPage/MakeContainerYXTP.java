@@ -37,7 +37,7 @@ import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 
 public class MakeContainerYXTP extends Thread implements Runnable{
 	public Container jpanelFourth;
-	public App u;
+	public App app;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
 	public Analyzer analyzer;
@@ -61,12 +61,12 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 	public BufferedImage bufferedImageNullPG;
 	//public LinkedList<DetaButton> topList= new LinkedList<>(); 
 
-	public MakeContainerYXTP(Analyzer analyzer, Container jpanelFourth, App u2, JTabbedPane jTabbedpane
+	public MakeContainerYXTP(Analyzer analyzer, Container jpanelFourth, App app, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
 		this.jpanelFourth= jpanelFourth;
-		this.u= u2;
+		this.app= app;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
 		this.analyzer= analyzer;
@@ -135,7 +135,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			leftPanel.icon.setImage(leftPanel.img);
 			leftPanel.button= new YLJShowButton(null);
 			leftPanel.button.bufferedImage= image;
-			u.tempBufferedImage= leftPanel.button.bufferedImage;
+			app.tempBufferedImage= leftPanel.button.bufferedImage;
 			leftPanel.button.setIcon(leftPanel.icon);
 			leftPanel.add(leftPanel.button);
 			top.setLayout(null);
@@ -180,7 +180,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							leftPanel.removeAll();
 							leftPanel.add(leftPanel.button);
 							leftPanel.button.fix();
-							u.tempBufferedImage= leftPanel.button.bufferedImage;
+							app.tempBufferedImage= leftPanel.button.bufferedImage;
 						}
 					});
 
@@ -226,7 +226,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							leftPanel.removeAll();
 							leftPanel.add(leftPanel.button);
 							leftPanel.button.fix();
-							u.tempBufferedImage= leftPanel.button.bufferedImage;
+							app.tempBufferedImage= leftPanel.button.bufferedImage;
 						}
 					});
 
@@ -272,7 +272,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							leftPanel.removeAll();
 							leftPanel.add(leftPanel.button);
 							leftPanel.button.fix();
-							u.tempBufferedImage= leftPanel.button.bufferedImage;
+							app.tempBufferedImage= leftPanel.button.bufferedImage;
 						}
 					});
 			botLeftPanel.add(buttonbotLeftPanel);
@@ -317,7 +317,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							leftPanel.removeAll();
 							leftPanel.add(leftPanel.button);
 							leftPanel.button.fix();
-							u.tempBufferedImage= leftPanel.button.bufferedImage;
+							app.tempBufferedImage= leftPanel.button.bufferedImage;
 						}
 					});
 
@@ -1766,13 +1766,13 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						tempb+= code;
 					}
 				}
-				score_code[copyCount]= (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
+				score_code[copyCount]= (int) (tempa/Math.pow(this.app.lookrot+ 1, 4) + tempb*Math.pow(this.app.lookrot, 2));
 			}
 			if(key.replace(" ", "").length()> 1&& key.replace(" ", "").length()< 5) {
 				if(temps.contains(key)) {
 					tempb+= code<< 7;
 				}
-				score_code[copyCount]= (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
+				score_code[copyCount]= (int) (tempa/Math.pow(this.app.lookrot+ 1, 4) + tempb*Math.pow(this.app.lookrot, 2));
 			}
 			copyCount++;
 		}
@@ -1782,9 +1782,9 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 				if(score_code[i]< 1){
 					continue Here;
 				}
-				if(u.shuming_filter_box.isSelected()) {
+				if(app.shuming_filter_box.isSelected()) {
 					String wei= score[i];
-					String temp= u.name_filter.getText();
+					String temp= app.name_filter.getText();
 					for(int j= 0; j< temp.length(); j++) {
 						if(wei.contains(""+ temp.charAt(j))) {
 							continue Here;

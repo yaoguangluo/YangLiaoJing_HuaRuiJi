@@ -33,8 +33,8 @@ import PEU.waveProcessor.DFT;
 
 public class JpZNSZ extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;
-	LYGFileIO cur;
-	public Thread t1;
+	LYGFileIO lYGFileIO;
+	public Thread thread;
 	public DFT dFT;
 	Thread time;
 	public int reg= 0;
@@ -44,7 +44,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 	Vector<Double> lines ;
 	Vector<Double> forOutput;
 	BufferedImage imageForOutput;
-	Jpv jp3;
+	Jpv jpv;
 	
 	//
 	public JpZNSZ(Container jpanelFourth, DFT dFT, JTextPane text, BufferedImage imageForOutput
@@ -59,31 +59,31 @@ public class JpZNSZ extends JPanel implements Runnable{
 		LYGFileIO lYGFileIO= new LYGFileIO().initWithFFT(new double[1024], makeContainerZNSZ);
 		waveJpanel= new JpWave(lYGFileIO);
 		
-		JButton j = new DetaButton("启动",100,50,Color.red);
-		j.addActionListener(new ActionListener() {
+		JButton jButtonStart = new DetaButton("启动",100,50,Color.red);
+		jButtonStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 0;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j.setSize(100, 30);
-		j.setBounds(500, 20, 100, 30);
-		JButton j1= new DetaButton("关闭",100,50,Color.black);
-		j1.setForeground(Color.white);
-		j1.addActionListener(new ActionListener() {
+		jButtonStart.setSize(100, 30);
+		jButtonStart.setBounds(500, 20, 100, 30);
+		JButton jButtonStop= new DetaButton("关闭",100,50,Color.black);
+		jButtonStop.setForeground(Color.white);
+		jButtonStop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 0;
 				waveJpanel.reg= 0;
 				jpanelFourth.validate();
 			}
 		});
-		j1.setSize(100, 30);
-		JButton j2= new DetaButton("生成数列", 100- 20, 50, Color.green);
-		j2.addActionListener(new ActionListener() {
+		jButtonStop.setSize(100, 30);
+		JButton jButtonMakesArray= new DetaButton("生成数列", 100- 20, 50, Color.green);
+		jButtonMakesArray.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
 				reg= 2;
 				if(forOutput== null) {
@@ -109,10 +109,10 @@ public class JpZNSZ extends JPanel implements Runnable{
 					text.validate(); 
 			}
 		});
-		j2.setSize(100,30);
+		jButtonMakesArray.setSize(100,30);
 		
-		JButton j21= new DetaButton("读取数列", 100- 20, 50, Color.green);
-		j21.addActionListener(new ActionListener() {
+		JButton jButtonReadArray= new DetaButton("读取数列", 100- 20, 50, Color.green);
+		jButtonReadArray.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
 				reg= 2;
 				if(forOutput== null) {
@@ -138,10 +138,10 @@ public class JpZNSZ extends JPanel implements Runnable{
 					text.validate(); 
 			}
 		});
-		j21.setSize(100,30);
+		jButtonReadArray.setSize(100,30);
 		
-		JButton j3= new DetaButton("保存图片", 100- 20, 50, Color.magenta);
-		j3.addActionListener(new ActionListener() {
+		JButton jButtonSaveImage= new DetaButton("保存图片", 100- 20, 50, Color.magenta);
+		jButtonSaveImage.addActionListener(new ActionListener() {
 			@SuppressWarnings("unused")
 			public void actionPerformed(ActionEvent e) {
 				reg= 0;
@@ -168,39 +168,39 @@ public class JpZNSZ extends JPanel implements Runnable{
 				//锟斤拷锟酵计
 			}
 		});
-		j3.setSize(100, 30);
+		jButtonSaveImage.setSize(100, 30);
 		
-		JButton j4= new DetaButton("噪声检测", 100- 20, 50, Color.black);
-		j4.setForeground(Color.white);
-		j4.addActionListener(new ActionListener() {
+		JButton jButtonDetectNoise= new DetaButton("噪声检测", 100- 20, 50, Color.black);
+		jButtonDetectNoise.setForeground(Color.white);
+		jButtonDetectNoise.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j4.setSize(100, 30);
+		jButtonDetectNoise.setSize(100, 30);
 		
-		JButton j5= new DetaButton("读取图片", 100- 20, 50, Color.black);
-		j5.setForeground(Color.white);
-		j5.addActionListener(new ActionListener() {
+		JButton jButtonReadImage= new DetaButton("读取图片", 100- 20, 50, Color.black);
+		jButtonReadImage.setForeground(Color.white);
+		jButtonReadImage.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j5.setSize(100, 30);
+		jButtonReadImage.setSize(100, 30);
 		
-		JButton j51= new DetaButton("调制解调", 100- 20, 50, Color.black);
-		j51.setForeground(Color.white);
-		j51.addActionListener(new ActionListener() {
+		JButton jButtonReadImage1= new DetaButton("调制解调", 100- 20, 50, Color.black);
+		jButtonReadImage1.setForeground(Color.white);
+		jButtonReadImage1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
@@ -210,92 +210,91 @@ public class JpZNSZ extends JPanel implements Runnable{
 //				LYGFileIO lYGFileIO= new LYGFileIO().initWithFFT(new double[1024], makeContainerZNSZ);
 //				waveJpanel= new org.LYG.node.sound.wavePlay.jp(lYGFileIO);
 				waveJpanel.reg= 5;
-				t1= new Thread(waveJpanel);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();;
+				thread= new Thread(waveJpanel);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();;
 				jpanelFourth.validate();
 			}
 		});
-		j51.setSize(100, 30);
+		jButtonReadImage1.setSize(100, 30);
 		
-		DetaButton j6= new DetaButton("山林", 100-10, 50, Color.green);
-		j6.setForeground(Color.white);
-		j6.addActionListener(new ActionListener() {
+		DetaButton jButtonUndustMonit= new DetaButton("山林", 100-10, 50, Color.green);
+		jButtonUndustMonit.setForeground(Color.white);
+		jButtonUndustMonit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j6.setSize(100, 30);
+		jButtonUndustMonit.setSize(100, 30);
 		
-		DetaButton j7= new DetaButton("海边", 100- 20, 50, Color.blue);
-		j7.setForeground(Color.white);
-		j7.addActionListener(new ActionListener() {
+		DetaButton jButtonSeasideMonit= new DetaButton("海边", 100- 20, 50, Color.blue);
+		jButtonSeasideMonit.setForeground(Color.white);
+		jButtonSeasideMonit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j7.setSize(100, 30);
+		jButtonSeasideMonit.setSize(100, 30);
 		
-		JButton j8= new DetaButton("美梦", 100- 20, 50, Color.magenta);
-		j8.setForeground(Color.white);
-		j8.addActionListener(new ActionListener() {
+		JButton jButtonImaginationMonit= new DetaButton("美梦", 100- 20, 50, Color.magenta);
+		jButtonImaginationMonit.setForeground(Color.white);
+		jButtonImaginationMonit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j8.setSize(100, 30);
+		jButtonImaginationMonit.setSize(100, 30);
 		
-		JButton j9= new DetaButton("阅读", 100- 20, 50, Color.yellow);
-		j9.setForeground(Color.white);
-		j9.addActionListener(new ActionListener() {
+		JButton jButtonLibraryMonit= new DetaButton("阅读", 100- 20, 50, Color.yellow);
+		jButtonLibraryMonit.setForeground(Color.white);
+		jButtonLibraryMonit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
 				type= 1;
-				t1= new Thread(JpZNSZ.this);
-				t1.setPriority(Thread.MIN_PRIORITY);
-				t1.start();	
+				thread= new Thread(JpZNSZ.this);
+				thread.setPriority(Thread.MIN_PRIORITY);
+				thread.start();	
 				jpanelFourth.validate();
 			}
 		});
-		j9.setSize(100, 30);
+		jButtonLibraryMonit.setSize(100, 30);
 	
-		this.add(j);	
-		this.add(j1);
-		this.add(j2);	
-		this.add(j21);	
-		this.add(j3);
-		this.add(j5);
-		this.add(j4);
-		this.add(j51);
-		this.add(j6);
-		this.add(j7);
-		this.add(j8);
-		this.add(j9);
-		jp3= new Jpv(imageForOutput.getGraphics());
-		jp3.setBounds(100, 0, 400, 400);
-		jp3.setVisible(true);
-		this.add(jp3);	
+		this.add(jButtonStart);	
+		this.add(jButtonStop);
+		this.add(jButtonMakesArray);	
+		this.add(jButtonReadArray);	
+		this.add(jButtonSaveImage);
+		this.add(jButtonReadImage);
+		this.add(jButtonDetectNoise);
+		this.add(jButtonReadImage1);
+		this.add(jButtonUndustMonit);
+		this.add(jButtonSeasideMonit);
+		this.add(jButtonImaginationMonit);
+		this.add(jButtonLibraryMonit);
+		jpv= new Jpv(imageForOutput.getGraphics());
+		jpv.setBounds(100, 0, 400, 400);
+		jpv.setVisible(true);
+		this.add(jpv);	
 	} 
 
 	@SuppressWarnings({ "unchecked", "unused" })
 	public void run(){
 		while(reg==1){
-			//录锟斤拷
 			//System.out.println("luo");
 			SoundWaveVector sw= new SoundWaveVector();
 			time= new Thread(rec);
@@ -370,9 +369,8 @@ public class JpZNSZ extends JPanel implements Runnable{
 					byte[] audioBytes= out.toByteArray();
 					ByteArrayInputStream bais= new ByteArrayInputStream(audioBytes);
 					AudioInputStream ais= new AudioInputStream(bais, format, audioBytes.length/ format.getFrameSize());    
-					lines= sw.getVectorLines1(this, jp3, ais, cache_bz, cache_sj, dFT, forOutput
-							, imageForOutput.getGraphics(), type);	
-					//锟斤拷示锟斤拷锟街				     
+					lines= sw.getVectorLines1(this, jpv, ais, cache_bz, cache_sj, dFT, forOutput
+							, imageForOutput.getGraphics(), type);				     
 				} catch (InterruptedException | IOException e) {
 					e.printStackTrace();
 				}
