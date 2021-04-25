@@ -1,25 +1,19 @@
-package OSI.OSU.MSI.OEI.document.save;
-import java.awt.FileDialog;
-import java.awt.Frame;
+package OSI.OSU.MSI.OEI.SOI.SMQ.save;
+
 import java.io.File;
 import java.io.FileWriter;
 
-import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.MSQ.sets.stable.StableData;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
-//准备把响应事件移植到这里。
-public class SaveAsANewFile{
-	public static void Save(LinkNode first) {
-		FileDialog filedialog= new FileDialog(new Frame(), StableData.DOC_CREATE, FileDialog.LOAD);
-		filedialog.setFilenameFilter(new TXTFilter(StableData.FILE_FORMAT_ETL));
-		filedialog.setVisible(true);
-		String fileSavepath= filedialog.getDirectory()+ filedialog.getFile();
-		System.out.println(fileSavepath);
-		if(new File(fileSavepath).isFile()&& fileSavepath.contains(StableData.FILE_FORMAT_ETL)) {
-			System.out.println(StableData.DOC_EXIST);
-			return;
+
+public class SaveAndUpdateFile{
+	public static void update(String fileCurrentpath, LinkNode first) {
+		//delete file 
+		File file= new File(fileCurrentpath);
+		if(file.exists()&& file.isFile()) {
+			file.delete();
 		}
-		fileSavepath= fileSavepath+ StableData.FILE_FORMAT_ETL;
+		//save
+		String fileSavepath= fileCurrentpath;
 		System.out.println(fileSavepath);
 		//create file and save
 		try {
@@ -132,6 +126,7 @@ public class SaveAsANewFile{
 			}	
 			fileWriter.close();
 		}catch(Exception saveFile) {
+
 		}
 	}
 }

@@ -1,9 +1,10 @@
-package OSI.OSU.PCS.process.companyImpl;
+package OSI.OSU.PCS.PP.companyImpl;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import org.json.JSONObject;
-import OSI.OSU.PCS.process.factoryImpl.LoginDAOImpl;
+
+import OSI.OSU.PCS.PP.factoryImpl.LoginDAOImpl;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrToken;
 import OSI.OSU.VPC.common.utils.StringUtil;

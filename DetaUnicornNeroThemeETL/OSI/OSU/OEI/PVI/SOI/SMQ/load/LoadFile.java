@@ -1,4 +1,4 @@
-package OSI.OSU.OEI.PVI.document.load;
+package OSI.OSU.OEI.PVI.SOI.SMQ.load;
 
 import java.io.BufferedReader;
 import java.io.File;

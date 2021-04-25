@@ -1,4 +1,4 @@
-package OSI.OSU.OED.PVD.document.delete;
+package OSI.OSU.OED.PVD.SOI.SMQ.delete;
 import javax.swing.JTextPane;
 
 import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;

@@ -3,9 +3,9 @@ import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.OSU.PCS.PP.portImpl.RestLoginPortImpl;
+import OSI.OSU.PCS.PP.portImpl.RestNLPPortImpl;
 import OSI.OSU.PCS.common.maps.VtoV;
-import OSI.OSU.PCS.process.portImpl.RestLoginPortImpl;
-import OSI.OSU.PCS.process.portImpl.RestNLPPortImpl;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;
 	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) 

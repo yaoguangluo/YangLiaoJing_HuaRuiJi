@@ -1,4 +1,4 @@
-package OSI.OSU.MS.VPC.process;
+package OSI.OSU.MS.VPC.PP;
 public class TimeProcess{
 	public long before;
 	public long now;
