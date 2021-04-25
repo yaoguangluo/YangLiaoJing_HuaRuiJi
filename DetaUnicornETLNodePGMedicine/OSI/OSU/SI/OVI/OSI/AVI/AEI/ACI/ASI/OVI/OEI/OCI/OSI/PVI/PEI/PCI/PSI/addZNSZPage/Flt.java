@@ -9,7 +9,9 @@ import java.util.Vector;
 import javax.swing.JPanel;
 
 import PEU.waveProcessor.DFT;
-
+/**
+ * ×÷ÕßÂÞÑþ¹â
+ */
 public class Flt extends JPanel{
 	private static final long serialVersionUID = 1L;
 	double pi= 3.1415926;

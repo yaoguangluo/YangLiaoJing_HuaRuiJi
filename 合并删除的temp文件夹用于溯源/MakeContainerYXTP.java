@@ -97,7 +97,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			//button add
 			//bufferImage read
 			String pgCategoryLink= "";	
-			FileDialog filedialog= new FileDialog(new Frame(), "ÇëÑ¡ÖÐnullÍ¼Æ¬"
+			FileDialog filedialog= new FileDialog(new Frame(), "è¯·é€‰ä¸­nullå›¾ç‰‡"
 					, FileDialog.LOAD);
 			filedialog.setFilenameFilter(new TXTFilter(StableData.FILE_FORMAT_ETL));
 			filedialog.setVisible(true);
@@ -106,7 +106,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			System.out.println(root);
 			nullPG= root+ "nullPG.jpg";
 			bufferedImageNullPG= ImageIO.read(new File(nullPG));
-			//???
+			//È¡Ä¿Â¼
 			File rootFile= new File(root);
 			if(rootFile.exists()&& rootFile.isDirectory()) {
 				String[] strings= rootFile.list();
@@ -1093,7 +1093,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			//MOTION
 			// 
 
-			topButton= new DetaButton("ÉÏ¡ü", 100, 50, Color.red);
+			topButton= new DetaButton("", 100, 50, Color.red);
 			topButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1220,7 +1220,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							}	
 						}
 					});
-			DetaButton downButton= new DetaButton("ÏÂ¡ý", 100, 50, Color.white);
+			DetaButton downButton= new DetaButton("", 100, 50, Color.white);
 			downButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1349,7 +1349,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						}
 					});
 
-			leftButton= new DetaButton("×ó¡û", 100, 50, Color.GREEN);
+			leftButton= new DetaButton("", 100, 50, Color.GREEN);
 			leftButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1477,7 +1477,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						}
 					});
 
-			DetaButton rightButton= new DetaButton("ÓÒ¡ú", 100, 50, Color.YELLOW);
+			DetaButton rightButton= new DetaButton("", 100, 50, Color.YELLOW);
 			rightButton.addActionListener( 
 					new ActionListener() {    
 						public void actionPerformed(ActionEvent e){
@@ -1621,8 +1621,8 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			jpanelFourth.add(top);
 			jpanelFourth.add(buttom);
 
-			jpanelFourth.setName("Í¼Æ¬ËÑË÷");
-			jTabbedpane.addTab("Í¼Æ¬ËÑË÷", new ImageIcon(), jpanelFourth, "");//   
+			jpanelFourth.setName("");
+			jTabbedpane.addTab("", new ImageIcon(), jpanelFourth, "");//   
 			Color[] colors= new Color[3];
 			colors[0]= new Color(253, 233, 254);
 			colors[1]= new Color(233, 254, 234);
@@ -1716,13 +1716,13 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 							score_code[copyCount] += 1 << mapSearchaAtII.length() << wordFrequencySearch.getFrequency() ;
 							continue Here;
 						}
-						if(pos.get(mapSearchaAtII).contains("Ãû")||pos.get(mapSearchaAtII).contains("¶¯")
-								||pos.get(mapSearchaAtII).contains("ÐÎ")||pos.get(mapSearchaAtII).contains("Î½")) {
+						if(pos.get(mapSearchaAtII).contains("å")||pos.get(mapSearchaAtII).contains("åŠ¨")
+								||pos.get(mapSearchaAtII).contains("å½¢")||pos.get(mapSearchaAtII).contains("è°“")) {
 							reg[copyCount] += 2;
 						}
 						reg[copyCount] += 1;
 						score_code[copyCount] += (iteratorForCopyString.contains(mapSearchaAtII) ? 2 : 1) 
-								* (!pos.get(mapSearchaAtII).contains("Ãû") ? pos.get(mapSearchaAtII).contains("¶¯")? 50 : 1 : 50) 
+								* (!pos.get(mapSearchaAtII).contains("å") ? pos.get(mapSearchaAtII).contains("åŠ¨")? 50 : 1 : 50) 
 								<< mapSearchaAtII.length() * wordFrequencySearch.getFrequency();
 						continue Here;
 					}
@@ -1735,10 +1735,10 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 								score[copyCount] = iteratorForCopyString;
 								score_code[copyCount]+=1;
 								if(pos.containsKey(String.valueOf(mapSearchaAtII.charAt(j)))&&(
-										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("Ãû")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("¶¯")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("ÐÎ")
-										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("Î½")
+										pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("å")
+										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("åŠ¨")
+										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("å½¢")
+										||pos.get(String.valueOf(mapSearchaAtII.charAt(j))).contains("è°“")
 										)) {
 									reg[copyCount] += 2;
 								}
@@ -1766,7 +1766,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 						tempb+= code;
 					}
 				}
-				score_code[copyCount]= (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
+				score_code[copyCount] = (int) (tempa/Math.pow(this.u.lookrot+ 1, 4) + tempb*Math.pow(this.u.lookrot, 2));
 			}
 			if(key.replace(" ", "").length()> 1&& key.replace(" ", "").length()< 5) {
 				if(temps.contains(key)) {

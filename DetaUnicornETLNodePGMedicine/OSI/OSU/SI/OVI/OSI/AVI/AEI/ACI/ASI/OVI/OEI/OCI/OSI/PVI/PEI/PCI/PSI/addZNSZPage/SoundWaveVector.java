@@ -1,7 +1,6 @@
 package OSI.OSU.SI.OVI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZNSZPage;
 import java.awt.Dimension;
 
-
 import java.awt.Graphics;
 import java.awt.geom.Line2D.Double;
 import java.io.IOException;
@@ -11,6 +10,7 @@ import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 
 import PEU.waveProcessor.DFT;
+//×÷Õß ÂÞÑþ¹â
 public class SoundWaveVector{
 	Vector<Double> lines= new Vector<Double>();
 	Vector<Double> mlines1= new Vector<Double>();
@@ -101,7 +101,7 @@ public class SoundWaveVector{
 		double sin[][]= new double [w][w] ;
 		//caiyang
 		for(int i=0; i < w && audioData != null;i++){
-			idx = (int) (frames_per_pixel * numChannels * i);//ï¿½ï¿½Ê±ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			idx = (int) (frames_per_pixel * numChannels * i);
 			newdata[i]=audioData[w*2+ i];	
 		}
 		//ff

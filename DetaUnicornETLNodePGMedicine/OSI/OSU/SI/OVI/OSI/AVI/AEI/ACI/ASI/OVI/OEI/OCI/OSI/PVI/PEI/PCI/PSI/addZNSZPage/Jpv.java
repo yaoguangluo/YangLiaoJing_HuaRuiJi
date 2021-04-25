@@ -46,8 +46,8 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("å‚…é‡Œå¶å˜æ¢", 0+10,  200+120);
-		g3.drawString("å‚…é‡Œå¶å˜æ¢", 0+10,  200+120);
+		g2.drawString("¸µÀïÒ¶±ä»»", 0+10,  200+120);
+		g3.drawString("¸µÀïÒ¶±ä»»", 0+10,  200+120);
 	}
 
 	public void paint2(Vector<Double> mlines) {
@@ -62,7 +62,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("é”åŒ–ç†µ", 0+10,  350+120-20);
+		g2.drawString("Èñ»¯ìØ", 0+10,  350+120-20);
 		g3.clearRect(0, 300+30, 300, 200);
 		if (mlines != null) {
 			g3.setColor(Color.blue); 
@@ -73,7 +73,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("é”åŒ–ç†µ", 0+10,  350+120-20);
+		g3.drawString("Èñ»¯ìØ", 0+10,  350+120-20);
 	}
 
 	public void paint3(Vector<Double> mlines) {
@@ -88,7 +88,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("é«˜æ–¯è¿‡æ»¤", 0+10,  500+120-20);
+		g2.drawString("¸ßË¹¹ıÂË", 0+10,  500+120-20);
 		g3.clearRect(0,450+30-20, 300, 250);
 		if (mlines != null) {
 			g3.setColor(Color.yellow); 
@@ -99,7 +99,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("é«˜æ–¯è¿‡æ»¤", 0+10,  500+120-20);
+		g3.drawString("¸ßË¹¹ıÂË", 0+10,  500+120-20);
 	}
 
 	public void paint4(Vector<Double> mlines) {
@@ -115,7 +115,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("ç»†åŒ–", 260+10,  200+120);
+		g2.drawString("Ï¸»¯", 260+10,  200+120);
 		g3.clearRect(260, 200, 300, 130);
 		if (mlines != null) {
 			// .. render sampling graph ..
@@ -127,7 +127,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("ç»†åŒ–", 260+10,  200+120);
+		g3.drawString("Ï¸»¯", 260+10,  200+120);
 	}
 
 	public void paint5(Vector<Double> mlines) {
@@ -142,7 +142,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("è£å‰ª", 260+10,  350+120-20);
+		g2.drawString("²Ã¼ô", 260+10,  350+120-20);
 		g3.clearRect(260,300+30-20, 300, 200); 
 		if (mlines != null) {
 			g3.setColor(Color.red); 
@@ -153,7 +153,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("è£å‰ª", 260+10,  350+120-20);
+		g3.drawString("²Ã¼ô", 260+10,  350+120-20);
 	}
 
 	public void paint6(Vector<Double> mlines) {
@@ -168,7 +168,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("å¹³ç§»", 260+10,  500+120-20);
+		g2.drawString("Æ½ÒÆ", 260+10,  500+120-20);
 		g3.clearRect(260, 450+30-20, 300, 250);
 		if (mlines!= null) {
 			g3.setColor(Color.BLUE); 
@@ -179,7 +179,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("å¹³ç§»", 260+10,  500+120-20);
+		g3.drawString("Æ½ÒÆ", 260+10,  500+120-20);
 	}
 
 	public void paint7(Vector<Double> mlines) {
@@ -194,7 +194,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("é«˜é˜¶å‚…é‡Œå¶", 520+10,  200+120);
+		g2.drawString("¸ß½×¸µÀïÒ¶", 520+10,  200+120);
 		g3.clearRect(520, 200, 500, 100+30);
 		if (mlines != null) {
 			g3.setColor(Color.BLUE); 
@@ -205,7 +205,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("é«˜é˜¶å‚…é‡Œå¶", 520+10,  200+120);
+		g3.drawString("¸ß½×¸µÀïÒ¶", 520+10,  200+120);
 	}
 
 	public void paint8(Vector<Double> mlines) {
@@ -220,7 +220,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("æˆªå–æ‹‰ä¼¸", 520+10,  350+120-20);
+		g2.drawString("½ØÈ¡À­Éì", 520+10,  350+120-20);
 		g3.clearRect(520,300+30, 500, 200); 
 		if (mlines != null) {
 			g3.setColor(Color.cyan); 
@@ -231,7 +231,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("æˆªå–æ‹‰ä¼¸", 520+10,  350+120-20);
+		g3.drawString("½ØÈ¡À­Éì", 520+10,  350+120-20);
 	}
 
 	public void paint9(Vector<Double> mlines) {
@@ -246,7 +246,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("ç»†åŒ–", 520+10,  500+120-20);
+		g2.drawString("Ï¸»¯", 520+10,  500+120-20);
 		g3.clearRect(520,450+30-20, 500, 250+30);
 		if (mlines != null) {
 			g3.setColor(Color.red); 
@@ -257,7 +257,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("ç»†åŒ–", 520+10,  500+120-20);
+		g3.drawString("Ï¸»¯", 520+10,  500+120-20);
 	}
 
 	public void paint10(Vector<Double> mlines) {
@@ -272,7 +272,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("é‡åŒ–è£å‰ª", 780+10,  200+120);
+		g2.drawString("Á¿»¯²Ã¼ô", 780+10,  200+120);
 		g3.clearRect(780, 200, 500, 100+30);
 		if (mlines != null) {
 			g3.setColor(Color.BLUE); 
@@ -283,7 +283,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("é‡åŒ–è£å‰ª", 780+10,  200+120);
+		g3.drawString("Á¿»¯²Ã¼ô", 780+10,  200+120);
 	}
 
 	public void paint11(Vector<Double> mlines) {
@@ -299,7 +299,7 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g2.drawString("è¾“å‡º", 780+10,  350+120-20);
+		g2.drawString("Êä³ö", 780+10,  350+120-20);
 		g3.clearRect(780,300+30-20, 500, 400); 
 		if (mlines != null) {
 			// .. render sampling graph ..
@@ -311,9 +311,9 @@ public class Jpv extends Panel implements Runnable{
 				}
 			}
 		}
-		g3.drawString("è¾“å‡º", 780+10,  350+120-20);
-		g2.drawString("å™ªéŸ³æŠ¥è­¦ç±»åˆ«:", 780+10,  350+220);
-		g3.drawString("å™ªéŸ³æŠ¥è­¦ç±»åˆ«:", 780+10,  350+220);
+		g3.drawString("Êä³ö", 780+10,  350+120-20);
+		g2.drawString("ÔëÒô±¨¾¯Àà±ğ:", 780+10,  350+220);
+		g3.drawString("ÔëÒô±¨¾¯Àà±ğ:", 780+10,  350+220);
 	}
 
 	public void paint12(Vector<Double> mlines) {
@@ -344,9 +344,9 @@ public class Jpv extends Panel implements Runnable{
 	public void paintvalue(String v1) {
 		g2.setColor(Color.black); 
 		g2.clearRect(0,600, 1600, 350);
-		g2.setFont(new Font("å®‹ä½“",Font.BOLD+Font.ITALIC,20));
+		g2.setFont(new Font("ËÎÌå",Font.BOLD+Font.ITALIC,20));
 		if(v1!=null)
-			g2.drawString("ä½ è¯´çš„æ˜¯"+v1, 10, 780);
+			g2.drawString("ÄãËµµÄÊÇ"+v1, 10, 780);
 	}
 
 	public void paint(Graphics g, Vector<Double> lines, Vector<Double> forOutput) {
@@ -384,7 +384,7 @@ public class Jpv extends Panel implements Runnable{
 	
 			}
 		}
-		g2.drawString("æ—¶åºæ³¢", 0+10,  120+50);
+		g2.drawString("Ê±Ğò²¨", 0+10,  120+50);
 		g3.clearRect(0, 40, w, 200);
 		g3.setColor(Color.white);
 		g3.fillRect(0, h-INFOPAD, w, INFOPAD);
@@ -413,7 +413,7 @@ public class Jpv extends Panel implements Runnable{
 				g3.drawLine(j+ 10, x, j+ 1+ 10,y);  
 			}
 		}
-		g3.drawString("æ—¶åºæ³¢", 0+10,  120+50);
+		g3.drawString("Ê±Ğò²¨", 0+10,  120+50);
 		
 	}
 

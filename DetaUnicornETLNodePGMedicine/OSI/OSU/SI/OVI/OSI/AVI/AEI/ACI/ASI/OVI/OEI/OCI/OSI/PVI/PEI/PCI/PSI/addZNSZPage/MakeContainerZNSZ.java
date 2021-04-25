@@ -302,18 +302,18 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			sliderBox512.add(slider512);
 			
 			
-			sliderBox2.add(new   Label("Æµï¿½ï¿½002HZ"));
-			sliderBox3.add(new   Label("Æµï¿½ï¿½003HZ"));
-			sliderBox4.add(new   Label("Æµï¿½ï¿½004HZ"));
-			sliderBox5.add(new   Label("Æµï¿½ï¿½005HZ"));
-			sliderBox6.add(new   Label("Æµï¿½ï¿½006HZ"));
-			sliderBox8.add(new   Label("Æµï¿½ï¿½008HZ"));
-			sliderBox16.add(new  Label("Æµï¿½ï¿½016HZ"));
-			sliderBox32.add(new  Label("Æµï¿½ï¿½032HZ"));
-			sliderBox64.add(new  Label("Æµï¿½ï¿½064HZ"));
-			sliderBox128.add(new Label("Æµï¿½ï¿½128HZ"));
-			sliderBox256.add(new Label("Æµï¿½ï¿½256HZ"));
-			sliderBox512.add(new Label("Æµï¿½ï¿½512HZ"));
+			sliderBox2.add(new   Label("ÆµÂÊ002HZ"));
+			sliderBox3.add(new   Label("ÆµÂÊ003HZ"));
+			sliderBox4.add(new   Label("ÆµÂÊ004HZ"));
+			sliderBox5.add(new   Label("ÆµÂÊ005HZ"));
+			sliderBox6.add(new   Label("ÆµÂÊ006HZ"));
+			sliderBox8.add(new   Label("ÆµÂÊ008HZ"));
+			sliderBox16.add(new  Label("ÆµÂÊ016HZ"));
+			sliderBox32.add(new  Label("ÆµÂÊ032HZ"));
+			sliderBox64.add(new  Label("ÆµÂÊ064HZ"));
+			sliderBox128.add(new Label("ÆµÂÊ128HZ"));
+			sliderBox256.add(new Label("ÆµÂÊ256HZ"));
+			sliderBox512.add(new Label("ÆµÂÊ512HZ"));
 				
 			Box sliderBox= new Box(BoxLayout.Y_AXIS);  
 			sliderBox.add(sliderBox2);
@@ -350,14 +350,14 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 			JpZNSZ jp1= new JpZNSZ(jpanelFourth, dFt, u.text, imageForOutput, this);
 			jp1.setVisible(true);
 			jp1.setBounds(0+ 10, 15, 1040+ 20, 640-30);
-			JButton zc= new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"); 
+			JButton zc= new JButton("ÖÇÄÜÉùÕï"); 
 			zc.setBounds(1490, 15, 100, 50);
 			jpanelFourth.add(zc);
 			jpanelFourth.add(jp1);
 			jpanelFourth.add(jsp_panel_sc);
 			jpanelFourth.add(jsp_panel_scm);
 			jpanelFourth.setName(tabNames.get(3));
-			jTabbedpane.addTab(tabNames.get(3),new ImageIcon() , jpanelFourth, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½  
+			jTabbedpane.addTab(tabNames.get(3),new ImageIcon() , jpanelFourth, "ÖÇÄÜÉùÕï");// ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿
 			Color[] colors= new Color[3];
 			colors[0]=new Color(253,233,254);
 			colors[1]=new Color(233,254,234);

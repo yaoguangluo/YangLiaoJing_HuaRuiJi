@@ -9,15 +9,15 @@ import java.io.IOException;
 public class Small{	
 	public static void main(String[] args) throws IOException {
 		//du tupian
-//		String root= "C:\\Users\\Lenovo\\Desktop\\foruse\\原始图片\\解剖学"; 
-//		String wroot= "C:\\Users\\Lenovo\\Desktop\\foruse\\原始图片\\解剖学1"; 
+//		String root= "C:\\Users\\Lenovo\\Desktop\\foruse\\ԭʼͼƬ\\����ѧ"; 
+//		String wroot= "C:\\Users\\Lenovo\\Desktop\\foruse\\ԭʼͼƬ\\����ѧ1"; 
 //		File rootFile= new File(root);
 //		if(rootFile.exists()&& rootFile.isDirectory()) {
 //			String[] strings= rootFile.list();
 //			for(String string: strings) {
 //				//System.out.println(string);
 //				File subRoot= new File(root+ "\\"+ string);
-//				if(string.contains("jpg")){//&& string.contains("下肢的皮神经和浅静脉")) {
+//				if(string.contains("jpg")){//&& string.contains("��֫��Ƥ�񾭺�ǳ����")) {
 //					//small
 //					BufferedImage bufferedImage= ImageIO.read(subRoot);	
 //					if(bufferedImage.getHeight()> 1000&& bufferedImage.getWidth()> 800) {

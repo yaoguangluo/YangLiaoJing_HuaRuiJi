@@ -14,7 +14,7 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 	MakeContainerYXTP c4;
 	public AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("addPGSearchPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("添加医学图片搜索页");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("ͼƬ�����ڵ�");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
@@ -28,7 +28,7 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("addPGSearchPage.jpg"));
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("添加医学图片搜索页");
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("ͼƬ�����ڵ�");
 		AMV_MVS_VSQ= new String("MEDCINE");
 		Image img= ((ImageIcon) thisIcon).getImage();
 		Image newimg= img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH);
@@ -66,7 +66,8 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 	}
 	
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	
-		((AddPGSearchPageOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((AddPGSearchPageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+		((AddPGSearchPageOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI)
+		.run((AddPGSearchPageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane) throws Exception{
 		((AddPGSearchPageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).analyzer= analyzer;
@@ -78,7 +79,8 @@ public class AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 		showed = true;
 	}
 	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI = new AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this.analyzer, this.pos);   
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI 
+		= new AddPGSearchPageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this.analyzer, this.pos);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }

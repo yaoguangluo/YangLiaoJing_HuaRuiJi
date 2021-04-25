@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 
 public class JpWave extends JPanel implements Runnable{
 	/**
-	 * 
+	 * 作者 罗瑶光
 	 */
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;

@@ -47,7 +47,8 @@ public class JpZNSZ extends JPanel implements Runnable{
 	Jpv jp3;
 	
 	//
-	public JpZNSZ(Container jpanelFourth, DFT dFT, JTextPane text, BufferedImage imageForOutput, MakeContainerZNSZ makeContainerZNSZ){
+	public JpZNSZ(Container jpanelFourth, DFT dFT, JTextPane text, BufferedImage imageForOutput
+			, MakeContainerZNSZ makeContainerZNSZ){
 		this.imageForOutput= imageForOutput;
 		this.dFT= dFT;
 		forOutput= new Vector<Double>();
@@ -58,7 +59,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		LYGFileIO lYGFileIO= new LYGFileIO().initWithFFT(new double[1024], makeContainerZNSZ);
 		waveJpanel= new JpWave(lYGFileIO);
 		
-		JButton j = new DetaButton("ï¿½ï¿½Ê¼Â¼ï¿½ï¿½",100,50,Color.red);
+		JButton j = new DetaButton("Æô¶¯",100,50,Color.red);
 		j.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				reg= 1;
@@ -71,7 +72,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j.setSize(100, 30);
 		j.setBounds(500, 20, 100, 30);
-		JButton j1= new DetaButton("ï¿½Ø±ï¿½Â¼ï¿½ï¿½",100,50,Color.black);
+		JButton j1= new DetaButton("¹Ø±Õ",100,50,Color.black);
 		j1.setForeground(Color.white);
 		j1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -81,7 +82,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 			}
 		});
 		j1.setSize(100, 30);
-		JButton j2= new DetaButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 100- 20, 50, Color.green);
+		JButton j2= new DetaButton("Éú³ÉÊýÁÐ", 100- 20, 50, Color.green);
 		j2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
 				reg= 2;
@@ -110,7 +111,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j2.setSize(100,30);
 		
-		JButton j21= new DetaButton("ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½", 100- 20, 50, Color.green);
+		JButton j21= new DetaButton("¶ÁÈ¡ÊýÁÐ", 100- 20, 50, Color.green);
 		j21.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) { 
 				reg= 2;
@@ -139,18 +140,18 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j21.setSize(100,30);
 		
-		JButton j3= new DetaButton("ï¿½ï¿½ÎªÍ¼Æ¬", 100- 20, 50, Color.magenta);
+		JButton j3= new DetaButton("±£´æÍ¼Æ¬", 100- 20, 50, Color.magenta);
 		j3.addActionListener(new ActionListener() {
 			@SuppressWarnings("unused")
 			public void actionPerformed(ActionEvent e) {
 				reg= 0;
 				//ï¿½ï¿½È¡Í¼Æ¬
-				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
 				if(null== imageForOutput) {
 					return;
 				}
 				//get path
-				FileDialog filedialog= new FileDialog(new Frame(), "ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½", FileDialog.LOAD);
+				FileDialog filedialog= new FileDialog(new Frame(), "±£´æÍ¼Æ¬µ½..", FileDialog.LOAD);
 				filedialog.setFilenameFilter(new TXTFilter("png"));
 				filedialog.setVisible(true);
 				String filepath= filedialog.getDirectory() + filedialog.getFile();
@@ -164,12 +165,12 @@ public class JpZNSZ extends JPanel implements Runnable{
 				} catch (IOException writePngError) {
 					System.out.println(filepath);
 				}	
-				//ï¿½ï¿½ï¿½Í¼Æ¬
+				//ï¿½ï¿½ï¿½Í¼Æ
 			}
 		});
 		j3.setSize(100, 30);
 		
-		JButton j4= new DetaButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 100- 20, 50, Color.black);
+		JButton j4= new DetaButton("ÔëÉù¼ì²â", 100- 20, 50, Color.black);
 		j4.setForeground(Color.white);
 		j4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -183,7 +184,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j4.setSize(100, 30);
 		
-		JButton j5= new DetaButton("ï¿½ï¿½È¡Í¼Æ¬", 100- 20, 50, Color.black);
+		JButton j5= new DetaButton("¶ÁÈ¡Í¼Æ¬", 100- 20, 50, Color.black);
 		j5.setForeground(Color.white);
 		j5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -197,7 +198,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j5.setSize(100, 30);
 		
-		JButton j51= new DetaButton("ï¿½ï¿½ï¿½Æ½ï¿½ï¿½", 100- 20, 50, Color.black);
+		JButton j51= new DetaButton("µ÷ÖÆ½âµ÷", 100- 20, 50, Color.black);
 		j51.setForeground(Color.white);
 		j51.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -217,7 +218,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j51.setSize(100, 30);
 		
-		DetaButton j6= new DetaButton("É½ï¿½ï¿½", 100-10, 50, Color.green);
+		DetaButton j6= new DetaButton("É½ÁÖ", 100-10, 50, Color.green);
 		j6.setForeground(Color.white);
 		j6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -231,7 +232,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j6.setSize(100, 30);
 		
-		DetaButton j7= new DetaButton("ï¿½ï¿½ï¿½ï¿½", 100- 20, 50, Color.blue);
+		DetaButton j7= new DetaButton("º£±ß", 100- 20, 50, Color.blue);
 		j7.setForeground(Color.white);
 		j7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -245,7 +246,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j7.setSize(100, 30);
 		
-		JButton j8= new DetaButton("ï¿½ï¿½ï¿½ï¿½", 100- 20, 50, Color.magenta);
+		JButton j8= new DetaButton("ÃÀÃÎ", 100- 20, 50, Color.magenta);
 		j8.setForeground(Color.white);
 		j8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -259,7 +260,7 @@ public class JpZNSZ extends JPanel implements Runnable{
 		});
 		j8.setSize(100, 30);
 		
-		JButton j9= new DetaButton("ï¿½ï¿½ï¿½", 100- 20, 50, Color.yellow);
+		JButton j9= new DetaButton("ÔÄ¶Á", 100- 20, 50, Color.yellow);
 		j9.setForeground(Color.white);
 		j9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -371,12 +372,12 @@ public class JpZNSZ extends JPanel implements Runnable{
 					AudioInputStream ais= new AudioInputStream(bais, format, audioBytes.length/ format.getFrameSize());    
 					lines= sw.getVectorLines1(this, jp3, ais, cache_bz, cache_sj, dFT, forOutput
 							, imageForOutput.getGraphics(), type);	
-					//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Öµ				     
+					//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ö				     
 				} catch (InterruptedException | IOException e) {
 					e.printStackTrace();
 				}
 			}
-			//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ 
+			//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿ 
 			return;
 		} 
 	}

@@ -19,7 +19,8 @@ public class AddZNSZPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
 	public String DNNtext;
-	public AddZNSZPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AddZNSZPageOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public AddZNSZPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AddZNSZPageOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI
+			, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;
@@ -29,7 +30,7 @@ public class AddZNSZPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_
 		panel = new Panel();
 		panel.setLayout(null);
 		panel.setBackground(Color.white);
-		JButton button = new JButton("ÂÆåÊàê");
+		JButton button = new JButton("ÕÍ≥…");
 		button.setBounds(0, 0, 150, 30);
 		button.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -39,7 +40,7 @@ public class AddZNSZPageOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_
 			}
 		});
 		panel.add(button);
-		JButton readfile= new JButton("ÈÖçÁΩÆDNN");
+		JButton readfile= new JButton("≈‰÷√DNN");
 		readfile.setBounds(0, 35, 150, 65);
 		readfile.addActionListener(new ActionListener(){
 			@Override
