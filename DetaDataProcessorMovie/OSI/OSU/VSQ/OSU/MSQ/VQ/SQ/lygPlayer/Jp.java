@@ -21,7 +21,8 @@ import javax.swing.event.ChangeListener;
 
 import com.sun.media.format.AviVideoFormat;
 import com.sun.media.format.WavAudioFormat;
-import PEU.movieProcessorYLJ.*;
+
+import PEU.movieProcessor.*;
 public class Jp extends JPanel{
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;

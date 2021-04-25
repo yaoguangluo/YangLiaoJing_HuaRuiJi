@@ -28,8 +28,8 @@ import javax.swing.JTextPane;
 
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import PEU.soundProcessorYLJ.SoundRecord;
-import PEU.waveProcessorYLJ.DFT;
+import PEU.soundProcessor.SoundRecord;
+import PEU.waveProcessor.DFT;
 
 public class JpZNSZ extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

@@ -9,10 +9,10 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
 import OSI.OSU.PEQ.OSU.MSQ.OSU.AVU.OSQ.wavePlay.Jp;
-import PEU.movieProcessorYLJ.AdataFrame;
-import PEU.movieProcessorYLJ.LYGFileIO;
-import PEU.soundProcessorYLJ.BytestoAIS;
-import PEU.waveProcessorYLJ.DFT;
+import PEU.movieProcessor.AdataFrame;
+import PEU.movieProcessor.LYGFileIO;
+import PEU.soundProcessor.BytestoAIS;
+import PEU.waveProcessor.DFT;
 public class SoundPlay implements Runnable {
 	private LYGFileIO cur;
 	private AdataFrame af;

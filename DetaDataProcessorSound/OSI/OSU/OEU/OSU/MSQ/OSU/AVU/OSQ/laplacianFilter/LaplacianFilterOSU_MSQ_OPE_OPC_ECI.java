@@ -8,7 +8,7 @@ import java.util.Vector;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.soundProcessorYLJ.*;
+import PEU.soundProcessor.*;
 
 
 public class LaplacianFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{

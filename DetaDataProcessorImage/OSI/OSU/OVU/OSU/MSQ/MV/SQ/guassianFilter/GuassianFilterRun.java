@@ -2,8 +2,8 @@ package OSI.OSU.OVU.OSU.MSQ.MV.SQ.guassianFilter;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.imageProcessorYLJ.Guassian;
-import PEU.movieProcessorYLJ.LYGFileIO;
+import PEU.imageProcessor.Guassian;
+import PEU.movieProcessor.LYGFileIO;
 public class GuassianFilterRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

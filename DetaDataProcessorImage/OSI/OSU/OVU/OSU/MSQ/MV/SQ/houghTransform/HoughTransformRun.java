@@ -1,8 +1,8 @@
 package OSI.OSU.OVU.OSU.MSQ.MV.SQ.houghTransform;
-import PEU.imageProcessorYLJ.*;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import PEU.imageProcessor.*;
 public class HoughTransformRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

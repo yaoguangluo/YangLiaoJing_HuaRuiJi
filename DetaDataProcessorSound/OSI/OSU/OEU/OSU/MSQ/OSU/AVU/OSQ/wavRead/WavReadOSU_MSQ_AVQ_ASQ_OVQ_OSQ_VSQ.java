@@ -12,7 +12,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.swing.JButton;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.soundProcessorYLJ.SoundWaveVector;
+import PEU.soundProcessor.SoundWaveVector;
 
 public class WavReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ
 {

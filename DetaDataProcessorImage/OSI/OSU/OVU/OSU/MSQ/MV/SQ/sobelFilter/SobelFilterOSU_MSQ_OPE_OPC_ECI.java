@@ -1,9 +1,8 @@
 package OSI.OSU.OVU.OSU.MSQ.MV.SQ.sobelFilter;
-import PEU.imageProcessorYLJ.*;
-
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import PEU.imageProcessor.*;
 public class SobelFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

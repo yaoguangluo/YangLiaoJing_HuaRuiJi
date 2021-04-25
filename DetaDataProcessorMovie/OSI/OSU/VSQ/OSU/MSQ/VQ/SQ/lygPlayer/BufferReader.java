@@ -2,7 +2,8 @@ package OSI.OSU.VSQ.OSU.MSQ.VQ.SQ.lygPlayer;
 import java.io.IOException;
 
 import java.io.RandomAccessFile;
-import PEU.movieProcessorYLJ.*;
+
+import PEU.movieProcessor.*;
 public class BufferReader{
    public synchronized void asyBufferReader(RandomAccessFile raf,LYGFileIO io,byte[] buffer,int readtype) throws IOException{//0 video 1 audio{
 	   if(readtype==0) {

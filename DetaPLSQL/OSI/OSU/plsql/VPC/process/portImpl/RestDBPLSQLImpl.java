@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp;
 import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
 import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
-import PEU.MD5ProcessorYLJ.*;
+import PEU.MD5Processor.*;
 //
 //baseName:backend;
 //tableName:usr:update;

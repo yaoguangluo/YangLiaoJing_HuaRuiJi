@@ -17,7 +17,7 @@ import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
 import OSI.OSU.ASQ.PSU.view.obj.FMHMMPOS;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
 import OSI.OSU.ASQ.PSU.view.stable.StableMaps;
-import PEU.NLPProcessorYLJ.*;
+import PEU.NLPProcessor.*;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")
 public class FMHMMListOneTimeImp implements FHMMList {

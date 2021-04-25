@@ -143,15 +143,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 				    				continue Here;
 				    			}
 								if(pos.get(setOfi).contains("名")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("动")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("形")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pos.get(setOfi).contains("副")) {
@@ -239,15 +239,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 					    				continue Here;
 					    			}
 									if(pos.get(setOfi).contains("名")) {
-										page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+										page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 										continue Here;
 									}
 									if(pos.get(setOfi).contains("动")) {
-										page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+										page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 										continue Here;
 									}
 									if(pos.get(setOfi).contains("形")) {
-										page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+										page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 										continue Here;
 									}
 									if(pos.get(setOfi).contains("副")) {
@@ -321,15 +321,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			    				continue Here;
 			    			}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -369,15 +369,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			    				continue Here;
 			    			}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -417,15 +417,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			    				continue Here;
 			    			}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") +  "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -543,7 +543,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 						}
 						if (!setOfi.equals("")) {
 							if(response.contains(setOfi)&& setOfi.length()> 1) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 145, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 145, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							} 
 							if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
@@ -551,15 +551,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -749,15 +749,15 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		    				continue Here;
 		    			}
 						if(pos.get(setOfi).contains("名")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pos.get(setOfi).contains("动")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pos.get(setOfi).contains("形")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pos.get(setOfi).contains("副")) {

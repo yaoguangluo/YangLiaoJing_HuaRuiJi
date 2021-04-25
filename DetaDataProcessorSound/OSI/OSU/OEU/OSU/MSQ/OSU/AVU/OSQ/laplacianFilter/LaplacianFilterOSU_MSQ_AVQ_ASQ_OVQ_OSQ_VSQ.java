@@ -17,7 +17,7 @@ import java.util.Vector;
 import javax.swing.JButton;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.soundProcessorYLJ.*;
+import PEU.soundProcessor.*;
 public class LaplacianFilterOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;

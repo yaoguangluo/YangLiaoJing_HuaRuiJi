@@ -10,7 +10,7 @@ import java.util.Vector;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 
-import PEU.waveProcessorYLJ.DFT;
+import PEU.waveProcessor.DFT;
 public class SoundWaveVector{
 	Vector<Double> lines= new Vector<Double>();
 	Vector<Double> mlines1= new Vector<Double>();

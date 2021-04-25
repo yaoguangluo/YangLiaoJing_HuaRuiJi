@@ -11,7 +11,7 @@ import java.util.Map;
 import OSI.OSU.MS.plsql.cache.DetaDBBufferCacheManager;
 import OSI.OSU.MSQ.plsql.SM.OSQ.imp.SelectRowsImp;
 import OSI.OSU.plsql.SM.reflection.Table;
-import PEU.cacheProcessorYLJ.*;
+import PEU.cacheProcessor.*;
 
 public class DeleteRowsImp {
 	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath, String pageIndex, boolean mod)

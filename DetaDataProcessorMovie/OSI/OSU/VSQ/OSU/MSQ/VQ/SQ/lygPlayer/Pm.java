@@ -8,9 +8,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 import javax.swing.JPanel;
-import PEU.movieProcessorYLJ.*;
-//import com.sun.image.codec.jpeg.JPEGCodec;
-//import com.sun.image.codec.jpeg.JPEGImageDecoder;
+
+import PEU.movieProcessor.*;
 
 public class Pm extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

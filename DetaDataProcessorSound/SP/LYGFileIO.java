@@ -13,11 +13,11 @@ import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioFormat.Encoding;
 
 import PEI.thread.MakeContainerZNSZ;
-import PEU.movieProcessorYLJ.AdataFrame;
-import PEU.movieProcessorYLJ.Header;
-import PEU.movieProcessorYLJ.MdataFrame;
-import PEU.soundProcessorYLJ.BytestoAIS;
-import PEU.waveProcessorYLJ.DFT;
+import PEU.movieProcessor.AdataFrame;
+import PEU.movieProcessor.Header;
+import PEU.movieProcessor.MdataFrame;
+import PEU.soundProcessor.BytestoAIS;
+import PEU.waveProcessor.DFT;
 public class LYGFileIO{
 	public Header header;
 	public AdataFrame adataFrame;

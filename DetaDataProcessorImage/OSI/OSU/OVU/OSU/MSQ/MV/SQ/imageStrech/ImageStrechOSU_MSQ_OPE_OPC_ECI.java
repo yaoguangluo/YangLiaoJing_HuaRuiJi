@@ -2,8 +2,8 @@ package OSI.OSU.OVU.OSU.MSQ.MV.SQ.imageStrech;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.imageProcessorYLJ.Strech;
-import PEU.movieProcessorYLJ.LYGFileIO;
+import PEU.imageProcessor.Strech;
+import PEU.movieProcessor.LYGFileIO;
 public class ImageStrechOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

@@ -32,9 +32,9 @@ import javax.swing.JTextPane;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import PEI.thread.MakeContainerZNSZ;
-import PEU.movieProcessorYLJ.LYGFileIO;
-import PEU.soundProcessorYLJ.SoundRecord;
-import PEU.waveProcessorYLJ.DFT;
+import PEU.movieProcessor.LYGFileIO;
+import PEU.soundProcessor.SoundRecord;
+import PEU.waveProcessor.DFT;
 public class SoundWaveJPanel extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;

@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.soundProcessorYLJ.Guassian2dPro;
+import PEU.soundProcessor.Guassian2dPro;
 
 
 public class GuassianWav2DFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI

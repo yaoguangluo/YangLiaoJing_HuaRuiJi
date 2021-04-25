@@ -45,10 +45,10 @@ import javax.swing.JPanel;
 import com.sun.media.format.AviVideoFormat;
 import com.sun.media.format.WavAudioFormat;
 
-import PEU.movieProcessorYLJ.AdataFrame;
-import PEU.movieProcessorYLJ.Header;
-import PEU.movieProcessorYLJ.LYGFileIO;
-import PEU.soundProcessorYLJ.SoundWaveVector;
+import PEU.movieProcessor.AdataFrame;
+import PEU.movieProcessor.Header;
+import PEU.movieProcessor.LYGFileIO;
+import PEU.soundProcessor.SoundWaveVector;
 
 @SuppressWarnings("serial")
 public class jp extends JPanel implements Runnable

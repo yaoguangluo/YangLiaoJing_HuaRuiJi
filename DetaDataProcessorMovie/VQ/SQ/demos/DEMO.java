@@ -4,7 +4,7 @@ import java.io.IOException;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioFormat.Encoding;
 
-import PEU.movieProcessorYLJ.*;
+import PEU.movieProcessor.*;
 
 public class DEMO{
 	@SuppressWarnings("unused")

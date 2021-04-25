@@ -36,6 +36,7 @@ import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
 import OSI.OSU.string.StringSwap;
+import PEU.mapProcessor.*;
 import SP.SoundWaveJPanel;
 
 import java.awt.Color;
@@ -73,7 +74,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.text.BadLocationException;
 
 import biProcessor.CoAuthorForWord;
-import PEU.mapProcessorYLJ.*;
 @SuppressWarnings("deprecation")
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;
@@ -310,16 +310,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+ "\"><font color=\"black\" size=\"5\">"+ "<A href=\"http://localhost:8000/search?word="+ setOfi+"\">"
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+ "\"><font color=\"black\" size=\"5\">"+ "<A href=\"http://localhost:8000/search?word="+ setOfi+"\">"
 										+ setOfi+ "</A>" + (posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"")+ "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
@@ -414,15 +414,15 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
@@ -462,15 +462,15 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : "") : "") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {

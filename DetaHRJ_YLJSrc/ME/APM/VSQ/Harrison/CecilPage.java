@@ -151,15 +151,15 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 									continue Here;
 								}
 								if(pecsi.contains("名")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("动")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("形")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("副")) {
@@ -257,15 +257,15 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 									continue Here;
 								}
 								if(pecsi.contains("名")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("动")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("形")) {
-									page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+									page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 									continue Here;
 								}
 								if(pecsi.contains("副")) {
@@ -349,15 +349,15 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 							continue Here;
 						}
 						if(pecsi.contains("名")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("动")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("形")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullec.containsKey(setOfi)?":("+posFullec.get(setOfi)+")":"") + "</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("副")) {
@@ -402,15 +402,15 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 							continue Here;
 						}
 						if(pecsi.contains("名")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("动")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("形")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("副")) {
@@ -592,15 +592,15 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 							continue Here;
 						}
 						if(pecsi.contains("名")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("动")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("形")) {
-							page.append("<span style=\"background:"+new PEU.imageProcessorYLJ.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+							page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
 						}
 						if(pecsi.contains("副")) {

@@ -7,7 +7,7 @@ import javax.media.NotRealizedError;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.movieProcessorYLJ.Export;
+import PEU.movieProcessor.Export;
 public class MovieTransferOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value = 0;

@@ -15,7 +15,7 @@ import OSI.OSU.plsql.stable.StableData;
 import OSI.OSU.plsql.VPC.process.portImpl.RestDBPLSQLImpl;
 import OSI.OSU.plsql.VPC.process.portImpl.RestLoginPortImpl;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
-import PEU.mapProcessorYLJ.*;
+import PEU.mapProcessor.*;
 public class VPC {
 	public static String forward(App app, String string, Map<String, String> data)
 			throws Exception {

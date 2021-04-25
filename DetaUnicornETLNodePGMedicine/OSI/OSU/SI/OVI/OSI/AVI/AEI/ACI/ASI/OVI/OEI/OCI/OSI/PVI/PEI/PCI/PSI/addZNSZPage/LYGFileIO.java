@@ -14,12 +14,11 @@ import java.io.RandomAccessFile;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioFormat.Encoding;
 
-import PEU.movieProcessorYLJ.AdataFrame;
-import PEU.movieProcessorYLJ.Header;
-import PEU.movieProcessorYLJ.MdataFrame;
-import PEU.soundProcessorYLJ.*;
-//import thread.MakeContainerZNSZ;
-import PEU.waveProcessorYLJ.*;
+import PEU.movieProcessor.AdataFrame;
+import PEU.movieProcessor.Header;
+import PEU.movieProcessor.MdataFrame;
+import PEU.soundProcessor.*;
+import PEU.waveProcessor.*;
 public class LYGFileIO{
 	public Header header;
 	public AdataFrame adataFrame;

@@ -1,12 +1,12 @@
 package OSI.OSU.PEQ.AMV.ECS.test;
 import java.io.IOException;
-import PEU.NLPProcessorYLJ.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import PEU.NLPProcessor.*;
 public class ANNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		ANNTest ANNTest = new ANNTest();
