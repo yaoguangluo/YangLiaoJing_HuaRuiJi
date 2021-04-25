@@ -2,7 +2,7 @@ package OSI.OSU.MS.VPC.controller;
 import java.util.Map;
 import PEU.mapProcessorYLJ.*;
 import OSI.OSU.plsql.stable.StableData;
-import OSI.OSU.plsql.vpc.process.portImpl.RestDBInsertImpl;
+import OSI.OSU.plsql.VPC.process.portImpl.RestDBInsertImpl;
 public class InsertController {
 	public static String exec(String string, Map<String, String> data) 
 			throws Exception {

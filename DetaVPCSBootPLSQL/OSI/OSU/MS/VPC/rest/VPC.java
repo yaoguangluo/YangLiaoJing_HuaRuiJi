@@ -12,8 +12,8 @@ import OSI.OSU.MS.VPC.controller.InsertController;
 import OSI.OSU.MS.VPC.controller.SelectController;
 import OSI.OSU.MS.VPC.controller.UpdateController;
 import OSI.OSU.plsql.stable.StableData;
-import OSI.OSU.plsql.vpc.process.portImpl.RestDBPLSQLImpl;
-import OSI.OSU.plsql.vpc.process.portImpl.RestLoginPortImpl;
+import OSI.OSU.plsql.VPC.process.portImpl.RestDBPLSQLImpl;
+import OSI.OSU.plsql.VPC.process.portImpl.RestLoginPortImpl;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
 import PEU.mapProcessorYLJ.*;
 public class VPC {

@@ -10,8 +10,8 @@ import OSI.OSU.AEU.OEI.AVC.SUQ.estimation.imp.RatioMapImp;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
-import OSI.OSU.OEI.AVC.SUQ.ortho.fhmm.imp.EmotionMapImp;
+import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.OSU.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {

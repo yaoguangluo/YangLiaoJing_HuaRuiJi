@@ -3,7 +3,7 @@ import java.util.Map;
 
 import PEU.mapProcessorYLJ.*;
 import OSI.OSU.plsql.stable.StableData;
-import OSI.OSU.plsql.vpc.process.portImpl.RestDBDeleteImpl;
+import OSI.OSU.plsql.VPC.process.portImpl.RestDBDeleteImpl;
 public class DeleteController {
 	public static String exec(String string, Map<String, String> data)
 			throws Exception {

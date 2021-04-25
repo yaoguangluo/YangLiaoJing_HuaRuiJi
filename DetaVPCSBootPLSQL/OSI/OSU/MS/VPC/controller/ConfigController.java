@@ -3,7 +3,7 @@ import java.util.Map;
 
 
 import OSI.OSU.plsql.stable.StableData;
-import OSI.OSU.plsql.vpc.process.portImpl.RestDBConfigImpl;
+import OSI.OSU.plsql.VPC.process.portImpl.RestDBConfigImpl;
 import PEU.mapProcessorYLJ.*;
 public class ConfigController {
 	public static String exec(String string, Map<String, String> data)

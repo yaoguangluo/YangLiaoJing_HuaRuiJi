@@ -11,7 +11,7 @@ import OSI.OSU.AEU.AVC.SUQ.engine.EnvironmentInit;
 import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.OCI.AVC.SUQ.ortho.fhmm.EmotionMap;
+import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 
 public class InitBehaviorICAKernel{
 	private double[] kernel;
