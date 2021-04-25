@@ -2,10 +2,10 @@ package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.PP.StudyProcessIssues;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.analysis.StudyAnalysisIssues;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.management.StudyManagementIssues;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.operation.StudyOperationIssues;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.process.StudyProcessIssues;
 
 public class StudyIssues{
 	public void studyDefinition() {

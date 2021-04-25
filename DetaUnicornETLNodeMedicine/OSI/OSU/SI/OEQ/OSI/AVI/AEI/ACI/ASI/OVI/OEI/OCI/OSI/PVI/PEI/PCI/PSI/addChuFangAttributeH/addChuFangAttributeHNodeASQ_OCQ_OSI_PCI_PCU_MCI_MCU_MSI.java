@@ -7,7 +7,8 @@ import javax.swing.*;
 import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 public class addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
-	public addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) throws IOException{
+	public addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) 
+			throws IOException{
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("editPaneReader.jpg"));
@@ -34,19 +35,23 @@ public class addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU
 	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ= new addChuFangAttributeHView();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI= new addChuFangAttributeHRun();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES= new addChuFangAttributeHPanel((addChuFangAttributeHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES= new addChuFangAttributeHPanel(
+				(addChuFangAttributeHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.config();
 		showed= false;
 	}
 	public void OPE_E(JTextPane jTextPane)  throws FileNotFoundException, IOException{
-		((addChuFangAttributeHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((addChuFangAttributeHView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+		((addChuFangAttributeHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI)
+		.run((addChuFangAttributeHView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane)  throws Exception{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.view();
 		showed= true;
 	}
-	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI= new addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text);   
+	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() 
+			throws CloneNotSupportedException, IOException{
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI
+		= new addChuFangAttributeHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }

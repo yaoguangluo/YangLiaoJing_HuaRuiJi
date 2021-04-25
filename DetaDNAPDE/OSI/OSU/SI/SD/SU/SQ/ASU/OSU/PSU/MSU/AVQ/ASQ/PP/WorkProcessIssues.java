@@ -1,4 +1,4 @@
-package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.process;
+package OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.PP;
 
 public class WorkProcessIssues{
 	public void workForLove() {
