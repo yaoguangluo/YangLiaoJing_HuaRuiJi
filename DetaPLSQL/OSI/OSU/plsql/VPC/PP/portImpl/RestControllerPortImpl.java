@@ -1,8 +1,8 @@
-package OSI.OSU.plsql.VPC.process.portImpl;
+package OSI.OSU.plsql.VPC.PP.portImpl;
 
 import org.json.JSONException;
 
-import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
+import OSI.OSU.plsql.VPC.PP.companyImpl.LoginServiceImpl;
 import PEU.cacheProcessor.*;
 
 import java.io.BufferedReader;

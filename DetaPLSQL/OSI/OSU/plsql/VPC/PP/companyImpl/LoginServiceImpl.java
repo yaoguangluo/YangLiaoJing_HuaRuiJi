@@ -1,4 +1,4 @@
-package OSI.OSU.plsql.VPC.process.companyImpl;
+package OSI.OSU.plsql.VPC.PP.companyImpl;
 
 import java.io.IOException;
 import java.util.Date;
@@ -7,7 +7,7 @@ import org.json.JSONObject;
 
 import OSI.OSU.VPC.common.utils.StringUtil;
 import OSI.OSU.VPC.common.utils.TokenUtil;
-import OSI.OSU.plsql.VPC.process.factoryImpl.LoginDAOImpl;
+import OSI.OSU.plsql.VPC.PP.factoryImpl.LoginDAOImpl;
 import PEU.MD5Processor.*;
 import PEU.dnaProcessor.Token;
 public class LoginServiceImpl {

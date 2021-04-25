@@ -1,10 +1,10 @@
-package OSI.OSU.plsql.VPC.process.portImpl;
+package OSI.OSU.plsql.VPC.PP.portImpl;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
+import OSI.OSU.plsql.VPC.PP.companyImpl.LoginServiceImpl;
 import PEU.cacheProcessor.*;
 public class RestDBConfigImpl {
 	public static Map<String, String> setDBPath(String basePath

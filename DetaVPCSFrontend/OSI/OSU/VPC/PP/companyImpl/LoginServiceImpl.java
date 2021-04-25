@@ -1,4 +1,4 @@
-package OSI.OSU.VPC.process.companyImpl;
+package OSI.OSU.VPC.PP.companyImpl;
 //?
 
 public class LoginServiceImpl{// implements LoginService {

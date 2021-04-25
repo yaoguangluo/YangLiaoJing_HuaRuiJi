@@ -2,7 +2,7 @@ package OSI.OSU.plsql.VPC.transaction;
 import com.google.gson.Gson;
 
 import OSI.OSU.VPC.common.utils.StringUtil;
-import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
+import OSI.OSU.plsql.VPC.PP.companyImpl.LoginServiceImpl;
 import PEU.MD5Processor.*;
 
 import org.json.JSONObject;

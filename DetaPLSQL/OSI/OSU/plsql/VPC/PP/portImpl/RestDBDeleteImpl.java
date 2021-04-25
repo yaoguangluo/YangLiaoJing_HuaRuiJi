@@ -1,11 +1,11 @@
-package OSI.OSU.plsql.VPC.process.portImpl;
+package OSI.OSU.plsql.VPC.PP.portImpl;
 
 
 import java.util.HashMap;
 import java.util.Map;
 
 import OSI.OSU.MSD.plsql.SM.OSD.imp.DeleteRowsImp;
-import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
+import OSI.OSU.plsql.VPC.PP.companyImpl.LoginServiceImpl;
 
 public class RestDBDeleteImpl {
 	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath

@@ -1,6 +1,6 @@
-package OSI.OSU.plsql.VPC.process.portImpl;
+package OSI.OSU.plsql.VPC.PP.portImpl;
 import OSI.OSU.MSQ.plsql.SM.OSQ.imp.SelectRowsImp;
-import OSI.OSU.plsql.VPC.process.companyImpl.LoginServiceImpl;
+import OSI.OSU.plsql.VPC.PP.companyImpl.LoginServiceImpl;
 
 import java.util.HashMap;
 import java.util.Map;
