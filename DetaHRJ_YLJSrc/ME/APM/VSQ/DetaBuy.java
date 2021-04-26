@@ -14,7 +14,7 @@ import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
-import ME.APM.VSQ.app.config.DetaJPanel;
+import ME.APM.VSQ.OPE.config.DetaJPanel;
 
 
 public class DetaBuy extends ScrollPane implements MouseListener, KeyListener, ActionListener{	

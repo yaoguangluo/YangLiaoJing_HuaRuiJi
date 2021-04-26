@@ -1,4 +1,4 @@
-package ME.APM.VSQ.app.config;
+package ME.APM.VSQ.OPE.config;
 import java.awt.Color;
 
 import java.awt.event.ActionEvent;

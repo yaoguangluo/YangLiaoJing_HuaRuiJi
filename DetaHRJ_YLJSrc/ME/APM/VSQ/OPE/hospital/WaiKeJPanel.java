@@ -1,4 +1,4 @@
-package ME.APM.VSQ.app.hospital;
+package ME.APM.VSQ.OPE.hospital;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -13,10 +13,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListener, ActionListener{
+public class WaiKeJPanel  extends JPanel implements MouseListener, KeyListener, ActionListener{
 
-	private static final long serialVersionUID= 1L;
-	public ShengZhiKeJPanel(JTextPane name){
+	private static final long serialVersionUID = 1L;
+	public WaiKeJPanel(JTextPane name){
 		this.setLayout(null);
 		this.setBounds(0, 0, 1180, 610);
 		this.setBackground(Color.BLACK);
@@ -903,7 +903,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 	private void addSecondColomns() {
 		// TODO Auto-generated method stub
 		//copy tab
-		JLabel baiDanBai22= new JLabel("È«Ñªð¤¶È:");  
+		JLabel baiDanBai22= new JLabel("ÏÙÜÕÍÑ°±Ëáada :");  
 		baiDanBai22.setForeground(Color.WHITE);
 		baiDanBai22.setBounds(10+220*1, 20+ 0, 100, 50);
 		JTextField baiDanBai22_box= new JTextField();
@@ -918,7 +918,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(baiDanBai22);
 		this.add(baiDanBai22_box);	
 		
-		JLabel label222= new JLabel("Ö×Áö±ê¼Ç¿¹Ô­242¼ì²âca242:");  
+		JLabel label222= new JLabel("¼âÈñÊªðà´×Ëá°×ÊµÑé:");  
 		label222.setForeground(Color.WHITE);
 		label222.setBounds(10+220*1, 20+ 25*1, 100, 50);
 		JTextField label222_box= new JTextField();
@@ -933,7 +933,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label222);
 		this.add(label222_box);	
 
-		JLabel label322= new JLabel("¹ýÃôÔ­¼ì²â£¨1£©ÎüÈë×é¢¡£¨2£©ÎüÈë×é¢¢£¨3£©Ê³Îï×é¢££¨4£©Ê³Îï×é¢¤ivtivt-¢¡ivt-¢¢ivt-¢£ivt-¢¤ :");  
+		JLabel label322= new JLabel("ÑªÉøÍ¸Ñ¹Ñªosm:");  
 		label322.setForeground(Color.WHITE);
 		label322.setBounds(10+220*1, 20+ 25*2, 100, 50);
 		JTextField label322_box= new JTextField();
@@ -948,7 +948,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label322);
 		this.add(label322_box);	
 		
-		JLabel label422= new JLabel("¸Æca:");  
+		JLabel label422= new JLabel("Á´Çò¾ú¿¹Ô­:");  
 		label422.setForeground(Color.WHITE);
 		label422.setBounds(10+220*1, 20+ 25* 3, 100, 50);
 		JTextField label422_box= new JTextField();
@@ -963,7 +963,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label422);
 		this.add(label422_box);	
 		
-		JLabel label522= new JLabel("¾ÞÊÉÏ¸°û¸ÐÈ¾Ç÷»¯Òò×Ó-1¦Âmip-1¦Â:");  
+		JLabel label522= new JLabel("¼¡ôûÇå³ýÂÊcor:");  
 		label522.setForeground(Color.WHITE);
 		label522.setBounds(10+220*1, 20+ 25*4, 100, 50);
 		JTextField label522_box= new JTextField();
@@ -978,7 +978,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label522);
 		this.add(label522_box);	
 		
-		JLabel label622= new JLabel("Äò17-ôÇ¹Ì´¼17-oh :");  
+		JLabel label622= new JLabel("Ñª£¨Äò£©Í­cu :");  
 		label622.setForeground(Color.WHITE);
 		label622.setBounds(10+220*1, 20+ 25*5, 100, 50);
 		JTextField label622_box= new JTextField();
@@ -994,7 +994,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label622_box);	
 		
 		//7
-		JLabel label722= new JLabel("´Ù»ÆÌåÉú³ÉËØlh :");  
+		JLabel label722= new JLabel("×é·ÖÇø´øigg :");  
 		label722.setForeground(Color.WHITE);
 		label722.setBounds(10+220*1, 20+ 25*6, 100, 50);
 		JTextField label722_box= new JTextField();
@@ -1009,7 +1009,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label722);
 		this.add(label722_box);	
 		//8
-		JLabel label6822= new JLabel("ÒÒ¸Î±íÃæ¿¹Ô­hbsag:");  
+		JLabel label6822= new JLabel("¼××´ÅÔÏÙ¼¤ËØpth :");  
 		label6822.setForeground(Color.WHITE);
 		label6822.setBounds(10+220*1, 20+ 25*7, 100, 50);
 		JTextField label6822_box= new JTextField();
@@ -1024,7 +1024,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label6822);
 		this.add(label6822_box);	
 		//9
-		JLabel label6922= new JLabel("Ã«ÄÒ³æ¾µ¼ìdemodexfolliculorumexamination :");  
+		JLabel label6922= new JLabel("Äò3-¼×Ñõ»ù4-ôÇ»ù¿àÐÓÈÊËá£¨vma£©¶¨Á¿:");  
 		label6922.setForeground(Color.WHITE);
 		label6922.setBounds(10+220*1, 20+ 25*8, 100, 50);
 		JTextField label6922_box= new JTextField();
@@ -1039,7 +1039,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label6922);
 		this.add(label6922_box);	
 		//10
-		JLabel label61022= new JLabel("´ÙÉöÉÏÏÙÆ¤ÖÊ¼¤ËØacth :");  
+		JLabel label61022= new JLabel("ÔØÖ¬µ°°×ap0alap0al:");  
 		label61022.setForeground(Color.WHITE);
 		label61022.setBounds(10+220*1, 20+ 25*9, 100, 50);
 		JTextField label61022_box= new JTextField();
@@ -1054,7 +1054,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label61022);
 		this.add(label61022_box);	
 		//11
-		JLabel label61122= new JLabel("¹­ÐÎÌåigm,¿¹ÌåÑôÐÔ¶¨ÐÔtoxo:");  
+		JLabel label61122= new JLabel("´«È¾ÐÔÊ­²¡¾µ¼ìlousemicroscopicexamination:");  
 		label61122.setForeground(Color.WHITE);
 		label61122.setBounds(10+220*1, 20+ 25*10, 100, 50);
 		JTextField label61122_box= new JTextField();
@@ -1069,7 +1069,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label61122);
 		this.add(label61122_box);	
 		//12
-		JLabel label61222= new JLabel("ÔØÖ¬µ°°×ap0bap0b:");  
+		JLabel label61222= new JLabel("¼¡¸Æµ°°×itni:");  
 		label61222.setForeground(Color.WHITE);
 		label61222.setBounds(10+220*1, 20+ 25*11, 100, 50);
 		JTextField label61222_box= new JTextField();
@@ -1084,7 +1084,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label61222);
 		this.add(label61222_box);	
 		//13
-		JLabel label61322= new JLabel("ÄòËáuric :");  
+		JLabel label61322= new JLabel("ÂÈ´×ËáÝÁ·Óas-dõ¥Ã¸È¾É«:");  
 		label61322.setForeground(Color.WHITE);
 		label61322.setBounds(10+220*1, 20+ 25*12, 100, 50);
 		JTextField label61322_box= new JTextField();
@@ -1099,7 +1099,7 @@ public class ShengZhiKeJPanel  extends JPanel implements MouseListener, KeyListe
 		this.add(label61322);
 		this.add(label61322_box);	
 		//14
-		JLabel label61422= new JLabel("ÒÈ¸ßÌÇËØÒÈ¸ßÌÇËØ :");  
+		JLabel label61422= new JLabel("ÈéËálact:");  
 		label61422.setForeground(Color.WHITE);
 		label61422.setBounds(10+220*1, 20+ 25*13, 100, 50);
 		JTextField label61422_box= new JTextField();

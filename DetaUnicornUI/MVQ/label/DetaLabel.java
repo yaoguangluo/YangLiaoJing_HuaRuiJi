@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 
 import org.reportMap.DetaLabelConjunction;
 
-import ME.APM.VSQ.app.hospital.DetaLabelStables;
+import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class DetaLabel extends JLabel{
 	private static final long serialVersionUID = 1L;
 	public String tagName= "";

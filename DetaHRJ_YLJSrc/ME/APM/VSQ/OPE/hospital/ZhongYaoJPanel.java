@@ -1,4 +1,4 @@
-package ME.APM.VSQ.app.hospital;
+package ME.APM.VSQ.OPE.hospital;
 
 import java.awt.Color;
 import java.awt.ScrollPane;

@@ -55,7 +55,7 @@ import javax.swing.event.ChangeListener;
 import org.reportMap.DetaLabelConjunction;
 import org.tinos.listen.ReadToWav;
 
-import ME.APM.VSQ.app.hospital.DetaLabelStables;
+import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class AppInit {	
 	@SuppressWarnings("deprecation")
 	public void init(App app) throws IOException{
