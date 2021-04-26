@@ -17,7 +17,7 @@ import javax.swing.JTextPane;
 
 import OSI.OSU.MSQ.OVU.PQE.nodeInfo.NodeInfo;
 import OSI.OSU.MSQ.OVU.PQE.nodeProject.NodeProject;
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornJSplitPane;
 import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.CheckRangeVPS;

@@ -1,7 +1,7 @@
 package OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash;
 import javax.swing.JFrame;
 
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 public class Flash extends GUISample{
 	private static final long serialVersionUID = 1L;
 	@SuppressWarnings(StableData.TAG_DEPRECATION)

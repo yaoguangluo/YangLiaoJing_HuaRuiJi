@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.sets.stable;
+package OSI.OSU.MSQ.SS.stable;
 public interface StableData {
 	public static final String ATTENSION_UNCURRENT_CHOICE= "当前没有选中文档。";
 	public static final String ATTENSION_UPDATE_ENSURE= "确认更新在该文档:";

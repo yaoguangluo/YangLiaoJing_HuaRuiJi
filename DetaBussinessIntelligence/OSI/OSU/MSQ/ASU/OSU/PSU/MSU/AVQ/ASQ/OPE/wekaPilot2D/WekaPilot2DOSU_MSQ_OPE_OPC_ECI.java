@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.ai.wekaPilot2D;
+package OSI.OSU.MSQ.ASU.OSU.PSU.MSU.AVQ.ASQ.OPE.wekaPilot2D;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;

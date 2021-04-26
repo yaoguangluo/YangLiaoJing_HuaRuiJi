@@ -27,7 +27,7 @@ import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;

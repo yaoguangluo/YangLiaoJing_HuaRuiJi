@@ -4,7 +4,7 @@ import javax.swing.*;
 import javax.swing.ImageIcon;
 import javax.swing.JScrollPane;
 
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 @SuppressWarnings({StableData.TAG_UNCHECKED, StableData.TAG_RAW_TYPES})
 public class NodeInfo extends JScrollPane {
 	private static final long serialVersionUID= 866589699634559456L;

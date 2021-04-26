@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.ai.arffTransfer;
+package OSI.OSU.MSQ.ASU.OSU.PSU.MSU.AVQ.ASQ.OPE.wekaPilot2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -10,24 +10,25 @@ import java.awt.Frame;
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
-public class ArffTransferOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
-	private static final long serialVersionUID= 1L;
+public class WekaPilot2DOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+	private static final long serialVersionUID = 1L;
 	private FileDialog filedialog;
-	public ArffTransferOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final ArffTransferOSU_MSQ_OPE_OPC_ECI
-			SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI){
+	public WekaPilot2DOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final WekaPilot2DOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI){
 		setLayout(null);
-		scrollPane= new ScrollPane();
+		scrollPane = new ScrollPane();
 		add(scrollPane);
-		panel= new Panel();
+		panel=new Panel();
 		panel.setLayout(null);
+		
+		
 		panel.setBackground(Color.white);
-		JButton button= new JButton("Finish");
+		JButton button = new JButton("Finish");
 		button.setBounds(0, 0, 100, 30);
 		button.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
             	System.out.println(e.getSource());
-                	close= true;
-                	SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value= 1;
+                	close=true;
+                	SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value=1;
             }
         });   
 		panel.add(button);
@@ -36,15 +37,15 @@ public class ArffTransferOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD
 		readfile.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				 filedialog= new FileDialog(new Frame(), "filechoose", FileDialog.LOAD);
+				 filedialog=new FileDialog(new Frame(),"filechoose",FileDialog.LOAD);
 				 filedialog.setVisible(true);
-				 SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.filepath= filedialog.getDirectory()+ filedialog.getFile();
+				 SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.filepath=filedialog.getDirectory()+filedialog.getFile();
 			     System.out.println(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.filepath);
 				}
 			});
 		panel.add(readfile);
 		scrollPane.add(panel);
-		close= false;
+		close=false;
  	}
 	public void config(){    
 		System.out.println("configued");      

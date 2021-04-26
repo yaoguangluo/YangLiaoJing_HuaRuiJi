@@ -11,7 +11,7 @@ import java.util.Map;
 import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;

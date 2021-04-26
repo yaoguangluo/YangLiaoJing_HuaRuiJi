@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.swing.JTextPane;
 
 import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.OEI.PVI.SOI.SMQ.load.LoadFile;
 import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;

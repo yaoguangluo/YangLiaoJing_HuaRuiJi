@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.ai.arffTransfer;
+package OSI.OSU.MSQ.ASU.OSU.PSU.MSU.AVQ.ASQ.OPE.arffTransfer;
 public class ArffNode
 { 
 	public String SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS;

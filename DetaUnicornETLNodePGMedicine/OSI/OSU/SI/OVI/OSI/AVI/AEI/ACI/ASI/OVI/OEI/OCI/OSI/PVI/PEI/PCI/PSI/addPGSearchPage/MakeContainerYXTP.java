@@ -31,7 +31,7 @@ import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.MSQ.sets.stable.StableData;
+import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.list.ListSwap;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 

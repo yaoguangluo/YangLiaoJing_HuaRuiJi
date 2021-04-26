@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.OSU.MSQ.medicine.sikname;
+package OSI.OSU.MSQ.OSU.MSQ.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.sikname;
 
 import java.util.HashMap;
 

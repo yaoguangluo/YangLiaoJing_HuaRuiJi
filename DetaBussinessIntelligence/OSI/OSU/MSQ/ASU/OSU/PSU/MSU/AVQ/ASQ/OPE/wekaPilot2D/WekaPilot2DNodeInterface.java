@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.ai.wekaPilot2D;
+package OSI.OSU.MSQ.ASU.OSU.PSU.MSU.AVQ.ASQ.OPE.wekaPilot2D;
 import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
