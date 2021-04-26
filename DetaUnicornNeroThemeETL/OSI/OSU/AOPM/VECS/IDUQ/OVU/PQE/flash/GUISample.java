@@ -62,7 +62,7 @@ import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.Sort;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.UpdateRelatedLineVPS;
-import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroCell;
+import OSI.OSU.PSQ.OEU.SOI.SMQ.neroCell.BootNeroCell;
 @SuppressWarnings("deprecation")
 public class GUISample extends JApplet implements MouseMotionListener
 , MouseListener, ItemListener, ActionListener, Runnable{	

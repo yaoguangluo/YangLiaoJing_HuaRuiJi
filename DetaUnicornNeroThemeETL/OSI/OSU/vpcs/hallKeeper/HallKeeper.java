@@ -6,7 +6,7 @@ import javax.swing.JTextPane;
 import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
-import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroDoc;
+import OSI.OSU.PSQ.OEU.SOI.SMQ.neroCell.BootNeroDoc;
 import OSI.OSU.vpcs.sets.Sets;
 import OSI.OSU.vpcs.skivvy.Skivvy;
 import OSI.OSU.vpcs.vision.Pillow;

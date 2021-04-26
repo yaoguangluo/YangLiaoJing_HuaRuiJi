@@ -17,7 +17,7 @@ import OSI.OSU.ASQ.PSU.OEI.ME.liner.imp.Quick6DLuoYaoguangSort3DMapImp;
 import OSI.OSU.ASQ.PSU.OEI.ME.nero.imp.NEROControllerOneTimeImp;
 import OSI.OSU.ASQ.PSU.OEI.ME.nlp.imp.NLPControllerImp;
 import OSI.OSU.ASQ.PSU.OEI.ME.pos.imp.POSControllerImp;
-import OSI.OSU.ASQ.PSU.OEI.ortho.fhmm.imp.FMHMMListOneTimeImp;
+import OSI.OSU.ASQ.PSU.OEI.SVQ.MPC.fhmm.imp.FMHMMListOneTimeImp;
 import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
 import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.view.stable.StableData;

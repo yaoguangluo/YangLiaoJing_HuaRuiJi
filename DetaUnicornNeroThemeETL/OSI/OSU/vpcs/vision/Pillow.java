@@ -2,7 +2,7 @@ package OSI.OSU.vpcs.vision;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OSU.PSQ.OEU.document.neroCell.BootNeroDoc;
+import OSI.OSU.PSQ.OEU.SOI.SMQ.neroCell.BootNeroDoc;
 public class Pillow{
 	public static Map<Long, Object> pillowBase;
 	public static void register(BootNeroDoc bootNeroDoc) {

@@ -1,4 +1,4 @@
-package OSI.OSU.PSQ.OEU.document.neroCell;
+package OSI.OSU.PSQ.OEU.SOI.SMQ.neroCell;
 import java.io.File;
 import java.util.Map;
 import javax.swing.JTextPane;
