@@ -8,8 +8,8 @@ import java.io.IOException;
 
 import PEU.cacheProcessor.*;
 import PEU.zipProcessor.*;
-import OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp;
-import OSI.OSU.plsql.stable.StableData;
+import OSI.OSU.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp;
+import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
 
 @SuppressWarnings("unused")
 public class DatabaseLogHall {

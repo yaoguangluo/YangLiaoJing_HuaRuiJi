@@ -1,8 +1,8 @@
 package OSI.OSU.MS.VPC.controller;
 import java.util.Map;
 
-import OSI.OSU.plsql.VPC.PP.portImpl.RestDBUpdateImpl;
-import OSI.OSU.plsql.stable.StableData;
+import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBUpdateImpl;
+import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.mapProcessor.*;
 public class UpdateController {
 	public static String exec(String string, Map<String, String> data)

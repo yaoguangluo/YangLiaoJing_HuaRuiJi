@@ -9,7 +9,7 @@ import OSI.OSU.OEI.PVI.SOI.SMQ.load.LoadFile;
 import OSI.OSU.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
 import OSI.OSU.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
-import OSI.OSU.vpcs.skivvy.Skivvy;
+import OSI.OSU.VPC.S.skivvy.Skivvy;
 @SuppressWarnings("unused")
 public class BootNeroDoc extends Thread implements Runnable{
 	private String fileCurrentpath;

@@ -1,8 +1,8 @@
 package OSI.OSU.MS.VPC.controller;
 import java.util.Map;
 
-import OSI.OSU.plsql.VPC.PP.portImpl.RestDBDeleteImpl;
-import OSI.OSU.plsql.stable.StableData;
+import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBDeleteImpl;
+import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.mapProcessor.*;
 public class DeleteController {
 	public static String exec(String string, Map<String, String> data)

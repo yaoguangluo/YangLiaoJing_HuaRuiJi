@@ -11,7 +11,7 @@ public class CreateTable{
 		System.out.println("----德塔VPCS数据库服务器DMA确认:成功！");
 		RequestFilterController.initBlockList();
 		System.out.println("----德塔VPCS数据库服务器IP过滤服务启动:成功！");
-		OSI.OSU.MS.plsql.cache.DetaDBBufferCacheManager.reflection();
+		OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager.reflection();
 		System.out.println("----德塔VPCS数据库服务器启动整库过程映射服务:成功！");
 		DatabaseLogHall.createBinLogHall();
 		System.out.println("----德塔VPCS数据库服务器启动整库过程映射服务:成功！");
@@ -35,7 +35,7 @@ public class CreateTable{
 			   		"culumnName:uk:搭配:string;" + 
 			   		"culumnName:uk:常见药:string;";
 		try {
-			OSI.OSU.ME.plsql.SM.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OSU.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}
