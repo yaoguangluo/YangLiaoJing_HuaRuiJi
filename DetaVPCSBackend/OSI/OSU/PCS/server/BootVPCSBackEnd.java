@@ -66,7 +66,7 @@ public class BootVPCSBackEnd extends Thread{
 		init();
 		addRestService();
 		long now = System.currentTimeMillis();
-		System.out.println("----DETA VPCS BackEnd--1.7");
+		System.out.println("----DETA VPCS BackEnd--2.0");
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
 		System.out.println("----德塔VPCS后端服务器----");

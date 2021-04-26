@@ -87,7 +87,7 @@ public class ServerInitController {
 	}
 
 	public static void initServer(App app) throws IOException {
-		System.out.println("----DETA VPCS--1.8");
+		System.out.println("----DETA VPCS--2.0");
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
 		if(app.appConfig.SectionJPanel.jTextPane!= null) {
