@@ -1,4 +1,4 @@
-package OSI.OSU.plsql.common.exceptions;
+package OSI.OSU.plsql.VQS.DSU.exceptions;
 
 public class DetaDBException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

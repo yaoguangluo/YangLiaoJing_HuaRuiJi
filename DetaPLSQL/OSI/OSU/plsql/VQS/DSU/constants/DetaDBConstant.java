@@ -1,4 +1,4 @@
-package OSI.OSU.plsql.common.constants;
+package OSI.OSU.plsql.VQS.DSU.constants;
 
 public interface DetaDBConstant {
 	//common

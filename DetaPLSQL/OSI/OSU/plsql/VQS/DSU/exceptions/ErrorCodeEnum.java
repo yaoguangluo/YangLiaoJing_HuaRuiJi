@@ -1,4 +1,4 @@
-package OSI.OSU.plsql.common.exceptions;
+package OSI.OSU.plsql.VQS.DSU.exceptions;
 
 public enum ErrorCodeEnum {
 	ER1001("error."),

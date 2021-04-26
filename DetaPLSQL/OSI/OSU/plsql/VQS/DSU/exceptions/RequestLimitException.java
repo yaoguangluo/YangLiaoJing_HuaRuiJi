@@ -1,4 +1,4 @@
-package OSI.OSU.plsql.common.exceptions;
+package OSI.OSU.plsql.VQS.DSU.exceptions;
 public class RequestLimitException extends Exception {
 	private static final long serialVersionUID = 1364225358754654702L;
 
