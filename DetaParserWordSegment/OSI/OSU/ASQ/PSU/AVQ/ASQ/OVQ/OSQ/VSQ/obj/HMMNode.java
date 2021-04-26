@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.PSU.view.obj;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj;
 
 public abstract class HMMNode {
 	public String getVb() {

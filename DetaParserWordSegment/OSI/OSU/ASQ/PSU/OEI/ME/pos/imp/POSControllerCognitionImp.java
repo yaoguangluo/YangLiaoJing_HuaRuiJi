@@ -3,8 +3,8 @@ package OSI.OSU.ASQ.PSU.OEI.ME.pos.imp;
 import java.util.List;
 import java.util.Map;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.OCI.ME.pos.POSController;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 
 public class POSControllerCognitionImp implements POSController{
 

@@ -7,9 +7,9 @@ import java.util.Map;
 
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
-import OSI.OSU.ASQ.PSU.view.obj.Verbal;
 
 //import timeProcessor.TimeCheck;
 public class DemoTSLT {

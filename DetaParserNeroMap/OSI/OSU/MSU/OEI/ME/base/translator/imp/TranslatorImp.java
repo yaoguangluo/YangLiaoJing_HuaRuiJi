@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.view.obj.Verbal;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
 public class TranslatorImp implements Translator{
 	public Map<String, String> poscc;

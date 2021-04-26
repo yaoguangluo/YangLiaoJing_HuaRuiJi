@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Map;
 //import java.util.concurrent.ConcurrentHashMap;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.liner.Quick6DLuoYaoguangSort;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
 public class Quick6DLuoYaoguangSort3DMapImp implements Quick6DLuoYaoguangSort {
 	@Override
 	public void quick6DLuoYaoGuangSortWordFrequency(Map<Integer, WordFrequency> map, int leftPosition,

@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.PSU.view.obj;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj;
 @SuppressWarnings("unused")
 public class Verbal{
 	public String getChinese() {

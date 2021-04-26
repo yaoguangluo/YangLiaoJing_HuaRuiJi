@@ -1,6 +1,6 @@
 package dbPath;
 
-import OSI.OSU.MS.vpcs.hall.DatabaseLogHall;
+import OSI.OSU.MS.VPC.S.hall.DatabaseLogHall;
 import OSI.OSU.MSV.PCS.controller.RequestFilterController;
 import OSI.OSU.VPC.common.utils.DetaUtil;
 

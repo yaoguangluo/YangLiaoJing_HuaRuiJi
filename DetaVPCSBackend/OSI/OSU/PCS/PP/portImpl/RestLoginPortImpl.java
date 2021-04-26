@@ -3,11 +3,11 @@ package OSI.OSU.PCS.PP.portImpl;
 
 import org.json.JSONObject;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.ASQ.PSU.test.DemoEX;
 import OSI.OSU.ASQ.PSU.test.TimeCheck;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import OSI.OSU.PCS.common.maps.VtoV;
 import OSI.OSU.PCS.transaction.TransactionDelegate;
 import OSI.OSU.VPC.common.utils.DetaDBUtil;

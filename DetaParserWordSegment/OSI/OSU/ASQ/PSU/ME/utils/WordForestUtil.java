@@ -1,8 +1,8 @@
 package OSI.OSU.ASQ.PSU.ME.utils;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 public class WordForestUtil {
 	public static void wordsForestNotContainsKey(Map<String, WordFrequency> outputList
 			, String countWordNode, StringBuilder[] prefixWord) {

@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.PSU.view.stable;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable;
 
 public interface StableData {
 	public static final String NLP_CI_MING= "Ãû´Ê";

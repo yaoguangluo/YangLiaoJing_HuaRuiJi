@@ -1,4 +1,4 @@
-package OSI.OSU.MS.vpcs.hall;
+package OSI.OSU.MS.VPC.S.hall;
 
 import java.io.BufferedReader;
 import java.io.File;

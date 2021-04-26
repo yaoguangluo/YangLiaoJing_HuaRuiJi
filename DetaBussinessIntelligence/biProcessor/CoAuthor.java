@@ -16,8 +16,8 @@ import javax.media.opengl.*;
 import com.jogamp.opengl.util.FPSAnimator;  
 import com.jogamp.opengl.util.gl2.GLUT;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import javax.media.opengl.awt.GLCanvas;  

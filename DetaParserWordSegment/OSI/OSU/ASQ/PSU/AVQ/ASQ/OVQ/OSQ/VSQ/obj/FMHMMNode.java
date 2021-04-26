@@ -1,8 +1,8 @@
-package OSI.OSU.ASQ.PSU.view.obj;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj;
 
 import java.util.Map;
 
-public class FMHMMPOS extends HMMNode {
+public class FMHMMNode extends HMMNode {
 	public Map<String, Integer> getNext() {
 		return next;
 	}

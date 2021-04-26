@@ -12,11 +12,11 @@ import java.util.concurrent.ConcurrentHashMap;
 //import java.util.concurrent.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMPOS;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OSU.ASQ.PSU.OCI.SVQ.MPC.fhmm.FHMMList;
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMPOS;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.ASQ.PSU.view.stable.StableMaps;
 import PEU.NLPProcessor.*;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")

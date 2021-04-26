@@ -2,8 +2,8 @@ package OSI.OSU.ASQ.PSU.ME.utils;
 
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
 public class WordFrequencyUtil {
 	public static void WordFrequencyFindCheck(Map<String, WordFrequency> outputList,StringBuilder[] fixWords) {

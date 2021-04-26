@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.SVQ.MPC.fhmm.FMHMMList;
 import OSI.OSU.ASQ.PSU.OEI.ME.euclid.imp.EuclidControllerImp;
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
 public class FMHMMListImp implements FMHMMList {
 	private Map<String, String> words;
 	private Map<Long, FMHMMNode> linkedHashMap;

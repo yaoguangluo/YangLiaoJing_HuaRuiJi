@@ -3,10 +3,10 @@ package OSI.OSU.ASQ.PSU.OEI.ME.pos.imp;
 import java.util.List;
 import java.util.Map;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OSU.ASQ.PSU.OCI.ME.pos.POSController;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.ASQ.PSU.view.stable.StableMaps;
 
 public class POSControllerImp implements POSController{
 	public int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,

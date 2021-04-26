@@ -2,7 +2,7 @@ package OSI.OSU.ASQ.PSU.OCI.ME.pos;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 
 public interface POSController {
 	int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,

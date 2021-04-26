@@ -2,12 +2,12 @@ package OSI.OSU.ASQ.PSU.OEI.ME.nlp.imp;
 import java.util.List;
 import java.util.Map;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OSU.ASQ.PSU.ME.utils.WordForestUtil;
 import OSI.OSU.ASQ.PSU.OCI.ME.nlp.NLPController;
 import OSI.OSU.ASQ.PSU.OCI.ME.pos.POSController;
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
-import OSI.OSU.ASQ.PSU.view.stable.StableMaps;
 public class NLPControllerImp implements NLPController{
 	public int doSlangPartAndPOSCheckForTwoChar(int countInputStringLength, List<String> outputList
 			, StringBuilder stringBuilder, Map<String, String> wordsForest, StringBuilder[] prefixWord

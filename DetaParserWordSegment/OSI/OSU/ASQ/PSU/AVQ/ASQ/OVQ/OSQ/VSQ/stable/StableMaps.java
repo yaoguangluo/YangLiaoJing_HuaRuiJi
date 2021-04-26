@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.PSU.view.stable;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable;
 import java.util.HashMap;
 import java.util.Map;
 public interface StableMaps{

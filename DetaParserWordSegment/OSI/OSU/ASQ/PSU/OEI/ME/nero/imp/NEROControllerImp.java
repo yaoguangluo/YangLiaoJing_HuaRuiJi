@@ -1,9 +1,9 @@
 package OSI.OSU.ASQ.PSU.OEI.ME.nero.imp;
 import java.util.Map;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.nero.NEROController;
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
 public class NEROControllerImp implements NEROController {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public StringBuilder getBinaryForestRecurWord(StringBuilder outputWordNode, String inputString, int charPosition

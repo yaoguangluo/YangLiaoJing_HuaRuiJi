@@ -2,7 +2,7 @@ package OSI.OSU.ASQ.PSU.OCI.ME.liner;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.view.obj.WordFrequency;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 public interface Quick6DLuoYaoguangSort {
 	void quick6DLuoYaoGuangSortWordFrequency(List<WordFrequency> list, int leftPosition, int rightPosition);
 	int partition(List<WordFrequency> list, int leftPosition, int rightPosition);

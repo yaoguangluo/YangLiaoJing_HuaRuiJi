@@ -3,9 +3,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.euclid.EuclidController;
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
-import OSI.OSU.ASQ.PSU.view.stable.StableData;
 public class EuclidControllerImp implements EuclidController {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public Map<Integer, Map> mCogsEuclid(Map<Long, FMHMMNode> HashMap) {

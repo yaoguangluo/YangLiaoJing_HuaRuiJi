@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.PSU.view.obj;
+package OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj;
 public class StringOBJ{
 	public String getEnglishString() {
 		return englishString;

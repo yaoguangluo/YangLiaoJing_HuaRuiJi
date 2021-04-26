@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.view.obj.FMHMMNode;
+import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 public interface FHMMList {
 	void index() throws IOException;
 	void indexMixed() throws IOException;
