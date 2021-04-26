@@ -11,7 +11,7 @@ import OSI.OSU.MS.VPC.S.hall.DatabaseLogHall;
 import OSI.OSU.MS.VPC.sleeper.Sleeper;
 import OSI.OSU.MS.VPC.sleeper.SleeperHall;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
-import OSI.OSU.VPC.common.utils.DetaUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.OSU.config.Config;
 public class ServerInitController {
 	private static ServerSocket server;

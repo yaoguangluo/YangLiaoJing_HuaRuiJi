@@ -2,7 +2,7 @@ package dbPath;
 
 import OSI.OSU.MS.VPC.S.hall.DatabaseLogHall;
 import OSI.OSU.MSV.PCS.controller.RequestFilterController;
-import OSI.OSU.VPC.common.utils.DetaUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaUtil;
 
 public class CreateTableXiYao{
 	public static void main(String[] argv) throws Exception {

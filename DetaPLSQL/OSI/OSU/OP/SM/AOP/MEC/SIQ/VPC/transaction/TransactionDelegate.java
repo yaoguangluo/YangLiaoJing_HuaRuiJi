@@ -2,7 +2,7 @@ package OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.transaction;
 import com.google.gson.Gson;
 
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.companyImpl.LoginServiceImpl;
-import OSI.OSU.VPC.common.utils.StringUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.StringUtil;
 import PEU.MD5Processor.*;
 
 import org.json.JSONObject;

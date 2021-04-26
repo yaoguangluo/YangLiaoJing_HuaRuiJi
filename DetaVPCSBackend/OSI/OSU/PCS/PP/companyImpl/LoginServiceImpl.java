@@ -7,8 +7,8 @@ import org.json.JSONObject;
 import OSI.OSU.PCS.PP.factoryImpl.LoginDAOImpl;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrToken;
-import OSI.OSU.VPC.common.utils.StringUtil;
-import OSI.OSU.VPC.common.utils.TokenUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.StringUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
 import PEU.dnaProcessor.Token;
 
 //@Service

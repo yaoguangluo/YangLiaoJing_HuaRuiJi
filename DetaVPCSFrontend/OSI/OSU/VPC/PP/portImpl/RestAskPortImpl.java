@@ -12,8 +12,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import OSI.OSU.PCS.common.maps.VtoV;
-import OSI.OSU.VPC.common.utils.DetaFrontEndUtil;
+import OSI.OSU.PCS.VQS.DSU.maps.VtoV;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaFrontEndUtil;
 import OSI.OSU.json.JsonSwap;
 
 public class RestAskPortImpl{// implements RestAskPort {

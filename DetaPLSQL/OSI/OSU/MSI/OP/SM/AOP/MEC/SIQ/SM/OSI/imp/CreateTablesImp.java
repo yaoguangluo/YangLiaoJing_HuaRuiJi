@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.VPC.common.utils.DetaDBUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaDBUtil;
 import PEU.cacheProcessor.*;
 @SuppressWarnings("unchecked")
 public class CreateTablesImp {

@@ -3,14 +3,15 @@ import java.net.URLEncoder;
 import java.util.Map;
 
 import org.json.JSONObject;
-import OSI.OSU.VPC.common.utils.DetaFrontEndUtil;
+
+import OSI.OSU.VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
 public class TransactionDelegate {
 	@SuppressWarnings("deprecation")
 	public static Map<String, Object> transactionLogin(String uEmail, String uPassword)throws Exception {
 		String response = DetaFrontEndUtil.backEndRequest("login?uEmail="+ URLEncoder.encode(uEmail) 
 		+ "&uPassword=" + URLEncoder.encode(uPassword));
-		Map<String, Object> out= OSI.OSU.PCS.common.maps.VtoV.JsonObjectToMap(new JSONObject(response));
+		Map<String, Object> out= OSI.OSU.PCS.VQS.DSU.maps.VtoV.JsonObjectToMap(new JSONObject(response));
 		return out;
 	}
 
@@ -21,7 +22,7 @@ public class TransactionDelegate {
 		String response= DetaFrontEndUtil.backEndRequest("register?uEmail=" + URLEncoder.encode(uEmail) 
 		+ "&uName="+ URLEncoder.encode(uName)
 		+ "&uPassword="+ URLEncoder.encode(uPassword));
-		Map<String, Object> out= OSI.OSU.PCS.common.maps.VtoV.JsonObjectToMap(new JSONObject(response));
+		Map<String, Object> out= OSI.OSU.PCS.VQS.DSU.maps.VtoV.JsonObjectToMap(new JSONObject(response));
 		return out;
 	}
 }

@@ -2,10 +2,10 @@ package OSI.OSU.PCS.transaction;
 import org.json.JSONObject;
 
 import OSI.OSU.PCS.PP.companyImpl.LoginServiceImpl;
-import OSI.OSU.PCS.common.maps.VtoV;
+import OSI.OSU.PCS.VQS.DSU.maps.VtoV;
 import OSI.OSU.PCS.view.Usr;
-import OSI.OSU.VPC.common.utils.DetaDBUtil;
-import OSI.OSU.VPC.common.utils.TokenUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaDBUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
 import PEU.dnaProcessor.Token;
 
 //import org.springframework.stereotype.Service;

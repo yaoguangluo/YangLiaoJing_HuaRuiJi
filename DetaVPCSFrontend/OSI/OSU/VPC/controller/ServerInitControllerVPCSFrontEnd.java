@@ -8,7 +8,7 @@ import ME.APM.VSQ.App;
 import OSI.OSU.MS.VPC.PP.TimeProcess;
 import OSI.OSU.MS.VPC.sleeper.Sleeper;
 import OSI.OSU.MS.VPC.sleeper.SleeperHall;
-import OSI.OSU.VPC.common.utils.DetaUtil;
+import OSI.OSU.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.OSU.config.Config;
 public class ServerInitControllerVPCSFrontEnd {
 	private ServerSocket server;
