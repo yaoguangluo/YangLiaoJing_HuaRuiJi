@@ -7,7 +7,7 @@ import java.util.Map;
 
 import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.RatioMap;
-import OSI.OSU.AEU.OEI.AVC.SUQ.estimation.imp.RatioMapImp;
+import OSI.OSU.AEU.OEI.AVC.SUQ.SVU.EOP.imp.RatioMapImp;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;

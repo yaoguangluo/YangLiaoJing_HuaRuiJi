@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
-import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.MSU.OEI.ME.base.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;

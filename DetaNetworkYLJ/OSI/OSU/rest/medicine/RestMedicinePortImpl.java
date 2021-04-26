@@ -13,7 +13,7 @@ import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
-import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.MSU.OEI.ME.base.SEU.OSD.OSI.imp.TranslatorImp;
 import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 
 public class RestMedicinePortImpl {	

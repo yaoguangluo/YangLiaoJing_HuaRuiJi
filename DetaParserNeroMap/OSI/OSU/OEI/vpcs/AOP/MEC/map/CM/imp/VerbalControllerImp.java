@@ -1,4 +1,4 @@
-package OSI.OSU.OEI.vpcs.AOP.MEC.map.controller.imp;
+package OSI.OSU.OEI.vpcs.AOP.MEC.map.CM.imp;
 
 import OSI.OSU.OCI.vpcs.AOP.MEC.map.controller.VerbalController;
 

@@ -29,7 +29,7 @@ import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.base.translator.Translator;
-import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.MSU.OEI.ME.base.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;

@@ -9,7 +9,7 @@ import MVQ.button.CfxButton;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
 import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
-import OSI.OSU.MSU.OEI.ME.base.translator.imp.TranslatorImp;
+import OSI.OSU.MSU.OEI.ME.base.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OSU.PCS.server.BootVPCSBackEnd;
 import OSI.OSU.VPC.server.BootVPCSFrontEnd;
 import OSI.OSU.vpcs.restServer.RestServer;
