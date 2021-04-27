@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.suggest.read;
+package OSI.OSU.MSQ.OPE.SIU.read;
 import java.awt.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;

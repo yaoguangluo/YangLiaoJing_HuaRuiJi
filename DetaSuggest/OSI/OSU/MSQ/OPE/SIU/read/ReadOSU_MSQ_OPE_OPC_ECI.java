@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.suggest.read;
+package OSI.OSU.MSQ.OPE.SIU.read;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

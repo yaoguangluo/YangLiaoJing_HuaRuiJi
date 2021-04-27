@@ -1,4 +1,4 @@
-package PEU.zipProcessor;
+package PEU.P.zip;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

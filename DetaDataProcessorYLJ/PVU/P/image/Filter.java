@@ -1,4 +1,4 @@
-package PVU.imageProcessor;
+package PVU.P.image;
 public class Filter{
 	public int[][] ProcessorHeart(int[][] rp1, int distance, int scale) {
 		int mask[][]= new int[rp1.length][rp1[0].length];	

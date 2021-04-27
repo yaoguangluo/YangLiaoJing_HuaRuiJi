@@ -1,4 +1,4 @@
-package OSI.OSU.MSQ.suggest.read;
+package OSI.OSU.MSQ.OPE.SIU.read;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Panel;

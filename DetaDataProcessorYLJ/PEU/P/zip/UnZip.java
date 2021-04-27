@@ -1,4 +1,4 @@
-package PEU.zipProcessor;
+package PEU.P.zip;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
