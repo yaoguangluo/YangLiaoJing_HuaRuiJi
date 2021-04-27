@@ -3,7 +3,7 @@ import java.util.Map;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OSU.AOP.MEC.SIQ.plorm.PLORMInterf;
+import OSI.AOP.MEC.SIQ.plorm.PLORMInterf;
 public class ExecPLSQLImp {
 	public static Map<String, Object> ExecPLSQL(String plsql, boolean mod) throws Exception{
 		//working for here

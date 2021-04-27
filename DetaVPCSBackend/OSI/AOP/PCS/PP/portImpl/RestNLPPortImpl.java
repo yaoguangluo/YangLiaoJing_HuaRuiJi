@@ -1,15 +1,15 @@
 package OSI.AOP.PCS.PP.portImpl;
-import OSI.OSU.AEU.AVC.SUQ.engine.LenovoInit;
-import OSI.OSU.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
-import OSI.OSU.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
+import OSI.AEU.AVC.SUQ.engine.LenovoInit;
+import OSI.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
+import OSI.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
-import OSI.OSU.PEQ.AMV.ECS.test.ANNTest;
-import OSI.OSU.PEQ.AMV.ECS.test.DNNTest;
-import OSI.OSU.PEQ.AMV.ECS.test.RNN_IDETest;
-import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
-import OSI.OSU.PEQ.OPM.VEC.test.SuccessICATest;
+import OSI.PEQ.AMV.ECS.test.ANNTest;
+import OSI.PEQ.AMV.ECS.test.DNNTest;
+import OSI.PEQ.AMV.ECS.test.RNN_IDETest;
+import OSI.PEQ.AMV.ECS.test.SensingTest;
+import OSI.PEQ.OPM.VEC.test.SuccessICATest;
 import PEU.P.sort.*;
 
 import java.io.FileOutputStream;

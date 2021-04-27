@@ -10,11 +10,11 @@ import java.util.Map;
 
 import ME.APM.VSQ.App;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
+import OSI.MSU.OCI.ME.SMS.translator.Translator;
+import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.MSQ.SS.stable.StableData;
-import OSI.OSU.MSU.OCI.ME.SMS.translator.Translator;
-import OSI.OSU.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
 
 public class RestMedicinePortImpl {	
 	public static App kernel(App app, String string) {

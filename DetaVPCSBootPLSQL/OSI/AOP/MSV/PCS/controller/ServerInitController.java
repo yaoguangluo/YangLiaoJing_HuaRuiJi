@@ -13,7 +13,7 @@ import OSI.OPE.MSV.PCS.controller.RequestFilterController;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
-import OSI.OSU.config.Config;
+import OSI.config.Config;
 public class ServerInitController {
 	private static ServerSocket server;
 	//private static Properties properties;

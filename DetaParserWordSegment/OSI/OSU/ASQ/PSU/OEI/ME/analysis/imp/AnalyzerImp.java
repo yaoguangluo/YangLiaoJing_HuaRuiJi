@@ -6,6 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
@@ -21,9 +23,7 @@ import OSI.OSU.ASQ.PSU.OEI.ME.nero.imp.NEROControllerOneTimeImp;
 import OSI.OSU.ASQ.PSU.OEI.ME.nlp.imp.NLPControllerImp;
 import OSI.OSU.ASQ.PSU.OEI.ME.pos.imp.POSControllerImp;
 import OSI.OSU.ASQ.PSU.OEI.SVQ.MPC.fhmm.imp.FMHMMListOneTimeImp;
-import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
-import OSI.OSU.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
-import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
+import OSI.PEQ.AMV.ECS.test.SensingTest;
 public class AnalyzerImp implements Analyzer {
 	protected FHMMList fHMMList;
 	protected NEROControllerOneTime neroController;

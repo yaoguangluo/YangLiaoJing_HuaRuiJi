@@ -2,7 +2,7 @@ package OSI.OSU.PEQ.AVC.SUQ.test;
 
 import java.io.IOException;
 
-import OSI.OSU.AEU.AVC.SUQ.engine.EmotionInit;
+import OSI.AEU.AVC.SUQ.engine.EmotionInit;
 
 public class EmotionTest{
 	public static void main(String[] argv) throws IOException {

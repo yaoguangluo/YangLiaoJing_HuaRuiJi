@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import OSI.OSU.AOP.MEC.SIQ.plorm.PLORMImpl;
-import OSI.OSU.AOP.MEC.SIQ.plorm.PLORMInterf;
+import OSI.AOP.MEC.SIQ.plorm.PLORMImpl;
+import OSI.AOP.MEC.SIQ.plorm.PLORMInterf;
 @SuppressWarnings("unused")
 public class DictionaryFromDB{	
 //	public List<String> dic_list;

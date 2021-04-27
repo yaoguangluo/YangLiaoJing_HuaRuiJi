@@ -28,9 +28,9 @@ import org.bytedeco.javacv.OpenCVFrameGrabber;
 import MVQ.button.DetaButton;
 import OSI.ESU.image.ToolkitImageToBufferImage;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.RangePDI;
-import OSI.OSU.SSI.ASU.OSU.PSU.MSU.pde.DecadeToPDS;
 import OSI.OSU.freetts.thread.read.ReadEnglish;
 import OSI.PCI.ASQ.image.ImagePixGroupFilter;
+import OSI.SSI.ASU.OSU.PSU.MSU.pde.DecadeToPDS;
 
 @SuppressWarnings("deprecation")
 public class Monitor extends JApplet{

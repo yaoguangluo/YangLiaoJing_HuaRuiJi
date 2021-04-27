@@ -3,9 +3,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
-import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
+import OSI.PEQ.AMV.ECS.test.SensingTest;
 public interface Analyzer {
 	void init() throws IOException;
 	void initMixed() throws IOException;
