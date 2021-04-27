@@ -206,17 +206,17 @@
 
 # 养疗经 华瑞集 Github 源码备份
 
-##### (中国) Gitee: 18111分支
+##### (中国) Gitee: 18111分支+
 https://gitee.com/DetaChina/YangLiaoJing
 
-##### (欧美) Github: 18111分支
+##### (欧美) Github: 18111分支+
 https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi
 
-##### (澳洲) Bitbucket: 18111分支
+##### (澳洲) Bitbucket: 18111分支+
 https://bitbucket.org/luoyaoguang/yangliaojing
 
-##### (非洲) CodingNet: 18111分支
+##### (非洲) CodingNet: 18111分支+
 https://yaoguangluo.coding.net/public/YangLiaoJingHuaRuiJi/YangliaojingHuaruiji/git/files
 
-最新纯净版本见分支号 18111  
-最新纯净版本功能组件分类 和 元基化版本见分支号 18220
+DNA元基催化与肽计算第三卷 软著申请版本 起始分支号: 18111  
+当前最新 元基化版本状态见分支号 18500~
