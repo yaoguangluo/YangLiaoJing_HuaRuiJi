@@ -8,11 +8,11 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
-import OSI.OSU.PCS.VQS.DSU.maps.VtoV;
+import OSI.OPE.PCS.VQS.DSU.maps.VtoV;
+import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrFull;
 import OSI.OSU.PCS.view.UsrToken;
-import OSI.OSU.VPC.VQS.DSU.utils.DetaDBUtil;
 //import org.springframework.stereotype.Service;
 @SuppressWarnings({"unused", "deprecation"})
 //@Service

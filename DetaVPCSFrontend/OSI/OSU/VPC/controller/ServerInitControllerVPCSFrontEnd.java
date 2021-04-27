@@ -5,10 +5,10 @@ import java.net.ServerSocket;
 import java.util.Properties;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.MS.VPC.PP.TimeProcess;
-import OSI.OSU.MS.VPC.sleeper.Sleeper;
-import OSI.OSU.MS.VPC.sleeper.SleeperHall;
-import OSI.OSU.VPC.VQS.DSU.utils.DetaUtil;
+import OSI.OPE.MS.VPC.PP.TimeProcess;
+import OSI.OPE.MS.VPC.sleeper.Sleeper;
+import OSI.OPE.MS.VPC.sleeper.SleeperHall;
+import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.OSU.config.Config;
 public class ServerInitControllerVPCSFrontEnd {
 	private ServerSocket server;
