@@ -8,12 +8,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.demension.Line2D;
-import OSI.OSU.ASQ.demension.Line3D;
-import OSI.OSU.ASQ.demension.Position2D;
-import OSI.OSU.ASQ.demension.Position3D;
-import OSI.OSU.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.demension.Line2D;
+import OSI.PCI.ASQ.demension.Line3D;
+import OSI.PCI.ASQ.demension.Position2D;
+import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
 
 
 public class YaoguangLuoEulerRingTSP3D{

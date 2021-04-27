@@ -3,8 +3,8 @@ import java.util.Iterator;
 
 import java.util.List;
 
-import OSI.OSU.ASQ.demension.Position2D;
-import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.Position2D;
+import OSI.PCI.ASQ.demension.Position3D;
 //Theory: Euclid
 //Application: Yaoguang.luo
 public class Euclid{

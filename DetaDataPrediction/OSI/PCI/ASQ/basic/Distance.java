@@ -1,7 +1,7 @@
 package OSI.PCI.ASQ.basic;
 
-import OSI.OSU.ASQ.demension.Position2D;
-import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.Position2D;
+import OSI.PCI.ASQ.demension.Position3D;
 
 //Theory: 勾股定理
 //一种仅仅通过坐标差值叠加来计算距离向量的使用方法。
