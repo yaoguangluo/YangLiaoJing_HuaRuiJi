@@ -684,9 +684,9 @@ public class GUISample extends JApplet implements MouseMotionListener
 		h= 820- 110-70;
 		updateRelatedLine= new UpdateRelatedLineVPS();
 		getContentPane().setLayout(null);
-		UIManager.put("SplitPaneUI", "OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornSplitPaneUI");
-		UIManager.put("ScrollBarUI", "OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornScrollBarUI");
-		UIManager.put("TreeUI", "OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornTreeUI");
+		UIManager.put("SplitPaneUI", "OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornSplitPaneUI");
+		UIManager.put("ScrollBarUI", "OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornScrollBarUI");
+		UIManager.put("TreeUI", "OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornTreeUI");
 		currentNodeName= new String("");
 		first= new LinkList();
 		
