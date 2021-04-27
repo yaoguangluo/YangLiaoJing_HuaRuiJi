@@ -37,7 +37,7 @@ import MVQ.button.DetaButton;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.MSU.tcp.http.RestCall;
+import OSI.OSU.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import OSI.OSU.list.ListSwap;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.string.StringSwap;

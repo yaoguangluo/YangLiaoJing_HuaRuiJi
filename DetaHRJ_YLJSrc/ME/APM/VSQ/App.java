@@ -32,7 +32,7 @@ import OSI.OSU.MSU.OCI.ME.SMS.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
-import OSI.OSU.VSQ.dna.search.ZhongYaoSearch;
+import OSI.OSU.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
 import OSI.OSU.string.StringSwap;

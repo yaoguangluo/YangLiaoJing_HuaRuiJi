@@ -131,7 +131,7 @@
  10.2>非卷积的语义元基视觉, 见工程文件 AVQ.OEQ.cap.Monitor.java 1022行起始等  
  10.3>语义的元基session, 见工程文件 OSI.OSU.MSU.tcp.http.SessionValidation.java  
  10.4>非生化语义的物理元基加密, 见工程文件 ME.APM.VSQ.DictionaryFromDB.java  
- 10.5>语义的肽展搜索, 见工程文件 OSI.OSU.VSQ.dna.search.ZhongYaoSearch.java   
+ 10.5>语义的肽展搜索, 见工程文件 OSI.OSU.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch.java   
  10.6>语义的肽展索引, 见工程文件 OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYBCBook.dictionary.java 355行起始等  
  10.7>生化语义的八卦罗盘, 见工程文件 ME.APM.VSQ.xlx.CoAuthorForWord.java   
 

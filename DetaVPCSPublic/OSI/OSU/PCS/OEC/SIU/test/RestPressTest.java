@@ -1,4 +1,4 @@
-package OSI.OSU.PCS.press.test;
+package OSI.OSU.PCS.OEC.SIU.test;
 
 import java.io.BufferedReader;
 

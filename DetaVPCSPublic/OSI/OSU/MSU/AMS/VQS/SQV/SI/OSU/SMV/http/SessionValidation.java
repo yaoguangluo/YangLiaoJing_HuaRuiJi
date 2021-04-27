@@ -1,4 +1,4 @@
-package OSI.OSU.MSU.tcp.http;
+package OSI.OSU.MSU.AMS.VQS.SQV.SI.OSU.SMV.http;
 
 import java.util.Date;
 
