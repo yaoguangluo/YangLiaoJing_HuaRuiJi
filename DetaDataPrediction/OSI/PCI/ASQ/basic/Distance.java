@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.basic;
+package OSI.PCI.ASQ.basic;
 
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;

@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.tsp;
+package OSI.PCI.ASQ.tsp;
 
 import java.util.ArrayList;
 
@@ -7,12 +7,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
 import OSI.OSU.ASQ.demension.Line2D;
 import OSI.OSU.ASQ.demension.Line3D;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
 import OSI.OSU.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
+import OSI.PCI.ASQ.basic.Distance;
 
 public class YaoguangLuoEulerRingTSP{
 	//Before I left L.A and went to Folsom, I did a quick TSP version at that time 

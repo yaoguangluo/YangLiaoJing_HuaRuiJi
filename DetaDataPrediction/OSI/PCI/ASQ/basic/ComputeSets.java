@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.basic;
+package OSI.PCI.ASQ.basic;
 //Theory: ×æ³åÖ®,
 //Application: Yaoguang.luo
 public class ComputeSets{

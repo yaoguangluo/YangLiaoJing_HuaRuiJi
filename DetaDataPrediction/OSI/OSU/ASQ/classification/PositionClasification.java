@@ -4,9 +4,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 
 //这个函数用于通过重心位移距离来进行坐标分类
 //思想：欧基里德

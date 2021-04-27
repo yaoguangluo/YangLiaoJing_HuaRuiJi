@@ -5,10 +5,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 
 public class TraceFissilePositionHearts{
 	//Source: 《2维 3维 坐标集 切裂 重心 轨迹 跟踪算法JAVA源码》

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import OSI.OSU.ASQ.basic.RatioMatrix;
+import OSI.PCI.ASQ.basic.RatioMatrix;
 //这个函数用于模糊概率集平均值采样分类
 //思想：贝叶斯 模糊数学 统计于概率论
 //实现：罗瑶光

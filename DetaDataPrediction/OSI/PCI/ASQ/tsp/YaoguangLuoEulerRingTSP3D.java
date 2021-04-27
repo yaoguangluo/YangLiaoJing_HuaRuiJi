@@ -1,71 +1,74 @@
-package OSI.OSU.ASQ.tsp;
+package OSI.PCI.ASQ.tsp;
 
 import java.util.ArrayList;
+
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
 import OSI.OSU.ASQ.demension.Line2D;
 import OSI.OSU.ASQ.demension.Line3D;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
-import OSI.OSU.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
+import OSI.OSU.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
+import OSI.PCI.ASQ.basic.Distance;
 
-public class YaoguangLuoEulerRingTSP2D{
+
+public class YaoguangLuoEulerRingTSP3D{
 	//Foundation: Euler
 	//Theory: Yaoguang.Luo
-	//Application: Yaoguang.Luo 20200114
-	public List<Line2D> getYaoguangLuo2DEulerRingTSP2D(List<Position2D> AMV_MVS_VSQs){
+	//Application: Yaoguang.Luo 20200317
+	public List<Line2D> getYaoguangLuo2DEulerRingTSP3D(List<Position2D> positions
+			, int sortRangeScale, int sortDeepsScale){
 		//1 annotations 
-		List<Position2D> AMV_MVS_VSQ2DTag= new ArrayList<>();
-		Iterator<Position2D> iterator= AMV_MVS_VSQs.iterator();
+		List<Position2D> position2DTag= new ArrayList<>();
+		Iterator<Position2D> iterator= positions.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D=  iterator.next();
-			AMV_MVS_VSQ2D.setTag(tag+ i++);
-			AMV_MVS_VSQ2DTag.add(AMV_MVS_VSQ2D);
+			Position2D position2D=  iterator.next();
+			position2D.setTag(tag+ i++);
+			position2DTag.add(position2D);
 		}
-		AMV_MVS_VSQs= AMV_MVS_VSQ2DTag;
+		positions= position2DTag;
 		//2 get all lines
 		List<Line2D> linesMap= new ArrayList<>();
-		Iterator<Position2D> iteratorOuter= AMV_MVS_VSQs.iterator();
+		Iterator<Position2D> iteratorOuter= positions.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position2D AMV_MVS_VSQ2DOuter= iteratorOuter.next();
-			Iterator<Position2D> iteratorInner= AMV_MVS_VSQs.iterator();
+			Position2D position2DOuter= iteratorOuter.next();
+			Iterator<Position2D> iteratorInner= positions.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position2D AMV_MVS_VSQ2DInner= iteratorOuter.next();
+				Position2D position2DInner= iteratorOuter.next();
 				Line2D line2D= new Line2D();
-				line2D.setBegin(AMV_MVS_VSQ2DOuter);
-				line2D.setEnd(AMV_MVS_VSQ2DInner);
+				line2D.setBegin(position2DOuter);
+				line2D.setEnd(position2DInner);
 				//2.1 delete the De-reflection redundant lines
-				if(indexMap.containsKey(AMV_MVS_VSQ2DInner.getTag())) {
+				if(indexMap.containsKey(position2DInner.getTag())) {
 					continue Next;
 				}
-				//2.2 delete self AMV_MVS_VSQs lines
-				if(!(AMV_MVS_VSQ2DOuter.getX()!=AMV_MVS_VSQ2DInner.getX()
-						|| AMV_MVS_VSQ2DOuter.getY()!=AMV_MVS_VSQ2DInner.getY())) {
+				//2.2 delete self positions lines
+				if(!(position2DOuter.getX()!=position2DInner.getX()
+						|| position2DOuter.getY()!=position2DInner.getY())) {
 					continue Next;
 				}
 				Map<String, String> map= new HashMap<>();
-				if(indexMap.containsKey(AMV_MVS_VSQ2DOuter.getTag())) {
-					map= indexMap.get(AMV_MVS_VSQ2DOuter.getTag());
+				if(indexMap.containsKey(position2DOuter.getTag())) {
+					map= indexMap.get(position2DOuter.getTag());
 				}else {
 					map= new HashMap<>();
 				}
-				map.put(AMV_MVS_VSQ2DInner.getTag(), "");
-				indexMap.put(AMV_MVS_VSQ2DOuter.getTag(), map);
+				map.put(position2DInner.getTag(), "");
+				indexMap.put(position2DOuter.getTag(), map);
 				linesMap.add(line2D);
 			}
 		}
 		//3 sort line2D
-		double[] distance= new double[AMV_MVS_VSQs.size()];
+		double[] distance= new double[positions.size()];
 		Iterator<Line2D> linesKeySets= linesMap.iterator();
 		//4 get each distance of line.
 		i= 0;
@@ -85,8 +88,8 @@ public class YaoguangLuoEulerRingTSP2D{
 			uniqueLines.put(distanceDouble, list);
 		}
 		//6 Yaoguangluo's 4D Peak filter Theory Quick Sort the Distance Array
-		int sortRangeScale= 4; //my default is 4. you should change it as your want.
-		distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		//int sortRangeScale= 4; //my default is 4. you should change it as your want.
+		distance= new LYG5DWithDoubleQuickSort4D().sort(distance, sortRangeScale, sortDeepsScale);
 		//7 From small to big loop the distance and make a condition tree.
 		List<Line2D> outputLine2D= new ArrayList<>(); 
 		Map<String, Double> outputDouble2D= new HashMap<>(); 
@@ -134,55 +137,56 @@ public class YaoguangLuoEulerRingTSP2D{
 		return outputLine2D;	
 	}
 	
-	public List<Line3D> getYaoguangLuo3DEulerRingTSP2D(List<Position3D> AMV_MVS_VSQs){
+	public List<Line3D> getYaoguangLuo3DEulerRingTSP3D(List<Position3D> positions
+			, int sortRangeScale, int sortDeepsScale){
 		//1 annotations 
-		List<Position3D> AMV_MVS_VSQ3DTag= new ArrayList<>();
-		Iterator<Position3D> iterator= AMV_MVS_VSQs.iterator();
+		List<Position3D> position3DTag= new ArrayList<>();
+		Iterator<Position3D> iterator= positions.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D=  iterator.next();
-			AMV_MVS_VSQ3D.setTag(tag+ i++);
-			AMV_MVS_VSQ3DTag.add(AMV_MVS_VSQ3D);
+			Position3D position3D=  iterator.next();
+			position3D.setTag(tag+ i++);
+			position3DTag.add(position3D);
 		}
-		AMV_MVS_VSQs= AMV_MVS_VSQ3DTag;
+		positions= position3DTag;
 		//2 get all lines
 		List<Line3D> linesMap= new ArrayList<>();
-		Iterator<Position3D> iteratorOuter= AMV_MVS_VSQs.iterator();
+		Iterator<Position3D> iteratorOuter= positions.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position3D AMV_MVS_VSQ3DOuter= iteratorOuter.next();
-			Iterator<Position3D> iteratorInner= AMV_MVS_VSQs.iterator();
+			Position3D position3DOuter= iteratorOuter.next();
+			Iterator<Position3D> iteratorInner= positions.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position3D AMV_MVS_VSQ3DInner= iteratorOuter.next();
+				Position3D position3DInner= iteratorOuter.next();
 				Line3D line3D= new Line3D();
-				line3D.setBegin(AMV_MVS_VSQ3DOuter);
-				line3D.setEnd(AMV_MVS_VSQ3DInner);
+				line3D.setBegin(position3DOuter);
+				line3D.setEnd(position3DInner);
 				//2.1 delete the De-reflection redundant lines
-				if(indexMap.containsKey(AMV_MVS_VSQ3DInner.getTag())) {
+				if(indexMap.containsKey(position3DInner.getTag())) {
 					continue Next;
 				}
-				//2.2 delete self AMV_MVS_VSQs lines
-				if(!(AMV_MVS_VSQ3DOuter.getX()!= AMV_MVS_VSQ3DInner.getX()
-						|| AMV_MVS_VSQ3DOuter.getY()!= AMV_MVS_VSQ3DInner.getY()
-						|| AMV_MVS_VSQ3DOuter.getZ()!= AMV_MVS_VSQ3DInner.getZ())) {
+				//2.2 delete self positions lines
+				if(!(position3DOuter.getX()!= position3DInner.getX()
+						|| position3DOuter.getY()!= position3DInner.getY()
+						|| position3DOuter.getZ()!= position3DInner.getZ())) {
 					continue Next;
 				}
 				Map<String, String> map= new HashMap<>();
-				if(indexMap.containsKey(AMV_MVS_VSQ3DOuter.getTag())) {
-					map= indexMap.get(AMV_MVS_VSQ3DOuter.getTag());
+				if(indexMap.containsKey(position3DOuter.getTag())) {
+					map= indexMap.get(position3DOuter.getTag());
 				}else {
 					map= new HashMap<>();
 				}
-				map.put(AMV_MVS_VSQ3DInner.getTag(), "");
-				indexMap.put(AMV_MVS_VSQ3DOuter.getTag(), map);
+				map.put(position3DInner.getTag(), "");
+				indexMap.put(position3DOuter.getTag(), map);
 				linesMap.add(line3D);
 			}
 		}
 		//3 sort line3D
-		double[] distance= new double[AMV_MVS_VSQs.size()];
+		double[] distance= new double[positions.size()];
 		Iterator<Line3D> linesKeySets= linesMap.iterator();
 		//4 get each distance of line.
 		i= 0;
@@ -202,8 +206,8 @@ public class YaoguangLuoEulerRingTSP2D{
 			uniqueLines.put(distanceDouble, list);
 		}
 		//6 Yaoguangluo's 4D Peak filter Theory Quick Sort the Distance Array
-		int sortRangeScale= 4; //my default is 4. you should change it as your want.
-		distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		//int sortRangeScale= 4; //my default is 4. you should change it as your want.
+		distance= new LYG5DWithDoubleQuickSort4D().sort(distance, sortRangeScale, sortDeepsScale);
 		//7 From small to big loop the distance and make a condition tree.
 		List<Line3D> outputLine3D= new ArrayList<>(); 
 		Map<String, Double> outputDouble3D= new HashMap<>(); 

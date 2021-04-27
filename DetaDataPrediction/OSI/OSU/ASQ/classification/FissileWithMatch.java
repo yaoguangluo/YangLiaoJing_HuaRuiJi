@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 //task 20191219 daytime
 //通过scale 距离来进行 坐标团切裂, 并匹配最短最近重心域融入。
 //算法 耗时更长，准确度再增加。

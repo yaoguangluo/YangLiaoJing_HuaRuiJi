@@ -1,4 +1,4 @@
-package OSI.OSU.ASQ.basic;
+package OSI.PCI.ASQ.basic;
 //Theory: ±´Ò¶Ë¹
 //Application: Yaoguang.luo
 public class RatioMatrix{

@@ -1,7 +1,7 @@
 package OSI.OSU.ASQ.ratio;
-import OSI.OSU.ASQ.basic.ComputeSets;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.ComputeSets;
 //Theory: Yaoguang.luo
 //一种仅仅通过坐标差值叠加来计算距离向量的使用方法。
 //Application: Yaoguang.luo

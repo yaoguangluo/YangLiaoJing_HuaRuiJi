@@ -2,10 +2,10 @@ package OSI.OSU.ASQ.pca;
 import java.util.Iterator;
 import java.util.List;
 
-import OSI.OSU.ASQ.basic.Distance;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
 import OSI.OSU.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
+import OSI.PCI.ASQ.basic.Distance;
 
 public class FindPCAMeanDistance{
 	//oberserverPCAScale：确定主要有效最短路径的观测数

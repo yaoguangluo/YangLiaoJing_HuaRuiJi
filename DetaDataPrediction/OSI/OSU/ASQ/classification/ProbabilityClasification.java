@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.RatioMatrix;
+import OSI.PCI.ASQ.basic.RatioMatrix;
 
 //这个函数用于通过概率轭相似度来进行坐标分类
 //思想：贝叶斯  ， 数据挖掘绿皮书， 任课教授 ：卡拉森。

@@ -4,10 +4,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 //task 20191220-20191222 daytime
 //通过scale 距离来进行坐标团集合 融聚。
 //Theory yaoguang.luo 20191219， 欧基里德

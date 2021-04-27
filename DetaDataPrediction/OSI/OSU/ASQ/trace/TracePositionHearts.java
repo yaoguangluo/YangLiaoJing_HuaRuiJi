@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Euclid;
 public class TracePositionHearts{
 	//Source: 《2维 3维 坐标集 切裂 重心 轨迹 跟踪算法JAVA源码》
 	//出版日期2019 年 12 月 21 日  作品说明Gitee, Github, DetaOSS

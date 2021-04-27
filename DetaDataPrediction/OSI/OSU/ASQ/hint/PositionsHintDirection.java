@@ -1,11 +1,11 @@
 package OSI.OSU.ASQ.hint;
 import java.util.List;
 
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Line2D;
 import OSI.OSU.ASQ.demension.Line3D;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Euclid;
 public class PositionsHintDirection{
 	//坐标集隐藏运动趋势预测算法。
 	//这个函数适用于在坐标团中观测 中心 与重心的 长度 来预测坐标团的稳定状态和轨迹预判。

@@ -4,9 +4,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Euclid;
 //求融聚团宇宙的重心
 //Theory yaoguang.luo 20191219， 欧基里德
 //Application yaoguang.luo

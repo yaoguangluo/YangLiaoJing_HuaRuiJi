@@ -2,10 +2,10 @@ package OSI.OSU.ASQ.cluster;
 
 import java.util.List;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 
 public class ClusterAttraction{
 	//临近2个坐标团的相互引力比算法建模观测，小于1 吸引，大于1 排斥。

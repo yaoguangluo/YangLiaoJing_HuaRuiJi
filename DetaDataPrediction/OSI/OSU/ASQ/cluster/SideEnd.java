@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
-import OSI.OSU.ASQ.basic.Euclid;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
 import OSI.OSU.ASQ.ratio.DistanceRatio;
+import OSI.PCI.ASQ.basic.Distance;
+import OSI.PCI.ASQ.basic.Euclid;
 //Theory: Yaoguang.luo 20191216：12：06
 //一种仅仅通过坐标重心来描绘射极边缘面探测使用方法。
 //Application: Yaoguang.luo

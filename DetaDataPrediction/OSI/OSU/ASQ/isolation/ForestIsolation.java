@@ -5,9 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.basic.Distance;
 import OSI.OSU.ASQ.demension.Position2D;
 import OSI.OSU.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.basic.Distance;
 public class ForestIsolation{
 	//带精度 2维 商旅路径团簇 森林单元 隔离 算法
 	//Theory 《神经网络: 权距》，欧基里德， Yaoguang.Luo 20191220
