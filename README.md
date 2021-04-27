@@ -1,4 +1,4 @@
-# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18220
+# 养疗经 华瑞集 综合 元基催化与肽计算应用研究 版本18500
 ## 协议 GNU GPL-2.0 License
 
  这是一个 智慧医学 领域的 大数据电子医院辅助诊疗系统, 愿景:让人类更健康~ （这是一个完整调通的可直接运行版本源码，如果出现任何问题，请及时联系作者，电话：15116110525）  
@@ -127,11 +127,11 @@
  10>(中华人民共和国 国家版权局) CN:2021Z11L1057159 德塔DNA元基催化与肽计算第二卷  
  https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf  
  https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf  
- 10.1>元基,编码,公式,解码定义类 见工程文件夹 OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde  
+ 10.1>元基,编码,公式,解码定义类 见工程文件夹 OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde  
  10.2>非卷积的语义元基视觉, 见工程文件 AVQ.OEQ.cap.Monitor.java 1022行起始等  
- 10.3>语义的元基session, 见工程文件 OSI.OSU.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.SessionValidation.java  
+ 10.3>语义的元基session, 见工程文件 OSI.AOP.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.SessionValidation.java  
  10.4>非生化语义的物理元基加密, 见工程文件 ME.APM.VSQ.DictionaryFromDB.java  
- 10.5>语义的肽展搜索, 见工程文件 OSI.OSU.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch.java   
+ 10.5>语义的肽展搜索, 见工程文件 OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch.java   
  10.6>语义的肽展索引, 见工程文件 OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYBCBook.dictionary.java 355行起始等  
  10.7>生化语义的八卦罗盘, 见工程文件 ME.APM.VSQ.xlx.CoAuthorForWord.java   
 
