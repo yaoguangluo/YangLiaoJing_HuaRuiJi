@@ -8,7 +8,7 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
-import OSI.OSU.PEQ.OSU.MSQ.OSU.AVU.OSQ.wavePlay.Jp;
+import OSI.PEQ.OSU.MSQ.OSU.AVU.OSQ.wavePlay.Jp;
 import PEU.P.movie.AdataFrame;
 import PEU.P.movie.LYGFileIO;
 import PEU.P.sound.BytestoAIS;

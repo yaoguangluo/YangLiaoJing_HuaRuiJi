@@ -7,7 +7,7 @@ import ME.APM.VSQ.App;
 import OSI.ESU.list.ListSwap;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
+import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 
 public class ZhongYaoSearch{
 	public void zhongYaoSearch(App app, String zhongyao, String forE, String key) {

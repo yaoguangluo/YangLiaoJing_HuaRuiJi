@@ -24,8 +24,8 @@ import javax.media.opengl.*;
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
+import OSI.OPE.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
+import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

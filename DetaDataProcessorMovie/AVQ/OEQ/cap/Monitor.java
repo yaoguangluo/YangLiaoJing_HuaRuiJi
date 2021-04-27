@@ -26,9 +26,9 @@ import org.bytedeco.javacv.OpenCVFrameConverter;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
 
 import MVQ.button.DetaButton;
+import OSI.AOP.freetts.thread.read.ReadEnglish;
 import OSI.ESU.image.ToolkitImageToBufferImage;
-import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.RangePDI;
-import OSI.OSU.freetts.thread.read.ReadEnglish;
+import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.RangePDI;
 import OSI.PCI.ASQ.image.ImagePixGroupFilter;
 import OSI.SSI.ASU.OSU.PSU.MSU.pde.DecadeToPDS;
 
