@@ -445,7 +445,11 @@ public class Monitor extends JApplet{
 							//return;
 						}
 						//‘§¥¶¿Ì
-						difImage= paintConverter.getBufferedImage(frame, 1);
+						try {
+							difImage= paintConverter.getBufferedImage(frame, 1);
+						}catch(Exception e) {
+							return;
+						}
 						BufferedImage image;
 						if(this.isStop) {
 //							image= new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
