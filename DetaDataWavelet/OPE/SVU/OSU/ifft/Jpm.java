@@ -1,4 +1,4 @@
-package ifft;
+package OPE.SVU.OSU.ifft;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;

@@ -1,4 +1,4 @@
-package OSI.OSU.initon.ouler;
+package OSI.OSU.SSI.ASU.OSU.PSU.MSU.ouler;
 
 import java.util.HashMap;
 import java.util.Map;

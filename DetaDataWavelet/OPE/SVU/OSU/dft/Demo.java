@@ -1,4 +1,4 @@
-package dft;
+package OPE.SVU.OSU.dft;
 //思想 refer 傅里叶 
 //编码 罗瑶光
 public class Demo{

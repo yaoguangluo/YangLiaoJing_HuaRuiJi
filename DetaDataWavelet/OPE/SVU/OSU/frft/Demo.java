@@ -1,4 +1,4 @@
-package frft;
+package OPE.SVU.OSU.frft;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

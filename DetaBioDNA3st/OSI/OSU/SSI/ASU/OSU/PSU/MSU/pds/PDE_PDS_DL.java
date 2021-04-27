@@ -1,4 +1,4 @@
-package OSI.OSU.initon.pds;
+package OSI.OSU.SSI.ASU.OSU.PSU.MSU.pds;
 //这个函数用于元基进行数字逻辑丝化变换
 //思想：肽展公式，十七进制元基数字，元基数字逻辑
 //作者：罗瑶光

@@ -1,9 +1,9 @@
-package OSI.OSU.initon.pde;
+package OSI.OSU.SSI.ASU.OSU.PSU.MSU.pde;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OSU.initon.pds.PDE_PDS_DL;
+import OSI.OSU.SSI.ASU.OSU.PSU.MSU.pds.PDE_PDS_DL;
 
 //这个函数集用于将常数变换成十七进制元基数字，
 //这个函数集用于将十七进制元基数字进行元基变换

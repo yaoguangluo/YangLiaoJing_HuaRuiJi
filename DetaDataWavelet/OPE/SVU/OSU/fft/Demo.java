@@ -1,4 +1,4 @@
-package dct;
+package OPE.SVU.OSU.fft;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

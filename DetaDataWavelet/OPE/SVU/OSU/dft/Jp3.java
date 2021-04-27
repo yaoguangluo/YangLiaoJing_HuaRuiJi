@@ -1,4 +1,4 @@
-package dft;
+package OPE.SVU.OSU.dft;
 import java.awt.Color;
 
 import java.awt.Dimension;
@@ -7,7 +7,7 @@ import java.awt.Graphics2D;
 import java.awt.Panel;
 //思想 refer 傅里叶 
 //编码 罗瑶光
-public class Jp4 extends Panel implements Runnable{
+public class Jp3 extends Panel implements Runnable{
 	private static final long serialVersionUID = 1L;
 	final static double pi=3.14159265;
 	final static int N=128;
@@ -37,42 +37,42 @@ public class Jp4 extends Panel implements Runnable{
 		}
 
 		///////////////////////    
-		for(int k=0;k<N/2;k++)	{
+		for(int k=0;k<N;k++){
 			double r=0,i=0;
 			for(int n=0;n<N;n++){
-				double v=2*pi*k*n/N;
-				r=r+p[n]*Math.cos(v);
-				i=i+p[n]*Math.sin(v);
+				r=r+p[n]*Math.sin(2*pi*(k)*(n)/(N));
+				i=i+p[n]*Math.cos(2*pi*(k)*(n)/(N));
+				//	i=i+p[n]*Math.sin(0.95*2*pi*k*n/(N));
+				//	r=r+p[n]*Math.cos(2*pi*(k*n/N)/N);
+				//	i=i+p[n]*Math.sin(2*pi*(k*n/N)/N);
 			}
+			//	System.out.println(":"+r+":"+i);
 			f[k]=Math.sqrt(r*r+i*i)*20;
-		} 
-		for(int k=N/2,n=0;n<N/2;n++){
-			f[k+n]=f[k-n];
 			System.out.println("::"+f[k]);
 		} 
 		g2.setColor(Color.blue);
+		// f[1]=0;
+		// f[10]=100; 
+		//  f[20]=100;
+		//  f[127]=0;
 		for (int i = 200; i < (200+128-1); i++)   {
 			g2.drawLine(i,(int)(f[i-200]*1)+100,i+1,(int)(f[i-200+1]*1)+100);           
 		}
 
 		///////////////////////////////////////////////////        
 
-		for(int k=0;k<N/2;k++)	{
+		for(int k=0;k<N;k++){
 			double r=0,i=0;
 			for(int n=0;n<N;n++){
-				double v=2*pi*k*n/N;
-				r=r+f[n]*Math.cos(v);
-				i=i+f[n]*Math.sin(v);
+				r=r+f[n]*Math.cos(2*pi*k*(n)/(N));
+				i=i+f[n]*Math.sin(2*pi*k*(n)/N);
 			}
 			p[k]=(r-i)/6;
-		}    
-		for(int k=N/2,n=0;n<N/2;n++){
-			p[k+n]=p[k-n];
-			System.out.println("::"+p[k]);
-		} 
+			//System.out.println(":::"+p[k]);
+		}     
 		g2.setColor(Color.black);
 
-		for (int i = 400; i < (400+128-1); i++)  {
+		for (int i = 400; i < (400+128-1); i++)   {
 			g2.drawLine(i,(int)(p[i-400]*1)+100,i+1,(int)(p[i-400+1]*1)+100);           
 		}
 
@@ -87,7 +87,7 @@ public class Jp4 extends Panel implements Runnable{
 
 			}
 			f[k]=Math.sqrt(r*r+i*i)/15;
-			if(f[k]<175){
+			if(f[k]<175)	{
 				f[k]=0;
 			}
 			//	System.out.println("::"+f[k]);
@@ -95,13 +95,17 @@ public class Jp4 extends Panel implements Runnable{
 		g2.setColor(Color.green);
 
 		// f[10]=0; 
-		// f[20]=0;	   
+		// f[20]=0;
+
+
 		for (int i = 600; i < (600+128-1); i++)   {
 
 			g2.drawLine(i,(int)(f[i-600]*1)+100,i+1,(int)(f[i-600+1]*1)+100);           
 		}
 
-		////////////////////////////////////////      
+		////////////////////////////////////////
+
+
 		for(int k=0;k<N;k++){
 			double r=0,i=0;
 			for(int n=0;n<N;n++){
@@ -115,7 +119,7 @@ public class Jp4 extends Panel implements Runnable{
 
 		for (int i = 800; i < (800+128-1); i++)   {
 			g2.drawLine(i,(int)(p[i-800]*1)+100,i+1,(int)(p[i-800+1]*1)+100);           
-		}    
+		}   
 
 	}
 

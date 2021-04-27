@@ -1,4 +1,4 @@
-package dct;
+package OPE.SVU.OSU.dct;
 import java.awt.Color;
 
 import java.awt.Graphics;
