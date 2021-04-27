@@ -5,7 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import biProcessor.CoAuthorForWord;
 

@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import PEU.P.nlp.*;
 public class DNNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {

@@ -22,7 +22,7 @@ import javax.swing.JTabbedPane;
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.xlx.CoAuthorForWord;
 import MVQ.button.DetaButton;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;
 	public App u;

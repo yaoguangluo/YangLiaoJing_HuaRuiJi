@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.ESU.list.ListSwap;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 public class NLPTopicMatch{
 	//<<NLP Algorithm of Matching The POS Scored Sentence>>.

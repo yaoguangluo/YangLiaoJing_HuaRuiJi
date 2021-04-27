@@ -11,7 +11,7 @@ import MVQ.tabbedpane.DetabbedPane;
 import OSI.AOP.PCS.server.BootVPCSBackEnd;
 import OSI.AOP.VPC.server.BootVPCSFrontEnd;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
-import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 import OSI.OSU.VPC.S.restServer.RestServer;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;

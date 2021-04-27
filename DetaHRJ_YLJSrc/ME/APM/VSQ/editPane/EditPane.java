@@ -19,7 +19,7 @@ import javax.swing.JTextPane;
 
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.neo.tts.ReadChinese;
 public class EditPane extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

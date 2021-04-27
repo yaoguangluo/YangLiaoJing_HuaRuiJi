@@ -12,8 +12,8 @@ import ME.APM.VSQ.App;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
 import OSI.MSU.OCI.ME.SMS.translator.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.MSQ.SS.stable.StableData;
 
 public class RestMedicinePortImpl {	

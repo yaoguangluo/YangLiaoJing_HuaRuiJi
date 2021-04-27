@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.guJiJingDian.FyydPage;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;;
 public class MakeContainerGJJD extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

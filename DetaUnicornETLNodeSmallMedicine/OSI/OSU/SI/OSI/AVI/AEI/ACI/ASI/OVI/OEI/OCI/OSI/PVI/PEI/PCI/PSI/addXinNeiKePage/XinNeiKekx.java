@@ -34,10 +34,10 @@ import MVQ.button.DetaButton;
 import OSI.ESU.list.ListSwap;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
 import OSI.ESU.string.StringSwap;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.neo.tts.ReadChinese;
 public class XinNeiKekx extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;

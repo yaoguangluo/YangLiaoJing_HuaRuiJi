@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
 import biProcessor.CoAuthorForWord;
 public class addZYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{

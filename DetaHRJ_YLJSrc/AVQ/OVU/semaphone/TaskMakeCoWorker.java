@@ -6,7 +6,7 @@ import java.util.Map;
 import javax.swing.JScrollPane;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import biProcessor.CoAuthorForWord;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;

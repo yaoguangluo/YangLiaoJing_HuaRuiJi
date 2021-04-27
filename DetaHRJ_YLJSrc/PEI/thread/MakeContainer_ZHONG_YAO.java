@@ -21,7 +21,7 @@ import javax.swing.JTabbedPane;
 import AVQ.OVU.semaphone.TaskMakeCoWorker;
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.zhongYao.ZhongYaoTable;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseListener{
 	public Container jpanelFirst;
 	public App u;

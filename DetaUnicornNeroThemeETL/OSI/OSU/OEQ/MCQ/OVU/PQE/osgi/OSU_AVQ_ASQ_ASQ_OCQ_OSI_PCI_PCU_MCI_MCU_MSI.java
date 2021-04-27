@@ -10,8 +10,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JTextPane;
 
 import ME.APM.VSQ.App;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
 public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{

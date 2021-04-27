@@ -9,9 +9,9 @@ import OSI.AEU.OCI.AVC.SUQ.estimation.RatioMap;
 import OSI.AEU.OEI.AVC.SUQ.SVU.EOP.imp.RatioMapImp;
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
-import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {
