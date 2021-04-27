@@ -10,7 +10,8 @@ public class DrawArrowVPS implements DrawArrow {
 		drawCurve(graphics2D, x, y, connectX, connectY, 6);
 		DrawSinLineVPS.drawHead(connectX- 8, connectY- 3, graphics2D);
 	}
-
+    //下面这个化三角箭头函数是JAVA2D awt demo
+	//罗瑶光先生进行了2次修改.
 	public void drawCurve(Graphics2D graphics2D, int x, int y, int connectX, int connectY, double scale) {
 		double distanceX= Math.abs(x- connectX);
 		double distanceY= Math.abs(y- connectY);		
