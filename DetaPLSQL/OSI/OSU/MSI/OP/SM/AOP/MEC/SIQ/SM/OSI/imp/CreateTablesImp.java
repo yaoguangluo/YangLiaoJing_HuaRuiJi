@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OSU.VPC.VQS.DSU.utils.DetaDBUtil;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
 public class CreateTablesImp {
 	public static void createTable(Map<String, Object> object, boolean mod) throws Exception {

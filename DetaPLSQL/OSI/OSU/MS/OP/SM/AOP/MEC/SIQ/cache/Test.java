@@ -1,6 +1,6 @@
 package OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache;
 
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 
 public class Test {
 	public static void main(String[] args) { 

@@ -2,7 +2,7 @@ package OSI.OSU.OVU.OSU.MSQ.MV.SQ.embossFilter;
 import java.io.IOException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.imageProcessor.*;
+import PEU.P.image.*;
 public class EmbossFilterRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value=0;

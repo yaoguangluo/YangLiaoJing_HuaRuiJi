@@ -22,7 +22,7 @@ import javax.swing.event.ChangeListener;
 import com.sun.media.format.AviVideoFormat;
 import com.sun.media.format.WavAudioFormat;
 
-import PEU.movieProcessor.*;
+import PEU.P.movie.*;
 public class Jp extends JPanel{
 	private static final long serialVersionUID = 1L;
 	LYGFileIO cur;

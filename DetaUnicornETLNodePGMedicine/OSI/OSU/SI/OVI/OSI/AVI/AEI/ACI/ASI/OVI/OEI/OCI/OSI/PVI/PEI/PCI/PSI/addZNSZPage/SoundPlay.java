@@ -8,9 +8,9 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
-import PEU.movieProcessor.AdataFrame;
-import PEU.soundProcessor.BytestoAIS;
-import PEU.waveProcessor.DFT;
+import PEU.P.movie.AdataFrame;
+import PEU.P.sound.BytestoAIS;
+import PEU.P.wave.DFT;
 
 public class SoundPlay implements Runnable {
 	private LYGFileIO cur;

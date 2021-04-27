@@ -22,7 +22,7 @@ import OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Cell;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
 public class UpdateRowsImp {
 	public static Map<String, Object> updateRowByTablePathAndIndex(String tablePath, String pageIndex,

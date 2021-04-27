@@ -6,7 +6,7 @@ import OSI.OSU.PCS.VQS.DSU.maps.VtoV;
 import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.VPC.VQS.DSU.utils.DetaDBUtil;
 import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
-import PEU.dnaProcessor.Token;
+import PEU.P.dna.Token;
 
 //import org.springframework.stereotype.Service;
 import java.net.URLEncoder;

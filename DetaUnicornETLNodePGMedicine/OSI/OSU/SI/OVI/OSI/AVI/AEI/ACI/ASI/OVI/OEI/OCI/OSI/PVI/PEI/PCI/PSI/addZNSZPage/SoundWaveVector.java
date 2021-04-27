@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 
-import PEU.waveProcessor.DFT;
+import PEU.P.wave.DFT;
 //×÷Õß ÂÞÑþ¹â
 public class SoundWaveVector{
 	Vector<Double> lines= new Vector<Double>();

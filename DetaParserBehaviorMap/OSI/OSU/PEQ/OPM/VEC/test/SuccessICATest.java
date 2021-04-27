@@ -3,7 +3,7 @@ package OSI.OSU.PEQ.OPM.VEC.test;
 import java.io.IOException;
 
 import OSI.OSU.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
-import PEU.matrixProcessor.*;
+import PEU.P.matrix.*;
 
 public class SuccessICATest{
 	public double[][] kernelCNN;

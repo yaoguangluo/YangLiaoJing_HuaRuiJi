@@ -5,8 +5,8 @@ import java.util.Date;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
-import PEU.dnaProcessor.Token;
-import PEU.dnaProcessor.TokenCerts;
+import PEU.P.dna.Token;
+import PEU.P.dna.TokenCerts;
 //DNA加密设计 罗瑶光
 //DNA加密思想 罗瑶光
 //Refer <DNA元基编码>, <PDE肽展公式>:  罗瑶光 罗荣武

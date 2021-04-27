@@ -475,13 +475,13 @@ public class Monitor extends JApplet{
 									}
 								}
 							}	
-							rp= new PEU.imageProcessor.Strech().Processor(rp, 0.05, 0.95);
-							rp= new PEU.imageProcessor.Guassian().Processor1D(rp, 3, 3, 1.66);
-							int[][] mag= new PEU.imageProcessor.Sobel().Processor(rp, 1);
-							int[][] dir= new PEU.imageProcessor.Sobel().Processor(rp, 2);
-							mag= new PEU.imageProcessor.Threshold().Processor(mag, 7);
-							mag= new PEU.imageProcessor.Mask().Processor(mag, dir);				
-							mag= new PEU.imageProcessor.Threshold().ProcessorSection(mag, 25 ,110);		
+							rp= new PEU.P.image.Strech().Processor(rp, 0.05, 0.95);
+							rp= new PEU.P.image.Guassian().Processor1D(rp, 3, 3, 1.66);
+							int[][] mag= new PEU.P.image.Sobel().Processor(rp, 1);
+							int[][] dir= new PEU.P.image.Sobel().Processor(rp, 2);
+							mag= new PEU.P.image.Threshold().Processor(mag, 7);
+							mag= new PEU.P.image.Mask().Processor(mag, dir);				
+							mag= new PEU.P.image.Threshold().ProcessorSection(mag, 25 ,110);		
 							
 							//将梯度的索贝尔分层后进行距离为2的 128像色素团小于1 大于50的像色素团噪声过滤输出。
 							mag= ImagePixGroupFilter.getImagePix2DGroupFilter(mag, 128, 2, 1, 50);
@@ -674,10 +674,10 @@ public class Monitor extends JApplet{
 									}//59
 							}
 							rp1=output;
-							rp= new PEU.imageProcessor.Mask().Processor(rp1, rp); 
-							gp= new PEU.imageProcessor.Mask().Processor(rp1, gp); 
-							bp= new PEU.imageProcessor.Mask().Processor(rp1, bp); 
-							int[][]temp=  new PEU.imageProcessor.Mask().Processor(rp1, mag); 
+							rp= new PEU.P.image.Mask().Processor(rp1, rp); 
+							gp= new PEU.P.image.Mask().Processor(rp1, gp); 
+							bp= new PEU.P.image.Mask().Processor(rp1, bp); 
+							int[][]temp=  new PEU.P.image.Mask().Processor(rp1, mag); 
 							for (int i= 0; i< image.getHeight(); ++i) {
 								for (int j= 0; j< image.getWidth(); ++j) {	
 									int pixel= (rp[j][i]<< 16)| (gp[j][i]<< 8)| (bp[j][i]) ;
@@ -721,13 +721,13 @@ public class Monitor extends JApplet{
 						int[][] stb= new int[image.getWidth()][image.getHeight()];
 						if(isStreButton){
 							if(isRedButton){
-								str= new PEU.imageProcessor.Strech().Processor(rp, 0.1, 0.9); 
+								str= new PEU.P.image.Strech().Processor(rp, 0.1, 0.9); 
 							}
 							if(isGreenButton){
-								stg= new PEU.imageProcessor.Strech().Processor(gp, 0.1, 0.9); 
+								stg= new PEU.P.image.Strech().Processor(gp, 0.1, 0.9); 
 							}
 							if(isBlueButton){
-								stb= new PEU.imageProcessor.Strech().Processor(bp, 0.1, 0.9); 
+								stb= new PEU.P.image.Strech().Processor(bp, 0.1, 0.9); 
 							}
 						}else {
 							str=rp;
@@ -739,13 +739,13 @@ public class Monitor extends JApplet{
 						int[][] r2b= new int[image.getWidth()][image.getHeight()];
 						if(isSblButton) {
 							if(isRedButton) {
-								r2r= new PEU.imageProcessor.Sobel().Processor(str, 1);
+								r2r= new PEU.P.image.Sobel().Processor(str, 1);
 							}
 							if(isGreenButton) {
-								r2g= new PEU.imageProcessor.Sobel().Processor(stg, 1);
+								r2g= new PEU.P.image.Sobel().Processor(stg, 1);
 							}
 							if(isBlueButton) {
-								r2b= new PEU.imageProcessor.Sobel().Processor(stb, 1);
+								r2b= new PEU.P.image.Sobel().Processor(stb, 1);
 							}
 						}else {
 							r2r= str;
@@ -757,13 +757,13 @@ public class Monitor extends JApplet{
 						int[][] gthdb= new int[image.getWidth()][image.getHeight()]; 
 						if(isSblButton) {
 							if(isRedButton) {
-								gthdr= new PEU.imageProcessor.Threshold().Processor(r2r, facx);
+								gthdr= new PEU.P.image.Threshold().Processor(r2r, facx);
 							}
 							if(isGreenButton) {
-								gthdg= new PEU.imageProcessor.Threshold().Processor(r2g, facx);
+								gthdg= new PEU.P.image.Threshold().Processor(r2g, facx);
 							}
 							if(isBlueButton) {
-								gthdb= new PEU.imageProcessor.Threshold().Processor(r2b, facx);
+								gthdb= new PEU.P.image.Threshold().Processor(r2b, facx);
 							}
 						}else {
 							gthdr= r2r;
@@ -854,17 +854,17 @@ public class Monitor extends JApplet{
 						if(isPcaButton) {
 							if(isRedButton) {
 								diff2r= findDiff(gpcar, out_old2r);
-								ccar= new PEU.imageProcessor.Dilation()
+								ccar= new PEU.P.image.Dilation()
 										.Processor(diff2r, diaMask);
 							}
 							if(isGreenButton == true) {
 								diff2g = findDiff(gpcag, out_old2g);
-								ccag = new PEU.imageProcessor.Dilation()
+								ccag = new PEU.P.image.Dilation()
 										.Processor(diff2g, diaMask);
 							}
 							if(isBlueButton == true) {
 								diff2b = findDiff(gpcab, out_old2b);
-								ccab = new PEU.imageProcessor.Dilation()
+								ccab = new PEU.P.image.Dilation()
 										.Processor(diff2b, diaMask);
 							}
 						}else {
@@ -1024,29 +1024,29 @@ public class Monitor extends JApplet{
 							showORGNb= ccab;
 						}
 						if(this.isbt62Stop) {
-							rp= new PEU.imageProcessor.Emboss().Processor(rp);
-							gp= new PEU.imageProcessor.Emboss().Processor(gp);
-							bp= new PEU.imageProcessor.Emboss().Processor(bp);
+							rp= new PEU.P.image.Emboss().Processor(rp);
+							gp= new PEU.P.image.Emboss().Processor(gp);
+							bp= new PEU.P.image.Emboss().Processor(bp);
 						}
 						if(this.isbt113Stop) {
-							rp= new PEU.imageProcessor.Sobel().Processor(rp, 1);
-							gp= new PEU.imageProcessor.Sobel().Processor(gp, 1);
-							bp= new PEU.imageProcessor.Sobel().Processor(bp, 1);
+							rp= new PEU.P.image.Sobel().Processor(rp, 1);
+							gp= new PEU.P.image.Sobel().Processor(gp, 1);
+							bp= new PEU.P.image.Sobel().Processor(bp, 1);
 						}
 						if(this.isbt43Stop) {
-							rp= new PEU.imageProcessor.Guassian().Processor1D(rp, 3, 3, 1.66);
-							gp= new PEU.imageProcessor.Guassian().Processor1D(gp, 3, 3, 1.66);
-							bp= new PEU.imageProcessor.Guassian().Processor1D(bp, 3, 3, 1.66);
+							rp= new PEU.P.image.Guassian().Processor1D(rp, 3, 3, 1.66);
+							gp= new PEU.P.image.Guassian().Processor1D(gp, 3, 3, 1.66);
+							bp= new PEU.P.image.Guassian().Processor1D(bp, 3, 3, 1.66);
 						}
 						if(this.isbt41Stop) {
-							rp= new PEU.imageProcessor.Laplacian().Processor(rp);
-							gp= new PEU.imageProcessor.Laplacian().Processor(gp);
-							bp= new PEU.imageProcessor.Laplacian().Processor(bp);
+							rp= new PEU.P.image.Laplacian().Processor(rp);
+							gp= new PEU.P.image.Laplacian().Processor(gp);
+							bp= new PEU.P.image.Laplacian().Processor(bp);
 						}
 						if(this.isbt41Stop) {
-							rp= new PEU.imageProcessor.Laplacian().Processor(rp);
-							gp= new PEU.imageProcessor.Laplacian().Processor(gp);
-							bp= new PEU.imageProcessor.Laplacian().Processor(bp);
+							rp= new PEU.P.image.Laplacian().Processor(rp);
+							gp= new PEU.P.image.Laplacian().Processor(gp);
+							bp= new PEU.P.image.Laplacian().Processor(bp);
 						}
 						if(this.isbt114Stop) {
 							rp= new RangePDI().IOE(rp, this.fact);

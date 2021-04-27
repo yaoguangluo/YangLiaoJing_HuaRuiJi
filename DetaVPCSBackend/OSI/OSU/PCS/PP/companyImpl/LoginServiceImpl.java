@@ -9,7 +9,7 @@ import OSI.OSU.PCS.view.Usr;
 import OSI.OSU.PCS.view.UsrToken;
 import OSI.OSU.VPC.VQS.DSU.utils.StringUtil;
 import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
-import PEU.dnaProcessor.Token;
+import PEU.P.dna.Token;
 
 //@Service
 public class LoginServiceImpl {// implements LoginService {

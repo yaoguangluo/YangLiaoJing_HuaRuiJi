@@ -8,8 +8,8 @@ import org.json.JSONObject;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.factoryImpl.LoginDAOImpl;
 import OSI.OSU.VPC.VQS.DSU.utils.StringUtil;
 import OSI.OSU.VPC.VQS.DSU.utils.TokenUtil;
-import PEU.MD5Processor.*;
-import PEU.dnaProcessor.Token;
+import PEU.P.dna.Token;
+import PEU.P.md5.*;
 public class LoginServiceImpl {
 
 	//	@Autowired

@@ -3,7 +3,7 @@ import java.util.Map;
 
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBConfigImpl;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
-import PEU.mapProcessor.*;
+import PEU.P.map.*;
 public class ConfigController {
 	public static String exec(String string, Map<String, String> data)
 			throws Exception {

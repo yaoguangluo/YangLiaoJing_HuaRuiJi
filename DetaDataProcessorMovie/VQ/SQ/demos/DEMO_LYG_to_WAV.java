@@ -8,8 +8,8 @@ import java.io.IOException;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import PEU.movieProcessor.*;
-import PEU.soundProcessor.*;
+import PEU.P.movie.*;
+import PEU.P.sound.*;
 
 public class DEMO_LYG_to_WAV{
 	public static void main(String args[]) throws IOException, UnsupportedAudioFileException{

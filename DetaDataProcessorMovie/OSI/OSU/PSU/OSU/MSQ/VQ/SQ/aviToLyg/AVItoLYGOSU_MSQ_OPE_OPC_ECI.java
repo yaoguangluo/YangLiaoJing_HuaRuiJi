@@ -8,7 +8,7 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.movieProcessor.LYGFileIO;
+import PEU.P.movie.LYGFileIO;
 
 public class AVItoLYGOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;

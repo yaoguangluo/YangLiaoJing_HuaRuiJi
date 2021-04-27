@@ -10,10 +10,10 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.movieProcessor.AdataFrame;
-import PEU.movieProcessor.Header;
-import PEU.movieProcessor.LYGFileIO;
-import PEU.soundProcessor.SoundWaveVector;
+import PEU.P.movie.AdataFrame;
+import PEU.P.movie.Header;
+import PEU.P.movie.LYGFileIO;
+import PEU.P.sound.SoundWaveVector;
 public class WavReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value= 0;

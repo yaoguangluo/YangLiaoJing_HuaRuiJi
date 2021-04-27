@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 import javax.swing.JPanel;
 
-import PEU.movieProcessor.*;
+import PEU.P.movie.*;
 
 public class Pm extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

@@ -2,7 +2,7 @@ package VQ.SQ.demos;
 import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import PEU.movieProcessor.*;
+import PEU.P.movie.*;
 public class DEMO_WAV_TO_LYG{
 	public static void main(String []args) throws IOException, UnsupportedAudioFileException{
 		//String wavInputFile=new String("C:\\Users\\yaoguang\\Desktop\\study\\sound\\AHag.wav");

@@ -10,7 +10,7 @@ import OSI.OSU.PEQ.AMV.ECS.test.DNNTest;
 import OSI.OSU.PEQ.AMV.ECS.test.RNN_IDETest;
 import OSI.OSU.PEQ.AMV.ECS.test.SensingTest;
 import OSI.OSU.PEQ.OPM.VEC.test.SuccessICATest;
-import PEU.sortProcessor.*;
+import PEU.P.sort.*;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

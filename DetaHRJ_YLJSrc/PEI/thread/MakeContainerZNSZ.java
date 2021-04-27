@@ -22,7 +22,7 @@ import javax.swing.event.ChangeListener;
 
 import ME.APM.VSQ.App;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import PEU.waveProcessor.DFT;
+import PEU.P.wave.DFT;
 import SP.SoundWaveJPanel;
 public class MakeContainerZNSZ extends Thread implements Runnable{
 	public Container jpanelFourth;

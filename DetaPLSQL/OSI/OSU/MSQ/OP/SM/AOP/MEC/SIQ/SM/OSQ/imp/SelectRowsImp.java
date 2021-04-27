@@ -20,7 +20,7 @@ import OSI.OSU.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ProcessConditionPLSQL;
 import OSI.OSU.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ProcessGetCulumnsPLSQL;
 import OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 @SuppressWarnings({ "unused", "unchecked" })
 public class SelectRowsImp {
 	public static List<Map<String, Object>> selectRowsByAttribute(String currentDB

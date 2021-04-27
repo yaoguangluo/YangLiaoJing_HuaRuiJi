@@ -2,8 +2,8 @@ package OSI.OSU.VPC.VQS.DSU.utils;
 
 import java.util.Date;
 
-import PEU.MD5Processor.*;
-import PEU.dnaProcessor.Token;
+import PEU.P.dna.Token;
+import PEU.P.md5.*;
 
 public class TokenUtil {
 //	public static Token getNewTokenFromUsrAndUsrToken(md5Processor.Usr usr, md5Processor.UsrToken usrToken) throws Exception {

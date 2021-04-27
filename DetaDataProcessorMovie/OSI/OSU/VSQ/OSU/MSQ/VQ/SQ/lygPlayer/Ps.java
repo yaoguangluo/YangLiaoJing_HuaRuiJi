@@ -8,8 +8,8 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
-import PEU.movieProcessor.*;
-import PEU.soundProcessor.*;
+import PEU.P.movie.*;
+import PEU.P.sound.*;
 public class Ps extends Thread{
 	public RandomAccessFile raf; 
 	public LYGFileIO io;

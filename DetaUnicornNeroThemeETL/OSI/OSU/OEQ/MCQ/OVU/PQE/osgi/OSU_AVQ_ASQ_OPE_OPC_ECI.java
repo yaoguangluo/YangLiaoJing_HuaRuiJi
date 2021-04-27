@@ -7,7 +7,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 
-import PEU.movieProcessor.LYGFileIO;
+import PEU.P.movie.LYGFileIO;
 
 public class OSU_AVQ_ASQ_OPE_OPC_ECI extends JPanel implements Cloneable{
 	private static final long serialVersionUID = 1L;

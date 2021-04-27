@@ -9,7 +9,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.swing.JFrame;
 import javax.swing.JTable;
 
-import PEU.movieProcessor.LYGFileIO;
+import PEU.P.movie.LYGFileIO;
 
 public class OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ extends JFrame implements Cloneable{
 	private static final long serialVersionUID = 1L;

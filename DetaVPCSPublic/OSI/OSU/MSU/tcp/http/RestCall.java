@@ -9,8 +9,8 @@ import java.net.URL;
 
 import OSI.OSU.stable.Stable;
 import OSI.OSU.string.StringSwap;
-import PEU.dnaProcessor.Token;
-import PEU.dnaProcessor.TokenCerts;
+import PEU.P.dna.Token;
+import PEU.P.dna.TokenCerts;
 public class RestCall {
 	public static String getJson(String urlString, String jsonString) 
 			throws IOException{

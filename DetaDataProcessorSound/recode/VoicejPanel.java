@@ -22,8 +22,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 import MVQ.button.DetaButton;
-import PEU.movieProcessor.*;
-import PEU.soundProcessor.*;
+import PEU.P.movie.*;
+import PEU.P.sound.*;
 
 public class VoicejPanel extends JPanel implements Runnable{
 	private static final long serialVersionUID = 1L;

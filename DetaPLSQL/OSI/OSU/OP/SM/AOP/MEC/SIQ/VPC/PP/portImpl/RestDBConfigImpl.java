@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.companyImpl.LoginServiceImpl;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 public class RestDBConfigImpl {
 	public static Map<String, String> setDBPath(String basePath
 			, String token, String auth) throws Exception {

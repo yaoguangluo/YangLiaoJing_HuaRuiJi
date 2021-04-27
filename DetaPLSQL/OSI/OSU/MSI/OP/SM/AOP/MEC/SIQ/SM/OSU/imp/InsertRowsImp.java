@@ -18,7 +18,7 @@ import OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Cell;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 
 @SuppressWarnings("unchecked")
 public class InsertRowsImp {

@@ -17,7 +17,7 @@ import OSI.OSU.MSU.OP.SM.AOP.MEC.SIQ.SM.update.imp.UpdateJoinRowsImp;
 import OSI.OSU.MSU.OP.SM.AOP.MEC.SIQ.SM.update.imp.UpdateRowsImp;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Base;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
 public class PLSQLCommandImp {
 	public static void proceseSetRoot(String[] acknowledge, Map<String, Object> output) throws Exception {

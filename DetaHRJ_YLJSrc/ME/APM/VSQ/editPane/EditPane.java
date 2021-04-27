@@ -108,19 +108,19 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+ new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)
+								page.append("<span style=\"background:"+ new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
 										+"\"><font color=\"black\" size=\"5\">"  + setOfi + split +
 										 (ctk.containsKey(setOfi)? ctk.get(setOfi): "")+splite  +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+
 										"\"><font color=\"black\" size=\"5\">" + setOfi + split +
 										 (ctk.containsKey(setOfi)? ctk.get(setOfi):"")+splite  + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
 										+ "\"><font color=\"black\" size=\"5\">" + setOfi + split +
 										 (ctk.containsKey(setOfi)? ctk.get(setOfi):"") + splite + "</font></span>");
 								continue Here;
@@ -176,18 +176,18 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +split+
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +split+
 										 (ctr.containsKey(setOfi)? ctr.get(setOfi):"")+splite  +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+
 										"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctr.containsKey(setOfi)? ctr.get(setOfi):"")+splite + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
 										+"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctr.containsKey(setOfi)? ctr.get(setOfi):"")+splite + "</font></span>");
 								continue Here;
@@ -245,19 +245,19 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
 										+"\"><font color=\"black\" size=\"5\">"  + setOfi +split+
 										 (ctt.containsKey(setOfi)? ctt.get(setOfi):"")+splite +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)
 										+"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctt.containsKey(setOfi)? ctt.get(setOfi):"")+splite + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
 										+"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctt.containsKey(setOfi)? ctt.get(setOfi):"")+splite + "</font></span>");
 								continue Here;
@@ -315,19 +315,19 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
 										+"\"><font color=\"black\" size=\"5\">"  + setOfi +split+
 										 (ctj.containsKey(setOfi)? ctj.get(setOfi):"") +splite+  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)
 										+"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctj.containsKey(setOfi)? ctj.get(setOfi):"") +splite+ "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
 										+"\"><font color=\"black\" size=\"5\">" + setOfi +split+
 										 (ctj.containsKey(setOfi)? ctj.get(setOfi):"")+splite + "</font></span>");
 								continue Here;
@@ -382,17 +382,17 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +
 										 (pinyin.containsKey(setOfi)? pinyin.get(setOfi):"") +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +
 										 (pinyin.containsKey(setOfi)? pinyin.get(setOfi):"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +
 										 (pinyin.containsKey(setOfi)? pinyin.get(setOfi):"") + "</font></span>");
 								continue Here;
 							}
@@ -552,15 +552,15 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -608,15 +608,15 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") +  "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"  + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")":""):"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -664,15 +664,15 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":"") + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {
@@ -720,15 +720,15 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("名")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 145, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 145, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("动")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(145, 255, 145)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(145, 255, 145)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("形")) {
-								page.append("<span style=\"background:"+new PEU.imageProcessor.ColorProcessor().Processor(255, 255, 145)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 145)+"\"><font color=\"black\" size=\"5\">" + setOfi + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains("副")) {

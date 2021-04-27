@@ -8,7 +8,7 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
-import PEU.soundProcessor.*;
+import PEU.P.sound.*;
 
 public class ButterworthFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;

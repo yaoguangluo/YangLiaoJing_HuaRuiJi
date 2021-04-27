@@ -12,7 +12,7 @@ import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.DB;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 @SuppressWarnings("unused")
 public class DetaDBBufferCacheManager {
 	public static DB db = new DB();

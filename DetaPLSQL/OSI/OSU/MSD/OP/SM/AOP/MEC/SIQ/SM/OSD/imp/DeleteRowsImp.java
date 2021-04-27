@@ -11,7 +11,7 @@ import java.util.Map;
 import OSI.OSU.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OSU.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.imp.SelectRowsImp;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
-import PEU.cacheProcessor.*;
+import PEU.P.cache.*;
 
 public class DeleteRowsImp {
 	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath, String pageIndex, boolean mod)

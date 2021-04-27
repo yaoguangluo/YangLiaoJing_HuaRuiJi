@@ -183,17 +183,17 @@ public class ZhongYaoTable implements MouseListener {
 							continue Here;
 						}
 						if(app.pos.get(setOfi).contains("Ãû")) {
-							page+="<span style=\"background:"+new PEU.imageProcessor.ColorProcessor()
+							page+="<span style=\"background:"+new PEU.P.image.ColorProcessor()
 									.Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>";
 							continue Here;
 						}
 						if(app.pos.get(setOfi).contains("¶¯")) {
-							page+="<span style=\"background:"+new PEU.imageProcessor.ColorProcessor()
+							page+="<span style=\"background:"+new PEU.P.image.ColorProcessor()
 									.Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>";
 							continue Here;
 						}
 						if(app.pos.get(setOfi).contains("ÐÎ")) {
-							page+="<span style=\"background:"+new PEU.imageProcessor.ColorProcessor()
+							page+="<span style=\"background:"+new PEU.P.image.ColorProcessor()
 									.Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>";
 							continue Here;
 						}
