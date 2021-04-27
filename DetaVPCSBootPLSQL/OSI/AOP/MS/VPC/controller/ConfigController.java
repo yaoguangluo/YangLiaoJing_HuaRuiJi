@@ -1,4 +1,4 @@
-package OSI.OSU.MS.VPC.controller;
+package OSI.AOP.MS.VPC.controller;
 import java.util.Map;
 
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBConfigImpl;

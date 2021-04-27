@@ -1,16 +1,16 @@
-package OSI.OSU.MS.VPC.rest;
+package OSI.AOP.MS.VPC.rest;
 import java.io.File;
 
 import java.io.IOException;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
-import OSI.OSU.MS.VPC.controller.ConfigController;
-import OSI.OSU.MS.VPC.controller.DBCategoryController;
-import OSI.OSU.MS.VPC.controller.DeleteController;
-import OSI.OSU.MS.VPC.controller.InsertController;
-import OSI.OSU.MS.VPC.controller.SelectController;
-import OSI.OSU.MS.VPC.controller.UpdateController;
+import OSI.AOP.MS.VPC.controller.ConfigController;
+import OSI.AOP.MS.VPC.controller.DBCategoryController;
+import OSI.AOP.MS.VPC.controller.DeleteController;
+import OSI.AOP.MS.VPC.controller.InsertController;
+import OSI.AOP.MS.VPC.controller.SelectController;
+import OSI.AOP.MS.VPC.controller.UpdateController;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBPLSQLImpl;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestLoginPortImpl;
 import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
