@@ -3,7 +3,7 @@ package OSI.OEU.OSU.MSQ.OSU.AVU.OSQ.lygSlaveFilter;
 import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.movie.LYGFileIO;
 
 public class LygSlaveFilterRun extends OSU_AVQ_ASQ_OPE_OPC_ECI

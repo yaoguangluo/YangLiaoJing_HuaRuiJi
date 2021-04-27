@@ -12,7 +12,7 @@ import java.util.Vector;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.sound.MedianPro;
 
 

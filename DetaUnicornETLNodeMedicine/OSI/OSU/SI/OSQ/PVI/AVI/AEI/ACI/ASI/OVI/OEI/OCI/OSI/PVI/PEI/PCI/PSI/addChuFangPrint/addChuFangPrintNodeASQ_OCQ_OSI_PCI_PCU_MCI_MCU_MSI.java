@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 public class addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) throws IOException{
 		this.text= text;

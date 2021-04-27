@@ -1,7 +1,7 @@
 package OSI.OVU.OSU.MSQ.MV.SQ.imageStrech;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.image.Strech;
 import PEU.P.movie.LYGFileIO;
 public class ImageStrechOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{

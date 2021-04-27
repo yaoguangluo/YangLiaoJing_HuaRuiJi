@@ -9,9 +9,9 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OSU.MSQ.SS.stable.StableData;
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OPE.MSQ.SS.stable.StableData;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 import java.awt.Panel;
 import java.awt.ScrollPane;

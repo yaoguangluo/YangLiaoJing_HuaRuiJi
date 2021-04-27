@@ -2,7 +2,7 @@ package OSI.OVQ.OSU.MSQ.MV.SQ.show3D;
 
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 public class Show3DRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;
 	public int value= 0;

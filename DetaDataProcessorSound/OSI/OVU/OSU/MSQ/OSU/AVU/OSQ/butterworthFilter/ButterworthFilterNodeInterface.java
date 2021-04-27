@@ -6,8 +6,8 @@ import java.io.IOException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 
-import OSI.OSU.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 public class ButterworthFilterNodeInterface extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
 	public ButterworthFilterNodeInterface() throws IOException{
 		thisIcon=new ImageIcon(this.getClass().getResource("btws.jpg"));

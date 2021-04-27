@@ -1,7 +1,7 @@
 package OSI.OVU.OSU.MSQ.MV.SQ.sobelFilter;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.image.*;
 public class SobelFilterOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID = 1L;

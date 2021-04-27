@@ -8,7 +8,7 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import OSI.OSU.OVQ.MSQ.OVU.PQE.platForm.UnicornJSplitPane;
+import OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornJSplitPane;
 public class Jpm extends Panel{
 	private static final long serialVersionUID = 1L;
 	final static double pi = 6.28318530;

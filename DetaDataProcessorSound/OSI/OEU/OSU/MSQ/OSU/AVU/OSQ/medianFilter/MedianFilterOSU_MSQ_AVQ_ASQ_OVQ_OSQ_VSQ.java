@@ -16,7 +16,7 @@ import java.util.Vector;
 
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.sound.SoundWaveVector;
 public class MedianFilterOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ
 {

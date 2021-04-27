@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.JTextPane;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 import java.awt.Panel;
 import java.awt.ScrollPane;

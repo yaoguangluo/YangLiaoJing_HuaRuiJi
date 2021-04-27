@@ -1,7 +1,7 @@
 package OSI.OVU.OSU.MSQ.MV.SQ.medianImageFilter;
 import java.io.IOException;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import PEU.P.image.Median;
 import PEU.P.movie.LYGFileIO;
 public class MedianImageOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{

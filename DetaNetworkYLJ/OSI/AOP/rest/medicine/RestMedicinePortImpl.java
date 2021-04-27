@@ -14,7 +14,7 @@ import OSI.MSU.OCI.ME.SMS.translator.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OSU.MSQ.SS.stable.StableData;
+import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class RestMedicinePortImpl {	
 	public static App kernel(App app, String string) {

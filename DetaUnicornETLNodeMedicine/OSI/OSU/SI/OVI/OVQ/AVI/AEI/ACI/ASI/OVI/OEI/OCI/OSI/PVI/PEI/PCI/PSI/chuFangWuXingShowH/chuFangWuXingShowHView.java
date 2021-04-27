@@ -6,7 +6,7 @@ import java.awt.ScrollPane;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 public class chuFangWuXingShowHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;

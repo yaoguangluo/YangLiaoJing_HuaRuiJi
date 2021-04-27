@@ -33,7 +33,7 @@ import OSI.ESU.list.ListSwap;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OSU.MSQ.SS.stable.StableData;
+import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class MakeContainerYXTP extends Thread implements Runnable{
 	public Container jpanelFourth;

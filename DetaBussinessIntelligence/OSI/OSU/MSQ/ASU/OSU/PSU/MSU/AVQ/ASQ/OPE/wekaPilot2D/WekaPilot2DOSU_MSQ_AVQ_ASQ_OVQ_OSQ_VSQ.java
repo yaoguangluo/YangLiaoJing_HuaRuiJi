@@ -9,7 +9,7 @@ import java.util.Date;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 
-import OSI.OSU.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import weka.clusterers.*;
 import weka.core.*;
 import weka.core.converters.ConverterUtils.*;
