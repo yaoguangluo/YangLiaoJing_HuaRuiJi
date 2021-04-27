@@ -1,8 +1,8 @@
 package OSI.AOP.MS.VPC.controller;
 import java.util.Map;
 
-import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestControllerPortImpl;
-import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestControllerPortImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
 public class DBCategoryController {
 	public static String exec(String string, Map<String, String> data) 

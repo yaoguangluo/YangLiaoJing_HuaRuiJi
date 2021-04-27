@@ -1,7 +1,7 @@
 package OSI.AOP.MEC.SIQ.plorm;
 import java.util.Map;
 
-import OSI.OSU.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp;
 public class PLORMImpl implements PLORMInterf{
 	private String PLSQL= "";
 	private String[] PLSQLArray;

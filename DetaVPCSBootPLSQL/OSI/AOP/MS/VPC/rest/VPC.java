@@ -11,9 +11,9 @@ import OSI.AOP.MS.VPC.controller.DeleteController;
 import OSI.AOP.MS.VPC.controller.InsertController;
 import OSI.AOP.MS.VPC.controller.SelectController;
 import OSI.AOP.MS.VPC.controller.UpdateController;
-import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBPLSQLImpl;
-import OSI.OSU.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestLoginPortImpl;
-import OSI.OSU.OP.SM.AOP.MEC.SIQ.stable.StableData;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestDBPLSQLImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.portImpl.RestLoginPortImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
 import PEU.P.map.*;
 public class VPC {
