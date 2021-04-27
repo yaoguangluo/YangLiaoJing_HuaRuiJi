@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
-import ME.APM.VSQ.tag.search.CaiJPanel;
+import ME.APM.VSQ.ESI.SVQ.search.CaiJPanel;
 public class TagSearch extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;
 	public void init(JTextField name){
