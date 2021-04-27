@@ -9,12 +9,12 @@ import java.util.List;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
+import OSI.ESU.sort.Quick9DLYGWithStringSwap;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OSU.MSQ.SS.stable.StableData;
 import OSI.OSU.MSU.OCI.ME.SMS.translator.Translator;
 import OSI.OSU.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
-import OVQ.OSU.sort.Quick9DLYGWithStringSwap;
 
 public class RestMedicinePortImpl {	
 	public static App kernel(App app, String string) {

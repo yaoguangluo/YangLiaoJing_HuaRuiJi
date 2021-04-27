@@ -25,6 +25,7 @@ import MVQ.button.DetaButton;
 import MVQ.tabbedpane.DetabbedPane;
 import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
+import OSI.ESU.string.StringSwap;
 import OSI.OSU.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OSU.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OSU.MSQ.SS.stable.StableData;
@@ -35,7 +36,6 @@ import OSI.OSU.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNA
 import OSI.OSU.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 import OSI.OSU.neo.tts.ReadChinese;
 import OSI.OSU.rest.medicine.RestMedicinePortImpl;
-import OSI.OSU.string.StringSwap;
 import PEU.P.map.*;
 import SP.SoundWaveJPanel;
 
