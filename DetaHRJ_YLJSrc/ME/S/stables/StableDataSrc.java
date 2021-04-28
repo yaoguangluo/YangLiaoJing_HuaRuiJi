@@ -1,4 +1,4 @@
-package src.stables;
+package ME.S.stables;
 public interface StableDataSrc {
 	//APP.JAVA
 	public static final String columnTitle_0 = "ID";

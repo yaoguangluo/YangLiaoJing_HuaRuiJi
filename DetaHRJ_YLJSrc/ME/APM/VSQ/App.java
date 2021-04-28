@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
-import src.stables.StableDataSrc;
 import AVQ.OEQ.cap.Monitor;
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import IMS.EUQ.SP.SoundWaveJPanel;
@@ -23,6 +22,7 @@ import ME.APM.VSQ.xiYiYaoCai.XyscPage;
 import ME.APM.VSQ.zhongYiFuChan.FqzPage;
 import ME.APM.VSQ.zhongYiNeiKeXue.ZynkxPage;
 import ME.APM.VSQ.zhongYiZhenDuanXue.ZyzdxPage;
+import ME.S.stables.StableDataSrc;
 import MVQ.button.DetaButton;
 import MVQ.tabbedpane.DetabbedPane;
 import MVQ.textfield.CfxTextField;
