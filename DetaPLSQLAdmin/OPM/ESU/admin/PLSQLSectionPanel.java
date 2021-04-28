@@ -10,14 +10,9 @@ import java.awt.event.MouseListener;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSlider;
 import javax.swing.JTextPane;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 import ME.APM.VSQ.App;
-import MVQ.slider.DetaSlider;
 
 public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListener, ActionListener{
 
@@ -50,7 +45,7 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 //	private JComponent jlabelpeizhi2257;
 	@SuppressWarnings("unused")
 	private JCheckBox jlabel_peizhi_di2515;
-    private JCheckBox jlabel_end_boxs31;
+	@SuppressWarnings("unused")
 	private App appInThisClass;
 	public PLSQLSectionPanel(App app){
 		appInThisClass= app;
