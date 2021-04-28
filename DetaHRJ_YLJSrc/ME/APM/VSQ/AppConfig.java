@@ -31,7 +31,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		SectionJPanel.setLayout(null);
 		SectionJPanel.setBounds(0, 0, 800, 750);
 		SectionJPanelContainer.add(SectionJPanel);
-		jTabbedpane.addTab("专科选择版面", new ImageIcon(), SectionJPanelContainer, "专科选择与系统配置版面");
+		jTabbedpane.addTab("专科选择版面", new ImageIcon(), SectionJPanelContainer, "总启动专科选择与系统配置版面");
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 		
 		Container pLSQLJPanelContainer= new Container();

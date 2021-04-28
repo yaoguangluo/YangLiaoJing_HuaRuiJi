@@ -421,7 +421,77 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 		this.add(异常记录模式);
 		this.add(异常记录模式_end_box);	
 		//无锁模式
-		
+		JLabel 无锁模式= new JLabel("无锁模式"+ ":");  
+		无锁模式.setForeground(Color.white);
+		无锁模式.setBounds(10+ 0* 150, 20+ 25* 9, 100, 50);
+		JCheckBox 无锁模式_end_box= new JCheckBox();
+		无锁模式_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 9, 20, 20);
+		无锁模式_end_box.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if(无锁模式_end_box.isSelected()) {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}else {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}
+			}
+		});
+		this.add(无锁模式);
+		this.add(无锁模式_end_box);	
+		//WEB模式
+		JLabel WEB模式= new JLabel("WEB模式"+ ":");  
+		WEB模式.setForeground(Color.white);
+		WEB模式.setBounds(10+ 0* 150, 20+ 25* 10, 100, 50);
+		JCheckBox WEB模式_end_box= new JCheckBox();
+		WEB模式_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 10, 20, 20);
+		WEB模式_end_box.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if(WEB模式_end_box.isSelected()) {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}else {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}
+			}
+		});
+		this.add(WEB模式);
+		this.add(WEB模式_end_box);	
+		//命令行
+		JLabel 命令行模式= new JLabel("命令行模式"+ ":");  
+		命令行模式.setForeground(Color.white);
+		命令行模式.setBounds(10+ 0* 150, 20+ 25* 11, 100, 50);
+		JCheckBox 命令行模式_end_box= new JCheckBox();
+		命令行模式_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 11, 20, 20);
+		命令行模式_end_box.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if(命令行模式_end_box.isSelected()) {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}else {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}
+			}
+		});
+		this.add(命令行模式);
+		this.add(命令行模式_end_box);	
 	}
 	
 	@Override
