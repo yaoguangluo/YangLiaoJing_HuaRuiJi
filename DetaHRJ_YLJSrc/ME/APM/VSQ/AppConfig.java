@@ -14,13 +14,14 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.OPE.config.SectionJPanel;
+import OPM.ESU.admin.PLSQLSectionPanel;
 
 
 public class AppConfig extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;
 	public boolean isConfig= true;
 	public SectionJPanel SectionJPanel;
-	public SectionJPanel pLSQLJPanel;
+	public PLSQLSectionPanel pLSQLJPanel;
 	public SectionJPanel pLShellJPanel;
 	public void init(App app){
 		PathLinkFile.DNA_PDN.put(this.getClass().getCanonicalName(), true);
@@ -34,7 +35,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 		
 		Container pLSQLJPanelContainer= new Container();
-		pLSQLJPanel= new SectionJPanel(app);
+		pLSQLJPanel= new PLSQLSectionPanel(app);
 		pLSQLJPanel.setLayout(null);
 		pLSQLJPanel.setBounds(0, 0, 800, 750);
 		pLSQLJPanelContainer.add(pLSQLJPanel);

@@ -149,7 +149,7 @@ public class AppInit {
 			while(!app.ready) {
 				Thread.sleep(300);
 			}
-			Thread.sleep(10000);
+			Thread.sleep(2000);
 			app.analyzer.initMixed();
 			app.pos= app.analyzer.getPosCnToCn();
 			app.pose= app.analyzer.getPosEnToEn();
