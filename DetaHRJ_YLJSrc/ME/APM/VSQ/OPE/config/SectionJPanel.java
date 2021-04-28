@@ -648,7 +648,7 @@ public class SectionJPanel extends JPanel implements MouseListener, KeyListener,
 		JScrollPane jsp_jTextPane= new JScrollPane(jTextPane);
 		jsp_jTextPane.setBounds(10 + 0* 150, 20+ 25* 15+ 120, 765, 150);
 		this.add(jsp_jTextPane);
-		jTextPane.setText("正在载入 养疗经 1.8.1.1.0 系统(1.8.1) . . .");
+		jTextPane.setText("正在载入 养疗经 1.8.5.0.0 系统(8.5.1.0) . . .");
 	}
 	
 	@Override

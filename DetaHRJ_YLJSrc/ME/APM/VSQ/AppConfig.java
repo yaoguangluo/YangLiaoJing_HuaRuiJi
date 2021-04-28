@@ -31,7 +31,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		SectionJPanel.setLayout(null);
 		SectionJPanel.setBounds(0, 0, 800, 750);
 		SectionJPanelContainer.add(SectionJPanel);
-		jTabbedpane.addTab("专科选择版面", new ImageIcon(), SectionJPanelContainer, "总启动专科选择与系统配置版面");
+		jTabbedpane.addTab("总启动专科与系统配置版面", new ImageIcon(), SectionJPanelContainer, "总启动专科与系统配置版面");
 		jTabbedpane.setMnemonicAt(0, KeyEvent.VK_0); 
 		
 		Container pLSQLJPanelContainer= new Container();
@@ -39,7 +39,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		pLSQLJPanel.setLayout(null);
 		pLSQLJPanel.setBounds(0, 0, 800, 750);
 		pLSQLJPanelContainer.add(pLSQLJPanel);
-		jTabbedpane.addTab("德塔PLSQL医学数据库语言控制台", new ImageIcon(), pLSQLJPanelContainer, "德塔PLSQL医学数据库语言控制台");
+		jTabbedpane.addTab("德塔PLSQL数据库语言控制台", new ImageIcon(), pLSQLJPanelContainer, "德塔PLSQL数据库语言控制台");
 		jTabbedpane.setMnemonicAt(1, KeyEvent.VK_1); 
 		
 		Container pLShellJPanelContainer= new Container();
@@ -47,7 +47,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		pLShellJPanel.setLayout(null);
 		pLShellJPanel.setBounds(0, 0, 800, 750);
 		pLShellJPanelContainer.add(pLShellJPanel);
-		jTabbedpane.addTab("德塔TIN SHELL医学智能语言控制台", new ImageIcon(), pLShellJPanelContainer, "德塔TIN SHELL医学智能语言控制台");
+		jTabbedpane.addTab("德塔TIN SHELL智能语言控制台", new ImageIcon(), pLShellJPanelContainer, "德塔TIN SHELL智能语言控制台");
 		jTabbedpane.setMnemonicAt(2, KeyEvent.VK_2); 
 		
 		Container endPointJPanelContainer= new Container();
@@ -55,7 +55,7 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		pLShellJPanel.setLayout(null);
 		pLShellJPanel.setBounds(0, 0, 800, 750);
 		endPointJPanelContainer.add(pLShellJPanel);
-		jTabbedpane.addTab("德塔WEB医学智能终端控制台", new ImageIcon(), endPointJPanelContainer, "德塔WEB医学智能终端控制台");
+		jTabbedpane.addTab("德塔WEB智能终端控制台", new ImageIcon(), endPointJPanelContainer, "德塔WEB智能终端控制台");
 		jTabbedpane.setMnemonicAt(3, KeyEvent.VK_3); 
 		
 		

@@ -54,15 +54,15 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 		this.setBounds(0, 0, 800, 600);
 		this.setBackground(Color.BLACK);
 		//copy tab
-		JLabel jlabel= new JLabel("读取数据库"+ ":");  
-		jlabel.setForeground(Color.white);
-		jlabel.setBounds(10+ 0* 150, 20+ 25* 0, 100, 50);
-		JCheckBox jlabel_end_box= new JCheckBox();
-		jlabel_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 0, 20, 20);
-		jlabel_end_box.addActionListener(new ActionListener(){
+		JLabel 读取数据库= new JLabel("读取数据库"+ ":");  
+		读取数据库.setForeground(Color.white);
+		读取数据库.setBounds(10+ 0* 150, 20+ 25* 0, 100, 50);
+		JCheckBox 读取数据库_end_box= new JCheckBox();
+		读取数据库_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 0, 20, 20);
+		读取数据库_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel_end_box.isSelected()) {
+				if(读取数据库_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 
 					}
@@ -74,18 +74,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel);
-		this.add(jlabel_end_box);	
+		this.add(读取数据库);
+		this.add(读取数据库_end_box);	
 		
-		JLabel jlabel1 = new JLabel("读取TXT"+ ":");  
-		jlabel1.setForeground(Color.white);
-		jlabel1.setBounds(10 + 1* 150, 20+ 25* 0, 100, 50);
-		JCheckBox jlabel1_end_box= new JCheckBox();
-		jlabel1_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 0, 20, 20);
-		jlabel1_end_box.addActionListener(new ActionListener(){
+		JLabel 读取TXT = new JLabel("读取TXT"+ ":");  
+		读取TXT.setForeground(Color.white);
+		读取TXT.setBounds(10 + 1* 150, 20+ 25* 0, 100, 50);
+		JCheckBox 读取TXT_end_box= new JCheckBox();
+		读取TXT_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 0, 20, 20);
+		读取TXT_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel1_end_box.isSelected()) {
+				if(读取TXT_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -99,19 +99,19 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel1);
-		this.add(jlabel1_end_box);	
+		this.add(读取TXT);
+		this.add(读取TXT_end_box);	
 		
 		//有规律的01数字后缀我会稍后归纳优化. 罗瑶光
-		JLabel jlabel10 = new JLabel("激活缓存"+ ":");  
-		jlabel10.setForeground(Color.white);
-		jlabel10.setBounds(10 + 0* 150, 20+ 25* 1, 100, 50);
-		JCheckBox jlabel10_end_box= new JCheckBox();
-		jlabel10_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 1, 20, 20);
-		jlabel10_end_box.addActionListener(new ActionListener(){
+		JLabel 激活缓存 = new JLabel("激活缓存"+ ":");  
+		激活缓存.setForeground(Color.white);
+		激活缓存.setBounds(10 + 0* 150, 20+ 25* 1, 100, 50);
+		JCheckBox 激活缓存_end_box= new JCheckBox();
+		激活缓存_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 1, 20, 20);
+		激活缓存_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel10_end_box.isSelected()) {
+				if(激活缓存_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -125,18 +125,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel10);
-		this.add(jlabel10_end_box);	
+		this.add(激活缓存);
+		this.add(激活缓存_end_box);	
 		
-		JLabel jlabel11= new JLabel("激活ORM"+ ":");  
-		jlabel11.setForeground(Color.white);
-		jlabel11.setBounds(10 + 1* 150, 20+ 25* 1, 100, 50);
-		JCheckBox jlabel11_end_box= new JCheckBox();
-		jlabel11_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 1, 20, 20);
-		jlabel11_end_box.addActionListener(new ActionListener(){
+		JLabel 激活ORM= new JLabel("激活ORM"+ ":");  
+		激活ORM.setForeground(Color.white);
+		激活ORM.setBounds(10 + 1* 150, 20+ 25* 1, 100, 50);
+		JCheckBox 激活ORM_end_box= new JCheckBox();
+		激活ORM_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 1, 20, 20);
+		激活ORM_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel11_end_box.isSelected()) {
+				if(激活ORM_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -150,19 +150,19 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel11);
-		this.add(jlabel11_end_box);	
+		this.add(激活ORM);
+		this.add(激活ORM_end_box);	
 		
 		
-		JLabel jlabel21 = new JLabel("读写分离模式"+ ":");  
-		jlabel21.setForeground(Color.white);
-		jlabel21.setBounds(10 + 2* 150, 20+ 25* 0, 100, 50);
-		JCheckBox jlabel21_end_box= new JCheckBox();
-		jlabel21_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 0, 20, 20);
-		jlabel21_end_box.addActionListener(new ActionListener(){
+		JLabel 读写分离模式 = new JLabel("读写分离模式"+ ":");  
+		读写分离模式.setForeground(Color.white);
+		读写分离模式.setBounds(10 + 2* 150, 20+ 25* 0, 100, 50);
+		JCheckBox 读写分离模式_end_box= new JCheckBox();
+		读写分离模式_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 0, 20, 20);
+		读写分离模式_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel21_end_box.isSelected()) {
+				if(读写分离模式_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -176,18 +176,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel21);
-		this.add(jlabel21_end_box);	
+		this.add(读写分离模式);
+		this.add(读写分离模式_end_box);	
 		
-		JLabel jlabel22 = new JLabel("医学表可修改"+ ":");  
-		jlabel22.setForeground(Color.white);
-		jlabel22.setBounds(10 + 2* 150, 20+ 25* 1, 100, 50);
-		JCheckBox jlabel22_end_box= new JCheckBox();
-		jlabel22_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 1, 20, 20);
-		jlabel22_end_box.addActionListener(new ActionListener(){
+		JLabel 医学表可修改 = new JLabel("医学表可修改"+ ":");  
+		医学表可修改.setForeground(Color.white);
+		医学表可修改.setBounds(10 + 2* 150, 20+ 25* 1, 100, 50);
+		JCheckBox 医学表可修改_end_box= new JCheckBox();
+		医学表可修改_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 1, 20, 20);
+		医学表可修改_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel22_end_box.isSelected()) {
+				if(医学表可修改_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -201,18 +201,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				
 			}
 		});
-		this.add(jlabel22);
-		this.add(jlabel22_end_box);	
+		this.add(医学表可修改);
+		this.add(医学表可修改_end_box);	
 		
-		JLabel jlabel30 = new JLabel("元基解密"+ ":");  
-		jlabel30.setForeground(Color.white);
-		jlabel30.setBounds(10 + 0* 150, 20+ 25* 2, 100, 50);
-		JCheckBox jlabel30_end_box= new JCheckBox();
-		jlabel30_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 2, 20, 20);
-		jlabel30_end_box.addActionListener(new ActionListener(){
+		JLabel 元基解密 = new JLabel("元基解密"+ ":");  
+		元基解密.setForeground(Color.white);
+		元基解密.setBounds(10 + 0* 150, 20+ 25* 2, 100, 50);
+		JCheckBox 元基解密_end_box= new JCheckBox();
+		元基解密_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 2, 20, 20);
+		元基解密_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel30_end_box.isSelected()) {
+				if(元基解密_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -225,18 +225,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				}
 			}
 		});
-		this.add(jlabel30);
-		this.add(jlabel30_end_box);	
+		this.add(元基解密);
+		this.add(元基解密_end_box);	
 		
-		JLabel jlabel31= new JLabel("元基加密"+ ":");  
-		jlabel31.setForeground(Color.white);
-		jlabel31.setBounds(10+ 1* 150, 20+ 25* 2, 100, 50);
-		JCheckBox jlabel31_end_box= new JCheckBox();
-		jlabel31_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 2, 20, 20);
-		jlabel31_end_box.addActionListener(new ActionListener(){
+		JLabel 元基加密= new JLabel("元基加密"+ ":");  
+		元基加密.setForeground(Color.white);
+		元基加密.setBounds(10+ 1* 150, 20+ 25* 2, 100, 50);
+		JCheckBox 元基加密_end_box= new JCheckBox();
+		元基加密_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 2, 20, 20);
+		元基加密_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel31_end_box.isSelected()) {
+				if(元基加密_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -249,18 +249,18 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				}
 			}
 		});
-		this.add(jlabel31);
-		this.add(jlabel31_end_box);	
+		this.add(元基加密);
+		this.add(元基加密_end_box);	
 		
-		JLabel jlabel32= new JLabel("元基计算"+ ":");  
-		jlabel32.setForeground(Color.white);
-		jlabel32.setBounds(10+ 2* 150, 20+ 25* 2, 100, 50);
-		JCheckBox jlabel32_end_box= new JCheckBox();
-		jlabel32_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 2, 20, 20);
-		jlabel32_end_box.addActionListener(new ActionListener(){
+		JLabel 元基计算= new JLabel("元基计算"+ ":");  
+		元基计算.setForeground(Color.white);
+		元基计算.setBounds(10+ 2* 150, 20+ 25* 2, 100, 50);
+		JCheckBox 元基计算_end_box= new JCheckBox();
+		元基计算_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 2, 20, 20);
+		元基计算_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel32_end_box.isSelected()) {
+				if(元基计算_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -273,19 +273,19 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				}
 			}
 		});
-		this.add(jlabel32);
-		this.add(jlabel32_end_box);	
+		this.add(元基计算);
+		this.add(元基计算_end_box);	
 		
 		//热备模式
-		JLabel jlabel40= new JLabel("热备模式"+ ":");  
-		jlabel40.setForeground(Color.white);
-		jlabel40.setBounds(10+ 0* 150, 20+ 25* 3, 100, 50);
-		JCheckBox jlabel40_end_box= new JCheckBox();
-		jlabel40_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 3, 20, 20);
-		jlabel40_end_box.addActionListener(new ActionListener(){
+		JLabel 热备模式= new JLabel("热备模式"+ ":");  
+		热备模式.setForeground(Color.white);
+		热备模式.setBounds(10+ 0* 150, 20+ 25* 3, 100, 50);
+		JCheckBox 热备模式_end_box= new JCheckBox();
+		热备模式_end_box.setBounds(10+ 85+ 0* 150, 33+ 25* 3, 20, 20);
+		热备模式_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(jlabel40_end_box.isSelected()) {
+				if(热备模式_end_box.isSelected()) {
 					for(int i= 0; i< tabNames.length; i++) {
 						
 						
@@ -298,8 +298,8 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 				}
 			}
 		});
-		this.add(jlabel40);
-		this.add(jlabel40_end_box);	
+		this.add(热备模式);
+		this.add(热备模式_end_box);	
 		//binlog
 		JLabel Binlog= new JLabel("Binlog"+ ":");  
 		Binlog.setForeground(Color.white);
