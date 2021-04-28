@@ -49,6 +49,14 @@ public class AppConfig extends ScrollPane implements MouseListener, KeyListener,
 		jTabbedpane.addTab("德塔TIN SHELL医学智能语言控制台", new ImageIcon(), pLShellJPanelContainer, "德塔TIN SHELL医学智能语言控制台");
 		jTabbedpane.setMnemonicAt(2, KeyEvent.VK_2); 
 		
+		Container endPointJPanelContainer= new Container();
+		pLShellJPanel= new SectionJPanel(app);
+		pLShellJPanel.setLayout(null);
+		pLShellJPanel.setBounds(0, 0, 800, 750);
+		endPointJPanelContainer.add(pLShellJPanel);
+		jTabbedpane.addTab("德塔WEB医学智能终端控制台", new ImageIcon(), endPointJPanelContainer, "德塔WEB医学智能终端控制台");
+		jTabbedpane.setMnemonicAt(3, KeyEvent.VK_3); 
+		
 		
 		//this.setLayout(null);
 		this.setPreferredSize(new Dimension(800, 750));

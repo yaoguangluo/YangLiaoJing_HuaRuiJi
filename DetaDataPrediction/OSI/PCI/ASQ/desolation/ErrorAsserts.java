@@ -27,16 +27,16 @@ public class ErrorAsserts{
 		double max= inputValue+ scale;
 		double min= inputValue- scale;
 		int big= matchValues.length;
-		int mid= matchValues.length/ 2;
+		int mid= matchValues.length/ 2;//>>1 有优化空间罗瑶光20210428
 		while(big> 0) {
 			if(!(matchValues[mid]> max|| matchValues[mid]< min)) {
 				return true;
 			}
 			if(inputValue> matchValues[mid]) {
-				mid= (mid+ big)/ 2;
+				mid= (mid+ big)/ 2;//>>1
 			}else {
 				big= mid;
-				mid= mid/ 2;
+				mid= mid/ 2;//>>1
 			}
 		}
 		return false;
