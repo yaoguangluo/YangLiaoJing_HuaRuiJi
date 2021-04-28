@@ -1,4 +1,4 @@
-package SP;
+package IMS.EUQ.SP;
 import java.awt.Dimension;
 
 import java.awt.Graphics;

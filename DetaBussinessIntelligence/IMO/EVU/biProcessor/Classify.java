@@ -1,6 +1,5 @@
-package biProcessor;
+package IMO.EVU.biProcessor;
 import java.awt.*;  
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.nio.ByteBuffer;
@@ -17,11 +16,11 @@ import jogl.obj.yaoguangLuo.JOGLOBJShape;
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
 //import parserProcessor.timeCheck;
-public class LineMed extends JPanel implements GLEventListener {  	
-	public int c=0;
-	public int []array;
+public class Classify extends JPanel implements GLEventListener {  	
+	public int c = 0;
+	public int[] array;
 	private static final long serialVersionUID = 1L;
-    static FPSAnimator animator=null;  
+    static FPSAnimator animator = null;  
     ChangeListener listener; 
     Box sliderBox = new Box(BoxLayout.Y_AXIS);  
     Box buttonBox = new Box(BoxLayout.X_AXIS);  
@@ -51,8 +50,9 @@ public class LineMed extends JPanel implements GLEventListener {
     int[][] g;
     JOGLOBJShape shape=null;
     public double t = 1.0d;
-   // timeCheck ch=new timeCheck();    
-    public LineMed() throws HeadlessException  {  
+  //  timeCheck ch=new timeCheck();    
+    public Classify() throws HeadlessException 
+    {  
     	this.setLayout(null);
         GLProfile glp = GLProfile.getDefault();
         GLCapabilities glcaps=new GLCapabilities(glp);      
@@ -69,8 +69,10 @@ public class LineMed extends JPanel implements GLEventListener {
         sliderx.setMajorTickSpacing(20);  
         sliderx.setMinorTickSpacing(5);  
         sliderx.addChangeListener( 
-        		    new ChangeListener()   {    
-        	            public void stateChanged(ChangeEvent event)   {    
+        		    new ChangeListener()  
+        	        {    
+        	            public void stateChanged(ChangeEvent event)  
+        	            {    
         	                JSlider source = (JSlider) event.getSource();  
         	                xrot= source.getValue();  
         	            }
@@ -82,8 +84,10 @@ public class LineMed extends JPanel implements GLEventListener {
         slidery.setMajorTickSpacing(20);  
         slidery.setMinorTickSpacing(5);  
         slidery.addChangeListener( 
-        		    new ChangeListener()    {    
-        	            public void stateChanged(ChangeEvent event)    {    
+        		    new ChangeListener()  
+        	        {    
+        	            public void stateChanged(ChangeEvent event)  
+        	            {    
         	                JSlider source = (JSlider) event.getSource();  
         	                yrot= source.getValue();  
         	            }
@@ -95,8 +99,10 @@ public class LineMed extends JPanel implements GLEventListener {
         sliderz.setMajorTickSpacing(20);  
         sliderz.setMinorTickSpacing(5);  
         sliderz.addChangeListener( 
-        		    new ChangeListener()    {    
-        	            public void stateChanged(ChangeEvent event)   {    
+        		    new ChangeListener()  
+        	        {    
+        	            public void stateChanged(ChangeEvent event)  
+        	            {    
         	                JSlider source = (JSlider) event.getSource();  
         	                zrot= source.getValue();  
         	            }
@@ -109,8 +115,10 @@ public class LineMed extends JPanel implements GLEventListener {
         slidert.setMajorTickSpacing(20);  
         slidert.setMinorTickSpacing(1);  
         slidert.addChangeListener( 
-        		    new ChangeListener()    {    
-        	            public void stateChanged(ChangeEvent event)    {    
+        		    new ChangeListener()  
+        	        {    
+        	            public void stateChanged(ChangeEvent event)  
+        	            {    
         	                JSlider source = (JSlider) event.getSource();  
         	                trot= source.getValue();  
         	            }
@@ -118,32 +126,40 @@ public class LineMed extends JPanel implements GLEventListener {
         
         top   = new JButton("top");
         top.addActionListener( 
-    		    new ActionListener()   {    
-    		    	public void actionPerformed(ActionEvent e){
+    		    new ActionListener()  
+    	        {    
+    		    	public void actionPerformed(ActionEvent e)
+    		    	{
     		    	 brot+=0.5;
     		    	}
     	        });  
         
         down  = new JButton("down");
         down.addActionListener( 
-    		    new ActionListener()    {    
-    		    	public void actionPerformed(ActionEvent e){
+    		    new ActionListener()  
+    	        {    
+    		    	public void actionPerformed(ActionEvent e)
+    		    	{
     		    		brot-=0.5;
     		    	}
     	        });  
         
         left  = new JButton("left");
         left.addActionListener( 
-    		    new ActionListener()    {    
-    		    	public void actionPerformed(ActionEvent e){
+    		    new ActionListener()  
+    	        {    
+    		    	public void actionPerformed(ActionEvent e)
+    		    	{
     		    		 lrot-=0.5;
     		    	}
     	        });  
         
         right = new JButton("right");
         right.addActionListener( 
-    		    new ActionListener()    {    
-    		    	public void actionPerformed(ActionEvent e){
+    		    new ActionListener()  
+    	        {    
+    		    	public void actionPerformed(ActionEvent e)
+    		    	{
     		    		 lrot+=0.5;
     		    	}
     	        });  
@@ -161,7 +177,8 @@ public class LineMed extends JPanel implements GLEventListener {
         sliderBox.setBounds(0, 500, 500, 700);
         add(sliderBox);
     }     
-    private void centerWindow(Component frame)  {
+    private void centerWindow(Component frame)
+    {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();  
         Dimension frameSize = frame.getSize();  
         if (frameSize.width > screenSize.width)  
@@ -172,7 +189,8 @@ public class LineMed extends JPanel implements GLEventListener {
                 (screenSize.height - frameSize.height) >> 1);  
     }  
     @SuppressWarnings("static-access")
-	public void init(GLAutoDrawable drawable)  {  
+	public void init(GLAutoDrawable drawable) 
+    {  
         gl =  drawable.getGL().getGL2();    
         glu = new GLU();  
         glut= new GLUT();       
@@ -190,18 +208,20 @@ public class LineMed extends JPanel implements GLEventListener {
     }  
     
     
-    private static int[] arrayInit()  {	
+    private static int[] arrayInit() 
+    {	
 		int[] array=new int[12];	
 		java.util.Random r=new java.util.Random(); 
-		for(int i=12,j=0;i>0;i--,j++){
-			array[j]=r.nextInt(3);
+		for(int i=12,j=0;i>0;i--,j++)
+		{
+			array[j]=r.nextInt(100);
 		}
 		// TODO Auto-generated method stub
 		return array;
 	}
     
-    @SuppressWarnings("static-access")
-	public void display(GLAutoDrawable drawable)  {  
+    public void display(GLAutoDrawable drawable) 
+    {  
      	GL2 gl = drawable.getGL().getGL2();
         gl.glClear(GL.GL_COLOR_BUFFER_BIT | GL.GL_DEPTH_BUFFER_BIT);
         gl.glLoadIdentity();
@@ -221,35 +241,80 @@ public class LineMed extends JPanel implements GLEventListener {
         
        // gl.glBegin(GL.GL_POINTS);
 // 
-        int med=0;
-        double last=0;
-        double newt=0;
-       for(double i=0;i<array.length;i++) {
-    	   med=med+array[(int) i];
-    	   newt=(med/(i+1));
-    	   gl.glBegin(gl.GL_LINES);
-    	   gl.glColor3f(0,0,255);
- 		   gl.glVertex3d(i/3, last,0);
- 		   gl.glVertex3d((i+1)/3, newt,0);
-    	   gl.glEnd();
-    	   gl.glBegin(gl.GL_LINES);
-    	   gl.glColor3f(0,255,0);
- 		   gl.glVertex3d(i/3, array[(int) i] , 0);
- 		   gl.glVertex3d(i/3, newt,0);
-    	   gl.glEnd();
-    	   
-    	   gl.glRasterPos3f((float) (i/3), array[(int) i] , 0);
-           glut.glutBitmapString(GLUT.BITMAP_HELVETICA_18,//×ÖµÄ´óÐ¡
-                             i+"month");//ÏÔÊ¾µÄÄÚÈÝ  
-    	   last=newt; 
-       }    
+       int m = array[0];
+       for(int i=0;i<array.length;i++)
+       {
+    	   if(array[i]>m)
+    	   {
+    		   m=array[i];
+    	   }
+       }
+       
+       double section = 9;
+       double bina = m/section;
+       int v[] = new int [array.length];
+       double c[]=new double[1];
+       double ini=0; 
+       for(int i=1;i<=section;i++){
+    	   ini=drawsec(bina,i,v,c,ini);
+       }
   	gl.glEnd();
     gl.glFlush();
-   } 
-    
-    public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height)  {  
+   }  
+    @SuppressWarnings("static-access")
+	private double drawsec(double bina, double section, int[] v, double c[], double ini){
+    	
+    	int t=0;
+        for(double i=0;i<array.length;i++)
+        {
+     	   if(array[(int) i]<=bina*section&&array[(int) i]>bina*(section-1)&& v[(int)i]==0)
+     	   {
+     		   gl.glBegin(gl.GL_LINES);
+     		   gl.glColor3f(0,0,255);
+     		   gl.glVertex3d(c[0]/3,0 ,0);
+     		   gl.glVertex3d(c[0]/3,section-0.5 ,0);
+        	   gl.glEnd();
+               v[(int)i] = 1;
+               gl.glRasterPos3f((float) (c[0]/3), 0 , 0);
+               glut.glutBitmapString(GLUT.BITMAP_HELVETICA_18, (i+1)+"month");//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+               c[0]+=1;
+               t+=1;
+     	   }
+        }
+    	if(t>0)
+    	{
+           gl.glBegin(gl.GL_LINES);
+		   gl.glColor3f(0,0,255);
+		   gl.glVertex3d(ini,section-0.5 ,0);
+		   gl.glVertex3d((c[0]-1)/3,section-0.5 ,0);
+ 	       gl.glEnd();
+  
+ 	       gl.glRasterPos3d(ini,section-0.5 ,0);
+           glut.glutBitmapString(GLUT.BITMAP_HELVETICA_18,//ï¿½ÖµÄ´ï¿½Ð¡
+        		   bina*(section-1)+"<month value<"+bina*(section));//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
+ 	       double m=((c[0]-1)/3+ini)/2;
+ 	       gl.glBegin(gl.GL_LINES);
+		   gl.glColor3f(0,0,255);
+		   gl.glVertex3d(m,section-0.5 ,0);
+		   gl.glVertex3d(m,section+0.5 ,0);
+	       gl.glEnd();  
+	       return m;
+    	}else{
+    		 double m=ini;
+    		 gl.glBegin(gl.GL_LINES);
+  		     gl.glColor3f(0,0,255);
+  		     gl.glVertex3d(m,section-0.5 ,0);
+  		     gl.glVertex3d(m,section+0.5 ,0);
+  	         gl.glEnd();	
+    		return m;
+    	}     
+	}
+	public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) 
+    {  
         float fAspect; 
-        if (height == 0)  {  
+  
+        if (height == 0) 
+        {  
             height = 1;  
         }      
         gl.glViewport(0, 0, width, height);  
@@ -260,12 +325,13 @@ public class LineMed extends JPanel implements GLEventListener {
         gl.glMatrixMode(GL2.GL_MODELVIEW);  
         gl.glLoadIdentity();  
     }  
-    
-    public void dispose(GLAutoDrawable arg0) {       
+    public void dispose(GLAutoDrawable arg0) 
+    {       
     }  
-    
-    public static void main(String[] args) {  
-        final LineMed app = new LineMed();  
+    public static void main(String[] args) 
+    {  
+        final Classify app = new Classify();  
+    	//final OBJTest app = new OBJTest();  
         app.setSize(850, 700);
 		app.setVisible(true);
 		JFrame f=new JFrame();

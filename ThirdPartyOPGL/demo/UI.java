@@ -1,6 +1,7 @@
 package demo;
 import javax.swing.JFrame;
-import biProcessor.Histogram;
+
+import IMO.EVU.biProcessor.Histogram;
 public class UI
 {  
     public static void main(String[] args) 

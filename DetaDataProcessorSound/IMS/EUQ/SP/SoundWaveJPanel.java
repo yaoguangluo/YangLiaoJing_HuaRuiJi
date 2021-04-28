@@ -1,4 +1,4 @@
-package SP;
+package IMS.EUQ.SP;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.FileDialog;

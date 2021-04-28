@@ -4,7 +4,7 @@ import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
 
-import biProcessor.CoDNAAuthorForWord;
+import IMO.EVU.biProcessor.CoDNAAuthorForWord;
 
 public class PDNTest{
 	public static void main(String[] argv) throws InterruptedException {

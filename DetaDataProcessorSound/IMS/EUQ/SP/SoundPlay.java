@@ -1,4 +1,4 @@
-package SP;
+package IMS.EUQ.SP;
 import java.io.IOException;
 
 import javax.sound.sampled.AudioFormat;

@@ -1,4 +1,4 @@
-package recode;
+package IMS.EUQ.recoder;
 
 import java.awt.Color;
 

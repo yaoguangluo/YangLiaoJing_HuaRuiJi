@@ -7,8 +7,8 @@ import java.io.IOException;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import IMS.EUQ.SP.SoundPlay;
 import PEU.P.movie.LYGFileIO;
-import SP.SoundPlay;
 public class Jp extends JPanel implements Runnable{
 	/**
 	 * 

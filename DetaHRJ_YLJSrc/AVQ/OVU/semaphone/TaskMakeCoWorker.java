@@ -5,9 +5,9 @@ import java.awt.HeadlessException;
 import java.util.Map;
 import javax.swing.JScrollPane;
 
+import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import biProcessor.CoAuthorForWord;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;
 	public Analyzer analyzer;

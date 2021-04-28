@@ -7,9 +7,9 @@ import java.util.Map;
 import java.util.Vector;
 import javax.swing.JPanel;
 
+import IMS.EUQ.SP.SoundWaveJPanel;
+import IMS.EUQ.SP.SoundWavePanelVector;
 import PEU.P.wave.DFT;
-import SP.SoundWaveJPanel;
-import SP.SoundWavePanelVector;
 public class Flt extends JPanel{
 	private static final long serialVersionUID = 1L;
 	double pi= 3.1415926;

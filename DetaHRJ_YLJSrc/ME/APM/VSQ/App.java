@@ -9,6 +9,8 @@ import java.awt.image.BufferedImage;
 
 import src.stables.StableDataSrc;
 import AVQ.OEQ.cap.Monitor;
+import IMO.EVU.biProcessor.CoAuthorForWord;
+import IMS.EUQ.SP.SoundWaveJPanel;
 import ME.APM.VSQ.Harrison.CecilPage;
 import ME.APM.VSQ.editPane.EditPane;
 import ME.APM.VSQ.fuchankexue.FckxPage;
@@ -37,7 +39,6 @@ import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 import PEU.P.map.*;
-import SP.SoundWaveJPanel;
 
 import java.awt.Color;
 import java.awt.Point;
@@ -72,8 +73,6 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.BadLocationException;
-
-import biProcessor.CoAuthorForWord;
 @SuppressWarnings("deprecation")
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;
