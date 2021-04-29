@@ -537,7 +537,10 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				//一行一行的插入
 				boolean mod= true;
 				for(int i= 0; i< table.getRowCount(); i++){
-					//元基编码加密：
+					//元基编码加密： 我注释下,这里的biky是梁壁荧的网名.去年准备追她,大丈夫追女人肯定不是砸钱刷人气来追吧
+					//于是我就自学琴棋书画, 代码我就写点求婚礼物, 我一直很努力
+					//,每次都是提高自己来吸引她的注意..从没有和别的女人乱搞,一下就10个月,就换来10个微笑...后来,人家还是觉得我配不上,那就算了.
+					//又多一个妹妹.无所谓.哈哈
 					String plsql= "setRoot:C:/DetaDB1;";
 					plsql+= "baseName:ZYY;"; 
 					plsql+= "tableName:zybc:insert;" +
