@@ -490,7 +490,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 				}
 				String response = "";
 				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
-				if(!u.CacheString.containsKey(keyCache)) {
+			//	if(!u.CacheString.containsKey(keyCache)) {
 					try {
 						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
 						String encode= StringSwap.stringToURIencode(string, "UTF8");
@@ -510,9 +510,9 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 						u.CacheString.remove(u.CacheStringPiple.get(300));
 						u.CacheStringPiple.remove(300);
 					}
-				}else {
-					response= u.CacheString.get(keyCache);
-				}
+				//}else {
+				//	response= u.CacheString.get(keyCache);
+				//}
 				//dnn…≠¡÷
 				try {
 					String[] dnn= response.replace("\r\n", "<br/>").split("<br/>");
