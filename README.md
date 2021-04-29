@@ -66,7 +66,7 @@
 
 ### 项目内容展示. 见工程的 doc 文件夹：
 
-##### 养疗经和华瑞的科研价值描述  
+##### 养疗经和华瑞集的科研价值描述  
 1>https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/DetaOSSFINALV0_0_1.pdf  
 
 ##### DNA 第一卷  
