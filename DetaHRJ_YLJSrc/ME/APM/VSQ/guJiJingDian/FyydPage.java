@@ -698,19 +698,38 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		return name;
 	}	
 	
-	@SuppressWarnings({"serial" })
+	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable() throws IOException {  
-		Dictionary d = new Dictionary();
-		dic_list = d.txtToListName();
-		dic_map = d.listNameToMap(dic_list);//.listNameToMap(dic_list);
-		tableData_old = new Object[dic_map.size()][4];
-		Iterator<String> iter = dic_map.keySet().iterator();
+		DictionaryDB d = new DictionaryDB();
+		Map<String, Object> dic_shu_ming= new ConcurrentHashMap<String, Object>();
+		Map<String, Object> dic_duanluo= new ConcurrentHashMap<String, Object>();
+		
+		try {
+			//dic_map= d.txtToMap(dic_shu_ming, dic_duanluo);
+			d.txtToMap(dic_shu_ming, dic_duanluo);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		//Dictionary d = new Dictionary();
+//		dic_list = d.txtToListName();
+//		dic_map = d.listNameToMap(dic_list);//.listNameToMap(dic_list);
+//		tableData_old = new Object[dic_map.size()][4];
+//		Iterator<String> iter = dic_map.keySet().iterator();
+		
+		tableData_old = new Object[dic_shu_ming.size()][4];
+		Iterator<String> iter = dic_shu_ming.keySet().iterator();
 	    copy = new ArrayList<String>();
 		while (iter.hasNext())
 			copy.add(iter.next());
 		for(int i=0; i<copy.size(); i++) {
-			tableData_old[i] = new Object[]{""+(i+1),""+0,copy.get(i).trim(),
-					dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "")};
+			tableData_old[i] = new Object[]{""+(i+1)
+					,""+0
+					,copy.get(i).trim()
+					,dic_duanluo.get(copy.get(i)).toString().replaceAll("\\s*", "")};
+					//,dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "")};
 		}	
 		table = new javax.swing.JTable();  
 		newTableModel = new DefaultTableModel(tableData_old,columnTitle){  
