@@ -39,6 +39,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
+import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 public class FyydPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -64,6 +65,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 	public DetaButton buttonFRS;
 	public DetaButton buttonETC;
 	public DetaButton buttonCTV;
+	public DetaButton buttonGJJD;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
@@ -637,7 +639,28 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 				}
 			}
 		});
-		
+		//我本来想用URLencoder转代码，就不需要用@标识@了。以后改下。先用我大TIN god标识。
+		readEnglish= new ReadChinese(u, analyzer);
+		buttonGJJD= new DetaButton("导出古籍经典");
+		buttonGJJD.setBounds(740, 0, 100, 30);
+		buttonGJJD.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				boolean mod= true;
+				for(int i= 0; i< table.getRowCount(); i++){
+					String plsql= "setRoot:C:/DetaDB1;";
+					plsql+= "baseName:ZYY;"; 
+					plsql+= "tableName:gjjd:insert;" +
+							"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@Tin@")+ ";"+ 
+							"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@Tin@")+ ";"+ 
+							"culumnValue:书名:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 2).toString().replace(":", "@Tin@"))+ ";"+ 
+							"culumnValue:段落:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@Tin@"))+ ";";
+					try {
+						OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+					}catch(Exception e1) {
+						e1.printStackTrace();
+					}
+				}}
+		});
 		
 		Box buttonBox= new Box(BoxLayout.X_AXIS);  
 		buttonBox.add(buttonPrev);
@@ -650,7 +673,8 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		buttonBox.add(buttonADD);
 		buttonBox.add(buttonKSLJ);
 		buttonBox.add(buttonCTV);
-		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 950, 20);
+		buttonBox.add(buttonGJJD);
+		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 1050, 20);
 		this.add(buttonBox);
 		return data;
 	}
