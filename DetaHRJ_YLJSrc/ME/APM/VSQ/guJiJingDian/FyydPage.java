@@ -647,6 +647,12 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			public void actionPerformed(ActionEvent e) {
 				boolean mod= true;
 				for(int i= 0; i< table.getRowCount(); i++){
+					try {
+						Thread.sleep(150);
+					} catch (InterruptedException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
 					String plsql= "setRoot:C:/DetaDB1;";
 					plsql+= "baseName:ZYY;"; 
 					plsql+= "tableName:gjjd:insert;" +
