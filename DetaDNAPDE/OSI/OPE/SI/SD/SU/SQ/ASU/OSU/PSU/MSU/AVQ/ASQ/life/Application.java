@@ -81,8 +81,10 @@ public class Application extends Thread {
 		//application.run();
 		//PRINT YANGLIAOJING FUNCTIONS APINAME
 		
-		String string1= "D:\\Users\\Lenovo\\eclipse-workspace\\DETA_YLJ1.5.9";
-		String string2= "D:\\Users\\Lenovo\\git\\Deta_Parser";
+//		String string1= "D:\\Users\\Lenovo\\eclipse-workspace\\DETA_YLJ1.5.9";
+//		String string2= "D:\\Users\\Lenovo\\git\\Deta_Parser";
+		String string1= "C:\\Users\\Lenovo\\eclipse-workspace\\HRJ_YLJ_18111";
+		String string2= "C:\\Users\\Lenovo\\eclipse-workspace\\HRJ_YLJ_18111";
 		pdns.init();
 		cmss.init();
 	    
