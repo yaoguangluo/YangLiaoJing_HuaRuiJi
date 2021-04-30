@@ -706,7 +706,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		
 		try {
 			//dic_map= d.txtToMap(dic_shu_ming, dic_duanluo);
-			d.txtToMap(dic_shu_ming, dic_duanluo);
+			dic_map=d.txtToMap(dic_shu_ming, dic_duanluo);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

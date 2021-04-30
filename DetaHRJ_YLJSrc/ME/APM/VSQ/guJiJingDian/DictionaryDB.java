@@ -58,8 +58,8 @@ public class DictionaryDB{
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public void txtToMap(Map<String, Object> dic_shu_ming, Map<String, Object> dic_duanluo) throws IOException{
-		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
+	public Map<String, String> txtToMap(Map<String, Object> dic_shu_ming, Map<String, Object> dic_duanluo) throws IOException{
+		Map<String, String> dic_map= new ConcurrentHashMap<String, String>();
 		Map<String, Object> map= null;
 		//for(int i=0; i<)
 		String plsql= "setRoot:C:/DetaDB;" + 
@@ -83,10 +83,10 @@ public class DictionaryDB{
 		}
 		ArrayList list= (ArrayList)map.get("obj");
 		Iterator<HashMap<String, Object>> iterator= list.iterator();
-		int index= 0;
+		//int index= 0;
 		Here:
 		while(iterator.hasNext()) {
-			index++;
+			//index++;
 			HashMap<String, Object> hashmap= iterator.next();
 			StringBuilder stringBuilder= new StringBuilder();
 			if(hashmap.containsKey("rowValue")) {
@@ -100,7 +100,7 @@ public class DictionaryDB{
 					}
 					String gg= null== temp.get("culumnValue")?"":temp.get("culumnValue").toString();
 					gg= new FullDNATokenPDI().initonDeSect(gg);
-					keyName= gg.replace("@Tin@", ":")+ index;
+					keyName= gg.replace("@Tin@", ":");
 					dic_shu_ming.put(keyName,keyName);
 					stringBuilder.append(temp.get("culumnValue").toString());
 				}
@@ -114,6 +114,6 @@ public class DictionaryDB{
 				dic_map.put(keyName, stringBuilder.toString().replace("@Tin@", ":"));
 			}
 		}
-		//return dic_map;
+		return dic_map;
 	}	
 }
