@@ -45,6 +45,8 @@
 
 package PEU.P.nlp;
 import java.io.IOException;
+
+import MSV.OSQ.sets.DetaDouble;
 public class DETA_DNN {
 	public String[][] summingProcessor(String[][] ann, String[][] rnn) throws IOException
 	, InstantiationException, IllegalAccessException {
@@ -58,7 +60,7 @@ public class DETA_DNN {
 			for(int j = 0; j < rnn.length; j++) {
 				//important += Double.parseDouble(rnn[j][2]);
 				//修正一处"NaN" 识别 罗瑶光20210429
-				important += Double.parseDouble(rnn[j][2].equalsIgnoreCase("NaN")?"0":rnn[j][2]);
+				important += DetaDouble.parseDouble(rnn[j][2]);
 			}
 			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
 		}
@@ -69,7 +71,7 @@ public class DETA_DNN {
 			for(int j = 0; j < rnn.length; j++) {
 				//sumOfPow +=  Double.parseDouble(rnn[j][3]);
 				//修正一处"NaN" 识别 罗瑶光20210429
-				sumOfPow +=  Double.parseDouble(rnn[j][3].equalsIgnoreCase("NaN")?"0":rnn[j][3]);
+				sumOfPow += DetaDouble.parseDouble(rnn[j][3]);
 				//sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
 			}
 		//2	sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
@@ -85,7 +87,7 @@ public class DETA_DNN {
 			for(int j = 7; j < ann[0].length; j++) {
 				//summingANN += Double.parseDouble(ann[i][j]);
 				//修正一处"NaN" 识别 罗瑶光20210429
-				summingANN += Double.parseDouble(ann[i][j].equalsIgnoreCase("NaN")?"0":ann[i][j]);
+				summingANN += DetaDouble.parseDouble(ann[i][j]);
 			}
 			combination = summingANN *  Double.parseDouble(dnn[i][2]);
 			dnn[i][3] = "" + combination;
