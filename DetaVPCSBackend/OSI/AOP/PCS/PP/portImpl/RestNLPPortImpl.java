@@ -22,6 +22,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import MSV.OSQ.sets.DetaDouble;
 public class RestNLPPortImpl{// implements RestLoginPort {
 	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
 		//System.out.printntln(string);
@@ -143,7 +145,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 			if(null == dnn[i][3]) {
 				continue Here;
 			}
-			dnn_lwa = Double.parseDouble(dnn[i][3]);
+			dnn_lwa = DetaDouble.parseDouble(dnn[i][3]);
 			if(dnn_lwa>0) {
 				String line="";
 				line+=ann[i][0] + ":";

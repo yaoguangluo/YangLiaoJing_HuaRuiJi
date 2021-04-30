@@ -11,22 +11,22 @@
 //			dnn[i][0] = rnn[i][0];
 //			double important = 0;
 //			for(int j = 0; j < rnn.length; j++) {
-//				important += Double.parseDouble(rnn[j][2]);
+//				important += DetaDouble.parseDouble(rnn[j][2]);
 //			}
-//			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
+//			dnn[i][1] = "" + Math.sqrt(important * DetaDouble.parseDouble(rnn[i][1]));
 //		}
 //		//2 DNN CORRELATION LWA
 //		for(int i = 0; i < rnn.length; i++) {
 //			double correlation = 0;
 //			double sumOfPow = 0;
 //			for(int j = 0; j < rnn.length; j++) {
-//				sumOfPow +=  Double.parseDouble(rnn[j][3]);
-//				//sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
+//				sumOfPow +=  DetaDouble.parseDouble(rnn[j][3]);
+//				//sumOfPow += Math.abs(DetaDouble.parseDouble(rnn[i][3]) - DetaDouble.parseDouble(rnn[j][3]));
 //			}
-//		//2	sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
+//		//2	sumOfPow = Math.abs(DetaDouble.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
 //		//	sumOfPow /= rnn.length;
-//			sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) - sumOfPow/rnn.length);//3
-//			correlation =  Double.parseDouble(dnn[i][1]) * sumOfPow;
+//			sumOfPow = Math.abs(DetaDouble.parseDouble(rnn[i][3]) - sumOfPow/rnn.length);//3
+//			correlation =  DetaDouble.parseDouble(dnn[i][1]) * sumOfPow;
 //			dnn[i][2] = "" + Math.sqrt(correlation);
 //		}
 //		//3 DNN and summing ANN combination
@@ -34,9 +34,9 @@
 //			double summingANN = 0;
 //			double combination = 0;
 //			for(int j = 7; j < ann[0].length; j++) {
-//				summingANN += Double.parseDouble(ann[i][j]);
+//				summingANN += DetaDouble.parseDouble(ann[i][j]);
 //			}
-//			combination = summingANN *  Double.parseDouble(dnn[i][2]);
+//			combination = summingANN *  DetaDouble.parseDouble(dnn[i][2]);
 //			dnn[i][3] = "" + combination;
 //		}			
 //		return dnn;		 	
@@ -62,7 +62,7 @@ public class DETA_DNN {
 				//修正一处"NaN" 识别 罗瑶光20210429
 				important += DetaDouble.parseDouble(rnn[j][2]);
 			}
-			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
+			dnn[i][1] = "" + Math.sqrt(important * DetaDouble.parseDouble(rnn[i][1]));
 		}
 		//2 DNN CORRELATION LWA
 		for(int i = 0; i < rnn.length; i++) {
@@ -72,12 +72,12 @@ public class DETA_DNN {
 				//sumOfPow +=  Double.parseDouble(rnn[j][3]);
 				//修正一处"NaN" 识别 罗瑶光20210429
 				sumOfPow += DetaDouble.parseDouble(rnn[j][3]);
-				//sumOfPow += Math.abs(Double.parseDouble(rnn[i][3]) - Double.parseDouble(rnn[j][3]));
+				//sumOfPow += Math.abs(DetaDouble.parseDouble(rnn[i][3]) - DetaDouble.parseDouble(rnn[j][3]));
 			}
-		//2	sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
+		//2	sumOfPow = Math.abs(DetaDouble.parseDouble(rnn[i][3]) * (double)rnn.length - sumOfPow);
 		//	sumOfPow /= rnn.length;
-			sumOfPow = Math.abs(Double.parseDouble(rnn[i][3]) - sumOfPow/rnn.length);//3
-			correlation =  Double.parseDouble(dnn[i][1]) * sumOfPow;
+			sumOfPow = Math.abs(DetaDouble.parseDouble(rnn[i][3]) - sumOfPow/rnn.length);//3
+			correlation =  DetaDouble.parseDouble(dnn[i][1]) * sumOfPow;
 			dnn[i][2] = "" + Math.sqrt(correlation);
 		}
 		//3 DNN and summing ANN combination
@@ -89,7 +89,7 @@ public class DETA_DNN {
 				//修正一处"NaN" 识别 罗瑶光20210429
 				summingANN += DetaDouble.parseDouble(ann[i][j]);
 			}
-			combination = summingANN *  Double.parseDouble(dnn[i][2]);
+			combination = summingANN *  DetaDouble.parseDouble(dnn[i][2]);
 			dnn[i][3] = "" + combination;
 		}			
 		return dnn;		 	
