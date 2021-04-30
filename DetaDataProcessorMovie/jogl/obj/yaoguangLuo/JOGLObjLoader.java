@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import MSV.OSQ.sets.DetaDouble;
+
 //这个文件同样要refer下 GLEEN(readme 里面已经有refer标识,就不多写了), 最早在加州路的大学我研究jogl GPL, apache2.0开源 的 MESH架构(readme 里面已经有refer标识,就不多写了), 
 //当时 我SourceForge 下的源码是错误的, 我在测试调通优化后 发给了彭教授, 卡教授 和 Renhart 教授描述了这个情况. 信息克查阅 加州路德大学 老师邮件.
 //这里备注下.
@@ -113,27 +115,27 @@ public class JOGLObjLoader {
 			} else if (om.find()) {
 				mesh.setName(om.group(1));
 			} else if (vm.find()) {
-				vertices.add(new V3(Double.parseDouble(vm.group(1)), Double.parseDouble(vm.group(2)), Double.parseDouble(vm.group(3))));
+				vertices.add(new V3(DetaDouble.parseDouble(vm.group(1)), DetaDouble.parseDouble(vm.group(2)), DetaDouble.parseDouble(vm.group(3))));
 			} else if (vnm.find()) {
-				double x = Double.parseDouble(vnm.group(1));
-				double y = Double.parseDouble(vnm.group(2));
-				double z = Double.parseDouble(vnm.group(3));
+				double x = DetaDouble.parseDouble(vnm.group(1));
+				double y = DetaDouble.parseDouble(vnm.group(2));
+				double z = DetaDouble.parseDouble(vnm.group(3));
 				normals.add(new V3(x, y, z));
 			} else if (vtm.find()) {
 				double u;
 				double v;
 				double w;
-				u = Double.parseDouble(vtm.group(1));
+				u = DetaDouble.parseDouble(vtm.group(1));
 				if (vtm.groupCount() == 1) {
 					v = 0;
 					w = 0;
 				} else if (vtm.groupCount() == 2) {
-					v = Double.parseDouble(vtm.group(2));
+					v = DetaDouble.parseDouble(vtm.group(2));
 					w = 0;
 				} else {
 					// must be 3, then
-					v = Double.parseDouble(vtm.group(2));
-					w = Double.parseDouble(vtm.group(3));
+					v = DetaDouble.parseDouble(vtm.group(2));
+					w = DetaDouble.parseDouble(vtm.group(3));
 				}
 				texcoords.add(new V3(u, v, w));
 			}	

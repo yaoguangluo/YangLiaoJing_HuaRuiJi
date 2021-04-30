@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import MSV.OSQ.sets.DetaDouble;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import PEU.P.nlp.*;
 public class DNNTest{
@@ -18,7 +19,7 @@ public class DNNTest{
 //		String[][] ann= aNNTest.getANNMatrix(string, analyzer);
 //		String[][] dnn= dNNTest.getDNNMatrix(ann, analyzer, string);
 		for(int i=0;i<dnn.length;i++) {
-			double dnn_lwa = Double.parseDouble(dnn[i][3]);
+			double dnn_lwa = DetaDouble.parseDouble(dnn[i][3]);
 			if(dnn_lwa>100) {
 				System.out.print(ann[i][0] + ":");
 				System.out.print(ann[i][1] + ":");
