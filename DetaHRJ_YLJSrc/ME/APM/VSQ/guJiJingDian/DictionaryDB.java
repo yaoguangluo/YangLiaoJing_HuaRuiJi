@@ -102,14 +102,14 @@ public class DictionaryDB{
 					gg= new FullDNATokenPDI().initonDeSect(gg);
 					keyName= gg.replace("@Tin@", ":");
 					dic_shu_ming.put(keyName,keyName);
-					stringBuilder.append(temp.get("culumnValue").toString());
+					stringBuilder.append(keyName);
 				}
 				if(rowValue.containsKey("¶ÎÂä")) {
 					HashMap<String, Object> temp= (HashMap<String, Object>) rowValue.get("¶ÎÂä");
 					String gg= null== temp.get("culumnValue")?"":temp.get("culumnValue").toString();
 					gg= new FullDNATokenPDI().initonDeSect(gg);
 					dic_duanluo.put(keyName, gg.replace("@Tin@", ":"));
-					stringBuilder.append(temp.get("culumnValue").toString());
+					stringBuilder.append(gg.replace("@Tin@", ":"));
 				}
 				dic_map.put(keyName, stringBuilder.toString().replace("@Tin@", ":"));
 			}
