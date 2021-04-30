@@ -1,5 +1,7 @@
 package nlpProcessor;
 import java.io.IOException;
+
+import MSV.OSQ.sets.DetaDouble;
 public class DETA_DNN {
 //Theory:DNN
 //Algorithm Author Mr.Yaoguang Luo	
@@ -12,28 +14,28 @@ public class DETA_DNN {
 			dnn[i][0] = rnn[i][0];
 			double important = 0;
 			for(int j = 0; j < rnn.length; j++) {
-				important += Double.parseDouble(rnn[j][2]);
+				important += DetaDouble.parseDouble(rnn[j][2]);
 			}
-			dnn[i][1] = "" + Math.sqrt(important * Double.parseDouble(rnn[i][1]));
+			dnn[i][1] = "" + Math.sqrt(important * DetaDouble.parseDouble(rnn[i][1]));
 		}
 		//2 DNN CORRELATION LWA
 		for(int i= 0; i< rnn.length; i++) {
 			double sumOfPow= 0;
 			for(int j= 0; j< rnn.length; j++) {
-				sumOfPow+=  Double.parseDouble(rnn[j][3]);
+				sumOfPow+=  DetaDouble.parseDouble(rnn[j][3]);
 			}
-			sumOfPow= Math.abs(Double.parseDouble(rnn[i][3])- sumOfPow/ rnn.length);
-			dnn[i][2]= ""+ Math.sqrt(Double.parseDouble(dnn[i][1])* sumOfPow);
+			sumOfPow= Math.abs(DetaDouble.parseDouble(rnn[i][3])- sumOfPow/ rnn.length);
+			dnn[i][2]= ""+ Math.sqrt(DetaDouble.parseDouble(dnn[i][1])* sumOfPow);
 		}
 		//3 DNN and summing ANN combination
 		for(int i= 0; i< ann.length; i++) {
 			double summingANN= 0;
 			for(int j= 7; j< ann[0].length; j++) {
 				if(!ann[i][j].contains("a")) {
-					summingANN+= Double.parseDouble(ann[i][j]);
+					summingANN+= DetaDouble.parseDouble(ann[i][j]);
 				}
 			}
-			dnn[i][3]= ""+ summingANN*  Double.parseDouble(dnn[i][2]);
+			dnn[i][3]= ""+ summingANN*  DetaDouble.parseDouble(dnn[i][2]);
 		}			
 		return dnn;		 	
 	}
