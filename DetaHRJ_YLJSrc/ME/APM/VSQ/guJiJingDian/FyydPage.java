@@ -679,7 +679,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		buttonBox.add(buttonADD);
 		buttonBox.add(buttonKSLJ);
 		buttonBox.add(buttonCTV);
-		buttonBox.add(buttonGJJD);
+		//buttonBox.add(buttonGJJD);
 		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 1050, 20);
 		this.add(buttonBox);
 		return data;

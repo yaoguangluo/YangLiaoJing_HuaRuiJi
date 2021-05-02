@@ -818,7 +818,13 @@ public class FullDNATokenPDI {
 		map.put("8", "I");
 		map.put("9", "D");
 		map.put(".", "Q");
+		int lineChars= 0;//让元基码分段
 		for(int i= 0; i< key.length(); i++) {
+			lineChars++;
+			if(lineChars== 60) { //1行60个char
+				pdis+="\r\n";
+				lineChars= 0;
+			}
 			int c= key.charAt(i);
 			String ints= ""+c;
 			for(int j= 0; j< ints.length(); j++) {
