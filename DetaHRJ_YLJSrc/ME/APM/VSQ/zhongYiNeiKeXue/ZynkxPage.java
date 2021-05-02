@@ -12,6 +12,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +41,6 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
-import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 public class ZynkxPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
@@ -68,6 +68,7 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 	public Map<String, Object> dic_ff;
 	public Map<String, Object> dic_sy;
 	public Map<String, Object> dic_tl;
+	public Map<String, Object> dic_bzm;
 	int row;
 	int col; 
 	public Object[] columnTitle = {"ID", "打分", "病症&药名", "用药参考", "正常成人标准处方", "脉症", "制法", "应用", "使用", "讨论", "附方", "方歌"};
@@ -84,7 +85,7 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 	private JTabbedPane jTabbedpane;
 	private ReadChinese readChinese;
 	private DetaButton buttonCTV;
-	private DetaButton buttonZYFJ;
+	//private DetaButton buttonZYFJ;
 	public ZynkxPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, App u, JTabbedPane jTabbedpane) throws IOException{
 		this.text = text;
@@ -768,7 +769,18 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 //   		"culumnName:uk:讨论:string;"+ 
 //   		"culumnName:uk:附方:string;"+ 
 //   		"culumnName:uk:方歌:string;";
-		dic_map= d.txtToMap(dic_sy, dic_chu_fang, dic_mz, dic_zf, dic_yy, dic_sy, dic_tl, dic_ff, dic_fg);
+		
+		dic_bzm= new HashMap<String, Object>();
+		dic_chu_fang= new HashMap<String, Object>();
+		dic_mz= new HashMap<String, Object>();
+		dic_zf= new HashMap<String, Object>();
+		dic_yy= new HashMap<String, Object>();
+		dic_sy= new HashMap<String, Object>();
+		dic_tl= new HashMap<String, Object>();
+		dic_ff= new HashMap<String, Object>();
+		dic_fg= new HashMap<String, Object>();
+		
+		dic_map= d.txtToMap(dic_bzm, dic_chu_fang, dic_mz, dic_zf, dic_yy, dic_sy, dic_tl, dic_ff, dic_fg);
 		
 		tableData_old = new Object[dic_map.size()][12];
 		Iterator<String> iter = dic_map.keySet().iterator();
