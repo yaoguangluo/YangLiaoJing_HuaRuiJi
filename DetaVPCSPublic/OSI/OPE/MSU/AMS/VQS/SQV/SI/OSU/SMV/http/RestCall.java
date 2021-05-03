@@ -95,7 +95,7 @@ public class RestCall {
 		String passwordString= StringSwap.charsetSwap(token.getmPassword(), "GBK", "GBK");
 		String passwordEncoder= StringSwap.stringToURIencode(passwordString, "UTF8");
 		System.out.println("pds--1>"+tokenCerts.getPds());
-		URL url = new URL("http://localhost/dataCG?message=" + request+
+		URL url = new URL("http://localhost/dataCG?message="+ request+
 				"&id="+ idEncoder+
 				"&password="+ passwordEncoder+
 				"&de="+ token.getUpdsde() +
@@ -104,6 +104,9 @@ public class RestCall {
 				"&is="+ token.getUpdsis() +
 				"&lock="+ tokenCerts.getPdnLock());
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		//这里是url 的httpconnection, 只能服务器网卡链接情况下使用,如果要本机断网调试, 请查阅网卡相关函数.
+		//与程序功能无关, 以后讨论.
+		//HttpConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Accept", "application/json");
 		if (conn.getResponseCode() != 200) {

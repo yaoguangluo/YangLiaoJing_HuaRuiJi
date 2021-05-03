@@ -42,6 +42,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
+import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 public class FqzPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -75,6 +76,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 	private ReadChinese readChinese;
 	private DetaButton buttonCTV;
 	protected int row;
+	private DetaButton buttonZYSZ;
 	public FqzPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, JTabbedPane jTabbedpane, App u) throws IOException{
 		this.text = text;	this.pose = pose;
@@ -642,6 +644,36 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 				}
 			}
 		});
+		
+		//我本来想用URLencoder转代码，就不需要用@标识@了。以后改下。先用我大TIN god标识。
+				buttonZYSZ= new DetaButton("导出中医生殖");
+				buttonZYSZ.setBounds(740, 0, 100, 30);
+				buttonZYSZ.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						boolean mod= true;
+						for(int i= 0; i< table.getRowCount(); i++){
+							try {
+								Thread.sleep(150);
+							} catch (InterruptedException e2) {
+								// TODO Auto-generated catch block
+								e2.printStackTrace();
+							}
+							String plsql= "setRoot:C:/DetaDB1;";
+							plsql+= "baseName:ZYY;"; 
+							plsql+= "tableName:zysz:insert;" +
+									"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@Tin@")+ ";"+ 
+									"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@Tin@")+ ";"+ 
+									"culumnValue:病名:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 2).toString().replace(":", "@Tin@"))+ ";"+ 
+									"culumnValue:用药:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@Tin@"))+ ";";
+							try {
+								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+							}catch(Exception e1) {
+								e1.printStackTrace();
+							}
+						}}
+				});
+		
+		
 		Box buttonBox = new Box(BoxLayout.X_AXIS);  
 		buttonBox.add(buttonPrev);
 		buttonBox.add(buttonNext);
@@ -653,7 +685,8 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 		buttonBox.add(buttonCTV);
 		buttonBox.add(buttonADD);
 		buttonBox.add(buttonKSLJ);
-		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 950, 20);
+		buttonBox.add(buttonZYSZ);
+		buttonBox.setBounds(5 + 800-650, 290 + 100 - 80 + 200-260, 1150, 20);
 		this.add(buttonBox);
 		return data;  	
 	}
