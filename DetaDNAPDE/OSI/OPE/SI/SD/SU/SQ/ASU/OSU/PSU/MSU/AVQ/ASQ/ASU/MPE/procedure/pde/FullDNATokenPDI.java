@@ -856,7 +856,7 @@ public class FullDNATokenPDI {
 			for(int j= 0; j< c.length(); j++) {
 				ints+=map.get(""+ c.charAt(j));
 			}
-			if(!ints.isEmpty()) {
+			if(!ints.isEmpty()&& !ints.contains("null")) {//ÓÅ»¯ÏÂnull check
 				int a= Integer.valueOf(ints);
 				char b= (char) a;
 				pdis+= b;

@@ -12,7 +12,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -751,7 +750,7 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 
 	@SuppressWarnings({ "serial" })
 	public javax.swing.JTable jTable() throws IOException {  
-		DictionaryDB d= new DictionaryDB();
+//		DictionaryDB d= new DictionaryDB();
 //		Dictionary d= new Dictionary();
 //		dic_list=d.txtToList();
 //		DictionaryDB
@@ -775,17 +774,32 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 //   		"culumnName:uk:附方:string;"+ 
 //   		"culumnName:uk:方歌:string;";
 		
-		dic_bzm= new HashMap<String, Object>();
-		dic_chu_fang= new HashMap<String, Object>();
-		dic_mz= new HashMap<String, Object>();
-		dic_zf= new HashMap<String, Object>();
-		dic_yy= new HashMap<String, Object>();
-		dic_sy= new HashMap<String, Object>();
-		dic_tl= new HashMap<String, Object>();
-		dic_ff= new HashMap<String, Object>();
-		dic_fg= new HashMap<String, Object>();
+		//测试下刚写的标准读表函数.
+		DictionaryStandardDB d= new DictionaryStandardDB();
+		String primaryKey= "病症药名";
+		//以后设计 uniq forenkey等.
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey);
+		dic_bzm=map.get("病症药名");
+		dic_chu_fang=map.get("成人处方");
+		dic_mz=map.get("脉症");
+		dic_zf=map.get("制法");
+		dic_yy=map.get("应用");
+		dic_sy=map.get("使用");
+		dic_tl=map.get("讨论");
+		dic_ff=map.get("附方");
+		dic_fg=map.get("方歌");
+		dic_map=map.get("dic_map");
 		
-		dic_map= d.txtToMap(dic_bzm, dic_chu_fang, dic_mz, dic_zf, dic_yy, dic_sy, dic_tl, dic_ff, dic_fg);
+//		dic_bzm= new HashMap<String, Object>();
+//		dic_chu_fang= new HashMap<String, Object>();
+//		dic_mz= new HashMap<String, Object>();
+//		dic_zf= new HashMap<String, Object>();
+//		dic_yy= new HashMap<String, Object>();
+//		dic_sy= new HashMap<String, Object>();
+//		dic_tl= new HashMap<String, Object>();
+//		dic_ff= new HashMap<String, Object>();
+//		dic_fg= new HashMap<String, Object>();	
+		//dic_map= d.txtToMap(dic_bzm, dic_chu_fang, dic_mz, dic_zf, dic_yy, dic_sy, dic_tl, dic_ff, dic_fg);
 		
 		tableData_old = new Object[dic_map.size()][12];
 		Iterator<String> iter = dic_map.keySet().iterator();
@@ -1131,7 +1145,6 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 
 	public class colorTableRender extends DefaultTableCellRenderer { 
 		private static final long serialVersionUID = 1L;
-
 		public Component getTableCellRendererComponent(JTable table,Object value, boolean isSelected, boolean hasFocus, int row,
 				int column) {
 			if (isSelected && hasFocus && row == table.getSelectedRow() && column == table.getSelectedColumn()) {
