@@ -8,8 +8,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.List;
 import java.util.Map;
 
-import OSI.AOP.MEC.SIQ.plorm.PLORMImpl;
-import OSI.AOP.MEC.SIQ.plorm.PLORMInterf;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 //研发,思想,设计: 罗瑶光 20210504
 //@送给54青年节的礼物
@@ -18,7 +16,7 @@ public class DictionaryStandardDB{
 		List<String> dic_list= new ArrayList<>();
 		return dic_list;
 	}
-
+    //gg的意思是青年小哥哥 GG 一个temp 变量 哈
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Map<String, Map<String, Object>> dbToMap(String primaryKey, String tabKey) throws IOException{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
