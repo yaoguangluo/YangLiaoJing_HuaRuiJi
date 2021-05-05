@@ -716,7 +716,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 
 		//测试下刚写的标准读表函数.
 		DictionaryStandardDB d= new DictionaryStandardDB();
-		String primaryKey= "病名";
+		String primaryKey= "书名";
 		String tabKey= "gjjd";
 		//以后设计 uniq forenkey等.
 		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);

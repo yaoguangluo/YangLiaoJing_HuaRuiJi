@@ -59,7 +59,16 @@ public class DictionaryStandardDB{
 						continue Here;
 					}
 					String gg= null== temp.get("culumnValue")? "": temp.get("culumnValue").toString();
-					gg= new FullDNATokenPDI().initonDeSect(gg);
+					//因为zybc我有明文存储, 所以先加个注释,以后修正.
+					boolean isIniton= true;
+					if(!gg.contains("A")&&!gg.contains("O")&&!gg.contains("P")&&!gg.contains("M")&&
+							!gg.contains("V")&&!gg.contains("E")&&!gg.contains("C")&&!gg.contains("S")&&
+							!gg.contains("I")&&!gg.contains("D")&&!gg.contains("U")&&!gg.contains("Q")) {
+						isIniton= false;
+					}
+					if(isIniton) {//稍后处理迪摩根化简
+						gg= new FullDNATokenPDI().initonDeSect(gg);
+					}
 					keyName= gg.replace("@Tin@", ":");
 					if(dbMap.containsKey(primaryKey)) {
 						//获取hashmap 子集;
@@ -85,7 +94,14 @@ public class DictionaryStandardDB{
 							gg= null== temp.get("culumnValue")? "": temp.get("culumnValue").toString();	
 							//去null//去empty 稍后
 							try {
-								gg= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
+//								if(!gg.contains("A")&&!gg.contains("O")&&!gg.contains("P")&&!gg.contains("M")&&
+//										!gg.contains("V")&&!gg.contains("E")&&!gg.contains("C")&&!gg.contains("S")&&
+//										!gg.contains("I")&&!gg.contains("D")&&!gg.contains("U")&&!gg.contains("Q")) {
+//									isIniton= false;
+//								}
+//								if(isIniton) {//稍后处理迪摩根化简
+									gg= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
+								//}
 							}catch(Exception e) {
 								e.printStackTrace();
 							}

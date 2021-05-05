@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
 import ME.APM.VSQ.App;
-import ME.APM.VSQ.DictionaryFromDB;
+//import ME.APM.VSQ.DictionaryFromDB;
 import ME.APM.VSQ.PathLinkFile;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
