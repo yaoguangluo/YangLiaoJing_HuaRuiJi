@@ -17,8 +17,6 @@ public class DictionaryPLSQLStandardDB{
 	}
 	
 	public static Map<String, Object> bootORM(String tabKey) throws IOException{
-		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
-		Map<String, Map<String, Object>> dbMap= new HashMap<>();
 		Map<String, Object> map= null;
 		try {
 			PLORMInterf orm= new PLORMImpl();
@@ -28,7 +26,6 @@ public class DictionaryPLSQLStandardDB{
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
 					.finalExec(true).returnAsMap();
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
@@ -38,8 +35,6 @@ public class DictionaryPLSQLStandardDB{
 	}	
 	
 	public static Map<String, Object> bootPLSQL(String tabKey) throws IOException{
-		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
-		Map<String, Map<String, Object>> dbMap= new HashMap<>();
 		Map<String, Object> map= null;
 		try {
 			String plsql= "setRoot:C:/DetaDB1;" + 

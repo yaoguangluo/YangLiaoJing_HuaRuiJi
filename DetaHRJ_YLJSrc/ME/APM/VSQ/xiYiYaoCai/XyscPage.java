@@ -893,17 +893,17 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 		//以后设计 uniq forenkey等.
 		//记得在数据库文件rows 的row 下加 is_delete_0 文件夹. 不然不显示哦 罗瑶光20210505
 		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
-		Map<String, Object> dic_yao_ming= map.get("西药名");
-		Map<String, Object> dic_jie_shao= map.get("介绍");
-		Map<String, Object> dic_yao_li= map.get("药理");
-		Map<String, Object> dic_chengfen_danwei= map.get("主要成分");
-		Map<String, Object> dic_yong_fa= map.get("用法");
-		Map<String, Object> dic_zhu_yi= map.get("注意事项");
-		Map<String, Object> dic_shi_ying= map.get("适应症");
-		Map<String, Object> dic_bu_liang_fan_ying= map.get("不良反应");
-		Map<String, Object> dic_yong_liang= map.get("用量");
-		Map<String, Object> dic_yao_wu_xiang_hu_zuo_yong= map.get("药物相互作用");
-		Map<String, Object> dic_qi_ta= map.get("其他");
+		dic_yao_ming= map.get("西药名");
+		dic_jie_shao= map.get("介绍");
+		dic_yao_li= map.get("药理");
+		dic_chengfen_danwei= map.get("主要成分");
+		dic_yong_fa= map.get("用法");
+		dic_zhu_yi= map.get("注意事项");
+		dic_shi_ying= map.get("适应症");
+		dic_bu_liang_fan_ying= map.get("不良反应");
+		dic_yong_liang= map.get("用量");
+		dic_yao_wu_xiang_hu_zuo_yong= map.get("药物相互作用");
+		dic_qi_ta= map.get("其他");
 		Map<String, Object> dic_map= map.get("dic_map");
 
 		tableData_old = new Object[dic_yao_ming.size()][18];
@@ -1111,7 +1111,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 			String iteratorForCopyString = iteratorForCopy.next();
 			score[copyCount] = iteratorForCopyString;
 			String temps = iteratorForCopyString.toString()
-					+	dic_jie_shao.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
+					+	null!= dic_jie_shao.get(iteratorForCopyString)? dic_jie_shao.get(iteratorForCopyString).toString().replaceAll("\\s*", ""):""
 					+	dic_yao_li.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
 					+	dic_chengfen_danwei.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
 					+	dic_yong_fa.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
