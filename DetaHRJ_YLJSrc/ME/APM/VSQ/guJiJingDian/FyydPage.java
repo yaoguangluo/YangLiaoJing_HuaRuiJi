@@ -40,6 +40,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
+import OSV.VCQ.standard.DictionaryStandardDB;
 public class FyydPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -57,7 +58,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 	public DefaultTableModel newTableModel = null;
 	public List<String> copy;
 	public List<String> dic_list;
-	public Map<String, String> dic_map;
+	public Map<String, Object> dic_map;
 	public Object[] columnTitle = {"ID", "打分", "书名", "段落"};
 	public Analyzer analyzer; 
 	public Map<String, String> pos;
@@ -700,18 +701,29 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 	
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable() throws IOException {  
-		DictionaryDB d = new DictionaryDB();
-		Map<String, Object> dic_shu_ming= new ConcurrentHashMap<String, Object>();
-		Map<String, Object> dic_duanluo= new ConcurrentHashMap<String, Object>();
+//		DictionaryDB d = new DictionaryDB();
+//		Map<String, Object> dic_shu_ming= new ConcurrentHashMap<String, Object>();
+//		Map<String, Object> dic_duanluo= new ConcurrentHashMap<String, Object>();
+//		
+//		try {
+//			//dic_map= d.txtToMap(dic_shu_ming, dic_duanluo);
+//			dic_map=d.txtToMap(dic_shu_ming, dic_duanluo);
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//		}
+//		
 		
-		try {
-			//dic_map= d.txtToMap(dic_shu_ming, dic_duanluo);
-			dic_map=d.txtToMap(dic_shu_ming, dic_duanluo);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-		
-		
+
+		//测试下刚写的标准读表函数.
+		DictionaryStandardDB d= new DictionaryStandardDB();
+		String primaryKey= "病名";
+		String tabKey= "gjjd";
+		//以后设计 uniq forenkey等.
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
+		Map<String, Object> dic_shu_ming= map.get("书名");
+		Map<String, Object> dic_duanluo= map.get("段落");
+		dic_map= map.get("dic_map");
+
 		
 		//Dictionary d = new Dictionary();
 //		dic_list = d.txtToListName();

@@ -7,6 +7,7 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Map;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -21,23 +22,48 @@ import ME.APM.VSQ.DictionaryFromDB;
 import ME.APM.VSQ.PathLinkFile;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
+import OSV.VCQ.standard.DictionaryStandardDB;
 
 public class ZhongYaoTable implements MouseListener {
 	private App app;
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable(App app) throws IOException {
 		this.app= app;
-		DictionaryFromDB d= new DictionaryFromDB();
-		//dictionary d= new dictionary();
-		//dic_list= d.txtToList();
-		try {
-			app.dic_map= d.listToMap(app.dic_yw, app.dic_li, app.dic_hai, app.dic_xz, app.dic_ya, app.dic_jm
-					, app.dic_xw, app.dic_cy, app.dic_jj, app.dic_zf, app.dic_cj, app.dic_yl);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+//		DictionaryFromDB d= new DictionaryFromDB();
+//		//dictionary d= new dictionary();
+//		//dic_list= d.txtToList();
+//		try {
+//			app.dic_map= d.listToMap(app.dic_yw, app.dic_li, app.dic_hai, app.dic_xz, app.dic_ya, app.dic_jm
+//					, app.dic_xw, app.dic_cy, app.dic_jj, app.dic_zf, app.dic_cj, app.dic_yl);
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//		}
+		
+		
+		//测试下刚写的标准读表函数.
+		DictionaryStandardDB d= new DictionaryStandardDB();
+		String primaryKey= "中药名称";
+		String tabKey= "zybc";
+		//以后设计 uniq forenkey等.
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
+		app.dic_index= map.get("中药名称");
+		app.dic_yw= map.get("笔记原文");
+		app.dic_li= map.get("功效");
+		app.dic_xz= map.get("中医馆药理");
+		app.dic_ya= map.get("愚按");
+		app.dic_jm= map.get("经脉");
+		app.dic_xw= map.get("性味");
+		app.dic_cy= map.get("崇源");
+		app.dic_jj= map.get("经解");
+		app.dic_zf= map.get("搭配");
+		app.dic_hai= map.get("风险规避");
+		app.dic_cj= map.get("常见药");
+		app.dic_yl= map.get("用量");
+		
+		app.dic_map= map.get("dic_map");
+			
 		//		dic_map= d.listToMap(dic_list);
-		app.dic_index= d.mapToIndex(app.dic_map);
+		//app.dic_index= d.mapToIndex(app.dic_map);
 		//		dic_yw= d.mapToMap_yw(dic_map);
 		//		dic_li= d.mapToMap_li(dic_map);
 		//		dic_hai= d.mapToMap_hai(dic_map);
