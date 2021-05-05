@@ -21,8 +21,8 @@ public class DictionaryStandardDB{
 	public Map<String, Map<String, Object>> dbToMap(String primaryKey, String tabKey) throws IOException{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
 		Map<String, Map<String, Object>> dbMap= new HashMap<>();
-		Map<String, Object> map= DictionaryPLSQLStandardDB.bootORM(tabKey);
-		//Map<String, Object> map= DictionaryPLSQLStandardDB.bootPLSQL(tabKey);
+		Map<String, Object> map= DictionaryPLSQLStandardDB.bootORMReadDBInCommonWay(tabKey);
+		//Map<String, Object> map= DictionaryPLSQLStandardDB.bootPLSQLReadDBInCommonWay(tabKey);
 		ArrayList list= (ArrayList)map.get("obj");
 		Iterator<HashMap<String, Object>> iterator= list.iterator();
 		Here:

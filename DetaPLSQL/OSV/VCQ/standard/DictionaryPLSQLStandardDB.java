@@ -14,7 +14,7 @@ public class DictionaryPLSQLStandardDB{
 		return dic_list;
 	}
 	
-	public static Map<String, Object> bootORM(String tabKey) throws IOException{
+	public static Map<String, Object> bootORMReadDBInCommonWay(String tabKey) throws IOException{
 		Map<String, Object> map= null;
 		try {
 			PLORMInterf orm= new PLORMImpl();
@@ -32,7 +32,7 @@ public class DictionaryPLSQLStandardDB{
 		return map;
 	}	
 	
-	public static Map<String, Object> bootPLSQL(String tabKey) throws IOException{
+	public static Map<String, Object> bootPLSQLReadDBInCommonWay(String tabKey) throws IOException{
 		Map<String, Object> map= null;
 		try {
 			String plsql= "setRoot:C:/DetaDB1;" + 
