@@ -1,6 +1,5 @@
 package ME.APM.VSQ.zhongYiFuChan;
 import java.awt.Color;
-
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Font;
@@ -12,7 +11,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -42,6 +40,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
+import OSV.VCQ.standard.DictionaryStandardDB;
 //import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 public class FqzPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
@@ -60,7 +59,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 	public DefaultTableModel newTableModel = null;
 	public List<String> copy;
 	public List<String> dic_list;
-	public Map<String, String> dic_map;
+	public Map<String, Object> dic_map;
 	public Object[] columnTitle = {"ID", "打分", "病名", "内容用药"};
 	public Analyzer analyzer;  	
 	public Map<String, String> pos;
@@ -648,32 +647,32 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 //		//我本来想用URLencoder转代码，就不需要用@标识@了。以后改下。先用我大TIN god标识。
 //				buttonZYSZ= new DetaButton("导出中医生殖");
 //				buttonZYSZ.setBounds(740, 0, 100, 30);
-//				buttonZYSZ.addActionListener(new ActionListener() {
-//					public void actionPerformed(ActionEvent e) {
-//						boolean mod= true;
-//						for(int i= 0; i< table.getRowCount(); i++){
-//							try {
-//								Thread.sleep(150);
-//							} catch (InterruptedException e2) {
-//								// TODO Auto-generated catch block
-//								e2.printStackTrace();
-//							}
-//							String plsql= "setRoot:C:/DetaDB1;";
-//							plsql+= "baseName:ZYY;"; 
-//							plsql+= "tableName:zysz:insert;" +
-//									"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@Tin@")+ ";"+ 
-//									"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@Tin@")+ ";"+ 
-//									"culumnValue:病名:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 2).toString().replace(":", "@Tin@"))+ ";"+ 
-//									"culumnValue:用药:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@Tin@"))+ ";";
-//							try {
-//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
-//							}catch(Exception e1) {
-//								e1.printStackTrace();
-//							}
-//						}}
-//				});
-		
-		
+		//				buttonZYSZ.addActionListener(new ActionListener() {
+		//					public void actionPerformed(ActionEvent e) {
+		//						boolean mod= true;
+		//						for(int i= 0; i< table.getRowCount(); i++){
+		//							try {
+		//								Thread.sleep(150);
+		//							} catch (InterruptedException e2) {
+		//								// TODO Auto-generated catch block
+		//								e2.printStackTrace();
+		//							}
+		//							String plsql= "setRoot:C:/DetaDB1;";
+		//							plsql+= "baseName:ZYY;"; 
+		//							plsql+= "tableName:zysz:insert;" +
+		//									"culumnValue:ID:"+ table.getValueAt(i, 0).toString().replace(":", "@Tin@")+ ";"+ 
+		//									"culumnValue:打分:"+ table.getValueAt(i, 1).toString().replace(":", "@Tin@")+ ";"+ 
+		//									"culumnValue:病名:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 2).toString().replace(":", "@Tin@"))+ ";"+ 
+		//									"culumnValue:用药:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@Tin@"))+ ";";
+		//							try {
+		//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+		//							}catch(Exception e1) {
+		//								e1.printStackTrace();
+		//							}
+		//						}}
+		//				});
+
+
 		Box buttonBox = new Box(BoxLayout.X_AXIS);  
 		buttonBox.add(buttonPrev);
 		buttonBox.add(buttonNext);
@@ -704,17 +703,28 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 		return name;
 	}	
 
-	@SuppressWarnings({"serial" })
+	@SuppressWarnings({"serial", "unused" })
 	public javax.swing.JTable jTable() throws IOException {  
-//		Dictionary d = new Dictionary();
-//		dic_list = d.txtToListName();
-//		dic_map = d.listNameToMap(dic_list);//.listNameToMap(dic_list);
-		
-		DictionaryDB d= new DictionaryDB();
-		Map<String, Object> dic_bing_ming= new HashMap<>();
-		Map<String, Object> dic_yongyao= new HashMap<>();
-		dic_map= d.txtToMap(dic_bing_ming, dic_yongyao);
-		
+		//		Dictionary d = new Dictionary();
+		//		dic_list = d.txtToListName();
+		//		dic_map = d.listNameToMap(dic_list);//.listNameToMap(dic_list);
+
+
+		//测试下刚写的标准读表函数.
+		DictionaryStandardDB d= new DictionaryStandardDB();
+		String primaryKey= "病名";
+		String tabKey= "zysz";
+		//以后设计 uniq forenkey等.
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
+		Map<String, Object> dic_bing_ming= map.get("病名");
+		Map<String, Object> dic_yongyao= map.get("用药");
+		dic_map= map.get("dic_map");
+
+		//		DictionaryDB d= new DictionaryDB();
+		//		Map<String, Object> dic_bing_ming= new HashMap<>();
+		//		Map<String, Object> dic_yongyao= new HashMap<>();
+		//		dic_map= d.txtToMap(dic_bing_ming, dic_yongyao);
+
 		tableData_old= new Object[dic_map.size()][4];
 		Iterator<String> iter = dic_map.keySet().iterator();
 		copy = new ArrayList<String>();
@@ -725,7 +735,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 					,""+0
 					,copy.get(i).trim()
 					,dic_yongyao.get(copy.get(i)) };
-					//,dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "")};
+			//,dic_map.get(copy.get(i)).toString().replaceAll("\\s*", "")};
 		}	
 		table = new javax.swing.JTable();  
 		newTableModel = new DefaultTableModel(tableData_old,columnTitle){  
@@ -790,8 +800,8 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 					if (!setOfi.equals("")) {
 						if(key.contains(setOfi)&&(pos.get(setOfi).contains("名")||pos.get(setOfi).contains("动")||pos.get(setOfi).contains("形"))) {
 							page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi+"</font></span>");
-		    				continue Here;
-		    			}
+							continue Here;
+						}
 						if(pos.get(setOfi).contains("名")) {
 							page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 							continue Here;
@@ -889,7 +899,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 		int copyCount = 0;
 		List<String> list= analyzer.parserMixedString(key);
 		String[] string= ListSwap.listToArray(list);
-		
+
 		String[] stringReg= new String[key.length()/3];
 		for(int i= 0; i< stringReg.length; i++) {
 			stringReg[i]= key.substring(i*3, (i*3+ 3)<key.length()?(i*3+ 3):key.length()-1);
@@ -919,7 +929,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 						}
 						reg[copyCount] += 1;
 						score_code[copyCount] += (iteratorForCopyString.contains(mapSearchaAtII) ? 2 : 1) 
-							* (!pos.get(mapSearchaAtII).contains("名") ? pos.get(mapSearchaAtII).contains("动")? 45 : 1 : 50) 
+								* (!pos.get(mapSearchaAtII).contains("名") ? pos.get(mapSearchaAtII).contains("动")? 45 : 1 : 50) 
 								<< mapSearchaAtII.length() * wordFrequencySearch.getFrequency();
 						continue Here;
 					}

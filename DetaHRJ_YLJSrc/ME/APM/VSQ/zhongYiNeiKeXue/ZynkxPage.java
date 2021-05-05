@@ -42,6 +42,7 @@ import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 //import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 import OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
+import OSV.VCQ.standard.DictionaryStandardDB;
 public class ZynkxPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -777,8 +778,9 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 		//测试下刚写的标准读表函数.
 		DictionaryStandardDB d= new DictionaryStandardDB();
 		String primaryKey= "病症药名";
+		String tabKey= "zyfj";
 		//以后设计 uniq forenkey等.
-		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey);
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
 		dic_bzm=map.get("病症药名");
 		dic_chu_fang=map.get("成人处方");
 		dic_mz=map.get("脉症");

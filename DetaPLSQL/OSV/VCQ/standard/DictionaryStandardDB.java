@@ -1,4 +1,4 @@
-package ME.APM.VSQ.zhongYiNeiKeXue;
+package OSV.VCQ.standard;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,20 +20,20 @@ public class DictionaryStandardDB{
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public Map<String, Map<String, Object>> dbToMap(String primaryKey) throws IOException{
+	public Map<String, Map<String, Object>> dbToMap(String primaryKey, String tabKey) throws IOException{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
 		Map<String, Map<String, Object>> dbMap= new HashMap<>();
 		Map<String, Object> map= null;
 		//for(int i=0; i<)
 		//		String plsql= "setRoot:C:/DetaDB;" + 
 		//				"baseName:ZYY;" + 
-		//				"tableName:zyhj:select;" +
+		//				"tableName:"+ tabKey +":select;" +
 		//				"condition:or:ID|<=|3000;";
 		//"condition:or:ID|==|2;";
 		try {
 			PLORMInterf orm= new PLORMImpl();
 			map= orm.startAtRootDir("C:/DetaDB1").withBaseName("ZYY")
-					.withTableSelect("zyfj").withCondition("or")
+					.withTableSelect(tabKey).withCondition("or")
 					.let("ID").lessThanAndEqualTo("3000")
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
