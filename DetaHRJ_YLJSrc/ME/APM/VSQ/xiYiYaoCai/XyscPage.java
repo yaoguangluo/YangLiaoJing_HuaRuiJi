@@ -40,6 +40,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
+import OSV.VCQ.standard.DictionaryStandardDB;
 public class XyscPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;
@@ -864,23 +865,47 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 		return name;
 	}
 
-	@SuppressWarnings({ "serial" })
+	@SuppressWarnings({ "serial", "unused" })
 	public javax.swing.JTable jTable() throws IOException {  
 		//dictionaryFromDB d= new dictionaryFromDB();
-		Dictionary d= new Dictionary();
-		dic_yao_ming= new ConcurrentHashMap<>();
-		dic_chengfen_danwei= new ConcurrentHashMap<>();
-		dic_yong_fa= new ConcurrentHashMap<>();
-		dic_yong_liang= new ConcurrentHashMap<>();
-		dic_yao_li= new ConcurrentHashMap<>();
-		dic_zhu_yi= new ConcurrentHashMap<>();
-		dic_shi_ying= new ConcurrentHashMap<>();
-		dic_jie_shao= new ConcurrentHashMap<>();
-		dic_bu_liang_fan_ying= new ConcurrentHashMap<>();
-		dic_yao_wu_xiang_hu_zuo_yong= new ConcurrentHashMap<>();
-		dic_qi_ta= new ConcurrentHashMap<>();
-		d.txtToMap(dic_yao_ming, dic_chengfen_danwei, dic_yong_fa, dic_yao_li, dic_zhu_yi, dic_shi_ying,
-				dic_bu_liang_fan_ying, dic_yao_wu_xiang_hu_zuo_yong, dic_qi_ta, dic_yong_liang, dic_jie_shao);
+		//Dictionary d= new Dictionary();
+//		dic_yao_ming= new ConcurrentHashMap<>();
+//		dic_chengfen_danwei= new ConcurrentHashMap<>();
+//		dic_yong_fa= new ConcurrentHashMap<>();
+//		dic_yong_liang= new ConcurrentHashMap<>();
+//		dic_yao_li= new ConcurrentHashMap<>();
+//		dic_zhu_yi= new ConcurrentHashMap<>();
+//		dic_shi_ying= new ConcurrentHashMap<>();
+//		dic_jie_shao= new ConcurrentHashMap<>();
+//		dic_bu_liang_fan_ying= new ConcurrentHashMap<>();
+//		dic_yao_wu_xiang_hu_zuo_yong= new ConcurrentHashMap<>();
+//		dic_qi_ta= new ConcurrentHashMap<>();
+//		d.txtToMap(dic_yao_ming, dic_chengfen_danwei, dic_yong_fa, dic_yao_li, dic_zhu_yi, dic_shi_ying,
+//				dic_bu_liang_fan_ying, dic_yao_wu_xiang_hu_zuo_yong, dic_qi_ta, dic_yong_liang, dic_jie_shao);
+//		
+//		
+		
+
+		//测试下刚写的标准读表函数.
+		DictionaryStandardDB d= new DictionaryStandardDB();
+		String primaryKey= "西药名";
+		String tabKey= "xybg";
+		//以后设计 uniq forenkey等.
+		//记得在数据库文件rows 的row 下加 is_delete_0 文件夹. 不然不显示哦 罗瑶光20210505
+		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
+		Map<String, Object> dic_yao_ming= map.get("西药名");
+		Map<String, Object> dic_jie_shao= map.get("介绍");
+		Map<String, Object> dic_yao_li= map.get("药理");
+		Map<String, Object> dic_chengfen_danwei= map.get("主要成分");
+		Map<String, Object> dic_yong_fa= map.get("用法");
+		Map<String, Object> dic_zhu_yi= map.get("注意事项");
+		Map<String, Object> dic_shi_ying= map.get("适应症");
+		Map<String, Object> dic_bu_liang_fan_ying= map.get("不良反应");
+		Map<String, Object> dic_yong_liang= map.get("用量");
+		Map<String, Object> dic_yao_wu_xiang_hu_zuo_yong= map.get("药物相互作用");
+		Map<String, Object> dic_qi_ta= map.get("其他");
+		Map<String, Object> dic_map= map.get("dic_map");
+
 		tableData_old = new Object[dic_yao_ming.size()][18];
 		Iterator<String> iter = dic_yao_ming.keySet().iterator();
 		copy = new ArrayList<>();

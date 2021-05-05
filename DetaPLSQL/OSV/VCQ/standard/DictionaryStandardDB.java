@@ -54,7 +54,7 @@ public class DictionaryStandardDB{
 					HashMap<String, Object> rowValue= (HashMap<String, Object>) hashmap.get("rowValue");
 					String keyName= null;
 					HashMap<String, Object> temp= (HashMap<String, Object>) rowValue.get(primaryKey);
-					keyName= null== temp.get("culumnValue")?"":temp.get("culumnValue").toString().replace("@Tin@", ":");
+					keyName= null== temp.get("culumnValue")?"":temp.get("culumnValue").toString().replace("@Tin@", ":").replace("@biky@", ":");
 					if(null== keyName) {
 						continue Here;
 					}
@@ -69,7 +69,7 @@ public class DictionaryStandardDB{
 					if(isIniton) {//稍后处理迪摩根化简
 						gg= new FullDNATokenPDI().initonDeSect(gg);
 					}
-					keyName= gg.replace("@Tin@", ":");
+					keyName= gg.replace("@Tin@", ":").replace("@biky@", ":");
 					if(dbMap.containsKey(primaryKey)) {
 						//获取hashmap 子集;
 						Map<String, Object> hashMap= dbMap.get(primaryKey);
@@ -100,7 +100,8 @@ public class DictionaryStandardDB{
 //									isIniton= false;
 //								}
 //								if(isIniton) {//稍后处理迪摩根化简
-									gg= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
+									String stringGG= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
+									gg= stringGG.isEmpty()?gg.replace("null", ""): stringGG;//  先做个简单的优化,稍后进行规范化OSV.
 								//}
 							}catch(Exception e) {
 								e.printStackTrace();
@@ -109,18 +110,18 @@ public class DictionaryStandardDB{
 								//获取hashmap 子集;
 								Map<String, Object> hashMap= dbMap.get(string);
 								//hashmap 子集添加数据
-								hashMap.put(keyName, gg.replace("@Tin@", ":"));
+								hashMap.put(keyName, gg.replace("@Tin@", ":").replace("@biky@", ":"));
 								//hashmap 子集存档
 								dbMap.put(string, hashMap);
 							}else {
 								Map<String, Object> hashMap= new HashMap<>();
-								hashMap.put(keyName, gg.replace("@Tin@", ":"));
+								hashMap.put(keyName, gg.replace("@Tin@", ":").replace("@biky@", ":"));
 								dbMap.put(string, hashMap);
 							}
-							stringBuilder.append(gg.replace("@Tin@", ":"));
+							stringBuilder.append(gg.replace("@Tin@", ":").replace("@biky@", ":"));
 						}
 					}
-					dic_map.put(keyName, stringBuilder.toString().replace("@Tin@", ":"));
+					dic_map.put(keyName, stringBuilder.toString().replace("@Tin@", ":").replace("@biky@", ":"));
 				}
 			}
 		dbMap.put("dic_map", dic_map);
