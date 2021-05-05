@@ -23,27 +23,8 @@ public class DictionaryStandardDB{
 	public Map<String, Map<String, Object>> dbToMap(String primaryKey, String tabKey) throws IOException{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();
 		Map<String, Map<String, Object>> dbMap= new HashMap<>();
-		Map<String, Object> map= null;
-		//for(int i=0; i<)
-		//		String plsql= "setRoot:C:/DetaDB;" + 
-		//				"baseName:ZYY;" + 
-		//				"tableName:"+ tabKey +":select;" +
-		//				"condition:or:ID|<=|3000;";
-		//"condition:or:ID|==|2;";
-		try {
-			PLORMInterf orm= new PLORMImpl();
-			map= orm.startAtRootDir("C:/DetaDB1").withBaseName("ZYY")
-					.withTableSelect(tabKey).withCondition("or")
-					.let("ID").lessThanAndEqualTo("3000")
-					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
-					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-					.finalExec(true).returnAsMap();
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
-		}catch(Exception e1) {
-			//准备写回滚
-			e1.printStackTrace();
-		}
+		Map<String, Object> map= DictionaryPLSQLStandardDB.bootORM(tabKey);
+		//Map<String, Object> map= DictionaryPLSQLStandardDB.bootPLSQL(tabKey);
 		ArrayList list= (ArrayList)map.get("obj");
 		Iterator<HashMap<String, Object>> iterator= list.iterator();
 		Here:
@@ -58,17 +39,10 @@ public class DictionaryStandardDB{
 					if(null== keyName) {
 						continue Here;
 					}
-					String gg= null== temp.get("culumnValue")? "": temp.get("culumnValue").toString();
+					String stringGG= null== temp.get("culumnValue")? "": temp.get("culumnValue").toString();
 					//因为zybc我有明文存储, 所以先加个注释,以后修正.
-					boolean isIniton= true;
-					if(!gg.contains("A")&&!gg.contains("O")&&!gg.contains("P")&&!gg.contains("M")&&
-							!gg.contains("V")&&!gg.contains("E")&&!gg.contains("C")&&!gg.contains("S")&&
-							!gg.contains("I")&&!gg.contains("D")&&!gg.contains("U")&&!gg.contains("Q")) {
-						isIniton= false;
-					}
-					if(isIniton) {//稍后处理迪摩根化简
-						gg= new FullDNATokenPDI().initonDeSect(gg);
-					}
+					String gg= new FullDNATokenPDI().initonDeSect(stringGG);
+					gg= gg.isEmpty()?stringGG.replace("null", ""): gg;//  先做个简单的优化,稍后进行规范化OSV.
 					keyName= gg.replace("@Tin@", ":").replace("@biky@", ":");
 					if(dbMap.containsKey(primaryKey)) {
 						//获取hashmap 子集;
@@ -94,15 +68,8 @@ public class DictionaryStandardDB{
 							gg= null== temp.get("culumnValue")? "": temp.get("culumnValue").toString();	
 							//去null//去empty 稍后
 							try {
-//								if(!gg.contains("A")&&!gg.contains("O")&&!gg.contains("P")&&!gg.contains("M")&&
-//										!gg.contains("V")&&!gg.contains("E")&&!gg.contains("C")&&!gg.contains("S")&&
-//										!gg.contains("I")&&!gg.contains("D")&&!gg.contains("U")&&!gg.contains("Q")) {
-//									isIniton= false;
-//								}
-//								if(isIniton) {//稍后处理迪摩根化简
-									String stringGG= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
-									gg= stringGG.isEmpty()?gg.replace("null", ""): stringGG;//  先做个简单的优化,稍后进行规范化OSV.
-								//}
+								stringGG= new FullDNATokenPDI().initonDeSect(gg.replace("null", ""));
+								gg= stringGG.isEmpty()?gg.replace("null", ""): stringGG;//  先做个简单的优化,稍后进行规范化OSV.
 							}catch(Exception e) {
 								e.printStackTrace();
 							}
