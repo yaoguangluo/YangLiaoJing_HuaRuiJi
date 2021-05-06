@@ -95,12 +95,12 @@ NLP Algorithm of Matching The POS Scored Sentences 20191229 Yaoguang. Luo
 https://gitee.com/DetaChina/Data_Prediction/blob/master/src/org/tinos/deta/NLP/NLPTopicMatch.java   
 
 #### 技术和引用
-中华人民共和国 国家版权局 软著登字第5447819号 数据预测引擎系统 V1.0.0
-坐标熵增化:欧基里德
-点线面知识:解析几何教材
-三维空间坐标计算:立体几何教材
-极限小区间叠加:高等数学教材
-欧拉图论:离散数学教材
-正交概率差值:数据挖掘教材
-###### 申明
-GNU GPL 2.0 协议
+中华人民共和国 国家版权局 软著登字第5447819号 数据预测引擎系统 V1.0.0     
+坐标熵增化:欧基里德     
+点线面知识:解析几何教材     
+三维空间坐标计算:立体几何教材     
+极限小区间叠加:高等数学教材     
+欧拉图论:离散数学教材     
+正交概率差值:数据挖掘教材    
+###### 申明   
+GNU GPL 2.0 协议   
