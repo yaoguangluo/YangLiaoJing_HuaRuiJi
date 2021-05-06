@@ -177,7 +177,7 @@
  5>印度 班加罗尔大学瑞拉理工学院, 基督学院 作者在此 接受了两年全日制 AICTE POST GRADUATE 研究生学历教育  
  6>美国 加州路德大学 作者在此 接受了两年全日制 WASC POST GRADUATE 研究生学历教育 获得WASC理学荣誉硕士学位  
  7>中国 卫健委 人民卫生出版社 作者的西医部分医学资料 用来大数据测试分析 来自该出版社书籍(豆丁 百度文库上购买)  
- 8>硬件研发设备与软件系统: ECLIPSE, GRADLE, GITHUB, GITEE, WECHAT, 联想。  
+ 8>硬件与软件研发设备系统: ECLIPSE, "GRADLE, 改成 Maven, 目前工程不再用非原生组件", GITHUB, GITEE, Bitbucket, CodingNet, Windows, 联想笔记本。  
  9>美国 加州立理工大学, 作者在此图书馆的 4楼待了3年. 免费的阅读了很多计算机类文献书籍. 
 
 ### 第三方开源包引用情况
