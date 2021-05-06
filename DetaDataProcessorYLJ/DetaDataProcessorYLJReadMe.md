@@ -11,7 +11,9 @@ DNA元基催化版本:线性卷积包
 DFT, FFT思想 来自 傅里叶, 库力, 图基.       
 java sound API Demo 来自 stackflows, Sun Technology.     
 树和图论思想来自 离散数学教材.     
-Cache缓存的甲骨文和SUN的官方demo函数 来自 亚米的王浩雷 介绍我三级缓存思想, 我用谷歌搜索的.     
+Cache缓存的甲骨文和SUN的官方demo函数 来自 亚米的王浩雷 介绍我三级缓存思想, 我用谷歌搜索的.    
+GZIP 来自哈夫曼的编码思想. 提出者是 Jean-loup Gailly 和 Mark Adler
+SOUND 来自JDK sound 原生组件 demo.
 
 ###### 申明
 GNU GPL 2.0 协议
