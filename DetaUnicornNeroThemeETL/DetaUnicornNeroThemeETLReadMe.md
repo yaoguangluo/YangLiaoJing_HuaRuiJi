@@ -4,7 +4,7 @@ DNA元基催化版本:Unicorn ETL
 
 #### 引用
 中华人民共和国 国家版权局 软著登字第4240558号 德塔ETL人工智能可视化数据流分析引擎系统 V1.0.2      
-ETL 节点的分类命名采用KNIME, ORAGE, KETTEL, weka, ORACLE 等统一标准分类函数: config配置, execute运行, show or view查看.   
+ETL 节点的分类命名采用KNIME, ORANGE, KETTEL, Weka, ORACLE 等统一标准分类函数: config配置, execute运行, show or view查看.   
 神经元节点我设计的外观来自牛津大学的牛顿.霍华德教授发布的神经细胞图片的外观获得的灵感(该神经元图片展示的是人类真实的神经元.).    
 
 
