@@ -52,13 +52,34 @@ public class UpdateCellStandard{
 		return map;
 	}	
 	
-	public static Map<String, Object> UpdateCellPLSQL(String tabKey) throws IOException{
+	
+//	update samples tableName:test:update; 
+//	condition:or:testCulumn1|<|20:testCulumn2|==|fire;
+//	condition:and:testCulumn1|>|100:testCulumn2|==|fire;
+//	join:backend:utest;
+//	condition:and:uCulumn3|<|20; 
+//	relation:and:testCulumn1|==|uCulumn1:testCulumn2|!=|uCulumn2; 
+//	culumnValue:date0:19850525;
+//	culumnValue:date1:19850526;
+	
+	
+//	String plsql= "setRoot:C:/DetaDB1;" + 
+//	"baseName:ZYY;" + 
+//	"tableName:"+ tabKey+ ":update;" +
+//	"condition:or:ID|==|rowId;" +
+//	"culumnValue:cellName:cellValue;";
+//
+//  condition:"我似乎没有设计rowid culumnid的数字选项 函数,稍后补充下":19850526;
+//  condition 可以用uid in 或者 uid== 来实现.这样会导致计算变慢,所以 设计rowid culumnid的数字比较选项是有必要的.
+	
+	public static Map<String, Object> UpdateCellPLSQL(String tabKey, String rowId, String cellName, String cellValue) throws IOException{
 		Map<String, Object> map= null;
 		try {
 //			String plsql= "setRoot:C:/DetaDB1;" + 
-//					"baseName:ZYY;" + 
-//					"tableName:"+ tabKey +":select;" +
-//					"condition:or:ID|<=|3000;";
+//			"baseName:ZYY;" + 
+//			"tableName:"+ tabKey+ ":update;" +
+//			"condition:or:ID|==|rowId;" +
+//			"culumnValue:cellName:cellValue;";
 //			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			//准备写回滚
