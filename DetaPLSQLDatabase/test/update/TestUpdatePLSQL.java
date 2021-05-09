@@ -20,6 +20,7 @@ public class TestUpdatePLSQL{
 		DetaDBUtil.initCulumnNameType();
 		//
 		//String tabKey, String rowId, String cellName, String cellValue
-		UpdateCellStandard.UpdateCellPLSQL("gjjd", "5", "书名", "111");
+		//UpdateCellStandard.UpdateCellPLSQL("gjjd", "5", "书名", "222");
+		UpdateCellStandard.UpdateCellORM("gjjd", "5", "书名", "222");
 	}
 }
