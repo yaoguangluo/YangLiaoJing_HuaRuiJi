@@ -75,12 +75,12 @@ public class UpdateCellStandard{
 	public static Map<String, Object> UpdateCellPLSQL(String tabKey, String rowId, String cellName, String cellValue) throws IOException{
 		Map<String, Object> map= null;
 		try {
-//			String plsql= "setRoot:C:/DetaDB1;" + 
-//			"baseName:ZYY;" + 
-//			"tableName:"+ tabKey+ ":update;" +
-//			"condition:or:ID|==|rowId;" +
-//			"culumnValue:cellName:cellValue;";
-//			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			String plsql= "setRoot:C:/DetaDB1;" + 
+			"baseName:ZYY;" + 
+			"tableName:"+ tabKey+ ":update;" +
+			"condition:or:ID|==|"+ rowId+ ";" +
+			"culumnValue:"+cellName+ ":"+ cellValue+ ";";
+			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			//×¼±¸Ð´»Ø¹ö
 			e1.printStackTrace();
