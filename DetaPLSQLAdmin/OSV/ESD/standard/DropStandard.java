@@ -20,11 +20,14 @@ public class DropStandard{
 	//	tableName:test:drop; 
 
 	public static Map<String, Object> DropCellORM(String rootPath, String baseName
-			, String tabKey) throws IOException{
+			, String tabKey) throws Exception{
 		PLORMInterf orm= new PLORMImpl();
 		orm= orm.startAtRootDir(rootPath)
 				.withBaseName(baseName)
-				.withTableDrop(tabKey);
+				.withTableDrop(tabKey)
+				.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
+				.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
+				.finalExec(true);
 		return null;
 	}	
 
