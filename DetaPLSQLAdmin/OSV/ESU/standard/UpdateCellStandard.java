@@ -34,7 +34,8 @@ public class UpdateCellStandard{
 	//	culumnValue:date0:19850525;
 	//	culumnValue:date1:19850526;
 
-	public static Map<String, Object> UpdateCellORM(String tabKey, String rowId, String cellName, String cellValue) throws IOException{
+	public static Map<String, Object> UpdateCellORM(String tabKey, String rowId, String cellName
+			, String cellValue) throws IOException{
 		Map<String, Object> map= null;
 		try {
 			PLORMInterf orm= new PLORMImpl();
@@ -52,6 +53,27 @@ public class UpdateCellStandard{
 		}
 		return map;
 	}	
+
+	public static Map<String, Object> UpdateCellORMByRowId(String rootPath, String baseName, boolean unTest
+			, String tabKey, String rowId, String cellName, String cellValue) throws IOException{
+		Map<String, Object> map= null;
+		try {
+			PLORMInterf orm= new PLORMImpl();
+			orm.startAtRootDir(rootPath).withBaseName(baseName)
+			.withTableUpdate(tabKey).withCondition("or")
+			.let("ID").equalTo(rowId)
+			.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
+			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
+			.withCulumnValue(cellName, cellValue)
+			.finalExec(unTest);
+			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
+		}catch(Exception e1) {
+			//准备写回滚
+			e1.printStackTrace();
+		}
+		return map;
+	}	
+
 
 
 	//	update samples tableName:test:update; 
@@ -73,7 +95,8 @@ public class UpdateCellStandard{
 	//  condition:"我似乎没有设计rowid culumnid的数字选项 函数,稍后补充下":19850526;
 	//  condition 可以用uid in 或者 uid== 来实现.这样会导致计算变慢,所以 设计rowid culumnid的数字比较选项是有必要的.
 
-	public static Map<String, Object> UpdateCellPLSQL(String tabKey, String rowId, String cellName, String cellValue) throws IOException{
+	public static Map<String, Object> UpdateCellPLSQL(String tabKey, String rowId, String cellName
+			, String cellValue) throws IOException{
 		Map<String, Object> map= null;
 		try {
 			String plsql= "setRoot:C:/DetaDB1;" + 
