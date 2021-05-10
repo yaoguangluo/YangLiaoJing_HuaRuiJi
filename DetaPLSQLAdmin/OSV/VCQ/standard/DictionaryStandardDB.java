@@ -16,7 +16,7 @@ public class DictionaryStandardDB{
 		List<String> dic_list= new ArrayList<>();
 		return dic_list;
 	}
-    //gg的意思是青年小哥哥 GG 一个temp 变量 哈
+	//gg的意思是青年小哥哥 GG 一个temp 变量 哈
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Map<String, Map<String, Object>> dbToMap(String primaryKey, String tabKey) throws IOException{
 		Map<String, Object> dic_map= new ConcurrentHashMap<String, Object>();

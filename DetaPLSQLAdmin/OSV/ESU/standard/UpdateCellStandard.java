@@ -74,7 +74,26 @@ public class UpdateCellStandard{
 		return map;
 	}	
 
-
+	public static Map<String, Object> UpdateCellORMByEquals(String rootPath, String baseName
+			, boolean unTest, String tabKey, String conditionSubject, String conditionObject
+			, String cellName, String cellValue) throws IOException{
+		Map<String, Object> map= null;
+		try {
+			PLORMInterf orm= new PLORMImpl();
+			orm.startAtRootDir(rootPath).withBaseName(baseName)
+			.withTableUpdate(tabKey).withCondition("or")
+			.let(conditionSubject).equalTo(conditionObject)
+			.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
+			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
+			.withCulumnValue(cellName, cellValue)
+			.finalExec(unTest);
+			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
+		}catch(Exception e1) {
+			//准备写回滚
+			e1.printStackTrace();
+		}
+		return map;
+	}	
 
 	//	update samples tableName:test:update; 
 	//	condition:or:testCulumn1|<|20:testCulumn2|==|fire;

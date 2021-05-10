@@ -32,8 +32,8 @@ public class DictionaryPLSQLStandardDB{
 		return map;
 	}	
 
-	public static Map<String, Object> bootORMReadDBByRangeRowID(String rootPath, String baseName, boolean unTest
-			, String tabKey, String RangeRowIDCount) throws IOException{
+	public static Map<String, Object> bootORMReadDBByRangeRowID(String rootPath, String baseName
+			, boolean unTest, String tabKey, String RangeRowIDCount) throws IOException{
 		Map<String, Object> map= null;
 		try {
 			PLORMInterf orm= new PLORMImpl();
@@ -50,7 +50,25 @@ public class DictionaryPLSQLStandardDB{
 		}
 		return map;
 	}	
-
+	//下面这些例子, 本人只是给大家一些更多的参考而已.
+	public static Map<String, Object> bootORMReadDBByLessThanAndEqualTo(String rootPath, String baseName
+			, String conditionSubject, String conditionObject, boolean unTest, String tabKey) throws IOException{
+		Map<String, Object> map= null;
+		try {
+			PLORMInterf orm= new PLORMImpl();
+			map= orm.startAtRootDir(rootPath).withBaseName(baseName)
+					.withTableSelect(tabKey).withCondition("or")
+					.let(conditionSubject).lessThanAndEqualTo(conditionObject)
+					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
+					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
+					.finalExec(unTest).returnAsMap();
+			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
+		}catch(Exception e1) {
+			//准备写回滚
+			e1.printStackTrace();
+		}
+		return map;
+	}	
 
 	public static Map<String, Object> bootPLSQLReadDBInCommonWay(String tabKey) throws IOException{
 		Map<String, Object> map= null;
