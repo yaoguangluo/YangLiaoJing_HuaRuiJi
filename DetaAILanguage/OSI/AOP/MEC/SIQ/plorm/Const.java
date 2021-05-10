@@ -7,6 +7,7 @@ public class Const{
 	public final static String SELECT= "select";
 	public final static String CREATE= "create";
 	public final static String DELETE= "delete";
+	public final static String DROP= "drop";
 	public final static String INSERT= "insert";
 	public final static String UPDATE= "update";
 	public final static String CONDITION= "condition";

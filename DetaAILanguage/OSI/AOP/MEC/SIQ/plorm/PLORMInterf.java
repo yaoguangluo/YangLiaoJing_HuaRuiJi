@@ -39,4 +39,5 @@ public interface PLORMInterf{
 	public Map<String, Object> returnAsMap();
 	public PLORMInterf checkAndFixPlsqlGrammarErrors();
 	public PLORMInterf checkAndFixSystemEnvironmentErrors();
+	public PLORMInterf withTableDrop(String tabKey);
 }

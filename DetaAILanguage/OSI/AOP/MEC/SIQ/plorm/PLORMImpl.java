@@ -40,6 +40,13 @@ public class PLORMImpl implements PLORMInterf{
 		return this; 
 	}
 	
+	public PLORMInterf withTableDrop(String tableName) {
+		PLSQL+= Const.SEMICOLON+ Const.TABLE_NAME+ Const.COLON
+				+ tableName
+				+ Const.COLON+ Const.DROP;
+		return this; 
+	}
+	
 	public PLORMImpl withTableDelete(String tableName) {
 		PLSQL+= Const.SEMICOLON+ Const.TABLE_NAME+ Const.COLON
 				+ tableName
