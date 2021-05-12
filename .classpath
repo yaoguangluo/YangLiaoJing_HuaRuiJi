@@ -25,7 +25,7 @@
 	<classpathentry kind="src" path="DataParserNeroMap"/>
 	<classpathentry kind="src" path="DataParserSensingMap"/>
 	<classpathentry kind="src" path="DataParserWordSegment"/>
-	<classpathentry kind="src" path="DetaUnicornETLNodePGMedicine"/>
+	<classpathentry kind="src" path="DataUnicornETLNodePGMedicine"/>
 	<classpathentry kind="src" path="DetaPLSQL"/>
 	<classpathentry kind="src" path="DetaUnicornETLNodeSmallMedicine"/>
 	<classpathentry kind="src" path="DetaDataProcessorSound"/>
