@@ -29,7 +29,7 @@
 	<classpathentry kind="src" path="DataPLSQL"/>
 	<classpathentry kind="src" path="DataUnicornETLNodeSmallMedicine"/>
 	<classpathentry kind="src" path="DataProcessorSound"/>
-	<classpathentry kind="src" path="DetaSuggest"/>
+	<classpathentry kind="src" path="DataSuggest"/>
 	<classpathentry kind="src" path="DetaDNAPDE"/>
 	<classpathentry kind="src" path="DetaUnicornNeroThemeETL"/>
 	<classpathentry kind="src" path="DetaUnicornUI"/>
