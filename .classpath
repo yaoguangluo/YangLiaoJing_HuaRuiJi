@@ -11,7 +11,7 @@
 	<classpathentry kind="src" path="DataWavelet"/>
 	<classpathentry kind="src" path="DataAILanguage"/>
 	<classpathentry kind="src" path="DataBioDNA3st"/>
-	<classpathentry kind="src" path="DetaBussinessIntelligence"/>
+	<classpathentry kind="src" path="DataBussinessIntelligence"/>
 	<classpathentry kind="src" path="DetaPLSQLDatabase"/>
 	<classpathentry kind="src" path="DetaDataSwap"/>
 	<classpathentry kind="src" path="DetaVPCSBootPLSQL"/>
