@@ -6,7 +6,7 @@
 	<classpathentry kind="src" path="ThirdPartyUtilsJVM"/>
 	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
 	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
-	<classpathentry kind="src" path="DetaYLJConfig"/>
+	<classpathentry kind="src" path="DataYLJConfig"/>
 	<classpathentry kind="src" path="DetaDataPrediction"/>
 	<classpathentry kind="src" path="DetaDataWavelet"/>
 	<classpathentry kind="src" path="DetaAILanguage"/>
