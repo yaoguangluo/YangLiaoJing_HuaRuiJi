@@ -22,7 +22,7 @@
 	<classpathentry kind="src" path="DataUnicornETLNodeNeiWaiKe"/>
 	<classpathentry kind="src" path="DataParserBehaviorMap"/>
 	<classpathentry kind="src" path="DataParserEmotionMap"/>
-	<classpathentry kind="src" path="DetaParserNeroMap"/>
+	<classpathentry kind="src" path="DataParserNeroMap"/>
 	<classpathentry kind="src" path="DetaParserSensingMap"/>
 	<classpathentry kind="src" path="DetaParserWordSegment"/>
 	<classpathentry kind="src" path="DetaUnicornETLNodePGMedicine"/>
