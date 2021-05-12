@@ -49,16 +49,16 @@
 
 ### 源码使用方法：  
  1>将jacob语音发音文件放入jdk或者JRE的 BIN目录 下， system32 的 driver目录下 或者 将函数注释掉。  
- 2>将DetaPLSQLDatabase项目目录下的DBconfig.zip文件解压缩在C盘下即可（注意路径名，去掉 副本 两个字），文件我已经裁掉了850个中药属性和 1550个西药属性，仅做数据库集成调试展示。  
+ 2>将DataPLSQLDatabase项目目录下的DBconfig.zip文件解压缩在C盘下即可（注意路径名，去掉 副本 两个字），文件我已经裁掉了850个中药属性和 1550个西药属性，仅做数据库集成调试展示。  
  2.1> 注意 数据库的row文件夹下面请自行添加 is_delete_0 文件夹标识，不然 养疗经不显示哦，详细见《DETA socket流 plsql数据库》 著作的 语法。  
  2.1.1> is_delete_0 文件夹 压缩后被删除了，不是作者的问题，可自行百度为什么zip压缩后，系统的空文件夹会被自动删除掉。  
  2.2> 注意 数据库的row文件夹下面ID项目 sample数据 缺失, 如果想做 DMA 计算环境请 自己补充0,1,2 来标识.  
  3>，64位windows用eclipse即可打开运行调试。  
  3.1> 软件运行环境为 JDK1.8版本 及 以上.  
- 4> 启动文件: DetaHRJ_YLJSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
+ 4> 启动文件: DataHRJ_YLJSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
  5> 工程函数整体为GBK, 有一些大sample文件和 字符处理的文本采用高级字符编辑为UTF8, 请注意, 避免乱码.#  
  5.1> 思路今天改变, 工程全局准备依旧使用GBK, 然后将所有字符串进行变量化, 然后变量全部放在变量STATBLE文件中用UTF8.  
- 5.2> 工程中的4个 ETLNode 文件包工程, 除了 DetaETLNodeMedicine, DetaUnicornETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
+ 5.2> 工程中的4个 ETLNode 文件包工程, 除了 DataETLNodeMedicine, DataUnicornETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
  5.3> 为什么工程用GBK,而下面的有些文件用UTF8, 因为, 很多操作系统默认字符集是GBK, 整体的UTF8工程在导入 和压缩后, 一些使用者解压稍微不注意会出现乱码. 而这个乱码不能再通过解码变成原文.  
  这是一个bug. 我测试了许多遍. 在这些年, 经常性出现这个问题. 我研究了后找到问题, 当系统自动将UTF8转码成GBK后,乱码中有 UTF8和GBK都不能识别的乱码符号, 当import转码失败后的乱码含有这种字符, 再转成正确的编码, 乱码只要有一个字符不能转成正确编码, 就会发生还是乱码的问题, 于是工程出错. 这就是我为什么要在GBK的主工程中下面个别用UTF8的动机.  
  6> 注意classpath 与 setting等 文件的运行配置, 环境配置和打包配置正确  
@@ -98,22 +98,22 @@
 
 ### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作  
  1>(中华人民共和国 国家版权局).软著登字第3951366号 德塔自然语言图灵系统研发 作者CN: 2019SR0530609    
- 见工程文件夹: DetaParserWordSegment, DetaParserNeroMap, DetaParserSensingMap, DetaParserBehaviorMap, DetaParserEmotionMap  
+ 见工程文件夹: DataParserWordSegment, DataParserNeroMap, DataParserSensingMap, DataParserBehaviorMap, DataParserEmotionMap  
    
  2>(中华人民共和国 国家版权局).软著登字第4240558号 ETL数据流处理软件研发引擎 作者CN: 2019R11L803285   
- 见工程文件夹: DetaUnicornNeroThemeETL, DetaUnicornUI,  
+ 见工程文件夹: DataUnicornNeroThemeETL, DataUnicornUI,  
    
  3>(中华人民共和国 国家版权局).软著登字第4584594号 德塔数据分析算法 Java 引擎系统 作者CN: 2019R11L1122752    
- 见工程文件夹: DetaDataProcessorYLJ  
+ 见工程文件夹: DataDataProcessorYLJ  
   
  4>(中华人民共和国 国家版权局).软著登字第4317518号 德塔 PLSQL Socket数据库引擎研发 作者CN: 2019R11L885247    
- 见工程文件夹: DetaPLSQL, DetaVPCSBackend, DetaVPCSFrontend, DetaPLSQLDBBootVPCS (最新VPCS public整合) DetaVPCSPublic,  
+ 见工程文件夹: DataPLSQL, DataVPCSBackend, DataVPCSFrontend, DataPLSQLDBBootVPCS (最新VPCS public整合) DataVPCSPublic,  
    
  5>(中华人民共和国 国家版权局).软著登字第4607950号 德塔数据结构变量快速转换 作者CN: 2019R11L1293422    
- 见工程文件夹: DetaDataSwap,  
+ 见工程文件夹: DataSwap,  
    
  6>(中华人民共和国 国家版权局).软著登字第5447819号 快速数据预测算法引擎系统 V1.0.0 作者CN: 2020R11L186818    
- 见工程文件夹: DetaDataPrediction,  
+ 见工程文件夹: DataPrediction,  
    
  7>(中华人民共和国 国家版权局) 作者CN: 2020Z11L0333706 国作登字-2021-A-00097017  DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2    
    
