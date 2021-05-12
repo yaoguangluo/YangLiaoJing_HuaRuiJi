@@ -18,7 +18,7 @@
 	<classpathentry kind="src" path="DataHRJ_YLJSrc"/>
 	<classpathentry kind="src" path="DataProcessorImage"/>
 	<classpathentry kind="src" path="DataUnicornETLNodeMedicine"/>
-	<classpathentry kind="src" path="DetaDataProcessorMovie"/>
+	<classpathentry kind="src" path="DataProcessorMovie"/>
 	<classpathentry kind="src" path="DetaUnicornETLNodeNeiWaiKe"/>
 	<classpathentry kind="src" path="DetaParserBehaviorMap"/>
 	<classpathentry kind="src" path="DetaParserEmotionMap"/>
