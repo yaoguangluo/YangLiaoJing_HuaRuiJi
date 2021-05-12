@@ -33,7 +33,7 @@
 	<classpathentry kind="src" path="DataDNAPDE"/>
 	<classpathentry kind="src" path="DataUnicornNeroThemeETL"/>
 	<classpathentry kind="src" path="DataUnicornUI"/>
-	<classpathentry kind="src" path="DetaUtilsWordsForSpeak"/>
+	<classpathentry kind="src" path="DataUtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="DetaVPCSBackend"/>
 	<classpathentry kind="src" path="DetaVPCSFrontend"/>
 	<classpathentry kind="src" path="DetaNetworkYLJ"/>
