@@ -36,7 +36,7 @@
 	<classpathentry kind="src" path="DataUtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="DataVPCSBackend"/>
 	<classpathentry kind="src" path="DataVPCSFrontend"/>
-	<classpathentry kind="src" path="DetaNetworkYLJ"/>
+	<classpathentry kind="src" path="DataNetworkYLJ"/>
 	<classpathentry kind="src" path="DetaVPCSPublic"/>
 	<classpathentry kind="src" path="DetaDataProcessorYLJ"/>
 	<classpathentry kind="src" path="DetaPLSQLAdmin"/>
