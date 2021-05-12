@@ -31,7 +31,7 @@
 	<classpathentry kind="src" path="DataProcessorSound"/>
 	<classpathentry kind="src" path="DataSuggest"/>
 	<classpathentry kind="src" path="DataDNAPDE"/>
-	<classpathentry kind="src" path="DetaUnicornNeroThemeETL"/>
+	<classpathentry kind="src" path="DataUnicornNeroThemeETL"/>
 	<classpathentry kind="src" path="DetaUnicornUI"/>
 	<classpathentry kind="src" path="DetaUtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="DetaVPCSBackend"/>
