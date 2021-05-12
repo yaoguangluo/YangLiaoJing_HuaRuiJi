@@ -9,7 +9,7 @@
 	<classpathentry kind="src" path="DataYLJConfig"/>
 	<classpathentry kind="src" path="DataPrediction"/>
 	<classpathentry kind="src" path="DataWavelet"/>
-	<classpathentry kind="src" path="DetaAILanguage"/>
+	<classpathentry kind="src" path="DataAILanguage"/>
 	<classpathentry kind="src" path="DetaBioDNA3st"/>
 	<classpathentry kind="src" path="DetaBussinessIntelligence"/>
 	<classpathentry kind="src" path="DetaPLSQLDatabase"/>
