@@ -13,7 +13,7 @@
 	<classpathentry kind="src" path="DataBioDNA3st"/>
 	<classpathentry kind="src" path="DataBussinessIntelligence"/>
 	<classpathentry kind="src" path="DataPLSQLDatabase"/>
-	<classpathentry kind="src" path="DetaDataSwap"/>
+	<classpathentry kind="src" path="DataSwap"/>
 	<classpathentry kind="src" path="DetaVPCSBootPLSQL"/>
 	<classpathentry kind="src" path="DetaHRJ_YLJSrc"/>
 	<classpathentry kind="src" path="DetaDataProcessorImage"/>
