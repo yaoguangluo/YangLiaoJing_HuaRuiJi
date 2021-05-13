@@ -1104,6 +1104,7 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 		LABEL2:
 			new Quick9DLYGWithStringSwap().sort(score_code, score);
 		int max= score_code[0];
+		//int max= score_code.length> 0? score_code[0]: 9999;//稍后处理 罗瑶光20210514
 		Object[][] tableData = new Object[count][13];
 		int new_count=0;
 		newTableModel.getDataVector().clear();

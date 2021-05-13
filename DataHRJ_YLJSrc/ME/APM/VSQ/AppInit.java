@@ -57,7 +57,7 @@ import org.tinos.listen.ReadToWav;
 
 import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class AppInit {	
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings({ "deprecation", "resource" })
 	public void init(App app) throws IOException{
 		//Register Medicine Report
 		DetaLabelConjunction.detaLabelConjunction = new DetaLabelConjunction();
@@ -851,11 +851,12 @@ public class AppInit {
 						new String[] {"wmic", "cpu", "get", "ProcessorId"});
 				process.getOutputStream().close();
 				String value= "";
-				Scanner sc= new Scanner(process.getInputStream()); 
-				while(sc.hasNext()) {
-					value+=sc.next();	
+				Scanner scanner= new Scanner(process.getInputStream()); 
+				while(scanner.hasNext()) {
+					value+=scanner.next();	
 				}
 				value+= new GetDisk().getKey();
+				scanner.close();
 				if(!value.equalsIgnoreCase("ProcessorIdBFEBFBFF000806E9-7953033931825660327-1051895781")) {
 					//return;
 				}
