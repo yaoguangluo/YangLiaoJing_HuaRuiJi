@@ -6,8 +6,8 @@ import javax.swing.*;
 
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
-	public editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(JTextPane text) throws IOException{
+public class EditPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
+	public EditPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(JTextPane text) throws IOException{
 		this.text = text;
 		thisIcon = new ImageIcon(this.getClass().getResource("editPaneReader.jpg"));
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS = new String("读取编辑页处方生成列");
@@ -17,7 +17,7 @@ public class editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 		thisImage = img.getScaledInstance(30, 30, java.awt.Image.SCALE_SMOOTH );
 		thisIcon = new ImageIcon(newimg);
 	}
-	public editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
+	public EditPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon = new ImageIcon(this.getClass().getResource("editPaneReader.jpg"));
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS = new String("读取编辑页处方生成列");
 		AMV_MVS_VSQ = new String("MEDCINE");
@@ -28,9 +28,9 @@ public class editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 	}
 	public void MEI_MSU(JTextPane rightBotJTextPane, ThisCanvas canvas) throws IOException{
 		try {
-			SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ = new editPanelReaderHView();
-			SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI = new editPanelReaderHRun();
-			SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES = new editPanelReaderHPanel((editPanelReaderHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text);
+			SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ = new EditPanelReaderHView();
+			SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI = new EditPanelReaderHRun();
+			SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES = new EditPanelReaderHPanel((EditPanelReaderHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text);
 			SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.config();
 			showed = false;
 		}catch(Exception e1) {
@@ -40,7 +40,7 @@ public class editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 	}
 	public void OPE_E(JTextPane rightBotJTextPane) throws FileNotFoundException, IOException{
 		try {
-			((editPanelReaderHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((editPanelReaderHView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+			((EditPanelReaderHRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((EditPanelReaderHView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 		}catch(Exception e1) {
 			rightBotJTextPane.setText("<读取编辑页处方生成列> 节点运行失败请注意是否配置正确。");
 			rightBotJTextPane.validate();
@@ -56,7 +56,7 @@ public class editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 		} 
 	}
 	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI = new editPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.text);   
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI = new EditPanelReaderHNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.text);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }

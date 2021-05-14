@@ -1,17 +1,19 @@
-package OSI.OSU.SI.PSQ.OEI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.editPanelReader;
+package OSI.OSU.SI.OSU.PEU.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.updateToEditPane;
 import java.awt.Color;
+
 import java.awt.Dimension;
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 
-import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class editPanelReaderView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
+
+public class UpdateToEditPaneView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
-	public editPanelReaderView(){
+	public UpdateToEditPaneView(){
 		super();
 	}
 	public void view() throws Exception{

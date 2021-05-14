@@ -15,12 +15,12 @@ import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class dNA3DShowOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class DNA3DShowOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
 	public String DNNtext;
-	public dNA3DShowOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final dNA3DShowOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public DNA3DShowOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final DNA3DShowOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;

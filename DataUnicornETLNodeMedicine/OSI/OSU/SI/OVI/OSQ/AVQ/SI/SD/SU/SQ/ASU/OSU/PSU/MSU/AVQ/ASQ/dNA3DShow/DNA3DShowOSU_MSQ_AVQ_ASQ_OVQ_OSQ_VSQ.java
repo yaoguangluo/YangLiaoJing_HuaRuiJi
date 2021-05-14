@@ -8,7 +8,7 @@ import IMO.EVU.biProcessor.CoDNAAuthorForWord;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
-public class dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
@@ -16,7 +16,7 @@ public class dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 	public Analyzer analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
-	public dNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
+	public DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
 		super();
 	}
 	public void view() throws Exception{

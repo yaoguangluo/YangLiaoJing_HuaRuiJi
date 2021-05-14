@@ -8,7 +8,7 @@ import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class chuFangDNN3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class ChuFangDNN3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
@@ -16,7 +16,7 @@ public class chuFangDNN3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ
 	public Analyzer analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
-	public chuFangDNN3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
+	public ChuFangDNN3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
 		super();
 	}
 	public void view() throws Exception{

@@ -7,11 +7,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class chuFangWuXingShowHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class ChuFangWuXingShowHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
-	public chuFangWuXingShowHView(){
+	public ChuFangWuXingShowHView(){
 		super();
 	}
 	public void view() throws Exception{

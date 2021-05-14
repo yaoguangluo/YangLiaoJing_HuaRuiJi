@@ -14,11 +14,11 @@ import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class updateToEditPanePanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class UpdateToEditPanePanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
-	public updateToEditPanePanel(final updateToEditPaneRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public UpdateToEditPanePanel(final UpdateToEditPaneRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;
