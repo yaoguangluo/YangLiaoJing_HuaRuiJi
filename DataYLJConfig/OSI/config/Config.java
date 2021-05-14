@@ -16,6 +16,25 @@ public class Config{
 	//时钟配置
 	public static final String timeETC= "G8+";
 	//本地路径配置
+
+	//2 缓存配置        
+	public static final int CACHE_KEY_LENGTH= 32;
+	public static final int CACHE_PIPE_NODE_LENGTH= 1500;
+	
+	//3 多线程配置        
+	public static final int POOL_RANGE= 50;
+	
+	//4 VPCS 配置        
+	public static final int SLEEPER_HALL_SIZE= 200;
+	//5 分词配置        
+	public static final int INDEX_LEVEL= 5;
+	//6 元基计算配置        
+	public static final int PDE_LEVEL= 2;
+	//10 ETL配置        
+	
+	//11 系统运营环境配置        
+	public static final String LOG_MODEL= "bin";
+	//12 日志信息配置   
 	
 	//系统硬件信息适配
 	
