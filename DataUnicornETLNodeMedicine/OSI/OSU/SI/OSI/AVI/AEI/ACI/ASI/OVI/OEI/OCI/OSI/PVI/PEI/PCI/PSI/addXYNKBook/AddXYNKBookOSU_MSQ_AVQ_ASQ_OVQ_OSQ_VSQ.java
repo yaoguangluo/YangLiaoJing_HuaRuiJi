@@ -1,4 +1,4 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYSCBook;
+package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYNKBook;
 import java.awt.HeadlessException;
 import java.util.Map;
 import javax.swing.JButton;
@@ -8,7 +8,8 @@ import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class addXYSCBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+
+public class AddXYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
@@ -16,7 +17,7 @@ public class addXYSCBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_
 	public Analyzer analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
-	public addXYSCBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
+	public AddXYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
 		super();
 	}
 	public void view() throws Exception{

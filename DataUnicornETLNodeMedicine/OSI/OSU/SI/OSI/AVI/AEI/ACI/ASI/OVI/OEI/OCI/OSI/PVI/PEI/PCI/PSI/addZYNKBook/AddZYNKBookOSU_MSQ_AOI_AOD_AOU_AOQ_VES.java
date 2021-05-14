@@ -1,4 +1,4 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addXYNKBook;
+package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYNKBook;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Map;
@@ -14,12 +14,12 @@ import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class addXYNKBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class AddZYNKBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
 	public String DNNtext;
-	public addXYNKBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final addXYNKBookOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public AddZYNKBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AddZYNKBookOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;
