@@ -7,11 +7,11 @@ import javax.swing.JButton;
 import javax.swing.JScrollPane;
 
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class addChuFangAttributeHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class AddChuFangAttributeHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
-	public addChuFangAttributeHView(){
+	public AddChuFangAttributeHView(){
 		super();
 	}
 	public void view() throws Exception{

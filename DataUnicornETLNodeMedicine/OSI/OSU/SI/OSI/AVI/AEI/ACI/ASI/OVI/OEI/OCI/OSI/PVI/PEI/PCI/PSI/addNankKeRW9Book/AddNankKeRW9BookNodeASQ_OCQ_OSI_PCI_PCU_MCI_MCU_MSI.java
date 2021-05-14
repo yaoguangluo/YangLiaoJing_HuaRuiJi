@@ -13,8 +13,8 @@ import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 
-public class addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
-	public addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
+public class AddNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
+	public AddNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("addNankKeRW9Book.jpg"));
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("Ìí¼ÓÄÐ¿Æ");
 		AMV_MVS_VSQ= new String("MEDCINE");
@@ -25,7 +25,7 @@ public class addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 		//
 	}
 	
-	public addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text, App u
+	public AddNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text, App u
 			, Analyzer analyzer, Map<String, String> pos) throws IOException{
 		this.text= text;
 		this.tableData_old= tableData_old;
@@ -42,9 +42,9 @@ public class addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 		this.pos= pos;
 	}
 	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ = new addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI = new addNankKeRW9BookOSU_MSQ_OPE_OPC_ECI();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES = new addNankKeRW9BookOSU_MSQ_AOI_AOD_AOU_AOQ_VES((addNankKeRW9BookOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ = new AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ();
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI = new AddNankKeRW9BookOSU_MSQ_OPE_OPC_ECI();
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES = new AddNankKeRW9BookOSU_MSQ_AOI_AOD_AOU_AOQ_VES((AddNankKeRW9BookOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.config();
 		showed = false;
 	}
@@ -101,18 +101,18 @@ public class addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ
 		u.fckxPage.revalidate();
 	}
 	public void OPE_E(JTextPane jTextPane) throws FileNotFoundException, IOException{	
-		((addNankKeRW9BookOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+		((AddNankKeRW9BookOSU_MSQ_OPE_OPC_ECI) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane)  throws Exception{
-		((addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).analyzer= analyzer;
-		((addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).u= u;
-		((addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).pos= pos;
-		((addNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).DNNtext= ((addNankKeRW9BookOSU_MSQ_AOI_AOD_AOU_AOQ_VES) SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES).DNNtext;
+		((AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).analyzer= analyzer;
+		((AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).u= u;
+		((AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).pos= pos;
+		((AddNankKeRW9BookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).DNNtext= ((AddNankKeRW9BookOSU_MSQ_AOI_AOD_AOU_AOQ_VES) SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES).DNNtext;
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.view();
 		showed = true;
 	}
 	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI = new addNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this.analyzer, this.pos);   
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI = new AddNankKeRW9BookNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this.analyzer, this.pos);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }
