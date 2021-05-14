@@ -6,8 +6,8 @@ import javax.swing.*;
 
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
-	public addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) throws IOException{
+public class AddChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	
+	public AddChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text) throws IOException{
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("ChuFangPrint.jpg"));
@@ -19,7 +19,7 @@ public class addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 		thisIcon= new ImageIcon(newimg);
 	}
 	
-	public addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
+	public AddChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI() throws IOException{
 		thisIcon= new ImageIcon(this.getClass().getResource("ChuFangPrint.jpg"));
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS= new String("¥¶∑Ω¥Ú”°");
 		AMV_MVS_VSQ= new String("MEDCINE");
@@ -30,14 +30,14 @@ public class addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 	}
 	
 	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ= new addChuFangPrintView();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI= new addChuFangPrintRun();
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES= new addChuFangPrintPanel((addChuFangPrintRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ= new AddChuFangPrintView();
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI= new AddChuFangPrintRun();
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES= new AddChuFangPrintPanel((AddChuFangPrintRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, this.text, this.tableData_old);
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES.config();
 		showed= false;
 	}
 	public void OPE_E(JTextPane jTextPane)  throws FileNotFoundException, IOException{
-		((addChuFangPrintRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((addChuFangPrintView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
+		((AddChuFangPrintRun) SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI).run((AddChuFangPrintView) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane)  throws Exception{
@@ -46,7 +46,7 @@ public class addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_
 	}
 	
 	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
-		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI= new addChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text);   
+		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI= new AddChuFangPrintNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }

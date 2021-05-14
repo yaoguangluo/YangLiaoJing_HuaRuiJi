@@ -7,14 +7,14 @@ import java.util.List;
 import ME.APM.VSQ.editPane.PrintTest4;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
-public class addChuFangPrintRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
+public class AddChuFangPrintRun extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID= 1L;
 	public int value= 0;
 	public String filepath;
-	public addChuFangPrintRun() throws IOException{	
+	public AddChuFangPrintRun() throws IOException{	
 		super();
 	}
-	public void run(final addChuFangPrintView SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException{
+	public void run(final AddChuFangPrintView SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) throws IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.tableout = this.toptablein; 	
 		// JTable table = new javax.swing.JTable();
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.tableout.setEnabled(true);		

@@ -1,4 +1,4 @@
-package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYWSBook;
+package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYZDBook;
 import java.awt.HeadlessException;
 import java.util.Map;
 import javax.swing.JButton;
@@ -8,7 +8,7 @@ import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-public class addZYWSBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class AddZYZDBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
@@ -16,7 +16,7 @@ public class addZYWSBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_
 	public Analyzer analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
-	public addZYWSBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
+	public AddZYZDBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
 		super();
 	}
 	public void view() throws Exception{
@@ -31,7 +31,7 @@ public class addZYWSBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_
 				f.setTitle("处方DNN功效观测");
 				f.setLocationRelativeTo(null);
 				f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-				f.setSize(650, 480);
+				f.setSize(650,480);
 				f.setVisible(true);
 				app.bootZynkFlowerForest("药方功效森林", DNNtext, true);
 			} catch (HeadlessException e1) {
