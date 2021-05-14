@@ -1,6 +1,5 @@
-package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangXingWeiKeyWordsAttributeH;
+package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangJinJiKeyWordsAttributeH;
 import java.awt.event.ActionEvent;
-
 import java.awt.event.ActionListener;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,17 +9,17 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class filterChuFangXingWeiKeyWordsAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class FilterChuFangJinJiKeyWordsAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
-	public filterChuFangXingWeiKeyWordsAttributeHPanel(final filterChuFangXingWeiKeyWordsAttributeHRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public FilterChuFangJinJiKeyWordsAttributeHPanel(final FilterChuFangJinJiKeyWordsAttributeHRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;
@@ -35,8 +34,8 @@ public class filterChuFangXingWeiKeyWordsAttributeHPanel extends OSU_AVQ_ASQ_AOI
 		button.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				System.out.println(e.getSource());
-				close = true;
-				SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value = 1;
+				close= true;
+				SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.value= 1;
 			}
 		});
 		panel.add(button);
@@ -61,7 +60,7 @@ public class filterChuFangXingWeiKeyWordsAttributeHPanel extends OSU_AVQ_ASQ_AOI
 					Here:
 						for(int i = 0; i < rc; i++){
 							for(int j = 0; j < filterw.length();j++) {
-								if(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getValueAt(i, 4).toString().contains(""+filterw.charAt(j))) {
+								if(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getValueAt(i, 3).toString().contains(""+filterw.charAt(j))) {
 									continue Here;
 								}
 							}

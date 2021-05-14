@@ -1,4 +1,4 @@
-package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangXingWeiKeyWordsAttributeH;
+package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangJinJiAttributeH;
 import java.awt.Color;
 
 import java.awt.Dimension;
@@ -8,12 +8,11 @@ import javax.swing.JButton;
 import javax.swing.JScrollPane;
 
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
-
-public class filterChuFangXingWeiKeyWordsAttributeHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
+public class FilterChuFangJinJiAttributeHView extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
 	private static final long serialVersionUID = 1L;
 	public JButton button;
 	public String path;
-	public filterChuFangXingWeiKeyWordsAttributeHView(){
+	public FilterChuFangJinJiAttributeHView(){
 		super();
 	}
 	public void view() throws Exception{

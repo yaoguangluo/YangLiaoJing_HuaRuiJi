@@ -1,4 +1,4 @@
-package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangJinJiAttributeH;
+package OSI.OSU.SI.ASQ.OSD.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.filterChuFangXingWeiKeyWordsAttributeH;
 import java.awt.event.ActionEvent;
 
 import java.awt.event.ActionListener;
@@ -7,19 +7,20 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
-import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
+import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES;
 
 import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class filterChuFangJinJiAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class FilterChuFangXingWeiKeyWordsAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
-	public filterChuFangJinJiAttributeHPanel(final filterChuFangJinJiAttributeHRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public FilterChuFangXingWeiKeyWordsAttributeHPanel(final FilterChuFangXingWeiKeyWordsAttributeHRun SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;
@@ -39,13 +40,19 @@ public class filterChuFangJinJiAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_A
 			}
 		});
 		panel.add(button);
+		
+		JTextField filterWords=new JTextField("请在此输入需要过滤关键字谢谢！");
+		filterWords.setBounds(0, 35, 150, 65);
+		panel.add(filterWords);
+		
 		JButton readfile = new JButton("补充处方列重要属性");
-		readfile.setBounds(0, 35, 150, 65);
+		readfile.setBounds(0, 100, 150, 65);
 		readfile.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					int rc = SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getRowCount();
+					String filterw=filterWords.getText();
 					//表头
 					Object[] spec = new Object[] {"中药名","克重","功效","禁忌","性味","经脉"};
 					//表行
@@ -53,9 +60,8 @@ public class filterChuFangJinJiAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_A
 					int c=0;
 					Here:
 						for(int i = 0; i < rc; i++){
-							for(int j = 0; j < rc; j++){
-								if(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getValueAt(j, 3).toString()
-										.contains(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getValueAt(i, 0).toString())) {
+							for(int j = 0; j < filterw.length();j++) {
+								if(SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.getValueAt(i, 4).toString().contains(""+filterw.charAt(j))) {
 									continue Here;
 								}
 							}
@@ -77,7 +83,6 @@ public class filterChuFangJinJiAttributeHPanel extends OSU_AVQ_ASQ_AOI_AOD_AOU_A
 					SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI.toptablein.setVisible(true);
 				}catch(Exception e) {		
 				}
-				
 			}
 		});
 		panel.add(readfile);
