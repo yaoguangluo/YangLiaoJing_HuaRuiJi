@@ -10,6 +10,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.JTextPane;
 
 import ME.APM.VSQ.App;
@@ -492,6 +493,46 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 		});
 		this.add(命令行模式);
 		this.add(命令行模式_end_box);	
+		
+		
+		JLabel 数据库配置文件地址= new JLabel("数据库配置文件地址"+ ":");  
+		数据库配置文件地址.setForeground(Color.white);
+		数据库配置文件地址.setBounds(10+ 0* 150, 20+ 25* 13, 150, 50);
+		
+		JTextField 数据库配置文件地址JTextField= new JTextField();
+		数据库配置文件地址JTextField.setBounds(10+ 0* 150+ 160, 20+ 25* 13, 550, 50);
+		数据库配置文件地址JTextField.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				appInThisClass.dbConfigPath= 数据库配置文件地址JTextField.getText().trim();
+			}
+		});
+		数据库配置文件地址JTextField.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+				appInThisClass.dbConfigPath= 数据库配置文件地址JTextField.getText().trim();
+			}
+			
+		});
+		数据库配置文件地址JTextField.setText("C:/DBconfig.lyg");
+		appInThisClass.dbConfigPath= "C:/DBconfig.lyg";
+		this.add(数据库配置文件地址);
+		this.add(数据库配置文件地址JTextField);	
+		
 	}
 	
 	@Override

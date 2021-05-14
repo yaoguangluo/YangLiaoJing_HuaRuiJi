@@ -25,7 +25,11 @@ public class ServerInitControllerVPCSFrontEnd {
 			port= Config.detaVPCSFrontEndPort;
 			server= new ServerSocket(port);
 			System.out.println("----德塔VPCS前端服务器端口启动:" + port);
-			DetaUtil.initDB();
+			if(null!= app.dbConfigPath&& !app.dbConfigPath.isEmpty()) {
+				DetaUtil.initDB(app.dbConfigPath);//稍后整理下
+			}else {
+				DetaUtil.initDB("C:/DBconfig.lyg");
+			}
 			System.out.println("----德塔VPCS前端服务器DMA确认:成功！");	
 		} catch (Exception e) {
 			e.printStackTrace();

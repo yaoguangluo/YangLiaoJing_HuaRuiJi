@@ -9,7 +9,7 @@ import OSV.ESU.standard.UpdateCellStandard;
 public class TestUpdatePLSQL{
 	public static void main(String[] argv) throws Exception {
 		//init
-		DetaUtil.initDB();
+		DetaUtil.initDB("C:/DBconfig.lyg");
 		System.out.println("----德塔VPCS数据库服务器DMA确认:成功！");
 		RequestFilterController.initBlockList();
 		System.out.println("----德塔VPCS数据库服务器IP过滤服务启动:成功！");

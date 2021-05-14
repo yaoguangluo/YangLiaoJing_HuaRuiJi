@@ -13,8 +13,8 @@ import PEU.P.cache.*;
 //import cacheProcessor.CacheManager;
 
 public class DetaUtil {
-	public static void initDB(){
-		File config = new File("C:/DBconfig.lyg");
+	public static void initDB(String dbConfigPath){
+		File config = new File(dbConfigPath);
 		if (config.exists()) {
 			try {
 				BufferedReader reader = new BufferedReader(new FileReader(config));
@@ -38,7 +38,7 @@ public class DetaUtil {
 		}else {
 			FileWriter fw = null;
 			try {
-				fw = new FileWriter("C:/DBconfig.lyg", true);
+				fw = new FileWriter(dbConfigPath, true);
 				fw.write("path->" + "C:/DetaDB");
 				fw.close();
 				File fileDBPath = new File("C:/DetaDB");

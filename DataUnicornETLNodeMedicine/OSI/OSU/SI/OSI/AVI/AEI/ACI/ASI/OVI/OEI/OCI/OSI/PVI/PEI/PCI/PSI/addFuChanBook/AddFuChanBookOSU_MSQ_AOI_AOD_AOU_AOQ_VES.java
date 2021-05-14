@@ -14,12 +14,12 @@ import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.Color;
 @SuppressWarnings("unused")
-public class addFuChanBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
+public class AddFuChanBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES extends OSU_AVQ_ASQ_AOI_AOD_AOU_AOQ_VES{
 	private static final long serialVersionUID = 1L;
 	private JTextPane textTemp;
 	private Object[][] tableData_old;
 	public String DNNtext;
-	public addFuChanBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final addFuChanBookOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
+	public AddFuChanBookOSU_MSQ_AOI_AOD_AOU_AOQ_VES(final AddFuChanBookOSU_MSQ_OPE_OPC_ECI SQ_OSU_MSQ_OSU_AVQ_ASQ_OPE_OPC_ECI, JTextPane text
 			, Object[][] tableData_old){
 		this.textTemp = text;
 		this.tableData_old = tableData_old;

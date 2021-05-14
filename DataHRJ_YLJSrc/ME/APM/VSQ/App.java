@@ -76,6 +76,7 @@ import javax.swing.text.BadLocationException;
 @SuppressWarnings("deprecation")
 public class App extends JApplet implements MouseListener, KeyListener, ActionListener, ChangeListener{	
 	private static final long serialVersionUID= 1L;
+	public String databaseRootPath;
 	public List<String> CacheStringPiple= new CopyOnWriteArrayList<>();
 	public Map<String, String> CacheString= new ConcurrentHashMap<>();
 	public JFrame frameConfig;
@@ -221,6 +222,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public int ¥ﬂªØ±»÷µrot;
 	public boolean DNASearchIsClick;
     public AppInit appInit;
+	public String dbConfigPath;
 	public void init(){
 		try {
 			appInit= new AppInit();

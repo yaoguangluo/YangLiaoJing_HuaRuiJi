@@ -266,6 +266,21 @@ public class GUISample extends JApplet implements MouseMotionListener
 							System.out.println(className);
 							myclass= loader.loadClass(className);
 						} catch (ClassNotFoundException e1) {
+//							//增加小写识别一次，兼容老的插件。
+//							//之后我会统一进行修改 
+//							//罗瑶光20210514
+//							FirstCharOfLastName= (""+ lastName.charAt(0));
+//							NewlastName= FirstCharOfLastName+ lastName.subSequence(1, lastName.length());	
+//							System.out.println(filename);
+//							String className= filename+ "."+ NewlastName
+//									+ StableData.NODE_NODE_INTERFACE;
+//							System.out.println(className);
+//							try {
+//								myclass= loader.loadClass(className);
+//							} catch (ClassNotFoundException e2) {
+//								// TODO Auto-generated catch block
+//								e2.printStackTrace();
+//							}
 							e1.printStackTrace();
 						}
 						Object myobject= null;
@@ -1013,6 +1028,19 @@ public class GUISample extends JApplet implements MouseMotionListener
 						System.out.println(className);
 						myclass= loader.loadClass(className);
 					} catch (ClassNotFoundException e1) {
+//						//增加小写识别一次，兼容老的插件。
+//						FirstCharOfLastName= (""+ lastName.charAt(0));
+//						NewlastName= FirstCharOfLastName+ lastName.subSequence(1, lastName.length());	
+//						System.out.println(filename);
+//						String className= filename+ "."+ NewlastName
+//								+ StableData.NODE_NODE_INTERFACE;
+//						System.out.println(className);
+//						try {
+//							myclass= loader.loadClass(className);
+//						} catch (ClassNotFoundException e) {
+//							// TODO Auto-generated catch block
+//							e.printStackTrace();
+//						}
 						e1.printStackTrace();
 					}
 					Object myobject= null;

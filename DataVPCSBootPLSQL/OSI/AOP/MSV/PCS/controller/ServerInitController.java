@@ -18,6 +18,7 @@ public class ServerInitController {
 	private static ServerSocket server;
 	//private static Properties properties;
 	private static int port;
+	private static String dbConfigPath;
 //	private App app;
 	static {
 		//properties = new Properties();
@@ -42,7 +43,13 @@ public class ServerInitController {
 				text="\r\n"+ "..."+ text;
 				jTextPane.setText(text);
 			}
-			DetaUtil.initDB();
+			if(null!= dbConfigPath && !dbConfigPath.isEmpty()) {
+				dbConfigPath.replace("\\", "/"); //支持 linux reg 格式
+				DetaUtil.initDB(dbConfigPath);
+			}else {
+				dbConfigPath= "C:/DBconfig.lyg";
+				DetaUtil.initDB(dbConfigPath);
+			}
 			System.out.println("----德塔VPCS数据库服务器DMA确认:成功！");
 			if(jTextPane!= null) {
 				String text= jTextPane.getText();
@@ -88,6 +95,7 @@ public class ServerInitController {
 	}
 
 	public static void initServer(App app) throws IOException {
+		dbConfigPath= app.dbConfigPath;
 		System.out.println("----DETA VPCS--2.0");
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
