@@ -124,7 +124,7 @@
  https://gitee.com/DetaChina/YangLiaoJing/blob/18111/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷)%20仅--++修正版本.pdf  
  https://github.com/yaoguangluo/YangLiaoJing_HuaRuiJi/tree/18111/doc/罗瑶光---DNA%20催化与肽计算%20(第一卷)%20仅--++修正版本.pdf  
    
- 10>(中华人民共和国 国家版权局) CN:2021Z11L1057159 德塔DNA元基催化与肽计算第二卷  
+ 10>(中华人民共和国 国家版权局) 作者CN:2021Z11L1057159 国作登字-2021-L-00103660 DNA元基催化与肽计算第二卷养疗经应用研究20210305 
  https://gitee.com/DetaChina/YangLiaoJing/blob/master/doc/罗瑶光-DNA催化与肽计算第二卷20210305.pdf  
  https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf  
  10.1>元基,编码,公式,解码定义类 见工程文件夹 OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde  
