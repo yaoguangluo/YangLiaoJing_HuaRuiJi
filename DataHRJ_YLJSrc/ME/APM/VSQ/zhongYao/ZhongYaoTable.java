@@ -387,8 +387,8 @@ public class ZhongYaoTable implements MouseListener {
 			this.app.panel.add(jingMaiBox);
 			this.app.panel.updateUI();
 		}catch(Exception e) {
-			e.printStackTrace();
 			this.app.panel.updateUI();
+			e.printStackTrace();
 		}
 	}
 

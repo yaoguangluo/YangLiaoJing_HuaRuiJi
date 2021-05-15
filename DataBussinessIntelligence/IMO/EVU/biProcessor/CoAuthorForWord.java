@@ -545,7 +545,11 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 							, root[2] + (srot*a1));
 					String prePrint = leafName;
 					Font font = new Font(prePrint,20, 20);
-					checkImageBuf = GLBuffers.newDirectByteBuffer(20 * prePrint.length()*22 * 3);
+					try {
+						checkImageBuf = GLBuffers.newDirectByteBuffer(20 * prePrint.length()*22 * 3);
+					}catch(Exception e) {
+						System.out.println("");
+					} 
 					BufferedImage image = new BufferedImage(prePrint.length()*32, 20, BufferedImage.TYPE_INT_RGB);
 					Graphics2D ga = image.createGraphics();
 					ga.setColor(Color.white);
@@ -579,7 +583,11 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 						}
 					}
 					checkImageBuf.rewind();
-					gl.glDrawPixels(prePrint.length()*20, 20, GL2.GL_RGB, GL.GL_UNSIGNED_BYTE, checkImageBuf);
+					try {
+						gl.glDrawPixels(prePrint.length()*20, 20, GL2.GL_RGB, GL.GL_UNSIGNED_BYTE, checkImageBuf);
+					}catch(Exception e) {
+						System.out.println("");
+					}
 					double root1[] = new double[3];
 					root1[0] = root[0] + Math.cos(2 * Math.PI * i / s[se]) * a;
 					root1[1] = root[1] + Math.sin(2 * Math.PI * i / s[se]) * a;
@@ -1320,12 +1328,14 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 			leaf.put(className, leafLi);
 		}
 		if(u.dic_hai.containsKey(temp)) {
-			String className=temp+"½û¼É";
+			String className= temp+ "½û¼É";
 			findLeaf.put(className, 1);
-			frequencyLeaf.put(className,-1);	
-			Map<String, Object> leafLi = new ConcurrentHashMap<>();		
-			leafLi.put(u.dic_hai.get(temp).toString(), leafLi);
-			frequencyLeaf.put(u.dic_hai.get(temp).toString(), -1);	
+			frequencyLeaf.put(className, -1);	
+			Map<String, Object> leafLi= new ConcurrentHashMap<>();	
+			String string= u.dic_hai.get(temp).toString().length()> 40
+					? u.dic_hai.get(temp).toString().substring(0, 40): u.dic_hai.get(temp).toString();
+			leafLi.put(string, leafLi);
+			frequencyLeaf.put(string, -1);	
 			leaf.put(className, leafLi);	
 		}
 		if(u.dic_xw.containsKey(temp)) {
