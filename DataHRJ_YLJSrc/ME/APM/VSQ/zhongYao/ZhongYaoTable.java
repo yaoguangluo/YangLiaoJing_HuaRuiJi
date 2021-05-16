@@ -7,6 +7,8 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+//import java.util.List;
+//import java.util.Map;
 import java.util.Map;
 
 import javax.swing.Box;
@@ -19,19 +21,21 @@ import javax.swing.table.JTableHeader;
 
 import ME.APM.VSQ.App;
 //import ME.APM.VSQ.DictionaryFromDB;
+//import ME.APM.VSQ.DictionaryOld;
+//import ME.APM.VSQ.DictionaryFromDB;
 import ME.APM.VSQ.PathLinkFile;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
 import OSV.VCQ.standard.DictionaryStandardDB;
+//import OSV.VCQ.standard.DictionaryStandardDB;
 
 public class ZhongYaoTable implements MouseListener {
 	private App app;
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable(App app) throws IOException {
 		this.app= app;
-//		DictionaryFromDB d= new DictionaryFromDB();
-//		//dictionary d= new dictionary();
-//		//dic_list= d.txtToList();
+		//DictionaryFromDB d= new DictionaryFromDB();
+//		List<String> dic_list= d.txtToList();
 //		try {
 //			app.dic_map= d.listToMap(app.dic_yw, app.dic_li, app.dic_hai, app.dic_xz, app.dic_ya, app.dic_jm
 //					, app.dic_xw, app.dic_cy, app.dic_jj, app.dic_zf, app.dic_cj, app.dic_yl);
@@ -40,6 +44,29 @@ public class ZhongYaoTable implements MouseListener {
 //		}
 		
 		
+//		//old
+//		DictionaryOld d= new DictionaryOld();
+//		List<String> dic_list= d.txtToList();
+//		try {
+//			app.dic_map= d.listToMap(dic_list);
+//			app.dic_yw= app.dic_map;
+//			app.dic_index= new DictionaryFromDB().mapToIndex(app.dic_map);
+//			app.dic_li=  d.mapToMap_li(app.dic_map);
+//			app.dic_hai= d.mapToMap_hai(app.dic_map);
+//			app.dic_xz= d.mapToMap_xz(app.dic_map);
+//			app.dic_ya= d.mapToMap_ya(app.dic_map);
+//			app.dic_jm= d.mapToMap_jm(app.dic_map);
+//			app.dic_xw= d.mapToMap_xw(app.dic_map);
+//			app.dic_cy= d.mapToMap_cy(app.dic_map);
+//			app.dic_jj= d.mapToMap_jj(app.dic_map);
+//			app.dic_zf= d.mapToMap_zf(app.dic_map);
+//			app.dic_cj= d.mapToMap_cj(app.dic_map);
+//			app.dic_yl= d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm);
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//		}
+		
+		//db
 		//测试下刚写的标准读表函数.
 		DictionaryStandardDB d= new DictionaryStandardDB();
 		String primaryKey= "中药名称";

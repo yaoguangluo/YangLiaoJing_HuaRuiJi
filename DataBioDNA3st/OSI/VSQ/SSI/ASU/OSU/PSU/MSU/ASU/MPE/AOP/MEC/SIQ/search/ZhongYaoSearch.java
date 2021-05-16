@@ -64,7 +64,7 @@ public class ZhongYaoSearch{
 			score[copyCount]= iteratorForCopyString;
 			String temps= app.dic_map.get(iteratorForCopyString).toString();
 			String tempsPCA= app.dic_li.get(iteratorForCopyString).toString();
-			String tempsIndex= app.dic_index.get(iteratorForCopyString).toString();
+		//	String tempsIndex= app.dic_index.get(iteratorForCopyString).toString();
 			Iterator<String> iteratorWordFrequency= mapSearchWithoutSort.keySet().iterator();
 			Here:
 				while(iteratorWordFrequency.hasNext()) {  
@@ -80,13 +80,13 @@ public class ZhongYaoSearch{
 						if(zhongyao.contains(score[copyCount].replace(" ", ""))) {
 							reg[copyCount]+= 12;
 						}
-
-						if(tempsIndex.equalsIgnoreCase(zhongyao.replace(" ", ""))) {
-							reg[copyCount]+= 1200;
-						}
-						if(tempsIndex.contains(zhongyao.replace(" ", "").toUpperCase())) {
-							reg[copyCount]+= 1200;
-						}
+//因为这几行是新电脑开发的只有3行数据测试,老电脑写的拼音索引没用到,就出现这个问题,我先注释掉,以后优化. 罗瑶光20210516
+//						if(tempsIndex.equalsIgnoreCase(zhongyao.replace(" ", ""))) {
+//							reg[copyCount]+= 1200;
+//						}
+//						if(tempsIndex.contains(zhongyao.replace(" ", "").toUpperCase())) {
+//							reg[copyCount]+= 1200;
+//						}
 
 						score[copyCount]= iteratorForCopyString;
 						if(!app.pos.containsKey(mapSearchaAtII)) {

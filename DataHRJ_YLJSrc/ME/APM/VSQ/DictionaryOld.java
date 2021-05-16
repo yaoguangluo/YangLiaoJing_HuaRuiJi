@@ -475,9 +475,9 @@ public class DictionaryOld{
 	}
 
 	public Map<String, Object> mapToMap_xw(Map<String, Object> dic_map) {
-		Map<String,Object> dic_xw = new java.util.concurrent.ConcurrentHashMap<String, Object>();
-		Iterator<String> iter = dic_map.keySet().iterator();
-		List<String> copy = new ArrayList<String>();
+		Map<String,Object> dic_xw= new java.util.concurrent.ConcurrentHashMap<String, Object>();
+		Iterator<String> iter= dic_map.keySet().iterator();
+		List<String> copy= new ArrayList<String>();
 		while (iter.hasNext())
 			copy.add(iter.next());
 		for(int i=0;i<copy.size();i++){
@@ -573,5 +573,18 @@ public class DictionaryOld{
 		}
 		cReader.close();
 		return dic_yl;	
+	}
+
+	public Map<String, Object> mapToMap_ym(Map<String, Object> dic_map) {
+		Map<String,Object> dic_ym = new ConcurrentHashMap<String, Object>();
+		Iterator<String> iter = dic_map.keySet().iterator();
+		List<String> copy = new ArrayList<String>();
+		while (iter.hasNext()) {
+			String string= iter.next();
+			copy.add(string);
+			dic_ym.put(string.replaceAll("\\s*", "").replace("¡²","").replace("¡³",":")
+					,string.replaceAll("\\s*", "").replace("¡²","").replace("¡³",":"));
+		}
+		return dic_ym;
 	}	
 }
