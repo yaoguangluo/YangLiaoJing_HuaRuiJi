@@ -38,17 +38,19 @@ https://github.com/yaoguangluo/Data_Processor/blob/master/DP/DNAProcessor/LIFE.j
 ##### ![实例](http://progressed.io/bar/100?title=completed)已拥有算法： 图片处理功能方向的未来趋势评估。
 
 #### 引用
-中华人民共和国 国家版权局 软著登字第4584594号 Java数据分析算法引擎系统 V1.0.0      
-中华人民共和国 国家版权局 国作登字-2021-A-00097017 DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2        
+中华人民共和国 国家版权局 软著登字第4584594号 Java数据分析算法引擎系统 V1.0.0         
+中华人民共和国 国家版权局 国作登字-2021-A-00097017 DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2            
 
-东尼·霍尔的快速排序1-4代思想; 泡沫, 粘贴, 插入, 堆排序等思想, 均来自算法导论教材.          
-索贝尔, 高斯, 拉普拉斯, Emboss思想等, 均来自计算机视觉教材.           
-DFT, FFT思想 来自 傅里叶, 库力, 图基.       
-java sound API Demo 来自 stackflows, Sun Technology.     
-树和图论思想来自 离散数学教材.     
-Cache缓存的甲骨文和SUN的官方demo函数 来自 亚米的王浩雷 介绍我三级缓存思想, 我用谷歌搜索的.    
-GZIP 来自哈夫曼的编码思想. 提出者是 Jean-loup Gailly 和 Mark Adler
-SOUND 来自JDK sound 原生组件 demo.
+东尼·霍尔的快速排序1-4代思想; 泡沫, 粘贴, 插入, 堆排序等思想, 均来自算法导论教材.              
+索贝尔, 高斯, 拉普拉斯, Emboss思想等, 均来自计算机视觉教材.               
+DFT, FFT思想 来自 傅里叶, 库力, 图基.           
+java sound API Demo 来自 stackflows, Sun Technology.        
+树和图论思想来自 离散数学教材.         
+Cache缓存的甲骨文和SUN的官方demo函数 来自 亚米的王浩雷 介绍我三级缓存思想, 我用谷歌搜索的.          
+GZIP 来自哈夫曼的编码思想. 提出者是 Jean-loup Gailly 和 Mark Adler        
+SOUND 来自JDK sound 原生组件 demo.      
+
+三维的JOGL画图函数因为不是ETL肽节点.所以我从数据智能ETL包 并到 该数据处理包下             
 
 ###### 申明
 GNU GPL 2.0 协议
