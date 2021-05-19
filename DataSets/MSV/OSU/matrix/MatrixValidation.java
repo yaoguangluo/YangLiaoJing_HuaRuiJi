@@ -1,4 +1,4 @@
-package OSI.ESU.matrix;
+package MSV.OSU.matrix;
 
 import OSI.ESU.stable.Stable;
 

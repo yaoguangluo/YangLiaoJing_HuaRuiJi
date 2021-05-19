@@ -1,4 +1,4 @@
-package OSI.ESU.date;
+package MSV.OSU.date;
 
 import java.io.IOException;
 import java.net.URL;
