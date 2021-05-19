@@ -32,6 +32,7 @@ import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
 
 import ME.APM.VSQ.App;
+import MSV.OSU.string.NullObject;
 
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
@@ -1097,7 +1098,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 									String yaoming= iterator.next();
 									Map<String, Object> gongxiaoyaoming= new ConcurrentHashMap<String, Object>();
 									if(u.dic_li.get(yaoming).toString().contains(tempRec)) {
-										String hai= u.dic_hai.get(yaoming).toString();
+										String hai= NullObject.checkNULL(u.dic_hai.get(yaoming));
 										if(!hai.contains("É÷")&&!hai.contains("½û")&&!hai.contains("¶ñ")
 												&&!hai.contains("¶¾")&&!hai.contains("Î·")
 												&&!hai.contains("ÔÐ")&&!hai.contains("¼É")&&!hai.contains("Ì¥")) {
@@ -1427,7 +1428,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 									String yaoming= iterator.next();
 									Map<String, Object> gongxiaoyaoming= new ConcurrentHashMap<String, Object>();
 									if(u.dic_li.get(yaoming).toString().contains(tempRec)) {
-										String hai= u.dic_hai.get(yaoming).toString();
+										String hai= NullObject.checkNULL(u.dic_hai.get(yaoming));
 										if(hai.contains("É÷")||hai.contains("½û")||hai.contains("¶ñ")
 												||hai.contains("¶¾")||hai.contains("Î·")
 												||hai.contains("ÔÐ")||hai.contains("¼É")||hai.contains("Ì¥")) {
