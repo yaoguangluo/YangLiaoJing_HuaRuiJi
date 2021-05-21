@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.demension.Line2D;
 import OSI.PCI.ASQ.demension.Line3D;
@@ -70,7 +71,8 @@ public class YaoguangLuoEulerRingTSP{
 		}
 		//6 Yaoguangluo's 4D Peak filter Theory Quick Sort the Distance Array
 		int sortRangeScale= 4; //my default is 4. you should change it as your want.
-		distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 		//7 From small to big loop the distance and make a condition tree.
 		List<Line2D> outputLine2D= new ArrayList<>(); 
 		Map<String, Double> outputDouble2D= new HashMap<>(); 
@@ -167,7 +169,8 @@ public class YaoguangLuoEulerRingTSP{
 		}
 		//6 Yaoguangluo's 4D Peak filter Theory Quick Sort the Distance Array
 		int sortRangeScale= 4; //my default is 4. you should change it as your want.
-		distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+		distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 		//7 From small to big loop the distance and make a condition tree.
 		List<Line3D> outputLine3D= new ArrayList<>(); 
 		Map<String, Double> outputDouble3D= new HashMap<>(); 

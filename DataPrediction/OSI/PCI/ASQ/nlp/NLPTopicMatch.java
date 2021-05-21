@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.ESU.list.ListSwap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
@@ -87,7 +88,8 @@ public class NLPTopicMatch{
 			tempBase.put(matchScore[i], tempList);
 		}
 		//sort
-		matchScore= new LYG4DWithDoubleQuickSort4D().sort(matchScore, sortStackRange);
+		//matchScore= new LYG4DWithDoubleQuickSort4D().sort(matchScore, sortStackRange);
+		matchScore= new LYG9DWithDoubleQuickSort4D().sort(matchScore, sortStackRange, 4);//算法应用更新
 		double filterCount= filterRate* matchScore.length;
 		//filter
 		List<String> output= new ArrayList<>();

@@ -2,6 +2,7 @@ package OSI.PCI.ASQ.pca;
 import java.util.Iterator;
 import java.util.List;
 
+import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.demension.Position2D;
 import OSI.PCI.ASQ.demension.Position3D;
@@ -29,7 +30,8 @@ public class FindPCAMeanDistance{
 				distance[i++]= Distance.getDistance2D(outPosition2D, inPosition2D);
 			}
 			//距离非对称缺陷小高峰过滤极速快排 从小到大
-			distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 			//仅仅取精度内坐标点距离求平均值，0 为本身所以从 1 开始
 			double inMean= 0;
 			oberserverPCAScale= oberserverPCAScale>= position2Ds.size()
@@ -59,7 +61,8 @@ public class FindPCAMeanDistance{
 				distance[i++]= Distance.getDistance3D(outPosition3D, inPosition3D);
 			}
 			//距离非对称缺陷小高峰过滤极速快排 从小到大
-			distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 			//仅仅取精度内坐标点距离求平均值，0 为本身所以从 1 开始
 			double inMean= 0;
 			oberserverPCAScale= oberserverPCAScale>= position3Ds.size()
@@ -92,7 +95,8 @@ public class FindPCAMeanDistance{
 				distance[i++]= Distance.getDistance2D(outPosition2D, inPosition2D);
 			}
 			//距离非对称缺陷小高峰过滤极速快排 从小到大
-			distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 			//仅仅取精度内坐标点距离求平均值，0 为本身所以从 1 开始
 			double inMean= 0;
 			oberserverPCAScale= oberserverPCAScale>= position2Ds.size()
@@ -132,7 +136,8 @@ public class FindPCAMeanDistance{
 				distance[i++]= Distance.getDistance3D(outPosition3D, inPosition3D);
 			}
 			//距离非对称缺陷小高峰过滤极速快排 从小到大
-			distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			//distance= new LYG4DWithDoubleQuickSort4D().sort(distance, sortRangeScale);
+			distance= new LYG9DWithDoubleQuickSort4D().sort(distance, sortRangeScale, 4);//算法应用更新
 			//仅仅取精度内坐标点距离求平均值，0 为本身所以从 1 开始
 			double inMean= 0;
 			oberserverPCAScale= oberserverPCAScale>= position3Ds.size()

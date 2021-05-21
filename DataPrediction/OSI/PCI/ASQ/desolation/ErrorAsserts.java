@@ -1,5 +1,6 @@
 package OSI.PCI.ASQ.desolation;
 
+import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 
 public class ErrorAsserts{
@@ -22,7 +23,8 @@ public class ErrorAsserts{
 	public boolean getBinaryErrorAsserts(double inputValue, double[] matchValues
 			, double scale, int sortStackRange, boolean isSort) {
 		if(!isSort) {
-			matchValues= new LYG4DWithDoubleQuickSort4D().sort(matchValues, sortStackRange);	
+			//matchValues= new LYG4DWithDoubleQuickSort4D().sort(matchValues, sortStackRange);	
+			matchValues= new LYG9DWithDoubleQuickSort4D().sort(matchValues, sortStackRange, 4);	//算法应用更新
 		}
 		double max= inputValue+ scale;
 		double min= inputValue- scale;

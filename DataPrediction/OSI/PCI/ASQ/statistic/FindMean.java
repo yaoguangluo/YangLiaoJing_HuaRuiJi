@@ -1,6 +1,8 @@
 package OSI.PCI.ASQ.statistic;
 import java.util.Iterator;
 import java.util.List;
+
+import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 public class FindMean{
 	//这个函数用于求解 过滤百分比数组最大最小精度数值后的 mean。
 	//sortRangeScale：确定坐标距离排序时的相似成份多少来确定堆栈冗余比，避免堆栈溢出。
@@ -8,7 +10,8 @@ public class FindMean{
 	//实现：罗瑶光
 	public static double findMeanOfFilterDoubleArrayWithScale(double[] input, double filterScale, int sortRangeScale) {
 		int rangeScale= (int)(filterScale* input.length);
-		input= new LYG4DWithDoubleQuickSort4D().sort(input, sortRangeScale);
+		//input= new LYG4DWithDoubleQuickSort4D().sort(input, sortRangeScale);
+		input= new LYG9DWithDoubleQuickSort4D().sort(input, sortRangeScale, 4);//算法应用更新
 		double output= 0;
 		for(int i= rangeScale; i< input.length- rangeScale; i++) {
 			output+= input[i];
