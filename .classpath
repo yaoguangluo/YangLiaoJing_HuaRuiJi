@@ -34,15 +34,15 @@
 	<classpathentry kind="src" path="S_UnicornNeroThemeETL"/>
 	<classpathentry kind="src" path="S_UnicornUI"/>
 	<classpathentry kind="src" path="S_UtilsWordsForSpeak"/>
-	<classpathentry kind="src" path="DataVPCSBackend"/>
-	<classpathentry kind="src" path="DataVPCSFrontend"/>
-	<classpathentry kind="src" path="DataNetwork"/>
-	<classpathentry kind="src" path="DataVPCSPublic"/>
-	<classpathentry kind="src" path="DataProcessor"/>
-	<classpathentry kind="src" path="DataPLSQLAdmin"/>
-	<classpathentry kind="src" path="DataSets"/>
-	<classpathentry kind="src" path="DataSleepers"/>
-	<classpathentry kind="src" path="DataSkivvy"/>
+	<classpathentry kind="src" path="S_VPCSBackend"/>
+	<classpathentry kind="src" path="S_VPCSFrontend"/>
+	<classpathentry kind="src" path="S_Network"/>
+	<classpathentry kind="src" path="S_VPCSPublic"/>
+	<classpathentry kind="src" path="S_Processor"/>
+	<classpathentry kind="src" path="S_PLSQLAdmin"/>
+	<classpathentry kind="src" path="S_Sets"/>
+	<classpathentry kind="src" path="S_Sleepers"/>
+	<classpathentry kind="src" path="S_Skivvy"/>
 	<classpathentry kind="lib" path="lib/artoolkitplus-2.3.1-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/cmu_time_awb.jar"/>
