@@ -1,12 +1,12 @@
 eclipse.preferences.version=1
-encoding//DataParserBehaviorMap/OSI/PEQ/OPM/VEC/test/EducationLevelTest.java=UTF-8
-encoding//DataParserBehaviorMap/OSI/PEQ/OPM/VEC/test/LiterarinessLevelTest.java=UTF-8
 encoding//DataParserWordSegment/DetaParserWordSegmentReadMe.md=UTF-8
 encoding//DataParserWordSegment/OSI/OPE/ASQ/PSU/test/DemoEX.java=UTF-8
 encoding//DataParserWordSegment/OSI/OPE/ASQ/PSU/test/DemoPOS.java=UTF-8
 encoding//DataParserWordSegment/OSI/OPE/ASQ/PSU/test/DemoPOSforSpecial_UTF8.java=UTF-8
-encoding//DataUnicornETLNodeNeiWaiKe/OSI/OSU/SI/OSI/AVI/AEI/ACI/ASI/OVI/OEI/OCI/OSI/PVI/PEI/PCI/PSI/addLaoNianKePage/Dictionary.java=UTF-8
+encoding//S_ParserBehaviorMap/OSI/PEQ/OPM/VEC/test/EducationLevelTest.java=UTF-8
+encoding//S_ParserBehaviorMap/OSI/PEQ/OPM/VEC/test/LiterarinessLevelTest.java=UTF-8
+encoding//S_UnicornETLNodeNeiWaiKe/OSI/OSU/SI/OSI/AVI/AEI/ACI/ASI/OVI/OEI/OCI/OSI/PVI/PEI/PCI/PSI/addLaoNianKePage/Dictionary.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/SimpleTokenizer.java=UTF-8
 encoding//ThirdPartyListenCMU/edu/cmu/sphinx/alignment/USEnglishTokenizer.java=UTF-8
-encoding/DataUnicornETLNodeNeiWaiKe=UTF-8
 encoding/DataUnicornETLNodeSmallMedicine=UTF-8
+encoding/S_UnicornETLNodeNeiWaiKe=UTF-8
