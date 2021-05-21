@@ -6,7 +6,7 @@ import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.demension.Position2D;
 import OSI.PCI.ASQ.demension.Position3D;
-import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
+//import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 
 public class FindPCAMeanDistance{
 	//oberserverPCAScale：确定主要有效最短路径的观测数

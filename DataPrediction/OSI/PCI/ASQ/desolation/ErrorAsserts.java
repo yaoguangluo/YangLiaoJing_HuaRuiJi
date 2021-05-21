@@ -1,7 +1,7 @@
 package OSI.PCI.ASQ.desolation;
 
 import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
-import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
+//import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 
 public class ErrorAsserts{
 	//这个函数用于进行精度误差匹配 获取质量是否属于合格状态。

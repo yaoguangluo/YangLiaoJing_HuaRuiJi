@@ -14,7 +14,7 @@ import OSI.PCI.ASQ.demension.Line2D;
 import OSI.PCI.ASQ.demension.Line3D;
 import OSI.PCI.ASQ.demension.Position2D;
 import OSI.PCI.ASQ.demension.Position3D;
-import OSI.PCI.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
+//import OSI.PCI.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
 
 
 public class YaoguangLuoEulerRingTSP3D{
