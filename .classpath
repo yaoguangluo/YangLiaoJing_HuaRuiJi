@@ -20,10 +20,10 @@
 	<classpathentry kind="src" path="S_UnicornETLNodeMedicine"/>
 	<classpathentry kind="src" path="S_ProcessorMovie"/>
 	<classpathentry kind="src" path="S_UnicornETLNodeNeiWaiKe"/>
-	<classpathentry kind="src" path="S_ParserBehaviorMap"/>
-	<classpathentry kind="src" path="S_ParserEmotionMap"/>
-	<classpathentry kind="src" path="S_ParserNeroMap"/>
-	<classpathentry kind="src" path="S_ParserSensingMap"/>
+	<classpathentry kind="src" path="S_ParserBehaviorVision"/>
+	<classpathentry kind="src" path="S_ParserEmotionVision"/>
+	<classpathentry kind="src" path="S_ParserNeroVision"/>
+	<classpathentry kind="src" path="S_ParserSensingVision"/>
 	<classpathentry kind="src" path="S_ParserWordSegment"/>
 	<classpathentry kind="src" path="S_UnicornETLNodePGMedicine"/>
 	<classpathentry kind="src" path="S_PLSQL"/>
@@ -40,7 +40,7 @@
 	<classpathentry kind="src" path="S_VPCSPublic"/>
 	<classpathentry kind="src" path="S_Processor"/>
 	<classpathentry kind="src" path="S_PLSQLAdmin"/>
-	<classpathentry kind="src" path="S_Sets"/>
+	<classpathentry kind="src" path="S_Pillows"/>
 	<classpathentry kind="src" path="S_Sleepers"/>
 	<classpathentry kind="src" path="S_Skivvy"/>
 	<classpathentry kind="lib" path="lib/artoolkitplus-2.3.1-1.3.jar"/>
