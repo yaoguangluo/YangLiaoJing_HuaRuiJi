@@ -98,7 +98,7 @@
 
 ### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作  
  1>(中华人民共和国 国家版权局).软著登字第3951366号 德塔自然语言图灵系统研发 作者CN: 2019SR0530609    
- 见工程文件夹: S_ParserWordSegment, S_ParserNeroMap, S_ParserSensingMap, S_ParserBehaviorMap, S_ParserEmotionMap  
+ 见工程文件夹: S_ParserWordSegment, S_ParserNeroVision, S_ParserSensingVision, S_ParserBehaviorVision, S_ParserEmotionVision  
    
  2>(中华人民共和国 国家版权局).软著登字第4240558号 ETL数据流处理软件研发引擎 作者CN: 2019R11L803285   
  见工程文件夹: S_UnicornNeroThemeETL, S_UnicornUI,  
@@ -149,7 +149,7 @@
  1>函数名开始整体优化  
  2>重要函数开始详细注释描述  
  3>配置文件综合  
- 4>SONAR 覆盖率测试  
+ 4>SONAR 覆盖率测试(sonar目前不支持balanced PDE, 就先做下sonar lint重用函数优化)  
  5>TVM 全文肽化  
  6>函数属性统一元基分类  
  7>变量前缀统一元基分类  
