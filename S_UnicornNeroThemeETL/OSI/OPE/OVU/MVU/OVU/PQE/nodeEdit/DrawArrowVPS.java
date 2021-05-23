@@ -1,7 +1,7 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
 import java.awt.*;
 
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.controller.DrawArrow;
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.DrawArrow;
 public class DrawArrowVPS implements DrawArrow {
 	public void doDrawArrow(Graphics2D graphics2D, int x, int y, int connectX, int connectY) {
 		x+= 10;

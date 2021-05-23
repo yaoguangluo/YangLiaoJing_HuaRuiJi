@@ -1,7 +1,7 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
 import java.awt.event.MouseEvent;
 
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.controller.ChooseCheck;;
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.ChooseCheck;;
 public class ChooseCheckVPS implements ChooseCheck {
 	public Object[] chooseCheckNode(LinkNode first, MouseEvent arg0) {
 		LinkNode node= first;

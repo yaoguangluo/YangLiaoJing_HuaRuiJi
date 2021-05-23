@@ -1,5 +1,5 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.controller.DynamicLineUpdater;
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.DynamicLineUpdater;
 public class DynamicLineUpdaterVPS implements DynamicLineUpdater{
 	public void exec(LinkNode first,LinkNode node){
 		LinkNode linkNode= first;

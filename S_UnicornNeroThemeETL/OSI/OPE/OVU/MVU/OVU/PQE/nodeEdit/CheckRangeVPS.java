@@ -1,7 +1,7 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
 import java.awt.event.MouseEvent;
 
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.controller.CheckRange;
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.CheckRange;
 public class CheckRangeVPS implements CheckRange{
 	public void doCheckRange(LinkNode first, LinkNode node, MouseEvent arg0) {
 		LinkNode linkNode= first;
