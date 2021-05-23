@@ -26,7 +26,7 @@ public class CreateTableGuJiJingDian{
 			   		"culumnName:uk: È√˚:string;"+ 
 			   		"culumnName:uk:∂Œ¬‰:string;";
 		try {
-			OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

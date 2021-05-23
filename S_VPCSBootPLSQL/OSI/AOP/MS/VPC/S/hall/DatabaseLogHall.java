@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import PEU.P.cache.*;
 import PEU.P.zip.*;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 
 @SuppressWarnings("unused")

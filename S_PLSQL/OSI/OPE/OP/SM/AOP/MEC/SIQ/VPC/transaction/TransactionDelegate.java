@@ -1,7 +1,7 @@
 package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.transaction;
 import com.google.gson.Gson;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.companyImpl.LoginServiceImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 import OSI.OPE.VPC.VQS.DSU.utils.StringUtil;
 import PEU.P.md5.*;
 

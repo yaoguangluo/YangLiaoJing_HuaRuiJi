@@ -38,7 +38,7 @@ public class DropStandard{
 			String plsql= "setRoot:"+ rootPath+ ";";
 			plsql+= "baseName:"+ baseName+ ";"; 
 			plsql+= "tableName:"+ tabKey+ ":drop;";
-			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp.ExecPLSQL(plsql, true);
 		}catch(Exception e1) {
 			//×¼±¸Ð´»Ø¹ö
 			e1.printStackTrace();
