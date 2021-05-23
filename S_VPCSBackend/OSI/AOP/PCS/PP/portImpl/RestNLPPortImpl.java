@@ -1,8 +1,8 @@
 package OSI.AOP.PCS.PP.portImpl;
 import OSI.AEU.AVC.SUQ.engine.LenovoInit;
-import OSI.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
+import OSI.AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import OSI.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
-import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.PEQ.AMV.ECS.test.ANNTest;

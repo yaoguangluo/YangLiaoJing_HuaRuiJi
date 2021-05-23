@@ -1,11 +1,11 @@
-package OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp;
+package OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import OSI.MSU.OCI.ME.SMS.translator.Translator;
+import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;

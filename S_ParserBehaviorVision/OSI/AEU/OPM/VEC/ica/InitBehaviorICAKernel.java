@@ -8,8 +8,8 @@ import java.util.Map;
 
 import OSI.AEU.AVC.SUQ.engine.EmotionInit;
 import OSI.AEU.AVC.SUQ.engine.EnvironmentInit;
-import OSI.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
-import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 

@@ -10,8 +10,8 @@ import java.util.Map;
 
 import ME.APM.VSQ.App;
 import OSI.ESU.sort.Quick9DLYGWithStringSwap;
-import OSI.MSU.OCI.ME.SMS.translator.Translator;
-import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
+import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
+import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.MSQ.SS.stable.StableData;

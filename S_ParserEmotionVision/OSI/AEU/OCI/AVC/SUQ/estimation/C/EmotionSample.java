@@ -1,4 +1,4 @@
-package OSI.AEU.OCI.AVC.SUQ.estimation;
+package OSI.AEU.OCI.AVC.SUQ.estimation.C;
 
 public class EmotionSample{
 	public double getPositiveCount() {

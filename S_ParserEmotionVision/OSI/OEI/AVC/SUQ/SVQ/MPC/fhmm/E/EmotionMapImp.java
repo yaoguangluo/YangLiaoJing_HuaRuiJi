@@ -1,4 +1,4 @@
-package OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp;
+package OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.E;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
+import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
 public class EmotionMapImp implements EmotionMap{

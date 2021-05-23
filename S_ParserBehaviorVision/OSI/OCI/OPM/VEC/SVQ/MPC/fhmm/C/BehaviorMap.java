@@ -1,4 +1,4 @@
-package OSI.OCI.OPM.VEC.SVQ.MPC.fhmm;
+package OSI.OCI.OPM.VEC.SVQ.MPC.fhmm.C;
 import java.io.IOException;
 import java.util.Map;
 public interface BehaviorMap{

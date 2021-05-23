@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import OSI.MSU.OCI.ME.SMS.translator.Translator;
-import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
+import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
+import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;

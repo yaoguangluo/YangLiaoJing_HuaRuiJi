@@ -1,4 +1,4 @@
-package OSI.MSU.OCI.ME.SMS.translator;
+package OSI.MSU.OCI.ME.SMS.translator.C;
 import java.io.IOException;
 import java.util.List;
 

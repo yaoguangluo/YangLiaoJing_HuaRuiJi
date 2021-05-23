@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OSI.AEU.AVC.SUQ.engine.EnvironmentInit;
-import OSI.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
+import OSI.AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 public class EnvironmentTest{
 	public static void main(String[] argv) throws IOException {
 		//init
