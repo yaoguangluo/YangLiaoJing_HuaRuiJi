@@ -31,6 +31,7 @@ import javax.swing.table.JTableHeader;
 
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.TableSorterZYNK;
+import MSV.OSU.string.NullObject;
 import MVQ.button.DetaButton;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.ESU.list.ListSwap;
@@ -1111,16 +1112,16 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 			String iteratorForCopyString = iteratorForCopy.next();
 			score[copyCount] = iteratorForCopyString;
 			String temps = iteratorForCopyString.toString()
-					+	null!= dic_jie_shao.get(iteratorForCopyString)? dic_jie_shao.get(iteratorForCopyString).toString().replaceAll("\\s*", ""):""
-					+	dic_yao_li.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_chengfen_danwei.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_yong_fa.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_zhu_yi.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_shi_ying.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_bu_liang_fan_ying.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_yong_liang.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_yao_wu_xiang_hu_zuo_yong.get(iteratorForCopyString).toString().replaceAll("\\s*", "")
-					+	dic_qi_ta.get(iteratorForCopyString).toString().replaceAll("\\s*", "");
+					+	NullObject.checkNULL(dic_jie_shao.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_yao_li.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_chengfen_danwei.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_yong_fa.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_zhu_yi.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_shi_ying.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_bu_liang_fan_ying.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_yong_liang.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_yao_wu_xiang_hu_zuo_yong.get(iteratorForCopyString)).replaceAll("\\s*", "")
+					+	NullObject.checkNULL(dic_qi_ta.get(iteratorForCopyString)).replaceAll("\\s*", "");
 			Iterator<String> iteratorWordFrequency = mapSearchWithoutSort.keySet().iterator();
 			Here:
 				while(iteratorWordFrequency.hasNext()) {  
