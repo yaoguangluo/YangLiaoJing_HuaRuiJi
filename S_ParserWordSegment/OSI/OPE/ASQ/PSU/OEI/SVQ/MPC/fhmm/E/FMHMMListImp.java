@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.FMHMMList;
+import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FMHMMList;
 import OSI.OPE.ASQ.PSU.OEI.ME.euclid.E.EuclidControllerImp;
 public class FMHMMListImp implements FMHMMList {
 	private Map<String, String> words;

@@ -6,7 +6,7 @@ import java.util.Random;
 
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
 import OSI.OPE.PCS.thread.SocketThread;
 import OSI.OPE.PCS.thread.SocketThreadPool;

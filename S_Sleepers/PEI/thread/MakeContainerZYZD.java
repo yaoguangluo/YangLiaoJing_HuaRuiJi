@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.zhongYiZhenDuanXue.ZyzdxPage;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class MakeContainerZYZD extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

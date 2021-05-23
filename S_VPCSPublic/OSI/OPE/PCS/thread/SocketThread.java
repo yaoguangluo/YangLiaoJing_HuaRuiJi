@@ -8,7 +8,7 @@ import java.net.Socket;
 
 import OSI.AOP.PCS.rest.RestMap;
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 
 public class SocketThread extends Thread implements Runnable{
 	private Socket socket;

@@ -8,7 +8,7 @@ import javax.swing.*;
 
 import ME.APM.VSQ.App;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 public class AddChanHouKangFuKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI 

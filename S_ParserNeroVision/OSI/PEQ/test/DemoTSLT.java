@@ -8,7 +8,7 @@ import java.util.Map;
 import OSI.MSU.OCI.ME.SMS.translator.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.imp.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
 
 //import timeProcessor.TimeCheck;

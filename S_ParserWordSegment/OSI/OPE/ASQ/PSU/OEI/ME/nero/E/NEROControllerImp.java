@@ -3,7 +3,7 @@ import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OPE.ASQ.PSU.OCI.ME.nero.NEROController;
+import OSI.OPE.ASQ.PSU.OCI.ME.nero.C.NEROController;
 public class NEROControllerImp implements NEROController {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public StringBuilder getBinaryForestRecurWord(StringBuilder outputWordNode, String inputString, int charPosition

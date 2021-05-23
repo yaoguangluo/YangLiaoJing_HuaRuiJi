@@ -1,4 +1,4 @@
-package OSI.OPE.ASQ.PSU.OCI.ME.nero;
+package OSI.OPE.ASQ.PSU.OCI.ME.nero.C;
 import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;

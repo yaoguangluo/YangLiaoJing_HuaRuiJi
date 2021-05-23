@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class RestMap {
 	public static void process(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 
 			throws IOException {

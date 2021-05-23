@@ -1,3 +1,3 @@
-package OSI.OPE.ASQ.PSU.OCI.ME.analysis;
+package OSI.OPE.ASQ.PSU.OCI.ME.analysis.C;
 public interface CogsBinaryForestAnalyzer extends BinaryForestAnalyzer {
 }

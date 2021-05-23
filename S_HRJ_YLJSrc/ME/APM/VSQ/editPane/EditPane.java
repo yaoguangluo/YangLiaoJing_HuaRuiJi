@@ -20,7 +20,7 @@ import javax.swing.JTextPane;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.AOP.neo.tts.ReadChinese;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class EditPane extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
 	public String key;

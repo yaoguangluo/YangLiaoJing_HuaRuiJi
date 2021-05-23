@@ -6,7 +6,7 @@ import java.util.Map;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
-import OSI.OPE.ASQ.PSU.OCI.ME.pos.POSController;
+import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
 
 public class POSControllerImp implements POSController{
 	public int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,

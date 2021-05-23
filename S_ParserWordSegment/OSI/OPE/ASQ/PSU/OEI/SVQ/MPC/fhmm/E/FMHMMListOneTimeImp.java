@@ -16,7 +16,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMPOS;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
-import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.FHMMList;
+import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FHMMList;
 import PEU.P.nlp.*;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")

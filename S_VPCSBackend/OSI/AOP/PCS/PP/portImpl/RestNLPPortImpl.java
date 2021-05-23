@@ -4,7 +4,7 @@ import OSI.AEU.OCI.AVC.SUQ.estimation.EmotionSample;
 import OSI.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.PEQ.AMV.ECS.test.ANNTest;
 import OSI.PEQ.AMV.ECS.test.DNNTest;
 import OSI.PEQ.AMV.ECS.test.RNN_IDETest;

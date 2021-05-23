@@ -23,7 +23,7 @@ import javax.media.opengl.*;
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 import jogl.obj.yaoguangLuo.JOGLOBJShape;
 

@@ -1,9 +1,9 @@
-package OSI.OPE.ASQ.PSU.OCI.ME.nlp;
+package OSI.OPE.ASQ.PSU.OCI.ME.nlp.C;
 import java.util.List;
 import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.pos.POSController;
+import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
 
 public interface NLPController {
 	public int doSlangPartAndPOSCheckForTwoChar(int countInputStringLength, List<String> outputList

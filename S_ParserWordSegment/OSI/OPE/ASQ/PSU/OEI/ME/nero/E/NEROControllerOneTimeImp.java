@@ -3,7 +3,7 @@ import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OPE.ASQ.PSU.OCI.ME.nero.NEROControllerOneTime;
+import OSI.OPE.ASQ.PSU.OCI.ME.nero.C.NEROControllerOneTime;
 public class NEROControllerOneTimeImp implements NEROControllerOneTime {
 	public StringBuilder getBinaryForestRecurWordOneTime(StringBuilder outputWordNode, String inputString
 			, int charPosition, int inputStringLength, Map<Long, FMHMMNode> forestRoots, int forestDepth

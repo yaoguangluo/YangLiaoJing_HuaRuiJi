@@ -11,7 +11,7 @@ import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.ESU.list.ListSwap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
 //import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 public class NLPTopicMatch{

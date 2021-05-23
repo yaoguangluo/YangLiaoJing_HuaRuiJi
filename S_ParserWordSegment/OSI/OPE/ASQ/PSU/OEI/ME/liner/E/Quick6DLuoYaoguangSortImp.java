@@ -6,7 +6,7 @@ import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OSI.OPE.ASQ.PSU.OCI.ME.liner.Quick6DLuoYaoguangSort;
+import OSI.OPE.ASQ.PSU.OCI.ME.liner.C.Quick6DLuoYaoguangSort;
 /*
 ** 快排6小高峰修正算法 作者 罗瑶光
 ** 快排10小高峰修正算法 作者 罗瑶光 20200921

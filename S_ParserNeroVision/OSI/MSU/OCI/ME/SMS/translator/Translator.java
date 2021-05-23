@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.List;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
+import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public interface Translator{	
 	void init(Analyzer analyzer) throws IOException;
 	String EnglishStringToChineseString(Analyzer analyzer, String EnglishString);
