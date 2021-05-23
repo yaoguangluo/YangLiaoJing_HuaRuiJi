@@ -10,7 +10,6 @@ import OSI.PEQ.AMV.ECS.test.DNNTest;
 import OSI.PEQ.AMV.ECS.test.RNN_IDETest;
 import OSI.PEQ.AMV.ECS.test.SensingTest;
 import OSI.PEQ.OPM.VEC.test.SuccessICATest;
-import PEU.P.sort.*;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -24,7 +23,6 @@ import java.util.List;
 import java.util.Map;
 
 import MSV.OSQ.sets.DetaDouble;
-import OEU.LYG4DQS4D.Quick_6D_luoyaoguang_Sort;
 import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
 public class RestNLPPortImpl{// implements RestLoginPort {
 	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
