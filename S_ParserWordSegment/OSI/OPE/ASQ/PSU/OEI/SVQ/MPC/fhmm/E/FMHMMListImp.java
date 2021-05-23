@@ -1,4 +1,4 @@
-package OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.imp;
+package OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E;
 import java.io.BufferedReader;
 
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.FMHMMList;
-import OSI.OPE.ASQ.PSU.OEI.ME.euclid.imp.EuclidControllerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.euclid.E.EuclidControllerImp;
 public class FMHMMListImp implements FMHMMList {
 	private Map<String, String> words;
 	private Map<Long, FMHMMNode> linkedHashMap;

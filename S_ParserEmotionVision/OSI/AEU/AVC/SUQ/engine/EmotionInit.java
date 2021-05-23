@@ -11,7 +11,7 @@ import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.EmotionMap;
 import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.imp.EmotionMapImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.imp.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {

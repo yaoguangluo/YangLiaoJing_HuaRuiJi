@@ -1,4 +1,4 @@
-package OSI.OPE.ASQ.PSU.OEI.ME.analysis.imp;
+package OSI.OPE.ASQ.PSU.OEI.ME.analysis.E;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -18,11 +18,11 @@ import OSI.OPE.ASQ.PSU.OCI.ME.nero.NEROControllerOneTime;
 import OSI.OPE.ASQ.PSU.OCI.ME.nlp.NLPController;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.POSController;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.FHMMList;
-import OSI.OPE.ASQ.PSU.OEI.ME.liner.imp.Quick6DLuoYaoguangSort3DMapImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nero.imp.NEROControllerOneTimeImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nlp.imp.NLPControllerImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.pos.imp.POSControllerImp;
-import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.imp.FMHMMListOneTimeImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NEROControllerOneTimeImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLPControllerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POSControllerImp;
+import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E.FMHMMListOneTimeImp;
 import OSI.PEQ.AMV.ECS.test.SensingTest;
 public class AnalyzerImp implements Analyzer {
 	protected FHMMList fHMMList;
