@@ -24,6 +24,8 @@ import java.util.List;
 import java.util.Map;
 
 import MSV.OSQ.sets.DetaDouble;
+import OEU.LYG4DQS4D.Quick_6D_luoyaoguang_Sort;
+import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
 public class RestNLPPortImpl{// implements RestLoginPort {
 	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
 		//System.out.printntln(string);
@@ -130,7 +132,8 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Map<String, Object> dataCG(Analyzer analyzer, String string) throws InstantiationException, IllegalAccessException, IOException {
+	public static Map<String, Object> dataCG(Analyzer analyzer, String string) throws InstantiationException
+	, IllegalAccessException, IOException {
 		//System.out.printntln(string);
 		SensingTest sensingTest = analyzer.getSensingTest();
 		DNNTest dNNTest= new DNNTest();
@@ -161,7 +164,8 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 			value[count][0] = iteratorString.split(":")[0];
 			value[count++][1] = iteratorString.split(":")[1];
 		}
-		value = new Quick_6D_luoyaoguang_Sort().sort(value);
+		//value = new Quick_6D_luoyaoguang_Sort().sort(value);
+		value = new Quick_7D_luoyaoguang_Sort().sort(value);
 		String cg= "´ÊÃû/ÖÐÐÄ";
 	    cg+= "\r\n";
 		for(int i = 0; i<value.length; i++) {

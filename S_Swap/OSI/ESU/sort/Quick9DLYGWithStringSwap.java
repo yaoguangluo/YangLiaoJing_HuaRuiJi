@@ -1,7 +1,8 @@
 package OSI.ESU.sort;
+import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
 import PEU.P.sort.*;
 //×÷Õß ÂÞÑþ¹â
-public class Quick9DLYGWithStringSwap extends Quick_6D_luoyaoguang_Sort{
+public class Quick9DLYGWithStringSwap extends Quick_7D_luoyaoguang_Sort{
 	public int[] sort(int[]a, String[]sa) {
 		processDouble(a, 0, a.length - 1, sa, 0);
 		return a;
