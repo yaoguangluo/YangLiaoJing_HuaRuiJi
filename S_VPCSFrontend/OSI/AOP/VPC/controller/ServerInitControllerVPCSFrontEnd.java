@@ -6,8 +6,8 @@ import java.util.Properties;
 
 import ME.APM.VSQ.App;
 import OSI.OPE.MS.VPC.PP.TimeProcess;
-import OSI.OPE.MS.VPC.sleeper.Sleeper;
-import OSI.OPE.MS.VPC.sleeper.SleeperHall;
+import OSI.OPE.MS.VPC.SH.Sleeper;
+import OSI.OPE.MS.VPC.SH.SleeperHall;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.config.Config;
 public class ServerInitControllerVPCSFrontEnd {

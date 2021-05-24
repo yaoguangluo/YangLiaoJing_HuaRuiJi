@@ -1,9 +1,9 @@
-package OSI.OPE.MS.VPC.vision;
+package OSI.OPE.MS.VPC.V;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import OSI.OPE.MS.VPC.sleeper.SleeperHall;
+import OSI.OPE.MS.VPC.SH.SleeperHall;
 public class VPCSResponse{
 	public Socket getSocket() {
 		return socket;

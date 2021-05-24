@@ -1,4 +1,4 @@
-package OSI.OPE.MS.VPC.sleeper;
+package OSI.OPE.MS.VPC.SH;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 public class SleeperHall{

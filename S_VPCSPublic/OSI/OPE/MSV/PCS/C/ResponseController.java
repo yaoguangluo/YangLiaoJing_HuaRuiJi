@@ -1,9 +1,9 @@
-package OSI.OPE.MSV.PCS.controller;
+package OSI.OPE.MSV.PCS.C;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import OSI.OPE.MS.VPC.sleeper.SleeperHall;
+import OSI.OPE.MS.VPC.SH.SleeperHall;
 public class ResponseController {
 	public static void main(String[] args){
 

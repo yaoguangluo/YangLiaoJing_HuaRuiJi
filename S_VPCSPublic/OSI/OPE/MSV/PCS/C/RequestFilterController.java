@@ -1,4 +1,4 @@
-package OSI.OPE.MSV.PCS.controller;
+package OSI.OPE.MSV.PCS.C;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -10,8 +10,8 @@ import java.net.Socket;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OPE.MS.VPC.vision.VPCSRequest;
-import OSI.OPE.MS.VPC.vision.VPCSResponse;
+import OSI.OPE.MS.VPC.V.VPCSRequest;
+import OSI.OPE.MS.VPC.V.VPCSResponse;
 
 @SuppressWarnings("unused")
 public class RequestFilterController {

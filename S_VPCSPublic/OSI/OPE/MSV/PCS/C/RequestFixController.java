@@ -1,9 +1,9 @@
-package OSI.OPE.MSV.PCS.controller;
+package OSI.OPE.MSV.PCS.C;
 
 import java.net.Socket;
 
-import OSI.OPE.MS.VPC.vision.VPCSRequest;
-import OSI.OPE.MS.VPC.vision.VPCSResponse;
+import OSI.OPE.MS.VPC.V.VPCSRequest;
+import OSI.OPE.MS.VPC.V.VPCSResponse;
 
 public class RequestFixController {
 	public static void main(String[] args){

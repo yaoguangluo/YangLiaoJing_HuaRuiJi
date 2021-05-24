@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import OSI.ESU.json.JsonSwap;
-import OSI.OPE.PCS.VQS.DSU.maps.VtoV;
+import OSI.OPE.PCS.VQS.DSU.V.VtoV;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
 public class RestAskPortImpl{// implements RestAskPort {
