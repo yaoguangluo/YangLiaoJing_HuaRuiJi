@@ -20,10 +20,10 @@
 	<classpathentry kind="src" path="S_UnicornETLNodeMedicine"/>
 	<classpathentry kind="src" path="S_ProcessorMovie"/>
 	<classpathentry kind="src" path="S_UnicornETLNodeNeiWaiKe"/>
-	<classpathentry kind="src" path="S_ParserBehaviorVision"/>
-	<classpathentry kind="src" path="S_ParserEmotionVision"/>
-	<classpathentry kind="src" path="S_ParserNeroVision"/>
-	<classpathentry kind="src" path="S_ParserSensingVision"/>
+	<classpathentry kind="src" path="S_ParserBehavior_V"/>
+	<classpathentry kind="src" path="S_ParserEmotion_V"/>
+	<classpathentry kind="src" path="S_ParserNero_V"/>
+	<classpathentry kind="src" path="S_ParserSensing_V"/>
 	<classpathentry kind="src" path="S_ParserWordSegment"/>
 	<classpathentry kind="src" path="S_UnicornETLNodePGMedicine"/>
 	<classpathentry kind="src" path="S_PLSQL"/>
