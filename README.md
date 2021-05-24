@@ -98,7 +98,7 @@
 
 ### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作  
  1>(中华人民共和国 国家版权局).软著登字第3951366号 德塔自然语言图灵系统研发 作者CN: 2019SR0530609    
- 见工程文件夹: S_ParserWordSegment, S_ParserNeroVision, S_ParserSensingVision, S_ParserBehaviorVision, S_ParserEmotionVision  
+ 见工程文件夹: S_ParserWordSegment, S_ParserNero_V, S_ParserSensing_V, S_ParserBehavior_V, S_ParserEmotion_V  
    
  2>(中华人民共和国 国家版权局).软著登字第4240558号 ETL数据流处理软件研发引擎 作者CN: 2019R11L803285   
  见工程文件夹: S_UnicornNeroThemeETL, S_UnicornUI,  
@@ -173,7 +173,7 @@
  7>检验报告元基化    
  8>开始2021年应用计划布局          
  9>德塔PLSQL医学数据库语言控制台            
- 10>处方页预览的美观化设计      
+ 10>处方页预览的美观化设计(ETL节点设计 为 非主要任务, 优先级降低)      
  11>DNA元基药物语义DNA计算理解与数据分析  
  12>均匀化数据函数格式    
 
