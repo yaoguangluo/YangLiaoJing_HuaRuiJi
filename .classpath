@@ -6,7 +6,7 @@
 	<classpathentry kind="src" path="ThirdPartyUtilsJVM"/>
 	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
 	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
-	<classpathentry kind="src" path="M_YLJConfig_"/>
+	<classpathentry kind="src" path="M_Config"/>
 	<classpathentry kind="src" path="P_Prediction"/>
 	<classpathentry kind="src" path="O_Wavelet"/>
 	<classpathentry kind="src" path="O_AILanguage"/>
@@ -36,13 +36,13 @@
 	<classpathentry kind="src" path="O_UtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="P_VPCSBackend"/>
 	<classpathentry kind="src" path="P_VPCSFrontend"/>
-	<classpathentry kind="src" path="S_Network"/>
-	<classpathentry kind="src" path="S_VPCSPublic"/>
-	<classpathentry kind="src" path="S_Processor"/>
-	<classpathentry kind="src" path="S_PLSQLAdmin"/>
-	<classpathentry kind="src" path="S_Pillows"/>
-	<classpathentry kind="src" path="S_Sleepers"/>
-	<classpathentry kind="src" path="S_Skivvy"/>
+	<classpathentry kind="src" path="P_Network"/>
+	<classpathentry kind="src" path="M_VPCSPublic"/>
+	<classpathentry kind="src" path="P_Processor"/>
+	<classpathentry kind="src" path="O_PLSQLAdmin"/>
+	<classpathentry kind="src" path="M_Pillows"/>
+	<classpathentry kind="src" path="M_Sleepers"/>
+	<classpathentry kind="src" path="M_Skivvy"/>
 	<classpathentry kind="lib" path="lib/artoolkitplus-2.3.1-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/bssm.jar"/>
 	<classpathentry kind="lib" path="lib/cmu_time_awb.jar"/>
