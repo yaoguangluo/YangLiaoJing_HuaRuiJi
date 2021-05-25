@@ -98,22 +98,22 @@
 
 ### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作  
  1>(中华人民共和国 国家版权局).软著登字第3951366号 德塔自然语言图灵系统研发 作者CN: 2019SR0530609    
- 见工程文件夹: S_ParserWordSegment, S_ParserNero_V, S_ParserSensing_V, S_ParserBehavior_V, S_ParserEmotion_V  
+ 见工程文件夹: O_ParserWordSegment, A_ParserNero, A_ParserSensing, A_ParserBehavior, A_ParserEmotion  
    
  2>(中华人民共和国 国家版权局).软著登字第4240558号 ETL数据流处理软件研发引擎 作者CN: 2019R11L803285   
- 见工程文件夹: S_UnicornNeroThemeETL, S_UnicornUI,  
+ 见工程文件夹: M_UnicornNeroThemeETL, M_UnicornUI,  
    
  3>(中华人民共和国 国家版权局).软著登字第4584594号 德塔数据分析算法 Java 引擎系统 作者CN: 2019R11L1122752    
- 见工程文件夹: S_Processor  
+ 见工程文件夹: P_Processor  
   
  4>(中华人民共和国 国家版权局).软著登字第4317518号 德塔 PLSQL Socket数据库引擎研发 作者CN: 2019R11L885247    
- 见工程文件夹: S_PLSQL, S_VPCSBackend, S_VPCSFrontend, S_PLSQLDBBootVPCS (最新VPCS public整合) S_VPCSPublic,  
+ 见工程文件夹: M_PLSQL, P_VPCSBackend, P_VPCSFrontend, O_VPCSBootPLSQL (最新VPCS public整合) M_VPCSPublic,  
    
  5>(中华人民共和国 国家版权局).软著登字第4607950号 德塔数据结构变量快速转换 作者CN: 2019R11L1293422    
- 见工程文件夹: S_Swap,  
+ 见工程文件夹: O_Swap,  
    
  6>(中华人民共和国 国家版权局).软著登字第5447819号 快速数据预测算法引擎系统 V1.0.0 作者CN: 2020R11L186818    
- 见工程文件夹: S_Prediction,  
+ 见工程文件夹: A_Prediction,  
    
  7>(中华人民共和国 国家版权局) 作者CN: 2020Z11L0333706 国作登字-2021-A-00097017  DNA 元基编码 类人DNA与 神经元基于催化算子映射编码方式 V_1.2.2    
    
@@ -159,7 +159,7 @@
  11>中药数据的的功效花肽元基化编码       
  12>禁忌毒花肽元基化编码       
  13>函数归类 与 DNA元基索引过滤  
- 14>索引均匀           
+ 14>索引均匀 与 索引分层          
 
 
 ### 当前第三卷养疗经应用任务 （如果有开源爱好者可自行开分支，注意协议为 GPL，避免法律纠纷）  

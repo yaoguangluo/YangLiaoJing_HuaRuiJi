@@ -7,7 +7,7 @@
 	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
 	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
 	<classpathentry kind="src" path="M_Config"/>
-	<classpathentry kind="src" path="P_Prediction"/>
+	<classpathentry kind="src" path="A_Prediction"/>
 	<classpathentry kind="src" path="O_Wavelet"/>
 	<classpathentry kind="src" path="O_AILanguage"/>
 	<classpathentry kind="src" path="M_BioDNA3st"/>
