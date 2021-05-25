@@ -6,13 +6,13 @@
 	<classpathentry kind="src" path="ThirdPartyUtilsJVM"/>
 	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
 	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
-	<classpathentry kind="src" path="S_YLJConfig"/>
-	<classpathentry kind="src" path="S_Prediction"/>
-	<classpathentry kind="src" path="S_Wavelet"/>
-	<classpathentry kind="src" path="S_AILanguage"/>
-	<classpathentry kind="src" path="S_BioDNA3st"/>
-	<classpathentry kind="src" path="S_BussinessIntelligence"/>
-	<classpathentry kind="src" path="S_PLSQLDatabase"/>
+	<classpathentry kind="src" path="M_YLJConfig_"/>
+	<classpathentry kind="src" path="P_Prediction"/>
+	<classpathentry kind="src" path="O_Wavelet"/>
+	<classpathentry kind="src" path="O_AILanguage"/>
+	<classpathentry kind="src" path="M_BioDNA3st"/>
+	<classpathentry kind="src" path="P_BussinessIntelligence"/>
+	<classpathentry kind="src" path="M_PLSQLDatabase"/>
 	<classpathentry kind="src" path="S_Swap"/>
 	<classpathentry kind="src" path="S_VPCSBootPLSQL"/>
 	<classpathentry kind="src" path="S_HRJ_YLJSrc"/>
