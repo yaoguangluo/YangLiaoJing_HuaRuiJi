@@ -49,13 +49,13 @@
 
 ### 源码使用方法：  
  1>将jacob语音发音文件放入jdk或者JRE的 BIN目录 下， system32 的 driver目录下 或者 将函数注释掉。  
- 2>将S_PLSQLDatabase项目目录下的DBconfig.zip文件解压缩在C盘下即可（注意路径名，去掉 副本 两个字），文件我已经裁掉了850个中药属性和 1550个西药属性，仅做数据库集成调试展示。  
+ 2>将M_PLSQLDatabase项目目录下的DBconfig.zip文件解压缩在C盘下即可（注意路径名，去掉 副本 两个字），文件我已经裁掉了850个中药属性和 1550个西药属性，仅做数据库集成调试展示。  
  2.1> 注意 数据库的row文件夹下面请自行添加 is_delete_0 文件夹标识，不然 养疗经不显示哦，详细见《DETA socket流 plsql数据库》 著作的 语法。  
  2.1.1> is_delete_0 文件夹 压缩后被删除了，不是作者的问题，可自行百度为什么zip压缩后，系统的空文件夹会被自动删除掉。  
  2.2> 注意 数据库的row文件夹下面ID项目 sample数据 缺失, 如果想做 DMA 计算环境请 自己补充0,1,2 来标识.  
  3>，64位windows用eclipse即可打开运行调试。  
  3.1> 软件运行环境为 JDK1.8版本 及 以上.  
- 4> 启动文件: S_HRJ_YLJSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
+ 4> 启动文件: M_HRJ_YLJSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
  5> 工程函数整体为GBK, 有一些大sample文件和 字符处理的文本采用高级字符编辑为UTF8, 请注意, 避免乱码.#  
  5.1> 思路今天改变, 工程全局准备依旧使用GBK, 然后将所有字符串进行变量化, 然后变量全部放在变量STATBLE文件中用UTF8.  
  5.2> 工程中的4个 ETLNode 文件包工程, 除了 S_ETLNodeMedicine, S_UnicornETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
