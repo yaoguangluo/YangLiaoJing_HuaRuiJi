@@ -25,17 +25,17 @@
 	<classpathentry kind="src" path="A_ParserNero"/>
 	<classpathentry kind="src" path="A_ParserSensing"/>
 	<classpathentry kind="src" path="O_ParserWordSegment"/>
-	<classpathentry kind="src" path="S_UnicornETLNodePGMedicine"/>
-	<classpathentry kind="src" path="S_PLSQL"/>
-	<classpathentry kind="src" path="S_UnicornETLNodeSmallMedicine"/>
-	<classpathentry kind="src" path="S_ProcessorSound"/>
-	<classpathentry kind="src" path="S_Suggest"/>
-	<classpathentry kind="src" path="S_DNAPDE"/>
-	<classpathentry kind="src" path="S_UnicornNeroThemeETL"/>
-	<classpathentry kind="src" path="S_UnicornUI"/>
-	<classpathentry kind="src" path="S_UtilsWordsForSpeak"/>
-	<classpathentry kind="src" path="S_VPCSBackend"/>
-	<classpathentry kind="src" path="S_VPCSFrontend"/>
+	<classpathentry kind="src" path="P_UnicornETLNodePGMedicine"/>
+	<classpathentry kind="src" path="M_PLSQL"/>
+	<classpathentry kind="src" path="P_UnicornETLNodeSmallMedicine"/>
+	<classpathentry kind="src" path="P_ProcessorSound"/>
+	<classpathentry kind="src" path="P_Suggest"/>
+	<classpathentry kind="src" path="M_DNAPDE"/>
+	<classpathentry kind="src" path="M_UnicornNeroThemeETL"/>
+	<classpathentry kind="src" path="M_UnicornUI"/>
+	<classpathentry kind="src" path="O_UtilsWordsForSpeak"/>
+	<classpathentry kind="src" path="P_VPCSBackend"/>
+	<classpathentry kind="src" path="P_VPCSFrontend"/>
 	<classpathentry kind="src" path="S_Network"/>
 	<classpathentry kind="src" path="S_VPCSPublic"/>
 	<classpathentry kind="src" path="S_Processor"/>
