@@ -13,13 +13,13 @@
 	<classpathentry kind="src" path="M_BioDNA3st"/>
 	<classpathentry kind="src" path="P_BussinessIntelligence"/>
 	<classpathentry kind="src" path="M_PLSQLDatabase"/>
-	<classpathentry kind="src" path="S_Swap"/>
-	<classpathentry kind="src" path="S_VPCSBootPLSQL"/>
-	<classpathentry kind="src" path="S_HRJ_YLJSrc"/>
-	<classpathentry kind="src" path="S_ProcessorImage"/>
-	<classpathentry kind="src" path="S_UnicornETLNodeMedicine"/>
-	<classpathentry kind="src" path="S_ProcessorMovie"/>
-	<classpathentry kind="src" path="S_UnicornETLNodeNeiWaiKe"/>
+	<classpathentry kind="src" path="O_Swap"/>
+	<classpathentry kind="src" path="O_VPCSBootPLSQL"/>
+	<classpathentry kind="src" path="M_HRJ_YLJSrc"/>
+	<classpathentry kind="src" path="P_ProcessorImage"/>
+	<classpathentry kind="src" path="P_UnicornETLNodeMedicine"/>
+	<classpathentry kind="src" path="P_ProcessorMovie"/>
+	<classpathentry kind="src" path="P_UnicornETLNodeNeiWaiKe"/>
 	<classpathentry kind="src" path="S_ParserBehavior_V"/>
 	<classpathentry kind="src" path="S_ParserEmotion_V"/>
 	<classpathentry kind="src" path="S_ParserNero_V"/>
