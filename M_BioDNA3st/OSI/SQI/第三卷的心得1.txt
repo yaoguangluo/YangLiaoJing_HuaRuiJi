@@ -29,6 +29,10 @@
 
 今天不写代码,写点思想,描述我是怎么走到这一步的.为了确定我的研发计划是否出现跳跃和分歧.完善下 UML.
 
+2021年5月25日下午16.36我在微信笔记说过,均匀化元基索引最后的结果就是均匀化染色体分类,呈X状,并且 呈蒲公英球状丝化肽元基索引文件夹结构.
+Java文件可以逐渐的元基文件夹化.形成文件夹花植株.
+具体可以参考 如下文件
+M_UnicornNeroThemeETL\OSI\OPE\SI\MCI\OEI\OVU\PQE\extOSGI\OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_OSI_PCI.tvm
 
 
 
