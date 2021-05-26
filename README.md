@@ -55,7 +55,7 @@
  2.2> 注意 数据库的row文件夹下面ID项目 sample数据 缺失, 如果想做 DMA 计算环境请 自己补充0,1,2 来标识.  
  3>，64位windows用eclipse即可打开运行调试。  
  3.1> 软件运行环境为 JDK1.8版本 及 以上.  
- 4> 启动文件: M_HRJ_YLJSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
+ 4> 启动文件: M_EngineSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
  5> 工程函数整体为GBK, 有一些大sample文件和 字符处理的文本采用高级字符编辑为UTF8, 请注意, 避免乱码.#  
  5.1> 思路今天改变, 工程全局准备依旧使用GBK, 然后将所有字符串进行变量化, 然后变量全部放在变量STATBLE文件中用UTF8.  
  5.2> 工程中的4个 ETLNode 文件包工程, 除了 P_ETLNodeMedicine, P_UnicornETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
