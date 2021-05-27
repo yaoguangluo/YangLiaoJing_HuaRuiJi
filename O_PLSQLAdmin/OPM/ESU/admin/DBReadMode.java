@@ -26,11 +26,11 @@ public class DBReadMode{
 
 		//2如果没有配置就按流水线读表
 		//2.1 有txt先读txt
-		readDBInTXTWay(app,  inputBuffer);
+		readDBInTXTWay(app, inputBuffer);
 		//2.2 有数据表就读读数据表
-		readDBInBaseWay(app,  inputBuffer);
+		readDBInBaseWay(app, inputBuffer);
 		//2.3 有web接口请求就读web上的rest请求数据
-		readDBInWebWay(app,  inputBuffer);
+		readDBInWebWay(app, inputBuffer);
 		//2.4 输出结果.
 	}
 
