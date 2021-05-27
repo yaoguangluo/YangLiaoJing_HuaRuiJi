@@ -223,6 +223,9 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public boolean DNASearchIsClick;
     public AppInit appInit;
 	public String dbConfigPath;
+	public boolean bootDBInTXTWay= false;
+	public boolean bootDBInBaseWay= false;
+	public boolean bootDBInWebWay= false;
 	public void init(){
 		try {
 			appInit= new AppInit();

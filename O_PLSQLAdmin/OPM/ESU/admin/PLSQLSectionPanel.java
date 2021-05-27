@@ -87,15 +87,9 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				if(∂¡»°TXT_end_box.isSelected()) {
-					for(int i= 0; i< tabNames.length; i++) {
-						
-						
-					}
+						appInThisClass.bootDBInTXTWay= true;
 				}else {
-					for(int i= 0; i< tabNames.length; i++) {
-						
-						
-					}
+					appInThisClass.bootDBInTXTWay= false;
 				}
 				
 			}
