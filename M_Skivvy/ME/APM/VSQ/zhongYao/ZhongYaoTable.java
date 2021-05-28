@@ -1,6 +1,7 @@
 package ME.APM.VSQ.zhongYao;
 
 import java.awt.Font;
+
 import java.awt.GridLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -23,7 +24,7 @@ import ME.APM.VSQ.App;
 //import ME.APM.VSQ.DictionaryFromDB;
 //import ME.APM.VSQ.DictionaryOld;
 //import ME.APM.VSQ.DictionaryFromDB;
-import ME.APM.VSQ.PathLinkFile;
+import ME.S.stables.PathLinkFile;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
 import OSV.VCQ.standard.DictionaryStandardDB;

@@ -1,5 +1,6 @@
 package ME.APM.VSQ;
 import java.awt.Container;
+
 import java.awt.Dimension;
 import java.awt.ScrollPane;
 import java.awt.event.ActionEvent;
@@ -26,6 +27,7 @@ import ME.APM.VSQ.OPE.search.TanJPanel;
 import ME.APM.VSQ.OPE.search.TongJPanel;
 import ME.APM.VSQ.OPE.search.XueJPanel;
 import ME.APM.VSQ.OPE.search.YangJPanel;
+import ME.S.stables.PathLinkFile;
 public class AppSearch extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;
 	

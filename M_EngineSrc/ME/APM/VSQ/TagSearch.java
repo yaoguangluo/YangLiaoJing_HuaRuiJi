@@ -12,7 +12,7 @@ import java.awt.event.MouseListener;
 import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
-
+import ME.S.stables.PathLinkFile;
 import ME.APM.VSQ.ESI.SVQ.search.CaiJPanel;
 public class TagSearch extends ScrollPane implements MouseListener, KeyListener, ActionListener{	
 	private static final long serialVersionUID= 1L;

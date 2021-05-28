@@ -1,5 +1,6 @@
 package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addMaZuiKePage;
 import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,7 +12,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import ME.APM.VSQ.PathLinkFile;
+import ME.S.stables.PathLinkFile;
 public class Dictionary{	
 	public List<String> dic_list;
 	public Map<String,Object> dic_map;

@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 import javax.swing.JFrame;
 
+import ME.S.stables.PathLinkFile;
 import ME.S.stables.StableDataSrc;
 import OSQ.disk.GetDisk;
 public class YLJFrame{

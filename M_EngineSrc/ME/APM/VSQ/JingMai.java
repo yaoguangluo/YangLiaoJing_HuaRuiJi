@@ -1,12 +1,14 @@
 package ME.APM.VSQ;
 
 import java.awt.Dimension;  
+
 import java.awt.Graphics;  
 import java.awt.Graphics2D;  
 import java.awt.Image;  
 import java.awt.Panel;  
 import java.awt.image.BufferedImage;  
 import javax.swing.ImageIcon;  
+import ME.S.stables.PathLinkFile;
 public class JingMai extends Panel{  
 	private static final long serialVersionUID = 1L;
 	public ImageIcon png1 = new ImageIcon(getClass().getResource("手厥阴心包经.png"));  

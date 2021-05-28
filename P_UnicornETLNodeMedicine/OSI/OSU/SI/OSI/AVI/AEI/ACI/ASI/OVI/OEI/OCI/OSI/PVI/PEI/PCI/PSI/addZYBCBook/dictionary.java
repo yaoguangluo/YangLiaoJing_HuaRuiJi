@@ -1,5 +1,6 @@
 package OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYBCBook;
 import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import ME.APM.VSQ.App;
-import ME.APM.VSQ.PathLinkFile;
+import ME.S.stables.PathLinkFile;
 
 public class dictionary{	
 	public List<String> dic_list;

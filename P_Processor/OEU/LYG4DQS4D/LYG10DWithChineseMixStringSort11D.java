@@ -1,5 +1,6 @@
 package OEU.LYG4DQS4D;
 import java.io.BufferedReader;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
@@ -9,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
-import ME.APM.VSQ.PathLinkFile;
+import ME.S.stables.PathLinkFile;
 public class LYG10DWithChineseMixStringSort11D{
 	Map<String, Boolean> find= new HashMap<>();
 	Map<String, String> pinyin;
