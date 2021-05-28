@@ -8,7 +8,6 @@ import java.util.HashMap;
 //ยÞัþนโ
 import java.util.Map;
 
-import ME.APM.VSQ.App;
 import ME.S.stables.PathLinkFile;
 import PEU.S.verbal.VerbalSource;
 public class LYG10DWithChineseMixStringSort12D{
