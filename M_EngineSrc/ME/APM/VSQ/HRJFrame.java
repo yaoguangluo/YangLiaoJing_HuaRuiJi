@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 import javax.swing.JFrame;
 
+import ME.S.stables.StableDataSrc;
 import OSQ.disk.GetDisk;
 public class HRJFrame{
 	public String getKey() throws IOException {
@@ -19,7 +20,7 @@ public class HRJFrame{
 		String ctempString= null; 
 		int i= 0;
 		while ((ctempString= cReader.readLine())!= null) {  
-			if(!ctempString.replace(" ", "").equals("")) {
+			if(!ctempString.replace(" ", StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
 				outPut+= ctempString;
 				i++;
 				if(i>5) {
@@ -34,16 +35,16 @@ public class HRJFrame{
 	public static App NE;
 	@SuppressWarnings({"deprecation"})
 	public static void main(String args[]) throws Exception{
-		System.setProperty("java.library.path", new File("").getCanonicalPath() + "\\node");
-		System.out.println(new File("").getCanonicalPath()+ "\\node");
+		System.setProperty("java.library.path", new File(StableDataSrc.STRING_EMPTY).getCanonicalPath() + "\\node");
+		System.out.println(new File(StableDataSrc.STRING_EMPTY).getCanonicalPath()+ "\\node");
 		System.out.println(new GetDisk().getKey());	
-		//if(!new GetDisk().getKey().replaceAll(" ", "").contains("580307240")) {
+		//if(!new GetDisk().getKey().replaceAll(" ", StableDataSrc.STRING_EMPTY).contains("580307240")) {
 		try {
 			Process process;
 			process= Runtime.getRuntime().exec(  
 					new String[] {"wmic", "cpu", "get", "ProcessorId"});
 			process.getOutputStream().close();
-			String value= "";
+			String value= StableDataSrc.STRING_EMPTY;
 			@SuppressWarnings("resource")
 			Scanner sc= new Scanner(process.getInputStream()); 
 			while(sc.hasNext()) {
@@ -115,7 +116,7 @@ public class HRJFrame{
 //		int i=0;
 //		Map<String, Integer> keys=new HashMap<>();
 //		while ((ctempString = cReader.readLine()) != null) {  
-//			if(!ctempString.replace(" ","").equals("")) {
+//			if(!ctempString.replace(" ",StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
 //				if(keys.containsKey(ctempString)) {
 //					return true;
 //				}
@@ -134,7 +135,7 @@ public class HRJFrame{
 //					}catch(Exception e) {	
 //					}
 //					fw = new FileWriter(v, true);
-//					fw.write(ctempString.replace(" ", "").replace("\\?", ""));
+//					fw.write(ctempString.replace(" ", StableDataSrc.STRING_EMPTY).replace("\\?", StableDataSrc.STRING_EMPTY));
 //					fw.write("\r\n");
 //					fw.close();
 //					return true;
