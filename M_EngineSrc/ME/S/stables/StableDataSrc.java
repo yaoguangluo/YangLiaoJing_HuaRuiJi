@@ -23,7 +23,7 @@ public interface StableDataSrc {
 	public static final String ZI_XING = "ÐÎ";
 	public static final String ZI_FU = "¸±";
 	public static final String STRING_EMPTY = "";
-	
+	public static final String STRING_SPACE = " ";
 	
 	
 	

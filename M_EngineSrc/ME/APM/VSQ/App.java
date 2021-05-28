@@ -221,7 +221,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public BufferedImage tempBufferedImage;
 	public int ¥ﬂªØ±»÷µrot;
 	public boolean DNASearchIsClick;
-    public AppInit appInit;
+	public AppInit appInit;
 	public String dbConfigPath;
 	public boolean bootDBInTXTWay= false;
 	public boolean bootDBInBaseWay= false;
@@ -234,12 +234,12 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			e.printStackTrace();
 		}
 	}
-//
+	//
 	public JTextField nameFeelFilter() {
 		nameFeelFilter= new CfxTextField(null, 0, 0, null);  
 		nameFeelFilter.setBounds(180-50, 50, 380, 80);
 		nameFeelFilter.setBackground(Color.white);
-		nameFeelFilter.setText(" ");
+		nameFeelFilter.setText(StableDataSrc.STRING_SPACE);
 		nameFeelFilter.addKeyListener(this);
 		return nameFeelFilter;
 	}
@@ -305,32 +305,44 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					while(iterator.hasNext()) {
 						String setOfi = iterator.next();
 						if(pos.get(setOfi) == null) {
-							page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
+							page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi 
+									+(cte.containsKey(setOfi)?":("+cte.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
 							continue Here;
 						}
 						if (!setOfi.equals(StableDataSrc.STRING_EMPTY)) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
-								page.append("<span style=\"background:red\"><font color=\"white\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi)
+									.contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
+								page.append("<span style=\"background:red\"><font color=\"white\" size=\"5\">" + setOfi 
+										+(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+ "\"><font color=\"black\" size=\"5\">"+ "<A href=\"http://localhost:8000/search?word="+ setOfi+"\">"
-										+ setOfi+ "</A>" + (posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY)+ "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
+										+ "\"><font color=\"black\" size=\"5\">"+ "<A href=\"http://localhost:8000/search?word="+ setOfi+"\">"
+										+ setOfi+ "</A>" + (posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)
+										+")":StableDataSrc.STRING_EMPTY)+ "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("
+												+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("
+												+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
-								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" + setOfi 
+										+(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) 
+										+ "</font></span>");
 								continue Here;
 							} 
-							page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">" + setOfi +(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");			 
+							page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">" + setOfi 
+									+(posFullce.containsKey(setOfi)?":("+posFullce.get(setOfi)+")":StableDataSrc.STRING_EMPTY) + "</font></span>");			 
 						}}
 				data.setText(page.toString());
 				data.addHyperlinkListener(new HyperlinkListener(){
@@ -413,20 +425,24 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							continue Here;
 						}
 						if (!setOfi.equals(StableDataSrc.STRING_EMPTY)) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi)
+									.contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
 								page.append("<span style=\"background:red\"><font color=\"white\">"+setOfi +"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
+										+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">"+setOfi+"</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
@@ -457,31 +473,49 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 					while(iterator.hasNext()) {
 						String setOfi = iterator.next();
 						if(pos.get(setOfi) == null) {
-							page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
+							page.append("<span style=\"background:#F1F1F1\"><font color=\"black\" size=\"5\">" + setOfi
+									+(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))
+									+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
 							continue Here;
 						}
 						if (!setOfi.equals(StableDataSrc.STRING_EMPTY)) {
-							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
-								page.append("<span style=\"background:red\"><font color=\"white\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");
+							if(key.contains(setOfi)&&(pos.get(setOfi).contains(StableDataSrc.ZI_MING)
+									||pos.get(setOfi).contains(StableDataSrc.ZI_DONG)||pos.get(setOfi).contains(StableDataSrc.ZI_XING))) {
+								page.append("<span style=\"background:red\"><font color=\"white\">"+ setOfi 
+										+(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))
+										+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_MING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 245, 255)
+										+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)
+												?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" 
+														: StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_DONG)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)+"\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(245, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)
+												?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" 
+														: StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_XING)) {
-								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
+								page.append("<span style=\"background:"+new PEU.P.image.ColorProcessor().Processor(255, 255, 245)
+										+"\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)
+												?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" 
+														: StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) + "</font></span>");
 								continue Here;
 							}
 							if(pos.get(setOfi).contains(StableDataSrc.ZI_FU)) {
-								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" + setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");
+								page.append("<span style=\"background:#F1FFFF\"><font color=\"black\" size=\"5\">" 
+										+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" 
+												: StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");
 								continue Here;
 							} 
-							page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+ setOfi +(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")" : StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");			 
+							page.append("<span style=\"background:white\"><font color=\"black\" size=\"5\">"+ setOfi 
+									+(cte.containsKey(setOfi)?(etc.containsKey(cte.get(setOfi))?":("+etc.get(cte.get(setOfi))+")"
+											: StableDataSrc.STRING_EMPTY) : StableDataSrc.STRING_EMPTY) +  "</font></span>");			 
 						}
 					}	
 				data.setText(page.toString());
@@ -622,7 +656,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name= new CfxTextField(null, 0, 0, null);  
 		name.setBounds(180- 50, 50, 380, 80);
 		name.setBackground(Color.white);
-		name.setText(" ");
+		name.setText(StableDataSrc.STRING_SPACE);
 		name.addKeyListener(this);
 		return name;
 	}	
@@ -631,7 +665,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		nameHospital= new CfxTextField(null, 0, 0, null);  
 		nameHospital.setBounds(180-50, 50, 380, 80);
 		nameHospital.setBackground(Color.white);
-		nameHospital.setText(" ");
+		nameHospital.setText(StableDataSrc.STRING_SPACE);
 		nameHospital.addKeyListener(this);
 		return nameHospital;
 	}	
@@ -640,7 +674,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name_filter= new CfxTextField(null, 0, 0, null);  
 		name_filter.setBounds(180-50, 50, 380, 80);
 		name_filter.setBackground(Color.white);
-		name_filter.setText(" ");
+		name_filter.setText(StableDataSrc.STRING_SPACE);
 		name_filter.addKeyListener(this);
 		return name_filter;
 	}	
@@ -649,7 +683,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		name_filter_not_have= new CfxTextField(null, 0, 0, null);  
 		name_filter_not_have.setBounds(180-50, 50, 380, 80);
 		name_filter_not_have.setBackground(Color.white);
-		name_filter_not_have.setText(" ");
+		name_filter_not_have.setText(StableDataSrc.STRING_SPACE);
 		name_filter_not_have.addKeyListener(this);
 		return name_filter_not_have;
 	}	
@@ -684,14 +718,16 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 		String zhongyao= StableDataSrc.STRING_EMPTY;
 		key= name.getText();
 		String forE= key.toLowerCase().toString();
-		if(key!= null && !key.replace(" ", StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY) && key.length()>50) {
+		if(key!= null && !key.replace(StableDataSrc.STRING_SPACE, StableDataSrc.STRING_EMPTY)
+				.equals(StableDataSrc.STRING_EMPTY) && key.length()>50) {
 			key= key.substring(0, 30);
 		}
-		if(forE!= null&& !forE.replace(" ", StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY) && forE.length()>110) {
+		if(forE!= null&& !forE.replace(StableDataSrc.STRING_SPACE, StableDataSrc.STRING_EMPTY)
+				.equals(StableDataSrc.STRING_EMPTY) && forE.length()>110) {
 			forE= forE.substring(0, 110);
 		}
 		key = key.length()== 0? StableDataSrc.STRING_EMPTY: translator.MixedStringToChineseString(analyzer, key);
-		if(key.replaceAll("\\s+", " ").equalsIgnoreCase(" ")){
+		if(key.replaceAll("\\s+", StableDataSrc.STRING_SPACE).equalsIgnoreCase(StableDataSrc.STRING_SPACE)){
 			key=StableDataSrc.STRING_EMPTY;
 		}
 		zhongyao= key.toString();

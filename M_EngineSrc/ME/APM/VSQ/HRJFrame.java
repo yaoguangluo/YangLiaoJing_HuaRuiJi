@@ -20,7 +20,7 @@ public class HRJFrame{
 		String ctempString= null; 
 		int i= 0;
 		while ((ctempString= cReader.readLine())!= null) {  
-			if(!ctempString.replace(" ", StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
+			if(!ctempString.replace(StableDataSrc.STRING_SPACE, StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
 				outPut+= ctempString;
 				i++;
 				if(i>5) {
@@ -38,7 +38,7 @@ public class HRJFrame{
 		System.setProperty("java.library.path", new File(StableDataSrc.STRING_EMPTY).getCanonicalPath() + "\\node");
 		System.out.println(new File(StableDataSrc.STRING_EMPTY).getCanonicalPath()+ "\\node");
 		System.out.println(new GetDisk().getKey());	
-		//if(!new GetDisk().getKey().replaceAll(" ", StableDataSrc.STRING_EMPTY).contains("580307240")) {
+		//if(!new GetDisk().getKey().replaceAll(StableDataSrc.STRING_SPACE, StableDataSrc.STRING_EMPTY).contains("580307240")) {
 		try {
 			Process process;
 			process= Runtime.getRuntime().exec(  
@@ -116,7 +116,7 @@ public class HRJFrame{
 //		int i=0;
 //		Map<String, Integer> keys=new HashMap<>();
 //		while ((ctempString = cReader.readLine()) != null) {  
-//			if(!ctempString.replace(" ",StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
+//			if(!ctempString.replace(StableDataSrc.STRING_SPACE,StableDataSrc.STRING_EMPTY).equals(StableDataSrc.STRING_EMPTY)) {
 //				if(keys.containsKey(ctempString)) {
 //					return true;
 //				}
@@ -135,7 +135,7 @@ public class HRJFrame{
 //					}catch(Exception e) {	
 //					}
 //					fw = new FileWriter(v, true);
-//					fw.write(ctempString.replace(" ", StableDataSrc.STRING_EMPTY).replace("\\?", StableDataSrc.STRING_EMPTY));
+//					fw.write(ctempString.replace(StableDataSrc.STRING_SPACE, StableDataSrc.STRING_EMPTY).replace("\\?", StableDataSrc.STRING_EMPTY));
 //					fw.write("\r\n");
 //					fw.close();
 //					return true;
