@@ -17,6 +17,7 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.*;
 import ME.S.stables.PathLinkFile;
 import OEU.LYG4DQS4D.LYG10DWithChineseMixStringSort12D;
+import PEU.S.verbal.VerbalSource;
 
 
 
@@ -115,7 +116,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     public TableSorterZYNK() {
     	try {
     		
-    		InputStream inputStreamp= new App().getClass().getResourceAsStream(PathLinkFile.PinYinCN_lyg);
+    		InputStream inputStreamp= new VerbalSource().getClass().getResourceAsStream(PathLinkFile.PinYinCN_lyg);
     		BufferedReader cReaderp= new BufferedReader(new InputStreamReader(inputStreamp, "GBK"));
     		//index
     		String cInputStringp;
@@ -128,7 +129,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     			}
     		}
     		cReaderp.close();
-    		InputStream inputStreamb= new App().getClass().getResourceAsStream(PathLinkFile.BiHuaCN_lyg);
+    		InputStream inputStreamb= new VerbalSource().getClass().getResourceAsStream(PathLinkFile.BiHuaCN_lyg);
     		BufferedReader cReaderb= new BufferedReader(new InputStreamReader(inputStreamb, "GBK"));
     		//index
     		String cInputStringb;

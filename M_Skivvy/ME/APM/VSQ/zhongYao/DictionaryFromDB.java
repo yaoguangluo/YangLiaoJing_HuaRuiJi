@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
 import ME.APM.VSQ.App;
 import ME.S.stables.PathLinkFile;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
+import PEU.S.verbal.VerbalSource;
 @SuppressWarnings("unused")
 public class DictionaryFromDB{	
 //	public List<String> dic_list;
@@ -183,7 +184,7 @@ public class DictionaryFromDB{
 	public Map<String, Object> mapToIndex(Map<String, Object> dic_map) {
 		Map<String,String> pinyin= new HashMap<>();
 		try {
-			InputStream inputStreamp= new App().getClass().getResourceAsStream(PathLinkFile.PinYinCN_lyg);
+			InputStream inputStreamp= new VerbalSource().getClass().getResourceAsStream(PathLinkFile.PinYinCN_lyg);
     		BufferedReader cReaderp= new BufferedReader(new InputStreamReader(inputStreamp, "GBK"));
     		//index
     		String cInputStringp;
