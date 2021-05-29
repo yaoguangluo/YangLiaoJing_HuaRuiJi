@@ -3,6 +3,7 @@ package ME.APM.VSQ;
 import java.awt.*;
 
 
+
 import java.awt.event.*;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -16,7 +17,8 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.*;
 import ME.S.stables.PathLinkFile;
-import OEU.LYG4DQS4D.LYG10DWithChineseMixStringSort12D;
+//import OEU.LYG4DQS4D.LYG10DWithChineseMixStringSort12D;
+import OEU.LYG4DQS4D.LYG10DWithChineseMixStringSort13D;
 import PEU.S.verbal.VerbalSource;
 
 
@@ -378,7 +380,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     			}else {
     				if(0== column) {
     					if(tableName.contains("zybc")) {
-    						int returnInt= new LYG10DWithChineseMixStringSort12D()
+    						int returnInt= new LYG10DWithChineseMixStringSort13D()
     								.quick4DChineseStringArrayWithSmallInTwoChar3bihuaReturns(new String[] 
     										{o1.toString().substring(0, o1.toString().length()> 30? 30: o1.toString().length())
     												, o2.toString().substring(0, o2.toString().length()> 30? 30: o2.toString().length())}
@@ -419,7 +421,7 @@ public class TableSorterZYNK extends AbstractTableModel {
     				}
     				else 
     					if(2321315!= column){
-    						int returnInt= new LYG10DWithChineseMixStringSort12D()
+    						int returnInt= new LYG10DWithChineseMixStringSort13D()
     								.quick4DChineseStringArrayWithSmallInTwoChar3bihuaReturns(new String[] 
     										{o1.toString().substring(0, o1.toString().length()> 30? 30: o1.toString().length())
     												, o2.toString().substring(0, o2.toString().length()> 30? 30: o2.toString().length())}

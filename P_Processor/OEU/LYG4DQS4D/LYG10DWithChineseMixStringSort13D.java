@@ -469,7 +469,7 @@ public class LYG10DWithChineseMixStringSort13D{
     		}
     		Map<String, String> pinyin= map;
     		
-			String[] strings1D= new String[7];
+			String[] strings1D= new String[16];
 //			strings1D[0]= "dh罗31韵律";
 //			strings1D[1]= "dh罗11瑶林";
 //			strings1D[2]= "dh罗2瑶光";
@@ -478,22 +478,24 @@ public class LYG10DWithChineseMixStringSort13D{
 //			strings1D[3]= "dh罗4运律";
 //			strings1D[4]= "dh罗6瑶d林";
 //			strings1D[5]= "dh罗瑶0.6光";
-//			strings1D[6]= "dh罗瑶0.3f光";
-//			strings1D[7]= "dh罗瑶0.61e7光";
-//			strings1D[8]= "dh罗瑶0.3e61光";
-			strings1D[6]= "dh罗瑶0.3e6光";
+			strings1D[10]= "dh罗瑶0.3f光";
+			strings1D[11]= "dh罗瑶0.61e7光";
+			strings1D[12]= "dh罗瑶0.3e61光";
+//			strings1D[6]= "dh罗瑶0.3e6光";
 //			strings1D[7]= "dh罗瑶0.6e2光";
-//			strings1D[8]= "dh罗瑶0.3e1光";
-//			strings1D[9]= "dh罗韵111.21律";
-//			strings1D[13]= "dh罗韵15.21律";
-//			strings1D[14]= "dh罗瑶g林";
-//			strings1D[15]= "dhv罗1.09瑶光";
+			strings1D[8]= "dh罗瑶0.3e1光";
+			strings1D[9]= "dh罗韵111.21律";
+			strings1D[13]= "dh罗韵15.21律";
+			strings1D[14]= "dh罗瑶g林";
+			strings1D[15]= "dhv罗1.09瑶光";
 			strings1D[0]= "李里里";
 			strings1D[1]= "里里李";
 			strings1D[2]= "李李李";
 			strings1D[3]= "李里李";
 			strings1D[4]= "里李里";
 			strings1D[5]= "里里里";
+			strings1D[6]= "变里里";
+			strings1D[7]= "便里里";
 			
 			LYG10DWithChineseMixStringSort13D lYG10DWithChineseMixStringSort10D= new LYG10DWithChineseMixStringSort13D();
 			lYG10DWithChineseMixStringSort10D.quick4DChineseStringArray1D(strings1D, 30, pinyin, 7, 70, bihua);
