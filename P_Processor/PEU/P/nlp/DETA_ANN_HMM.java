@@ -1,5 +1,6 @@
 package PEU.P.nlp;
 import java.io.IOException;
+//×÷Õß ÂÞÑþ¹â
 public class DETA_ANN_HMM {
 	public String[][] summingProcessor(String[][] inputNLP) throws IOException
 	, InstantiationException, IllegalAccessException {

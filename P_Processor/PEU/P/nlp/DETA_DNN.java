@@ -47,6 +47,7 @@ package PEU.P.nlp;
 import java.io.IOException;
 
 import MSV.OSQ.sets.DetaDouble;
+//×÷Õß ÂÞÑþ¹â
 public class DETA_DNN {
 	public String[][] summingProcessor(String[][] ann, String[][] rnn) throws IOException
 	, InstantiationException, IllegalAccessException {
