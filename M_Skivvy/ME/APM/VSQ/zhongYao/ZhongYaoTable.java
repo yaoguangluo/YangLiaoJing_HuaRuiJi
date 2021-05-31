@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 //import java.util.List;
 //import java.util.Map;
-import java.util.Map;
+//import java.util.Map;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -27,83 +27,17 @@ import ME.APM.VSQ.App;
 import ME.S.stables.PathLinkFile;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
-import OSV.VCQ.standard.DictionaryStandardDB;
+import OPM.ESU.admin.DBReadMode;
+//import OSV.VCQ.standard.DictionaryStandardDB;
 //import OSV.VCQ.standard.DictionaryStandardDB;
 
 public class ZhongYaoTable implements MouseListener {
 	private App app;
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable(App app) throws IOException {
-		this.app= app;
-		//DictionaryFromDB d= new DictionaryFromDB();
-//		List<String> dic_list= d.txtToList();
-//		try {
-//			app.dic_map= d.listToMap(app.dic_yw, app.dic_li, app.dic_hai, app.dic_xz, app.dic_ya, app.dic_jm
-//					, app.dic_xw, app.dic_cy, app.dic_jj, app.dic_zf, app.dic_cj, app.dic_yl);
-//		}catch(Exception e) {
-//			e.printStackTrace();
-//		}
-		
-		
-//		//old
-//		DictionaryOld d= new DictionaryOld();
-//		List<String> dic_list= d.txtToList();
-//		try {
-//			app.dic_map= d.listToMap(dic_list);
-//			app.dic_yw= app.dic_map;
-//			app.dic_index= new DictionaryFromDB().mapToIndex(app.dic_map);
-//			app.dic_li=  d.mapToMap_li(app.dic_map);
-//			app.dic_hai= d.mapToMap_hai(app.dic_map);
-//			app.dic_xz= d.mapToMap_xz(app.dic_map);
-//			app.dic_ya= d.mapToMap_ya(app.dic_map);
-//			app.dic_jm= d.mapToMap_jm(app.dic_map);
-//			app.dic_xw= d.mapToMap_xw(app.dic_map);
-//			app.dic_cy= d.mapToMap_cy(app.dic_map);
-//			app.dic_jj= d.mapToMap_jj(app.dic_map);
-//			app.dic_zf= d.mapToMap_zf(app.dic_map);
-//			app.dic_cj= d.mapToMap_cj(app.dic_map);
-//			app.dic_yl= d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm);
-//		}catch(Exception e) {
-//			e.printStackTrace();
-//		}
-		
-		//db
-		//测试下刚写的标准读表函数.
-		DictionaryStandardDB d= new DictionaryStandardDB();
-		String primaryKey= "中药名称";
-		String tabKey= "zybc";
-		//以后设计 uniq forenkey等.
-		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
-		app.dic_index= map.get("中药名称");
-		app.dic_yw= map.get("笔记原文");
-		app.dic_li= map.get("功效");
-		app.dic_xz= map.get("中医馆药理");
-		app.dic_ya= map.get("愚按");
-		app.dic_jm= map.get("经脉");
-		app.dic_xw= map.get("性味");
-		app.dic_cy= map.get("崇源");
-		app.dic_jj= map.get("经解");
-		app.dic_zf= map.get("搭配");
-		app.dic_hai= map.get("风险规避");
-		app.dic_cj= map.get("常见药");
-		app.dic_yl= map.get("用量");
-		
-		app.dic_map= map.get("dic_map");
-			
-		//		dic_map= d.listToMap(dic_list);
-		//app.dic_index= d.mapToIndex(app.dic_map);
-		//		dic_yw= d.mapToMap_yw(dic_map);
-		//		dic_li= d.mapToMap_li(dic_map);
-		//		dic_hai= d.mapToMap_hai(dic_map);
-		//		dic_xz= d.mapToMap_xz(dic_map);
-		//		dic_ya= d.mapToMap_ya(dic_map);
-		//		dic_jm= d.mapToMap_jm(dic_map);
-		//		dic_xw= d.mapToMap_xw(dic_map);
-		//		dic_cy= d.mapToMap_cy(dic_map);
-		//		dic_jj= d.mapToMap_jj(dic_map);
-		//		dic_zf= d.mapToMap_zf(dic_map);
-		//		dic_cj= d.mapToMap_cj(dic_map);
-		//		dic_yl= d.mapToMap_yl(dic_map,dic_xw,dic_li,dic_xz,dic_jm);
+		this.app= app;	
+		//DBReadMode.readDBInTXTWay(app);
+		DBReadMode.readDBInBaseWay(app);
 		app.tableData_old= new Object[app.dic_map.size()][14];
 		Object[][] tableData_old_for_model= new Object[app.dic_map.size()][14];
 		Iterator<String> iter= app.dic_map.keySet().iterator();
