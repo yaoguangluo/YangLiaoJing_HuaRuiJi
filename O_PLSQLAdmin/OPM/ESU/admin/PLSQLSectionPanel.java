@@ -64,15 +64,11 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				if(读取数据库_end_box.isSelected()) {
-					for(int i= 0; i< tabNames.length; i++) {
-
-					}
+					appInThisClass.bootDBInBaseWay= true;
 				}else {
-					for(int i= 0; i< tabNames.length; i++) {
-
-					}
+					appInThisClass.bootDBInBaseWay= false;
 				}
-				
+
 			}
 		});
 		this.add(读取数据库);
@@ -149,30 +145,23 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 		this.add(激活ORM_end_box);	
 		
 		
-		JLabel 读写分离模式 = new JLabel("读写分离模式"+ ":");  
-		读写分离模式.setForeground(Color.white);
-		读写分离模式.setBounds(10 + 2* 150, 20+ 25* 0, 100, 50);
-		JCheckBox 读写分离模式_end_box= new JCheckBox();
-		读写分离模式_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 0, 20, 20);
-		读写分离模式_end_box.addActionListener(new ActionListener(){
+		JLabel 读取REST = new JLabel("读取REST模式"+ ":");  
+		读取REST.setForeground(Color.white);
+		读取REST.setBounds(10 + 2* 150, 20+ 25* 0, 100, 50);
+		JCheckBox 读取REST_end_box= new JCheckBox();
+		读取REST_end_box.setBounds(10+ 85+ 2* 150, 33+ 25* 0, 20, 20);
+		读取REST_end_box.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if(读写分离模式_end_box.isSelected()) {
-					for(int i= 0; i< tabNames.length; i++) {
-						
-						
-					}
+				if(读取REST_end_box.isSelected()) {
+					appInThisClass.bootDBInWebWay= true;
 				}else {
-					for(int i= 0; i< tabNames.length; i++) {
-						
-						
-					}
+					appInThisClass.bootDBInWebWay= false;
 				}
-				
 			}
 		});
-		this.add(读写分离模式);
-		this.add(读写分离模式_end_box);	
+		this.add(读取REST);
+		this.add(读取REST_end_box);	
 		
 		JLabel 医学表可修改 = new JLabel("医学表可修改"+ ":");  
 		医学表可修改.setForeground(Color.white);
@@ -319,6 +308,34 @@ public class PLSQLSectionPanel extends JPanel implements MouseListener, KeyListe
 		});
 		this.add(Binlog);
 		this.add(Binlog_end_box);	
+		
+		
+		JLabel 读写分离模式 = new JLabel("读写分离模式"+ ":");  
+		读写分离模式.setForeground(Color.white);
+		读写分离模式.setBounds(10+ 1* 150, 20+ 25* 3, 100, 50);
+		JCheckBox 读写分离模式_end_box= new JCheckBox();
+		读写分离模式_end_box.setBounds(10+ 85+ 1* 150, 33+ 25* 3, 20, 20);
+		读写分离模式_end_box.addActionListener(new ActionListener(){
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if(读写分离模式_end_box.isSelected()) {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}else {
+					for(int i= 0; i< tabNames.length; i++) {
+						
+						
+					}
+				}
+				
+			}
+		});
+		this.add(读写分离模式);
+		this.add(读写分离模式_end_box);	
+		
+		
 		//rollback模式
 		JLabel Rollback= new JLabel("Rollback"+ ":");  
 		Rollback.setForeground(Color.white);

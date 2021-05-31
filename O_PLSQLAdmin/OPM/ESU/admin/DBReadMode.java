@@ -11,15 +11,18 @@ public class DBReadMode{
 		//1.1输出结果有txt配置选勾读txt
 		if(app.bootDBInTXTWay) {
 			//...
+			readDBInTXTWay(app, inputBuffer);
 			return;
 		}
 		//有数据表配置选勾就读数据表
 		if(app.bootDBInBaseWay) {
 			//...
+			readDBInBaseWay(app, inputBuffer);
 			return;
 		}
 		//有web接口请求配置选勾就读web上的rest请求数据
 		if(app.bootDBInWebWay) {
+			readDBInWebWay(app, inputBuffer);
 			//...
 			return;
 		}
