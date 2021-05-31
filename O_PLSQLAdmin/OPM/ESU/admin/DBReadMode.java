@@ -6,7 +6,7 @@ import ME.APM.VSQ.App;
 //准备设计一个 数据库读取frequency 方案函数, 之后数据编辑页都走这个函数.
 public class DBReadMode{
 
-	public void aCommonReadWay(App app, Object inputBuffer) {
+	public static void aCommonReadWay(App app, Object inputBuffer) {
 		//1首先如果有配置,按配置来读表
 		//1.1输出结果有txt配置选勾读txt
 		if(app.bootDBInTXTWay) {
@@ -37,15 +37,15 @@ public class DBReadMode{
 		//2.4 输出结果.
 	}
 
-	public void readDBInTXTWay(App app, Object inputBuffer) {
+	public static void readDBInTXTWay(App app, Object inputBuffer) {
 		//...
 	}
 
-	public void readDBInBaseWay(App app, Object inputBuffer) {
+	public static void readDBInBaseWay(App app, Object inputBuffer) {
 		//...
 	}
 
-	public void readDBInWebWay(App app, Object inputBuffer) {
+	public static void readDBInWebWay(App app, Object inputBuffer) {
 		//...
 	}
 }
