@@ -1,6 +1,8 @@
 package OPM.ESU.admin;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -53,22 +55,37 @@ public class DBReadMode{
 			app.dic_map= d.listToMap(dic_list);
 			app.dic_yw= app.dic_map;
 			app.dic_index= new DictionaryFromDB().mapToIndex(app.dic_map);
-			app.dic_li=  d.mapToMap_li(app.dic_map);
-			app.dic_hai= d.mapToMap_hai(app.dic_map);
-			app.dic_xz= d.mapToMap_xz(app.dic_map);
-			app.dic_ya= d.mapToMap_ya(app.dic_map);
-			app.dic_jm= d.mapToMap_jm(app.dic_map);
-			app.dic_xw= d.mapToMap_xw(app.dic_map);
-			app.dic_cy= d.mapToMap_cy(app.dic_map);
-			app.dic_jj= d.mapToMap_jj(app.dic_map);
-			app.dic_zf= d.mapToMap_zf(app.dic_map);
-			app.dic_cj= d.mapToMap_cj(app.dic_map);
-			app.dic_yl= d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm);
+			conbination(app.dic_li, d.mapToMap_li(app.dic_map));
+			conbination(app.dic_hai, d.mapToMap_hai(app.dic_map));
+			conbination(app.dic_xz, d.mapToMap_xz(app.dic_map));
+			conbination(app.dic_ya, d.mapToMap_ya(app.dic_map));
+			conbination(app.dic_jm, d.mapToMap_jm(app.dic_map));
+			conbination(app.dic_xw, d.mapToMap_xw(app.dic_map));
+			conbination(app.dic_cy, d.mapToMap_cy(app.dic_map));
+			conbination(app.dic_jj, d.mapToMap_jj(app.dic_map));
+			conbination(app.dic_zf, d.mapToMap_zf(app.dic_map));
+			conbination(app.dic_cj, d.mapToMap_cj(app.dic_map));
+			conbination(app.dic_yl, d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm));
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+	
+	//设计个合并函数 罗瑶光
+	public static Map<String, Object> conbination(Map<String, Object> output, Map<String, Object> destination) {
+		if(null== output) {
+			output= new HashMap<>();
+		}
+		Iterator<String> keyIterator= destination.keySet().iterator();
+		while(keyIterator.hasNext()) {
+			String string= keyIterator.next();		
+			if(!output.containsKey(string)) {
+				output.put(string, destination.get(string));
+			}
+		}
+		return output;
+	}
+	
 	public static void readDBInBaseWay(App app) throws IOException {
 		//...
 		//db
@@ -78,20 +95,20 @@ public class DBReadMode{
 		String tabKey= "zybc";
 		//以后设计 uniq forenkey等.
 		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
-		app.dic_index= map.get("中药名称");
-		app.dic_yw= map.get("笔记原文");
-		app.dic_li= map.get("功效");
-		app.dic_xz= map.get("中医馆药理");
-		app.dic_ya= map.get("愚按");
-		app.dic_jm= map.get("经脉");
-		app.dic_xw= map.get("性味");
-		app.dic_cy= map.get("崇源");
-		app.dic_jj= map.get("经解");
-		app.dic_zf= map.get("搭配");
-		app.dic_hai= map.get("风险规避");
-		app.dic_cj= map.get("常见药");
-		app.dic_yl= map.get("用量");
-		app.dic_map= map.get("dic_map");
+		conbination(app.dic_index, map.get("中药名称"));
+		conbination(app.dic_yw, map.get("笔记原文"));
+		conbination(app.dic_li, map.get("功效"));
+		conbination(app.dic_xz, map.get("中医馆药理"));
+		conbination(app.dic_ya, map.get("愚按"));
+		conbination(app.dic_jm, map.get("经脉"));
+		conbination(app.dic_xw, map.get("性味"));
+		conbination(app.dic_cy, map.get("崇源"));
+		conbination(app.dic_jj, map.get("经解"));
+		conbination(app.dic_zf, map.get("搭配"));
+		conbination(app.dic_hai, map.get("风险规避"));
+		conbination(app.dic_cj, map.get("常见药"));
+		conbination(app.dic_yl, map.get("用量"));
+		conbination(app.dic_map, map.get("dic_map"));
 	}
 
 	public static void readDBInWebWay(App app) {

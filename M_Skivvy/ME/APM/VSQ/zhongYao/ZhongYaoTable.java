@@ -36,8 +36,9 @@ public class ZhongYaoTable implements MouseListener {
 	@SuppressWarnings({"serial"})
 	public javax.swing.JTable jTable(App app) throws IOException {
 		this.app= app;	
-		//DBReadMode.readDBInTXTWay(app);
+		DBReadMode.readDBInTXTWay(app);
 		DBReadMode.readDBInBaseWay(app);
+		DBReadMode.readDBInWebWay(app);
 		app.tableData_old= new Object[app.dic_map.size()][14];
 		Object[][] tableData_old_for_model= new Object[app.dic_map.size()][14];
 		Iterator<String> iter= app.dic_map.keySet().iterator();
