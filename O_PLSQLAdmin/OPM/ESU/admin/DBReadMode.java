@@ -1,8 +1,6 @@
 package OPM.ESU.admin;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -10,6 +8,7 @@ import ME.APM.VSQ.App;
 import ME.APM.VSQ.zhongYao.Dictionary;
 import ME.APM.VSQ.zhongYao.DictionaryFromDB;
 import OSV.VCQ.standard.DictionaryStandardDB;
+import PEU.P.combination.ObjectCombination;
 
 //作者 罗瑶光
 //准备设计一个 数据库读取frequency 方案函数, 之后数据编辑页都走这个函数.
@@ -55,35 +54,20 @@ public class DBReadMode{
 			app.dic_map= d.listToMap(dic_list);
 			app.dic_yw= app.dic_map;
 			app.dic_index= new DictionaryFromDB().mapToIndex(app.dic_map);
-			conbination(app.dic_li, d.mapToMap_li(app.dic_map));
-			conbination(app.dic_hai, d.mapToMap_hai(app.dic_map));
-			conbination(app.dic_xz, d.mapToMap_xz(app.dic_map));
-			conbination(app.dic_ya, d.mapToMap_ya(app.dic_map));
-			conbination(app.dic_jm, d.mapToMap_jm(app.dic_map));
-			conbination(app.dic_xw, d.mapToMap_xw(app.dic_map));
-			conbination(app.dic_cy, d.mapToMap_cy(app.dic_map));
-			conbination(app.dic_jj, d.mapToMap_jj(app.dic_map));
-			conbination(app.dic_zf, d.mapToMap_zf(app.dic_map));
-			conbination(app.dic_cj, d.mapToMap_cj(app.dic_map));
-			conbination(app.dic_yl, d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm));
+			ObjectCombination.MapCombination(app.dic_li, d.mapToMap_li(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_hai, d.mapToMap_hai(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_xz, d.mapToMap_xz(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_ya, d.mapToMap_ya(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_jm, d.mapToMap_jm(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_xw, d.mapToMap_xw(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_cy, d.mapToMap_cy(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_jj, d.mapToMap_jj(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_zf, d.mapToMap_zf(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_cj, d.mapToMap_cj(app.dic_map));
+			ObjectCombination.MapCombination(app.dic_yl, d.mapToMap_yl(app.dic_map, app.dic_xw, app.dic_li, app.dic_xz, app.dic_jm));
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	//设计个合并函数 罗瑶光
-	public static Map<String, Object> conbination(Map<String, Object> output, Map<String, Object> destination) {
-		if(null== output) {
-			output= new HashMap<>();
-		}
-		Iterator<String> keyIterator= destination.keySet().iterator();
-		while(keyIterator.hasNext()) {
-			String string= keyIterator.next();		
-			if(!output.containsKey(string)) {
-				output.put(string, destination.get(string));
-			}
-		}
-		return output;
 	}
 	
 	public static void readDBInBaseWay(App app) throws IOException {
@@ -95,20 +79,20 @@ public class DBReadMode{
 		String tabKey= "zybc";
 		//以后设计 uniq forenkey等.
 		Map<String, Map<String, Object>> map= d.dbToMap(primaryKey, tabKey);
-		conbination(app.dic_index, map.get("中药名称"));
-		conbination(app.dic_yw, map.get("笔记原文"));
-		conbination(app.dic_li, map.get("功效"));
-		conbination(app.dic_xz, map.get("中医馆药理"));
-		conbination(app.dic_ya, map.get("愚按"));
-		conbination(app.dic_jm, map.get("经脉"));
-		conbination(app.dic_xw, map.get("性味"));
-		conbination(app.dic_cy, map.get("崇源"));
-		conbination(app.dic_jj, map.get("经解"));
-		conbination(app.dic_zf, map.get("搭配"));
-		conbination(app.dic_hai, map.get("风险规避"));
-		conbination(app.dic_cj, map.get("常见药"));
-		conbination(app.dic_yl, map.get("用量"));
-		conbination(app.dic_map, map.get("dic_map"));
+		ObjectCombination.MapCombination(app.dic_index, map.get("中药名称"));
+		ObjectCombination.MapCombination(app.dic_yw, map.get("笔记原文"));
+		ObjectCombination.MapCombination(app.dic_li, map.get("功效"));
+		ObjectCombination.MapCombination(app.dic_xz, map.get("中医馆药理"));
+		ObjectCombination.MapCombination(app.dic_ya, map.get("愚按"));
+		ObjectCombination.MapCombination(app.dic_jm, map.get("经脉"));
+		ObjectCombination.MapCombination(app.dic_xw, map.get("性味"));
+		ObjectCombination.MapCombination(app.dic_cy, map.get("崇源"));
+		ObjectCombination.MapCombination(app.dic_jj, map.get("经解"));
+		ObjectCombination.MapCombination(app.dic_zf, map.get("搭配"));
+		ObjectCombination.MapCombination(app.dic_hai, map.get("风险规避"));
+		ObjectCombination.MapCombination(app.dic_cj, map.get("常见药"));
+		ObjectCombination.MapCombination(app.dic_yl, map.get("用量"));
+		ObjectCombination.MapCombination(app.dic_map, map.get("dic_map"));
 	}
 
 	public static void readDBInWebWay(App app) {
