@@ -26,4 +26,20 @@ public class ObjectClassification {
 		}
 		return output;
 	}
+	
+	public static void main(String[] ARGS) {
+		Map<String, Object> input= new HashMap<String, Object>();
+		String[] keywords= new String[3];
+		input.put("ยÞ", "ยÞ");
+		input.put("ยÞ", "ยÞ");
+		input.put("ัþ", "ัþ");
+		input.put("ัþ", "ัþ");
+		input.put("นโ", "นโ");
+		input.put("นโ", "นโ");
+		
+		keywords[0]="ยÞ";
+		keywords[1]="ัþ";
+		keywords[2]="นโ";
+		mapClassification(input, keywords);
+	}
 }
