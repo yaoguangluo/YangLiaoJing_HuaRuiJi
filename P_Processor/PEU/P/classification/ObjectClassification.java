@@ -72,6 +72,27 @@ public class ObjectClassification {
 		return output;
 	}
 	
+	@SuppressWarnings("unchecked")
+	public static Map<String, List<String>> listClassification2D(List<String> input, String[] keywords) {
+		Map<String, List<String>> output= new HashMap<>();
+		List<String>[] outputArray= new LinkedList[keywords.length];
+		for(int i= 0; i< keywords.length; i++) {
+			outputArray[i]= new LinkedList<>();
+		}
+		Iterator<String> iterator= input.iterator();
+		while(iterator.hasNext()) {
+			String string= iterator.next();
+			for(int j= 0; j< keywords.length; j++)
+				if(string.contains(keywords[j])) {
+					outputArray[j].add(string);
+				}
+		}
+		for(int i= 0; i< keywords.length; i++) {
+			output.put(keywords[i], outputArray[i]);
+		}
+		return output;
+	}
+	
 	public static void main(String[] ARGS) {
 		Map<String, Object> input= new HashMap<String, Object>();
 		String[] keywords= new String[3];
@@ -93,5 +114,12 @@ public class ObjectClassification {
 		inputString[1]="ยÞนโ";
 		inputString[2]="ัþนโ";
 		stringClassification2D(inputString, keywords);
+		
+		List<String> inputList= new LinkedList<String>();
+		inputList.add("ยÞัþ");
+		inputList.add("ยÞนโ");
+		inputList.add("ัþนโ");
+		listClassification2D(inputList, keywords);
+		
 	}
 }
