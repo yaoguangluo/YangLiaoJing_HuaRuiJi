@@ -1,7 +1,7 @@
 package OSI.PCI.ASQ.basic;
 //Theory: ×æ³åÖ®,
 //Application: Yaoguang.luo
-public class ComputeSets{
+public class Compute_S{
 	public static double getPi() {
 		return Pi;
 	}

@@ -1,5 +1,5 @@
 package OSI.PCI.ASQ.ratio;
-import OSI.PCI.ASQ.basic.ComputeSets;
+import OSI.PCI.ASQ.basic.Compute_S;
 import OSI.PCI.ASQ.demension.Position2D;
 import OSI.PCI.ASQ.demension.Position3D;
 //Theory: Yaoguang.luo
@@ -48,15 +48,15 @@ public class DistanceRatio{
 		}
 		//4象限
 		if(x>= 0 && y<0) {
-			return 2* ComputeSets.getPi()- Math.asin(Math.abs(x)/z);
+			return 2* Compute_S.getPi()- Math.asin(Math.abs(x)/z);
 		}
 		//2象限
 		if(x< 0 && y>= 0) {
-			return ComputeSets.getPi()- Math.asin(Math.abs(x)/z);
+			return Compute_S.getPi()- Math.asin(Math.abs(x)/z);
 		}
 		//3象限
 		if(x< 0&& y< 0) {
-			return ComputeSets.getPi()+ Math.asin(Math.abs(x)/z);
+			return Compute_S.getPi()+ Math.asin(Math.abs(x)/z);
 		}
 		return 0;
 	}
