@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jogl.obj.yaoguangLuo;
+package VSQ.OPE.jogl;
 
 public class JOGLOBJVec4 {
 

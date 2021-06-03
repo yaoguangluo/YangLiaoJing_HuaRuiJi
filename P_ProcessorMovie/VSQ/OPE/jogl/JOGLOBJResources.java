@@ -1,5 +1,6 @@
 /*
  * $RCSfile: Resources.java,v $
+
  *
  * Copyright (c) 2007 Sun Microsystems, Inc. All rights reserved.
  *
@@ -42,11 +43,11 @@
  * $State: Exp $
  */
 
-package jogl.obj.yaoguangLuo;
+package VSQ.OPE.jogl;
 
 import java.net.URL;
 
-import jogl.obj.yaoguangLuo.JOGLOBJResources;
+import VSQ.OPE.jogl.JOGLOBJResources;
 /**
  * 
  */

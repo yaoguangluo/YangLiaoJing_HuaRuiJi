@@ -25,7 +25,7 @@ import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import jogl.obj.yaoguangLuo.JOGLOBJShape;
+import VSQ.OPE.jogl.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;

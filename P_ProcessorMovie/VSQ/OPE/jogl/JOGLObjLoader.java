@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jogl.obj.yaoguangLuo;
+package VSQ.OPE.jogl;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.regex.Matcher;

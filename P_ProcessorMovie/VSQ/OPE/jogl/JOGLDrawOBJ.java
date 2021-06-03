@@ -1,4 +1,4 @@
-package jogl.obj.yaoguangLuo;
+package VSQ.OPE.jogl;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

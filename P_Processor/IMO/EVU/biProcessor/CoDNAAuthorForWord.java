@@ -26,7 +26,7 @@ import MVQ.slider.DetaSlider;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
-import jogl.obj.yaoguangLuo.JOGLOBJShape;
+import VSQ.OPE.jogl.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;

@@ -2,7 +2,9 @@
 
 package demo1;
 import com.jogamp.opengl.util.gl2.GLUT;
-import jogl.obj.yaoguangLuo.*;
+
+import VSQ.OPE.jogl.JOGLDrawOBJ;
+import VSQ.OPE.jogl.JOGLOBJShape;
 
 import javax.media.opengl.GL;  
 import javax.media.opengl.GL2;  

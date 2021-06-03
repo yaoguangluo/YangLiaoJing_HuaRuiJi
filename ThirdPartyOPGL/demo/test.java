@@ -12,8 +12,8 @@ import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.gl2.GLUT;
 
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import jogl.obj.yaoguangLuo.JOGLDrawOBJ;
-import jogl.obj.yaoguangLuo.JOGLOBJShape;
+import VSQ.OPE.jogl.JOGLDrawOBJ;
+import VSQ.OPE.jogl.JOGLOBJShape;
 
 import javax.media.opengl.awt.GLCanvas;  
 import javax.media.opengl.glu.GLU;
