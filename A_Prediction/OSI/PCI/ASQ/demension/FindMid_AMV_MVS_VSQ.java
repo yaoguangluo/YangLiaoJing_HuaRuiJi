@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Euclid;
-public class FindMidPositions{
+public class FindMid_AMV_MVS_VSQ{
 	//求坐标团的中心。
 	public static Map<Double, AMV_MVS_VSQ_2D> getPosition2DGroupsMids(Map<Double, ArrayList<AMV_MVS_VSQ_2D>> groups){
 		Map<Double, AMV_MVS_VSQ_2D> output= new HashMap<>(); 

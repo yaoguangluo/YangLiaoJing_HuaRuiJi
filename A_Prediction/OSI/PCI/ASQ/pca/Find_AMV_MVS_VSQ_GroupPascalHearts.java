@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import OSI.PCI.ASQ.classification.FissileWithMatch;
-import OSI.PCI.ASQ.demension.FindHeartPositions;
-import OSI.PCI.ASQ.demension.FindMidPositions;
+import OSI.PCI.ASQ.demension.FindHeart_AMV_MVS_VSQ;
+import OSI.PCI.ASQ.demension.FindMid_AMV_MVS_VSQ;
 import OSI.PCI.ASQ.demension.Line2D;
 import OSI.PCI.ASQ.demension.Line3D;
 import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
@@ -19,25 +19,25 @@ public class Find_AMV_MVS_VSQ_GroupPascalHearts{
 	//ÊµÏÖ ÂÞÑþ¹â 
 	public static Map<Double, AMV_MVS_VSQ_2D> getPosition2DsGroupPascalHearts(ArrayList<AMV_MVS_VSQ_2D> groups, double scale) {
 		Map<Double, ArrayList<AMV_MVS_VSQ_2D>> pascalGroups= FissileWithMatch.fissilePosition2DWithMatch(groups, scale);
-		Map<Double, AMV_MVS_VSQ_2D> pascalHearts= FindHeartPositions.getPosition2DGroupsHearts(pascalGroups);
+		Map<Double, AMV_MVS_VSQ_2D> pascalHearts= FindHeart_AMV_MVS_VSQ.getPosition2DGroupsHearts(pascalGroups);
 		return pascalHearts;
 	}
 	
 	public static Map<Double, AMV_MVS_VSQ_3D> getPosition3DsGroupPascalHearts(ArrayList<AMV_MVS_VSQ_3D> groups, double scale) {
 		Map<Double, ArrayList<AMV_MVS_VSQ_3D>> pascalGroups= FissileWithMatch.fissilePosition3DWithMatch(groups, scale);
-		Map<Double, AMV_MVS_VSQ_3D> pascalHearts= FindHeartPositions.getPosition3DGroupsHearts(pascalGroups);
+		Map<Double, AMV_MVS_VSQ_3D> pascalHearts= FindHeart_AMV_MVS_VSQ.getPosition3DGroupsHearts(pascalGroups);
 		return pascalHearts;
 	}
 	
 	public static Map<Double, AMV_MVS_VSQ_2D> getPosition2DsGroupPascalMids(ArrayList<AMV_MVS_VSQ_2D> groups, double scale) {
 		Map<Double, ArrayList<AMV_MVS_VSQ_2D>> pascalGroups= FissileWithMatch.fissilePosition2DWithMatch(groups, scale);
-		Map<Double, AMV_MVS_VSQ_2D> pascalMids=  FindMidPositions.getPosition2DGroupsMids(pascalGroups);
+		Map<Double, AMV_MVS_VSQ_2D> pascalMids=  FindMid_AMV_MVS_VSQ.getPosition2DGroupsMids(pascalGroups);
 		return pascalMids;
 	}
 	
 	public static Map<Double, AMV_MVS_VSQ_3D> getPosition3DsGroupPascalMids(ArrayList<AMV_MVS_VSQ_3D> groups, double scale) {
 		Map<Double, ArrayList<AMV_MVS_VSQ_3D>> pascalGroups= FissileWithMatch.fissilePosition3DWithMatch(groups, scale);
-		Map<Double, AMV_MVS_VSQ_3D> pascalMids= FindMidPositions.getPosition3DGroupsMids(pascalGroups);
+		Map<Double, AMV_MVS_VSQ_3D> pascalMids= FindMid_AMV_MVS_VSQ.getPosition3DGroupsMids(pascalGroups);
 		return pascalMids;
 	}
 	

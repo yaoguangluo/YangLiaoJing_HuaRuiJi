@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Euclid;
-public class FindHeartPositions{
+public class FindHeart_AMV_MVS_VSQ{
 	//求坐标团的重心。
 	public static Map<Double, AMV_MVS_VSQ_2D> getPosition2DGroupsHearts(Map<Double, ArrayList<AMV_MVS_VSQ_2D>> groups){
 		Map<Double, AMV_MVS_VSQ_2D> output= new HashMap<>(); 

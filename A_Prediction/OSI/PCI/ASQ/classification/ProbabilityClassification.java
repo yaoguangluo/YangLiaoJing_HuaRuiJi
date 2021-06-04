@@ -8,7 +8,7 @@ import OSI.PCI.ASQ.basic.RatioMatrix;
 //这个函数用于通过概率轭相似度来进行坐标分类
 //思想：贝叶斯  ， 数据挖掘绿皮书， 任课教授 ：卡拉森。
 //实现：罗瑶光
-public class ProbabilityClasification{
+public class ProbabilityClassification{
 	public static boolean predictionResult(RatioMatrix input, List<RatioMatrix> groups, double scale) {
 		double rightRightMean= 0;
 		double rightErrorMean= 0;
