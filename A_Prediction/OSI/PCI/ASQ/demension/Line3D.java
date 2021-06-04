@@ -2,18 +2,18 @@ package OSI.PCI.ASQ.demension;
 //Theory: ÎÞ·¨¿¼Ö¤
 //Application: Yaoguang.luo
 public class Line3D{
-	public Position3D getBegin() {
+	public AMV_MVS_VSQ_3D getBegin() {
 		return begin;
 	}
-	public void setBegin(Position3D begin) {
+	public void setBegin(AMV_MVS_VSQ_3D begin) {
 		this.begin = begin;
 	}
-	public Position3D getEnd() {
+	public AMV_MVS_VSQ_3D getEnd() {
 		return end;
 	}
-	public void setEnd(Position3D end) {
+	public void setEnd(AMV_MVS_VSQ_3D end) {
 		this.end = end;
 	}
-	private Position3D begin;
-	private Position3D end;
+	private AMV_MVS_VSQ_3D begin;
+	private AMV_MVS_VSQ_3D end;
 }

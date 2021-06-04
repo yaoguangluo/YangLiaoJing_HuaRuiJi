@@ -12,37 +12,37 @@ import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.demension.Line2D;
 import OSI.PCI.ASQ.demension.Line3D;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 //import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 
 public class YaoguangLuoEulerRingTSP2D{
 	//Foundation: Euler
 	//Theory: Yaoguang.Luo
 	//Application: Yaoguang.Luo 20200114
-	public List<Line2D> getYaoguangLuo2DEulerRingTSP2D(List<Position2D> AMV_MVS_VSQs){
+	public List<Line2D> getYaoguangLuo2DEulerRingTSP2D(List<AMV_MVS_VSQ_2D> AMV_MVS_VSQs){
 		//1 annotations 
-		List<Position2D> AMV_MVS_VSQ2DTag= new ArrayList<>();
-		Iterator<Position2D> iterator= AMV_MVS_VSQs.iterator();
+		List<AMV_MVS_VSQ_2D> AMV_MVS_VSQ2DTag= new ArrayList<>();
+		Iterator<AMV_MVS_VSQ_2D> iterator= AMV_MVS_VSQs.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position2D AMV_MVS_VSQ2D=  iterator.next();
+			AMV_MVS_VSQ_2D AMV_MVS_VSQ2D=  iterator.next();
 			AMV_MVS_VSQ2D.setTag(tag+ i++);
 			AMV_MVS_VSQ2DTag.add(AMV_MVS_VSQ2D);
 		}
 		AMV_MVS_VSQs= AMV_MVS_VSQ2DTag;
 		//2 get all lines
 		List<Line2D> linesMap= new ArrayList<>();
-		Iterator<Position2D> iteratorOuter= AMV_MVS_VSQs.iterator();
+		Iterator<AMV_MVS_VSQ_2D> iteratorOuter= AMV_MVS_VSQs.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position2D AMV_MVS_VSQ2DOuter= iteratorOuter.next();
-			Iterator<Position2D> iteratorInner= AMV_MVS_VSQs.iterator();
+			AMV_MVS_VSQ_2D AMV_MVS_VSQ2DOuter= iteratorOuter.next();
+			Iterator<AMV_MVS_VSQ_2D> iteratorInner= AMV_MVS_VSQs.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position2D AMV_MVS_VSQ2DInner= iteratorOuter.next();
+				AMV_MVS_VSQ_2D AMV_MVS_VSQ2DInner= iteratorOuter.next();
 				Line2D line2D= new Line2D();
 				line2D.setBegin(AMV_MVS_VSQ2DOuter);
 				line2D.setEnd(AMV_MVS_VSQ2DInner);
@@ -99,8 +99,8 @@ public class YaoguangLuoEulerRingTSP2D{
 			Here:
 				while(iteratorLines.hasNext()) {
 					Line2D line2D= iteratorLines.next();
-					Position2D begin= line2D.getBegin();
-					Position2D end= line2D.getEnd();
+					AMV_MVS_VSQ_2D begin= line2D.getBegin();
+					AMV_MVS_VSQ_2D end= line2D.getEnd();
 					//8 decision tree add rights line
 					if(outputDouble2D.containsKey(begin.getTag())) {
 						double beginTimes= outputDouble2D.get(begin.getTag()).doubleValue();
@@ -137,29 +137,29 @@ public class YaoguangLuoEulerRingTSP2D{
 		return outputLine2D;	
 	}
 	
-	public List<Line3D> getYaoguangLuo3DEulerRingTSP2D(List<Position3D> AMV_MVS_VSQs){
+	public List<Line3D> getYaoguangLuo3DEulerRingTSP2D(List<AMV_MVS_VSQ_3D> AMV_MVS_VSQs){
 		//1 annotations 
-		List<Position3D> AMV_MVS_VSQ3DTag= new ArrayList<>();
-		Iterator<Position3D> iterator= AMV_MVS_VSQs.iterator();
+		List<AMV_MVS_VSQ_3D> AMV_MVS_VSQ3DTag= new ArrayList<>();
+		Iterator<AMV_MVS_VSQ_3D> iterator= AMV_MVS_VSQs.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position3D AMV_MVS_VSQ3D=  iterator.next();
+			AMV_MVS_VSQ_3D AMV_MVS_VSQ3D=  iterator.next();
 			AMV_MVS_VSQ3D.setTag(tag+ i++);
 			AMV_MVS_VSQ3DTag.add(AMV_MVS_VSQ3D);
 		}
 		AMV_MVS_VSQs= AMV_MVS_VSQ3DTag;
 		//2 get all lines
 		List<Line3D> linesMap= new ArrayList<>();
-		Iterator<Position3D> iteratorOuter= AMV_MVS_VSQs.iterator();
+		Iterator<AMV_MVS_VSQ_3D> iteratorOuter= AMV_MVS_VSQs.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position3D AMV_MVS_VSQ3DOuter= iteratorOuter.next();
-			Iterator<Position3D> iteratorInner= AMV_MVS_VSQs.iterator();
+			AMV_MVS_VSQ_3D AMV_MVS_VSQ3DOuter= iteratorOuter.next();
+			Iterator<AMV_MVS_VSQ_3D> iteratorInner= AMV_MVS_VSQs.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position3D AMV_MVS_VSQ3DInner= iteratorOuter.next();
+				AMV_MVS_VSQ_3D AMV_MVS_VSQ3DInner= iteratorOuter.next();
 				Line3D line3D= new Line3D();
 				line3D.setBegin(AMV_MVS_VSQ3DOuter);
 				line3D.setEnd(AMV_MVS_VSQ3DInner);
@@ -217,8 +217,8 @@ public class YaoguangLuoEulerRingTSP2D{
 			Here:
 				while(iteratorLines.hasNext()) {
 					Line3D line3D= iteratorLines.next();
-					Position3D begin= line3D.getBegin();
-					Position3D end= line3D.getEnd();
+					AMV_MVS_VSQ_3D begin= line3D.getBegin();
+					AMV_MVS_VSQ_3D end= line3D.getEnd();
 					//8 decision tree add rights line
 					if(outputDouble3D.containsKey(begin.getTag())) {
 						double beginTimes= outputDouble3D.get(begin.getTag()).doubleValue();

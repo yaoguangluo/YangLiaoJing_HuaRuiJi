@@ -6,27 +6,27 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Distance;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 public class ForestIsolation{
 	//带精度 2维 商旅路径团簇 森林单元 隔离 算法
 	//Theory 《神经网络: 权距》，欧基里德， Yaoguang.Luo 20191220
 	//Application Yaoguang.Luo 
 	//适用于 最短路径，最小距离，商旅分析预测，等项目中
-	public static Map<Double, List<Position2D>> getTSPForestIsolationGroups2D(
-			List<Position2D> groups, double scale) {
-		Map<Double, List<Position2D>> output= new HashMap<>(); 
-		Iterator<Position2D> iterator= groups.iterator();
+	public static Map<Double, List<AMV_MVS_VSQ_2D>> getTSPForestIsolationGroups2D(
+			List<AMV_MVS_VSQ_2D> groups, double scale) {
+		Map<Double, List<AMV_MVS_VSQ_2D>> output= new HashMap<>(); 
+		Iterator<AMV_MVS_VSQ_2D> iterator= groups.iterator();
 		double i= 0;
 		while(iterator.hasNext()) {
 			i++;
-			Position2D AMV_MVS_VSQ2D= iterator.next();
-			Iterator<Position2D> inIterator= groups.iterator();
+			AMV_MVS_VSQ_2D AMV_MVS_VSQ2D= iterator.next();
+			Iterator<AMV_MVS_VSQ_2D> inIterator= groups.iterator();
 			double j= 0;
 			Here:
 				while(inIterator.hasNext()) {
 					j++;
-					Position2D inPosition2D= inIterator.next();
+					AMV_MVS_VSQ_2D inPosition2D= inIterator.next();
 					//计算
 					if(i== j) {
 						continue Here;
@@ -36,7 +36,7 @@ public class ForestIsolation{
 						continue Here;
 					}
 					//添加
-					List<Position2D> list;
+					List<AMV_MVS_VSQ_2D> list;
 					if(output.containsKey(i)) {
 						list= output.get(i);
 					}else {
@@ -54,20 +54,20 @@ public class ForestIsolation{
 	//Theory 《神经网络: 权距》，欧基里德， Yaoguang.Luo 20191220
 	//Application Yaoguang.Luo 
 	//适用于 最短路径，最小距离，商旅分析预测，等项目中
-	public static Map<Double, List<Position3D>> getTSPIsolationGroups3D(
-			List<Position3D> groups, double scale) {
-		Map<Double, List<Position3D>> output= new HashMap<>(); 
-		Iterator<Position3D> iterator= groups.iterator();
+	public static Map<Double, List<AMV_MVS_VSQ_3D>> getTSPIsolationGroups3D(
+			List<AMV_MVS_VSQ_3D> groups, double scale) {
+		Map<Double, List<AMV_MVS_VSQ_3D>> output= new HashMap<>(); 
+		Iterator<AMV_MVS_VSQ_3D> iterator= groups.iterator();
 		double i= 0;
 		while(iterator.hasNext()) {
 			i++;
-			Position3D AMV_MVS_VSQ3D= iterator.next();
-			Iterator<Position3D> inIterator= groups.iterator();
+			AMV_MVS_VSQ_3D AMV_MVS_VSQ3D= iterator.next();
+			Iterator<AMV_MVS_VSQ_3D> inIterator= groups.iterator();
 			double j= 0;
 			Here:
 				while(inIterator.hasNext()) {
 					j++;
-					Position3D inPosition3D= inIterator.next();
+					AMV_MVS_VSQ_3D inPosition3D= inIterator.next();
 					//计算
 					if(i== j) {
 						continue Here;
@@ -77,7 +77,7 @@ public class ForestIsolation{
 						continue Here;
 					}
 					//添加
-					List<Position3D> list;
+					List<AMV_MVS_VSQ_3D> list;
 					if(output.containsKey(i)) {
 						list= output.get(i);
 					}else {

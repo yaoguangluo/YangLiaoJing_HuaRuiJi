@@ -6,8 +6,8 @@ import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.basic.Euclid;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 //task 20191220-20191222 daytime
 //通过scale 距离来进行坐标团集合 融聚。
 //Theory yaoguang.luo 20191219， 欧基里德
@@ -15,11 +15,11 @@ import OSI.PCI.ASQ.demension.Position3D;
 //注意：做完计算可以删除冗余map数据来加速运算，但是考虑到 java对象入参是指针形式，于是取消删除思想，避免破坏函数上层逻辑。
 //小伙伴有加速需要，可以自行修改。
 public class Fusion{
-	public static Map<Double, List<Position2D>> fusionPosition2DwithHeart
-	(Map<Double, List<Position2D>> groups, Map<Double, Position2D> groupsHeart, double scale){
+	public static Map<Double, List<AMV_MVS_VSQ_2D>> fusionPosition2DwithHeart
+	(Map<Double, List<AMV_MVS_VSQ_2D>> groups, Map<Double, AMV_MVS_VSQ_2D> groupsHeart, double scale){
 		//初始
-		Map<Double, List<Position2D>> output= new HashMap<>();
-		Map<Double, Position2D> outputHeart= new HashMap<>();
+		Map<Double, List<AMV_MVS_VSQ_2D>> output= new HashMap<>();
+		Map<Double, AMV_MVS_VSQ_2D> outputHeart= new HashMap<>();
 		//逐团比较重心距离
 		Iterator<Double> outLoop= groupsHeart.keySet().iterator();
 		Map<Double, Double> isDelete= new HashMap<>();
@@ -34,15 +34,15 @@ public class Fusion{
 					if(out== in|| output.containsKey(in)|| isDelete.containsKey(in)) {
 						continue HereIn;//out做融聚参照物，in做计算算子。output做观测物。
 					}
-					Position2D inHeart=	groupsHeart.get(in);
+					AMV_MVS_VSQ_2D inHeart=	groupsHeart.get(in);
 					//Position2D outHeart= groupsHeart.get(out);
 					//如下因为java的指针被对象化，直接修改入参会产生问题于是新做了outputHeart变量来处理。
-					Position2D outHeart= outputHeart.containsKey(out)
+					AMV_MVS_VSQ_2D outHeart= outputHeart.containsKey(out)
 							? outputHeart.get(out): groupsHeart.get(out);
 							double distance= Distance.getDistance2D(inHeart, outHeart);
 							//比较 是融合
 							if(distance< scale) {
-								List<Position2D> outList;
+								List<AMV_MVS_VSQ_2D> outList;
 								//比较有融媒
 								if(output.containsKey(out)) {
 									outList= output.get(out);
@@ -51,14 +51,14 @@ public class Fusion{
 									outList= groups.get(out);
 								}
 								//加融媒in to out 删除 in
-								List<Position2D> inList= groups.get(in);
-								Iterator<Position2D> iterator= inList.iterator();
+								List<AMV_MVS_VSQ_2D> inList= groups.get(in);
+								Iterator<AMV_MVS_VSQ_2D> iterator= inList.iterator();
 								while(iterator.hasNext()) {
 									outList.add(iterator.next());
 								}
 								output.put(out, outList);
 								//更新heart
-								Position2D newHeart= Euclid.findCryptionPosition2D(outHeart, inHeart);
+								AMV_MVS_VSQ_2D newHeart= Euclid.findCryptionPosition2D(outHeart, inHeart);
 								outputHeart.put(out, newHeart);
 								isDelete.put(in, in);
 							}else {//比较 否融合）
@@ -66,7 +66,7 @@ public class Fusion{
 								if(!output.containsKey(out)) {//比较无融媒
 									//加融媒 out，删除 out，加融媒 in 删除 in
 									if(!output.containsKey(out)) {
-										List<Position2D> outList= groups.get(out);
+										List<AMV_MVS_VSQ_2D> outList= groups.get(out);
 										output.put(out, outList);
 										//更新heart
 										outputHeart.put(out, outHeart);	
@@ -74,7 +74,7 @@ public class Fusion{
 									}
 								}
 								if(!output.containsKey(in)) {
-									List<Position2D> inList= groups.get(in);
+									List<AMV_MVS_VSQ_2D> inList= groups.get(in);
 									output.put(in, inList);
 									//更新heart
 									outputHeart.put(in, inHeart);
@@ -87,11 +87,11 @@ public class Fusion{
 		return output;	
 	}
 	
-	public static Map<Double, List<Position3D>> fusionPosition3DwithHeart
-	(Map<Double, List<Position3D>> groups, Map<Double, Position3D> groupsHeart, double scale){
+	public static Map<Double, List<AMV_MVS_VSQ_3D>> fusionPosition3DwithHeart
+	(Map<Double, List<AMV_MVS_VSQ_3D>> groups, Map<Double, AMV_MVS_VSQ_3D> groupsHeart, double scale){
 		//初始
-		Map<Double, List<Position3D>> output= new HashMap<>();
-		Map<Double, Position3D> outputHeart= new HashMap<>();
+		Map<Double, List<AMV_MVS_VSQ_3D>> output= new HashMap<>();
+		Map<Double, AMV_MVS_VSQ_3D> outputHeart= new HashMap<>();
 		//逐团比较重心距离
 		Iterator<Double> outLoop= groupsHeart.keySet().iterator();
 		Map<Double, Double> isDelete= new HashMap<>();
@@ -106,15 +106,15 @@ public class Fusion{
 					if(out== in|| output.containsKey(in)|| isDelete.containsKey(in)) {
 						continue HereIn;//out做融聚参照物，in做计算算子。output做观测物。
 					}
-					Position3D inHeart=	groupsHeart.get(in);
+					AMV_MVS_VSQ_3D inHeart=	groupsHeart.get(in);
 					//Position3D outHeart= groupsHeart.get(out);
 					//如下因为java的指针被对象化，直接修改入参会产生问题于是新做了outputHeart变量来处理。
-					Position3D outHeart= outputHeart.containsKey(out)
+					AMV_MVS_VSQ_3D outHeart= outputHeart.containsKey(out)
 							? outputHeart.get(out): groupsHeart.get(out);
 							double distance= Distance.getDistance3D(inHeart, outHeart);
 							//比较 是融合
 							if(distance< scale) {
-								List<Position3D> outList;
+								List<AMV_MVS_VSQ_3D> outList;
 								//比较有融媒
 								if(output.containsKey(out)) {
 									outList= output.get(out);
@@ -123,14 +123,14 @@ public class Fusion{
 									outList= groups.get(out);
 								}
 								//加融媒in to out 删除 in
-								List<Position3D> inList= groups.get(in);
-								Iterator<Position3D> iterator= inList.iterator();
+								List<AMV_MVS_VSQ_3D> inList= groups.get(in);
+								Iterator<AMV_MVS_VSQ_3D> iterator= inList.iterator();
 								while(iterator.hasNext()) {
 									outList.add(iterator.next());
 								}
 								output.put(out, outList);
 								//更新heart
-								Position3D newHeart= Euclid.findCryptionPosition3D(outHeart, inHeart);
+								AMV_MVS_VSQ_3D newHeart= Euclid.findCryptionPosition3D(outHeart, inHeart);
 								outputHeart.put(out, newHeart);
 								isDelete.put(in, in);
 							}else {//比较 否融合）
@@ -138,7 +138,7 @@ public class Fusion{
 								if(!output.containsKey(out)) {//比较无融媒
 									//加融媒 out，删除 out，加融媒 in 删除 in
 									if(!output.containsKey(out)) {
-										List<Position3D> outList= groups.get(out);
+										List<AMV_MVS_VSQ_3D> outList= groups.get(out);
 										output.put(out, outList);
 										//更新heart
 										outputHeart.put(out, outHeart);	
@@ -146,7 +146,7 @@ public class Fusion{
 									}
 								}
 								if(!output.containsKey(in)) {
-									List<Position3D> inList= groups.get(in);
+									List<AMV_MVS_VSQ_3D> inList= groups.get(in);
 									output.put(in, inList);
 									//更新heart
 									outputHeart.put(in, inHeart);

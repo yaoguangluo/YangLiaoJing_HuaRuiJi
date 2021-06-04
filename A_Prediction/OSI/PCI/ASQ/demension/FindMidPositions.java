@@ -7,8 +7,8 @@ import java.util.Map;
 import OSI.PCI.ASQ.basic.Euclid;
 public class FindMidPositions{
 	//求坐标团的中心。
-	public static Map<Double, Position2D> getPosition2DGroupsMids(Map<Double, ArrayList<Position2D>> groups){
-		Map<Double, Position2D> output= new HashMap<>(); 
+	public static Map<Double, AMV_MVS_VSQ_2D> getPosition2DGroupsMids(Map<Double, ArrayList<AMV_MVS_VSQ_2D>> groups){
+		Map<Double, AMV_MVS_VSQ_2D> output= new HashMap<>(); 
 		Iterator<Double> iterator= output.keySet().iterator();
 		while(iterator.hasNext()){
 			double value= iterator.next();
@@ -18,8 +18,8 @@ public class FindMidPositions{
 		
 	}
 	
-	public static Map<Double, Position3D> getPosition3DGroupsMids(Map<Double, ArrayList<Position3D>> groups){
-		Map<Double, Position3D> output= new HashMap<>(); 
+	public static Map<Double, AMV_MVS_VSQ_3D> getPosition3DGroupsMids(Map<Double, ArrayList<AMV_MVS_VSQ_3D>> groups){
+		Map<Double, AMV_MVS_VSQ_3D> output= new HashMap<>(); 
 		Iterator<Double> iterator= output.keySet().iterator();
 		while(iterator.hasNext()){
 			double value= iterator.next();

@@ -2,16 +2,16 @@ package OSI.PCI.ASQ.demension;
 //Theory: 平面几何
 //Application: Yaoguang.luo
 public class Line2D{
-	public Position2D getBegin() {
+	public AMV_MVS_VSQ_2D getBegin() {
 		return begin;
 	}
-	public void setBegin(Position2D begin) {
+	public void setBegin(AMV_MVS_VSQ_2D begin) {
 		this.begin = begin;
 	}
-	public Position2D getEnd() {
+	public AMV_MVS_VSQ_2D getEnd() {
 		return end;
 	}
-	public void setEnd(Position2D end) {
+	public void setEnd(AMV_MVS_VSQ_2D end) {
 		this.end = end;
 	}
 	public String getBeginTag() {
@@ -27,8 +27,8 @@ public class Line2D{
 		this.endTag = endTag;
 	}
 	
-	private Position2D begin;
-	private Position2D end;
+	private AMV_MVS_VSQ_2D begin;
+	private AMV_MVS_VSQ_2D end;
 	private String beginTag;
 	private String endTag;
 	

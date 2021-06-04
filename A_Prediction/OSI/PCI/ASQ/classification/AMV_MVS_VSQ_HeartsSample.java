@@ -6,23 +6,23 @@ import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.basic.Euclid;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 
 //这个函数用于坐标集团距离采样匹配输出
 //思想: 欧基里德 
 //实现：罗瑶光
-public class PositionHeartsSample{
-	public static List<Position2D> getShortestSamplePosition2DGroup(Position2D inputHeart
-			, Map<Double, List<Position2D>> groups) {
+public class AMV_MVS_VSQ_HeartsSample{
+	public static List<AMV_MVS_VSQ_2D> getShortestSamplePosition2DGroup(AMV_MVS_VSQ_2D inputHeart
+			, Map<Double, List<AMV_MVS_VSQ_2D>> groups) {
 		double shortestDistance= 0;
 		boolean isFirst= true;
 		double key= 0;
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position2D> positions= groups.get(mapKey);
-			Position2D heart= Euclid.findHeartPosition2D(positions);
+			List<AMV_MVS_VSQ_2D> positions= groups.get(mapKey);
+			AMV_MVS_VSQ_2D heart= Euclid.findHeartPosition2D(positions);
 			double distance= Distance.getDistance2D(inputHeart, heart);
 			if(true== isFirst) {
 				isFirst= false;
@@ -38,14 +38,14 @@ public class PositionHeartsSample{
 		return groups.get(key);	
 	}	
 
-	public static Map<Double, List<Position2D>> getShorterSamplePosition2DGroupsWithScale(Position2D inputHeart
-			, Map<Double, List<Position2D>> groups, double scale) {
-		Map<Double, List<Position2D>> output= new HashMap<>();
+	public static Map<Double, List<AMV_MVS_VSQ_2D>> getShorterSamplePosition2DGroupsWithScale(AMV_MVS_VSQ_2D inputHeart
+			, Map<Double, List<AMV_MVS_VSQ_2D>> groups, double scale) {
+		Map<Double, List<AMV_MVS_VSQ_2D>> output= new HashMap<>();
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position2D> positions= groups.get(mapKey);
-			Position2D heart= Euclid.findHeartPosition2D(positions);
+			List<AMV_MVS_VSQ_2D> positions= groups.get(mapKey);
+			AMV_MVS_VSQ_2D heart= Euclid.findHeartPosition2D(positions);
 			double distance= Distance.getDistance2D(inputHeart, heart);
 			if(scale> distance) {
 				output.put(mapKey, positions);
@@ -54,16 +54,16 @@ public class PositionHeartsSample{
 		return output;	
 	}	
 
-	public static List<Position3D> getShortestSamplePosition3DGroup(Position3D inputHeart
-			, Map<Double, List<Position3D>> groups) {
+	public static List<AMV_MVS_VSQ_3D> getShortestSamplePosition3DGroup(AMV_MVS_VSQ_3D inputHeart
+			, Map<Double, List<AMV_MVS_VSQ_3D>> groups) {
 		double shortestDistance= 0;
 		boolean isFirst= true;
 		double key= 0;
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position3D> positions= groups.get(mapKey);
-			Position3D heart= Euclid.findHeartPosition3D(positions);
+			List<AMV_MVS_VSQ_3D> positions= groups.get(mapKey);
+			AMV_MVS_VSQ_3D heart= Euclid.findHeartPosition3D(positions);
 			double distance= Distance.getDistance3D(inputHeart, heart);
 			if(true== isFirst) {
 				isFirst= false;
@@ -79,14 +79,14 @@ public class PositionHeartsSample{
 		return groups.get(key);	
 	}	
 
-	public static Map<Double, List<Position3D>> getShortestSamplePosition3DGroupsWithScale(Position3D inputHeart
-			, Map<Double, List<Position3D>> groups, double scale) {
-		Map<Double, List<Position3D>> output= new HashMap<>();
+	public static Map<Double, List<AMV_MVS_VSQ_3D>> getShortestSamplePosition3DGroupsWithScale(AMV_MVS_VSQ_3D inputHeart
+			, Map<Double, List<AMV_MVS_VSQ_3D>> groups, double scale) {
+		Map<Double, List<AMV_MVS_VSQ_3D>> output= new HashMap<>();
 		Iterator<Double> iterators= groups.keySet().iterator();
 		while(iterators.hasNext()) {
 			double mapKey= iterators.next();
-			List<Position3D> positions= groups.get(mapKey);
-			Position3D heart= Euclid.findHeartPosition3D(positions);
+			List<AMV_MVS_VSQ_3D> positions= groups.get(mapKey);
+			AMV_MVS_VSQ_3D heart= Euclid.findHeartPosition3D(positions);
 			double distance= Distance.getDistance3D(inputHeart, heart);
 			if(scale> distance) {
 				output.put(mapKey, positions);

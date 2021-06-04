@@ -12,8 +12,8 @@ import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.demension.Line2D;
 import OSI.PCI.ASQ.demension.Line3D;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 //import OSI.PCI.ASQ.statistic.LYG5DWithDoubleQuickSort4D;
 
 
@@ -21,30 +21,30 @@ public class YaoguangLuoEulerRingTSP3D{
 	//Foundation: Euler
 	//Theory: Yaoguang.Luo
 	//Application: Yaoguang.Luo 20200317
-	public List<Line2D> getYaoguangLuo2DEulerRingTSP3D(List<Position2D> positions
+	public List<Line2D> getYaoguangLuo2DEulerRingTSP3D(List<AMV_MVS_VSQ_2D> positions
 			, int sortRangeScale, int sortDeepsScale){
 		//1 annotations 
-		List<Position2D> position2DTag= new ArrayList<>();
-		Iterator<Position2D> iterator= positions.iterator();
+		List<AMV_MVS_VSQ_2D> position2DTag= new ArrayList<>();
+		Iterator<AMV_MVS_VSQ_2D> iterator= positions.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position2D position2D=  iterator.next();
+			AMV_MVS_VSQ_2D position2D=  iterator.next();
 			position2D.setTag(tag+ i++);
 			position2DTag.add(position2D);
 		}
 		positions= position2DTag;
 		//2 get all lines
 		List<Line2D> linesMap= new ArrayList<>();
-		Iterator<Position2D> iteratorOuter= positions.iterator();
+		Iterator<AMV_MVS_VSQ_2D> iteratorOuter= positions.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position2D position2DOuter= iteratorOuter.next();
-			Iterator<Position2D> iteratorInner= positions.iterator();
+			AMV_MVS_VSQ_2D position2DOuter= iteratorOuter.next();
+			Iterator<AMV_MVS_VSQ_2D> iteratorInner= positions.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position2D position2DInner= iteratorOuter.next();
+				AMV_MVS_VSQ_2D position2DInner= iteratorOuter.next();
 				Line2D line2D= new Line2D();
 				line2D.setBegin(position2DOuter);
 				line2D.setEnd(position2DInner);
@@ -101,8 +101,8 @@ public class YaoguangLuoEulerRingTSP3D{
 			Here:
 				while(iteratorLines.hasNext()) {
 					Line2D line2D= iteratorLines.next();
-					Position2D begin= line2D.getBegin();
-					Position2D end= line2D.getEnd();
+					AMV_MVS_VSQ_2D begin= line2D.getBegin();
+					AMV_MVS_VSQ_2D end= line2D.getEnd();
 					//8 decision tree add rights line
 					if(outputDouble2D.containsKey(begin.getTag())) {
 						double beginTimes= outputDouble2D.get(begin.getTag()).doubleValue();
@@ -139,30 +139,30 @@ public class YaoguangLuoEulerRingTSP3D{
 		return outputLine2D;	
 	}
 	
-	public List<Line3D> getYaoguangLuo3DEulerRingTSP3D(List<Position3D> positions
+	public List<Line3D> getYaoguangLuo3DEulerRingTSP3D(List<AMV_MVS_VSQ_3D> positions
 			, int sortRangeScale, int sortDeepsScale){
 		//1 annotations 
-		List<Position3D> position3DTag= new ArrayList<>();
-		Iterator<Position3D> iterator= positions.iterator();
+		List<AMV_MVS_VSQ_3D> position3DTag= new ArrayList<>();
+		Iterator<AMV_MVS_VSQ_3D> iterator= positions.iterator();
 		int i= 0;
 		String tag= "tag";
 		while(iterator.hasNext()) {
-			Position3D position3D=  iterator.next();
+			AMV_MVS_VSQ_3D position3D=  iterator.next();
 			position3D.setTag(tag+ i++);
 			position3DTag.add(position3D);
 		}
 		positions= position3DTag;
 		//2 get all lines
 		List<Line3D> linesMap= new ArrayList<>();
-		Iterator<Position3D> iteratorOuter= positions.iterator();
+		Iterator<AMV_MVS_VSQ_3D> iteratorOuter= positions.iterator();
 		Map<String, Map<String, String>> indexMap= new HashMap<>();
 		i= 0;
 		while(iteratorOuter.hasNext()) {
-			Position3D position3DOuter= iteratorOuter.next();
-			Iterator<Position3D> iteratorInner= positions.iterator();
+			AMV_MVS_VSQ_3D position3DOuter= iteratorOuter.next();
+			Iterator<AMV_MVS_VSQ_3D> iteratorInner= positions.iterator();
 			Next:
 			while(iteratorInner.hasNext()) {
-				Position3D position3DInner= iteratorOuter.next();
+				AMV_MVS_VSQ_3D position3DInner= iteratorOuter.next();
 				Line3D line3D= new Line3D();
 				line3D.setBegin(position3DOuter);
 				line3D.setEnd(position3DInner);
@@ -220,8 +220,8 @@ public class YaoguangLuoEulerRingTSP3D{
 			Here:
 				while(iteratorLines.hasNext()) {
 					Line3D line3D= iteratorLines.next();
-					Position3D begin= line3D.getBegin();
-					Position3D end= line3D.getEnd();
+					AMV_MVS_VSQ_3D begin= line3D.getBegin();
+					AMV_MVS_VSQ_3D end= line3D.getEnd();
 					//8 decision tree add rights line
 					if(outputDouble3D.containsKey(begin.getTag())) {
 						double beginTimes= outputDouble3D.get(begin.getTag()).doubleValue();

@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OSI.PCI.ASQ.classification.FissileWithMatch;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 public class ImagePixGroupFilter{
 	//思想：罗瑶光
 	//作者：罗瑶光
@@ -13,20 +13,20 @@ public class ImagePixGroupFilter{
 	public static int[][] getImagePix2DGroupFilter(int[][] inputPixMatrix
 			, int RBG, int distanceScale,int max, int min){
 		//像素分类
-		Map<Integer, ArrayList<Position2D>> map= ImagePixClassification
+		Map<Integer, ArrayList<AMV_MVS_VSQ_2D>> map= ImagePixClassification
 				.getImagePixClassificationMap(inputPixMatrix);
 		//获取分类后的团簇
-		Map<Double, ArrayList<Position2D>> mid= FissileWithMatch
+		Map<Double, ArrayList<AMV_MVS_VSQ_2D>> mid= FissileWithMatch
 				.fissilePosition2DWithMatch(map.get(RBG), distanceScale);
 		//筛选团簇，过滤团簇
 		Iterator<Double> iteratorMid= mid.keySet().iterator();
 		while(iteratorMid.hasNext()) {
-			ArrayList<Position2D> list= mid.get(iteratorMid.next());
+			ArrayList<AMV_MVS_VSQ_2D> list= mid.get(iteratorMid.next());
 			if(null!= list) {
 				if(list.size()< min|| list.size()> max) {
-					Iterator< Position2D> iterator= list.iterator();
+					Iterator< AMV_MVS_VSQ_2D> iterator= list.iterator();
 					while(iterator.hasNext()) {
-						Position2D position2D= iterator.next();
+						AMV_MVS_VSQ_2D position2D= iterator.next();
 						inputPixMatrix[(int) position2D.getX()]
 								[(int) position2D.getY()]= 0;
 					}
@@ -39,20 +39,20 @@ public class ImagePixGroupFilter{
 	public int[][][] getImagePix3DGroupFilter(int[][][] inputPixMatrix
 			, int RBG, int distanceScale,int max, int min){
 		//像素分类
-		Map<Integer, ArrayList<Position3D>> map= ImagePixClassification
+		Map<Integer, ArrayList<AMV_MVS_VSQ_3D>> map= ImagePixClassification
 				.getImagePixClassificationMap(inputPixMatrix);
 		//获取分类后的团簇
-		Map<Double, ArrayList<Position3D>> mid= FissileWithMatch
+		Map<Double, ArrayList<AMV_MVS_VSQ_3D>> mid= FissileWithMatch
 				.fissilePosition3DWithMatch(map.get(RBG), distanceScale);
 		//筛选团簇，过滤团簇
 		Iterator<Double> iteratorMid= mid.keySet().iterator();
 		while(iteratorMid.hasNext()) {
-			ArrayList<Position3D> list= mid.get(iteratorMid.next());
+			ArrayList<AMV_MVS_VSQ_3D> list= mid.get(iteratorMid.next());
 			if(null!= list) {
 				if(list.size()< min|| list.size()> max) {
-					Iterator< Position3D> iterator= list.iterator();
+					Iterator< AMV_MVS_VSQ_3D> iterator= list.iterator();
 					while(iterator.hasNext()) {
-						Position3D position3D= iterator.next();
+						AMV_MVS_VSQ_3D position3D= iterator.next();
 						inputPixMatrix[(int) position3D.getX()][(int) position3D.getY()]
 								[(int) position3D.getZ()]= 0;
 					}

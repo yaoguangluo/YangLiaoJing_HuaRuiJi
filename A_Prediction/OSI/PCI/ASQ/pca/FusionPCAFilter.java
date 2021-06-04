@@ -4,15 +4,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 //这个函数用于坐标融聚团的主要条件过滤。
 //思想：统计与概率论，立体几何，数据挖掘
 //实现：罗瑶光
 public class FusionPCAFilter{
-	public static Map<Double, List<Position2D>> filterFusion2DSetsWithCountScale
-	(Map<Double, List<Position2D>> groups, double countScale){
-		Map<Double, List<Position2D>> output= new HashMap<>();
+	public static Map<Double, List<AMV_MVS_VSQ_2D>> filterFusion2DSetsWithCountScale
+	(Map<Double, List<AMV_MVS_VSQ_2D>> groups, double countScale){
+		Map<Double, List<AMV_MVS_VSQ_2D>> output= new HashMap<>();
 		Iterator<Double> iterator= groups.keySet().iterator();
 		while(iterator.hasNext()) {
 			double value= iterator.next();
@@ -23,9 +23,9 @@ public class FusionPCAFilter{
 		return output;
 	}
 	
-	public static Map<Double, List<Position3D>> filterFusion3DSetsWithCountScale
-	(Map<Double, List<Position3D>> groups, double countScale){
-		Map<Double, List<Position3D>> output= new HashMap<>();
+	public static Map<Double, List<AMV_MVS_VSQ_3D>> filterFusion3DSetsWithCountScale
+	(Map<Double, List<AMV_MVS_VSQ_3D>> groups, double countScale){
+		Map<Double, List<AMV_MVS_VSQ_3D>> output= new HashMap<>();
 		Iterator<Double> iterator= groups.keySet().iterator();
 		while(iterator.hasNext()) {
 			double value= iterator.next();

@@ -7,25 +7,25 @@ import java.util.Map;
 
 import OSI.PCI.ASQ.basic.Distance;
 import OSI.PCI.ASQ.basic.Euclid;
-import OSI.PCI.ASQ.demension.Position2D;
-import OSI.PCI.ASQ.demension.Position3D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_3D;
 
 //task 20191219 daytime
 //通过scale 距离来进行 坐标团切裂。
 //Theory yaoguang.luo 20191219， 欧基里德
 //Application yaoguang.luo
 public class Fissile{
-	public static Map<Double, List<Position2D>> fissilePosition2D(List<Position2D> groups
+	public static Map<Double, List<AMV_MVS_VSQ_2D>> fissilePosition2D(List<AMV_MVS_VSQ_2D> groups
 			, double scale) {
-		Map<Double, List<Position2D>> distanceGroups= new HashMap<>();
-		Map<Double, Position2D> distanceHeart= new HashMap<>();
-		Iterator<Position2D> iterator= groups.iterator();
+		Map<Double, List<AMV_MVS_VSQ_2D>> distanceGroups= new HashMap<>();
+		Map<Double, AMV_MVS_VSQ_2D> distanceHeart= new HashMap<>();
+		Iterator<AMV_MVS_VSQ_2D> iterator= groups.iterator();
 		double i= 0.0;
 		Here:
 			while(iterator.hasNext()) {
-				Position2D position2D= iterator.next();
+				AMV_MVS_VSQ_2D position2D= iterator.next();
 				if(distanceGroups.isEmpty()) {
-					List<Position2D> list= new ArrayList<>();
+					List<AMV_MVS_VSQ_2D> list= new ArrayList<>();
 					list.add(position2D);
 					distanceGroups.put(i, list);
 					distanceHeart.put(i, position2D);
@@ -36,13 +36,13 @@ public class Fissile{
 					boolean isFind= false;
 					while(iteratorScale.hasNext()) {
 						Double doubleScale= iteratorScale.next();
-						Position2D currenctHeart= distanceHeart.get(doubleScale);
+						AMV_MVS_VSQ_2D currenctHeart= distanceHeart.get(doubleScale);
 						double distance= Distance.getDistance2D(currenctHeart, position2D);
 						if(distance< scale) {
 							//融入得到新的重心
-							Position2D newHeart= Euclid.findCryptionPosition2D(currenctHeart, position2D);
+							AMV_MVS_VSQ_2D newHeart= Euclid.findCryptionPosition2D(currenctHeart, position2D);
 							//删除当前增加坐标集，更新坐标集
-							List<Position2D> list= distanceGroups.get(doubleScale);
+							List<AMV_MVS_VSQ_2D> list= distanceGroups.get(doubleScale);
 							list.add(position2D);
 							distanceGroups.put(doubleScale, list);
 							//删除当前重心数据，更新重心数据
@@ -55,7 +55,7 @@ public class Fissile{
 					}
 					//新存
 					if(!isFind) {
-						List<Position2D> list= new ArrayList<>();
+						List<AMV_MVS_VSQ_2D> list= new ArrayList<>();
 						list.add(position2D);
 						distanceGroups.put(++i, list);
 						distanceHeart.put(i, position2D);	
@@ -65,17 +65,17 @@ public class Fissile{
 		return distanceGroups;	
 	}
 	
-	public static Map<Double, List<Position3D>> fissilePosition3D(List<Position3D> groups
+	public static Map<Double, List<AMV_MVS_VSQ_3D>> fissilePosition3D(List<AMV_MVS_VSQ_3D> groups
 			, double scale) {
-		Map<Double, List<Position3D>> distanceGroups= new HashMap<>();
-		Map<Double, Position3D> distanceHeart= new HashMap<>();
-		Iterator<Position3D> iterator= groups.iterator();
+		Map<Double, List<AMV_MVS_VSQ_3D>> distanceGroups= new HashMap<>();
+		Map<Double, AMV_MVS_VSQ_3D> distanceHeart= new HashMap<>();
+		Iterator<AMV_MVS_VSQ_3D> iterator= groups.iterator();
 		double i= 0.0;
 		Here:
 			while(iterator.hasNext()) {
-				Position3D position3D= iterator.next();
+				AMV_MVS_VSQ_3D position3D= iterator.next();
 				if(distanceGroups.isEmpty()) {
-					List<Position3D> list= new ArrayList<>();
+					List<AMV_MVS_VSQ_3D> list= new ArrayList<>();
 					list.add(position3D);
 					distanceGroups.put(i, list);
 					distanceHeart.put(i, position3D);
@@ -86,13 +86,13 @@ public class Fissile{
 					boolean isFind= false;
 					while(iteratorScale.hasNext()) {
 						Double doubleScale= iteratorScale.next();
-						Position3D currenctHeart= distanceHeart.get(doubleScale);
+						AMV_MVS_VSQ_3D currenctHeart= distanceHeart.get(doubleScale);
 						double distance= Distance.getDistance3D(currenctHeart, position3D);
 						if(distance< scale) {
 							//融入得到新的重心
-							Position3D newHeart= Euclid.findCryptionPosition3D(currenctHeart, position3D);
+							AMV_MVS_VSQ_3D newHeart= Euclid.findCryptionPosition3D(currenctHeart, position3D);
 							//删除当前增加坐标集，更新坐标集
-							List<Position3D> list= distanceGroups.get(doubleScale);
+							List<AMV_MVS_VSQ_3D> list= distanceGroups.get(doubleScale);
 							list.add(position3D);
 							distanceGroups.put(doubleScale, list);
 							//删除当前重心数据，更新重心数据
@@ -105,7 +105,7 @@ public class Fissile{
 					}
 					//新存
 					if(!isFind) {
-						List<Position3D> list= new ArrayList<>();
+						List<AMV_MVS_VSQ_3D> list= new ArrayList<>();
 						list.add(position3D);
 						distanceGroups.put(++i, list);
 						distanceHeart.put(i, position3D);	

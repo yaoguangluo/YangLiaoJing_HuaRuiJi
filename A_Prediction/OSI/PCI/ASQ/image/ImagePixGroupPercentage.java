@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.PCI.ASQ.demension.Position2D;
+import OSI.PCI.ASQ.demension.AMV_MVS_VSQ_2D;
 
 public class ImagePixGroupPercentage{
 	//思想：统计与概率论
@@ -24,11 +24,11 @@ public class ImagePixGroupPercentage{
 	}
 	
 	//这个函数用于Fissile函数执行切裂后的相同像素团 精度筛选部分 在 相关团中的簇数量占比。
-	public static double getClusterPercentByDeterPixGroup(Map<Double, List<Position2D>> imagePix, int scaleSUM){
+	public static double getClusterPercentByDeterPixGroup(Map<Double, List<AMV_MVS_VSQ_2D>> imagePix, int scaleSUM){
 		double output= 0;
 		Iterator<Double> iterator= imagePix.keySet().iterator();
 		while(iterator.hasNext()) {
-			List<Position2D> list= imagePix.get(iterator.next());
+			List<AMV_MVS_VSQ_2D> list= imagePix.get(iterator.next());
 			if(list.size()> scaleSUM) {
 				output++;
 			}
@@ -37,12 +37,12 @@ public class ImagePixGroupPercentage{
 	}
 	
 	//这个函数用于Fissile函数执行切裂后的相同像素团 精度筛选部分 在 相关团中的像素占比。
-	public static double getPixPercentByDeterPixGroup(Map<Double, List<Position2D>> imagePix, int scaleSUM){
+	public static double getPixPercentByDeterPixGroup(Map<Double, List<AMV_MVS_VSQ_2D>> imagePix, int scaleSUM){
 		double output= 0;
 		double sum= 0;
 		Iterator<Double> iterator= imagePix.keySet().iterator();
 		while(iterator.hasNext()) {
-			 List<Position2D> list= imagePix.get(iterator.next());
+			 List<AMV_MVS_VSQ_2D> list= imagePix.get(iterator.next());
 			 if(list.size()> scaleSUM) {
 				 output+= list.size();
 			 }
