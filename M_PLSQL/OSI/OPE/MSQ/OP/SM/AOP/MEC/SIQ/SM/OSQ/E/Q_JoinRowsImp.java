@@ -19,7 +19,7 @@ import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings({"unused", "unchecked"})
-public class SelectJoinRowsImp {
+public class Q_JoinRowsImp {
 	public static Object selectRowsByAttributesOfJoinCondition(Map<String, Object> object) 
 			throws IOException {
 		if(!object.containsKey("recordRows")) {

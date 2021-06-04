@@ -8,13 +8,13 @@ import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
-import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.DeleteRowsImp;
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSI.E.CreateTablesImp;
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.InsertRowsImp;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.SelectJoinRowsImp;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.SelectRowsImp;
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.UpdateJoinRowsImp;
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.UpdateRowsImp;
+import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_RowsImp;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSI.E.I_TablesImp;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_RowsImp;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_JoinRowsImp;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_RowsImp;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_JoinRowsImp;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_RowsImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Base;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 import PEU.P.cache.*;
@@ -96,13 +96,13 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("obj", SelectRowsImp.selectRowsByAttributesOfCondition(object));
+				object.put("obj", Q_RowsImp.selectRowsByAttributesOfCondition(object));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("obj", SelectRowsImp.selectRowsByAttributesOfAggregation(object));
+				object.put("obj", Q_RowsImp.selectRowsByAttributesOfAggregation(object));
 			}
 			if(object.containsKey("getCulumns")) {
-				object.put("obj", SelectRowsImp.selectRowsByAttributesOfGetCulumns(object));
+				object.put("obj", Q_RowsImp.selectRowsByAttributesOfGetCulumns(object));
 			}
 			object.remove("recordRows");
 		}
@@ -110,22 +110,22 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("n") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && !object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("joinObj", SelectJoinRowsImp.selectRowsByAttributesOfJoinCondition(object));
+				object.put("joinObj", Q_JoinRowsImp.selectRowsByAttributesOfJoinCondition(object));
 			}
 			if(object.containsKey("relation")) {
-				object.put("obj", SelectJoinRowsImp.selectRowsByAttributesOfJoinRelation(object));
+				object.put("obj", Q_JoinRowsImp.selectRowsByAttributesOfJoinRelation(object));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("obj", SelectJoinRowsImp.selectRowsByAttributesOfJoinAggregation(object));
+				object.put("obj", Q_JoinRowsImp.selectRowsByAttributesOfJoinAggregation(object));
 			}
 			if(object.containsKey("getCulumns")) {
-				object.put("joinObj", SelectJoinRowsImp.selectRowsByAttributesOfJoinGetCulumns(object));
+				object.put("joinObj", Q_JoinRowsImp.selectRowsByAttributesOfJoinGetCulumns(object));
 			}
 			object.remove("recordRows");
 		}
 		if(object.get("type").toString().equalsIgnoreCase("create")){
 			if(object.containsKey("culumnName")) {
-				CreateTablesImp.createTable(object, mod);
+				I_TablesImp.createTable(object, mod);
 			}
 			object.remove("recordRows");
 		}
@@ -134,13 +134,13 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("updateObj", UpdateRowsImp.updateRowsByAttributesOfCondition(object, mod));
+				object.put("updateObj", U_RowsImp.updateRowsByAttributesOfCondition(object, mod));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("updateObj", UpdateRowsImp.updateRowsByAttributesOfAggregation(object, mod));
+				object.put("updateObj", U_RowsImp.updateRowsByAttributesOfAggregation(object, mod));
 			}
 			if(object.containsKey("culumnValue")) {
-				UpdateRowsImp.updateRowsByRecordConditions(object, mod);
+				U_RowsImp.updateRowsByRecordConditions(object, mod);
 			}
 			object.remove("recordRows");
 		}
@@ -148,27 +148,27 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("n") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && !object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("updateJoinObj", UpdateJoinRowsImp.updateRowsByAttributesOfJoinCondition(object, mod));
+				object.put("updateJoinObj", U_JoinRowsImp.updateRowsByAttributesOfJoinCondition(object, mod));
 			}
 			if(object.containsKey("relation")) {
-				object.put("updateObj", UpdateJoinRowsImp.updateRowsByAttributesOfJoinRelation(object, mod));
+				object.put("updateObj", U_JoinRowsImp.updateRowsByAttributesOfJoinRelation(object, mod));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("updateObj", UpdateJoinRowsImp.updateRowsByAttributesOfJoinAggregation(object, mod));
+				object.put("updateObj", U_JoinRowsImp.updateRowsByAttributesOfJoinAggregation(object, mod));
 			}
 			if(object.containsKey("culumnValue")) {
-				UpdateRowsImp.updateRowsByRecordConditions(object, mod);
+				U_RowsImp.updateRowsByRecordConditions(object, mod);
 			}
 			object.remove("recordRows");
 		}
 		if(object.get("type").toString().equalsIgnoreCase("insert")) {
 			if(object.containsKey("culumnValue")) {
-				InsertRowsImp.insertRowByAttributes(object, mod);
+				IU_RowsImp.insertRowByAttributes(object, mod);
 			}
 		}
 		if(object.get("type").toString().equalsIgnoreCase("delete")) {
 			if(object.containsKey("condition")) {
-				DeleteRowsImp.deleteRowByAttributesOfCondition(object, mod);
+				D_RowsImp.deleteRowByAttributesOfCondition(object, mod);
 			}
 		}
 		object.remove("condition");

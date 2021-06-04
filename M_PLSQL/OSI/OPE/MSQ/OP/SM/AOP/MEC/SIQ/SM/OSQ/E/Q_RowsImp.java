@@ -22,7 +22,7 @@ import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings({ "unused", "unchecked" })
-public class SelectRowsImp {
+public class Q_RowsImp {
 	public static List<Map<String, Object>> selectRowsByAttribute(String currentDB
 			, String tableName, String culmnName, Object value) throws IOException{
 		if(value==null) {
@@ -113,7 +113,7 @@ public class SelectRowsImp {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		try {
-			new SelectRowsImp().selectRowsByAttribute("backend", "login"
+			new Q_RowsImp().selectRowsByAttribute("backend", "login"
 					, "usr_name", "yaoguangluo");
 			// deletefile("D:/file");
 		} catch (FileNotFoundException ex) {

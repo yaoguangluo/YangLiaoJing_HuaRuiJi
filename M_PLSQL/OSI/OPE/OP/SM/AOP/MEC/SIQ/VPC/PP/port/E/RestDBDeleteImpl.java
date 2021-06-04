@@ -4,7 +4,7 @@ package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.DeleteRowsImp;
+import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_RowsImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 
 public class RestDBDeleteImpl {
@@ -31,6 +31,6 @@ public class RestDBDeleteImpl {
 			output.put("returnResult", "invalid request");
 			return output;
 		}
-		return DeleteRowsImp.deleteRowByTablePathAndIndex(tablePath, pageIndex, true);
+		return D_RowsImp.deleteRowByTablePathAndIndex(tablePath, pageIndex, true);
 	}
 }

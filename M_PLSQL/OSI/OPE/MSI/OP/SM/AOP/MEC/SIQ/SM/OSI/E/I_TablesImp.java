@@ -8,7 +8,7 @@ import java.util.Map;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
 import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
-public class CreateTablesImp {
+public class I_TablesImp {
 	public static void createTable(Map<String, Object> object, boolean mod) throws Exception {
 		if(!object.containsKey("baseName")||!object.containsKey("tableName")){
 			return;

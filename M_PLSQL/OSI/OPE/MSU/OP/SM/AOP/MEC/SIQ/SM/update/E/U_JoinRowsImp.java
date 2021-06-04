@@ -1,4 +1,4 @@
-package OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E;
+package OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E;
 import java.io.BufferedReader;
 
 import java.io.File;
@@ -19,9 +19,9 @@ import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings({"unused", "unchecked"})
-public class SelectNestRowsImp {
-	public static Object selectRowsByAttributesOfNestCondition(Map<String
-			, Object> object) throws IOException {
+public class U_JoinRowsImp {
+	public static Object updateRowsByAttributesOfJoinCondition(Map<String, Object> object
+			, boolean mod) throws IOException {
 		if(!object.containsKey("recordRows")) {
 			Map<String, Boolean> recordRows = new ConcurrentHashMap<>();
 			object.put("recordRows", recordRows);
@@ -32,11 +32,11 @@ public class SelectNestRowsImp {
 		List<Map<String, Object>> output = new ArrayList<>();
 		//锁定数据库
 		String DBPath = CacheManager.getCacheInfo("DBPath").getValue().toString() + "/" 
-		+ object.get("nestBaseName").toString();
+		+ object.get("joinBaseName").toString();
 		//锁定表
 		File fileDBPath = new File(DBPath);
 		if (fileDBPath.isDirectory()) {
-			String DBTablePath = DBPath + "/" + object.get("nestTableName").toString();
+			String DBTablePath = DBPath + "/" + object.get("joinTableName").toString();
 			File fileDBTable = new File(DBTablePath);
 			if (fileDBTable.isDirectory()) {
 				String DBTableCulumnPath = DBTablePath + "/spec";
@@ -67,9 +67,8 @@ public class SelectNestRowsImp {
 							if(overMap && andMap) {
 								ProcessConditionPLSQL.processMap(sets, output, DBTablePath);
 							}else if(DetaDBBufferCacheManager.dbCache){
-								ProcessConditionPLSQL.processCache(sets, output
-										, object.get("nestTableName").toString()
-										, object.get("nestBaseName").toString(), object);
+								ProcessConditionPLSQL.processCache(sets, output, object.get("joinTableName").toString()
+										, object.get("joinBaseName").toString(), object);
 							}else {
 								ProcessConditionPLSQL.processTable(sets, output, DBTablePath, object);
 							}
@@ -81,11 +80,11 @@ public class SelectNestRowsImp {
 		return output;
 	}
 
-	public static Object selectRowsByAttributesOfNestAggregation(Map<String, Object> object) {
+	public static Object updateRowsByAttributesOfJoinAggregation(Map<String, Object> object, boolean mod) {
 		if(!object.containsKey("joinObj")) {
 			return new ArrayList<>();
 		}
-		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("obj")));
+		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("updateObj")));
 		List<String[]> aggregationValues = (List<String[]>) object.get("aggregation");
 		Iterator<String[]> iterator = aggregationValues.iterator();
 		while(iterator.hasNext()) {
@@ -105,11 +104,11 @@ public class SelectNestRowsImp {
 		return obj;
 	}
 
-	public static Object selectRowsByAttributesOfNestGetCulumns(Map<String, Object> object) {
+	public static Object updateRowsByAttributesOfJoinGetCulumns(Map<String, Object> object) {
 		if(!object.containsKey("joinObj")) {
 			return new ArrayList<>();
 		}
-		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("joinObj")));
+		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("updateJoinObj")));
 		List<String[]> getCulumnsValues = (List<String[]>) object.get("getCulumns");
 		Iterator<String[]> iterator = getCulumnsValues.iterator();
 		while(iterator.hasNext()) {
@@ -122,14 +121,14 @@ public class SelectNestRowsImp {
 		return obj;
 	}
 
-	public static Object selectRowsByAttributesOfNestRelation(Map<String, Object> object) {
-		if(!object.containsKey("obj")||!object.containsKey("joinObj")) {
+	public static Object updateRowsByAttributesOfJoinRelation(Map<String, Object> object, boolean mod) {
+		if(!object.containsKey("updateObj")||!object.containsKey("updateJoinObj")) {
 			return new ArrayList<>();
 		}
 		Map<String,Boolean> findinNewObj = new HashMap<>();
 		List<Map<String, Object>> newObj = new ArrayList<Map<String, Object>>();
-		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("obj")));
-		List<Map<String, Object>> joinObj= ((List<Map<String, Object>>)(object.get("joinObj")));
+		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("updateObj")));
+		List<Map<String, Object>> joinObj= ((List<Map<String, Object>>)(object.get("updateJoinObj")));
 		List<String[]> relationValues = (List<String[]>) object.get("relation");
 		Iterator<String[]> iterator = relationValues.iterator();
 		while(iterator.hasNext()) {
@@ -141,10 +140,9 @@ public class SelectNestRowsImp {
 			for(int i= 2; i< getRelationValueArray.length; i++) {
 				String[] sets = getRelationValueArray[i].split("\\|");
 				if(overObjMap&& overJoinObjMap&&andMap && i>2) {
-					ProcessRelationPLSQL.processAndMap(sets, obj, joinObj, object, newObj);
+					ProcessRelationPLSQL.processAndMap(sets, obj, joinObj,object, newObj);//1
 				}else {
-					ProcessRelationPLSQL.processOrMap(sets, obj, joinObj, object
-							, newObj, findinNewObj);
+					ProcessRelationPLSQL.processOrMap(sets, obj, joinObj, object, newObj, findinNewObj);
 				}
 			}
 		}

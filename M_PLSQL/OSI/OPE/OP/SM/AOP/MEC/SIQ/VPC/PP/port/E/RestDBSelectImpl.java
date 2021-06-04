@@ -1,5 +1,5 @@
 package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.SelectRowsImp;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_RowsImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 
 import java.util.HashMap;
@@ -29,7 +29,7 @@ public class RestDBSelectImpl {
 			output.put("returnResult", "invalid request");
 			return output;
 		}	
-		output.put("obj", SelectRowsImp.selectRowsByAttribute(baseName, tableName, culumnName, value));
+		output.put("obj", Q_RowsImp.selectRowsByAttribute(baseName, tableName, culumnName, value));
 		return output;
 	}
 
@@ -63,7 +63,7 @@ public class RestDBSelectImpl {
 		//+ ":" + pageBegin + ":" + pageEnd + ":" + direction).getValue());
 		//			return output;
 		//		} 
-		output = SelectRowsImp.selectRowsByTablePath(tablePath, pageBegin, pageEnd, direction);
+		output = Q_RowsImp.selectRowsByTablePath(tablePath, pageBegin, pageEnd, direction);
 		//		if(tablePath.equalsIgnoreCase("c:/DetaDB/frontend/login")) {
 		//			Cache c = new Cache();
 		//			c.setValue(output);

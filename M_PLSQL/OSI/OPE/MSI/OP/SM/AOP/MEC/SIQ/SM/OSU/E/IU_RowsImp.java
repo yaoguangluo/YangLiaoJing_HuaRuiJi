@@ -21,7 +21,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 import PEU.P.cache.*;
 
 @SuppressWarnings("unchecked")
-public class InsertRowsImp {
+public class IU_RowsImp {
 	public static Map<String, Object> insertRowByTablePathAndIndex(String tablePath, String pageIndex, JSONObject culumnOfNewRow) throws FileNotFoundException, IOException {
 		String[] sets = tablePath.split("/");
 		int rowInsertIndex = Integer.valueOf(pageIndex);

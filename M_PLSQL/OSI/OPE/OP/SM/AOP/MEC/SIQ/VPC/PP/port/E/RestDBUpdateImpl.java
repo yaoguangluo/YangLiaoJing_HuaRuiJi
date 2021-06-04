@@ -2,7 +2,7 @@ package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 
 import org.json.JSONObject;
 
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.UpdateRowsImp;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_RowsImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 
 import java.util.HashMap;
@@ -33,6 +33,6 @@ public class RestDBUpdateImpl {
 			return output;
 		}	
 		JSONObject jaculumnOfUpdateRow = new JSONObject(culumnOfUpdateRow);
-		return UpdateRowsImp.updateRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfUpdateRow);
+		return U_RowsImp.updateRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfUpdateRow);
 	}
 }

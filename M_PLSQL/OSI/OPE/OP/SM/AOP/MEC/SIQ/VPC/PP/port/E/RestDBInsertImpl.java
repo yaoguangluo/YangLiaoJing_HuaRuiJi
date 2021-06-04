@@ -2,7 +2,7 @@ package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 
 import org.json.JSONObject;
 
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.InsertRowsImp;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_RowsImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 
 import java.util.HashMap;
@@ -34,7 +34,7 @@ public class RestDBInsertImpl {
 		}	
 
 		JSONObject jaculumnOfNewRow=new JSONObject(culumnOfNewRow);
-		output = InsertRowsImp.insertRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfNewRow);
+		output = IU_RowsImp.insertRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfNewRow);
 		return output;
 	}
 
@@ -57,7 +57,7 @@ public class RestDBInsertImpl {
 		}
 
 		JSONObject jaculumnOfNewRow=new JSONObject(culumnOfNewRow);
-		output = InsertRowsImp.insertRowByBaseName(baseName, tableName, jaculumnOfNewRow, true);
+		output = IU_RowsImp.insertRowByBaseName(baseName, tableName, jaculumnOfNewRow, true);
 		return output;
 	}
 }
