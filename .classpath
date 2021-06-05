@@ -32,7 +32,7 @@
 	<classpathentry kind="src" path="P_Suggest"/>
 	<classpathentry kind="src" path="M_DNAPDE"/>
 	<classpathentry kind="src" path="M_NeroThemeETL"/>
-	<classpathentry kind="src" path="M_UnicornUI"/>
+	<classpathentry kind="src" path="M_UI"/>
 	<classpathentry kind="src" path="O_UtilsWordsForSpeak"/>
 	<classpathentry kind="src" path="P_VPCSBackend"/>
 	<classpathentry kind="src" path="P_VPCSFrontend"/>
