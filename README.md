@@ -37,6 +37,7 @@
 ### 应用申明  
  1> 该软件的所有书籍, 文献, 资料, 要案来自各种经典医学著作, 从公元前1000年到现代, 保证了1.6亿字索引的数据相对完整性.  
  2> 该软件是大数据学习软件,不具备个人行医资格证和国家药师证行使权,私自用该软件给病人开药等一系列违法事件必遭法律制裁.  
+ 3> 该大数据著作权源码 属于社会科技基础底层源码, 不含任何高级API 可简单自由的翻译成其他计算机语言. 遇到翻译问题, 可自由查阅该源码库. 谨记 逻辑思想 为GPL2.0 执照.
 
 ### 系统研发和应用需求  
  1> Win 64位win7 以上操作系统, 桌面台式电脑,笔记本电脑皆可.  
@@ -58,7 +59,7 @@
  4> 启动文件: M_EngineSrc.ME.APM.VSQ 的(YLJFrame 和 HRJFrame).  
  5> 工程函数整体为GBK, 有一些大sample文件和 字符处理的文本采用高级字符编辑为UTF8, 请注意, 避免乱码.#  
  5.1> 思路今天改变, 工程全局准备依旧使用GBK, 然后将所有字符串进行变量化, 然后变量全部放在变量STATBLE文件中用UTF8.  
- 5.2> 工程中的4个 ETLNode 文件包工程, 除了 P_ETLNodeMedicine, P_UnicornETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
+ 5.2> 工程中的4个 ETLNode 文件包工程, 除了 P_ETLNodeMedicine, P_ETLNodePGMedicine 用GBK, 其他两个 统一用UTF8, 已经矫正. 罗瑶光 20210413 20210425  
  5.3> 为什么工程用GBK,而下面的有些文件用UTF8, 因为, 很多操作系统默认字符集是GBK, 整体的UTF8工程在导入 和压缩后, 一些使用者解压稍微不注意会出现乱码. 而这个乱码不能再通过解码变成原文.  
  这是一个bug. 我测试了许多遍. 在这些年, 经常性出现这个问题. 我研究了后找到问题, 当系统自动将UTF8转码成GBK后,乱码中有 UTF8和GBK都不能识别的乱码符号, 当import转码失败后的乱码含有这种字符, 再转成正确的编码, 乱码只要有一个字符不能转成正确编码, 就会发生还是乱码的问题, 于是工程出错. 这就是我为什么要在GBK的主工程中下面个别用UTF8的动机.  
  6> 注意classpath 与 setting等 文件的运行配置, 环境配置和打包配置正确  
@@ -98,13 +99,13 @@
 
 ### 软件思想架构 见工程的 doc 文件夹 <DNA催化与肽计算> 著作  
  1>(中华人民共和国 国家版权局).软著登字第3951366号 德塔自然语言图灵系统研发 作者CN: 2019SR0530609    
- 见工程文件夹: O_ParserWordSegment, A_ParserNero, A_ParserSensing, A_ParserBehavior, A_ParserEmotion  
+ 见工程文件夹: O_OPE_VQI_WordSegment, A_OPE_VQI_Nero, A_OPE_VQI_Sensing, A_OPE_VQI_Behavior, A_OPE_VQI_Emotion  
    
  2>(中华人民共和国 国家版权局).软著登字第4240558号 ETL数据流处理软件研发引擎 作者CN: 2019R11L803285   
- 见工程文件夹: M_UnicornNeroThemeETL, M_UnicornUI,  
+ 见工程文件夹: M_NeroThemeETL, M_UI,  
    
  3>(中华人民共和国 国家版权局).软著登字第4584594号 德塔数据分析算法 Java 引擎系统 作者CN: 2019R11L1122752    
- 见工程文件夹: P_Processor  
+ 见工程文件夹: P_Engine  
   
  4>(中华人民共和国 国家版权局).软著登字第4317518号 德塔 PLSQL Socket数据库引擎研发 作者CN: 2019R11L885247    
  见工程文件夹: M_PLSQL, P_VPCSBackend, P_VPCSFrontend, O_VPCSBootPLSQL (最新VPCS public整合) M_VPCSPublic,  
