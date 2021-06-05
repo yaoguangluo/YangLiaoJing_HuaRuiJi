@@ -19,7 +19,7 @@
 	<classpathentry kind="src" path="P_Image"/>
 	<classpathentry kind="src" path="P_ETLNodeMedicine"/>
 	<classpathentry kind="src" path="P_Movie"/>
-	<classpathentry kind="src" path="P_UnicornETLNodeNeiWaiKe"/>
+	<classpathentry kind="src" path="P_ETLNodeNeiWaiKe"/>
 	<classpathentry kind="src" path="A_ParserBehavior"/>
 	<classpathentry kind="src" path="A_ParserEmotion"/>
 	<classpathentry kind="src" path="A_ParserNero"/>
