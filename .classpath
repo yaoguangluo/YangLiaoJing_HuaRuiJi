@@ -38,7 +38,7 @@
 	<classpathentry kind="src" path="P_VPCSFrontend"/>
 	<classpathentry kind="src" path="P_Network"/>
 	<classpathentry kind="src" path="M_VPCSPublic"/>
-	<classpathentry kind="src" path="P_Processor"/>
+	<classpathentry kind="src" path="P_Engine"/>
 	<classpathentry kind="src" path="O_PLSQLAdmin"/>
 	<classpathentry kind="src" path="M_Pillows"/>
 	<classpathentry kind="src" path="M_Sleepers"/>
