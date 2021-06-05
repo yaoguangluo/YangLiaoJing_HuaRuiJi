@@ -23,7 +23,7 @@
 	<classpathentry kind="src" path="A_OPE_VQI_Behavior"/>
 	<classpathentry kind="src" path="A_OPE_VQI_Emotion"/>
 	<classpathentry kind="src" path="A_OPE_VQI_Nero"/>
-	<classpathentry kind="src" path="A_ParserSensing"/>
+	<classpathentry kind="src" path="A_OPE_VQI_Sensing"/>
 	<classpathentry kind="src" path="O_ParserWordSegment"/>
 	<classpathentry kind="src" path="P_ETLNodePGMedicine"/>
 	<classpathentry kind="src" path="M_PLSQL"/>
