@@ -16,7 +16,7 @@
 	<classpathentry kind="src" path="O_Swap"/>
 	<classpathentry kind="src" path="O_VPCSBootPLSQL"/>
 	<classpathentry kind="src" path="M_EngineSrc"/>
-	<classpathentry kind="src" path="P_ProcessorImage"/>
+	<classpathentry kind="src" path="P_Image"/>
 	<classpathentry kind="src" path="P_UnicornETLNodeMedicine"/>
 	<classpathentry kind="src" path="P_ProcessorMovie"/>
 	<classpathentry kind="src" path="P_UnicornETLNodeNeiWaiKe"/>
