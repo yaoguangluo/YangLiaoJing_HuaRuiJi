@@ -25,7 +25,7 @@
 	<classpathentry kind="src" path="A_ParserNero"/>
 	<classpathentry kind="src" path="A_ParserSensing"/>
 	<classpathentry kind="src" path="O_ParserWordSegment"/>
-	<classpathentry kind="src" path="P_UnicornETLNodePGMedicine"/>
+	<classpathentry kind="src" path="P_ETLNodePGMedicine"/>
 	<classpathentry kind="src" path="M_PLSQL"/>
 	<classpathentry kind="src" path="P_ETLNodeSmallMedicine"/>
 	<classpathentry kind="src" path="P_Sound"/>
