@@ -18,7 +18,7 @@
 	<classpathentry kind="src" path="M_EngineSrc"/>
 	<classpathentry kind="src" path="P_Image"/>
 	<classpathentry kind="src" path="P_UnicornETLNodeMedicine"/>
-	<classpathentry kind="src" path="P_ProcessorMovie"/>
+	<classpathentry kind="src" path="P_Movie"/>
 	<classpathentry kind="src" path="P_UnicornETLNodeNeiWaiKe"/>
 	<classpathentry kind="src" path="A_ParserBehavior"/>
 	<classpathentry kind="src" path="A_ParserEmotion"/>
