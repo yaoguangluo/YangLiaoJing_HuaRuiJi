@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RestControllerPortImpl {
+public class Rest_C_PortImpl {
 
 	public static Map<String, Object> startResults(int aa, String token, String auth)
 			throws NumberFormatException, JSONException, Exception {

@@ -1,16 +1,17 @@
 package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 
+import org.json.JSONObject;
+
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_RowsImp;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_RowsImp;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
-
-public class RestDBDeleteImpl {
-	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath
-			, String pageIndex, String token
-			, String email, String password, String auth) throws Exception {
+public class RestDB_U_Impl {
+	public static Map<String, Object> updateRowByTablePathAndIndex(String tablePath
+			, String pageIndex,String culumnOfUpdateRow, String token, String email
+			, String password, String auth) throws Exception {
 		Map<String, Object> output = new HashMap<String, Object>();
 		if(token != null && !token.equalsIgnoreCase("")){
 			String checkStatus = LoginServiceImpl.checkTokenStatus(token, "level");
@@ -30,7 +31,8 @@ public class RestDBDeleteImpl {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", "invalid request");
 			return output;
-		}
-		return D_RowsImp.deleteRowByTablePathAndIndex(tablePath, pageIndex, true);
+		}	
+		JSONObject jaculumnOfUpdateRow = new JSONObject(culumnOfUpdateRow);
+		return U_RowsImp.updateRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfUpdateRow);
 	}
 }

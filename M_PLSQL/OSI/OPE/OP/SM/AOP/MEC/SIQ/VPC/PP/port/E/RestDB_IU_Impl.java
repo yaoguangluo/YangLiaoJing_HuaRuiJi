@@ -8,7 +8,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RestDBInsertImpl {
+public class RestDB_IU_Impl {
 	public static Map<String, Object> insertRowByTablePath(String tablePath, String pageIndex
 			, String culumnOfNewRow, String token, String email, String password
 			, String auth) throws Exception {
