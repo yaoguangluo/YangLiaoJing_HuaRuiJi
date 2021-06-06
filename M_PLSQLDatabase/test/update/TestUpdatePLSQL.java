@@ -4,7 +4,7 @@ import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
 import OSI.OPE.MSV.PCS.C.RequestFilterController;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
-import OSV.ESU.standard.UpdateCellStandard;
+import OSV.ESU.standard.U_CellStandard;
 
 public class TestUpdatePLSQL{
 	public static void main(String[] argv) throws Exception {
@@ -21,6 +21,6 @@ public class TestUpdatePLSQL{
 		//
 		//String tabKey, String rowId, String cellName, String cellValue
 		//UpdateCellStandard.UpdateCellPLSQL("gjjd", "5", "书名", "222");
-		UpdateCellStandard.UpdateCellORM("gjjd", "5", "书名", "222");
+		U_CellStandard.UpdateCellORM("gjjd", "5", "书名", "222");
 	}
 }

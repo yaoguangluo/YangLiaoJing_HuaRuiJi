@@ -9,7 +9,7 @@ import OSI.AOP.MEC.SIQ.plorm.PLORMImpl;
 import OSI.AOP.MEC.SIQ.plorm.PLORMInterf;
 //OSV PLSQL 研发, 思想, 设计: 罗瑶光 20210507
 //选中一个cell 进行改变
-public class UpdateCellStandard{	
+public class U_CellStandard{	
 	public List<String> txtToList() throws IOException{
 		List<String> dic_list= new ArrayList<>();
 		return dic_list;

@@ -13,7 +13,7 @@ import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNA
 //插入一行完整的数据.
 //我没有测试, 现在养疗经还用不到, 优先级稍后.
 //稍后会考虑不完整的插入情况 赋值empty 或null.
-public class InsertCellStandard{	
+public class IU_CellStandard{	
 	public List<String> txtToList() throws IOException{
 		List<String> dic_list= new ArrayList<>();
 		return dic_list;
