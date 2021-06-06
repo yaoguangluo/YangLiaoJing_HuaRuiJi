@@ -63,7 +63,7 @@ public class HRJFrame{
 		//	return;
 		//}
 		NE= new App();
-		JFrame frame= new JFrame("养疗经 V18600 稳定版引擎");
+		JFrame frame= new JFrame("养疗经 V18700 稳定版引擎");
 		frame.setIconImage(NE.logo.getImage());
 		frame.setLayout(null);
 		frame.setSize(1330, 770+ 40- 50+ NE.rangeHigh);
