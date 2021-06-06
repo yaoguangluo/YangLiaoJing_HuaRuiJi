@@ -7,6 +7,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 import MVQ.button.CfxButton;
+import MVQ.label.DetaLabelConjunction;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
 import OSI.AOP.PCS.server.BootVPCSBackEnd;
@@ -53,7 +54,6 @@ import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import org.reportMap.DetaLabelConjunction;
 import org.tinos.listen.ReadToWav;
 import ME.S.stables.PathLinkFile;
 import ME.APM.VSQ.OPE.hospital.DetaLabelStables;

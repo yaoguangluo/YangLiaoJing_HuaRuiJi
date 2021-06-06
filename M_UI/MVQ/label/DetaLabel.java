@@ -1,14 +1,13 @@
 package MVQ.label;
 
 import java.awt.Color;
+
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-
-import org.reportMap.DetaLabelConjunction;
 
 import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class DetaLabel extends JLabel{

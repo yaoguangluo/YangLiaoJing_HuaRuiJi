@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_161"/>
-	<classpathentry kind="src" path="ThirdPartyMedReportUtils"/>
-	<classpathentry kind="src" path="ThirdPartyOPGL"/>
-	<classpathentry kind="src" path="ThirdPartyUtilsJVM"/>
-	<classpathentry kind="src" path="ThirdPartyListenCMU"/>
-	<classpathentry kind="src" path="ThirdPartyMovieDataProcessor"/>
 	<classpathentry kind="src" path="M_Config"/>
 	<classpathentry kind="src" path="A_Prediction"/>
 	<classpathentry kind="src" path="O_Wavelet"/>
@@ -113,5 +108,6 @@
 	<classpathentry kind="lib" path="lib/weka.jar"/>
 	<classpathentry kind="lib" path="lib/weka-src.jar"/>
 	<classpathentry kind="lib" path="JACOB/jacob.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ThirdParty"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
