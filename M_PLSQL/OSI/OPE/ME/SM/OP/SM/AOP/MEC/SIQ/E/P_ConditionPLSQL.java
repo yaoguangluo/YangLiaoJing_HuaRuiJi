@@ -16,7 +16,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Cell;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 @SuppressWarnings({ "unused", "unchecked"})
-public class ProcessConditionPLSQL {
+public class P_ConditionPLSQL {
 	public static void processCache(String[] sets, List<Map<String, Object>> output
 			, String tableName, String baseName, Map<String, Object> object) {
 		Table table = DetaDBBufferCacheManager.db.getBase(baseName).getTable(tableName);

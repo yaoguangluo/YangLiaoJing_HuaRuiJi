@@ -11,10 +11,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ProcessAggregationPLSQL;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ProcessConditionPLSQL;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ProcessGetCulumnsPLSQL;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ProcessRelationPLSQL;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.P_AggregationPLSQL;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.P_ConditionPLSQL;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.P_GetCulumnsPLSQL;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.P_RelationPLSQL;
 import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
@@ -65,13 +65,13 @@ public class Q_JoinRowsImp {
 						for(int i = 2; i < conditionValueArray.length; i++) {
 							String[] sets = conditionValueArray[i].split("\\|");
 							if(overMap && andMap) {
-								ProcessConditionPLSQL.processMap(sets, output, DBTablePath);//1
+								P_ConditionPLSQL.processMap(sets, output, DBTablePath);//1
 							}else if(DetaDBBufferCacheManager.dbCache){
-								ProcessConditionPLSQL.processCache(sets, output
+								P_ConditionPLSQL.processCache(sets, output
 										, object.get("joinTableName").toString()
 										, object.get("joinBaseName").toString(), object);//1
 							}else {
-								ProcessConditionPLSQL.processTable(sets, output, DBTablePath, object);//1
+								P_ConditionPLSQL.processTable(sets, output, DBTablePath, object);//1
 							}
 						}
 					}
@@ -96,7 +96,7 @@ public class Q_JoinRowsImp {
 			for(int i = 2; i < aggregationValueArray.length; i++) {
 				String[] sets = aggregationValueArray[i].split("\\|");
 				if(limitMap) {
-					ProcessAggregationPLSQL.processAggregationLimitMap(sets, obj);
+					P_AggregationPLSQL.processAggregationLimitMap(sets, obj);
 				}
 				//基于sort key 前序treeMap 之后排序功能设计
 				//基于sort key 后序treeMap
@@ -116,7 +116,7 @@ public class Q_JoinRowsImp {
 			boolean overMap = obj.size() == 0? false: true;
 			String[] getCulumnsValueArray = iterator.next();
 			if(overMap) {
-				ProcessGetCulumnsPLSQL.processGetCulumnsMap(obj, getCulumnsValueArray);
+				P_GetCulumnsPLSQL.processGetCulumnsMap(obj, getCulumnsValueArray);
 			}
 		}
 		return obj;
@@ -141,9 +141,9 @@ public class Q_JoinRowsImp {
 			for(int i= 2; i< getRelationValueArray.length; i++) {
 				String[] sets = getRelationValueArray[i].split("\\|");
 				if(overObjMap&& overJoinObjMap&&andMap && i>2) {
-					ProcessRelationPLSQL.processAndMap(sets, obj, joinObj,object, newObj);
+					P_RelationPLSQL.processAndMap(sets, obj, joinObj,object, newObj);
 				}else {
-					ProcessRelationPLSQL.processOrMap(sets, obj, joinObj, object
+					P_RelationPLSQL.processOrMap(sets, obj, joinObj, object
 							, newObj, findinNewObj);
 				}
 			}

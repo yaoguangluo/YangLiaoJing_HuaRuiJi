@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 @SuppressWarnings({"unused", "unchecked"})
-public class ProcessGetCulumnsPLSQL {
+public class P_GetCulumnsPLSQL {
 	public static Object getCulumnsMapWithAs(String[] sets, Map<String, Object> row) {
 		return row.get(sets[2]);	
 	}

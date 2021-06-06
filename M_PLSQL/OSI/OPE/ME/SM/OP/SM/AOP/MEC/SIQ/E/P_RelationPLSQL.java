@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 @SuppressWarnings({"unused","unchecked"})
-public class ProcessRelationPLSQL {
+public class P_RelationPLSQL {
 	public static void processAndMap(String[] sets, List<Map<String, Object>> obj
 			, List<Map<String, Object>> joinObj
 			, Map<String, Object> object, List<Map<String, Object>> newObj) {
