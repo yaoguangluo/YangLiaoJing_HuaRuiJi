@@ -10,7 +10,7 @@ import java.util.Map;
 //import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
 //OSV PLSQL 研发, 思想, 设计: 罗瑶光 20210511
 //表删除操作的例子.
-public class DeleteCellStandard{	
+public class D_CellStandard{	
 	public List<String> txtToList() throws IOException{
 		List<String> dic_list= new ArrayList<>();
 		return dic_list;
