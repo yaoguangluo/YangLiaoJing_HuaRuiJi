@@ -1,5 +1,5 @@
 package OSI.OPE.MS.VPC.PP;
-public class TimeProcess{
+public class Time_P{
 	public long before;
 	public long now;
 	public void begin(){

@@ -14,7 +14,7 @@ import OSI.OPE.MS.VPC.V.VPCSRequest;
 import OSI.OPE.MS.VPC.V.VPCSResponse;
 
 @SuppressWarnings("unused")
-public class RequestFilterController {
+public class RequestFilter_C {
 	static Map<String, Boolean> ipBlock;
 	public static void main(String[] args){
 

@@ -7,10 +7,10 @@ import javax.swing.JTextPane;
 import ME.APM.VSQ.App;
 import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
 import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
-import OSI.OPE.MS.VPC.PP.TimeProcess;
+import OSI.OPE.MS.VPC.PP.Time_P;
 import OSI.OPE.MS.VPC.SH.Sleeper;
 import OSI.OPE.MS.VPC.SH.SleeperHall;
-import OSI.OPE.MSV.PCS.C.RequestFilterController;
+import OSI.OPE.MSV.PCS.C.RequestFilter_C;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.config.Config;
@@ -57,7 +57,7 @@ public class ServerInitController {
 				text="\r\n"+ "...";
 				jTextPane.setText(text);
 			}
-			RequestFilterController.initBlockList();
+			RequestFilter_C.initBlockList();
 			System.out.println("----德塔VPCS数据库服务器IP过滤服务启动:成功！");
 			if(jTextPane!= null) {
 				String text= jTextPane.getText();
@@ -107,7 +107,7 @@ public class ServerInitController {
 			text="\r\n"+ "..."+ text;
 			app.appConfig.SectionJPanel.jTextPane.setText(text);
 		}
-		TimeProcess timeProcess= new TimeProcess();
+		Time_P timeProcess= new Time_P();
 		timeProcess.begin();
 		SleeperHall sleeperHall = new SleeperHall();
 		initService(app.appConfig.SectionJPanel.jTextPane);

@@ -5,7 +5,7 @@ import java.net.Socket;
 import OSI.OPE.MS.VPC.V.VPCSRequest;
 import OSI.OPE.MS.VPC.V.VPCSResponse;
 
-public class RequestFixController {
+public class RequestFix_C {
 	public static void main(String[] args){
 
 	}

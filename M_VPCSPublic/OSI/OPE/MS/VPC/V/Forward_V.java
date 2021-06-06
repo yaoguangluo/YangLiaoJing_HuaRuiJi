@@ -6,7 +6,7 @@ import ME.APM.VSQ.App;
 import OSI.AOP.MS.VPC.rest.VPC;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 //合并 数据库和 前端的 vison文件
-public class ForwardVision {
+public class Forward_V {
 	public static void main(String[] args){
 	}
 
@@ -101,19 +101,19 @@ public class ForwardVision {
 			return;
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_REST)){
-			RestMapVision.processRest(app, vPCSRequest, vPCSResponse);
+			RestMap_V.processRest(app, vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BYTES)){
-			RestMapVision.processBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.processBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BUFFER)){
-			RestMapVision.processBuffer(vPCSRequest, vPCSResponse);
+			RestMap_V.processBuffer(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BYTES_BUFFER)){
-			RestMapVision.processBufferBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.processBufferBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
-			RestMapVision.processBytesWithoutZip(vPCSRequest, vPCSResponse);
+			RestMap_V.processBytesWithoutZip(vPCSRequest, vPCSResponse);
 		}
 	}
 	
@@ -123,19 +123,19 @@ public class ForwardVision {
 			return;
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("rest")){
-			RestMapVision.processRest(vPCSRequest, vPCSResponse);
+			RestMap_V.processRest(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytes")){
-			RestMapVision.processBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.processBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("buffer")){
-			RestMapVision.processBuffer(vPCSRequest, vPCSResponse);
+			RestMap_V.processBuffer(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesBuffer")){
-			RestMapVision.processBufferBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.processBufferBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
-			RestMapVision.processBytesWithoutZip(vPCSRequest, vPCSResponse);
+			RestMap_V.processBytesWithoutZip(vPCSRequest, vPCSResponse);
 		}
 	}
 }

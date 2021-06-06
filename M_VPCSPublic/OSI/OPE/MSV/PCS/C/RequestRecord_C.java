@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import OSI.OPE.MS.VPC.V.VPCSRequest;
 import OSI.OPE.MS.VPC.V.VPCSResponse;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
-public class RequestRecordController {
+public class RequestRecord_C {
 
 	public static void requestIpRecoder(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) {
 		vPCSRequest.setRequestIp(vPCSResponse.getSocket().getInetAddress().getHostAddress());

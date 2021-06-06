@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.util.Properties;
 
 import ME.APM.VSQ.App;
-import OSI.OPE.MS.VPC.PP.TimeProcess;
+import OSI.OPE.MS.VPC.PP.Time_P;
 import OSI.OPE.MS.VPC.SH.Sleeper;
 import OSI.OPE.MS.VPC.SH.SleeperHall;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
@@ -46,7 +46,7 @@ public class ServerInitControllerVPCSFrontEnd {
 		System.out.println("----DETA VPCS--2.0");
 		System.out.println("----Author: 罗瑶光");
 		System.out.println("----浏阳德塔软件开发有限公司开源项目");
-		TimeProcess timeProcess= new TimeProcess();
+		Time_P timeProcess= new Time_P();
 		timeProcess.begin();
 		SleeperHall sleeperHall= new SleeperHall();
 		init();

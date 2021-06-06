@@ -23,7 +23,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.zip.*;
 //这里出现了VPC的标识,让走四方看清楚,我有很多方法来继承,我就不用走四方的那种. VPCS 的STABLE就可以解决
 //是不是我写的.
-public class RestMapVision {
+public class RestMap_V {
 	public static void main(String[] args){
 
 	}

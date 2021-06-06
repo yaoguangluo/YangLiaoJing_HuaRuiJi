@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 import OSI.OPE.MS.VPC.SH.SleeperHall;
-public class ResponseController {
+public class Response_C {
 	public static void main(String[] args){
 
 	}
