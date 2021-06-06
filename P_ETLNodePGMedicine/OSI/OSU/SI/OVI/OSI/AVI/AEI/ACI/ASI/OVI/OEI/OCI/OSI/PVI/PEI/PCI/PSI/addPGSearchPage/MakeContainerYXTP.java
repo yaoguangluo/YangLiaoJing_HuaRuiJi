@@ -29,8 +29,8 @@ import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.ESU.list.ListSwap;
-import OSI.ESU.sort.Quick9DLYGWithStringSwap;
+import OSI.ESU.list.List_ESU;
+import OSI.ESU.sort.Quick9DLYGWithString_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.MSQ.SS.stable.StableData;
@@ -1684,7 +1684,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
 		List<String> list= analyzer.parserMixedString(key);
-		String[] string= ListSwap.listToArray(list);
+		String[] string= List_ESU.listToArray(list);
 
 		String[] stringReg= new String[key.length()/3];
 		for(int i= 0; i< stringReg.length; i++) {
@@ -1776,7 +1776,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 			}
 			copyCount++;
 		}
-		new Quick9DLYGWithStringSwap().sort(score_code, score);
+		new Quick9DLYGWithString_ESU().sort(score_code, score);
 		Here:
 			for(int i= copy.size()- 1; i> -1; i--) {
 				if(score_code[i]< 1){

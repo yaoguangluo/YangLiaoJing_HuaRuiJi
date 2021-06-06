@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-public class TXTSwap{
+public class TXT_ESU{
 	//注意字节编码的读写正确
 	public static Object[][] txtFileToObjectMatrix(String filePath
 			, String stopBy) throws IOException {		

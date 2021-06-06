@@ -1,5 +1,5 @@
 package OSI.ESU.matrix;
-public class MatrixSwap{
+public class Matrix_ESU{
 	public static Object[][] matrixInclineSwap(Object[][] objects){
 		Object[][] output= new Object[objects[0].length][objects.length];
 		for(int i= 0; i< objects.length; i++) {

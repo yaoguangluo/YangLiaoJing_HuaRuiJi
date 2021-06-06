@@ -5,7 +5,7 @@ import org.json.JSONObject;
 import org.json.XML;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-public class StringBuilderSwap{
+public class StringBuilder_ESU{
 	public static char[] stringBuilderToCharArray(StringBuilder stringBuilder) {	
 		return stringBuilder.toString().toCharArray();
 	}	

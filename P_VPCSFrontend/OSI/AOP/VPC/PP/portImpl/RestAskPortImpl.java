@@ -12,7 +12,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import OSI.ESU.json.JsonSwap;
+import OSI.ESU.json.Json_ESU;
 import OSI.OPE.PCS.VQS.DSU.V.VtoV;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
@@ -73,7 +73,7 @@ public class RestAskPortImpl{// implements RestAskPort {
 			DetaFrontEndUtil.cacheRequest("put?key=" + pointIp + "&value=" + URLEncoder.encode(jobj.toString(), "UTF-8") 
 			+ "&time=" + (System.currentTimeMillis()+900000) 
 			+ "&email=" + URLEncoder.encode("313699483@qq.com", "UTF-8") + "&password=" + URLEncoder.encode("Fengyue1985!", "UTF-8"));
-			out.put("obj", JsonSwap.jsonArrayToList(jobj));// 修正首字母大小写, 上面账号的个人qq sample密码已经更换,只是个示例而已.
+			out.put("obj", Json_ESU.jsonArrayToList(jobj));// 修正首字母大小写, 上面账号的个人qq sample密码已经更换,只是个示例而已.
 			out.put("loginInfo", "success");
 			out.put("returnResult", "发送成功");
 			return out;
@@ -117,7 +117,7 @@ public class RestAskPortImpl{// implements RestAskPort {
 		DetaFrontEndUtil.cacheRequest("put?key=" + "Ask:" + ip + "&value=" + URLEncoder.encode(jobj.toString(), "UTF-8") 
 		+ "&time=" +(System.currentTimeMillis()+900000) 
 		+ "&email=" + URLEncoder.encode("313699483@qq.com", "UTF-8") + "&password=" + URLEncoder.encode("Fengyue1985!", "UTF-8"));
-		out.put("obj",JsonSwap.jsonArrayToList(jobj));
+		out.put("obj",Json_ESU.jsonArrayToList(jobj));
 		out.put("loginInfo", "success");
 		out.put("returnResult", "发送成功");
 		return out;
@@ -160,12 +160,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 					JSONObject jsobj = new JSONObject(object);
 					jobj.put(jsobj);
 				}
-				out.put("obj", JsonSwap.jsonArrayToList(jobj));
+				out.put("obj", Json_ESU.jsonArrayToList(jobj));
 				out.put("loginInfo", "success");
 				out.put("returnResult", "发送成功");
 			}else{
 				jobj = new JSONArray();
-				out.put("obj", JsonSwap.jsonArrayToList(jobj));
+				out.put("obj", Json_ESU.jsonArrayToList(jobj));
 				out.put("loginInfo", "unsuccess");
 				out.put("returnResult", "数据超时");
 			}
@@ -190,12 +190,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 				JSONObject jsobj = new JSONObject(object);
 				jobj.put(jsobj);
 			}
-			out.put("obj",JsonSwap.jsonArrayToList(jobj));
+			out.put("obj",Json_ESU.jsonArrayToList(jobj));
 			out.put("loginInfo", "success");
 			out.put("returnResult", "发送成功");
 		}else{
 			jobj = new JSONArray();
-			out.put("obj", JsonSwap.jsonArrayToList(jobj));
+			out.put("obj", Json_ESU.jsonArrayToList(jobj));
 			out.put("loginInfo", "unsuccess");
 			out.put("returnResult", "数据超时");
 		}
@@ -238,12 +238,12 @@ public class RestAskPortImpl{// implements RestAskPort {
 					JSONObject jsobj = new JSONObject(object);
 					jobj.put(jsobj);
 				}
-				out.put("obj", JsonSwap.jsonArrayToList(jobj));
+				out.put("obj", Json_ESU.jsonArrayToList(jobj));
 				out.put("loginInfo", "success");
 				out.put("returnResult", "发送成功");
 			}else{
 				jobj = new JSONArray();
-				out.put("obj", JsonSwap.jsonArrayToList(jobj));
+				out.put("obj", Json_ESU.jsonArrayToList(jobj));
 				out.put("loginInfo", "unsuccess");
 				out.put("returnResult", "数据超时");
 			}

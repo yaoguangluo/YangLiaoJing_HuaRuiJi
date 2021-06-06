@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
-import OSI.ESU.list.ListSwap;
-import OSI.ESU.sort.Quick9DLYGWithStringSwap;
+import OSI.ESU.list.List_ESU;
+import OSI.ESU.sort.Quick9DLYGWithString_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 //×÷Õß ÂÞÑþ¹â
@@ -54,7 +54,7 @@ public class ZhongYaoSearch{
 		Iterator<String> iteratorForCopy= app.copy.iterator();	
 		int copyCount= 0;
 		List<String> list= app.analyzer.parserMixedString(key);
-		String[] string= ListSwap.listToArray(list);
+		String[] string= List_ESU.listToArray(list);
 
 		String[] stringReg= new String[forE.length()/ 3];
 		for(int i= 0; i< stringReg.length; i++) {
@@ -180,7 +180,7 @@ public class ZhongYaoSearch{
 			}
 			copyCount++;
 		}
-		new Quick9DLYGWithStringSwap().sort(score_code, score);
+		new Quick9DLYGWithString_ESU().sort(score_code, score);
 		Object[][] tableData= new Object[count][13];
 		int new_count = 0;
 		app.newTableModel.getDataVector().clear();

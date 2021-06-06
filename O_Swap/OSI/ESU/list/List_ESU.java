@@ -11,7 +11,7 @@ import org.json.XML;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-public class ListSwap{
+public class List_ESU{
 	public static String listToJsonString(Gson gson, List<Object> list){
 		return gson.toJson(list);
 	}

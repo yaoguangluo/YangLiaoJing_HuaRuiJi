@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import com.google.gson.Gson;
 
 import OSI.ESU.stable.Stable;
-public class ArraySwap{
+public class Array_ESU{
 	public static String arrayToJson(Gson gson, Object[] object) {	
 		return gson.toJson(object);
 	}

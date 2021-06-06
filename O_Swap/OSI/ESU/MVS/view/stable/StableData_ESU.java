@@ -1,6 +1,6 @@
 package OSI.ESU.MVS.view.stable;
 
-public interface StableDataSwap {
+public interface StableData_ESU {
 	public static final String NLP_ENGLISH_OF= "of";
 	public static final String NLP_ENGLISH_S= "s";
 	public static final String NLP_ENGLISH_ES= "es";

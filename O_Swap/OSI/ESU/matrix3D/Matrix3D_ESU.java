@@ -1,5 +1,5 @@
 package OSI.ESU.matrix3D;
-public class Matrix3DSwap{
+public class Matrix3D_ESU{
 	public static Object[][][] matrixShiftSwapXYZ(Object[][][] objects){
 		Object[][][] output
 		= new Object[objects[0][0].length][objects.length][objects[0].length];

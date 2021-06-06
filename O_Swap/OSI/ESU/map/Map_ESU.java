@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-public class MapSwap{
+public class Map_ESU{
 	//  剔除个人著作权 申请范围	
 	//	public static String mapToJsonString(Gson gson, Map<String, Object> map){
 	//		return gson.toJson(map);

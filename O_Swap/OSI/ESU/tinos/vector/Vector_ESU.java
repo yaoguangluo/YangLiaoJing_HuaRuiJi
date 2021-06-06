@@ -11,7 +11,7 @@ import java.util.Vector;
 import com.google.gson.Gson;
 
 import OSI.ESU.stable.Stable;
-public class VectorSwap{
+public class Vector_ESU{
 	public static Map<String, Object> vectorToMap(
 			Vector<Object> vector){
 		Map<String, Object> map= new LinkedHashMap<>();

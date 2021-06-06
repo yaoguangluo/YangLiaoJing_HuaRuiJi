@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
-import OSI.ESU.sort.Quick9DLYGWithStringSwap;
+import OSI.ESU.sort.Quick9DLYGWithString_ESU;
 import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
@@ -250,7 +250,7 @@ public class RestMedicinePortImpl {
 					score_code[copyCount] = score_code[copyCount] * (int)reg[copyCount];
 					copyCount++;
 				}
-					new Quick9DLYGWithStringSwap().sort(score_code, score);
+					new Quick9DLYGWithString_ESU().sort(score_code, score);
 					Object[][] tableData= new Object[count][13];
 					int new_count = 0;
 					app.newTableModel.getDataVector().clear();

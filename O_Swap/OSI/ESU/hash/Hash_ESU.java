@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.json.JSONObject;
 import org.json.XML;
-public class HashSwap{
+public class Hash_ESU{
 	public static String hashTableToJson(Gson gson
 			, Hashtable<String, Object> hashtable) {	
 		return gson.toJson(hashtable);

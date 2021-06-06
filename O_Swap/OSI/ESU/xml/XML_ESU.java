@@ -14,9 +14,9 @@ import org.json.JSONObject;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import OSI.ESU.json.JsonSwap;
+import OSI.ESU.json.Json_ESU;
 
-public class XMLSwap{
+public class XML_ESU{
 	//  ÌÞ³ý¸öÈËÖø×÷È¨ ÉêÇë·¶Î§
 	//	public static JSONObject xmlToJsonObject(String string){
 	//		return XML.toJSONObject(string);
@@ -33,7 +33,7 @@ public class XMLSwap{
 			}else if(object instanceof String){
 				list.add(String.valueOf(object));
 			}else if(object instanceof JSONArray){
-				list.add(JsonSwap.jsonArrayToList(jSONArray.getJSONArray(i)));
+				list.add(Json_ESU.jsonArrayToList(jSONArray.getJSONArray(i)));
 			}
 		}
 		return list;	
@@ -56,7 +56,7 @@ public class XMLSwap{
 			}else if(object instanceof String){
 				vector.add(String.valueOf(object));
 			}else if(object instanceof JSONArray){
-				vector.add(JsonSwap.jsonArrayToList(jSONArray.getJSONArray(i)));
+				vector.add(Json_ESU.jsonArrayToList(jSONArray.getJSONArray(i)));
 			}
 		}
 		return vector;	
@@ -73,7 +73,7 @@ public class XMLSwap{
 			}else if(object instanceof String){
 				sets.add(String.valueOf(object));
 			}else if(object instanceof JSONArray){
-				sets.add(JsonSwap.jsonArrayToList(jSONArray.getJSONArray(i)));
+				sets.add(Json_ESU.jsonArrayToList(jSONArray.getJSONArray(i)));
 			}
 		}
 		return sets;	

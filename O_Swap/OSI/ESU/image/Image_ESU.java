@@ -4,7 +4,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-public class ImageSwap{
+public class Image_ESU{
 	public static void pixTableToFile(String pngOutputPath, int[][] pix
 			, String fileType) throws IOException{
 		BufferedImage bufferedImage= new BufferedImage(pix[0].length

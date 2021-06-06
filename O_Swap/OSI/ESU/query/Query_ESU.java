@@ -1,5 +1,5 @@
 package OSI.ESU.query;
-public class QuerySwap{
+public class Query_ESU{
 	//这个函数下个版本更新。
 	public static String detaPlsqlToRsql(String deta) {
 		return null;

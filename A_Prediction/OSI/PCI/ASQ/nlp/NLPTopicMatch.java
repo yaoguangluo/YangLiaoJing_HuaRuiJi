@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
-import OSI.ESU.list.ListSwap;
+import OSI.ESU.list.List_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
@@ -31,7 +31,7 @@ public class NLPTopicMatch{
 		//find a appear frequency from the keys of search string.
 		Map<String, WordFrequency> keyMap= analyzer.getWordFrequencyMap(keys);
 		//get a POS score rights array from keyMap.
-		String[] stringKeys= ListSwap.listToArray(keys);
+		String[] stringKeys= List_ESU.listToArray(keys);
 		// I create a new algorithm of 'list to array' in my Data Swap Project. 20191228 Yaoguang. Luo
 		//	public static String[] listToArray(List<String> list) {
 		//		String[] output= new String[list.size()];
@@ -117,7 +117,7 @@ public class NLPTopicMatch{
 		//find a appear frequency from the keys of search string.
 		Map<String, WordFrequency> keyMap= analyzer.getWordFrequencyMap(keys);
 		//get a POS score rights array from keyMap.
-		String[] stringKeys= ListSwap.listToArray(keys);
+		String[] stringKeys= List_ESU.listToArray(keys);
 		double[] scoreRights= getNLPBestSentencesMatchScoreRights(searchString
 				, sampleSentences, analyzer, nlp, keyMap);
 		//loop score array

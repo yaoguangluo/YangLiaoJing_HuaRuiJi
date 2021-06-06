@@ -32,9 +32,9 @@ import ME.APM.VSQ.App;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.button.DetaButton;
 import OSI.AOP.neo.tts.ReadChinese;
-import OSI.ESU.list.ListSwap;
-import OSI.ESU.sort.Quick9DLYGWithStringSwap;
-import OSI.ESU.string.StringSwap;
+import OSI.ESU.list.List_ESU;
+import OSI.ESU.sort.Quick9DLYGWithString_ESU;
+import OSI.ESU.string.String_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
@@ -513,12 +513,12 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
 				if(!app.CacheString.containsKey(keyCache)) {
 					try {
-						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
-						String encode= StringSwap.stringToURIencode(string, "UTF8");	
+						String string= String_ESU.charsetSwap(setOfi, "GBK", "GBK");
+						String encode= String_ESU.stringToURIencode(string, "UTF8");	
 						response= RestCall.backEndRequest(encode);
 						String[] strings= response.split("\"");
 						response= strings.length> 3? strings[3]: "";
-						response= StringSwap.uRIencodeToURIdecode(response, "UTF8");
+						response= String_ESU.uRIencodeToURIdecode(response, "UTF8");
 					} catch (IOException e1) {
 						e1.printStackTrace();
 					}
@@ -657,12 +657,12 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 				String keyCache= setOfi.length()> 30? setOfi.substring(0, 30): setOfi.substring(0, setOfi.length()- 1);
 				if(!app.CacheString.containsKey(keyCache)) {
 					try {
-						String string= StringSwap.charsetSwap(setOfi, "GBK", "GBK");
-						String encode= StringSwap.stringToURIencode(string, "UTF8");
+						String string= String_ESU.charsetSwap(setOfi, "GBK", "GBK");
+						String encode= String_ESU.stringToURIencode(string, "UTF8");
 						response= RestCall.backEndRequest(encode);
 						String[] strings= response.split("\"");
 						response= strings.length> 3? strings[3]: "";
-						response= StringSwap.uRIencodeToURIdecode(response, "UTF8");
+						response= String_ESU.uRIencodeToURIdecode(response, "UTF8");
 					} catch (IOException e1) {
 						e1.printStackTrace();
 					}
@@ -1052,7 +1052,7 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
 		List<String> list= analyzer.parserMixedString(key);
-		String[] string= ListSwap.listToArray(list);
+		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];
 		for(int i= 0; i< stringReg.length; i++) {
@@ -1144,7 +1144,7 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 			copyCount++;
 		}
 		LABEL2:
-			new Quick9DLYGWithStringSwap().sort(score_code, score);
+			new Quick9DLYGWithString_ESU().sort(score_code, score);
 		int max= score_code[0];
 		Object[][] tableData= new Object[count][18];
 		int new_count= 0;

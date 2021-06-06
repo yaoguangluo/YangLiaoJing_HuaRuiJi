@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import OSI.ESU.list.ListSwap;
+import OSI.ESU.list.List_ESU;
 //罗瑶光
 //昨天有了合并函数,今天就设计分类函数
 public class ObjectClassification {
@@ -67,7 +67,7 @@ public class ObjectClassification {
 			}
 		}
 		for(int i= 0; i< keywords.length; i++) {
-			output.put(keywords[i], ListSwap.listToArray(outputArray[i]));
+			output.put(keywords[i], List_ESU.listToArray(outputArray[i]));
 		}
 		return output;
 	}

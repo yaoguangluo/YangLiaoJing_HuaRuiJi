@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import org.json.XML;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-public class IteratorSwap{
+public class Iterator_ESU{
 	public static String iteratorToJsonString(Gson gson
 			, Iterator<Object> iterator){
 		return gson.toJson(iterator);

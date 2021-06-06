@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import org.json.XML;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-public class TreeSwap{
+public class Tree_ESU{
 	public static String treeToJsonString(Gson gson, Set<Object> sets){
 		return gson.toJson(sets);
 	}

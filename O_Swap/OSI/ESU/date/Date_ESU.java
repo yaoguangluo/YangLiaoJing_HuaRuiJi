@@ -5,7 +5,7 @@ import java.util.Date;
 import OSI.ESU.stable.Stable;
 @SuppressWarnings({Stable.SUPPRESS_WARNINGS_DEPRECATION
 	, Stable.SUPPRESS_WARNINGS_STATIC_ACCESS})
-public class DateSwap{
+public class Date_ESU{
 	public static String dateToGMTString(Date date) {	
 		return date.toGMTString();
 	}

@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import org.json.XML;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-public class JsonSwap{
+public class Json_ESU{
 	//  剔除个人著作权 申请范围	
 	//	public static Map<String, Object> jsonObjectToMap(Gson gson
 	//			, JSONObject jSONObject){

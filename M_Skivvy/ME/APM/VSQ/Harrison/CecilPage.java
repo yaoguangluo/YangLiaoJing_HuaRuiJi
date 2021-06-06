@@ -32,8 +32,8 @@ import ME.APM.VSQ.App;
 import ME.APM.VSQ.TableSorterZYNK;
 import MVQ.button.DetaButton;
 import OSI.AOP.neo.tts.ReadChinese;
-import OSI.ESU.list.ListSwap;
-import OSI.ESU.sort.Quick9DLYGWithStringSwap;
+import OSI.ESU.list.List_ESU;
+import OSI.ESU.sort.Quick9DLYGWithString_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
@@ -694,7 +694,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			this.key += mapSearchaAtII;
 		}
 		List<String> list= analyzer.parserMixedString(key);
-		String[] string= ListSwap.listToArray(list);
+		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];
 		for(int i= 0; i< stringReg.length; i++) {
@@ -773,7 +773,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			}
 			copyCount++;
 		}
-		new Quick9DLYGWithStringSwap().sort(score_code, score);
+		new Quick9DLYGWithString_ESU().sort(score_code, score);
 		int new_count= 0;
 		newTableModel.getDataVector().clear();
 		if(count < 1) {

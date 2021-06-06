@@ -31,7 +31,7 @@ import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.AOP.rest.medicine.RestMedicinePortImpl;
-import OSI.ESU.string.StringSwap;
+import OSI.ESU.string.String_ESU;
 import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
@@ -365,7 +365,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 						String string; 
 						System.out.println(linkUrl.getFile());
 						try {
-							string= StringSwap.charsetSwap(linkUrl.getFile().toString(), "GBK", "GBK");
+							string= String_ESU.charsetSwap(linkUrl.getFile().toString(), "GBK", "GBK");
 							String[] value= string.split("=");
 							if(value.length> 1) {
 								VtoV.ObjectToJsonString(RestMedicinePortImpl.doSearch(appInstance, value[1]));

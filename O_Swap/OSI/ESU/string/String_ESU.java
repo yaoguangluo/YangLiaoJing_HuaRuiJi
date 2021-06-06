@@ -1,6 +1,6 @@
 package OSI.ESU.string;
 import java.io.UnsupportedEncodingException;
-public class StringSwap{
+public class String_ESU{
 	public static String[] stringToArray(String stopBy, String string){
 		String[] strings= string.split(stopBy); 
 		return strings;	
