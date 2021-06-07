@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class RestMap {
-	public static void process(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 
+	public static void P(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 
 			throws IOException {
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();

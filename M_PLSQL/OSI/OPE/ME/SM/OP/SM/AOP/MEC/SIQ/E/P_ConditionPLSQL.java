@@ -17,7 +17,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 @SuppressWarnings({ "unused", "unchecked"})
 public class P_ConditionPLSQL {
-	public static void processCache(String[] sets, List<Map<String, Object>> output
+	public static void P_Cache(String[] sets, List<Map<String, Object>> output
 			, String tableName, String baseName, Map<String, Object> object) {
 		Table table = DetaDBBufferCacheManager.db.getBase(baseName).getTable(tableName);
 		Iterator<String> iterator = table.getRows().keySet().iterator(); 
@@ -173,7 +173,7 @@ public class P_ConditionPLSQL {
 		return rowMap;
 	}
 
-	public static void processMap(String[] sets, List<Map<String, Object>> output, String dBTablePath) {
+	public static void P_Map(String[] sets, List<Map<String, Object>> output, String dBTablePath) {
 		List<Map<String, Object>> outputTemp = new ArrayList<>();
 		Iterator<Map<String, Object>> iterator = output.iterator();
 		int rowid = 0;
@@ -266,7 +266,7 @@ public class P_ConditionPLSQL {
 	//plsql引擎函数获取表开始检查 罗瑶光 20210405  //奇怪了 这是一个没有读 缓存的plsql引擎,我准备对比下history
 	//object 指令堆栈
 	//output 数据行
-	public static void processTable(String[] sets, List<Map<String, Object>> output
+	public static void P_Table(String[] sets, List<Map<String, Object>> output
 			, String DBTablePath, Map<String, Object> object) throws IOException {
 		String DBTableRowsPath = DBTablePath + "/rows";	
 		File fileDBTableRowsPath = new File(DBTableRowsPath);
@@ -305,7 +305,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -321,7 +321,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -337,7 +337,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -353,7 +353,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -368,7 +368,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -383,7 +383,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -398,7 +398,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -413,7 +413,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -429,7 +429,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -445,7 +445,7 @@ public class P_ConditionPLSQL {
 									if(!((Map<Integer, Boolean>)(object.get("recordRows"))).containsKey(count)) {
 										Row bufferRow= new Row();
 										bufferRow.setCells(new ConcurrentHashMap<String, Cell>());
-										processkernel(row, readDBTableRowIndexCulumnFile
+										P_kernel(row, readDBTableRowIndexCulumnFile
 												, readDBTableRowIndexFile, reader// 似乎被猫腻哥动了手脚, 我会将手里硬盘数据2年的数据等会全部验算
 												, row, output, bufferRow, rowMap);
 										output.add(rowToRowMap(bufferRow));
@@ -463,7 +463,7 @@ public class P_ConditionPLSQL {
 	//比较是否有数据取出列表到输出 检验中 罗瑶光 20210405
 	//这个走硬盘查询函数来标识下, 在我设计了数据缓存查询启动函数 后就没用过了, 时间点大概在2019年1月后, 我先调通下, 之后朔源.
 	//准备验算下20210406 罗瑶光
-	private static void processkernel(String temp, File readDBTableRowIndexCulumnFile, File readDBTableRowIndexFile
+	private static void P_kernel(String temp, File readDBTableRowIndexCulumnFile, File readDBTableRowIndexFile
 			, BufferedReader reader, String DBTableRowIndexPath, List<Map<String, Object>> output, Row bufferRow
 			, Map<String, Object> rowMap) throws IOException {
 		String[] culumnList = readDBTableRowIndexFile.list();

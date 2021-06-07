@@ -44,7 +44,7 @@ public class RestMap_V {
 		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getHashCode());
 	}
 
-	public static void processRest(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
+	public static void P_Rest(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
 		String output = VPC.forward(null, vPCSRequest.getRequestLink(), vPCSRequest.getRequestValue());
 		PrintWriter printWriter = new PrintWriter(new BufferedWriter(new OutputStreamWriter(vPCSResponse.getSocket()
 				.getOutputStream(),"UTF-8")),true);
@@ -59,7 +59,7 @@ public class RestMap_V {
 		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getSocket().hashCode());
 	}
 	
-	public static void processRest(App app, VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
+	public static void P_Rest(App app, VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws Exception {
 		//VPC属于子继承, 如果不用 overrider 来分配, 也有很多方法, 如osgi, 当然,我现在用最快map标识,更爽.
 		//indexVPCMapPillows.get(vPCSRequest.gettag())...;
 		//现在仅仅deta的网站处理服务器有web页, 养疗经app还没有涉及, 因此 pillow tag 区分VPC 函数的rest map 设计优先级稍后 
@@ -79,11 +79,11 @@ public class RestMap_V {
 		vPCSResponse.getSleeperHall().removeThreadById(vPCSResponse.getSocket().hashCode());	
 	}
 
-	public static void processView(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) {
+	public static void P_View(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) {
 
 	}
 
-	public static void processBytes(VPCSRequest vPCSRequest
+	public static void P_Bytes(VPCSRequest vPCSRequest
 			, VPCSResponse vPCSResponse) throws IOException {
 		List<byte[]> list;
 		DataOutputStream dataOutputStream = new DataOutputStream(vPCSResponse.getSocket().getOutputStream());
@@ -124,7 +124,7 @@ public class RestMap_V {
 		dataOutputStream.close();
 	}
 
-	public static void processBuffer(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws IOException {
+	public static void P_Buffer(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws IOException {
 		String builderToString;
 		if(null != DetaCacheManager.getCacheOfString(vPCSRequest.getRequestFilePath())){
 			builderToString = DetaCacheManager.getCacheOfString(vPCSRequest.getRequestFilePath());
@@ -153,7 +153,7 @@ public class RestMap_V {
 		bufferedWriter.close();	
 	}
 
-	public static void processBufferBytes(VPCSRequest vPCSRequest
+	public static void P_BufferBytes(VPCSRequest vPCSRequest
 			, VPCSResponse vPCSResponse) throws UnsupportedEncodingException, IOException {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append(StableData.HEADER_HTTP_200_OK);
@@ -187,7 +187,7 @@ public class RestMap_V {
 		dataOutputStream.close();
 	}
 
-	public static void processBytesWithoutZip(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws IOException {
+	public static void P_BytesWithoutZip(VPCSRequest vPCSRequest, VPCSResponse vPCSResponse) throws IOException {
 		List<byte[]> list;
 		DataOutputStream dataOutputStream = new DataOutputStream(vPCSResponse.getSocket().getOutputStream());
 		if(DetaCacheManager.getCacheOfBytesList(vPCSRequest.getRequestFilePath()) != null){

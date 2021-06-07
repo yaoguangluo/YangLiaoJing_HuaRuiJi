@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 @SuppressWarnings({"unused","unchecked"})
 public class P_RelationPLSQL {
-	public static void processAndMap(String[] sets, List<Map<String, Object>> obj
+	public static void P_AndMap(String[] sets, List<Map<String, Object>> obj
 			, List<Map<String, Object>> joinObj
 			, Map<String, Object> object, List<Map<String, Object>> newObj) {
 		List<Map<String, Object>> newObjTemp = new ArrayList<>();
@@ -80,7 +80,7 @@ public class P_RelationPLSQL {
 		}
 	}
 
-	public static void processOrMap(String[] sets, List<Map<String, Object>> obj
+	public static void P_OrMap(String[] sets, List<Map<String, Object>> obj
 			, List<Map<String, Object>> joinObj
 			, Map<String, Object> object, List<Map<String, Object>> newObj
 			, Map<String, Boolean> findinNewObj) {

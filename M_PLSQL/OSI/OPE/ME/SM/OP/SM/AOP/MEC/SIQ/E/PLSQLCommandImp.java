@@ -20,7 +20,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
 public class PLSQLCommandImp {
-	public static void proceseSetRoot(String[] acknowledge, Map<String, Object> output) throws Exception {
+	public static void P_SetRoot(String[] acknowledge, Map<String, Object> output) throws Exception {
 		String dbPath = acknowledge[1];
 		for(int i=2; i<acknowledge.length; i++) {
 			dbPath += ":" + acknowledge[i];
@@ -42,16 +42,16 @@ public class PLSQLCommandImp {
 		}
 	}
 
-	public static void processBaseName(String[] acknowledge, Map<String, Object> object) {
+	public static void P_BaseName(String[] acknowledge, Map<String, Object> object) {
 		object.put(acknowledge[0], acknowledge[1]);
 	}
 
-	public static void processTableName(String[] acknowledge, Map<String, Object> object) {
+	public static void P_TableName(String[] acknowledge, Map<String, Object> object) {
 		object.put(acknowledge[0], acknowledge[1]);
 		object.put("type", acknowledge[2]);
 	}
 
-	public static void processListNeedStart(String[] acknowledge, Map<String, Object> object) {
+	public static void P_ListNeedStart(String[] acknowledge, Map<String, Object> object) {
 		object.put("start", "1");
 		if(object.containsKey(acknowledge[0])) {
 			List<String[]> relationValues = (List<String[]>) object.get(acknowledge[0]);
@@ -64,7 +64,7 @@ public class PLSQLCommandImp {
 		object.put(acknowledge[0], relationValues);
 	}
 
-	public static void processJoin(String[] acknowledge, Map<String, Object> object) {
+	public static void P_Join(String[] acknowledge, Map<String, Object> object) {
 		if(object.get("countJoins").toString().equals("1")) {
 			object.put("countJoins", "n");
 		}
@@ -75,7 +75,7 @@ public class PLSQLCommandImp {
 		object.put("joinTableName", acknowledge[2]);
 	}
 
-	public static void processExec(String[] acknowledge, Map<String, Object> object, boolean mod) throws Exception {
+	public static void P_Exec(String[] acknowledge, Map<String, Object> object, boolean mod) throws Exception {
 		if(object.get("start").toString().equals("1")) {
 			if(!acknowledge[0].equalsIgnoreCase(object.get("lastCommand").toString())
 					&&(object.get("lastCommand").toString().contains("changeCulumnName")
@@ -86,12 +86,12 @@ public class PLSQLCommandImp {
 							||object.get("lastCommand").toString().contains("getCulumns")
 							||object.get("lastCommand").toString().contains("culumnName")
 							||object.get("lastCommand").toString().contains("relation"))) {
-				processExecKernel(object, mod);
+				P_ExecKernel(object, mod);
 			}
 		}
 	}
 //处理机中心, 别急, 准备验证 罗瑶光
-	private static void processExecKernel(Map<String, Object> object, boolean mod) throws Exception{
+	private static void P_ExecKernel(Map<String, Object> object, boolean mod) throws Exception{
 		if(object.get("type").toString().equalsIgnoreCase("select") && 
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
@@ -182,9 +182,9 @@ public class PLSQLCommandImp {
 	}
     
 	//plsql函数执行指令 正在检查中 罗瑶光 20210405
-	public static void processCheck(String acknowledge, Map<String, Object> object, boolean mod) throws Exception {
+	public static void P_Check(String acknowledge, Map<String, Object> object, boolean mod) throws Exception {
 		if(object.get("start").toString().equals("1")) {
-			processExecKernel(object, mod);
+			P_ExecKernel(object, mod);
 		}
 		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("obj")));
 		int totalPages = 0;

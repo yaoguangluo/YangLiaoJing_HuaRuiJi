@@ -14,7 +14,7 @@ public class P_GetCulumnsPLSQL {
 		return row.get(sets[0]);		
 	}
 
-	public static Object processGetCulumnsMap(List<Map<String, Object>> obj, String[] getCulumnsValueArray) {
+	public static Object P_GetCulumnsMap(List<Map<String, Object>> obj, String[] getCulumnsValueArray) {
 		List<Map<String, Object>> newobj = new ArrayList<Map<String, Object>>();
 		Iterator<Map<String, Object>> iterator = obj.iterator(); 
 		int count = 0;

@@ -46,7 +46,7 @@ public class SocketThread extends Thread implements Runnable{
 			if(content[1]==null){
 				error500();
 			}
-			RestMap.P_(content, socket, this.analyzer, this.emotionMap);
+			RestMap.P(content, socket, this.analyzer, this.emotionMap);
 			socket.close();
 		}catch(Exception e){
 			try {

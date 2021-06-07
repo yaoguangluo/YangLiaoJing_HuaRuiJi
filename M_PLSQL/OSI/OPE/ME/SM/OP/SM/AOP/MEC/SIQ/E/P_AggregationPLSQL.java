@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 @SuppressWarnings({"unused"})
 public class P_AggregationPLSQL {
-	public static void processAggregationLimitMap(String[] sets
+	public static void P_AggregationLimitMap(String[] sets
 			, List<Map<String, Object>> output) {
 		List<Map<String, Object>> outputTemp = new ArrayList<>();
 		Iterator<Map<String, Object>> iterator = output.iterator();

@@ -17,7 +17,7 @@ public class ExecPLSQLImp {
 		for(String command:commands) {
 			acknowledge = command.split(":");
 			if(acknowledge[0].equals("setRoot")) {
-				PLSQLCommandImp.proceseSetRoot(acknowledge, output);
+				PLSQLCommandImp.P_SetRoot(acknowledge, output);
 			}
 			if(acknowledge[0].equals("baseName")) {
 				PLSQLCommandImp.P_BaseName(acknowledge, output);
