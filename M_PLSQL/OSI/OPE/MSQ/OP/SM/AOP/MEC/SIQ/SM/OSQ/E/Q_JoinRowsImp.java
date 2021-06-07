@@ -65,13 +65,13 @@ public class Q_JoinRowsImp {
 						for(int i = 2; i < conditionValueArray.length; i++) {
 							String[] sets = conditionValueArray[i].split("\\|");
 							if(overMap && andMap) {
-								P_ConditionPLSQL.processMap(sets, output, DBTablePath);//1
+								P_ConditionPLSQL.P_Map(sets, output, DBTablePath);//1
 							}else if(DetaDBBufferCacheManager.dbCache){
-								P_ConditionPLSQL.processCache(sets, output
+								P_ConditionPLSQL.P_Cache(sets, output
 										, object.get("joinTableName").toString()
 										, object.get("joinBaseName").toString(), object);//1
 							}else {
-								P_ConditionPLSQL.processTable(sets, output, DBTablePath, object);//1
+								P_ConditionPLSQL.P_Table(sets, output, DBTablePath, object);//1
 							}
 						}
 					}
@@ -96,7 +96,7 @@ public class Q_JoinRowsImp {
 			for(int i = 2; i < aggregationValueArray.length; i++) {
 				String[] sets = aggregationValueArray[i].split("\\|");
 				if(limitMap) {
-					P_AggregationPLSQL.processAggregationLimitMap(sets, obj);
+					P_AggregationPLSQL.P_AggregationLimitMap(sets, obj);
 				}
 				//基于sort key 前序treeMap 之后排序功能设计
 				//基于sort key 后序treeMap
@@ -116,7 +116,7 @@ public class Q_JoinRowsImp {
 			boolean overMap = obj.size() == 0? false: true;
 			String[] getCulumnsValueArray = iterator.next();
 			if(overMap) {
-				P_GetCulumnsPLSQL.processGetCulumnsMap(obj, getCulumnsValueArray);
+				P_GetCulumnsPLSQL.P_GetCulumnsMap(obj, getCulumnsValueArray);
 			}
 		}
 		return obj;
@@ -141,9 +141,9 @@ public class Q_JoinRowsImp {
 			for(int i= 2; i< getRelationValueArray.length; i++) {
 				String[] sets = getRelationValueArray[i].split("\\|");
 				if(overObjMap&& overJoinObjMap&&andMap && i>2) {
-					P_RelationPLSQL.processAndMap(sets, obj, joinObj,object, newObj);
+					P_RelationPLSQL.P_AndMap(sets, obj, joinObj,object, newObj);
 				}else {
-					P_RelationPLSQL.processOrMap(sets, obj, joinObj, object
+					P_RelationPLSQL.P_OrMap(sets, obj, joinObj, object
 							, newObj, findinNewObj);
 				}
 			}

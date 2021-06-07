@@ -1,7 +1,7 @@
 package OSI.AOP.VPC.controller;
 import java.util.Map;
 //import org.lyg.common.maps.VtoV;
-//import org.lyg.vpc.process.portImpl.RestDBUpdateImpl;
+//import org.lyg.vpc.P.portImpl.RestDBUpdateImpl;
 public class UpdateController {
 	public static String exec(String string, Map<String, String> data) throws Exception {
 //		if(string.equalsIgnoreCase("/selectRowsByAttribute")){

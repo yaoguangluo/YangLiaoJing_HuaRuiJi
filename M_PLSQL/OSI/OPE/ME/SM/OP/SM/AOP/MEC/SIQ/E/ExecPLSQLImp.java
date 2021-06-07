@@ -20,46 +20,46 @@ public class ExecPLSQLImp {
 				PLSQLCommandImp.proceseSetRoot(acknowledge, output);
 			}
 			if(acknowledge[0].equals("baseName")) {
-				PLSQLCommandImp.processBaseName(acknowledge, output);
+				PLSQLCommandImp.P_BaseName(acknowledge, output);
 			}
 			if(acknowledge[0].equals("tableName")) {
-				PLSQLCommandImp.processTableName(acknowledge, output);
+				PLSQLCommandImp.P_TableName(acknowledge, output);
 			}
 			if(acknowledge[0].equals("culumnName")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("changeCulumnName")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("culumnValue")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("join")) {
-				PLSQLCommandImp.processJoin(acknowledge, output);
+				PLSQLCommandImp.P_Join(acknowledge, output);
 			}
 			if(acknowledge[0].equals("condition")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("relation")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("aggregation")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			if(acknowledge[0].equals("getCulumns")) {
-				PLSQLCommandImp.processListNeedStart(acknowledge, output);
+				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			output.put("newCommand", acknowledge[0]);
-			PLSQLCommandImp.processExec(acknowledge, output, mod);
+			PLSQLCommandImp.P_Exec(acknowledge, output, mod);
 			output.put("lastCommand", output.get("newCommand"));
 		}
 		if(null!= acknowledge) {
 			if(output.get("start").toString().equals("1")) {
-				PLSQLCommandImp.processExec(acknowledge, output, mod);
+				PLSQLCommandImp.P_Exec(acknowledge, output, mod);
 			}
 		}
 		System.out.println("1");
-		PLSQLCommandImp.processCheck(output.get("newCommand").toString(), output, mod);
+		PLSQLCommandImp.P_Check(output.get("newCommand").toString(), output, mod);
 		return output;
 	}
 

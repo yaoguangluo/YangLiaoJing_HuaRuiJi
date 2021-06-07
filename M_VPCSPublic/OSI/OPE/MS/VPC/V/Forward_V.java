@@ -101,19 +101,19 @@ public class Forward_V {
 			return;
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_REST)){
-			RestMap_V.processRest(app, vPCSRequest, vPCSResponse);
+			RestMap_V.P_Rest(app, vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BYTES)){
-			RestMap_V.processBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.P_Bytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BUFFER)){
-			RestMap_V.processBuffer(vPCSRequest, vPCSResponse);
+			RestMap_V.P_Buffer(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase(StableData.STREAM_BYTES_BUFFER)){
-			RestMap_V.processBufferBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.P_BufferBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
-			RestMap_V.processBytesWithoutZip(vPCSRequest, vPCSResponse);
+			RestMap_V.P_BytesWithoutZip(vPCSRequest, vPCSResponse);
 		}
 	}
 	
@@ -123,19 +123,19 @@ public class Forward_V {
 			return;
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("rest")){
-			RestMap_V.processRest(vPCSRequest, vPCSResponse);
+			RestMap_V.P_Rest(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytes")){
-			RestMap_V.processBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.P_Bytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("buffer")){
-			RestMap_V.processBuffer(vPCSRequest, vPCSResponse);
+			RestMap_V.P_Buffer(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesBuffer")){
-			RestMap_V.processBufferBytes(vPCSRequest, vPCSResponse);
+			RestMap_V.P_BufferBytes(vPCSRequest, vPCSResponse);
 		}
 		if(vPCSRequest.getRequestForwardType().equalsIgnoreCase("bytesWithoutZip")){
-			RestMap_V.processBytesWithoutZip(vPCSRequest, vPCSResponse);
+			RestMap_V.P_BytesWithoutZip(vPCSRequest, vPCSResponse);
 		}
 	}
 }

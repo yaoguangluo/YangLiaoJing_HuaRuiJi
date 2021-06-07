@@ -221,13 +221,13 @@ public class U_RowsImp {
 						for(int i = 2; i < conditionValueArray.length; i++) {
 							String[] sets = conditionValueArray[i].split("\\|");
 							if(overMap && andMap) {
-								P_ConditionPLSQL.processMap(sets, output, DBTablePath);
+								P_ConditionPLSQL.P_Map(sets, output, DBTablePath);
 							}else if(DetaDBBufferCacheManager.dbCache){
-								P_ConditionPLSQL.processCache(sets, output
+								P_ConditionPLSQL.P_Cache(sets, output
 										, object.get("tableName").toString()
 										, object.get("baseName").toString(), object);
 							}else {
-								P_ConditionPLSQL.processTable(sets, output, DBTablePath, object);
+								P_ConditionPLSQL.P_Table(sets, output, DBTablePath, object);
 							}
 						}
 					}
@@ -254,7 +254,7 @@ public class U_RowsImp {
 				//String DBPath = CacheManager.getCacheInfo("DBPath").getValue().toString() + "/" + object.get("baseName").toString();
 				//String dBTablePath = DBPath + "/" + object.get("tableName").toString();
 				if(limitMap) {
-					P_AggregationPLSQL.processAggregationLimitMap(sets, obj);
+					P_AggregationPLSQL.P_AggregationLimitMap(sets, obj);
 				}
 				//基于sort key 前序treeMap 之后排序功能设计
 				//基于sort key 后序treeMap
@@ -274,7 +274,7 @@ public class U_RowsImp {
 			boolean overMap = obj.size() == 0? false: true;
 			String[] getCulumnsValueArray = iterator.next();
 			if(overMap) {
-				P_GetCulumnsPLSQL.processGetCulumnsMap(obj, getCulumnsValueArray);
+				P_GetCulumnsPLSQL.P_GetCulumnsMap(obj, getCulumnsValueArray);
 			}
 		}
 		return obj;

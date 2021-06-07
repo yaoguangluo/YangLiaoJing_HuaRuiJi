@@ -1,4 +1,4 @@
-package OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dna.processor;
+package OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dna.P;
 import java.util.concurrent.ConcurrentHashMap;
 public class Family{
 	public ConcurrentHashMap<String, Life> getFamily() {

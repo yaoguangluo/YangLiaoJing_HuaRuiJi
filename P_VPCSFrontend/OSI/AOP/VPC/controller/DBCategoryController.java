@@ -2,7 +2,7 @@ package OSI.AOP.VPC.controller;
 import java.util.Map;
 //
 //import org.lyg.common.maps.VtoV;
-//import org.lyg.vpc.process.portImpl.RestControllerPortImpl;
+//import org.lyg.vpc.P.portImpl.RestControllerPortImpl;
 public class DBCategoryController {
 	public static String exec(String string, Map<String, String> data) throws Exception {
 //		if(string.equalsIgnoreCase("/getDBCategory")){

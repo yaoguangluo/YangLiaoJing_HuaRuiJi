@@ -1,4 +1,4 @@
-package OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dna.processor;
+package OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dna.P;
 public class MutationLaw{
 	public RST mutation(RST father, RST mother) {
 		RST son= new RST();

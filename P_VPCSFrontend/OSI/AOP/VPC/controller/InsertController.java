@@ -2,7 +2,7 @@ package OSI.AOP.VPC.controller;
 import java.util.Map;
 
 //import org.lyg.common.maps.VtoV;
-//import org.lyg.vpc.process.portImpl.RestDBInsertImpl;
+//import org.lyg.vpc.P.portImpl.RestDBInsertImpl;
 public class InsertController {
 	public static String exec(String string, Map<String, String> data) throws Exception {
 //		if(string.equalsIgnoreCase("/insertRowByBaseName")){
