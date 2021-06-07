@@ -1,4 +1,4 @@
-package ME.APM.VSQ;
+package PEU.P.table;
 
 import java.awt.*;
 

@@ -25,7 +25,7 @@ import ME.APM.VSQ.App;
 //import ME.APM.VSQ.DictionaryOld;
 //import ME.APM.VSQ.DictionaryFromDB;
 import ME.S.stables.PathLinkFile;
-import ME.APM.VSQ.TableSorterZYNK;
+import PEU.P.table.TableSorterZYNK;
 import MVQ.tableRender.ColorTableRender;
 import OPM.ESU.admin.DBReadMode;
 //import OSV.VCQ.standard.DictionaryStandardDB;

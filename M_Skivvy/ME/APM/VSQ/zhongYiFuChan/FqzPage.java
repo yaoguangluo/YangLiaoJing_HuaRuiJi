@@ -30,7 +30,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
 import ME.APM.VSQ.App;
-import ME.APM.VSQ.TableSorterZYNK;
+import PEU.P.table.TableSorterZYNK;
 import MVQ.button.DetaButton;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.ESU.list.List_ESU;
