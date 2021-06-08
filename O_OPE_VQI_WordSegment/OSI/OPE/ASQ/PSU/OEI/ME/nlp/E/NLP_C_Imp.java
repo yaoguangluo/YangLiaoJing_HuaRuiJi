@@ -6,9 +6,9 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OPE.ASQ.PSU.ME.utils.WordForestUtil;
-import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLPController;
+import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLP_C;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POS_C;
-public class NLP_C_Imp implements NLPController{
+public class NLP_C_Imp implements NLP_C{
 	public int doSlangPartAndPOSCheckForTwoChar(int countInputStringLength, List<String> outputList
 			, StringBuilder stringBuilder, Map<String, String> wordsForest, StringBuilder[] prefixWord
 			, POS_C posUtils, int charPosition, String textInputString){
