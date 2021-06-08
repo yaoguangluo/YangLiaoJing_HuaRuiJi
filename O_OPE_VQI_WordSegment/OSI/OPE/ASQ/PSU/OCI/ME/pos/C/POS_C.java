@@ -4,7 +4,7 @@ import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 
-public interface POSController {
+public interface POS_C {
 	int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,
 			String[] strings, StringBuilder[] prefixWord);
 	int chuLiMingCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength

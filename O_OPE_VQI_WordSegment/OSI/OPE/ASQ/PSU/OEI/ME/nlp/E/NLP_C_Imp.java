@@ -7,11 +7,11 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OPE.ASQ.PSU.ME.utils.WordForestUtil;
 import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLPController;
-import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
+import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POS_C;
 public class NLP_C_Imp implements NLPController{
 	public int doSlangPartAndPOSCheckForTwoChar(int countInputStringLength, List<String> outputList
 			, StringBuilder stringBuilder, Map<String, String> wordsForest, StringBuilder[] prefixWord
-			, POSController posUtils, int charPosition, String textInputString){
+			, POS_C posUtils, int charPosition, String textInputString){
 		String countWordNode= stringBuilder.toString();
 		if (prefixWord[StableData.INT_ZERO].length()== StableData.INT_ZERO){
 			if(StableMaps.CiTwo.containsKey(countWordNode)) {
@@ -58,7 +58,7 @@ public class NLP_C_Imp implements NLPController{
 
 	public int doPOSAndEMMCheckOfThree(int countInputLength, List<String> outputList
 			, Map<String, String> wordsForest, StringBuilder stringBuilder, StringBuilder[] prefixWord
-			, POSController posUtils, int charPosition, String textInputString){
+			, POS_C posUtils, int charPosition, String textInputString){
 		String inputString= stringBuilder.toString();
 		if (StableMaps.CiThree.containsKey(inputString)){
 			prefixWord[StableData.INT_ZERO].delete(StableData.INT_ZERO, prefixWord[StableData.INT_ZERO].length());
@@ -156,7 +156,7 @@ public class NLP_C_Imp implements NLPController{
 //		|| StableMaps.xingRongCi.containsKey(postRegister)|| StableMaps.xingWeiCi.containsKey(postRegister)|| StableMaps.liangCi.containsKey(preRegister)
 //		|| StableMaps.fuCi.containsKey(postRegister)|| StableMaps.jieCi.containsKey(postRegister)) {
 	public int doSlangCheck(int countInputStringLength, List<String> output, StringBuilder stringBuilder,
-			Map<String, String> wordsForest, StringBuilder[] prefixWord, POSController posUtils, int charPosition, String textInputString){
+			Map<String, String> wordsForest, StringBuilder[] prefixWord, POS_C posUtils, int charPosition, String textInputString){
 		String inputString = stringBuilder.toString();
 		if (StableMaps.CiFour.containsKey(inputString)){
 			output.add(inputString);
@@ -246,7 +246,7 @@ public class NLP_C_Imp implements NLPController{
 //	return countInputStringLength;
 //}
 	public int doSlangCheckForMap(int countInputStringLength, List<String> output, StringBuilder stringBuilder
-			, Map<String, String> wordsForest, StringBuilder[] prefixWord, POSController posUtils, int charPosition, String textInputString){
+			, Map<String, String> wordsForest, StringBuilder[] prefixWord, POS_C posUtils, int charPosition, String textInputString){
 		String inputString= stringBuilder.toString();
 		if (wordsForest.containsKey(inputString)){
 			output.add(inputString);
@@ -261,7 +261,7 @@ public class NLP_C_Imp implements NLPController{
 
 	public int doSlangPartAndPOSCheckForTwoCharForMap(int countInputStringLength, Map<String, WordFrequency> outputList
 			, StringBuilder stringBuilder, Map<String, String> wordsForest, StringBuilder[] prefixWord
-			, POSController posUtils){
+			, POS_C posUtils){
 		String countWordNode= stringBuilder.toString();
 		if (!wordsForest.containsKey(countWordNode)){
 			WordForestUtil.wordsForestNotContainsKey(outputList, countWordNode, prefixWord);
@@ -291,7 +291,7 @@ public class NLP_C_Imp implements NLPController{
 
 	public int doPOSAndEMMCheckOfThreeForMap(int countInputLength, Map<String, WordFrequency> outputList
 			, Map<String, String> wordsForest, StringBuilder stringBuilder, StringBuilder[] prefixWord
-			, POSController posUtils){
+			, POS_C posUtils){
 		String inputString= stringBuilder.toString();
 		if (wordsForest.containsKey(inputString)){
 			WordForestUtil.wordsForestContainsKey(outputList, inputString, prefixWord);
@@ -347,7 +347,7 @@ public class NLP_C_Imp implements NLPController{
 	} 
 
 	public int doSlangCheckForMap(int countInputStringLength, Map<String, WordFrequency> output, StringBuilder stringBuilder
-			, Map<String, String> wordsForest, StringBuilder[] prefixWord, POSController posUtils){
+			, Map<String, String> wordsForest, StringBuilder[] prefixWord, POS_C posUtils){
 		String inputString= stringBuilder.toString();
 		if (wordsForest.containsKey(inputString)){
 			WordForestUtil.wordsForestContainsKey(output, inputString, prefixWord);

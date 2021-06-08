@@ -16,7 +16,7 @@ import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.ASQ.PSU.OCI.ME.liner.C.Quick6DLuoYaoguangSort;
 import OSI.OPE.ASQ.PSU.OCI.ME.nero.C.NEROControllerOneTime;
 import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLPController;
-import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
+import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POS_C;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FHMMList;
 import OSI.OPE.ASQ.PSU.OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapImp;
 import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NERO_C_OneTimeImp;
@@ -28,7 +28,7 @@ public class AnalyzerImp implements Analyzer {
 	protected FHMMList fHMMList;
 	protected NEROControllerOneTime neroController;
 	protected NLPController nlpController;
-	protected POSController posController;
+	protected POS_C posController;
 	protected Quick6DLuoYaoguangSort quick6DLuoYaoguangSort;	
 	protected Map<Long, FMHMMNode> forestRoots;
 	protected Map<Long, Map<String, String>> wordsForests;
