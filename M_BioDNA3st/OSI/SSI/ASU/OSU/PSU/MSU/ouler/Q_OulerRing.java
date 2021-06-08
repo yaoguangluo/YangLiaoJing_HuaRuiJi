@@ -3,7 +3,7 @@ package OSI.SSI.ASU.OSU.PSU.MSU.ouler;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindOulerRing{
+public class Q_OulerRing{
 	//这段函数用于观测元基映射的欧拉回路模型
 	//思想 罗瑶光
 	//算法 欧拉

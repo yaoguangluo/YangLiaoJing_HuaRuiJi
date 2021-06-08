@@ -4,7 +4,7 @@ import java.util.Map;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.nero.C.NEROController;
-public class NEROControllerImp implements NEROController {
+public class NERO_C_Imp implements NEROController {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public StringBuilder getBinaryForestRecurWord(StringBuilder outputWordNode, String inputString, int charPosition
 			, int inputStringLength, Map<Integer, Map> forestRoots, int forestDepth, int charPositionNext ) {

@@ -19,9 +19,9 @@ import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLPController;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FHMMList;
 import OSI.OPE.ASQ.PSU.OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NEROControllerOneTimeImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLPControllerImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POSControllerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NERO_C_OneTimeImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLP_C_Imp;
+import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POS_C_Imp;
 import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E.FMHMMListOneTimeImp;
 import OSI.PEQ.AMV.ECS.test.SensingTest;
 public class AnalyzerImp implements Analyzer {
@@ -45,9 +45,9 @@ public class AnalyzerImp implements Analyzer {
 		fHMMList.indexCnToEn();
 		fHMMList.indexFullEnToCn();
 		fHMMList.indexFullCnToEn();
-		neroController= new NEROControllerOneTimeImp();
-		nlpController= new NLPControllerImp();
-		posController= new POSControllerImp();
+		neroController= new NERO_C_OneTimeImp();
+		nlpController= new NLP_C_Imp();
+		posController= new POS_C_Imp();
 		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();
@@ -70,9 +70,9 @@ public class AnalyzerImp implements Analyzer {
 		fHMMList.indexFullCnToTt();
 		fHMMList.indexFullCnToRs();
 		fHMMList.indexFullCnToAb();
-		neroController= new NEROControllerOneTimeImp();
-		nlpController= new NLPControllerImp();
-		posController= new POSControllerImp();
+		neroController= new NERO_C_OneTimeImp();
+		nlpController= new NLP_C_Imp();
+		posController= new POS_C_Imp();
 		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();

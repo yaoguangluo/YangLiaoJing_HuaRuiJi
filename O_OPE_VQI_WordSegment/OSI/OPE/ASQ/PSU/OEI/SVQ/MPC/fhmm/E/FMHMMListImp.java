@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FMHMMList;
-import OSI.OPE.ASQ.PSU.OEI.ME.euclid.E.EuclidControllerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.euclid.E.Euclid_C_Imp;
 public class FMHMMListImp implements FMHMMList {
 	private Map<String, String> words;
 	private Map<Long, FMHMMNode> linkedHashMap;
@@ -40,7 +40,7 @@ public class FMHMMListImp implements FMHMMList {
 				linkedHashMap = loopLoadForest(cInputString);
 			}
 		cReader.close();
-		linkedHashMapRoot = new EuclidControllerImp().mCogsEuclid(linkedHashMap);
+		linkedHashMapRoot = new Euclid_C_Imp().mCogsEuclid(linkedHashMap);
 	}
 
 	public Map<Long, FMHMMNode> loopLoadForest(String cInputString) {

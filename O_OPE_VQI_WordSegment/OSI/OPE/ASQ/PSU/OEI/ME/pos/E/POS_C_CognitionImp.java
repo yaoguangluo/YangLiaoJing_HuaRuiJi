@@ -6,7 +6,7 @@ import java.util.Map;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POSController;
 
-public class POSControllerCognitionImp implements POSController{
+public class POS_C_CognitionImp implements POSController{
 
 	@Override
 	public int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,
