@@ -45,7 +45,7 @@ public class U_CellStandard{
 			.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
 			.withCulumnValue(cellName, cellValue)
-			.finalExec(true);
+			.finalE(true);
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
@@ -65,7 +65,7 @@ public class U_CellStandard{
 			.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
 			.withCulumnValue(cellName, cellValue)
-			.finalExec(unTest);
+			.finalE(unTest);
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
@@ -86,7 +86,7 @@ public class U_CellStandard{
 			.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
 			.withCulumnValue(cellName, cellValue)
-			.finalExec(unTest);
+			.finalE(unTest);
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚

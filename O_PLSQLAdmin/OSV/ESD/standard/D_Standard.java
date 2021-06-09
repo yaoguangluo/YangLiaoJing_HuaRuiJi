@@ -27,7 +27,7 @@ public class D_Standard{
 				.withTableDrop(tabKey)
 				.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 				.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-				.finalExec(true);
+				.finalE(true);
 		return null;
 	}	
 

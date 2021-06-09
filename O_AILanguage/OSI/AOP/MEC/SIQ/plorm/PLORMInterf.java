@@ -35,7 +35,7 @@ public interface PLORMInterf{
 	public PLORMInterf withCulumnValue(String culumnName, String culumnValue);
 	public PLORMInterf checkErrors(String string);
 	public PLORMInterf fixErrors(String string);
-	public PLORMInterf finalExec(boolean b) throws Exception;
+	public PLORMInterf finalE(boolean b) throws Exception;
 	public Map<String, Object> returnAsMap();
 	public PLORMInterf checkAndFixPlsqlGrammarErrors();
 	public PLORMInterf checkAndFixSystemEnvironmentErrors();

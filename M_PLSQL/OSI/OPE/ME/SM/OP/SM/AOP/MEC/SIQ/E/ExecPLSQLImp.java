@@ -50,12 +50,12 @@ public class ExecPLSQLImp {
 				PLSQLCommandImp.P_ListNeedStart(acknowledge, output);
 			}
 			output.put("newCommand", acknowledge[0]);
-			PLSQLCommandImp.P_Exec(acknowledge, output, mod);
+			PLSQLCommandImp.P_E(acknowledge, output, mod);
 			output.put("lastCommand", output.get("newCommand"));
 		}
 		if(null!= acknowledge) {
 			if(output.get("start").toString().equals("1")) {
-				PLSQLCommandImp.P_Exec(acknowledge, output, mod);
+				PLSQLCommandImp.P_E(acknowledge, output, mod);
 			}
 		}
 		System.out.println("1");

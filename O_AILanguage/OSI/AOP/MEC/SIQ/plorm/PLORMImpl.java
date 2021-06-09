@@ -196,7 +196,7 @@ public class PLORMImpl implements PLORMInterf{
 	}
 
 	@Override
-	public PLORMInterf finalExec(boolean b) throws Exception {
+	public PLORMInterf finalE(boolean b) throws Exception {
 		map= ExecPLSQLImp.ExecPLORM(this, true);
 		return this;
 	}

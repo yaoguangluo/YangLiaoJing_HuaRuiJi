@@ -40,7 +40,7 @@ public class IU_CellStandard{
 			}
 			orm.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 			.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-			.finalExec(true);
+			.finalE(true);
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚

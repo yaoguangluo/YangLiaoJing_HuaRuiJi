@@ -23,7 +23,7 @@ public class DictionaryPLSQLStandardDB{
 					.let("ID").lessThanAndEqualTo("3000")
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-					.finalExec(true).returnAsMap();
+					.finalE(true).returnAsMap();
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
@@ -42,7 +42,7 @@ public class DictionaryPLSQLStandardDB{
 					.let("ID").lessThanAndEqualTo(RangeRowIDCount)
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-					.finalExec(unTest).returnAsMap();
+					.finalE(unTest).returnAsMap();
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
@@ -61,7 +61,7 @@ public class DictionaryPLSQLStandardDB{
 					.let(conditionSubject).lessThanAndEqualTo(conditionObject)
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
-					.finalExec(unTest).returnAsMap();
+					.finalE(unTest).returnAsMap();
 			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚

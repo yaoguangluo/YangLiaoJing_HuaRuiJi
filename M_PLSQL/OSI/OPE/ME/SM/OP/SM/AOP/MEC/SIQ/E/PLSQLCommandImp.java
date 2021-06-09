@@ -75,7 +75,7 @@ public class PLSQLCommandImp {
 		object.put("joinTableName", acknowledge[2]);
 	}
 
-	public static void P_Exec(String[] acknowledge, Map<String, Object> object, boolean mod) throws Exception {
+	public static void P_E(String[] acknowledge, Map<String, Object> object, boolean mod) throws Exception {
 		if(object.get("start").toString().equals("1")) {
 			if(!acknowledge[0].equalsIgnoreCase(object.get("lastCommand").toString())
 					&&(object.get("lastCommand").toString().contains("changeCulumnName")
