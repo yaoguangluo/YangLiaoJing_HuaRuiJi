@@ -5,34 +5,34 @@ import java.util.Date;
 import java.util.Map;
 import org.json.JSONObject;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.factory.E.LoginDAOImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.factory.E.LoginDAO_E;
 import OSI.OPE.VPC.VQS.DSU.utils.StringUtil;
 import OSI.OPE.VPC.VQS.DSU.utils.TokenUtil;
 import PEU.P.dna.Token;
 import PEU.P.md5.*;
-public class LoginServiceImpl {
+public class LoginService_E {
 
 	//	@Autowired
 	//	private LoginDAO loginDAO;
 
 	public static Usr findUsrByUEmail(String uEmail) throws IOException {
-		Usr usr = LoginDAOImpl.selectUsrByUEmail(uEmail);
+		Usr usr = LoginDAO_E.selectUsrByUEmail(uEmail);
 		return usr;
 	}
 
 	public static UsrToken findUsrTokenByUId(Integer uId) throws IOException {
-		UsrToken usrToken = LoginDAOImpl.selectUsrTokenByUId(uId);
+		UsrToken usrToken = LoginDAO_E.selectUsrTokenByUId(uId);
 		return usrToken;
 	}
 
 	public static void updateUsrTokenByUId(Integer uId, String key
 			, String uPassword, long uTime) throws IOException {
-		LoginDAOImpl.updateUsrTokenByUId(uId, key, uPassword, uTime);
+		LoginDAO_E.updateUsrTokenByUId(uId, key, uPassword, uTime);
 	}
 
 	public static void insertRowByTablePath(String baseName, String tableName
 			, JSONObject jsobj) throws Exception {
-		LoginDAOImpl.insertRowByTablePath(baseName, tableName, jsobj);
+		LoginDAO_E.insertRowByTablePath(baseName, tableName, jsobj);
 	}
 
 	public static String checkTokenStatus(String token, String level) throws Exception {

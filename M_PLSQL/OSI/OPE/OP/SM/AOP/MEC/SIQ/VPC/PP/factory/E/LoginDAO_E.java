@@ -7,12 +7,12 @@ import org.json.JSONObject;
 
 import PEU.P.cache.*;
 import PEU.P.md5.*;
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_RowsImp;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_RowsImp;
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_RowsImp;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_Rows_E;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_Rows_E;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_Rows_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.view.UsrFull;
 
-public class LoginDAOImpl {
+public class LoginDAO_E {
 	//	@Autowired
 	//	private SelectRows selectRows;
 	//	
@@ -23,7 +23,7 @@ public class LoginDAOImpl {
 	//	private InsertRows insertRows;
 
 	public static Usr selectUsrByUId(Integer uId) throws IOException {
-		List<Map<String, Object>> list = Q_RowsImp.selectRowsByAttribute("backend", "usr", "u_id", "" + uId);	
+		List<Map<String, Object>> list = Q_Rows_E.selectRowsByAttribute("backend", "usr", "u_id", "" + uId);	
 		Usr usr = new Usr();
 		if(list.size() > 0) {
 			usr.setuAddress(list.get(0).get("u_address")
@@ -44,7 +44,7 @@ public class LoginDAOImpl {
 
 	public static UsrToken selectUsrTokenByUId(Integer uId) throws IOException {
 		List<Map<String, Object>> list 
-		= Q_RowsImp.selectRowsByAttribute("backend", "usrToken", "u_id", ""+uId);	
+		= Q_Rows_E.selectRowsByAttribute("backend", "usrToken", "u_id", ""+uId);	
 		UsrToken usrToken = new UsrToken();
 		if(list.size() > 0) {	
 			usrToken.setuId(Integer.valueOf(list.get(0).get("u_id").toString()));
@@ -65,7 +65,7 @@ public class LoginDAOImpl {
 	}
 
 	public static Usr selectUsrByUEmail(String uEmail) throws IOException {
-		List<Map<String, Object>> list = Q_RowsImp.selectRowsByAttribute("backend", "usr", "u_email", uEmail);	
+		List<Map<String, Object>> list = Q_Rows_E.selectRowsByAttribute("backend", "usr", "u_email", uEmail);	
 		Usr usr = new Usr();
 		if(list.size() > 0) {
 			usr.setuAddress(list.get(0).get("u_address")
@@ -105,7 +105,7 @@ public class LoginDAOImpl {
 		jobj.put("u_class", uClass);
 		jobj.put("u_email", uEmail);
 		jobj.put("u_qq", uQq);
-		U_RowsImp.updateRowByTablePathAndAttribute(CacheManager.getCacheInfo("DBPath")
+		U_Rows_E.updateRowByTablePathAndAttribute(CacheManager.getCacheInfo("DBPath")
 				.getValue()+"/backend/usr"
 				, "u_id", "" + uId, jobj);
 		// TODO Auto-generated method stub
@@ -118,7 +118,7 @@ public class LoginDAOImpl {
 		jobj.put("u_key", uKey);
 		jobj.put("u_password", uPassword);
 		jobj.put("u_time", uTime);
-		U_RowsImp.updateRowByTablePathAndAttribute(CacheManager.getCacheInfo("DBPath")
+		U_Rows_E.updateRowByTablePathAndAttribute(CacheManager.getCacheInfo("DBPath")
 				.getValue()+"/backend/usrToken"
 				, "u_id", "" + uId, jobj);
 		// TODO Auto-generated method stub	
@@ -138,7 +138,7 @@ public class LoginDAOImpl {
 
 	public static void insertRowByTablePath(String baseName, String tableName
 			, JSONObject jsobj) throws Exception {
-		IU_RowsImp.insertRowByBaseName(baseName, tableName, jsobj, true);
+		IU_Rows_E.insertRowByBaseName(baseName, tableName, jsobj, true);
 	}
 
 }

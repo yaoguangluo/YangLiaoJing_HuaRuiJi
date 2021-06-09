@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_RowsImp;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_Rows_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 import PEU.P.cache.*;
 
-public class D_RowsImp {
+public class D_Rows_E {
 	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath, String pageIndex, boolean mod)
 			throws FileNotFoundException, IOException {
 		int rowInsertIndex = Integer.valueOf(pageIndex);
@@ -65,7 +65,7 @@ public class D_RowsImp {
 		}
 		//make table dir
 		String tablePath = DBPath + "/" + object.get("tableName").toString();
-		List<Map<String, Object>> obj = (List<Map<String, Object>>) Q_RowsImp.selectRowsByAttributesOfCondition(object);
+		List<Map<String, Object>> obj = (List<Map<String, Object>>) Q_Rows_E.selectRowsByAttributesOfCondition(object);
 		Iterator<Map<String, Object>> iterator = obj.iterator();
 		while(iterator.hasNext()) {
 			Map<String, Object> row = iterator.next();

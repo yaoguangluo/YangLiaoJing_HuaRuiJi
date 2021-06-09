@@ -2,7 +2,7 @@ package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 
 import org.json.JSONException;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import PEU.P.cache.*;
 
 import java.io.BufferedReader;
@@ -17,12 +17,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Rest_C_PortImpl {
+public class Rest_C_Port_E {
 
 	public static Map<String, Object> startResults(int aa, String token, String auth)
 			throws NumberFormatException, JSONException, Exception {
 		Map<String, Object> result = new HashMap<String, Object>();
-		String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+		String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 		if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 			result.put("loginInfo", "unsuccess");
 			result.put("returnResult", checkStatus);
@@ -76,7 +76,7 @@ public class Rest_C_PortImpl {
 	public static Map<String, Object> startResultsBb(int bb, String token, String auth) 
 			throws NumberFormatException, JSONException, Exception {
 		Map<String, Object> output = new HashMap<>();
-		String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+		String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 		if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);
@@ -113,7 +113,7 @@ public class Rest_C_PortImpl {
 	public static Map<String, Object> getDBCategory(String baseName, String token, String auth) throws Exception {
 		Map<String, Object> output = new HashMap<>();
 		if(token != null && !token.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+			String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 			if(checkStatus.contains("invalid")&&((auth==null?"1":auth).contains("1"))) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);
@@ -143,7 +143,7 @@ public class Rest_C_PortImpl {
 	public static Map<String, Object> getAllDBCategory(String token, String auth) throws Exception {
 		Map<String, Object> output = new HashMap<>();
 		if(token != null && !token.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+			String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 			if(checkStatus.contains("invalid")&&((auth==null?"1":auth).contains("1"))) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);

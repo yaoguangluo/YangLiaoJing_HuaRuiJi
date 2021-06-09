@@ -19,7 +19,7 @@ import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings({"unused", "unchecked"})
-public class U_JoinRowsImp {
+public class U_JoinRows_E {
 	public static Object updateRowsByAttributesOfJoinCondition(Map<String, Object> object
 			, boolean mod) throws IOException {
 		if(!object.containsKey("recordRows")) {

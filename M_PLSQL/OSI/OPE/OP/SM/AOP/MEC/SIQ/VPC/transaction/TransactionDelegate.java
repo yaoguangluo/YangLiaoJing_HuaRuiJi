@@ -1,7 +1,7 @@
 package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.transaction;
 import com.google.gson.Gson;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import OSI.OPE.VPC.VQS.DSU.utils.StringUtil;
 import PEU.P.md5.*;
 
@@ -13,8 +13,8 @@ import java.util.Map;
 //之后准备整体性 用deta 元基 取代 MD5
 public class TransactionDelegate {
 	public static Map<String, Object> transactionLogin(String uEmail, String uPassword)throws Exception {
-		Usr usr = LoginServiceImpl.findUsrByUEmail(uEmail);
-		UsrToken usrToken = LoginServiceImpl.findUsrTokenByUId(usr.getuId());
+		Usr usr = LoginService_E.findUsrByUEmail(uEmail);
+		UsrToken usrToken = LoginService_E.findUsrTokenByUId(usr.getuId());
 		String password = TokenUtil.getSecondMD5Password(uPassword);
 		if (!password.equals(usr.getuPassword())) {
 			Map<String, Object> out = new HashMap<>();
@@ -25,7 +25,7 @@ public class TransactionDelegate {
 		Token token = TokenUtil.getNewTokenFromUsrAndUsrToken(usr, usrToken);
 		String json = new Gson().toJson(token);
 		String jsonToken = StringUtil.encode(json);
-		LoginServiceImpl.updateUsrTokenByUId(usr.getuId(), token.getuKey()
+		LoginService_E.updateUsrTokenByUId(usr.getuId(), token.getuKey()
 				, password, token.getuTime()/1000);
 		Map<String, Object> out = new HashMap<>();
 		out.put("userToken", jsonToken);
@@ -37,7 +37,7 @@ public class TransactionDelegate {
 	public static Map<String, Object> transactionRegister(String uEmail, String uEmailEnsure
 			, String uName, String uPassword, String uPassWDEnsure, String uAddress
 			, String uPhone, String uWeChat, String uQq, String uAge,String uSex) throws Exception {
-		Usr usr = LoginServiceImpl.findUsrByUEmail(uEmail);
+		Usr usr = LoginService_E.findUsrByUEmail(uEmail);
 		if(usr.getuEmail()!=null) {
 			Map<String, Object> out = new HashMap<>();
 			out.put("loginInfo", "unsuccess");
@@ -55,13 +55,13 @@ public class TransactionDelegate {
 		jsobj.put("u_age", uAge);
 		jsobj.put("u_sex", uSex);
 		jsobj.put("u_id", "random");
-		LoginServiceImpl.insertRowByTablePath("backend", "usr", jsobj);
-		usr = LoginServiceImpl.findUsrByUEmail(uEmail);
+		LoginService_E.insertRowByTablePath("backend", "usr", jsobj);
+		usr = LoginService_E.findUsrByUEmail(uEmail);
 		JSONObject jsobjToken = new JSONObject();
 		jsobjToken.put("u_id", usr.getuId());
 		jsobjToken.put("u_level", "low");
 		jsobjToken.put("u_password", TokenUtil.getSecondMD5Password(uPassword));
-		LoginServiceImpl.insertRowByTablePath("backend", "usrToken", jsobjToken);
+		LoginService_E.insertRowByTablePath("backend", "usrToken", jsobjToken);
 		return transactionLogin(uEmail, uPassword);
 	}
 }

@@ -8,18 +8,18 @@ import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
-import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_RowsImp;
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSI.E.I_TablesImp;
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_RowsImp;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_JoinRowsImp;
-import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_RowsImp;
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_JoinRowsImp;
-import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_RowsImp;
+import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_Rows_E;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSI.E.I_Tables_E;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_Rows_E;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_JoinRows_E;
+import OSI.OPE.MSQ.OP.SM.AOP.MEC.SIQ.SM.OSQ.E.Q_Rows_E;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_JoinRows_E;
+import OSI.OPE.MSU.OP.SM.AOP.MEC.SIQ.SM.update.E.U_Rows_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Base;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Table;
 import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
-public class PLSQLCommandImp {
+public class PLSQLCommand_E {
 	public static void P_SetRoot(String[] acknowledge, Map<String, Object> output) throws Exception {
 		String dbPath = acknowledge[1];
 		for(int i=2; i<acknowledge.length; i++) {
@@ -96,13 +96,13 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("obj", Q_RowsImp.selectRowsByAttributesOfCondition(object));
+				object.put("obj", Q_Rows_E.selectRowsByAttributesOfCondition(object));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("obj", Q_RowsImp.selectRowsByAttributesOfAggregation(object));
+				object.put("obj", Q_Rows_E.selectRowsByAttributesOfAggregation(object));
 			}
 			if(object.containsKey("getCulumns")) {
-				object.put("obj", Q_RowsImp.selectRowsByAttributesOfGetCulumns(object));
+				object.put("obj", Q_Rows_E.selectRowsByAttributesOfGetCulumns(object));
 			}
 			object.remove("recordRows");
 		}
@@ -110,22 +110,22 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("n") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && !object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("joinObj", Q_JoinRowsImp.selectRowsByAttributesOfJoinCondition(object));
+				object.put("joinObj", Q_JoinRows_E.selectRowsByAttributesOfJoinCondition(object));
 			}
 			if(object.containsKey("relation")) {
-				object.put("obj", Q_JoinRowsImp.selectRowsByAttributesOfJoinRelation(object));
+				object.put("obj", Q_JoinRows_E.selectRowsByAttributesOfJoinRelation(object));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("obj", Q_JoinRowsImp.selectRowsByAttributesOfJoinAggregation(object));
+				object.put("obj", Q_JoinRows_E.selectRowsByAttributesOfJoinAggregation(object));
 			}
 			if(object.containsKey("getCulumns")) {
-				object.put("joinObj", Q_JoinRowsImp.selectRowsByAttributesOfJoinGetCulumns(object));
+				object.put("joinObj", Q_JoinRows_E.selectRowsByAttributesOfJoinGetCulumns(object));
 			}
 			object.remove("recordRows");
 		}
 		if(object.get("type").toString().equalsIgnoreCase("create")){
 			if(object.containsKey("culumnName")) {
-				I_TablesImp.createTable(object, mod);
+				I_Tables_E.createTable(object, mod);
 			}
 			object.remove("recordRows");
 		}
@@ -134,13 +134,13 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("updateObj", U_RowsImp.updateRowsByAttributesOfCondition(object, mod));
+				object.put("updateObj", U_Rows_E.updateRowsByAttributesOfCondition(object, mod));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("updateObj", U_RowsImp.updateRowsByAttributesOfAggregation(object, mod));
+				object.put("updateObj", U_Rows_E.updateRowsByAttributesOfAggregation(object, mod));
 			}
 			if(object.containsKey("culumnValue")) {
-				U_RowsImp.updateRowsByRecordConditions(object, mod);
+				U_Rows_E.updateRowsByRecordConditions(object, mod);
 			}
 			object.remove("recordRows");
 		}
@@ -148,27 +148,27 @@ public class PLSQLCommandImp {
 				(object.get("countJoins").toString().equalsIgnoreCase("n") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && !object.get("newCommand").toString().equalsIgnoreCase("join")))){
 			if(object.containsKey("condition")) {
-				object.put("updateJoinObj", U_JoinRowsImp.updateRowsByAttributesOfJoinCondition(object, mod));
+				object.put("updateJoinObj", U_JoinRows_E.updateRowsByAttributesOfJoinCondition(object, mod));
 			}
 			if(object.containsKey("relation")) {
-				object.put("updateObj", U_JoinRowsImp.updateRowsByAttributesOfJoinRelation(object, mod));
+				object.put("updateObj", U_JoinRows_E.updateRowsByAttributesOfJoinRelation(object, mod));
 			}
 			if(object.containsKey("aggregation")) {
-				object.put("updateObj", U_JoinRowsImp.updateRowsByAttributesOfJoinAggregation(object, mod));
+				object.put("updateObj", U_JoinRows_E.updateRowsByAttributesOfJoinAggregation(object, mod));
 			}
 			if(object.containsKey("culumnValue")) {
-				U_RowsImp.updateRowsByRecordConditions(object, mod);
+				U_Rows_E.updateRowsByRecordConditions(object, mod);
 			}
 			object.remove("recordRows");
 		}
 		if(object.get("type").toString().equalsIgnoreCase("insert")) {
 			if(object.containsKey("culumnValue")) {
-				IU_RowsImp.insertRowByAttributes(object, mod);
+				IU_Rows_E.insertRowByAttributes(object, mod);
 			}
 		}
 		if(object.get("type").toString().equalsIgnoreCase("delete")) {
 			if(object.containsKey("condition")) {
-				D_RowsImp.deleteRowByAttributesOfCondition(object, mod);
+				D_Rows_E.deleteRowByAttributesOfCondition(object, mod);
 			}
 		}
 		object.remove("condition");

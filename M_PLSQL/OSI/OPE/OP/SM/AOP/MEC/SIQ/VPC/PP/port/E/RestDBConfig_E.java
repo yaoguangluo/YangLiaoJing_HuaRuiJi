@@ -4,13 +4,13 @@ import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import PEU.P.cache.*;
-public class RestDBConfigImpl {
+public class RestDBConfig_E {
 	public static Map<String, String> setDBPath(String basePath
 			, String token, String auth) throws Exception {
 		Map<String, String> output= new HashMap<String, String>();
-		String checkStatus = LoginServiceImpl.checkTokenStatus(token, "level");
+		String checkStatus = LoginService_E.checkTokenStatus(token, "level");
 		if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);
@@ -46,7 +46,7 @@ public class RestDBConfigImpl {
 	public static Map<String, String> setDBTable(String tableName, String token
 			, String auth) throws Exception {
 		Map<String, String> output = new HashMap<String, String>();
-		String checkStatus = LoginServiceImpl.checkTokenStatus(token, "level");
+		String checkStatus = LoginService_E.checkTokenStatus(token, "level");
 		if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);

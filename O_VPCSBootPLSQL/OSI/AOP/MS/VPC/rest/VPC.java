@@ -12,8 +12,8 @@ import OSI.AOP.MS.VPC.controller.InsertController;
 import OSI.AOP.MS.VPC.controller.SelectController;
 import OSI.AOP.MS.VPC.controller.UpdateController;
 import OSI.AOP.rest.medicine.RestMedicinePortImpl;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDBPLSQLImpl;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestLoginPortImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDBPLSQL_E;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestLoginPort_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
 public class VPC {
@@ -40,24 +40,24 @@ public class VPC {
 		}
 		//plsql
 		if(string.equalsIgnoreCase(StableData.REST_PATH_EXEC_DETA_PLSQL)){
-			return VtoV.ObjectToJsonString(RestDBPLSQLImpl.restDBPLSQLImpl(data
+			return VtoV.ObjectToJsonString(RestDBPLSQL_E.restDBPLSQLImpl(data
 					.get("token") ,data.get("email"), data.get("password"), data.get("auth")
 					, data.get("LYGQuery"), data.get("mod")));
 		}	
 		//restMap
 		if(string.equalsIgnoreCase(StableData.REST_PATH_LOGIN)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.login(data.get("uEmail")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.login(data.get("uEmail")
 					, data.get("uPassword")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_FIND)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.find(data.get("uEmail")));
+			return VtoV.ObjectToJsonString(RestLoginPort_E.find(data.get("uEmail")));
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_LOGOUT)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.logout(data.get("uEmail")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.logout(data.get("uEmail")
 					, data.get("uToken")));
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_REGISTER)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.register(data.get("uEmail")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.register(data.get("uEmail")
 					, data.get("uEmailEnsure")
 					, data.get("uName"), data.get("uPassword"), data.get("uPassWDEnsure")
 					, data.get("uAddress")
@@ -65,12 +65,12 @@ public class VPC {
 					, data.get("uSex")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_CHANGE)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.change(data.get("uEmail")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.change(data.get("uEmail")
 					, data.get("uChange")
 					, data.get("uChangeEnsure"),data.get("uToken"), data.get("uPassword")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_CHECK_STATUS)){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.checkStatus(data.get("token")));	
+			return VtoV.ObjectToJsonString(RestLoginPort_E.checkStatus(data.get("token")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEZY)){
 			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackZY(app, data.get("medicine")));	

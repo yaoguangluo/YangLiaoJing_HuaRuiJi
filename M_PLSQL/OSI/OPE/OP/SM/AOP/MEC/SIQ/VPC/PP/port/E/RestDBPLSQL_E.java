@@ -6,15 +6,15 @@ import java.util.Map;
 import org.json.JSONObject;
 
 import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQL_E;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import PEU.P.md5.*;
 //
 //baseName:backend;
 //tableName:usr:update;
 //condition:or:u_id|<|200;
 //culumnValue:u_email:77777;
-public class RestDBPLSQLImpl {
+public class RestDBPLSQL_E {
 	public static Map<String, Object> restDBPLSQLImpl(String token,
 			String email, String password, String auth, String plsql
 			, String mod) throws Exception{
@@ -22,7 +22,7 @@ public class RestDBPLSQLImpl {
 		String who = "";
 		//security monitor
 		if(token != null && !token.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+			String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 			if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);
@@ -32,7 +32,7 @@ public class RestDBPLSQLImpl {
 			JSONObject js = new JSONObject(json);
 			who = js.getString("uEmail");
 		}else if(email != null && !email.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkRightsStatus(email, password, "DB");
+			String checkStatus = LoginService_E.checkRightsStatus(email, password, "DB");
 			if(checkStatus.contains("invalid")) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);
@@ -49,17 +49,17 @@ public class RestDBPLSQLImpl {
 				||plsql.contains("drop")||plsql.contains("change")||plsql.contains("create")) {
 			DatabaseLogHall.writeLogFile(System.currentTimeMillis(), who, plsql);
 			try {
-				E_PLSQLImp.E_PLSQL(plsql, false);
+				E_PLSQL_E.E_PLSQL(plsql, false);
 			}catch(Exception e) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", "invalid plsql");
 				return output;
 			}
 			if(null != mod && mod.equalsIgnoreCase("true")) {
-				output = E_PLSQLImp.E_PLSQL(plsql, true);
+				output = E_PLSQL_E.E_PLSQL(plsql, true);
 			}
 		}else {
-			output = E_PLSQLImp.E_PLSQL(plsql, true);	
+			output = E_PLSQL_E.E_PLSQL(plsql, true);	
 		}
 		return output;
 	}

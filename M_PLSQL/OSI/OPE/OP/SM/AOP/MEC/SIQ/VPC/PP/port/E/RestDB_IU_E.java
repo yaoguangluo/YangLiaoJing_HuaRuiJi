@@ -2,26 +2,26 @@ package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 
 import org.json.JSONObject;
 
-import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_RowsImp;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.MSI.OP.SM.AOP.MEC.SIQ.SM.OSU.E.IU_Rows_E;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class RestDB_IU_Impl {
+public class RestDB_IU_E {
 	public static Map<String, Object> insertRowByTablePath(String tablePath, String pageIndex
 			, String culumnOfNewRow, String token, String email, String password
 			, String auth) throws Exception {
 		Map<String, Object> output = new HashMap<String, Object>();
 		if(token != null && !token.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+			String checkStatus = LoginService_E.checkTokenStatus(token, "common");
 			if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);
 				return output;
 			}
 		}else if(email != null && !email.equalsIgnoreCase("")){
-			String checkStatus = LoginServiceImpl.checkRightsStatus(email, password, "DB");
+			String checkStatus = LoginService_E.checkRightsStatus(email, password, "DB");
 			if(checkStatus.contains("invalid")) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", checkStatus);
@@ -34,7 +34,7 @@ public class RestDB_IU_Impl {
 		}	
 
 		JSONObject jaculumnOfNewRow=new JSONObject(culumnOfNewRow);
-		output = IU_RowsImp.insertRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfNewRow);
+		output = IU_Rows_E.insertRowByTablePathAndIndex(tablePath, pageIndex, jaculumnOfNewRow);
 		return output;
 	}
 
@@ -42,14 +42,14 @@ public class RestDB_IU_Impl {
 			, String culumnOfNewRow, String token, String email, String password
 			, String auth) throws Exception {
 		Map<String, Object> output = new HashMap<String, Object>();
-		String checkStatus = LoginServiceImpl.checkRightsStatus(email, password, "DB");
+		String checkStatus = LoginService_E.checkRightsStatus(email, password, "DB");
 		if(checkStatus.contains("invalid")) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);
 			return output;
 		}
 
-		checkStatus = LoginServiceImpl.checkTokenStatus(token, "common");
+		checkStatus = LoginService_E.checkTokenStatus(token, "common");
 		if(checkStatus.contains("invalid")&&(auth.contains("1"))) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);
@@ -57,7 +57,7 @@ public class RestDB_IU_Impl {
 		}
 
 		JSONObject jaculumnOfNewRow=new JSONObject(culumnOfNewRow);
-		output = IU_RowsImp.insertRowByBaseName(baseName, tableName, jaculumnOfNewRow, true);
+		output = IU_Rows_E.insertRowByBaseName(baseName, tableName, jaculumnOfNewRow, true);
 		return output;
 	}
 }

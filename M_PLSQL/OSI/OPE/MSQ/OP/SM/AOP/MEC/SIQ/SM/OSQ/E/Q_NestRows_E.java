@@ -19,9 +19,9 @@ import OSI.OPE.MS.OP.SM.AOP.MEC.SIQ.cache.DetaDBBufferCacheManager;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings({"unused", "unchecked"})
-public class Q_JoinRowsImp {
-	public static Object selectRowsByAttributesOfJoinCondition(Map<String, Object> object) 
-			throws IOException {
+public class Q_NestRows_E {
+	public static Object selectRowsByAttributesOfNestCondition(Map<String
+			, Object> object) throws IOException {
 		if(!object.containsKey("recordRows")) {
 			Map<String, Boolean> recordRows = new ConcurrentHashMap<>();
 			object.put("recordRows", recordRows);
@@ -32,11 +32,11 @@ public class Q_JoinRowsImp {
 		List<Map<String, Object>> output = new ArrayList<>();
 		//锁定数据库
 		String DBPath = CacheManager.getCacheInfo("DBPath").getValue().toString() + "/" 
-		+ object.get("joinBaseName").toString();
+		+ object.get("nestBaseName").toString();
 		//锁定表
 		File fileDBPath = new File(DBPath);
 		if (fileDBPath.isDirectory()) {
-			String DBTablePath = DBPath + "/" + object.get("joinTableName").toString();
+			String DBTablePath = DBPath + "/" + object.get("nestTableName").toString();
 			File fileDBTable = new File(DBTablePath);
 			if (fileDBTable.isDirectory()) {
 				String DBTableCulumnPath = DBTablePath + "/spec";
@@ -65,13 +65,13 @@ public class Q_JoinRowsImp {
 						for(int i = 2; i < conditionValueArray.length; i++) {
 							String[] sets = conditionValueArray[i].split("\\|");
 							if(overMap && andMap) {
-								P_ConditionPLSQL.P_Map(sets, output, DBTablePath);//1
+								P_ConditionPLSQL.P_Map(sets, output, DBTablePath);
 							}else if(DetaDBBufferCacheManager.dbCache){
 								P_ConditionPLSQL.P_Cache(sets, output
-										, object.get("joinTableName").toString()
-										, object.get("joinBaseName").toString(), object);//1
+										, object.get("nestTableName").toString()
+										, object.get("nestBaseName").toString(), object);
 							}else {
-								P_ConditionPLSQL.P_Table(sets, output, DBTablePath, object);//1
+								P_ConditionPLSQL.P_Table(sets, output, DBTablePath, object);
 							}
 						}
 					}
@@ -81,7 +81,7 @@ public class Q_JoinRowsImp {
 		return output;
 	}
 
-	public static Object selectRowsByAttributesOfJoinAggregation(Map<String, Object> object) {
+	public static Object selectRowsByAttributesOfNestAggregation(Map<String, Object> object) {
 		if(!object.containsKey("joinObj")) {
 			return new ArrayList<>();
 		}
@@ -105,7 +105,7 @@ public class Q_JoinRowsImp {
 		return obj;
 	}
 
-	public static Object selectRowsByAttributesOfJoinGetCulumns(Map<String, Object> object) {
+	public static Object selectRowsByAttributesOfNestGetCulumns(Map<String, Object> object) {
 		if(!object.containsKey("joinObj")) {
 			return new ArrayList<>();
 		}
@@ -122,7 +122,7 @@ public class Q_JoinRowsImp {
 		return obj;
 	}
 
-	public static Object selectRowsByAttributesOfJoinRelation(Map<String, Object> object) {
+	public static Object selectRowsByAttributesOfNestRelation(Map<String, Object> object) {
 		if(!object.containsKey("obj")||!object.containsKey("joinObj")) {
 			return new ArrayList<>();
 		}
@@ -141,7 +141,7 @@ public class Q_JoinRowsImp {
 			for(int i= 2; i< getRelationValueArray.length; i++) {
 				String[] sets = getRelationValueArray[i].split("\\|");
 				if(overObjMap&& overJoinObjMap&&andMap && i>2) {
-					P_RelationPLSQL.P_AndMap(sets, obj, joinObj,object, newObj);
+					P_RelationPLSQL.P_AndMap(sets, obj, joinObj, object, newObj);
 				}else {
 					P_RelationPLSQL.P_OrMap(sets, obj, joinObj, object
 							, newObj, findinNewObj);

@@ -1,13 +1,13 @@
 package OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E;
 import org.json.JSONException;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.transaction.TransactionDelegate;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-public class RestLoginPortImpl {	
+public class RestLoginPort_E {	
 	public static Map<String, Object> login(String uEmail, String uPassword) throws Exception {
 		Map<String, Object> map = TransactionDelegate.transactionLogin(uEmail, uPassword);
 		return map;
@@ -44,7 +44,7 @@ public class RestLoginPortImpl {
 	public static Map<String, Object> checkStatus(String token) throws NumberFormatException
 	, JSONException, Exception {
 		Map<String, Object> output = new HashMap<String, Object>();
-		String checkStatus = LoginServiceImpl.checkTokenStatusAndGetLevel(token, "level", output);
+		String checkStatus = LoginService_E.checkTokenStatusAndGetLevel(token, "level", output);
 		if(checkStatus.contains("invalid")) {
 			output.put("loginInfo", "unsuccess");
 			output.put("returnResult", checkStatus);

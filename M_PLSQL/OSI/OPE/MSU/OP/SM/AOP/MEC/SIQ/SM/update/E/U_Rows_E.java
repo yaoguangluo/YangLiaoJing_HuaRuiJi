@@ -24,7 +24,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Row;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.SM.reflection.Spec;
 import PEU.P.cache.*;
 @SuppressWarnings("unchecked")
-public class U_RowsImp {
+public class U_Rows_E {
 	public static Map<String, Object> updateRowByTablePathAndIndex(String tablePath, String pageIndex,
 			JSONObject jaculumnOfUpdateRow) throws FileNotFoundException, IOException {
 		String[] sets = tablePath.split("/");

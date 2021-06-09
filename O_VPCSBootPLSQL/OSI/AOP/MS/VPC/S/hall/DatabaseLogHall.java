@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import PEU.P.cache.*;
 import PEU.P.zip.*;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQL_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 
 @SuppressWarnings("unused")
@@ -90,7 +90,7 @@ public class DatabaseLogHall {
 					, StableData.CHARSET_UTF8);
 			long currentTime =Long.valueOf(tempString.split("@:")[1]);
 			if(currentTime < time) {//ÖðÌõ»Ö¸´µ½µã¡£
-				E_PLSQLImp.E_PLSQL(tempString.split("@:")[3], true);
+				E_PLSQL_E.E_PLSQL(tempString.split("@:")[3], true);
 			}
 		}
 		reader.close();
