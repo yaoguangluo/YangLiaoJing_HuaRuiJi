@@ -13,7 +13,7 @@ import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 public class SensingTest{
 	public List<String> getSets() {
 		return sets;
@@ -49,7 +49,7 @@ public class SensingTest{
 				"一些成瘾的受体，普遍有某种倾向: 奢靡，闭塞，强迫，空虚 等等。这里不是贬义，只是因为长期的环境\r\n" + 
 				"因素不是那么美好导致了一些思维误差。所以引导是非常重要的。改变人的不是能力，而是选择和环境。\r\n" + 
 				"如果环境不是很完美，那么选择一个健康的生活方式，是非常重要的。";
-		Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
 		analyzer.initMixed();
 		pos = analyzer.getPosCnToCn();
 		Map<String, Object> positive= emotionMap.getPositiveMap();

@@ -24,7 +24,7 @@ import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLP_C_E;
 import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POS_C_E;
 import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E.FMHMMListOneTime_E;
 import OSI.PEQ.AMV.ECS.test.SensingTest;
-public class AnalyzerImp implements Analyzer {
+public class AnalyzerE implements Analyzer {
 	protected FHMMList fHMMList;
 	protected NERO_C_OneTime neroController;
 	protected NLP_C nlpController;

@@ -11,7 +11,7 @@ import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {
@@ -163,7 +163,7 @@ public class EmotionInit{
 		emotionMap = new EmotionMapImp(); 
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();
-		analyzer = new CogsBinaryForestAnalyzerImp();
+		analyzer = new CogsBinaryForestAnalyzerE();
 		analyzer.init();
 		positive = emotionMap.getPositiveMap();
 		negative = emotionMap.getNegativeMap();

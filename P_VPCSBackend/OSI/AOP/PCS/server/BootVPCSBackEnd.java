@@ -7,7 +7,7 @@ import java.util.Random;
 import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OSI.OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OSI.OPE.PCS.thread.SocketThread;
 import OSI.OPE.PCS.thread.SocketThreadPool;
 import OSI.config.Config;
@@ -24,7 +24,7 @@ public class BootVPCSBackEnd extends Thread{
 
 	public BootVPCSBackEnd(Analyzer analyzer) throws IOException {
 		if(null== analyzer) {
-			this.analyzer = new CogsBinaryForestAnalyzerImp();
+			this.analyzer = new CogsBinaryForestAnalyzerE();
 			this.analyzer.initMixed();
 		}else {
 			this.analyzer= analyzer;
@@ -41,7 +41,7 @@ public class BootVPCSBackEnd extends Thread{
 			port= Config.detaVPCSBackEndPort;
 			server = new ServerSocket(port);
 			if(null== this.analyzer) {
-				this.analyzer = new CogsBinaryForestAnalyzerImp();
+				this.analyzer = new CogsBinaryForestAnalyzerE();
 				this.analyzer.initMixed();
 			}
 			emotionMap = new EmotionMapImp(); 

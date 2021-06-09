@@ -14,7 +14,7 @@ import OSI.AOP.PCS.server.BootVPCSBackEnd;
 import OSI.AOP.VPC.S.restServer.RestServer;
 import OSI.AOP.VPC.server.BootVPCSFrontEnd;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -126,7 +126,7 @@ public class AppInit {
 				e.printStackTrace();
 			}
 		}
-		app.analyzer= new CogsBinaryForestAnalyzerImp();
+		app.analyzer= new CogsBinaryForestAnalyzerE();
 		if(app.appConfig.SectionJPanel.jTextPane!= null) {
 			String text= app.appConfig.SectionJPanel.jTextPane.getText();
 			text="\r\n"+ "----当前版本有效期100天."+ text;

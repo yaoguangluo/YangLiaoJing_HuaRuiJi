@@ -12,7 +12,7 @@ import OSI.ESU.list.List_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 //import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 public class NLPTopicMatch{
 	//<<NLP Algorithm of Matching The POS Scored Sentence>>.
@@ -23,7 +23,7 @@ public class NLPTopicMatch{
 	public static String NLPBestSentenceMatch(String searchString
 			, String[] sampleSentences) throws IOException {
 		//init the deta mixed parser engine.
-		Analyzer analyzer= new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer= new CogsBinaryForestAnalyzerE();
 		analyzer.initMixed();
 		//init the nlp POS(part of speech) functions.
 		Map<String, String> nlp = analyzer.getPosCnToCn();
@@ -109,7 +109,7 @@ public class NLPTopicMatch{
 	private static double[] getNLPBestSentencesMatchScore(String searchString
 			, String[] sampleSentences) throws IOException {
 		//init the deta mixed parser engine.
-		Analyzer analyzer= new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer= new CogsBinaryForestAnalyzerE();
 		analyzer.initMixed();
 		//init the nlp POS(part of speech) functions.
 		Map<String, String> nlp = analyzer.getPosCnToCn();

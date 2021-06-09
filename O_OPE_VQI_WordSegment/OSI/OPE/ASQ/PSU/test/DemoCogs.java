@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 //import java.io.IOException;
 //import java.util.List;
@@ -24,7 +24,7 @@ public class DemoCogs {
     static int c = 0;
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
+        Analyzer analyzer = new CogsBinaryForestAnalyzerE();
         //Analyzer analyzer = new FastAnalyzerImp();
         //Analyzer analyzer = new PrettyAnalyzerImp();
         //Analyzer analyzer = new BaseAnalyzerImp();

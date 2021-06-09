@@ -6,7 +6,7 @@ import java.util.Iterator;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.ME.euclid.C.Euclid_C;
-public class Euclid_C_Imp implements Euclid_C {
+public class Euclid_C_E implements Euclid_C {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public Map<Integer, Map> mCogsEuclid(Map<Long, FMHMMNode> HashMap) {
 		Map<Integer, Map> HashMapRoot= new HashMap<>();

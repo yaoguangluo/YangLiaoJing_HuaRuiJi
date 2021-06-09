@@ -9,13 +9,13 @@ import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 //import timeProcessor.TimeCheck;
 public class DemoTSLT {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
 		analyzer.init();
 		Map<String, String> ce = analyzer.getCnToEn();
 		Map<String, String> ec = analyzer.getEnToCn();

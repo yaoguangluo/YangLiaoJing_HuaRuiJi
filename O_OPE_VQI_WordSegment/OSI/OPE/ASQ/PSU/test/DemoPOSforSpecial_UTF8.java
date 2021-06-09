@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 import static java.lang.System.*;
 
 public class DemoPOSforSpecial_UTF8 {
 	public static void main(String[] args) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
 		analyzer.initMixed();
 		Map<String, String> nlp = analyzer.getPosCnToCn();
 		List<String> sets = new ArrayList<>();

@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 public class DemoEX {
 	int a=0;
 	int b=0;
@@ -19,7 +19,7 @@ public class DemoEX {
 	
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerImp();
+		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
 		//analyzer.init();
 		analyzer.initMixed();
 		Map<String, String> pos = analyzer.getPosCnToCn();
