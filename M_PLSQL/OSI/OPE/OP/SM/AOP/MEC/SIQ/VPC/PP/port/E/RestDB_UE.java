@@ -8,7 +8,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RestDB_U_E {
+public class RestDB_UE {
 	public static Map<String, Object> updateRowByTablePathAndIndex(String tablePath
 			, String pageIndex,String culumnOfUpdateRow, String token, String email
 			, String password, String auth) throws Exception {

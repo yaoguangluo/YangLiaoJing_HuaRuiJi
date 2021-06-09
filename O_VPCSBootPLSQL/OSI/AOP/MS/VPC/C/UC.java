@@ -1,14 +1,14 @@
-package OSI.AOP.MS.VPC.controller;
+package OSI.AOP.MS.VPC.C;
 import java.util.Map;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDB_U_E;
+import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDB_UE;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
-public class UpdateController {
+public class UC {
 	public static String exec(String string, Map<String, String> data)
 			throws Exception {
 		if(string.equalsIgnoreCase(StableData.REST_PATH_UPDATE_ROW_BY_TABLE_PATH_AND_INDEX)){
-			return VtoV.ObjectToJsonString(RestDB_U_E
+			return VtoV.ObjectToJsonString(RestDB_UE
 					.updateRowByTablePathAndIndex(data.get("tablePath")
 							, data.get("pageIndex"), data.get("culumnOfUpdateRow")
 							, data.get("token"), data.get("email")

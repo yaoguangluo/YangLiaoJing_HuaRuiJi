@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.util.Map;
 
 import ME.APM.VSQ.App;
-import OSI.AOP.MS.VPC.controller.ConfigController;
-import OSI.AOP.MS.VPC.controller.DBCategoryController;
-import OSI.AOP.MS.VPC.controller.DeleteController;
-import OSI.AOP.MS.VPC.controller.InsertController;
-import OSI.AOP.MS.VPC.controller.SelectController;
-import OSI.AOP.MS.VPC.controller.UpdateController;
+import OSI.AOP.MS.VPC.C.Config_C;
+import OSI.AOP.MS.VPC.C.DBCategory_C;
+import OSI.AOP.MS.VPC.C.DC;
+import OSI.AOP.MS.VPC.C.IUC;
+import OSI.AOP.MS.VPC.C.QC;
+import OSI.AOP.MS.VPC.C.UC;
 import OSI.AOP.rest.medicine.RestMedicinePortImpl;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDBPLSQL_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestLoginPort_E;
@@ -21,22 +21,22 @@ public class VPC {
 			throws Exception {
 		//controller
 		if(string.contains(StableData.REST_PATH_SELECT)){
-			return SelectController.exec(string, data);	
+			return QC.exec(string, data);	
 		}
 		if(string.contains(StableData.REST_PATH_SETDB)){
-			return ConfigController.exec(string, data);	
+			return Config_C.exec(string, data);	
 		}
 		if(string.contains(StableData.REST_PATH_INSERT)){
-			return InsertController.exec(string, data);	
+			return IUC.exec(string, data);	
 		}
 		if(string.contains(StableData.REST_PATH_DELETE)){
-			return DeleteController.exec(string, data);	
+			return DC.exec(string, data);	
 		}
 		if(string.contains(StableData.REST_PATH_UPDATE)){
-			return UpdateController.exec(string, data);	
+			return UC.exec(string, data);	
 		}
 		if(string.contains(StableData.REST_PATH_DB_CATEGORY)){
-			return DBCategoryController.exec(string, data);	
+			return DBCategory_C.exec(string, data);	
 		}
 		//plsql
 		if(string.equalsIgnoreCase(StableData.REST_PATH_EXEC_DETA_PLSQL)){

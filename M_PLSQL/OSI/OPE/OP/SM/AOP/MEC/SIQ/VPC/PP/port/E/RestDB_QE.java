@@ -5,7 +5,7 @@ import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RestDB_Q_E {
+public class RestDB_QE {
 	public static Map<String, Object> selectRowsByAttribute(String baseName,
 			String tableName, String culumnName, String value, String token,
 			String email, String password, String auth) throws Exception{

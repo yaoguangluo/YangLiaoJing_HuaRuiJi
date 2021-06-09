@@ -7,7 +7,7 @@ import java.util.Map;
 import OSI.OPE.MSD.OP.SM.AOP.MEC.SIQ.SM.OSD.E.D_Rows_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginService_E;
 
-public class RestDB_D_E {
+public class RestDB_DE {
 	public static Map<String, Object> deleteRowByTablePathAndIndex(String tablePath
 			, String pageIndex, String token
 			, String email, String password, String auth) throws Exception {

@@ -1,10 +1,10 @@
-package OSI.AOP.MS.VPC.controller;
+package OSI.AOP.MS.VPC.C;
 import java.util.Map;
 
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDBConfig_E;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
-public class ConfigController {
+public class Config_C {
 	public static String exec(String string, Map<String, String> data)
 			throws Exception {
 		if(string.equalsIgnoreCase(StableData.REST_PATH_SET_DB_PATH)){

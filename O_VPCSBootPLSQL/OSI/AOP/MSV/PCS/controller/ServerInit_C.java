@@ -14,7 +14,7 @@ import OSI.OPE.MSV.PCS.C.RequestFilter_C;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSI.config.Config;
-public class ServerInitController {
+public class ServerInit_C {
 	private static ServerSocket server;
 	//private static Properties properties;
 	private static int port;

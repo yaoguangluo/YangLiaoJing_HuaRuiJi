@@ -1,6 +1,6 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.DynamicLineUpdater;
-public class DynamicLineU_VPS implements DynamicLineUpdater{
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.DynamicLine_U;
+public class DynamicLineU_VPS implements DynamicLine_U{
 	public void exec(LinkNode first,LinkNode node){
 		LinkNode linkNode= first;
 		while(null!= linkNode) {
