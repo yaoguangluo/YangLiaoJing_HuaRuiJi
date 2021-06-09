@@ -47,8 +47,8 @@ import ME.APM.VSQ.DetaBuy;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAndUpdateFile;
-import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAsANewFile;
+import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAnd_U_File;
+import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAs_I_File;
 import OSI.OPE.MSQ.OVU.PQE.nodeInfo.NodeInfo;
 import OSI.OPE.MSQ.OVU.PQE.nodeProject.NodeProject;
 import OSI.OPE.MSQ.SS.stable.StableData;
@@ -61,7 +61,7 @@ import OSI.OPE.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.Sort;
-import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.UpdateRelatedLineVPS;
+import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.U_RelatedLineVPS;
 import OSI.OPE.PSQ.OEU.SOI.SMQ.neroCell.BootNeroCell;
 @SuppressWarnings("deprecation")
 public class GUISample extends JApplet implements MouseMotionListener
@@ -104,7 +104,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 	public Thread thread, threadApplet; 
 	private JTextPane text;
 	private Object[][] tableData_old; 
-	public UpdateRelatedLineVPS updateRelatedLine;
+	public U_RelatedLineVPS updateRelatedLine;
 	public App u;
 	public Analyzer analyzer;
 	public Map<String, String> pos;
@@ -199,13 +199,13 @@ public class GUISample extends JApplet implements MouseMotionListener
 					rightBotJTextPane.validate();
 					return;
 				}
-				SaveAndUpdateFile.update(fileCurrentpath, first.first);
+				SaveAnd_U_File.update(fileCurrentpath, first.first);
 			}
 		});
 		
 		saveAs.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				SaveAsANewFile.Save(first.first);
+				SaveAs_I_File.Save(first.first);
 			}
 		});
 		
@@ -697,7 +697,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 	private void CreatMap() throws IOException {
 		w= 1446- 130;
 		h= 820- 110-70;
-		updateRelatedLine= new UpdateRelatedLineVPS();
+		updateRelatedLine= new U_RelatedLineVPS();
 		getContentPane().setLayout(null);
 		UIManager.put("SplitPaneUI", "OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornSplitPaneUI");
 		UIManager.put("ScrollBarUI", "OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornScrollBarUI");
@@ -845,7 +845,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 		saveButton.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				SaveAsANewFile.Save(first.first);
+				SaveAs_I_File.Save(first.first);
 			}
 		});
 		buttonBox.add(saveButton);
@@ -928,7 +928,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 					rightBotJTextPane.validate();
 					return;
 				}
-				SaveAndUpdateFile.update(fileCurrentpath, first.first);
+				SaveAnd_U_File.update(fileCurrentpath, first.first);
 			}
 		});
 		buttonBox.add(updateButton);

@@ -1,6 +1,6 @@
 package OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit;
-import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.UpdateRelatedLine;
-public class UpdateRelatedLineVPS implements UpdateRelatedLine{
+import OSI.OPE.MVU.OVU.OVU.PQE.nodeEdit.C.U_RelatedLine;
+public class U_RelatedLineVPS implements U_RelatedLine{
 	public void doUpdateRelatedLine(LinkNode first, String currentNodeName
 			, int currentNodeID, String currentNodePrimaryKey){
 		first = Sort.sort(first);
