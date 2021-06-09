@@ -8,7 +8,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POS_C;
 
-public class POS_C_Imp implements POS_C{
+public class POS_C_E implements POS_C{
 	public int chuLiBaDongCiOfTwo(Map<String, String> wordsForest, List<String> outputList, int countInputStringLength,
 			String[] strings, StringBuilder[] prefixWord){
 		if (!wordsForest.containsKey(prefixWord[StableData.INT_ZERO].toString())){

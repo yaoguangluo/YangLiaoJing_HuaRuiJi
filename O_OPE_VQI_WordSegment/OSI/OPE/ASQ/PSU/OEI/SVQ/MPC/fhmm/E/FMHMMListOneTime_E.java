@@ -20,7 +20,7 @@ import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FHMMList;
 import PEU.P.nlp.*;
 //I will build a collection class for managing this maps. at the next version.
 @SuppressWarnings("unchecked")
-public class FMHMMListOneTimeImp implements FHMMList {
+public class FMHMMListOneTime_E implements FHMMList {
 	private Map<String, String> studyPos;
 	private Map<String, String> posCnToCn;
 	private Map<String, String> posEnToEn;

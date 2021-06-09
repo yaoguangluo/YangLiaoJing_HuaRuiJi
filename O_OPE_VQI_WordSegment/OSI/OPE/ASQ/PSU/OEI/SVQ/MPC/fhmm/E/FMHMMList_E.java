@@ -12,7 +12,7 @@ import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FMHMMList;
 import OSI.OPE.ASQ.PSU.OEI.ME.euclid.E.Euclid_C_Imp;
-public class FMHMMListImp implements FMHMMList {
+public class FMHMMList_E implements FMHMMList {
 	private Map<String, String> words;
 	private Map<Long, FMHMMNode> linkedHashMap;
 	@SuppressWarnings(StableData.RAW_TYPES)

@@ -11,7 +11,7 @@ import OSI.OPE.ASQ.PSU.OCI.ME.liner.C.Quick6DLuoYaoguangSort;
 ** 快排6小高峰修正算法 作者 罗瑶光
 ** 快排10小高峰修正算法 作者 罗瑶光 20200921
 */
-public class Quick6DLuoYaoguangSortImp implements Quick6DLuoYaoguangSort {
+public class Quick6DLuoYaoguangSortE implements Quick6DLuoYaoguangSort {
 	public void quick6DLuoYaoGuangSortWordFrequency(List<WordFrequency> list, int leftPosition, int rightPosition) {		
 		int c= rightPosition- leftPosition+ StableData.INT_ONE;
 		if(c>  StableData.INT_FOUR) {

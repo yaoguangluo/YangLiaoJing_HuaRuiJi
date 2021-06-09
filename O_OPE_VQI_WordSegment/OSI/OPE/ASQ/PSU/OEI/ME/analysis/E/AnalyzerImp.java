@@ -18,11 +18,11 @@ import OSI.OPE.ASQ.PSU.OCI.ME.nero.C.NERO_C_OneTime;
 import OSI.OPE.ASQ.PSU.OCI.ME.nlp.C.NLP_C;
 import OSI.OPE.ASQ.PSU.OCI.ME.pos.C.POS_C;
 import OSI.OPE.ASQ.PSU.OCI.SVQ.MPC.fhmm.C.FHMMList;
-import OSI.OPE.ASQ.PSU.OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NERO_C_OneTimeImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLP_C_Imp;
-import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POS_C_Imp;
-import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E.FMHMMListOneTimeImp;
+import OSI.OPE.ASQ.PSU.OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapE;
+import OSI.OPE.ASQ.PSU.OEI.ME.nero.E.NERO_C_OneTimeE;
+import OSI.OPE.ASQ.PSU.OEI.ME.nlp.E.NLP_C_E;
+import OSI.OPE.ASQ.PSU.OEI.ME.pos.E.POS_C_E;
+import OSI.OPE.ASQ.PSU.OEI.SVQ.MPC.fhmm.E.FMHMMListOneTime_E;
 import OSI.PEQ.AMV.ECS.test.SensingTest;
 public class AnalyzerImp implements Analyzer {
 	protected FHMMList fHMMList;
@@ -37,7 +37,7 @@ public class AnalyzerImp implements Analyzer {
 	protected EmotionMap emotionMap;
 	protected SensingTest sensingTest;
 	public void init() throws IOException {
-		this.fHMMList= new FMHMMListOneTimeImp();
+		this.fHMMList= new FMHMMListOneTime_E();
 		fHMMList.index();
 		fHMMList.indexPosEnToCn();
 		fHMMList.indexPosEnToEn();
@@ -45,10 +45,10 @@ public class AnalyzerImp implements Analyzer {
 		fHMMList.indexCnToEn();
 		fHMMList.indexFullEnToCn();
 		fHMMList.indexFullCnToEn();
-		neroController= new NERO_C_OneTimeImp();
-		nlpController= new NLP_C_Imp();
-		posController= new POS_C_Imp();
-		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
+		neroController= new NERO_C_OneTimeE();
+		nlpController= new NLP_C_E();
+		posController= new POS_C_E();
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapE();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();
 		wordsForest= fHMMList.getPosCnToCn();
@@ -56,7 +56,7 @@ public class AnalyzerImp implements Analyzer {
 	}
 
 	public void initMixed() throws IOException {
-		this.fHMMList= new FMHMMListOneTimeImp();
+		this.fHMMList= new FMHMMListOneTime_E();
 		fHMMList.indexMixed();
 		fHMMList.indexPosEnToCn();
 		fHMMList.indexPosEnToEn();
@@ -70,10 +70,10 @@ public class AnalyzerImp implements Analyzer {
 		fHMMList.indexFullCnToTt();
 		fHMMList.indexFullCnToRs();
 		fHMMList.indexFullCnToAb();
-		neroController= new NERO_C_OneTimeImp();
-		nlpController= new NLP_C_Imp();
-		posController= new POS_C_Imp();
-		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapImp();
+		neroController= new NERO_C_OneTimeE();
+		nlpController= new NLP_C_E();
+		posController= new POS_C_E();
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapE();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();
 		wordsForest= fHMMList.getPosCnToCn();
