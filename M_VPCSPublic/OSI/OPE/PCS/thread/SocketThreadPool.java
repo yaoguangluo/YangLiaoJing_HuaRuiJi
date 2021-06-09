@@ -9,7 +9,7 @@ public class SocketThreadPool{
 	public int getThreadsCount() {
 		return poolMap.size();
 	}
-	public void addExecSocket(String sid, SocketThread clientSocket) {
+	public void addE_Socket(String sid, SocketThread clientSocket) {
 		poolMap.put(sid, clientSocket);
 	}
 	public void removeThreadById(String sid) {

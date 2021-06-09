@@ -46,8 +46,8 @@ public class DictionaryFromDB{
 		try {
 //			Select orm= new Select().startAtRootDir("C:/DetaDB").withBaseName("ZYY")
 //					.withTableSelect("xybg").withCondition("or", "ID|<=|3000");
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
-		//	map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
+			//map= org.plsql.db.plsql.imp.E_PLSQLImp.E_PLSQL(plsql, true);
+		//	map= org.plsql.db.plsql.imp.E_PLSQLImp.E_PLORM(orm, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}
@@ -77,8 +77,8 @@ Map<String, Object> dic_qi_ta, Map<String, Object> dic_yong_liang, Map<String, O
 					.checkAndFixPlsqlGrammarErrors()//准备完善plsql orm语言 的语法检查函数 和修复函数。
 					.checkAndFixSystemEnvironmentErrors()//准备完善plsql orm语言 的系统环境检查函数和修复函数。
 					.finalE(true).returnAsMap();
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
-			//map= org.plsql.db.plsql.imp.ExecPLSQLImp.ExecPLORM(orm, true);
+			//map= org.plsql.db.plsql.imp.E_PLSQLImp.E_PLSQL(plsql, true);
+			//map= org.plsql.db.plsql.imp.E_PLSQLImp.E_PLORM(orm, true);
 		}catch(Exception e1) {
 			//准备写回滚
 			e1.printStackTrace();

@@ -665,7 +665,7 @@ public class FqzPage extends Container implements MouseListener, KeyListener{
 		//									"culumnValue:≤°√˚:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 2).toString().replace(":", "@Tin@"))+ ";"+ 
 		//									"culumnValue:”√“©:"+ new FullDNATokenPDI().initonSect(table.getValueAt(i, 3).toString().replace(":", "@Tin@"))+ ";";
 		//							try {
-		//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+		//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.E_PLSQLImp.E_PLSQL(plsql, mod);
 		//							}catch(Exception e1) {
 		//								e1.printStackTrace();
 		//							}

@@ -4,8 +4,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import OSI.AOP.MEC.SIQ.plorm.PLORMInterf;
-public class ExecPLSQLImp {
-	public static Map<String, Object> ExecPLSQL(String plsql, boolean mod) throws Exception{
+public class E_PLSQLImp {
+	public static Map<String, Object> E_PLSQL(String plsql, boolean mod) throws Exception{
 		//working for here
 		Map<String, Object> output = new ConcurrentHashMap<>();
 		//1make container
@@ -63,7 +63,7 @@ public class ExecPLSQLImp {
 		return output;
 	}
 
-	public static Map<String, Object> ExecPLORM(PLORMInterf orm, boolean b) throws Exception {
-		return ExecPLSQL(orm.getPLSQL(), true);
+	public static Map<String, Object> E_PLORM(PLORMInterf orm, boolean b) throws Exception {
+		return E_PLSQL(orm.getPLSQL(), true);
 	}
 }

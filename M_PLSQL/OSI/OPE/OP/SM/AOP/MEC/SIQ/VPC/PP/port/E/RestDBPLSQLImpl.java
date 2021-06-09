@@ -6,7 +6,7 @@ import java.util.Map;
 import org.json.JSONObject;
 
 import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp;
 import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.company.E.LoginServiceImpl;
 import PEU.P.md5.*;
 //
@@ -49,17 +49,17 @@ public class RestDBPLSQLImpl {
 				||plsql.contains("drop")||plsql.contains("change")||plsql.contains("create")) {
 			DatabaseLogHall.writeLogFile(System.currentTimeMillis(), who, plsql);
 			try {
-				ExecPLSQLImp.ExecPLSQL(plsql, false);
+				E_PLSQLImp.E_PLSQL(plsql, false);
 			}catch(Exception e) {
 				output.put("loginInfo", "unsuccess");
 				output.put("returnResult", "invalid plsql");
 				return output;
 			}
 			if(null != mod && mod.equalsIgnoreCase("true")) {
-				output = ExecPLSQLImp.ExecPLSQL(plsql, true);
+				output = E_PLSQLImp.E_PLSQL(plsql, true);
 			}
 		}else {
-			output = ExecPLSQLImp.ExecPLSQL(plsql, true);	
+			output = E_PLSQLImp.E_PLSQL(plsql, true);	
 		}
 		return output;
 	}

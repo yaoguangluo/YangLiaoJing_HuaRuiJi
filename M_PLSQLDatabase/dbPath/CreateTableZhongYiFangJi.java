@@ -34,7 +34,7 @@ public class CreateTableZhongYiFangJi{
 			   		"culumnName:uk:¸½·½:string;"+ 
 			   		"culumnName:uk:·½¸è:string;";
 		try {
-			OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp.E_PLSQL(plsql, true);
 		}catch(Exception e1) {
 			e1.printStackTrace();
 		}

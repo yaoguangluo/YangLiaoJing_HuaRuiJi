@@ -43,7 +43,7 @@ public class D_CellStandard{
 			//  condition 不好规范, 稍后. 建议写针对性delete语句
 			//	condition:or:testCulumn1|<|20:testCulumn2|==|fire;
 			//	condition:and:testCulumn1|>|100:testCulumn2|==|fire;
-			//	map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, true);
+			//	map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.E_PLSQLImp.E_PLSQL(plsql, true);
 		}catch(Exception e1) {
 			//准备写回滚
 			e1.printStackTrace();

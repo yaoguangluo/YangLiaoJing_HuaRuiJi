@@ -1,7 +1,7 @@
 package OSI.AOP.MEC.SIQ.plorm;
 import java.util.Map;
 
-import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp;
+import OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp;
 public class PLORMImpl implements PLORMInterf{
 	private String PLSQL= "";
 	private String[] PLSQLArray;
@@ -181,7 +181,7 @@ public class PLORMImpl implements PLORMInterf{
 	}
 
 	public PLORMInterf exec(boolean b) throws Exception {
-		map= ExecPLSQLImp.ExecPLORM(this, true);
+		map= E_PLSQLImp.E_PLORM(this, true);
 		return this;
 	}
 
@@ -197,7 +197,7 @@ public class PLORMImpl implements PLORMInterf{
 
 	@Override
 	public PLORMInterf finalE(boolean b) throws Exception {
-		map= ExecPLSQLImp.ExecPLORM(this, true);
+		map= E_PLSQLImp.E_PLORM(this, true);
 		return this;
 	}
 

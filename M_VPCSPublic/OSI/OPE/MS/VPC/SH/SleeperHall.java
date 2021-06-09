@@ -9,7 +9,7 @@ public class SleeperHall{
 	public int getThreadsCount() {
 		return sleepersMap.size();
 	}
-	public void addExecSleeper(Integer sid, Sleeper sleeper) {
+	public void addE_Sleeper(Integer sid, Sleeper sleeper) {
 		sleepersMap.put(sid, sleeper);
 	}
 	public void removeThreadById(Integer sid) {

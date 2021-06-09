@@ -86,12 +86,12 @@ public class PLSQLCommandImp {
 							||object.get("lastCommand").toString().contains("getCulumns")
 							||object.get("lastCommand").toString().contains("culumnName")
 							||object.get("lastCommand").toString().contains("relation"))) {
-				P_ExecKernel(object, mod);
+				P_E_Kernel(object, mod);
 			}
 		}
 	}
 //处理机中心, 别急, 准备验证 罗瑶光
-	private static void P_ExecKernel(Map<String, Object> object, boolean mod) throws Exception{
+	private static void P_E_Kernel(Map<String, Object> object, boolean mod) throws Exception{
 		if(object.get("type").toString().equalsIgnoreCase("select") && 
 				(object.get("countJoins").toString().equalsIgnoreCase("0") ||
 						(object.get("countJoins").toString().equalsIgnoreCase("1") && object.get("newCommand").toString().equalsIgnoreCase("join")))){
@@ -184,7 +184,7 @@ public class PLSQLCommandImp {
 	//plsql函数执行指令 正在检查中 罗瑶光 20210405
 	public static void P_Check(String acknowledge, Map<String, Object> object, boolean mod) throws Exception {
 		if(object.get("start").toString().equals("1")) {
-			P_ExecKernel(object, mod);
+			P_E_Kernel(object, mod);
 		}
 		List<Map<String, Object>> obj = ((List<Map<String, Object>>)(object.get("obj")));
 		int totalPages = 0;

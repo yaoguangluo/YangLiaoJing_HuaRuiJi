@@ -75,7 +75,7 @@ public class BootVPCSBackEnd extends Thread{
 			if(socketThreadPool.getThreadsCount() < 300){
 				SocketThread clientSocket= new SocketThread(emotionMap, analyzer, socketThreadPool, server.accept()
 						, System.currentTimeMillis()+ "" + new Random().nextLong());
-				socketThreadPool.addExecSocket(clientSocket.getSid(), clientSocket);
+				socketThreadPool.addE_Socket(clientSocket.getSid(), clientSocket);
 				clientSocket.start();
 			}
 		}

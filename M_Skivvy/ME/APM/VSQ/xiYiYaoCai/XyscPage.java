@@ -802,7 +802,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 						   		"culumnValue:ÆäËû:"+ table.getValueAt(i, 12).toString().replace(":", "@biky@")+ ";";
 						   		
 					try {
-						OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+						OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQLImp.E_PLSQL(plsql, mod);
 					}catch(Exception e1) {
 						jTabbedpanel.validate();
 						data.validate();

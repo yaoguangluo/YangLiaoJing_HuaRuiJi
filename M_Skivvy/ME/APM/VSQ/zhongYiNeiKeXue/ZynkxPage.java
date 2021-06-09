@@ -710,7 +710,7 @@ public class ZynkxPage extends Container implements MouseListener, KeyListener{
 //								if(table.getValueAt(i, 2).toString().contains("ÍÆÄÃ")) {
 //									continue Here;
 //								}
-//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.ExecPLSQLImp.ExecPLSQL(plsql, mod);
+//								OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.imp.E_PLSQLImp.E_PLSQL(plsql, mod);
 //							}catch(Exception e1) {
 //								e1.printStackTrace();
 //							}
