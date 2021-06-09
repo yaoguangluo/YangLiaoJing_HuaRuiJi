@@ -21,10 +21,10 @@ import OSI.OPE.MSQ.SS.stable.StableData;
 import OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornJSplitPane;
 import OSI.OPE.OVU.MVQ.OVU.PQE.nodeView.NodeShow;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.CheckRangeVPS;
-import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.ChooseCheckVPS;
+import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.ChooseQ_VPS;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.DrawArrowVPS;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.DrawFlashSide;
-import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.DynamicLineUpdaterVPS;
+import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.DynamicLineU_VPS;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.LinkList;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.LinkNode;
 import OSI.OPE.OVU.MVU.OVU.PQE.nodeEdit.Sort;
@@ -64,8 +64,8 @@ public class ThisCanvasBackUp extends JPanel implements MouseMotionListener
 	public MenuItem save, saveAs, delete, load;
 	public MenuItem menuItem;
 	public MenuItem configre, run, show, dNode, dLine;
-	public ChooseCheckVPS chooseCheck;
-	public DynamicLineUpdaterVPS dynamicLineUpdater;
+	public ChooseQ_VPS chooseCheck;
+	public DynamicLineU_VPS dynamicLineUpdater;
 	public DrawArrowVPS drawArrow;
 	public CheckRangeVPS checkRange;
 	public ThisCanvasBackUp(Thread threadApplet, LinkList first, NodeShow nodeView
@@ -80,8 +80,8 @@ public class ThisCanvasBackUp extends JPanel implements MouseMotionListener
 		this.nodeView= nodeView;
 		this.nodeMenu= nodeMenu;
 		this.rightBotJTextPane= rightBotJTextPane;
-		chooseCheck= new ChooseCheckVPS();
-		dynamicLineUpdater= new DynamicLineUpdaterVPS();
+		chooseCheck= new ChooseQ_VPS();
+		dynamicLineUpdater= new DynamicLineU_VPS();
 		drawArrow= new DrawArrowVPS();
 		checkRange= new CheckRangeVPS();
 		this.setBackground(Color.white);
