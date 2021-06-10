@@ -7,8 +7,8 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import OSI.ESU.stable.Stable;
-import OSI.ESU.string.String_ESU;
+import ESU.stable.Stable;
+import ESU.string.String_ESU;
 import PEU.P.dna.Token;
 import PEU.P.dna.TokenCerts;
 public class RestCall {

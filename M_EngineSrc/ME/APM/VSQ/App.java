@@ -9,6 +9,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
 import AVQ.OEQ.cap.Monitor;
+import ESU.string.String_ESU;
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import IMS.EUQ.SP.SoundWaveJPanel;
 import ME.APM.VSQ.Harrison.CecilPage;
@@ -31,7 +32,6 @@ import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.AOP.rest.medicine.RestMedicinePortImpl;
-import OSI.ESU.string.String_ESU;
 import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
 import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;

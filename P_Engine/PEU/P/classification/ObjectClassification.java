@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import OSI.ESU.list.List_ESU;
+import ESU.list.List_ESU;
 //罗瑶光
 //昨天有了合并函数,今天就设计分类函数
 public class ObjectClassification {

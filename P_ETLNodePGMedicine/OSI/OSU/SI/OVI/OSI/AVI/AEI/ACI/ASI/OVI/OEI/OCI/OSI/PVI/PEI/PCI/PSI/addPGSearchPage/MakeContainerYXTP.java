@@ -25,12 +25,12 @@ import javax.swing.JPanel;
 
 import javax.swing.JTabbedPane;
 
+import ESU.list.List_ESU;
+import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
-import OSI.ESU.list.List_ESU;
-import OSI.ESU.sort.Quick9DLYGWithString_ESU;
 import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.MSQ.SS.stable.StableData;

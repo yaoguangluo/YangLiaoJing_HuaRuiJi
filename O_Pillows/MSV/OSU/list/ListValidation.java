@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import OSI.ESU.stable.Stable;
+import ESU.stable.Stable;
 public class ListValidation{
 	public static boolean ListSetsCheck(List<Object> list, String setsType) {
 		Iterator<Object> iterator= list.iterator();

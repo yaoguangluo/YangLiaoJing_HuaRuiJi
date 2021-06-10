@@ -1,6 +1,6 @@
 package MSV.OSU.matrix;
 
-import OSI.ESU.stable.Stable;
+import ESU.stable.Stable;
 
 public class MatrixValidation{
 	public static boolean matrixCheck(Object[][] objects

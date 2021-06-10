@@ -5,7 +5,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Date;
 
-import OSI.ESU.stable.Stable;
+import ESU.stable.Stable;
 //refer www.bjtime.com 第 12，13，14行 共三行
 //注意如果bjtime 网站关闭了这个功能，该函数将无效，请再互联网搜索其他提供时间校验的网址。
 public class DateValidation{
