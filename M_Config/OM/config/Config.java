@@ -1,4 +1,4 @@
-package OSI.config;
+package OM.config;
 //准备设计配置文件，养疗经启动配置都走这里的参数
 //罗瑶光
 public class Config{
