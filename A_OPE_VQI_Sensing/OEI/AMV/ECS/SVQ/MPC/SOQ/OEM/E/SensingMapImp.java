@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OCI.AMV.ECS.SVQ.MPC.fhmm.C.SensingMap;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 public class SensingMapImp implements SensingMap{
 	private Map<String, Object> lenovoMap;
 	

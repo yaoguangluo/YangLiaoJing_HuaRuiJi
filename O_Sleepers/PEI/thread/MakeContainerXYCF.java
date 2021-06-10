@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.xiYiYaoCai.XyscPage;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 public class MakeContainerXYCF extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;

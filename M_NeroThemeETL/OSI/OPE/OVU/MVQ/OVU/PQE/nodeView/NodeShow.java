@@ -13,7 +13,7 @@ import java.util.Map;
 import javax.swing.tree.*;
 
 import ME.APM.VSQ.App;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.GUISample;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornTreeCellRenderer;

@@ -9,9 +9,9 @@ import java.util.Map;
 import AEU.AVC.SUQ.engine.EmotionInit;
 import AEU.AVC.SUQ.engine.EnvironmentInit;
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 
 public class InitBehaviorICAKernel{
 	private double[] kernel;

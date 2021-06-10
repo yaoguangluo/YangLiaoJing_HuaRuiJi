@@ -8,7 +8,7 @@ import java.util.Map;
 import javax.swing.*;
 
 import ME.APM.VSQ.App;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 public class DNA3DShowNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI{	

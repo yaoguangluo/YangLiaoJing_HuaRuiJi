@@ -23,14 +23,14 @@ import javax.media.opengl.*;
 
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import VSQ.OPE.jogl.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.GLBuffers;
 import com.jogamp.opengl.util.gl2.GLUT;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import ME.APM.VSQ.App;
 import ME.S.stables.PathLinkFile;
 

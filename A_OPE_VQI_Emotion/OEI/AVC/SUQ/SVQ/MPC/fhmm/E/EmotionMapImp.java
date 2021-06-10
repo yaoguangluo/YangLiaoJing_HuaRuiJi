@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
 public class EmotionMapImp implements EmotionMap{
 	private Map<String, Object> positiveMap;

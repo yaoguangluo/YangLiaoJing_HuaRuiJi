@@ -7,11 +7,11 @@ import java.util.Map;
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
 import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMapImp;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
+import OCI.ME.analysis.C.Analyzer;
 import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {

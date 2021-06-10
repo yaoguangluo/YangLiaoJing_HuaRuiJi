@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 public class AddHLSBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{

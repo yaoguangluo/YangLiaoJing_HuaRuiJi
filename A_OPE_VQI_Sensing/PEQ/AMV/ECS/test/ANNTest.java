@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import PEU.P.nlp.*;
 public class ANNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {

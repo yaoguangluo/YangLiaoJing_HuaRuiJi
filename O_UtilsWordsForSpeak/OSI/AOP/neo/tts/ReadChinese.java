@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import ME.APM.VSQ.App;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 //编码设计：罗瑶光
 //refer Jacob 语音 api demo
 //refer 德塔图灵系统，极速中文分词  罗瑶光

@@ -2,7 +2,7 @@ package AEU.OCI.AVC.SUQ.estimation.C;
 
 import java.util.Map;
 
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 
 public interface RatioMap {
 	Map<String, EmotionSample> getEmotionSampleMap(Map<Integer, WordFrequency> wordFrequencyMap

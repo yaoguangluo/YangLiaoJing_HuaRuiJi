@@ -8,12 +8,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
 import MSU.OCI.ME.SMS.translator.C.Translator;
 import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class RestMedicinePortImpl {	

@@ -8,6 +8,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import AVQ.OEQ.cap.Monitor;
 import ESU.string.String_ESU;
 import IMO.EVU.biProcessor.CoAuthorForWord;
@@ -32,8 +33,7 @@ import MVQ.button.DetaButton;
 import MVQ.tabbedpane.DetabbedPane;
 import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.AOP.rest.medicine.RestMedicinePortImpl;
 import OSI.OPE.MSQ.SS.stable.StableData;

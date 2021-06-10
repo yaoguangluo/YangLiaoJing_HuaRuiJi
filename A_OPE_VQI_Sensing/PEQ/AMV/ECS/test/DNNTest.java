@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import MSV.OSQ.sets.DetaDouble;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import PEU.P.nlp.*;
 public class DNNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {

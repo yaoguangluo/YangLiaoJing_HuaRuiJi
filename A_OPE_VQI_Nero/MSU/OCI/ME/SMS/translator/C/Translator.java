@@ -2,8 +2,8 @@ package MSU.OCI.ME.SMS.translator.C;
 import java.io.IOException;
 import java.util.List;
 
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import OCI.ME.analysis.C.Analyzer;
 public interface Translator{	
 	void init(Analyzer analyzer) throws IOException;
 	String EnglishStringToChineseString(Analyzer analyzer, String EnglishString);

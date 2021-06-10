@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import MSU.OCI.ME.SMS.translator.C.Translator;
 import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.Analyzer;
+import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 
 //import timeProcessor.TimeCheck;
 public class DemoTSLT {

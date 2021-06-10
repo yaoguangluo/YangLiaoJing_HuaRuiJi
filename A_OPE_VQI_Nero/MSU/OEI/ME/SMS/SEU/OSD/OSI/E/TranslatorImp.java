@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import MSU.OCI.ME.SMS.translator.C.Translator;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 public class TranslatorImp implements Translator{
 	public Map<String, String> poscc;
 	public Map<String, String> posec;

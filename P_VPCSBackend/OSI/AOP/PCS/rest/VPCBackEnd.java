@@ -2,7 +2,7 @@ package OSI.AOP.PCS.rest;
 import java.util.Map;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.PCS.PP.portImpl.RestLoginPortImpl;
 import OSI.AOP.PCS.PP.portImpl.RestNLPPortImpl;
 import PCS.VQS.DSU.V.VtoV;

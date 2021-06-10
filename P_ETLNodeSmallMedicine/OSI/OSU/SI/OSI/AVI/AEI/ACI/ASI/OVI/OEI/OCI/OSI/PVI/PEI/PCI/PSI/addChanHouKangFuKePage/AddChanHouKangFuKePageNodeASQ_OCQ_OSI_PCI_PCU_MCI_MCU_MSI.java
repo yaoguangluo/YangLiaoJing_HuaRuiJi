@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.swing.*;
 
 import ME.APM.VSQ.App;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 

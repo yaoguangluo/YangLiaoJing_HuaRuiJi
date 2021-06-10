@@ -29,6 +29,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import ESU.list.List_ESU;
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ESU.string.String_ESU;
@@ -37,9 +39,7 @@ import MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import PEU.P.table.TableSorterZYNK;
 import MSV.OSU.string.NullObject;
 import MVQ.button.DetaButton;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSV.VCQ.standard.DictionaryStandardDB;
 public class XyscPage extends Container implements MouseListener, KeyListener{

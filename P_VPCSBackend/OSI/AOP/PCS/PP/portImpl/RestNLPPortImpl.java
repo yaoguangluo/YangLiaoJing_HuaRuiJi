@@ -19,11 +19,11 @@ import java.util.Map;
 import AEU.AVC.SUQ.engine.LenovoInit;
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OPM.VEC.ica.InitBehaviorICAKernel;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import MSV.OSQ.sets.DetaDouble;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
+import OCI.ME.analysis.C.Analyzer;
 import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class RestNLPPortImpl{// implements RestLoginPort {
 	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
 		//System.out.printntln(string);

@@ -6,8 +6,8 @@ import java.util.Map;
 
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
 public class RatioMapImp implements RatioMap{
 

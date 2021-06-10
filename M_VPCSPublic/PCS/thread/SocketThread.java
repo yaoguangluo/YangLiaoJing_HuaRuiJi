@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.PCS.rest.RestMap;
 
 public class SocketThread extends Thread implements Runnable{

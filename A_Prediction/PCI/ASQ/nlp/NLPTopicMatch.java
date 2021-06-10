@@ -7,12 +7,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import ESU.list.List_ESU;
+import OCI.ME.analysis.C.Analyzer;
+import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OEU.LYG4DQS4D.LYG9DWithDoubleQuickSort4D;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 //import OSI.PCI.ASQ.statistic.LYG4DWithDoubleQuickSort4D;
 public class NLPTopicMatch{
 	//<<NLP Algorithm of Matching The POS Scored Sentence>>.

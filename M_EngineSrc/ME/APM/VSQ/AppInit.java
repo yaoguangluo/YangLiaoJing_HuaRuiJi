@@ -10,7 +10,7 @@ import MVQ.button.CfxButton;
 import MVQ.label.DetaLabelConjunction;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
-import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OSI.AOP.PCS.server.BootVPCSBackEnd;
 import OSI.AOP.VPC.S.restServer.RestServer;
 import OSI.AOP.VPC.server.BootVPCSFrontEnd;

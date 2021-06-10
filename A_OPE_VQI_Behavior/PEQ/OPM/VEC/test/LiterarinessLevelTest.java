@@ -2,7 +2,7 @@ package PEQ.OPM.VEC.test;
 import java.io.IOException;
 
 import AEU.OPM.VEC.ica.InitBehaviorICAKernel;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
 public class LiterarinessLevelTest{
 	double[] literarinessLevel;

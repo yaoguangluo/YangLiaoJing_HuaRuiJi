@@ -28,15 +28,15 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import ESU.list.List_ESU;
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
 import PEU.P.table.TableSorterZYNK;
 import MVQ.button.DetaButton;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.neo.tts.ReadChinese;
 public class CecilPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
