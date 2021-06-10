@@ -120,7 +120,7 @@
  https://github.com/yaoguangluo/DNA_Full_DOC/blob/main/罗瑶光-DNA催化与肽计算第二卷20210305.pdf  
  10.1>元基,编码,公式,解码定义类 见工程文件夹 OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde  
  10.2>非卷积的语义元基视觉, 见工程文件 AVQ.OEQ.cap.Monitor.java 1022行起始等  
- 10.3>语义的元基session, 见工程文件 OSI.OPE.MSU.AMS.VQS.SQV.SI.OSU.SMV.http.SessionValidation.java  
+ 10.3>语义的元基session, 见工程文件 MSU.AMS.VQS.SQV.SI.OSU.SMV.http.SessionValidation.java  
  10.4>非生化语义的物理元基加密, 见工程文件 ME.APM.VSQ.DictionaryFromDB.java  
  10.5>语义的肽展搜索, 见工程文件 OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch.java   
  10.6>语义的肽展索引, 见工程文件 OSI.OSU.SI.OSI.AVI.AEI.ACI.ASI.OVI.OEI.OCI.OSI.PVI.PEI.PCI.PSI.addZYBCBook.dictionary.java 355行起始等  
