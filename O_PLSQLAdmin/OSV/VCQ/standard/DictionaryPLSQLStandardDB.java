@@ -77,7 +77,7 @@ public class DictionaryPLSQLStandardDB{
 					"baseName:ZYY;" + 
 					"tableName:"+ tabKey +":select;" +
 					"condition:or:ID|<=|3000;";
-			map= OSI.OPE.ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQL_E.E_PLSQL(plsql, true);
+			map= ME.SM.OP.SM.AOP.MEC.SIQ.E.E_PLSQL_E.E_PLSQL(plsql, true);
 		}catch(Exception e1) {
 			//×¼±¸Ð´»Ø¹ö
 			e1.printStackTrace();

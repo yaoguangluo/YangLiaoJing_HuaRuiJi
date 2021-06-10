@@ -1,8 +1,8 @@
 package OSI.AOP.MS.VPC.C;
 import java.util.Map;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDB_DE;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
+import OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.RestDB_DE;
+import OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
 public class DC {
 	public static String exec(String string, Map<String, String> data)

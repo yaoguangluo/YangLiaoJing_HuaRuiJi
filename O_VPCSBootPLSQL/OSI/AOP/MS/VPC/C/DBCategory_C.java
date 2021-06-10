@@ -1,8 +1,8 @@
 package OSI.AOP.MS.VPC.C;
 import java.util.Map;
 
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.Rest_C_Port_E;
-import OSI.OPE.OP.SM.AOP.MEC.SIQ.stable.StableData;
+import OP.SM.AOP.MEC.SIQ.VPC.PP.port.E.Rest_C_Port_E;
+import OP.SM.AOP.MEC.SIQ.stable.StableData;
 import PEU.P.map.*;
 public class DBCategory_C {
 	public static String exec(String string, Map<String, String> data) 
