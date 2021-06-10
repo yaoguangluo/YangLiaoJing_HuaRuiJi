@@ -8,9 +8,9 @@ import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OPE.ASQ.PSU.test.DemoEX;
 import OPE.ASQ.PSU.test.TimeCheck;
-import OSI.OPE.PCS.VQS.DSU.V.VtoV;
-import OSI.OPE.PCS.transaction.TransactionDelegate;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
+import PCS.VQS.DSU.V.VtoV;
+import PCS.transaction.TransactionDelegate;
+import VPC.VQS.DSU.utils.DetaDBUtil;
 
 import java.io.IOException;
 import java.net.URLEncoder;

@@ -5,7 +5,7 @@ import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.PCS.PP.portImpl.RestLoginPortImpl;
 import OSI.AOP.PCS.PP.portImpl.RestNLPPortImpl;
-import OSI.OPE.PCS.VQS.DSU.V.VtoV;
+import PCS.VQS.DSU.V.VtoV;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;
 	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) 

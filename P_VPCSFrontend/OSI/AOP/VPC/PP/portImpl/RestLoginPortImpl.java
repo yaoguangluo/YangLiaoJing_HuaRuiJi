@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import OSI.OPE.VPC.transaction.TransactionDelegate;
+import VPC.transaction.TransactionDelegate;
 
 public class RestLoginPortImpl {//implements RestLoginPort {
 

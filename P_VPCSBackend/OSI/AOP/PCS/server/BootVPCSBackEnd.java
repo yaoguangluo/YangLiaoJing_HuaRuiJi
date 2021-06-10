@@ -9,8 +9,8 @@ import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
 import OM.config.Config;
 import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
-import OSI.OPE.PCS.thread.SocketThread;
-import OSI.OPE.PCS.thread.SocketThreadPool;
+import PCS.thread.SocketThread;
+import PCS.thread.SocketThreadPool;
 public class BootVPCSBackEnd extends Thread{
 	private static ServerSocket server;
 	@SuppressWarnings("unused")

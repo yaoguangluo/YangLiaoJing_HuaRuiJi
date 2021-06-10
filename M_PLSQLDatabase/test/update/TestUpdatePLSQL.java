@@ -1,10 +1,10 @@
 package test.update;
 
+import MSV.PCS.C.RequestFilter_C;
 import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
-import OSI.OPE.MSV.PCS.C.RequestFilter_C;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
 import OSV.ESU.standard.U_CellStandard;
+import VPC.VQS.DSU.utils.DetaDBUtil;
+import VPC.VQS.DSU.utils.DetaUtil;
 
 public class TestUpdatePLSQL{
 	public static void main(String[] argv) throws Exception {

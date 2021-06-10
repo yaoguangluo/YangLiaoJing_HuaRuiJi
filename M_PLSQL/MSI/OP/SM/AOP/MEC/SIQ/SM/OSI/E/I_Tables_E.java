@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
 import PEU.P.cache.*;
+import VPC.VQS.DSU.utils.DetaDBUtil;
 @SuppressWarnings("unchecked")
 public class I_Tables_E {
 	public static void createTable(Map<String, Object> object, boolean mod) throws Exception {

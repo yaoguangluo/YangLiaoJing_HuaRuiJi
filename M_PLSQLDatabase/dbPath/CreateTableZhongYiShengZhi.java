@@ -1,9 +1,9 @@
 package dbPath;
 
+import MSV.PCS.C.RequestFilter_C;
 import OSI.AOP.MS.VPC.S.hall.DatabaseLogHall;
-import OSI.OPE.MSV.PCS.C.RequestFilter_C;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaUtil;
+import VPC.VQS.DSU.utils.DetaDBUtil;
+import VPC.VQS.DSU.utils.DetaUtil;
 
 public class CreateTableZhongYiShengZhi{
 	public static void main(String[] argv) throws Exception {

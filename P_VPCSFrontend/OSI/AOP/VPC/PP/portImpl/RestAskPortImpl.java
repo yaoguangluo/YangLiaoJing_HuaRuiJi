@@ -13,8 +13,8 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import ESU.json.Json_ESU;
-import OSI.OPE.PCS.VQS.DSU.V.VtoV;
-import OSI.OPE.VPC.VQS.DSU.utils.DetaFrontEndUtil;
+import PCS.VQS.DSU.V.VtoV;
+import VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
 public class RestAskPortImpl{// implements RestAskPort {
 	@SuppressWarnings("deprecation")
