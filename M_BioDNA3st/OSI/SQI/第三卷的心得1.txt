@@ -38,7 +38,7 @@ M_UnicornNeroThemeETL\OSI\OPE\SI\MCI\OEI\OVU\PQE\extOSGI\OSI_OSU_ASQ_OCQ_OSI_PCI
 这是我一个动力,因为O元基和A元基的函数比例越来越小,在均匀染色体索引的领域,我迫切需要做点什么.
 
 
-20210610 在github gitee 留言中描述下: 我做了一个简单的应用操作,将 包中的相同 元基组 进行过滤并 变成文件夹名中. 我定义为 元基的 根枝扩展. (Intons Root Extension IRE)
+20210610 在github gitee 留言中描述下: 我做了一个简单的应用操作,将 包中的相同 元基组 进行过滤并 变成文件夹名中. 我定义为 元基的 根枝扩展. (Initons Root Extension IRE)
 IRE 是 未来数据分类的 一个产业趋势. 作用 分类精简, 数据代谢, 数据生长,
 我猜测生物的生长过程也是这样的.共用一种模式.
 
