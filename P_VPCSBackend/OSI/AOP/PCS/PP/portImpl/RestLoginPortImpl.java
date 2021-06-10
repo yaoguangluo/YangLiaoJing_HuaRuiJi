@@ -3,11 +3,11 @@ package OSI.AOP.PCS.PP.portImpl;
 
 import org.json.JSONObject;
 
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
-import OSI.OPE.ASQ.PSU.test.DemoEX;
-import OSI.OPE.ASQ.PSU.test.TimeCheck;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OPE.ASQ.PSU.test.DemoEX;
+import OPE.ASQ.PSU.test.TimeCheck;
 import OSI.OPE.PCS.VQS.DSU.V.VtoV;
 import OSI.OPE.PCS.transaction.TransactionDelegate;
 import OSI.OPE.VPC.VQS.DSU.utils.DetaDBUtil;

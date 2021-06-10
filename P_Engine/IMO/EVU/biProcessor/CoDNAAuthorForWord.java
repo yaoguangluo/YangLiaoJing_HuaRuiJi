@@ -23,7 +23,7 @@ import javax.media.opengl.*;
 
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
 import VSQ.OPE.jogl.JOGLOBJShape;

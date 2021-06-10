@@ -23,8 +23,8 @@ import javax.media.opengl.*;
 
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import VSQ.OPE.jogl.JOGLOBJShape;
 
 import com.jogamp.opengl.util.FPSAnimator;

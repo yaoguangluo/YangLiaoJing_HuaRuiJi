@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;
 	public Analyzer analyzer;

@@ -22,7 +22,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import ME.APM.VSQ.App;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import PEU.P.wave.DFT;
 
 public class MakeContainerZNSZ extends Thread implements Runnable{

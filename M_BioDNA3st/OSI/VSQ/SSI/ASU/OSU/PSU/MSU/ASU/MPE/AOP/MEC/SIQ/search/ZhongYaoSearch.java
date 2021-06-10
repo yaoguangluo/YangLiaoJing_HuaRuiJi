@@ -6,7 +6,7 @@ import java.util.Map;
 import ESU.list.List_ESU;
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 //作者 罗瑶光
 //思想 元基肽展公式

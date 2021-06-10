@@ -1,10 +1,10 @@
 package OSI.AOP.PCS.rest;
 import java.util.Map;
 
+import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.PCS.PP.portImpl.RestLoginPortImpl;
 import OSI.AOP.PCS.PP.portImpl.RestNLPPortImpl;
-import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 import OSI.OPE.PCS.VQS.DSU.V.VtoV;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;

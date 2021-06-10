@@ -1,15 +1,9 @@
 package OSI.AOP.PCS.PP.portImpl;
-import OSI.AEU.AVC.SUQ.engine.LenovoInit;
-import OSI.AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
-import OSI.AEU.OPM.VEC.ica.InitBehaviorICAKernel;
-import OSI.OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OSI.OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
-import OSI.PEQ.AMV.ECS.test.ANNTest;
-import OSI.PEQ.AMV.ECS.test.DNNTest;
-import OSI.PEQ.AMV.ECS.test.RNN_IDETest;
-import OSI.PEQ.AMV.ECS.test.SensingTest;
-import OSI.PEQ.OPM.VEC.test.SuccessICATest;
+import PEQ.AMV.ECS.test.ANNTest;
+import PEQ.AMV.ECS.test.DNNTest;
+import PEQ.AMV.ECS.test.RNN_IDETest;
+import PEQ.AMV.ECS.test.SensingTest;
+import PEQ.OPM.VEC.test.SuccessICATest;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,8 +16,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import AEU.AVC.SUQ.engine.LenovoInit;
+import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
+import AEU.OPM.VEC.ica.InitBehaviorICAKernel;
 import MSV.OSQ.sets.DetaDouble;
+import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import OPE.ASQ.PSU.OCI.ME.analysis.C.Analyzer;
 public class RestNLPPortImpl{// implements RestLoginPort {
 	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
 		//System.out.printntln(string);

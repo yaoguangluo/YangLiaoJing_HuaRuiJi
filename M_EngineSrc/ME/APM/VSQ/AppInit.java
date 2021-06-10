@@ -10,11 +10,10 @@ import MVQ.button.CfxButton;
 import MVQ.label.DetaLabelConjunction;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
+import OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OSI.AOP.PCS.server.BootVPCSBackEnd;
 import OSI.AOP.VPC.S.restServer.RestServer;
 import OSI.AOP.VPC.server.BootVPCSFrontEnd;
-import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OSI.OPE.ASQ.PSU.OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
 import OSQ.disk.GetDisk;
 import PEI.thread.MakeContainerBJY;
 import PEI.thread.MakeContainerGJJD;
@@ -56,6 +55,7 @@ import javax.swing.event.ChangeListener;
 
 import org.tinos.listen.ReadToWav;
 import ME.S.stables.PathLinkFile;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class AppInit {	
 	@SuppressWarnings({ "deprecation", "resource" })

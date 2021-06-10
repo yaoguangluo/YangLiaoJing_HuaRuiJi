@@ -10,10 +10,10 @@ import java.util.Map;
 
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
-import OSI.MSU.OCI.ME.SMS.translator.C.Translator;
-import OSI.MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
-import OSI.OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
+import MSU.OCI.ME.SMS.translator.C.Translator;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
+import OPE.ASQ.PSU.AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class RestMedicinePortImpl {	
