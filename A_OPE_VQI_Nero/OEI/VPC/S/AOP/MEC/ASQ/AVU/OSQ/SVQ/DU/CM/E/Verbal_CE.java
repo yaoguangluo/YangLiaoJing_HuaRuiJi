@@ -1,6 +1,8 @@
-package OCI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.controller.C;
+package OEI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.CM.E;
 
-public interface VerbalController{
+import OCI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.controller.C.Verbal_C;
+
+public class Verbal_CE implements Verbal_C{
 	 
 	//get verbal
 	

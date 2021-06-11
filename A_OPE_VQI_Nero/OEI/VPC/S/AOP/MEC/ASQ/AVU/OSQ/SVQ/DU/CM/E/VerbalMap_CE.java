@@ -1,6 +1,7 @@
-package OCI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.controller.C;
+package OEI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.CM.E;
+import OCI.VPC.S.AOP.MEC.ASQ.AVU.OSQ.SVQ.DU.controller.C.VerbalMap_C;
 
-public interface VerbalMapController{
+public class VerbalMap_CE implements VerbalMap_C{
 	//近义词synonymsMap
 	
 	//反义词antonymsMap
