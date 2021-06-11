@@ -5,5 +5,5 @@ package OSI.AOP.VPC.PP.project_E;
 
 
 
-public class LoginProjectImpl {//implements LoginProject {
+public class LoginProject_E {//implements LoginProject {
 }

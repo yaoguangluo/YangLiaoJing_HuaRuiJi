@@ -10,7 +10,7 @@ import MS.VPC.SH.Sleeper;
 import MS.VPC.SH.SleeperHall;
 import OM.config.Config;
 import VPC.VQS.DSU.utils.DetaUtil;
-public class ServerInitControllerVPCSFrontEnd {
+public class ServerInit_C_VPCSFrontEnd {
 	private ServerSocket server;
 	@SuppressWarnings("unused")
 	private Properties properties;

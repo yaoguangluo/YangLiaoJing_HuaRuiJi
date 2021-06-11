@@ -3,7 +3,7 @@ import java.util.Map;
 //
 //import org.lyg.common.maps.VtoV;
 //import org.lyg.vpc.P.portImpl.RestControllerPortImpl;
-public class DBCategoryController {
+public class DBCategory_C {
 	public static String exec(String string, Map<String, String> data) throws Exception {
 //		if(string.equalsIgnoreCase("/getDBCategory")){
 //			return VtoV.ObjectToJsonString(RestControllerPortImpl.getDBCategory(data.get("baseName")

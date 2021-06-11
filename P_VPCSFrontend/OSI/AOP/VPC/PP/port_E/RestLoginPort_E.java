@@ -6,7 +6,7 @@ import java.util.Map;
 
 import VPC.transaction.TransactionDelegate;
 
-public class RestLoginPortImpl {//implements RestLoginPort {
+public class RestLoginPort_E {//implements RestLoginPort {
 
 	public static Map<String, Object> login(String uEmail, String uPassword) throws Exception {
 		Map<String, Object> map = TransactionDelegate.transactionLogin(uEmail, uPassword);

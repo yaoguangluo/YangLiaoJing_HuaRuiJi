@@ -16,7 +16,7 @@ import MSU.OCI.ME.SMS.translator.C.Translator;
 import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
 import OSI.OPE.MSQ.SS.stable.StableData;
 
-public class RestMedicinePortImpl {	
+public class RestMedicinePort_E {	
 	public static App kernel(App app, String string) {
 		//Analyst
 				String zhongyao="";
@@ -321,7 +321,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedbackZY(App app,String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		if(null==app) {
 			return null;
 		}
@@ -370,7 +370,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedbackXY(App app,String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		if(null== app) {
 			return null;
 		}
@@ -423,7 +423,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedbackZT(App app, String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		//feedback
 		String preAdd= "仅作病症预测推荐，不做行医诊治分析，请拥有医师资格证人员慎重分析病情，来做证候分析。谢谢!";
 		preAdd+= "\r\n\r\n";
@@ -496,7 +496,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedbackXT(App app, String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		//feedback
 		String preAdd= "仅作病症预测推荐，不做行医诊治分析，请拥有医师资格证人员慎重分析病情，来做证候分析。谢谢!";
 		preAdd+= "西药推荐：\r\n\r\n";
@@ -520,7 +520,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedbackYT(App app, String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		//feedback
 		String preAdd= "仅作病症预测推荐，不做行医诊治分析，请拥有医师资格证人员慎重分析病情，来做证候分析。谢谢!";
 		preAdd+= "\r\n\r\n";
@@ -593,7 +593,7 @@ public class RestMedicinePortImpl {
 	}
 	
 	public static Map<String, Object> getMedicineBookFeedback(App app, String string) {
-		app= RestMedicinePortImpl.kernel(app, string);
+		app= RestMedicinePort_E.kernel(app, string);
 		//feedback
 		String preAdd= "仅作病症预测推荐，不做行医诊治分析，请拥有医师资格证人员慎重分析病情，来做证候分析。谢谢!";
 		//中医诊断：

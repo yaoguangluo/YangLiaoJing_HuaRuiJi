@@ -14,7 +14,7 @@ import OSI.AOP.MS.VPC.C.DC;
 import OSI.AOP.MS.VPC.C.IUC;
 import OSI.AOP.MS.VPC.C.QC;
 import OSI.AOP.MS.VPC.C.UC;
-import OSI.AOP.rest.medicine.RestMedicinePortImpl;
+import OSI.AOP.rest.medicine.RestMedicinePort_E;
 import PEU.P.map.*;
 public class VPC {
 	public static String forward(App app, String string, Map<String, String> data)
@@ -73,22 +73,22 @@ public class VPC {
 			return VtoV.ObjectToJsonString(RestLoginPort_E.checkStatus(data.get("token")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEZY)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackZY(app, data.get("medicine")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.getMedicineBookFeedbackZY(app, data.get("medicine")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEXY)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackXY(app, data.get("medicine")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.getMedicineBookFeedbackXY(app, data.get("medicine")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEZT)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackZT(app, data.get("medicine")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.getMedicineBookFeedbackZT(app, data.get("medicine")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEXT)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackXT(app, data.get("medicine")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.getMedicineBookFeedbackXT(app, data.get("medicine")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_MEDICINEYT)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.getMedicineBookFeedbackYT(app, data.get("medicine")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.getMedicineBookFeedbackYT(app, data.get("medicine")));	
 		}
 		if(string.equalsIgnoreCase(StableData.REST_PATH_SEARCH)){
-			return VtoV.ObjectToJsonString(RestMedicinePortImpl.doSearch(app, data.get("word")));	
+			return VtoV.ObjectToJsonString(RestMedicinePort_E.doSearch(app, data.get("word")));	
 		}
 		return StableData.STRING_EMPTY;
 	}

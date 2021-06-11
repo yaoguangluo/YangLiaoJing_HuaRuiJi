@@ -35,7 +35,7 @@ import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
 import OCI.ME.analysis.C.Analyzer;
 import OSI.AOP.neo.tts.ReadChinese;
-import OSI.AOP.rest.medicine.RestMedicinePortImpl;
+import OSI.AOP.rest.medicine.RestMedicinePort_E;
 import OSI.OPE.MSQ.SS.stable.StableData;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.FullDNATokenPDI;
@@ -368,7 +368,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 							string= String_ESU.charsetSwap(linkUrl.getFile().toString(), "GBK", "GBK");
 							String[] value= string.split("=");
 							if(value.length> 1) {
-								VtoV.ObjectToJsonString(RestMedicinePortImpl.doSearch(appInstance, value[1]));
+								VtoV.ObjectToJsonString(RestMedicinePort_E.doSearch(appInstance, value[1]));
 							}
 						} catch (UnsupportedEncodingException e2) {
 							e2.printStackTrace();

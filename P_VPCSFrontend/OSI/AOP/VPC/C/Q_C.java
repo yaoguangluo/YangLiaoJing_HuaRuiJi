@@ -3,7 +3,7 @@ import java.util.Map;
 
 //import org.lyg.common.maps.VtoV;
 //import org.lyg.vpc.P.portImpl.RestDBSelectImpl;
-public class SelectController {
+public class Q_C {
 	public static String exec(String string, Map<String, String> data) throws Exception {
 //		if(string.equalsIgnoreCase("/selectRowsByAttribute")){
 //			return VtoV.ObjectToJsonString(RestDBSelectImpl.selectRowsByAttribute(data.get("baseName")

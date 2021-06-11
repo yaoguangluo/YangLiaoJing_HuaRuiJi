@@ -5,14 +5,14 @@ import java.util.Map;
 
 import ME.APM.VSQ.App;
 import MSU.AMS.VQS.SQV.SI.OSU.SMV.http.SessionValidation;
-import OSI.AOP.VPC.C.ConfigController;
-import OSI.AOP.VPC.C.DBCategoryController;
-import OSI.AOP.VPC.C.DeleteController;
-import OSI.AOP.VPC.C.InsertController;
-import OSI.AOP.VPC.C.SelectController;
-import OSI.AOP.VPC.C.UpdateController;
-import OSI.AOP.VPC.PP.port_E.RestAskPortImpl;
-import OSI.AOP.VPC.PP.port_E.RestLoginPortImpl;
+import OSI.AOP.VPC.C.Config_C;
+import OSI.AOP.VPC.C.DBCategory_C;
+import OSI.AOP.VPC.C.D_C;
+import OSI.AOP.VPC.C.IU_C;
+import OSI.AOP.VPC.C.Q_C;
+import OSI.AOP.VPC.C.U_C;
+import OSI.AOP.VPC.PP.port_E.RestAskPort_E;
+import OSI.AOP.VPC.PP.port_E.RestLoginPort_E;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.ASU.MPE.procedure.pde.TokenPDI;
 import PEU.P.dna.TokenCerts;
 import PEU.P.map.*;
@@ -64,106 +64,106 @@ public class VPC {
 		}
 		//controller
 		if(string.contains("/select")){
-			return SelectController.exec(string, data);	
+			return Q_C.exec(string, data);	
 		}
 		if(string.contains("/setDB")){
-			return ConfigController.exec(string, data);	
+			return Config_C.exec(string, data);	
 		}
 		if(string.contains("/insert")){
-			return InsertController.exec(string, data);	
+			return IU_C.exec(string, data);	
 		}
 		if(string.contains("/delete")){
-			return DeleteController.exec(string, data);	
+			return D_C.exec(string, data);	
 		}
 		if(string.contains("/update")){
-			return UpdateController.exec(string, data);	
+			return U_C.exec(string, data);	
 		}
 		if(string.contains("DBCategory")){
-			return DBCategoryController.exec(string, data);	
+			return DBCategory_C.exec(string, data);	
 		}
 		//restMap
 		if(string.equalsIgnoreCase("/login")){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.login(data.get("uEmail"),data.get("uPassword")));	
+			return VtoV.ObjectToJsonString(RestLoginPort_E.login(data.get("uEmail"),data.get("uPassword")));	
 		}
 		if(string.equalsIgnoreCase("/find")){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.find(data.get("uEmail")));
+			return VtoV.ObjectToJsonString(RestLoginPort_E.find(data.get("uEmail")));
 		}
 		if(string.equalsIgnoreCase("/logout")){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.logout(data.get("uEmail"), data.get("uToken")));
+			return VtoV.ObjectToJsonString(RestLoginPort_E.logout(data.get("uEmail"), data.get("uToken")));
 		}
 		if(string.equalsIgnoreCase("/register")){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.register(data.get("uEmail"), data.get("uEmailEnsure")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.register(data.get("uEmail"), data.get("uEmailEnsure")
 					, data.get("uName"), data.get("uPassword"), data.get("uPassWDEnsure"), data.get("uAddress")
 					, data.get("uPhone"), data.get("uWeChat"), data.get("uQq"), data.get("uAge"), data.get("uSex")));	
 		}
 		if(string.equalsIgnoreCase("/change")){
-			return VtoV.ObjectToJsonString(RestLoginPortImpl.change(data.get("uEmail"), data.get("uChange")
+			return VtoV.ObjectToJsonString(RestLoginPort_E.change(data.get("uEmail"), data.get("uChange")
 					, data.get("uChangeEnsure"),data.get("uToken"), data.get("uPassword")));	
 		}
 //		if(string.equalsIgnoreCase("/checkStatus")){
 //			return VtoV.ObjectToJsonString(RestLoginPortImpl.checkStatus(data.get("token")));	
 //		}
 		if(string.equalsIgnoreCase("/ask")){
-			return VtoV.ObjectToJsonString(RestAskPortImpl.ask(data.get("ip"), data.get("token")
+			return VtoV.ObjectToJsonString(RestAskPort_E.ask(data.get("ip"), data.get("token")
 					, data.get("message"), data.get("pointIp")));
 		}
 		if(string.equalsIgnoreCase("/feedBack")){
-			return VtoV.ObjectToJsonString(RestAskPortImpl.feedBack(data.get("ip"), data.get("token")
+			return VtoV.ObjectToJsonString(RestAskPort_E.feedBack(data.get("ip"), data.get("token")
 					, data.get("pointIp")));
 		}
 		if(string.equalsIgnoreCase("/getAskers")){
-			return VtoV.ObjectToJsonString(RestAskPortImpl.getAskers(data.get("token")));
+			return VtoV.ObjectToJsonString(RestAskPort_E.getAskers(data.get("token")));
 		}	
 		if(string.equalsIgnoreCase("/dataWS")){
-			return RestAskPortImpl.dataWS(data.get("message"));
+			return RestAskPort_E.dataWS(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCX")){
-			return RestAskPortImpl.dataCX(data.get("message"));
+			return RestAskPort_E.dataCX(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCY")){
-			return RestAskPortImpl.dataCY(data.get("message"));
+			return RestAskPort_E.dataCY(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataXL")){
-			return RestAskPortImpl.dataXL(data.get("message"));
+			return RestAskPort_E.dataXL(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataRN")){
-			return RestAskPortImpl.dataRN(data.get("message"));
+			return RestAskPort_E.dataRN(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCG")){
-			return RestAskPortImpl.dataCG(data.get("message"));
+			return RestAskPort_E.dataCG(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCJ")){
-			return RestAskPortImpl.dataCJ(data.get("message"));
+			return RestAskPort_E.dataCJ(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCL")){
-			return RestAskPortImpl.dataCL(data.get("message"));
+			return RestAskPort_E.dataCL(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataXX")){
-			return RestAskPortImpl.dataXX(data.get("message"));
+			return RestAskPort_E.dataXX(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataHF")){
-			return RestAskPortImpl.dataHF(data.get("message"));
+			return RestAskPort_E.dataHF(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataCP")){
-			return RestAskPortImpl.dataCP(data.get("message"));
+			return RestAskPort_E.dataCP(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataZF")){
-			return RestAskPortImpl.dataZF(data.get("message"));
+			return RestAskPort_E.dataZF(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataZY")){
-			return RestAskPortImpl.dataZY(data.get("message"));
+			return RestAskPort_E.dataZY(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataXY")){
-			return RestAskPortImpl.dataXY(data.get("message"));
+			return RestAskPort_E.dataXY(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataYT")){
-			return RestAskPortImpl.dataYT(data.get("message"));
+			return RestAskPort_E.dataYT(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataZT")){
-			return RestAskPortImpl.dataZT(data.get("message"));
+			return RestAskPort_E.dataZT(data.get("message"));
 		}	
 		if(string.equalsIgnoreCase("/dataXT")){
-			return RestAskPortImpl.dataXT(data.get("message"));
+			return RestAskPort_E.dataXT(data.get("message"));
 		}	
 		return "";
 	}

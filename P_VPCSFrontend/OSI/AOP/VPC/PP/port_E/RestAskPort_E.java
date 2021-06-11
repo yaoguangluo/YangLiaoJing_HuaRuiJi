@@ -16,7 +16,7 @@ import ESU.json.Json_ESU;
 import PCS.VQS.DSU.V.VtoV;
 import VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
-public class RestAskPortImpl{// implements RestAskPort {
+public class RestAskPort_E{// implements RestAskPort {
 	@SuppressWarnings("deprecation")
 	public static Map<String, Object> ask(String ip, String token, String message, String pointIp) throws Exception {
 		String json= null;

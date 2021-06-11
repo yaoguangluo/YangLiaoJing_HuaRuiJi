@@ -14,5 +14,5 @@ import VPC.VQS.DSU.utils.DetaFrontEndUtil;
 
 @SuppressWarnings("unused")
 
-public class LoginDAOImpl {//implements LoginDAO{
+public class LoginDAO_E {//implements LoginDAO{
 }
