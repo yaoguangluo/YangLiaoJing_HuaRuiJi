@@ -3,8 +3,8 @@ import java.util.Map;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OCI.ME.analysis.C.Analyzer;
-import OSI.AOP.PCS.PP.portImpl.RestLoginPortImpl;
-import OSI.AOP.PCS.PP.portImpl.RestNLPPortImpl;
+import OSI.AOP.PCS.PP.port_E.RestLoginPortImpl;
+import OSI.AOP.PCS.PP.port_E.RestNLPPortImpl;
 import PCS.VQS.DSU.V.VtoV;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;

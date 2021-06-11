@@ -1,10 +1,10 @@
-package OSI.AOP.PCS.PP.companyImpl;
+package OSI.AOP.PCS.PP.company_E;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import org.json.JSONObject;
 
-import OSI.AOP.PCS.PP.factoryImpl.LoginDAOImpl;
+import OSI.AOP.PCS.PP.factory_E.LoginDAOImpl;
 import OSI.AOP.PCS.view.Usr;
 import OSI.AOP.PCS.view.UsrToken;
 import PEU.P.dna.Token;
