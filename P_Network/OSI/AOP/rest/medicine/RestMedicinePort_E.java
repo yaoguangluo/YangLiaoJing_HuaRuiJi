@@ -13,7 +13,7 @@ import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import ESU.sort.Quick9DLYGWithString_ESU;
 import ME.APM.VSQ.App;
 import MSU.OCI.ME.SMS.translator.C.Translator;
-import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.Translator_E;
 import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class RestMedicinePort_E {	
@@ -143,7 +143,7 @@ public class RestMedicinePort_E {
 					app.editPane.key= zhongyao.toString();
 					app.editPane.keyReleased(null);
 				}
-				Translator ts= new TranslatorImp();
+				Translator ts= new Translator_E();
 				try {
 					ts.init(app.analyzer);
 				} catch (IOException e) {

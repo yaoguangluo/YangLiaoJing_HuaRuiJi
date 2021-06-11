@@ -7,8 +7,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 
 //import java.io.IOException;
 //import java.util.List;
@@ -24,7 +24,7 @@ public class DemoCogs {
     static int c = 0;
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+        A analyzer = new CogsBinaryForest_AE();
         //Analyzer analyzer = new FastAnalyzerImp();
         //Analyzer analyzer = new PrettyAnalyzerImp();
         //Analyzer analyzer = new BaseAnalyzerImp();
@@ -53,10 +53,10 @@ public class DemoCogs {
 
     public static class TaskWithResult implements Callable<String> {
         private int id;
-        private Analyzer analyzer;
+        private A analyzer;
         private String sss;
 
-        public TaskWithResult(int id, Analyzer analyzer, String sss) {
+        public TaskWithResult(int id, A analyzer, String sss) {
             this.id = id;
             this.analyzer = analyzer;
             this.sss = sss;

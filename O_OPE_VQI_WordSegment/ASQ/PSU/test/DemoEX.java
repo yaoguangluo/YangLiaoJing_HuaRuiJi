@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 public class DemoEX {
 	int a=0;
 	int b=0;
@@ -19,17 +19,17 @@ public class DemoEX {
 	
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+		A analyzer = new CogsBinaryForest_AE();
 		//analyzer.init();
 		analyzer.initMixed();
 		Map<String, String> pos = analyzer.getPosCnToCn();
 		List<String> sets = new ArrayList<>();
 		Map<String, WordFrequency> seta = new ConcurrentHashMap<>();
 		TimeCheck t = new TimeCheck();
-		String ss = "西红�?????";//32�?????
+		String ss = "西红�?????";//32�?????
 		DemoEX demoEX=new DemoEX();
 		t.begin();
-		for (int i = 0; i < 10; i++) { //重复500万次�????? 相当于处�????? 1.6亿字  耗费 �????? 7.280�????? 
+		for (int i = 0; i < 10; i++) { //重复500万次�????? 相当于处�????? 1.6亿字  耗费 �????? 7.280�????? 
 				sets= analyzer.parserMixedString(ss);
 		}
 		t.end();
@@ -59,7 +59,7 @@ public class DemoEX {
 		System.out.println("");
 //		t.duration();
 		System.out.println("");
-		System.out.println("词�?�分�?????-->");
+		System.out.println("词�?�分�?????-->");
 //		t.begin();
 		for (int j = 0; j < 1; j++) {
 			for (int i = 0; i < sets.size(); i++) {

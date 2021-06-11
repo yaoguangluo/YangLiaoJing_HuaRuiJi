@@ -9,8 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	private static final long serialVersionUID= 1L;
@@ -20,7 +20,7 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	protected String addressString;
 	protected String searchString;
 	public List<String[]> indexResult;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> posec;
@@ -31,7 +31,7 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 
 	public void run(final ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) 
 			throws IOException{
-		analyzer= new CogsBinaryForestAnalyzerE();
+		analyzer= new CogsBinaryForest_AE();
 		analyzer.initMixed();
 		//拿到中文数据
 		pos= analyzer.getPosCnToCn();

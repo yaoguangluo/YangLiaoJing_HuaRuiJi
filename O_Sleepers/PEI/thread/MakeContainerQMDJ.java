@@ -22,19 +22,19 @@ import javax.swing.JTabbedPane;
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.xlx.CoAuthorForWord;
 import MVQ.button.DetaButton;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionListener{
 	public Container jpanel5;
 	public App u;
 	public int dice= 0;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public JPanel panel_bg;
 	public Map<String, String> pos;
 	private int currentX;
 	private int currentY;
-	public MakeContainerQMDJ(Analyzer analyzer,Container jpanel5, App u2, JTabbedPane jTabbedpane
+	public MakeContainerQMDJ(A analyzer,Container jpanel5, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2,  Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();

@@ -37,7 +37,7 @@ import ME.APM.VSQ.App;
 import MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import PEU.P.table.TableSorterZYNK;
 import MVQ.button.DetaButton;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.neo.tts.ReadChinese;
 public class FckxPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
@@ -72,7 +72,7 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 	public Map<String, Object> dic_yh;
 	public Map<String, Object> dic_yf;
 	public Map<String, Object> dic_yx;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -88,7 +88,7 @@ public class FckxPage extends Container implements MouseListener, KeyListener{
 	public App app;
 	public ReadChinese readChinese;
 	private int row;
-	public FckxPage(JTextPane text, Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
+	public FckxPage(JTextPane text, A analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, JTabbedPane jTabbedpane, App app) throws IOException{
 		this.text = text;
 		this.app= app;

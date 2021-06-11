@@ -4,7 +4,7 @@ import java.util.Map;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.FMHMMNode;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.ME.nero.C.NERO_C_OneTime;
-public class NERO_C_OneTimeE implements NERO_C_OneTime {
+public class NERO_C_OneTime_E implements NERO_C_OneTime {
 	public StringBuilder getBinaryForestRecurWordOneTime(StringBuilder outputWordNode, String inputString
 			, int charPosition, int inputStringLength, Map<Long, FMHMMNode> forestRoots, int forestDepth
 			, int charPositionNext) {

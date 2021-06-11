@@ -8,13 +8,13 @@ import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.App;
 import ME.APM.VSQ.editPane.EditPane;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class MakeContainerBJY extends Thread implements  Runnable{
 	public Container jpanelSecond;
 	public App u;
     public JTabbedPane jTabbedpane;
     public List<String> tabNames;
-    public Analyzer analyzer;
+    public A analyzer;
     public Map<String, String> pos;
    	public Map<String, String> pose;
    	public Map<String, String> etc;
@@ -24,7 +24,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 	private Map<String, String> ctk;
 	private Map<String, String> ctt;
 	private Map<String, String> ctr;
-	public MakeContainerBJY(Analyzer analyzer, App u2, JTabbedPane jTabbedpane
+	public MakeContainerBJY(A analyzer, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, Map<String, String> pinyin
 			, Map<String, String> ctj, Map<String, String> ctt, Map<String, String> ctk, Map<String, String> ctr) {

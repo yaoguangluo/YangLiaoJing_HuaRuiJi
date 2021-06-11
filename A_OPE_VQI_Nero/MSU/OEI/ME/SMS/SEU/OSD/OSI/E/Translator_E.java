@@ -8,8 +8,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import MSU.OCI.ME.SMS.translator.C.Translator;
-import OCI.ME.analysis.C.Analyzer;
-public class TranslatorImp implements Translator{
+import OCI.ME.analysis.C.A;
+public class Translator_E implements Translator{
 	public Map<String, String> poscc;
 	public Map<String, String> posec;
 	public Map<String, String> posee;
@@ -17,7 +17,7 @@ public class TranslatorImp implements Translator{
 	public Map<String, String> cte;
 	public Map<String, String> fulletc;
 	public Map<String, String> fullcte;
-	public void init(Analyzer analyzer) throws IOException {
+	public void init(A analyzer) throws IOException {
 		posec = analyzer.getPosEnToCn();
 		posee = analyzer.getPosEnToEn();
 		poscc = analyzer.getPosCnToCn();
@@ -27,7 +27,7 @@ public class TranslatorImp implements Translator{
 		fullcte = analyzer.getFullCnToEn();
 	}
 
-	public String EnglishStringToChineseString(Analyzer analyzer, String EnglishString) {
+	public String EnglishStringToChineseString(A analyzer, String EnglishString) {
 		String[] nodes = analyzer.parserEnglishString(EnglishString);
 		StringBuilder sb = new StringBuilder();
 		for(String temp:nodes) {
@@ -46,7 +46,7 @@ public class TranslatorImp implements Translator{
 		return sb.toString();
 	}
 	
-	public String ChineseStringToEnglishString(Analyzer analyzer, String ChineseString) {
+	public String ChineseStringToEnglishString(A analyzer, String ChineseString) {
 		List<String> nodes = analyzer.parserString(ChineseString);
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
@@ -64,7 +64,7 @@ public class TranslatorImp implements Translator{
 		return sb.toString();
 	}
 
-	public String MixedStringToChineseString(Analyzer analyzer, String mixedString) {
+	public String MixedStringToChineseString(A analyzer, String mixedString) {
 		List<String> nodes = analyzer.parserMixedString(mixedString.toLowerCase());
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
@@ -91,7 +91,7 @@ public class TranslatorImp implements Translator{
 		return sb.toString();
 	}
 
-	public String ChineseStringToEnglishStringWithPOS(Analyzer analyzer, String ChineseString) {
+	public String ChineseStringToEnglishStringWithPOS(A analyzer, String ChineseString) {
 		List<String> nodes = analyzer.parserString(ChineseString);
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
@@ -113,7 +113,7 @@ public class TranslatorImp implements Translator{
 		return sb.toString();
 	}
 
-	public List<Verbal> index(Analyzer analyzer, String mixedString) {
+	public List<Verbal> index(A analyzer, String mixedString) {
 		List<Verbal> verbals = new CopyOnWriteArrayList<>();
 		List<String> nodes = analyzer.parserMixedString(mixedString.toLowerCase());
 		Iterator<String> it = nodes.iterator();

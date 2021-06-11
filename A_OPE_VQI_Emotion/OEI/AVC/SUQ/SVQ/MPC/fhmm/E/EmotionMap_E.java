@@ -10,7 +10,7 @@ import java.util.Map;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 
-public class EmotionMapImp implements EmotionMap{
+public class EmotionMap_E implements EmotionMap{
 	private Map<String, Object> positiveMap;
 	private Map<String, Object> negativeMap;
 	private Map<String, Object> motivationMap;

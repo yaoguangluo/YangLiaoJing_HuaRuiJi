@@ -11,7 +11,7 @@ import AEU.AVC.SUQ.engine.EnvironmentInit;
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 
 public class InitBehaviorICAKernel{
 	private double[] kernel;
@@ -41,7 +41,7 @@ public class InitBehaviorICAKernel{
 		return positiveCountEnvironment/totalCountEnvironment;
 	}
 
-	public double getTrustRate(String text, Analyzer analyzer, EmotionMap emotionMap) throws IOException {
+	public double getTrustRate(String text, A analyzer, EmotionMap emotionMap) throws IOException {
 		EmotionInit emotionInitEnvironment = new EmotionInit();
 		emotionInitEnvironment.initExcludeAnalyzer(text, analyzer, emotionMap);
 		//reduce
@@ -134,7 +134,7 @@ public class InitBehaviorICAKernel{
 		return kernel;
 	}
 
-	public double[] getBehaviorICAKernel(String text, Analyzer analyzer, EmotionMap emotionMap) throws IOException {
+	public double[] getBehaviorICAKernel(String text, A analyzer, EmotionMap emotionMap) throws IOException {
 		forRestReturn = new LinkedList<>();
 		kernel = new double[StableData.INT_SEVEN];	
 		EmotionInit emotionInit = new EmotionInit();

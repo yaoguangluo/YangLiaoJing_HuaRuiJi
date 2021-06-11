@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 //编码设计：罗瑶光
 //refer Jacob 语音 api demo
 //refer 德塔图灵系统，极速中文分词  罗瑶光
@@ -15,9 +15,9 @@ public class ReadChinese extends Thread implements Runnable{
 	public com.jacob.activeX.ActiveXComponent sap;;
 	public com.jacob.com.Dispatch sapo;
 	public App app;
-	public Analyzer analyzer;//对象只是 地址位而已，不是clone， copy和 new
+	public A analyzer;//对象只是 地址位而已，不是clone， copy和 new
 	@SuppressWarnings("unused")
-	public ReadChinese(App app, Analyzer analyzer){ 
+	public ReadChinese(App app, A analyzer){ 
 		this.app= app;
 		this.analyzer= analyzer;
 		com.jacob.activeX.ActiveXComponent sap= new com.jacob.activeX.ActiveXComponent("Sapi.SpVoice");

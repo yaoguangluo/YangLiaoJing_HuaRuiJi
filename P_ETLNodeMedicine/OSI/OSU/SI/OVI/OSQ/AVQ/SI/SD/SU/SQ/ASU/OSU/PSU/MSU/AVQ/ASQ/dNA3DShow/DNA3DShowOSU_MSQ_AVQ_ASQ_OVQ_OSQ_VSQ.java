@@ -5,7 +5,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import IMO.EVU.biProcessor.CoDNAAuthorForWord;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
 public class DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
@@ -13,7 +13,7 @@ public class DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 	public JButton button;
 	public String path;
 	public ME.APM.VSQ.App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
 	public DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){

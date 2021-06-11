@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.swing.JTextPane;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OEU.OSU.MSQ.OSU.AVU.OSQ.fFT.FFTFilterNodeInterface;
 import OSI.OEU.OSU.MSQ.OSU.AVU.OSQ.fft2DFilter.Ft2DFilterInterface;
 import OSI.OEU.OSU.MSQ.OSU.AVU.OSQ.freqCount.FreqCountNodeInterface;
@@ -46,11 +46,11 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 	JTextPane text;
 	Object[][] tableData_old;
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	
 	public OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register(Object[][] tableData_old, JTextPane text, App u
-			, Analyzer analyzer, Map<String, String> pos){
+			, A analyzer, Map<String, String> pos){
 		this.text= text;
 		this.tableData_old= tableData_old;
 		this.u= u;

@@ -7,15 +7,15 @@ import java.util.List;
 import java.util.Map;
 
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 
 import static java.lang.System.*;
 
 @SuppressWarnings("unused")
 public class DemoPOSMedcine {
     public static void main(String[] args) throws IOException {
-        Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+        A analyzer = new CogsBinaryForest_AE();
         analyzer.init();
         Map<String, String> nlp = analyzer.getPosCnToCn();
         List<String> sets = new ArrayList<>();

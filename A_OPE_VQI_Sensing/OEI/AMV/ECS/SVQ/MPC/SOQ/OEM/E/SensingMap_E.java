@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 import OCI.AMV.ECS.SVQ.MPC.fhmm.C.SensingMap;
-import OCI.ME.analysis.C.Analyzer;
-public class SensingMapImp implements SensingMap{
+import OCI.ME.analysis.C.A;
+public class SensingMap_E implements SensingMap{
 	private Map<String, Object> lenovoMap;
 	
 	@Override
@@ -20,7 +20,7 @@ public class SensingMapImp implements SensingMap{
 	}
 
 	@Override
-	public void initLenovoMap(Analyzer analyzer) throws IOException {
+	public void initLenovoMap(A analyzer) throws IOException {
 		lenovoMap= new HashMap<>();
 		Map<String, String> CnToEnMap= analyzer.getFullCnToEn();
 		Map<String, String> EnToCnMap= analyzer.getEnToCn();

@@ -39,7 +39,7 @@ import MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import PEU.P.table.TableSorterZYNK;
 import MSV.OSU.string.NullObject;
 import MVQ.button.DetaButton;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSV.VCQ.standard.DictionaryStandardDB;
 public class XyscPage extends Container implements MouseListener, KeyListener{
@@ -70,7 +70,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 	public Map<String,Object> dic_yao_wu_xiang_hu_zuo_yong;
 	public Map<String,Object> dic_qi_ta;
 	public Map<String, Object> dic_jie_shao;
-	public Analyzer analyzer; 
+	public A analyzer; 
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -85,7 +85,7 @@ public class XyscPage extends Container implements MouseListener, KeyListener{
 	private DetaButton buttonCTV;
 	private ReadChinese readChinese;
 	protected int row;
-	public XyscPage(JTextPane text, Analyzer analyzer, Map<String, String> pos
+	public XyscPage(JTextPane text, A analyzer, Map<String, String> pos
 			, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte, App app, JTabbedPane jTabbedpane) throws IOException{
 		this.app= app;

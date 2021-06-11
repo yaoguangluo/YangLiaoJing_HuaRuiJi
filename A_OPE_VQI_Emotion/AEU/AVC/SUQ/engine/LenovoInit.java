@@ -5,8 +5,8 @@ import java.util.Map;
 
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import OCI.AMV.ECS.SVQ.MPC.fhmm.C.SensingMap;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.AMV.ECS.SVQ.MPC.SOQ.OEM.E.SensingMapImp;
+import OCI.ME.analysis.C.A;
+import OEI.AMV.ECS.SVQ.MPC.SOQ.OEM.E.SensingMap_E;
 public class LenovoInit{
 	public SensingMap getSensingMap() {
 		return sensingMap;
@@ -53,14 +53,14 @@ public class LenovoInit{
 	public void init(String text) throws IOException {
 		environmentInit = new EnvironmentInit();
 		environmentInit.init(text);
-		sensingMap = new SensingMapImp();
+		sensingMap = new SensingMap_E();
 		sensingMap.initLenovoMap(environmentInit.getAnalyzer());	
 	}
 	
-	public void initExcludeAnalyzer(String text, Analyzer analyzer) throws IOException {
+	public void initExcludeAnalyzer(String text, A analyzer) throws IOException {
 		environmentInit = new EnvironmentInit();
 		environmentInit.initExcludeAnalyzer(text, analyzer);
-		sensingMap = new SensingMapImp();
+		sensingMap = new SensingMap_E();
 		sensingMap.initLenovoMap(environmentInit.getAnalyzer());	
 	}
 }

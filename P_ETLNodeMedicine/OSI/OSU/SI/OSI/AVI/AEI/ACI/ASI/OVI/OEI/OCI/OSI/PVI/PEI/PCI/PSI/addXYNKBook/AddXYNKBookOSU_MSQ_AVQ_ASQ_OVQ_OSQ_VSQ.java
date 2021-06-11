@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 
 public class AddXYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ{
@@ -14,7 +14,7 @@ public class AddXYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_
 	public JButton button;
 	public String path;
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public String DNNtext;
 	public AddXYNKBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){

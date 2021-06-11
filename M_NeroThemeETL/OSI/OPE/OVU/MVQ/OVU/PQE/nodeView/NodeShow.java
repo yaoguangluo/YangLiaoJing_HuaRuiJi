@@ -13,7 +13,7 @@ import java.util.Map;
 import javax.swing.tree.*;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.GUISample;
 import OSI.OPE.OEQ.MCQ.OVU.PQE.osgi.*;
 import OSI.OPE.OVQ.MSQ.OVU.PQE.platForm.UnicornTreeCellRenderer;
@@ -32,10 +32,10 @@ public class NodeShow extends JScrollPane {
 	Object[][] tableData_old;
 	public PopupMenu popupMenu;
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public NodeShow(GUISample gUISample, Object[][] tableData_old, JTextPane text, PopupMenu popupMenu, App u
-			, Analyzer analyzer, Map<String, String> pos) throws IOException{	
+			, A analyzer, Map<String, String> pos) throws IOException{	
 		this.text= text;
 		this.tableData_old= tableData_old;
 		this.popupMenu= popupMenu;

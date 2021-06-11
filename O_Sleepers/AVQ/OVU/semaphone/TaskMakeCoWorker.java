@@ -7,13 +7,13 @@ import javax.swing.JScrollPane;
 
 import IMO.EVU.biProcessor.CoAuthorForWord;
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Container jpanelFirstu;
 	public Map<String, String> pos;
-	public TaskMakeCoWorker(App u, Container jpanelFirstu, Analyzer analyzer, Map<String, String> pos) {
+	public TaskMakeCoWorker(App u, Container jpanelFirstu, A analyzer, Map<String, String> pos) {
 		this.u= u;
 		this.jpanelFirstu = jpanelFirstu;
 		this.analyzer = analyzer;

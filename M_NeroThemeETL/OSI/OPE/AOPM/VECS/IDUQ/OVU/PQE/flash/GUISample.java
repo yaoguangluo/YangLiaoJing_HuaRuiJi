@@ -46,7 +46,7 @@ import ME.APM.VSQ.App;
 import ME.APM.VSQ.DetaBuy;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAnd_U_File;
 import OSI.OPE.MSI.OEI.SOI.SMQ.save.SaveAs_I_File;
 import OSI.OPE.MSQ.OVU.PQE.nodeInfo.NodeInfo;
@@ -106,7 +106,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 	private Object[][] tableData_old; 
 	public U_RelatedLineVPS updateRelatedLine;
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public void run() {
 		try {
@@ -678,7 +678,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 	}
 
 	public void init(Object[][] tableData_old,JTextPane text, App u
-			, Analyzer analyzer, Map<String, String> pos){
+			, A analyzer, Map<String, String> pos){
 		try {
 			this.text= text;
 			this.tableData_old= tableData_old;

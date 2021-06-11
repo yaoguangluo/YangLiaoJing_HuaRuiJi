@@ -9,24 +9,24 @@ import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import ME.utils.WordFrequencyUtil;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OCI.ME.liner.C.Quick6DLuoYaoguangSort;
 import OCI.ME.nero.C.NERO_C_OneTime;
 import OCI.ME.nlp.C.NLP_C;
 import OCI.ME.pos.C.POS_C;
 import OCI.SVQ.MPC.fhmm.C.FHMMList;
-import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMapE;
-import OEI.ME.nero.E.NERO_C_OneTimeE;
-import OEI.ME.nlp.E.NLP_C_E;
-import OEI.ME.pos.E.POS_C_E;
+import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMap_E;
+import OEI.ME.liner.E.Quick6DLuoYaoguangSort3DMap_E;
+import OEI.ME.nero.E.NERO_C_OneTime_E;
+import OEI.ME.nlp.E.NLP_CE;
+import OEI.ME.pos.E.POS_CE;
 import OEI.SVQ.MPC.fhmm.E.FMHMMListOneTime_E;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
 import PEQ.AMV.ECS.test.SensingTest;
-public class AnalyzerE implements Analyzer {
+public class AE implements A {
 	protected FHMMList fHMMList;
 	protected NERO_C_OneTime neroController;
 	protected NLP_C nlpController;
@@ -47,10 +47,10 @@ public class AnalyzerE implements Analyzer {
 		fHMMList.indexCnToEn();
 		fHMMList.indexFullEnToCn();
 		fHMMList.indexFullCnToEn();
-		neroController= new NERO_C_OneTimeE();
-		nlpController= new NLP_C_E();
-		posController= new POS_C_E();
-		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapE();
+		neroController= new NERO_C_OneTime_E();
+		nlpController= new NLP_CE();
+		posController= new POS_CE();
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMap_E();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();
 		wordsForest= fHMMList.getPosCnToCn();
@@ -72,15 +72,15 @@ public class AnalyzerE implements Analyzer {
 		fHMMList.indexFullCnToTt();
 		fHMMList.indexFullCnToRs();
 		fHMMList.indexFullCnToAb();
-		neroController= new NERO_C_OneTimeE();
-		nlpController= new NLP_C_E();
-		posController= new POS_C_E();
-		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMapE();
+		neroController= new NERO_C_OneTime_E();
+		nlpController= new NLP_CE();
+		posController= new POS_CE();
+		quick6DLuoYaoguangSort= new Quick6DLuoYaoguangSort3DMap_E();
 		forestRoots= fHMMList.getMap();
 		forestsRoots= fHMMList.getMaps();
 		wordsForest= fHMMList.getPosCnToCn();
 		wordsForests= fHMMList.getWordsForests();
-		emotionMap= new EmotionMapImp(); 
+		emotionMap= new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();

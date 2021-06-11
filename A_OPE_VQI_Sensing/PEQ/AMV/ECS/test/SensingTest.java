@@ -7,13 +7,13 @@ import java.util.Map;
 
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
-import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMapImp;
+import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMap_E;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMap_E;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 public class SensingTest{
 	public List<String> getSets() {
 		return sets;
@@ -29,7 +29,7 @@ public class SensingTest{
 	private List<String> sets;
 	private Map<String, String> pos;
 	public String[][] getMatrix() throws IOException {
-		EmotionMap emotionMap = new EmotionMapImp(); 
+		EmotionMap emotionMap = new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();
@@ -49,7 +49,7 @@ public class SensingTest{
 				"一些成瘾的受体，普遍有某种倾向: 奢靡，闭塞，强迫，空虚 等等。这里不是贬义，只是因为长期的环境\r\n" + 
 				"因素不是那么美好导致了一些思维误差。所以引导是非常重要的。改变人的不是能力，而是选择和环境。\r\n" + 
 				"如果环境不是很完美，那么选择一个健康的生活方式，是非常重要的。";
-		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+		A analyzer = new CogsBinaryForest_AE();
 		analyzer.initMixed();
 		pos = analyzer.getPosCnToCn();
 		Map<String, Object> positive= emotionMap.getPositiveMap();
@@ -59,7 +59,7 @@ public class SensingTest{
 		Map<String, Object> prediction= emotionMap.getPredictionMap();
 		sets = analyzer.parserString(text);
 		Map<Integer, WordFrequency> wordFrequencyMap= analyzer.getWordFrequencyByReturnSortMap(sets);
-		RatioMap rationMap= new RatioMapImp();
+		RatioMap rationMap= new RatioMap_E();
 		Map<String, EmotionSample> emotionSampleMap= rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		double positiveCount= rationMap.findTotalPositiveCount(emotionSampleMap);
 		double negativeCount= rationMap.findTotalNegativeCount(emotionSampleMap);
@@ -108,7 +108,7 @@ public class SensingTest{
 		sensingTest.getMatrix();
 	}
 
-	public String[][] getMatrix(String text, Analyzer analyzer) throws IOException {
+	public String[][] getMatrix(String text, A analyzer) throws IOException {
 		pos= analyzer.getPosCnToCn();
 		EmotionMap emotionMap= analyzer.getEmotionMap();
 		Map<String, Object> positive= emotionMap.getPositiveMap();
@@ -118,7 +118,7 @@ public class SensingTest{
 		Map<String, Object> prediction= emotionMap.getPredictionMap();
 		sets= analyzer.parserString(text);
 		Map<Integer, WordFrequency> wordFrequencyMap= analyzer.getWordFrequencyByReturnSortMap(sets);
-		RatioMap rationMap= new RatioMapImp();
+		RatioMap rationMap= new RatioMap_E();
 		Map<String, EmotionSample> emotionSampleMap= rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		double positiveCount= rationMap.findTotalPositiveCount(emotionSampleMap);
 		double negativeCount= rationMap.findTotalNegativeCount(emotionSampleMap);

@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class RNN_IDETest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
 		RNN_IDETest rNN_IDETest= new RNN_IDETest();
@@ -70,7 +70,7 @@ public class RNN_IDETest{
 		return ideMatrix;
 	}
 
-	public String[][] getIDEMatrixExcludeAnalyzer(Analyzer analyzer, String string) throws IOException {
+	public String[][] getIDEMatrixExcludeAnalyzer(A analyzer, String string) throws IOException {
 		SensingTest sensingTest = new SensingTest();
 		String[][] sensingMatrix = sensingTest.getMatrix(string, analyzer);
 		Map<String, List<Double>> map = new HashMap<>();
@@ -128,7 +128,7 @@ public class RNN_IDETest{
 		return ideMatrix;
 	}
 
-	public String[][] getIDEMatrixExcludeAnalyzer(SensingTest sensingTest, String[][] ann, Analyzer analyzer, String string) {
+	public String[][] getIDEMatrixExcludeAnalyzer(SensingTest sensingTest, String[][] ann, A analyzer, String string) {
 		//敏感度 意识 sensing
 		String[][] sensingMatrix = ann;
 		Map<String, List<Double>> map = new HashMap<>();

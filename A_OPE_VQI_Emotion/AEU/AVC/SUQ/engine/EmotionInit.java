@@ -6,12 +6,12 @@ import java.util.Map;
 
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
-import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMapImp;
+import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMap_E;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMap_E;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 
 public class EmotionInit{
 	public EmotionMap getEmotionMap() {
@@ -22,11 +22,11 @@ public class EmotionInit{
 		this.emotionMap = emotionMap;
 	}
 
-	public Analyzer getAnalyzer() {
+	public A getAnalyzer() {
 		return analyzer;
 	}
 
-	public void setAnalyzer(Analyzer analyzer) {
+	public void setAnalyzer(A analyzer) {
 		this.analyzer = analyzer;
 	}
 
@@ -127,7 +127,7 @@ public class EmotionInit{
 	}
 
 	private EmotionMap emotionMap;
-	private Analyzer analyzer;
+	private A analyzer;
 	private Map<String, Object> positive;
 	private Map<String, Object> negative;
 	private Map<String, Object> motivation;
@@ -160,30 +160,30 @@ public class EmotionInit{
 	}
 
 	public void init(String text) throws IOException {
-		emotionMap = new EmotionMapImp(); 
+		emotionMap = new EmotionMap_E(); 
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();
-		analyzer = new CogsBinaryForestAnalyzerE();
+		analyzer = new CogsBinaryForest_AE();
 		analyzer.init();
 		positive = emotionMap.getPositiveMap();
 		negative = emotionMap.getNegativeMap();
 		sets = analyzer.parserString(text);
 		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		positiveCount = rationMap.findTotalPositiveCount(emotionSampleMap);
 		negativeCount = rationMap.findTotalNegativeCount(emotionSampleMap);
 		totalCount = rationMap.findTotalKeyCount(emotionSampleMap);
 	}
 
-	public void initExcludeAnalyzer(String text, Analyzer analyzerInput, EmotionMap emotionMapInput) throws IOException {
+	public void initExcludeAnalyzer(String text, A analyzerInput, EmotionMap emotionMapInput) throws IOException {
 		emotionMap = emotionMapInput;
 		analyzer = analyzerInput;
 		positive = emotionMap.getPositiveMap();
 		negative = emotionMap.getNegativeMap();
 		sets = analyzer.parserString(text);
 		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		positiveCount = rationMap.findTotalPositiveCount(emotionSampleMap);
 		negativeCount = rationMap.findTotalNegativeCount(emotionSampleMap);

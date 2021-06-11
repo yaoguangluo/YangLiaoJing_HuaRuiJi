@@ -5,12 +5,12 @@ import java.util.Map;
 
 import AEU.OCI.AVC.SUQ.estimation.C.EmotionSample;
 import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
-import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMapImp;
+import AEU.OEI.AVC.SUQ.SVU.EOP.E.RatioMap_E;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMap_E;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 public class EnvironmentInit{
 	public EmotionMap getEmotionMap() {
 		return emotionMap;
@@ -20,11 +20,11 @@ public class EnvironmentInit{
 		this.emotionMap = emotionMap;
 	}
 
-	public Analyzer getAnalyzer() {
+	public A getAnalyzer() {
 		return analyzer;
 	}
 
-	public void setAnalyzer(Analyzer analyzer) {
+	public void setAnalyzer(A analyzer) {
 		this.analyzer = analyzer;
 	}
 
@@ -132,7 +132,7 @@ public class EnvironmentInit{
 		this.distinction = distinction;
 	}
 	private EmotionMap emotionMap;
-	private Analyzer analyzer;
+	private A analyzer;
 	private Map<String, Object> positive;
 	private Map<String, Object> negative;
 	private Map<String, Object> motivation;
@@ -169,12 +169,12 @@ public class EnvironmentInit{
 	}
 
 	public void init(String text) throws IOException {
-		emotionMap = new EmotionMapImp(); 
+		emotionMap = new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initTrendingMap();
 		emotionMap.initPredictionMap();
 		emotionMap.initDistinctionMap();
-		analyzer = new CogsBinaryForestAnalyzerE();
+		analyzer = new CogsBinaryForest_AE();
 		analyzer.init();
 		motivation = emotionMap.getMotivationMap();
 		trending = emotionMap.getTrendingMap();
@@ -182,7 +182,7 @@ public class EnvironmentInit{
 		distinction = emotionMap.getDistinctionMap();
 		sets = analyzer.parserString(text);
 		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(wordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);
 		rationMap.getTrending(emotionSampleMap, trending);
@@ -190,8 +190,8 @@ public class EnvironmentInit{
 		rationMap.getDistinction(emotionSampleMap, distinction);
 	}
 	
-	public void initExcludeAnalyzer(String text, Analyzer analyzerInput) throws IOException {
-		emotionMap = new EmotionMapImp(); 
+	public void initExcludeAnalyzer(String text, A analyzerInput) throws IOException {
+		emotionMap = new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initTrendingMap();
 		emotionMap.initPredictionMap();
@@ -203,7 +203,7 @@ public class EnvironmentInit{
 		distinction = emotionMap.getDistinctionMap();
 		sets = analyzerInput.parserString(text);
 		wordFrequencyMap = analyzerInput.getWordFrequencyByReturnSortMap(sets);
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(wordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);
 		rationMap.getTrending(emotionSampleMap, trending);
@@ -212,7 +212,7 @@ public class EnvironmentInit{
 	}
 	
 	public void initFromEmotion(Map<Integer, WordFrequency> getWordFrequencyMap) throws IOException {
-		emotionMap = new EmotionMapImp(); 
+		emotionMap = new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initTrendingMap();
 		emotionMap.initPredictionMap();
@@ -223,7 +223,7 @@ public class EnvironmentInit{
 		prediction = emotionMap.getPredictionMap();
 		distinction = emotionMap.getDistinctionMap();
 		//map
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(getWordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);
 		rationMap.getTrending(emotionSampleMap, trending);
@@ -237,7 +237,7 @@ public class EnvironmentInit{
 		trending = emotionMap.getTrendingMap();
 		prediction = emotionMap.getPredictionMap();
 		distinction = emotionMap.getDistinctionMap();
-		rationMap = new RatioMapImp();
+		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(getWordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);
 		rationMap.getTrending(emotionSampleMap, trending);

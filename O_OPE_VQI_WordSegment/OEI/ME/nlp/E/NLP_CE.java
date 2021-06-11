@@ -8,7 +8,7 @@ import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableMaps;
 import ME.utils.WordForestUtil;
 import OCI.ME.nlp.C.NLP_C;
 import OCI.ME.pos.C.POS_C;
-public class NLP_C_E implements NLP_C{
+public class NLP_CE implements NLP_C{
 	public int doSlangPartAndPOSCheckForTwoChar(int countInputStringLength, List<String> outputList
 			, StringBuilder stringBuilder, Map<String, String> wordsForest, StringBuilder[] prefixWord
 			, POS_C posUtils, int charPosition, String textInputString){

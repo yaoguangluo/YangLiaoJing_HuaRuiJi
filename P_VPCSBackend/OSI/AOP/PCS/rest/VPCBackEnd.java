@@ -2,13 +2,13 @@ package OSI.AOP.PCS.rest;
 import java.util.Map;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.PCS.PP.port_E.RestLoginPortImpl;
 import OSI.AOP.PCS.PP.port_E.RestNLPPortImpl;
 import PCS.VQS.DSU.V.VtoV;
 public class VPCBackEnd {
 //	public static RestLoginPort restLoginPort;
-	public static String forward(EmotionMap emotionMap, Analyzer analyzer, String string, Map<String, String> data) 
+	public static String forward(EmotionMap emotionMap, A analyzer, String string, Map<String, String> data) 
 			throws Exception {
 		if(string.equalsIgnoreCase("/login")){
 			return new VtoV().ObjectToJsonString(RestLoginPortImpl.login(data.get("uEmail"),data.get("uPassword")));	

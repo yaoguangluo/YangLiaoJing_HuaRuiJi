@@ -22,7 +22,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import PEU.P.wave.DFT;
 
 public class MakeContainerZNSZ extends Thread implements Runnable{
@@ -30,7 +30,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
@@ -63,7 +63,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 	public int source256= 0;
 	public int source512= 0;
 	
-	public MakeContainerZNSZ(Analyzer analyzer, Container jpanelFourth, App u2, JTabbedPane jTabbedpane
+	public MakeContainerZNSZ(A analyzer, Container jpanelFourth, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();

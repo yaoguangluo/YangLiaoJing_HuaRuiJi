@@ -9,7 +9,7 @@ import AEU.OCI.AVC.SUQ.estimation.C.RatioMap;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 
-public class RatioMapImp implements RatioMap{
+public class RatioMap_E implements RatioMap{
 
 	@Override
 	public Map<String, EmotionSample> getEmotionSampleMap(Map<Integer, WordFrequency> wordFrequencyMap,

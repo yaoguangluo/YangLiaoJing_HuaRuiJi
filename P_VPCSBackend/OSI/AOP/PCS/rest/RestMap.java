@@ -10,9 +10,9 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class RestMap {
-	public static void P(String[] type, Socket socket, Analyzer analyzer, EmotionMap emotionMap) 
+	public static void P(String[] type, Socket socket, A analyzer, EmotionMap emotionMap) 
 			throws IOException {
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();

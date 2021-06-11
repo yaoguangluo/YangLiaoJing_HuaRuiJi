@@ -5,9 +5,9 @@ import java.util.Properties;
 import java.util.Random;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMapImp;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.AVC.SUQ.SVQ.MPC.fhmm.E.EmotionMap_E;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 import OM.config.Config;
 import PCS.thread.SocketThread;
 import PCS.thread.SocketThreadPool;
@@ -15,16 +15,16 @@ public class BootVPCSBackEnd extends Thread{
 	private static ServerSocket server;
 	@SuppressWarnings("unused")
 	private static Properties properties;
-	private Analyzer analyzer;
+	private A analyzer;
 	private EmotionMap emotionMap;
 	private int port;
 	static {
 		properties = new Properties();
 	}
 
-	public BootVPCSBackEnd(Analyzer analyzer) throws IOException {
+	public BootVPCSBackEnd(A analyzer) throws IOException {
 		if(null== analyzer) {
-			this.analyzer = new CogsBinaryForestAnalyzerE();
+			this.analyzer = new CogsBinaryForest_AE();
 			this.analyzer.initMixed();
 		}else {
 			this.analyzer= analyzer;
@@ -41,10 +41,10 @@ public class BootVPCSBackEnd extends Thread{
 			port= Config.detaVPCSBackEndPort;
 			server = new ServerSocket(port);
 			if(null== this.analyzer) {
-				this.analyzer = new CogsBinaryForestAnalyzerE();
+				this.analyzer = new CogsBinaryForest_AE();
 				this.analyzer.initMixed();
 			}
-			emotionMap = new EmotionMapImp(); 
+			emotionMap = new EmotionMap_E(); 
 			emotionMap.initNegativeMap();
 			emotionMap.initPositiveMap();
 			emotionMap.initMotivationMap();

@@ -32,7 +32,7 @@ import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.button.YLJShowButton;
 import MVQ.filenameFilter.TXTFilter;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.MSQ.SS.stable.StableData;
 
 public class MakeContainerYXTP extends Thread implements Runnable{
@@ -40,7 +40,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 	public App app;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
@@ -61,7 +61,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 	public BufferedImage bufferedImageNullPG;
 	//public LinkedList<DetaButton> topList= new LinkedList<>(); 
 
-	public MakeContainerYXTP(Analyzer analyzer, Container jpanelFourth, App app, JTabbedPane jTabbedpane
+	public MakeContainerYXTP(A analyzer, Container jpanelFourth, App app, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();

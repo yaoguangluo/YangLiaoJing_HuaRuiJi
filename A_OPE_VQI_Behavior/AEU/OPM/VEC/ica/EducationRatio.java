@@ -8,13 +8,13 @@ import java.util.Map;
 
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 
 public class EducationRatio{
 
 	public double[] getEducationKernel(String text) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+		A analyzer = new CogsBinaryForest_AE();
 		analyzer.init();
 		Map<String, String> pos = analyzer.getPosCnToCn();
 		List<String> sets = analyzer.parserString(text);

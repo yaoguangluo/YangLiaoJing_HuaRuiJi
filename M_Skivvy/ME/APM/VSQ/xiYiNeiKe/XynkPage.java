@@ -37,7 +37,7 @@ import ME.APM.VSQ.App;
 import MSU.AMS.VQS.SQV.SI.OSU.SMV.http.RestCall;
 import PEU.P.table.TableSorterZYNK;
 import MVQ.button.DetaButton;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.neo.tts.ReadChinese;
 public class XynkPage extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
@@ -77,7 +77,7 @@ public class XynkPage extends Container implements MouseListener, KeyListener{
 	public Object[] columnTitle = {"ID", "打分", "内科学名", "原书笔记", "概念", "流行病学",
 			"病因&发病机制", "危险因素", "病理分类", "临床表现&类型&分型", "实验室和其他检查", "诊断&鉴别诊断", "并发症",
 			"治疗&治疗方案&原则", "教育&管理", "预后", "预防", "影像与检查"};
-	public Analyzer analyzer;  
+	public A analyzer;  
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
@@ -88,7 +88,7 @@ public class XynkPage extends Container implements MouseListener, KeyListener{
 	private ReadChinese readChinese;
 	private DetaButton buttonCTV;
 	protected int row;
-	public XynkPage(JTextPane text,Analyzer analyzer, Map<String, String> pos, Map<String, String> pose
+	public XynkPage(JTextPane text,A analyzer, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, App u, JTabbedPane jTabbedpane) throws IOException{
 		this.text = text;	this.analyzer = analyzer;
 		this.pos = pos;

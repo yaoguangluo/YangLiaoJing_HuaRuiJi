@@ -8,7 +8,7 @@ import java.util.Map;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import AVQ.ASQ.OVQ.OSQ.VSQ.stable.StableData;
 import OCI.ME.liner.C.Quick6DLuoYaoguangSort;
-public class Quick6DLuoYaoguangSort3DMapE implements Quick6DLuoYaoguangSort {
+public class Quick6DLuoYaoguangSort3DMap_E implements Quick6DLuoYaoguangSort {
 	@Override
 	public void quick6DLuoYaoGuangSortWordFrequency(Map<Integer, WordFrequency> map, int leftPosition,
 			int rightPosition) {

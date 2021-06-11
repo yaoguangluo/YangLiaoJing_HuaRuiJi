@@ -7,7 +7,7 @@ import OCI.ME.euclid.C.Euclid_C;
 
 import java.util.HashMap;
 import java.util.Iterator;
-public class Euclid_C_E implements Euclid_C {
+public class Euclid_CE implements Euclid_C {
 	@SuppressWarnings({StableData.RAW_TYPES, StableData.UNCHECKED})
 	public Map<Integer, Map> mCogsEuclid(Map<Long, FMHMMNode> HashMap) {
 		Map<Integer, Map> HashMapRoot= new HashMap<>();

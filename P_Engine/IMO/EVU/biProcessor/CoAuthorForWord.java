@@ -22,7 +22,7 @@ import javax.media.opengl.*;
 
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.VSQ.SSI.ASU.OSU.PSU.MSU.ASU.MPE.AOP.MEC.SIQ.search.ZhongYaoSearch;
 import VSQ.OPE.jogl.JOGLOBJShape;
 
@@ -54,7 +54,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	public App u;
 	public Map<String, Object> dic_li ;
 	public Map<String, Object> dic_yl;
-	public Analyzer analyzer;
+	public A analyzer;
 	public int c = 0;
 	public JFrame jframe;
 	private static final long serialVersionUID = 1L;
@@ -112,7 +112,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	JOGLOBJShape shape=null;
 	public double t = 1.0d;
 	public String rootWord;  
-	public CoAuthorForWord(App u, Analyzer analyzer
+	public CoAuthorForWord(App u, A analyzer
 			, Map<String, String> pos) throws HeadlessException, InterruptedException  {  
 		Thread.sleep(100);
 		rootWord="";

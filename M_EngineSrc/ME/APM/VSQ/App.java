@@ -28,12 +28,12 @@ import ME.APM.VSQ.zhongYiNeiKeXue.ZynkxPage;
 import ME.APM.VSQ.zhongYiZhenDuanXue.ZyzdxPage;
 import ME.S.stables.StableDataSrc;
 import MSU.OCI.ME.SMS.translator.C.Translator;
-import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.Translator_E;
 import MVQ.button.DetaButton;
 import MVQ.tabbedpane.DetabbedPane;
 import MVQ.textfield.CfxTextField;
 import MVQ.textpane.CfxTextPane;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.neo.tts.ReadChinese;
 import OSI.AOP.rest.medicine.RestMedicinePort_E;
 import OSI.OPE.MSQ.SS.stable.StableData;
@@ -100,7 +100,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public AppSearch appSearch;
 	public AppHospital appHospital;
 	public AppConfig appConfig;
-	public Analyzer analyzer;
+	public A analyzer;
 	public CoAuthorForWord coAuthorForWord;
 	public Monitor monitor;
 	public JSlider look;
@@ -853,7 +853,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			}
 		}
 
-		Translator ts= new TranslatorImp();
+		Translator ts= new Translator_E();
 		try {
 			ts.init(analyzer);
 		} catch (IOException e) {

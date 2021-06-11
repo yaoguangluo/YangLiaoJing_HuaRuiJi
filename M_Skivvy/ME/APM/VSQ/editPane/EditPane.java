@@ -19,7 +19,7 @@ import javax.swing.JTextPane;
 
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.neo.tts.ReadChinese;
 public class EditPane extends Container implements MouseListener, KeyListener{
 	private static final long serialVersionUID = 1L;
@@ -27,7 +27,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public Analyzer analyzer; 
+	public A analyzer; 
 	public Map<String, String> pos;
 	public JTextPane data;
 	public JTextPane text;
@@ -37,7 +37,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	private Map<String, String> ctk;
 	private Map<String, String> ctt;
 	private Map<String, String> ctr;
-	public EditPane(JTextPane text, Analyzer analyzer, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc,
+	public EditPane(JTextPane text, A analyzer, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc,
 			Map<String, String> cte, Map<String, String> pinyin, Map<String, String> ctk
 			, Map<String, String> ctt, Map<String, String> ctj, Map<String, String> ctr) {
 		this.text = text;

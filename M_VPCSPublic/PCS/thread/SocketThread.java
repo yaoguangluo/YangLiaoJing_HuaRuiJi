@@ -7,16 +7,16 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.AOP.PCS.rest.RestMap;
 
 public class SocketThread extends Thread implements Runnable{
 	private Socket socket;
-	private Analyzer analyzer;
+	private A analyzer;
 	private EmotionMap emotionMap;
 	private String sid;
 	private SocketThreadPool socketThreadPool;
-	public SocketThread(EmotionMap emotionMap, Analyzer analyzer, SocketThreadPool socketThreadPool
+	public SocketThread(EmotionMap emotionMap, A analyzer, SocketThreadPool socketThreadPool
 			, Socket socket, String id){
 		this.socket= socket;
 		this.sid= id;

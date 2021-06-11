@@ -10,7 +10,7 @@ import MVQ.button.CfxButton;
 import MVQ.label.DetaLabelConjunction;
 import MVQ.slider.DetaSlider;
 import MVQ.tabbedpane.DetabbedPane;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 import OSI.AOP.PCS.server.BootVPCSBackEnd;
 import OSI.AOP.VPC.S.restServer.RestServer;
 import OSI.AOP.VPC.server.BootVPCSFrontEnd;
@@ -55,7 +55,7 @@ import javax.swing.event.ChangeListener;
 
 import org.tinos.listen.ReadToWav;
 import ME.S.stables.PathLinkFile;
-import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.Translator_E;
 import ME.APM.VSQ.OPE.hospital.DetaLabelStables;
 public class AppInit {	
 	@SuppressWarnings({ "deprecation", "resource" })
@@ -126,7 +126,7 @@ public class AppInit {
 				e.printStackTrace();
 			}
 		}
-		app.analyzer= new CogsBinaryForestAnalyzerE();
+		app.analyzer= new CogsBinaryForest_AE();
 		if(app.appConfig.SectionJPanel.jTextPane!= null) {
 			String text= app.appConfig.SectionJPanel.jTextPane.getText();
 			text="\r\n"+ "----当前版本有效期100天."+ text;
@@ -176,7 +176,7 @@ public class AppInit {
 				text="\r\n"+ "..."+ text;
 				app.appConfig.SectionJPanel.jTextPane.setText(text);
 			}
-			app.translator= new TranslatorImp();
+			app.translator= new Translator_E();
 			app.translator.init(app.analyzer);
 			app.text= new JTextPane();
 			app.jText= new JTextPane();

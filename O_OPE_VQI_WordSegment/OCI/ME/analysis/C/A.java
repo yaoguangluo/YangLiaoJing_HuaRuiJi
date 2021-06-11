@@ -6,7 +6,7 @@ import java.util.Map;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import PEQ.AMV.ECS.test.SensingTest;
-public interface Analyzer {
+public interface A {
 	void init() throws IOException;
 	void initMixed() throws IOException;
 	List<String> parserString(String input);

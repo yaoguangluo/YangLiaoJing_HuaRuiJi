@@ -8,21 +8,21 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.GUISample;
 public class MakeContainerSJFX extends Thread implements Runnable{
 	public Container jpanelSecond;
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	public Object[][] tableData_old;
 	public JTextPane text;
-	public MakeContainerSJFX(Object[][] tableData_old, JTextPane text, Analyzer analyzer,Container jpanelSecond, App u2
+	public MakeContainerSJFX(Object[][] tableData_old, JTextPane text, A analyzer,Container jpanelSecond, App u2
 			, JTabbedPane jTabbedpane, List<String> tabNames, Map<String, String> pos
 			, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();

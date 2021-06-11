@@ -11,20 +11,20 @@ import javax.swing.ImageIcon;
 import javax.swing.JTabbedPane;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 
 public class MakeContainerXYXianDaiHuLi extends Thread implements Runnable{
 	public XianDaiHuLikx jpanelSecond;
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	
-	public MakeContainerXYXianDaiHuLi(Analyzer analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
+	public MakeContainerXYXianDaiHuLi(A analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();

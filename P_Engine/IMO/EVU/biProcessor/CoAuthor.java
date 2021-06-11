@@ -17,7 +17,7 @@ import com.jogamp.opengl.util.FPSAnimator;
 import com.jogamp.opengl.util.gl2.GLUT;
 
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import VSQ.OPE.jogl.JOGLOBJShape;
 
 import javax.media.opengl.awt.GLCanvas;  
@@ -27,7 +27,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	public Map<String, Object> root;
 	public Map<String, Integer> findLeaf;
 	public Map<String,Object> dic_li ;
-	public Analyzer analyzer;
+	public A analyzer;
 	public int c=0;
 	public int []array;
 	private static final long serialVersionUID = 1L;
@@ -63,7 +63,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	public double t = 1.0d;
 	public String rootWord;
 	// timeCheck ch=new timeCheck();    
-	public CoAuthor(Map<String, Object> dic_li, Analyzer analyzer
+	public CoAuthor(Map<String, Object> dic_li, A analyzer
 			, Map<String, String> pos) throws HeadlessException  {  
 		this.analyzer = analyzer;
 		this.dic_li = dic_li;

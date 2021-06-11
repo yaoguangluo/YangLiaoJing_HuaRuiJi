@@ -22,10 +22,10 @@ import AEU.OPM.VEC.ica.InitBehaviorICAKernel;
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.WordFrequency;
 import MSV.OSQ.sets.DetaDouble;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OEU.LYG4DQS4D.Quick_7D_luoyaoguang_Sort;
 public class RestNLPPortImpl{// implements RestLoginPort {
-	public static Map<String, Object> dataWS(Analyzer analyzer, String string) throws IOException {
+	public static Map<String, Object> dataWS(A analyzer, String string) throws IOException {
 		//System.out.printntln(string);
 		//List<String> sets = analyzer.parserString(string);
 		List<String> sets = analyzer.parserMixedString(string);
@@ -40,7 +40,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Map<String, Object> dataCX(Analyzer analyzer, String string) throws UnsupportedEncodingException {
+	public static Map<String, Object> dataCX(A analyzer, String string) throws UnsupportedEncodingException {
 		//System.out.printntln(string);
 		Map<String, String> pos = analyzer.getPosCnToCn();
 		List<String> sets = analyzer.parserString(string);
@@ -57,7 +57,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return outputMap;
 	}
 
-	public static Map<String, Object> dataCY(Analyzer analyzer, String string) throws IOException {
+	public static Map<String, Object> dataCY(A analyzer, String string) throws IOException {
 		//System.out.printntln(string);
 		LenovoInit lenovoInit = new LenovoInit();
 		lenovoInit.initExcludeAnalyzer(string, analyzer);	
@@ -130,7 +130,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Map<String, Object> dataCG(Analyzer analyzer, String string) throws InstantiationException
+	public static Map<String, Object> dataCG(A analyzer, String string) throws InstantiationException
 	, IllegalAccessException, IOException {
 		//System.out.printntln(string);
 		SensingTest sensingTest = analyzer.getSensingTest();
@@ -173,7 +173,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Map<String, Object> dataCJ(EmotionMap emotionMap, Analyzer analyzer, String string) throws IOException {
+	public static Map<String, Object> dataCJ(EmotionMap emotionMap, A analyzer, String string) throws IOException {
 		//System.out.printntln(string);
 		double[][] kernel = new double[1][];
 		InitBehaviorICAKernel InitBehaviorICAKernel = new InitBehaviorICAKernel();
@@ -190,11 +190,11 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Map<String, Object> dataCL(Analyzer analyzer, String string) {
+	public static Map<String, Object> dataCL(A analyzer, String string) {
 		return null;
 	}
 
-	public synchronized static Object dataXX(Analyzer analyzer, String string) throws IOException {
+	public synchronized static Object dataXX(A analyzer, String string) throws IOException {
 		//System.out.printntln(string);
 		Map<String, String> pos = analyzer.getPosCnToCn();
 		Map<String, String> studyPos = analyzer.getStudyPos();
@@ -253,7 +253,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return outputMap;
 	}
 
-	public static Object dataHF(Analyzer analyzer, String string) throws UnsupportedEncodingException {
+	public static Object dataHF(A analyzer, String string) throws UnsupportedEncodingException {
 		//System.out.printntln(string);
 		List<String> sets= analyzer.parserMixedString(string);
 		Map<String, Object> output= new HashMap<>();
@@ -266,7 +266,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Object dataCP(Analyzer analyzer, String string) throws IOException {
+	public static Object dataCP(A analyzer, String string) throws IOException {
 		List<String> sets= analyzer.parserMixedString(string);
 		Map<Integer, WordFrequency> fwa = analyzer.getWordFrequencyByReturnSortMap(sets);
 		Map<String, Object> output = new HashMap<>();
@@ -278,7 +278,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Object dataZF(Analyzer analyzer, String string) throws UnsupportedEncodingException {
+	public static Object dataZF(A analyzer, String string) throws UnsupportedEncodingException {
 		//System.out.printntln(string);
 		List<String> sets= analyzer.parserMixedString(string);
 		Map<String, String> pos= analyzer.getPosCnToCn();
@@ -384,7 +384,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return outputMap;
 	}
 
-	public static Object dataXL(Analyzer analyzer, String string) throws IOException, InstantiationException, IllegalAccessException{
+	public static Object dataXL(A analyzer, String string) throws IOException, InstantiationException, IllegalAccessException{
 		//System.out.printntln(string);
 		ANNTest aNNTest= new ANNTest();
 		String[][] ann= aNNTest.getANNMatrix(string, analyzer);
@@ -404,7 +404,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Object dataRN(Analyzer analyzer, String string) throws IOException {
+	public static Object dataRN(A analyzer, String string) throws IOException {
 		RNN_IDETest rNN_IDETest= new RNN_IDETest();
 		String[][] rnn= rNN_IDETest.getIDEMatrixExcludeAnalyzer(analyzer, string);
 		Map<String, Object> output= new HashMap<>();
@@ -421,7 +421,7 @@ public class RestNLPPortImpl{// implements RestLoginPort {
 		return output;
 	}
 
-	public static Object dataYL(Analyzer analyzer, String string) throws UnsupportedEncodingException {
+	public static Object dataYL(A analyzer, String string) throws UnsupportedEncodingException {
 		//System.out.printntln(string);
 		List<String> sets= analyzer.parserMixedString(string);
 		Map<String, Object> output= new HashMap<>();

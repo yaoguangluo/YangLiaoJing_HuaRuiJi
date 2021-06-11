@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JTextPane;
 
 import ME.APM.VSQ.App;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.AOPM.VECS.IDUQ.OVU.PQE.flash.ThisCanvas;
 
 import javax.sound.sampled.UnsupportedAudioFileException;
@@ -18,7 +18,7 @@ public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{
 	public Object[][] tableData_old;
 	public JTextPane text;
 	public App u;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Map<String, String> pos;
 	//
 	public ImageIcon thisIcon;
@@ -67,7 +67,7 @@ public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane rightBotJTextPane) throws Exception{
 	}
 	
-	public void register(Object[][] tableData_old, JTextPane text, App u, Analyzer analyzer, Map<String, String> pos) {
+	public void register(Object[][] tableData_old, JTextPane text, App u, A analyzer, Map<String, String> pos) {
 		// TODO Auto-generated method stub
 		this.u= u;
 		this.analyzer= analyzer;

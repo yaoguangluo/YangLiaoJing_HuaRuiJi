@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import MSV.OSQ.sets.DetaDouble;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import PEU.P.nlp.*;
 public class DNNTest{
 	public static void main(String[] argv) throws IOException, InstantiationException, IllegalAccessException {
@@ -45,7 +45,7 @@ public class DNNTest{
 		return dNNMatrix;
 	}
 	
-	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, Analyzer analyzer, String string) 
+	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, A analyzer, String string) 
 			throws IOException, InstantiationException
 	, IllegalAccessException{
 		//RNN  深度此距离计算 开始注释 罗瑶光

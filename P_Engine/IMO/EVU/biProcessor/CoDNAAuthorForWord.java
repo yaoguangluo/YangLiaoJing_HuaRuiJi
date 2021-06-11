@@ -23,7 +23,7 @@ import javax.media.opengl.*;
 
 import MVQ.button.DetaButton;
 import MVQ.slider.DetaSlider;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 import OSI.OPE.MSQ.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.dnaSets.CMS;
 import OSI.OPE.SI.SD.SU.SQ.ASU.OSU.PSU.MSU.AVQ.ASQ.life.Application;
 import VSQ.OPE.jogl.JOGLOBJShape;
@@ -54,7 +54,7 @@ public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, M
 	public App u;
 	public Map<String, Object> dic_li ;
 	public Map<String, Object> dic_yl;
-	public Analyzer analyzer;
+	public A analyzer;
 	public int c = 0;
 	private static final long serialVersionUID = 1L;
 	public FPSAnimator animator = null;  
@@ -112,7 +112,7 @@ public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, M
 	public double t = 1.0d;
 	public String rootWord;
 	public CMS cms;  
-	public CoDNAAuthorForWord(App u, Analyzer analyzer
+	public CoDNAAuthorForWord(App u, A analyzer
 			, Map<String, String> pos) throws HeadlessException, InterruptedException  {  
 		Thread.sleep(100);
 		rootWord="";

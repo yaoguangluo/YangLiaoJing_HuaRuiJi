@@ -7,15 +7,15 @@ import java.util.Map;
 
 import AVQ.ASQ.OVQ.OSQ.VSQ.obj.Verbal;
 import MSU.OCI.ME.SMS.translator.C.Translator;
-import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.TranslatorImp;
-import OCI.ME.analysis.C.Analyzer;
-import OEI.ME.analysis.E.CogsBinaryForestAnalyzerE;
+import MSU.OEI.ME.SMS.SEU.OSD.OSI.E.Translator_E;
+import OCI.ME.analysis.C.A;
+import OEI.ME.analysis.E.CogsBinaryForest_AE;
 
 //import timeProcessor.TimeCheck;
 public class DemoTSLT {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		Analyzer analyzer = new CogsBinaryForestAnalyzerE();
+		A analyzer = new CogsBinaryForest_AE();
 		analyzer.init();
 		Map<String, String> ce = analyzer.getCnToEn();
 		Map<String, String> ec = analyzer.getEnToCn();
@@ -31,7 +31,7 @@ public class DemoTSLT {
 //		String v = "我一直在奔跑，我需要一双翅膀！";
 //		String v = "他也一直在奔跑，他同样需要一双翅膀！";
 		System.out.println(v);
-		Translator ts = new TranslatorImp();
+		Translator ts = new Translator_E();
 		ts.init(analyzer); 
 //		TimeCheck t = new TimeCheck();
 //		t.begin();

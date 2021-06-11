@@ -30,19 +30,19 @@ import AVQ.PVU.vedio.PlayerShow;
 import ME.APM.VSQ.App;
 import MVQ.button.DetaButton;
 import MVQ.filenameFilter.TXTFilter;
-import OCI.ME.analysis.C.Analyzer;
+import OCI.ME.analysis.C.A;
 public class MakeContainerZNXZ extends Thread implements Runnable{
 	public Container jpanelThird;
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public Analyzer analyzer;
+	public A analyzer;
 	public Thread thread;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerZNXZ(Analyzer analyzer, Container jpanelThird, App u2
+	public MakeContainerZNXZ(A analyzer, Container jpanelThird, App u2
 			, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos
 			, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
