@@ -16,18 +16,18 @@ public class MakeContainerXYCF extends Thread implements Runnable{
 	public App u;
     public JTabbedPane jTabbedpane;
     public List<String> tabNames;
-    public A analyzer;
+    public A _A;
     public Map<String, String> pos;
    	public Map<String, String> pose;
    	public Map<String, String> etc;
    	public Map<String, String> cte;
-	public MakeContainerXYCF(A analyzer, App u2, JTabbedPane jTabbedpane, List<String> tabNames2
+	public MakeContainerXYCF(A _A, App u2, JTabbedPane jTabbedpane, List<String> tabNames2
 			, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -37,7 +37,7 @@ public class MakeContainerXYCF extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
-			u.xyscPage = new XyscPage(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
+			u.xyscPage = new XyscPage(u.text, this._A,pos, pose, etc, cte, u, jTabbedpane);
 			u.xyscPage.setName(tabNames.get(14));
 			jTabbedpane.addTab(tabNames.get(14),new ImageIcon() , u.xyscPage, "西医处方药");// 加入第一个页面  
 			Color[] colors= new Color[3];

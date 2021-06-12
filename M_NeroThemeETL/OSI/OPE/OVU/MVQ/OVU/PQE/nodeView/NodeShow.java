@@ -32,20 +32,20 @@ public class NodeShow extends JScrollPane {
 	Object[][] tableData_old;
 	public PopupMenu popupMenu;
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public NodeShow(GUISample gUISample, Object[][] tableData_old, JTextPane text, PopupMenu popupMenu, App u
-			, A analyzer, Map<String, String> pos) throws IOException{	
+			, A _A, Map<String, String> pos) throws IOException{	
 		this.text= text;
 		this.tableData_old= tableData_old;
 		this.popupMenu= popupMenu;
 		this.gUISample= gUISample;
 		this.u= u;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		link= new LinkOSGI();
 		first= new OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register(this.tableData_old, this.text, this.u
-				, this.analyzer, this.pos).Rigester(first, link);
+				, this._A, this.pos).Rigester(first, link);
 		updateTree();
 	}
 	

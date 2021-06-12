@@ -4,7 +4,7 @@ import java.util.Map;
 
 import OCI.ME.analysis.C.A;
 public interface SensingMap{
-	void initLenovoMap(A analyzer) throws IOException;
+	void initLenovoMap(A _A) throws IOException;
 	public Map<String, Object> getLenovoMap();
 	public void setLenovoMap(Map<String, Object> lenovoMap);
 }

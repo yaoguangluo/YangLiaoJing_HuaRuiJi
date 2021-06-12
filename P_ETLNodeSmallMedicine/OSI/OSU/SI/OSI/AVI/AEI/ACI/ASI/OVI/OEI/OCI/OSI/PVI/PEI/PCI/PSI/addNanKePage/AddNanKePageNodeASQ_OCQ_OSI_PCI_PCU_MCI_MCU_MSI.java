@@ -25,7 +25,7 @@ public class AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ
 	}
 	
 	public AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(Object[][] tableData_old, JTextPane text, App u
-			, A analyzer, Map<String, String> pos) throws IOException{
+			, A _A, Map<String, String> pos) throws IOException{
 		this.text= text;
 		this.tableData_old= tableData_old;
 		thisIcon= new ImageIcon(this.getClass().getResource("addNanKePage.jpg"));
@@ -37,7 +37,7 @@ public class AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ
 		thisIcon= new ImageIcon(newimg);
 		//
 		this.u= u;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 	}
 	public void MEI_MSU(JTextPane jTextPane, ThisCanvas canvas) throws IOException{
@@ -51,8 +51,8 @@ public class AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ
 	}
 	public void IMP_PSU() throws IOException {
 		Container jpanelFourth= new Container();
-		makeContainerXYNanKe= new MakeContainerXYNanKe(analyzer, jpanelFourth, u, u.jTabbedpane, u.tabNames
-				, pos, analyzer.getPosEnToEn(), analyzer.getPosEnToCn(), analyzer.getCnToEn());
+		makeContainerXYNanKe= new MakeContainerXYNanKe(_A, jpanelFourth, u, u.jTabbedpane, u.tabNames
+				, pos, _A.getPosEnToEn(), _A.getPosEnToCn(), _A.getCnToEn());
 		makeContainerXYNanKe.start();
 		try {
 			Thread.sleep(2000);
@@ -73,7 +73,7 @@ public class AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ
 		.run((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ);
 	}
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane jTextPane)  throws Exception{
-		((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).analyzer= analyzer;
+		((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ)._A= _A;
 		((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).u= u;
 		((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).pos= pos;
 		((AddNanKePageOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ) SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ).DNNtext
@@ -83,7 +83,7 @@ public class AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI extends OSU_AVQ_ASQ
 	}
 	public OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI AOP_MVE_CSI_DUQ() throws CloneNotSupportedException, IOException{
 		SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI 
-		= new AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this.analyzer, this.pos);   
+		= new AddNanKePageNodeASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI(this.tableData_old, this.text, this.u, this._A, this.pos);   
 		return SQ_OSU_MSQ_OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI;  
 	}
 }

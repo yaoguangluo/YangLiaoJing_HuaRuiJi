@@ -16,8 +16,8 @@ public class DNNTest{
 		ANNTest aNNTest= new ANNTest();
 		String[][] ann= aNNTest.getANNMatrix();
 		String[][] dnn= dNNTest.getDNNMatrix(ann);
-//		String[][] ann= aNNTest.getANNMatrix(string, analyzer);
-//		String[][] dnn= dNNTest.getDNNMatrix(ann, analyzer, string);
+//		String[][] ann= aNNTest.getANNMatrix(string, _A);
+//		String[][] dnn= dNNTest.getDNNMatrix(ann, _A, string);
 		for(int i=0;i<dnn.length;i++) {
 			double dnn_lwa = DetaDouble.parseDouble(dnn[i][3]);
 			if(dnn_lwa>100) {
@@ -45,12 +45,12 @@ public class DNNTest{
 		return dNNMatrix;
 	}
 	
-	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, A analyzer, String string) 
+	public String[][] getDNNMatrix(SensingTest sensingTest, String[][] ann, A _A, String string) 
 			throws IOException, InstantiationException
 	, IllegalAccessException{
 		//RNN  深度此距离计算 开始注释 罗瑶光
 		RNN_IDETest rNN_IDETest = new RNN_IDETest();
-		String[][] rnn= rNN_IDETest.getIDEMatrixExcludeAnalyzer(sensingTest, ann, analyzer, string);
+		String[][] rnn= rNN_IDETest.getIDEMatrixExcludeAnalyzer(sensingTest, ann, _A, string);
 		rnn= getPOSPCARnnMatrix(rnn);
 		if(ann.length> rnn.length) {
 			ann= getAnnWithMaskRnn(ann, rnn);	

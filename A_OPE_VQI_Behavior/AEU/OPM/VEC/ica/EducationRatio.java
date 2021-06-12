@@ -14,11 +14,11 @@ import OEI.ME.analysis.E.CogsBinaryForest_AE;
 public class EducationRatio{
 
 	public double[] getEducationKernel(String text) throws IOException {
-		A analyzer = new CogsBinaryForest_AE();
-		analyzer.init();
-		Map<String, String> pos = analyzer.getPosCnToCn();
-		List<String> sets = analyzer.parserString(text);
-		Map<Integer, WordFrequency> map = analyzer.getWordFrequencyByReturnSortMap(sets);
+		A _A = new CogsBinaryForest_AE();
+		_A.init();
+		Map<String, String> pos = _A.getPosCnToCn();
+		List<String> sets = _A.parserString(text);
+		Map<Integer, WordFrequency> map = _A.getWordFrequencyByReturnSortMap(sets);
 		double[] output = new double[StableData.INT_SEVEN];
 		output[StableData.INT_ZERO] = sets.size();
 		Iterator<Integer> iterator = map.keySet().iterator();

@@ -41,9 +41,9 @@ public class InitBehaviorICAKernel{
 		return positiveCountEnvironment/totalCountEnvironment;
 	}
 
-	public double getTrustRate(String text, A analyzer, EmotionMap emotionMap) throws IOException {
+	public double getTrustRate(String text, A _A, EmotionMap emotionMap) throws IOException {
 		EmotionInit emotionInitEnvironment = new EmotionInit();
-		emotionInitEnvironment.initExcludeAnalyzer(text, analyzer, emotionMap);
+		emotionInitEnvironment.initExcludeAnalyzer(text, _A, emotionMap);
 		//reduce
 		double positiveCountEnvironment = emotionInitEnvironment.getPositiveCount();
 		double totalCountEnvironment = emotionInitEnvironment.getTotalCount();
@@ -134,11 +134,11 @@ public class InitBehaviorICAKernel{
 		return kernel;
 	}
 
-	public double[] getBehaviorICAKernel(String text, A analyzer, EmotionMap emotionMap) throws IOException {
+	public double[] getBehaviorICAKernel(String text, A _A, EmotionMap emotionMap) throws IOException {
 		forRestReturn = new LinkedList<>();
 		kernel = new double[StableData.INT_SEVEN];	
 		EmotionInit emotionInit = new EmotionInit();
-		emotionInit.initExcludeAnalyzer(text, analyzer, emotionMap);
+		emotionInit.initExcludeAnalyzer(text, _A, emotionMap);
 		double positiveCount = emotionInit.getPositiveCount();
 		double negativeCount = emotionInit.getNegativeCount();
 		double totalCount = emotionInit.getTotalCount();
@@ -173,7 +173,7 @@ public class InitBehaviorICAKernel{
 			}
 		}
 		forRestReturn.add(environmentText);
-		kernel[StableData.INT_THREE] = getTrustRate(environmentText, analyzer, emotionMap);
+		kernel[StableData.INT_THREE] = getTrustRate(environmentText, _A, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_THREE]);
 		forRestReturn.add("信任比率：");
 		String motivationText = StableData.EMPTY_STRING;
@@ -186,7 +186,7 @@ public class InitBehaviorICAKernel{
 			}
 		}
 		forRestReturn.add(motivationText);
-		kernel[StableData.INT_FOUR] = getTrustRate(motivationText, analyzer, emotionMap);
+		kernel[StableData.INT_FOUR] = getTrustRate(motivationText, _A, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_FOUR]);
 		forRestReturn.add("执行比率：");
 		String trendingText = StableData.EMPTY_STRING;
@@ -199,7 +199,7 @@ public class InitBehaviorICAKernel{
 			}
 		}
 		forRestReturn.add(trendingText);
-		kernel[StableData.INT_FIVE] = getTrustRate(trendingText, analyzer, emotionMap);
+		kernel[StableData.INT_FIVE] = getTrustRate(trendingText, _A, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_FIVE]);
 		forRestReturn.add("成功比率：");
 		String predictionText = StableData.EMPTY_STRING;
@@ -212,7 +212,7 @@ public class InitBehaviorICAKernel{
 			}
 		}
 		forRestReturn.add(predictionText);
-		kernel[StableData.INT_SIX] = getTrustRate(predictionText, analyzer, emotionMap);
+		kernel[StableData.INT_SIX] = getTrustRate(predictionText, _A, emotionMap);
 		forRestReturn.add(StableData.EMPTY_STRING+kernel[StableData.INT_SIX]);
 		return kernel;
 	}

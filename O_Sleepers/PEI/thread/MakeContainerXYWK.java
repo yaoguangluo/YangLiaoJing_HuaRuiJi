@@ -16,17 +16,17 @@ public class MakeContainerXYWK extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerXYWK(A analyzer, App u2, JTabbedPane jTabbedpane, List<String> tabNames2,Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
+	public MakeContainerXYWK(A _A, App u2, JTabbedPane jTabbedpane, List<String> tabNames2,Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -36,7 +36,7 @@ public class MakeContainerXYWK extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*5);
-			u.wkxPage= new WkxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.wkxPage= new WkxPage(u.text, this._A, pos, pose, etc, cte, u, jTabbedpane);
 			u.wkxPage.setName(tabNames.get(12));
 			jTabbedpane.addTab(tabNames.get(12),new ImageIcon() , u.wkxPage, "大外科概论");// 加入第一个页面  
 			Color[] colors= new Color[3];

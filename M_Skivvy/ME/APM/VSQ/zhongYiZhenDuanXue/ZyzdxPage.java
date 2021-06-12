@@ -71,21 +71,21 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 	public Map<String,Object> dic_zhfx;
 	public Map<String,Object> dic_zhjb; 
 	public Object[] columnTitle = {"ID","¥Ú∑÷","≤°÷¢", "± º«","∏≈ƒÓ","¡Ÿ¥≤±Ìœ÷", "÷¢∫Ó∑÷Œˆ", "¡Ÿ¥≤“‚“Â", "÷¢∫Óº¯±"};
-	public A analyzer;  	
+	public A _A;  	
 	public Map<String, String> pos;
 	private App u;
 	private JTabbedPane jTabbedpane;
 	private ReadChinese readChinese;
 	private DetaButton buttonCTV;
 	protected int row;
-	public ZyzdxPage(JTextPane text,A analyzer, Map<String, String> pos, Map<String, String> pose
+	public ZyzdxPage(JTextPane text,A _A, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, App u, JTabbedPane jTabbedpane) throws IOException{
 		this.text = text;
 		this.pose = pose;
 		this.etc = etc;
 		this.cte = cte;
 		this.u= u;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.jTabbedpane= jTabbedpane;
 		this.setLayout(null);
@@ -181,7 +181,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -279,7 +279,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -593,7 +593,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 				//
 				try {
 					statistic.setSize(500, 800);
-					//Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					//Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder stringBuilder = new StringBuilder();
 					String[] fwa= response.replace("\r\n", "<br/>").split("<br/>");
@@ -627,7 +627,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		readChinese= new ReadChinese(u, analyzer);
+		readChinese= new ReadChinese(u, _A);
 		buttonCTV= new DetaButton("”Ô“Ù‘ƒ∂¡πÿ");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -640,7 +640,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("”Ô“Ù‘ƒ∂¡ø™");
-					readChinese= new ReadChinese(u, analyzer);
+					readChinese= new ReadChinese(u, _A);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {
@@ -745,7 +745,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 			int col = table.getSelectedColumn();
 			String value = (String) table.getValueAt(row, col);
 			data.setSize(500, 800);
-			sets = analyzer.parserMixedString(value);//¥ –‘∑÷Œˆ		
+			sets = _A.parserMixedString(value);//¥ –‘∑÷Œˆ		
 			data.setContentType("text/html");
 			StringBuilder page = new StringBuilder().append("");
 			currentPage=0;
@@ -806,7 +806,7 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 		}   
 		try {
 			statistic.setSize(500, 800);
-			Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+			Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 			statistic.setContentType("text/html");
 			StringBuilder page = new StringBuilder();
 			Here:
@@ -866,10 +866,10 @@ public class ZyzdxPage extends Container implements MouseListener, KeyListener{
 		int []reg = new int[copy.size()];
 		int count = 0;
 		Map<String, WordFrequency> mapSearchWithoutSort = null;
-		mapSearchWithoutSort = analyzer.parserMixStringByReturnFrequencyMap(key);
+		mapSearchWithoutSort = _A.parserMixStringByReturnFrequencyMap(key);
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
-		List<String> list= analyzer.parserMixedString(key);
+		List<String> list= _A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];

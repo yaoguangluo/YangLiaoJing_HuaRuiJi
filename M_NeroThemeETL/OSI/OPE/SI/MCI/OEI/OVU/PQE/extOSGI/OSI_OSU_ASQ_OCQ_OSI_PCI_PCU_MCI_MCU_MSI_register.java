@@ -46,15 +46,15 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 	JTextPane text;
 	Object[][] tableData_old;
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	
 	public OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register(Object[][] tableData_old, JTextPane text, App u
-			, A analyzer, Map<String, String> pos){
+			, A _A, Map<String, String> pos){
 		this.text= text;
 		this.tableData_old= tableData_old;
 		this.u= u;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 	}
 	
@@ -213,7 +213,7 @@ public class OSI_OSU_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI_register{
 //		first = link.addNode(first, readNodeInterface); 
 		
 //		OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI DNN3DInterface= 
-//				new ChuFangDNN3DShowNodeInterface(this.tableData_old, this.text, this.u, this.analyzer, this.pos);
+//				new ChuFangDNN3DShowNodeInterface(this.tableData_old, this.text, this.u, this._A, this.pos);
 //		first = link.addNode(first, DNN3DInterface); 
 	
 //		try {

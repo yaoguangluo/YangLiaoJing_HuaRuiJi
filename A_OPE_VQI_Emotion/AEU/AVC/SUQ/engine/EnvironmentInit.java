@@ -21,11 +21,11 @@ public class EnvironmentInit{
 	}
 
 	public A getAnalyzer() {
-		return analyzer;
+		return _A;
 	}
 
-	public void setAnalyzer(A analyzer) {
-		this.analyzer = analyzer;
+	public void setAnalyzer(A _A) {
+		this._A = _A;
 	}
 
 	public Map<String, Object> getPositive() {
@@ -132,7 +132,7 @@ public class EnvironmentInit{
 		this.distinction = distinction;
 	}
 	private EmotionMap emotionMap;
-	private A analyzer;
+	private A _A;
 	private Map<String, Object> positive;
 	private Map<String, Object> negative;
 	private Map<String, Object> motivation;
@@ -174,14 +174,14 @@ public class EnvironmentInit{
 		emotionMap.initTrendingMap();
 		emotionMap.initPredictionMap();
 		emotionMap.initDistinctionMap();
-		analyzer = new CogsBinaryForest_AE();
-		analyzer.init();
+		_A = new CogsBinaryForest_AE();
+		_A.init();
 		motivation = emotionMap.getMotivationMap();
 		trending = emotionMap.getTrendingMap();
 		prediction = emotionMap.getPredictionMap();
 		distinction = emotionMap.getDistinctionMap();
-		sets = analyzer.parserString(text);
-		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
+		sets = _A.parserString(text);
+		wordFrequencyMap = _A.getWordFrequencyByReturnSortMap(sets);
 		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(wordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);
@@ -190,19 +190,19 @@ public class EnvironmentInit{
 		rationMap.getDistinction(emotionSampleMap, distinction);
 	}
 	
-	public void initExcludeAnalyzer(String text, A analyzerInput) throws IOException {
+	public void initExcludeAnalyzer(String text, A _AInput) throws IOException {
 		emotionMap = new EmotionMap_E(); 
 		emotionMap.initMotivationMap();
 		emotionMap.initTrendingMap();
 		emotionMap.initPredictionMap();
 		emotionMap.initDistinctionMap();
-		analyzer = analyzerInput;
+		_A = _AInput;
 		motivation = emotionMap.getMotivationMap();
 		trending = emotionMap.getTrendingMap();
 		prediction = emotionMap.getPredictionMap();
 		distinction = emotionMap.getDistinctionMap();
-		sets = analyzerInput.parserString(text);
-		wordFrequencyMap = analyzerInput.getWordFrequencyByReturnSortMap(sets);
+		sets = _AInput.parserString(text);
+		wordFrequencyMap = _AInput.getWordFrequencyByReturnSortMap(sets);
 		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEnvironmentSampleMap(wordFrequencyMap);
 		rationMap.getMotivation(emotionSampleMap, motivation);

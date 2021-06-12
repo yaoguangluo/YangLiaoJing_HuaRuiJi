@@ -57,9 +57,9 @@ public class LenovoInit{
 		sensingMap.initLenovoMap(environmentInit.getAnalyzer());	
 	}
 	
-	public void initExcludeAnalyzer(String text, A analyzer) throws IOException {
+	public void initExcludeAnalyzer(String text, A _A) throws IOException {
 		environmentInit = new EnvironmentInit();
-		environmentInit.initExcludeAnalyzer(text, analyzer);
+		environmentInit.initExcludeAnalyzer(text, _A);
 		sensingMap = new SensingMap_E();
 		sensingMap.initLenovoMap(environmentInit.getAnalyzer());	
 	}

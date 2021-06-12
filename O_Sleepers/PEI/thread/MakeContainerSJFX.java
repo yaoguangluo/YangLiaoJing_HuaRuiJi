@@ -15,14 +15,14 @@ public class MakeContainerSJFX extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	public Object[][] tableData_old;
 	public JTextPane text;
-	public MakeContainerSJFX(Object[][] tableData_old, JTextPane text, A analyzer,Container jpanelSecond, App u2
+	public MakeContainerSJFX(Object[][] tableData_old, JTextPane text, A _A,Container jpanelSecond, App u2
 			, JTabbedPane jTabbedpane, List<String> tabNames, Map<String, String> pos
 			, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
@@ -30,7 +30,7 @@ public class MakeContainerSJFX extends Thread implements Runnable{
 		this.u = u2;
 		this.tabNames = tabNames;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -44,7 +44,7 @@ public class MakeContainerSJFX extends Thread implements Runnable{
 			Thread.sleep(1000* 5);
 			jpanelSecond.setBounds(0, 0, 1490, 980);
 			GUISample NE= new GUISample();
-			NE.init(this.tableData_old,this.text, this.u, this.analyzer, this.pos);
+			NE.init(this.tableData_old,this.text, this.u, this._A, this.pos);
 			NE.start();
 			jpanelSecond.add(NE);
 			jpanelSecond.setName(tabNames.get(1));

@@ -100,7 +100,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 	public AppSearch appSearch;
 	public AppHospital appHospital;
 	public AppConfig appConfig;
-	public A analyzer;
+	public A _A;
 	public CoAuthorForWord coAuthorForWord;
 	public Monitor monitor;
 	public JSlider look;
@@ -611,7 +611,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 			}
 		});
 
-		readChinese= new ReadChinese(appInstance, analyzer);
+		readChinese= new ReadChinese(appInstance, _A);
 		buttonCTV= new DetaButton("ÓïÒôÔÄ¶Á¹Ø");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -626,7 +626,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				//						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("ÓïÒôÔÄ¶Á¿ª");
-					readChinese= new ReadChinese(appInstance, analyzer);
+					readChinese= new ReadChinese(appInstance, _A);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {
@@ -730,7 +730,7 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 				.equals(StableDataSrc.STRING_EMPTY) && forE.length()>110) {
 			forE= forE.substring(0, 110);
 		}
-		key = key.length()== 0? StableDataSrc.STRING_EMPTY: translator.MixedStringToChineseString(analyzer, key);
+		key = key.length()== 0? StableDataSrc.STRING_EMPTY: translator.MixedStringToChineseString(_A, key);
 		if(key.replaceAll("\\s+", StableDataSrc.STRING_SPACE).equalsIgnoreCase(StableDataSrc.STRING_SPACE)){
 			key=StableDataSrc.STRING_EMPTY;
 		}
@@ -855,10 +855,10 @@ public class App extends JApplet implements MouseListener, KeyListener, ActionLi
 
 		Translator ts= new Translator_E();
 		try {
-			ts.init(analyzer);
+			ts.init(_A);
 		} catch (IOException e) {
 		} 
-		List<Verbal> verbals= ts.index(analyzer, forE);
+		List<Verbal> verbals= ts.index(_A, forE);
 		if(cecil!= null) {
 			this.cecil.verbals= verbals;
 			this.cecil.keyReleased(null);

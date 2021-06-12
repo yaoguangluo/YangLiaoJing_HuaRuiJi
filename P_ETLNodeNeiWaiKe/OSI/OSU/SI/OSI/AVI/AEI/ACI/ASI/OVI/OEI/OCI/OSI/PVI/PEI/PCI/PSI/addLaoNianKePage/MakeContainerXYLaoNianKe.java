@@ -18,13 +18,13 @@ public class MakeContainerXYLaoNianKe extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	
-	public MakeContainerXYLaoNianKe(A analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
+	public MakeContainerXYLaoNianKe(A _A, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -32,7 +32,7 @@ public class MakeContainerXYLaoNianKe extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;
@@ -44,10 +44,10 @@ public class MakeContainerXYLaoNianKe extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
 			tabNames.add("老年科");
-			laoNianKekx= new LaoNianKekx(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			laoNianKekx= new LaoNianKekx(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			laoNianKekx.setName("老年科");
 			
-//			u.jpanel11 = new MakeContainerXYLaoNianKe(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+//			u.jpanel11 = new MakeContainerXYLaoNianKe(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 //			u.jpanel11.setName(tabNames.get(10));
 			jTabbedpane.addTab("老年科", new ImageIcon() ,laoNianKekx, "添加老年科页");// �����һ��ҳ��  
 			Color[] colors= new Color[3];

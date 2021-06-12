@@ -60,7 +60,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 	public List<String> dic_list;
 	public Map<String, Object> dic_map;
 	public Object[] columnTitle = {"ID", "打分", "书名", "段落"};
-	public A analyzer; 
+	public A _A; 
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -74,12 +74,12 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 	private App u;
 	public ReadChinese readEnglish;
 	protected int row;
-	public FyydPage(JTextPane text,A analyzer, Map<String, String> pos, Map<String, String> pose
+	public FyydPage(JTextPane text,A _A, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, App u) throws IOException{
 		this.text = text;	this.pose = pose;
 		this.etc = etc;
 		this.cte = cte;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.u= u;
 		this.setLayout(null);
@@ -174,7 +174,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -270,7 +270,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 					}   
 					try {
 						statistic.setSize(500, 800);
-						Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+						Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 						statistic.setContentType("text/html");
 						StringBuilder page = new StringBuilder();
 						Here:
@@ -581,7 +581,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 				//
 				try {
 					statistic.setSize(500, 800);
-					//Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					//Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder stringBuilder = new StringBuilder();
 					String[] fwa= response.replace("\r\n", "<br/>").split("<br/>");
@@ -616,7 +616,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		});
 		
 		
-		readEnglish= new ReadChinese(u, analyzer);
+		readEnglish= new ReadChinese(u, _A);
 		buttonCTV= new DetaButton("语音阅读关");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -629,7 +629,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readEnglish.isAlive()) {
 					buttonCTV.setLabel("语音阅读开");
-					readEnglish= new ReadChinese(u, analyzer);
+					readEnglish= new ReadChinese(u, _A);
 					readEnglish.setPreReadList(sets);
 					readEnglish.start();
 				}else {
@@ -641,7 +641,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			}
 		});
 		//我本来想用URLencoder转代码，就不需要用@标识@了。以后改下。先用我大TIN god标识。
-		readEnglish= new ReadChinese(u, analyzer);
+		readEnglish= new ReadChinese(u, _A);
 		buttonGJJD= new DetaButton("导出古籍经典");
 		buttonGJJD.setBounds(740, 0, 100, 30);
 		buttonGJJD.addActionListener(new ActionListener() {
@@ -779,7 +779,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 			int col = table.getSelectedColumn();
 			String value = (String) table.getValueAt(row, col);
 			data.setSize(500, 800);
-			sets = analyzer.parserMixedString(value);//词性分析		
+			sets = _A.parserMixedString(value);//词性分析		
 			data.setContentType("text/html");
 			StringBuilder page = new StringBuilder().append("");
 			currentPage=0;
@@ -839,7 +839,7 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		}   
 		try {
 			statistic.setSize(500, 800);
-			Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+			Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 			statistic.setContentType("text/html");
 			StringBuilder page = new StringBuilder();
 			Here:
@@ -899,10 +899,10 @@ public class FyydPage extends Container implements MouseListener, KeyListener{
 		int []reg= new int[copy.size()];
 		int count=0;
 		Map<String, WordFrequency> mapSearchWithoutSort = null;
-		mapSearchWithoutSort = analyzer.parserMixStringByReturnFrequencyMap(key);
+		mapSearchWithoutSort = _A.parserMixStringByReturnFrequencyMap(key);
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
-		List<String> list= analyzer.parserMixedString(key);
+		List<String> list= _A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];

@@ -126,7 +126,7 @@ public class AppInit {
 				e.printStackTrace();
 			}
 		}
-		app.analyzer= new CogsBinaryForest_AE();
+		app._A= new CogsBinaryForest_AE();
 		if(app.appConfig.SectionJPanel.jTextPane!= null) {
 			String text= app.appConfig.SectionJPanel.jTextPane.getText();
 			text="\r\n"+ "----当前版本有效期100天."+ text;
@@ -151,19 +151,19 @@ public class AppInit {
 				Thread.sleep(300);
 			}
 			Thread.sleep(2000);
-			app.analyzer.initMixed();
-			app.pos= app.analyzer.getPosCnToCn();
-			app.pose= app.analyzer.getPosEnToEn();
-			app.posec= app.analyzer.getPosEnToCn();
-			app.etc= app.analyzer.getEnToCn();
-			app.cte= app.analyzer.getFullCnToEn();
-			app.posFullec= app.analyzer.getFullEnToCn();
-			app.posFullce= app.analyzer.getFullCnToEn();
-			app.pinyin= app.analyzer.getPinYin();
-			app.ctt= app.analyzer.getCtT();
-			app.ctk= app.analyzer.getCtA();
-			app.ctr= app.analyzer.getCtR();
-			app.ctj= app.analyzer.getCtJ();
+			app._A.initMixed();
+			app.pos= app._A.getPosCnToCn();
+			app.pose= app._A.getPosEnToEn();
+			app.posec= app._A.getPosEnToCn();
+			app.etc= app._A.getEnToCn();
+			app.cte= app._A.getFullCnToEn();
+			app.posFullec= app._A.getFullEnToCn();
+			app.posFullce= app._A.getFullCnToEn();
+			app.pinyin= app._A.getPinYin();
+			app.ctt= app._A.getCtT();
+			app.ctk= app._A.getCtA();
+			app.ctr= app._A.getCtR();
+			app.ctj= app._A.getCtJ();
 			if(app.appConfig.SectionJPanel.jTextPane!= null) {
 				String text= app.appConfig.SectionJPanel.jTextPane.getText();
 				text="\r\n"+ "----当前版本有效期100天."+ text;
@@ -177,7 +177,7 @@ public class AppInit {
 				app.appConfig.SectionJPanel.jTextPane.setText(text);
 			}
 			app.translator= new Translator_E();
-			app.translator.init(app.analyzer);
+			app.translator.init(app._A);
 			app.text= new JTextPane();
 			app.jText= new JTextPane();
 			app.jxText= new JTextPane();
@@ -596,7 +596,7 @@ public class AppInit {
 			app.setVisible(true);
 			Container jpanelFirst= new Container();
 			MakeContainer_ZHONG_YAO makeContainer_ZHONG_YAO= null;
-			makeContainer_ZHONG_YAO= new MakeContainer_ZHONG_YAO(app.analyzer, jpanelFirst, app, app.tabNames
+			makeContainer_ZHONG_YAO= new MakeContainer_ZHONG_YAO(app._A, jpanelFirst, app, app.tabNames
 					, app.pos, app.jTabbedpane);
 			makeContainer_ZHONG_YAO.start();
 			app.jTabbedpane.addTab(app.tabNames.get(0), new ImageIcon(), jpanelFirst, "first");
@@ -617,7 +617,7 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				//backend
-				new BootVPCSBackEnd(app.analyzer).start();
+				new BootVPCSBackEnd(app._A).start();
 				Thread.sleep(6);
 				if(app.appConfig.SectionJPanel.jTextPane!= null) {
 					String text= app.appConfig.SectionJPanel.jTextPane.getText();
@@ -637,7 +637,7 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanelSecond= new Container();  
-				MakeContainerSJFX makeContainerSJFX= new MakeContainerSJFX(app.tableData_old, app.text, app.analyzer,jpanelSecond, app
+				MakeContainerSJFX makeContainerSJFX= new MakeContainerSJFX(app.tableData_old, app.text, app._A,jpanelSecond, app
 						,app.jTabbedpane,app.tabNames, app.pos, app.pose, app.etc, app.cte);
 				makeContainerSJFX.start();
 				Thread.sleep(300);
@@ -651,7 +651,7 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanelThird= new Container();  
-				MakeContainerZNXZ makeContainerZNXZ= new MakeContainerZNXZ(app.analyzer,jpanelThird, app,app.jTabbedpane
+				MakeContainerZNXZ makeContainerZNXZ= new MakeContainerZNXZ(app._A,jpanelThird, app,app.jTabbedpane
 						, app.tabNames, app.pos, app.pose, app.etc, app.cte);
 				makeContainerZNXZ.start();
 				Thread.sleep(300);
@@ -665,7 +665,7 @@ public class AppInit {
 //					app.appConfig.SectionJPanel.jTextPane.setText(text);
 //				}
 //				Container jpanelFourth= new Container();
-//				app.MakeContainerZNSZ c4= new MakeContainerZNSZ(app.analyzer, jpanelFourth, app,app.jTabbedpane, app.tabNames, app.pos, app.pose, app.etc, app.cte);
+//				app.MakeContainerZNSZ c4= new MakeContainerZNSZ(app._A, jpanelFourth, app,app.jTabbedpane, app.tabNames, app.pos, app.pose, app.etc, app.cte);
 //				c4.start();
 //				Thread.sleep(300);
 //			}
@@ -678,7 +678,7 @@ public class AppInit {
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
 				Container jpanel5= new Container();  
-				MakeContainerQMDJ makeContainerQMDJ=new MakeContainerQMDJ(app.analyzer,jpanel5, app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerQMDJ makeContainerQMDJ=new MakeContainerQMDJ(app._A,jpanel5, app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerQMDJ.start();
 				Thread.sleep(300);
@@ -691,7 +691,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYNK makeContainerXYNK= new MakeContainerXYNK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYNK makeContainerXYNK= new MakeContainerXYNK(app._A,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerXYNK.start();
 				Thread.sleep(300);
@@ -704,7 +704,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYNKFJ makeContainerZYNKFJ= new MakeContainerZYNKFJ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYNKFJ makeContainerZYNKFJ= new MakeContainerZYNKFJ(app._A,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerZYNKFJ.start();
 				Thread.sleep(300);
@@ -717,7 +717,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYZD makeContainerZYZD= new MakeContainerZYZD(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYZD makeContainerZYZD= new MakeContainerZYZD(app._A,app,app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerZYZD.start();
 				Thread.sleep(300);
@@ -730,7 +730,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerGJJD makeContainerGJJD= new MakeContainerGJJD(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerGJJD makeContainerGJJD= new MakeContainerGJJD(app._A,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerGJJD.start();
 				Thread.sleep(300);
@@ -743,7 +743,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYFC makeContainerZYFC= new MakeContainerZYFC(app.analyzer,app,app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerZYFC makeContainerZYFC= new MakeContainerZYFC(app._A,app,app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerZYFC.start();
 				Thread.sleep(300);
@@ -756,7 +756,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXXFC makeContainerXXFC= new MakeContainerXXFC(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerXXFC makeContainerXXFC= new MakeContainerXXFC(app._A,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerXXFC.start();
 				Thread.sleep(300);
@@ -769,7 +769,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYJZ makeContainerXYJZ=new MakeContainerXYJZ(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYJZ makeContainerXYJZ=new MakeContainerXYJZ(app._A,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerXYJZ.start();
 				Thread.sleep(300);
@@ -782,7 +782,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYWK makeContainerXYWK= new MakeContainerXYWK(app.analyzer,app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerXYWK makeContainerXYWK= new MakeContainerXYWK(app._A,app, app.jTabbedpane, app.tabNames, app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerXYWK.start();
 				Thread.sleep(300);
@@ -795,7 +795,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerZYWS makeContainerZYWS= new MakeContainerZYWS(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerZYWS makeContainerZYWS= new MakeContainerZYWS(app._A,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerZYWS.start();	
 				Thread.sleep(300);
@@ -808,7 +808,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerXYCF makeContainerXYCF=new MakeContainerXYCF(app.analyzer,app, app.jTabbedpane, app.tabNames,  app.pos
+				MakeContainerXYCF makeContainerXYCF=new MakeContainerXYCF(app._A,app, app.jTabbedpane, app.tabNames,  app.pos
 						,app.pose, app.etc, app.cte);
 				makeContainerXYCF.start();
 				Thread.sleep(300);
@@ -821,7 +821,7 @@ public class AppInit {
 					text= "\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerBJY makeContainerBJY= new MakeContainerBJY(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos,app.pose,app.etc
+				MakeContainerBJY makeContainerBJY= new MakeContainerBJY(app._A, app, app.jTabbedpane, app.tabNames, app.pos,app.pose,app.etc
 						, app.cte, app.pinyin, app.ctj, app.ctt, app.ctk, app.ctr);
 				makeContainerBJY.start();	
 				Thread.sleep(300);
@@ -834,7 +834,7 @@ public class AppInit {
 					text="\r\n"+ "..."+ text;
 					app.appConfig.SectionJPanel.jTextPane.setText(text);
 				}
-				MakeContainerHLS makeContainerHLS= new MakeContainerHLS(app.analyzer, app, app.jTabbedpane, app.tabNames, app.pos
+				MakeContainerHLS makeContainerHLS= new MakeContainerHLS(app._A, app, app.jTabbedpane, app.tabNames, app.pos
 						, app.pose, app.etc, app.cte, app.posec, app.posFullec);
 				makeContainerHLS.start();
 			}

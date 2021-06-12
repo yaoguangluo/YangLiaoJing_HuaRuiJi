@@ -28,16 +28,16 @@ public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseLi
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
 	public Box buttonBox;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public TaskMakeCoWorker taskMakeCoWorker;
-	public MakeContainer_ZHONG_YAO(A analyzer,Container jpanelFirst, App u2, List<String> tabNames2
+	public MakeContainer_ZHONG_YAO(A _A,Container jpanelFirst, App u2, List<String> tabNames2
 			, Map<String, String> pos, JTabbedPane jTabbedpane) throws IOException {
 		super();
 		this.jpanelFirst= jpanelFirst;
 		this.u= u2;
 		this.tabNames= tabNames2;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.jTabbedpane= jTabbedpane;
 		this.pos= pos;
 		jpanelFirst.setLayout(null);
@@ -72,7 +72,7 @@ public class MakeContainer_ZHONG_YAO extends Thread implements Runnable, MouseLi
 			jpanelFirst.validate();
 			jpanelFirst.setName(tabNames.get(0));
 			jTabbedpane.addMouseListener(this);
-			taskMakeCoWorker= new TaskMakeCoWorker(u, jpanelFirst,analyzer,pos);
+			taskMakeCoWorker= new TaskMakeCoWorker(u, jpanelFirst,_A,pos);
 			taskMakeCoWorker.start();
 		}catch(Exception e) {
 			jTabbedpane.validate();

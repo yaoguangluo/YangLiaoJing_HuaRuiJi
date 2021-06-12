@@ -16,17 +16,17 @@ public class MakeContainerXXFC extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerXXFC(A analyzer, App u2, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
+	public MakeContainerXXFC(A _A, App u2, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -36,7 +36,7 @@ public class MakeContainerXXFC extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
-			u.fckxPage = new FckxPage(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			u.fckxPage = new FckxPage(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			u.fckxPage.setName(tabNames.get(10));
 			jTabbedpane.addTab(tabNames.get(10),new ImageIcon() , u.fckxPage, "西医妇产科学");// 加入第一个页面  
 			Color[] colors= new Color[3];

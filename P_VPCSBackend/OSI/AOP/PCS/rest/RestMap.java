@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import OCI.AVC.SUQ.SVQ.MPC.fhmm.C.EmotionMap;
 import OCI.ME.analysis.C.A;
 public class RestMap {
-	public static void P(String[] type, Socket socket, A analyzer, EmotionMap emotionMap) 
+	public static void P(String[] type, Socket socket, A _A, EmotionMap emotionMap) 
 			throws IOException {
 		String[] column = type[1].split("&");
 		Map<String, String> data = new ConcurrentHashMap<>();
@@ -22,7 +22,7 @@ public class RestMap {
 		}
 		String output = "";
 		try {
-			output= VPCBackEnd.forward(emotionMap, analyzer, type[0], data);
+			output= VPCBackEnd.forward(emotionMap, _A, type[0], data);
 //			System.out.println(output);
 			PrintWriter pw= new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket
 					.getOutputStream(),"UTF-8")),true);

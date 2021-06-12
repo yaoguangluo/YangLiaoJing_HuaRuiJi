@@ -16,19 +16,19 @@ public class MakeContainerZYWS extends Thread implements Runnable{
 	public App u;
     public JTabbedPane jTabbedpane;
     public List<String> tabNames;
-    public A analyzer;
+    public A _A;
     public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerZYWS(A analyzer, App u2, JTabbedPane jTabbedpane
+	public MakeContainerZYWS(A _A, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2,Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -38,7 +38,7 @@ public class MakeContainerZYWS extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.wskxPage = new WskxPage(u.text, this.analyzer,pos, pose, etc, cte, u, jTabbedpane);
+			u.wskxPage = new WskxPage(u.text, this._A,pos, pose, etc, cte, u, jTabbedpane);
 			u.wskxPage.setName(tabNames.get(13));
 			jTabbedpane.addTab(tabNames.get(13),new ImageIcon() , u.wskxPage, "中医外伤科学");// 加入第一个页面  
 			Color[] colors= new Color[3];

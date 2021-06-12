@@ -70,9 +70,9 @@ public class RNN_IDETest{
 		return ideMatrix;
 	}
 
-	public String[][] getIDEMatrixExcludeAnalyzer(A analyzer, String string) throws IOException {
+	public String[][] getIDEMatrixExcludeAnalyzer(A _A, String string) throws IOException {
 		SensingTest sensingTest = new SensingTest();
-		String[][] sensingMatrix = sensingTest.getMatrix(string, analyzer);
+		String[][] sensingMatrix = sensingTest.getMatrix(string, _A);
 		Map<String, List<Double>> map = new HashMap<>();
 		for(int i = 0; i < sensingMatrix.length; i++) {
 			List<Double> list = new LinkedList<>(); 
@@ -128,7 +128,7 @@ public class RNN_IDETest{
 		return ideMatrix;
 	}
 
-	public String[][] getIDEMatrixExcludeAnalyzer(SensingTest sensingTest, String[][] ann, A analyzer, String string) {
+	public String[][] getIDEMatrixExcludeAnalyzer(SensingTest sensingTest, String[][] ann, A _A, String string) {
 		//敏感度 意识 sensing
 		String[][] sensingMatrix = ann;
 		Map<String, List<Double>> map = new HashMap<>();

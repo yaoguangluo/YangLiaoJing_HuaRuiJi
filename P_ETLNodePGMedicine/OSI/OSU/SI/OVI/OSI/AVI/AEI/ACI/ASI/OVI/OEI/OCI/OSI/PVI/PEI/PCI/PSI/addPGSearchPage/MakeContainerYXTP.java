@@ -40,7 +40,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 	public App app;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
@@ -61,7 +61,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 	public BufferedImage bufferedImageNullPG;
 	//public LinkedList<DetaButton> topList= new LinkedList<>(); 
 
-	public MakeContainerYXTP(A analyzer, Container jpanelFourth, App app, JTabbedPane jTabbedpane
+	public MakeContainerYXTP(A _A, Container jpanelFourth, App app, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -69,7 +69,7 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 		this.app= app;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;
@@ -1680,10 +1680,10 @@ public class MakeContainerYXTP extends Thread implements Runnable{
 		//int count = 0;
 		Map<String, WordFrequency> mapSearchWithoutSort = null;
 		//Map<Integer, WordFrequency> mapSearchWithSort = null;
-		mapSearchWithoutSort = analyzer.parserMixStringByReturnFrequencyMap(key);
+		mapSearchWithoutSort = _A.parserMixStringByReturnFrequencyMap(key);
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
-		List<String> list= analyzer.parserMixedString(key);
+		List<String> list= _A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 
 		String[] stringReg= new String[key.length()/3];

@@ -15,19 +15,19 @@ public class MakeContainerZYNKFJ extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerZYNKFJ(A analyzer, App u2, JTabbedPane jTabbedpane, List<String> tabNames2
+	public MakeContainerZYNKFJ(A _A, App u2, JTabbedPane jTabbedpane, List<String> tabNames2
 			, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer=analyzer;
+		this._A=_A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -38,7 +38,7 @@ public class MakeContainerZYNKFJ extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000* 2);
 			//jTabbedpane.setMnemonicAt(5, KeyEvent.VK_5);// 设置第一个位置的快捷键为0  
-			u.zynkxPage= new ZynkxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.zynkxPage= new ZynkxPage(u.text, this._A, pos, pose, etc, cte, u, jTabbedpane);
 			u.zynkxPage.setName(tabNames.get(6));
 			jTabbedpane.addTab(tabNames.get(6), new ImageIcon(), u.zynkxPage, "中医方剂诊治");// 加入第一个页面  
 			Color[] colors= new Color[3];

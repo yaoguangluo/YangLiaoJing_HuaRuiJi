@@ -15,11 +15,11 @@ public class ReadChinese extends Thread implements Runnable{
 	public com.jacob.activeX.ActiveXComponent sap;;
 	public com.jacob.com.Dispatch sapo;
 	public App app;
-	public A analyzer;//对象只是 地址位而已，不是clone， copy和 new
+	public A _A;//对象只是 地址位而已，不是clone， copy和 new
 	@SuppressWarnings("unused")
-	public ReadChinese(App app, A analyzer){ 
+	public ReadChinese(App app, A _A){ 
 		this.app= app;
-		this.analyzer= analyzer;
+		this._A= _A;
 		com.jacob.activeX.ActiveXComponent sap= new com.jacob.activeX.ActiveXComponent("Sapi.SpVoice");
 		sapo= sap.getObject();
 		try {
@@ -89,9 +89,9 @@ public class ReadChinese extends Thread implements Runnable{
 				String readString= iterator.next();
 				List<String> list = null;
 				if(null!= app) {
-					list= app.analyzer.parserMixedString(readString);
-				}else if(null!= analyzer) {
-					list= analyzer.parserMixedString(readString);
+					list= app._A.parserMixedString(readString);
+				}else if(null!= _A) {
+					list= _A.parserMixedString(readString);
 				}
 				if(null!= list&& finish== 2) {
 					Iterator<String> listIterator= list.iterator();

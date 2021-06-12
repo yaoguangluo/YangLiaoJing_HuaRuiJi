@@ -18,13 +18,13 @@ public class MakeContainerXYNanXinJiYinKe extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	
-	public MakeContainerXYNanXinJiYinKe(A analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
+	public MakeContainerXYNanXinJiYinKe(A _A, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -32,7 +32,7 @@ public class MakeContainerXYNanXinJiYinKe extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;
@@ -44,10 +44,10 @@ public class MakeContainerXYNanXinJiYinKe extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
 			tabNames.add("男性基因科");
-			jpanelSecond= new NanXinJiYinKekx(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			jpanelSecond= new NanXinJiYinKekx(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			jpanelSecond.setName("男性基因科");
 			
-//			u.jpanel11 = new MakeContainerXYNanXinJiYinKe(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+//			u.jpanel11 = new MakeContainerXYNanXinJiYinKe(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 //			u.jpanel11.setName(tabNames.get(10));
 			jTabbedpane.addTab("男性基因科", new ImageIcon() ,jpanelSecond, "添加男性基因科页");// �����һ��ҳ��  
 			Color[] colors= new Color[3];

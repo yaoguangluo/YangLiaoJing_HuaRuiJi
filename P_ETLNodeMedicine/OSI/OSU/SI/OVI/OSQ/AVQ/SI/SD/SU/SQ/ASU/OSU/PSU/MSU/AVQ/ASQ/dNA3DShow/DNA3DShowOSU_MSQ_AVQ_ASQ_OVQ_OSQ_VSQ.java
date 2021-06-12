@@ -13,7 +13,7 @@ public class DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 	public JButton button;
 	public String path;
 	public ME.APM.VSQ.App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public String DNNtext;
 	public DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
@@ -25,7 +25,7 @@ public class DNA3DShowOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AVQ_ASQ_OV
 		try {
 			CoDNAAuthorForWord app = null;
 			try {
-				app= new CoDNAAuthorForWord(u, analyzer, pos);
+				app= new CoDNAAuthorForWord(u, _A, pos);
 				app.setSize(850, 400);
 				app.setVisible(true);
 				JFrame f= new JFrame();

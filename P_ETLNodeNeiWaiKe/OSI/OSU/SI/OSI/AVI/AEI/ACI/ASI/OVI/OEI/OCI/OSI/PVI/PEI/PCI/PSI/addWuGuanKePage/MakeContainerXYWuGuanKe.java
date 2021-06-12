@@ -18,13 +18,13 @@ public class MakeContainerXYWuGuanKe extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	
-	public MakeContainerXYWuGuanKe(A analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
+	public MakeContainerXYWuGuanKe(A _A, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -32,7 +32,7 @@ public class MakeContainerXYWuGuanKe extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;
@@ -44,10 +44,10 @@ public class MakeContainerXYWuGuanKe extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
 			tabNames.add("五官科");
-			jpanelSecond= new WuGuanKekx(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			jpanelSecond= new WuGuanKekx(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			jpanelSecond.setName("五官科");
 			
-			//u.jpanel11= new MakeContainerXYWuGuanKe(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			//u.jpanel11= new MakeContainerXYWuGuanKe(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			//u.jpanel11.setName(tabNames.get(10));
 			jTabbedpane.addTab("五官科", new ImageIcon(), jpanelSecond, "添加五官科页");// �����һ��ҳ��  
 			Color[] colors= new Color[3];

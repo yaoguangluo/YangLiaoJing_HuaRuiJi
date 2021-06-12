@@ -30,13 +30,13 @@ public class ANNTest{
 		return AnnMatrix;
 	}
 
-	public String[][] getANNMatrix(String string, A analyzer) throws IOException
+	public String[][] getANNMatrix(String string, A _A) throws IOException
 	, InstantiationException, IllegalAccessException {
 		SensingTest sensingTest= new SensingTest();
 		//SUM OF ANN MAP CULUMN KERNEL
-		String[][] preAnnMatrix= sensingTest.getMatrix(string, analyzer);
+		String[][] preAnnMatrix= sensingTest.getMatrix(string, _A);
 		String[][] AnnMatrix= new DETA_ANN_HMM().summingProcessor(preAnnMatrix);	
-		String[][] POSPCAAnnMatrix=  getPOSPCAAnnMatrix(AnnMatrix, analyzer.getPosCnToCn());
+		String[][] POSPCAAnnMatrix=  getPOSPCAAnnMatrix(AnnMatrix, _A.getPosCnToCn());
 		return POSPCAAnnMatrix;
 	//	return POSPCAAnnMatrix= AnnMatrix;
 	}
@@ -63,12 +63,12 @@ public class ANNTest{
 		return PCANLP;		 	
 	}
 
-	public String[][] getANNMatrix(SensingTest sensingTest, String string, A analyzer) 
+	public String[][] getANNMatrix(SensingTest sensingTest, String string, A _A) 
 			throws IOException, InstantiationException, IllegalAccessException {
 		//SUM OF ANN MAP CULUMN KERNEL
-		String[][] preAnnMatrix = sensingTest.getMatrix(string, analyzer);
+		String[][] preAnnMatrix = sensingTest.getMatrix(string, _A);
 		String[][] AnnMatrix = new DETA_ANN_HMM().summingProcessor(preAnnMatrix);	
-		String[][] POSPCAAnnMatrix=  getPOSPCAAnnMatrix(AnnMatrix, analyzer.getPosCnToCn());
+		String[][] POSPCAAnnMatrix=  getPOSPCAAnnMatrix(AnnMatrix, _A.getPosCnToCn());
 		return POSPCAAnnMatrix;
 	}
 }

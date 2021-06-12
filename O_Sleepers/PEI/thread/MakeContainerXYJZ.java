@@ -16,18 +16,18 @@ public class MakeContainerXYJZ extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerXYJZ(A analyzer, App u2, JTabbedPane jTabbedpane, List<String> tabNames2,Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
+	public MakeContainerXYJZ(A _A, App u2, JTabbedPane jTabbedpane, List<String> tabNames2,Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.pos = pos;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -37,7 +37,7 @@ public class MakeContainerXYJZ extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*4);	
-			u.jzkxPage= new JzkxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.jzkxPage= new JzkxPage(u.text, this._A, pos, pose, etc, cte, u, jTabbedpane);
 			u.jzkxPage.setName(tabNames.get(11));
 			jTabbedpane.addTab(tabNames.get(11),new ImageIcon() , u.jzkxPage, "急诊学指南");// 加入第一个页面  
 			Color[] colors= new Color[3];

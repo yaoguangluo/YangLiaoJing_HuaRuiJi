@@ -13,7 +13,7 @@ public class AddXinShengErBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AV
 	public JButton button;
 	public String path;
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public String DNNtext;
 	public AddXinShengErBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ(){
@@ -23,7 +23,7 @@ public class AddXinShengErBookOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ extends OSU_AVQ_ASQ_AV
 		try {
 			CoAuthorForWord app = null;
 			try {
-				app= new CoAuthorForWord(u, analyzer, pos);
+				app= new CoAuthorForWord(u, _A, pos);
 				app.setSize(850, 400);
 				app.setVisible(true);
 				JFrame f= new JFrame();

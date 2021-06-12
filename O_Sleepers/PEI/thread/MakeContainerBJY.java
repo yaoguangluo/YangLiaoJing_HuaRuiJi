@@ -14,7 +14,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 	public App u;
     public JTabbedPane jTabbedpane;
     public List<String> tabNames;
-    public A analyzer;
+    public A _A;
     public Map<String, String> pos;
    	public Map<String, String> pose;
    	public Map<String, String> etc;
@@ -24,7 +24,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 	private Map<String, String> ctk;
 	private Map<String, String> ctt;
 	private Map<String, String> ctr;
-	public MakeContainerBJY(A analyzer, App u2, JTabbedPane jTabbedpane
+	public MakeContainerBJY(A _A, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, Map<String, String> pinyin
 			, Map<String, String> ctj, Map<String, String> ctt, Map<String, String> ctk, Map<String, String> ctr) {
@@ -32,7 +32,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -47,7 +47,7 @@ public class MakeContainerBJY extends Thread implements  Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.editPane = new EditPane(u.text, this.analyzer,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
+			u.editPane = new EditPane(u.text, this._A,pos, pose, etc, cte, pinyin, ctk, ctt, ctj, ctr); 	
 			u.editPane.setName(tabNames.get(15));
 			jTabbedpane.addTab(tabNames.get(15),new ImageIcon() , u.editPane, "编辑页");// 加入第一个页面  	
 			Color[] colors= new Color[3];

@@ -51,7 +51,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	public App u;
 	public Map<String, Object> dic_li ;
 	public Map<String, Object> dic_yl;
-	public A analyzer;
+	public A _A;
 	public int c = 0;
 	private static final long serialVersionUID = 1L;
 	public FPSAnimator animator = null;  
@@ -108,7 +108,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 	JOGLOBJShape shape=null;
 	public double t = 1.0d;
 	public String rootWord;  
-	public CoAuthorForWord(App u, A analyzer
+	public CoAuthorForWord(App u, A _A
 			, Map<String, String> pos) throws HeadlessException, InterruptedException  {  
 		Thread.sleep(100);
 		rootWord="";
@@ -116,7 +116,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 		findLeaf = new ConcurrentHashMap<>();
 		frequencyLeaf = new ConcurrentHashMap<>();
 		didLeaf= new ConcurrentHashMap<>();
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.u = u;
 		this.setLayout(null);
@@ -734,7 +734,7 @@ public class CoAuthorForWord extends JPanel implements MouseMotionListener, Mous
 		}
 		int ml=0;
 		if(u.dic_li.containsKey(temp) || u.dic_yl.containsKey(temp) ||u.dic_zf.containsKey(temp)) {
-			Map<String, WordFrequency> map = analyzer.parserMixStringByReturnFrequencyMap(
+			Map<String, WordFrequency> map = _A.parserMixStringByReturnFrequencyMap(
 					(u.dic_li.get(temp) == null? "":u.dic_li.get(temp))+
 					(u.dic_yl.get(temp) == null? "":u.dic_yl.get(temp).toString())+
 					(u.dic_zf.get(temp) == null? "":u.dic_zf.get(temp).toString())

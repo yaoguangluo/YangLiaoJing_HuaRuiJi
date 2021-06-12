@@ -10,20 +10,20 @@ import ME.APM.VSQ.App;
 import OCI.ME.analysis.C.A;
 public class TaskMakeCoWorker extends Thread implements Runnable{
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Container jpanelFirstu;
 	public Map<String, String> pos;
-	public TaskMakeCoWorker(App u, Container jpanelFirstu, A analyzer, Map<String, String> pos) {
+	public TaskMakeCoWorker(App u, Container jpanelFirstu, A _A, Map<String, String> pos) {
 		this.u= u;
 		this.jpanelFirstu = jpanelFirstu;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 	}
 
 	@Override
 	public void run() {
 		try {
-			u.coAuthorForWord = new CoAuthorForWord(u, analyzer, pos);
+			u.coAuthorForWord = new CoAuthorForWord(u, _A, pos);
 		} catch (HeadlessException | InterruptedException e) {
 			e.printStackTrace();
 		}

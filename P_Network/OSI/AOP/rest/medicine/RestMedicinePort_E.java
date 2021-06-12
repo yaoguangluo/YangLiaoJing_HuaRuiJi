@@ -28,7 +28,7 @@ public class RestMedicinePort_E {
 				if(forE != null && !forE.replace(" ", "").equals("") && forE.length()>110) {
 					forE = forE.substring(0, 110);
 				}
-				key = key.length()==0?"":app.translator.MixedStringToChineseString(app.analyzer, key);
+				key = key.length()==0?"":app.translator.MixedStringToChineseString(app._A, key);
 				if(key.replaceAll("\\s+", " ").equalsIgnoreCase(" ")){
 					key="";
 				}
@@ -145,10 +145,10 @@ public class RestMedicinePort_E {
 				}
 				Translator ts= new Translator_E();
 				try {
-					ts.init(app.analyzer);
+					ts.init(app._A);
 				} catch (IOException e) {
 				} 
-				List<Verbal> verbals= ts.index(app.analyzer, forE);
+				List<Verbal> verbals= ts.index(app._A, forE);
 				if(app.cecil!= null) {
 					app.cecil.verbals= verbals;
 					app.cecil.keyReleased(null);
@@ -159,9 +159,9 @@ public class RestMedicinePort_E {
 				int count= 0;
 				Map<String, WordFrequency> mapSearchWithoutSort= null;
 				if(key.split(" ")[0].length()> 5) {
-					mapSearchWithoutSort= app.analyzer.parserMixStringByReturnFrequencyMap(key);
+					mapSearchWithoutSort= app._A.parserMixStringByReturnFrequencyMap(key);
 				}else {
-					mapSearchWithoutSort= app.analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
+					mapSearchWithoutSort= app._A.parserMixStringByReturnFrequencyMap(zhongyao);	
 				}
 				Iterator<String> iteratorForCopy= app.copy.iterator();	
 				int copyCount= 0;

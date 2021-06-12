@@ -30,7 +30,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
@@ -63,7 +63,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 	public int source256= 0;
 	public int source512= 0;
 	
-	public MakeContainerZNSZ(A analyzer, Container jpanelFourth, App u2, JTabbedPane jTabbedpane
+	public MakeContainerZNSZ(A _A, Container jpanelFourth, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -71,7 +71,7 @@ public class MakeContainerZNSZ extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;

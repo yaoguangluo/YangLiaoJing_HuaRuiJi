@@ -20,7 +20,7 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 	protected String addressString;
 	protected String searchString;
 	public List<String[]> indexResult;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> posec;
@@ -31,10 +31,10 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 
 	public void run(final ReadOSU_MSQ_AVQ_ASQ_OVQ_OSQ_VSQ SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ) 
 			throws IOException{
-		analyzer= new CogsBinaryForest_AE();
-		analyzer.initMixed();
+		_A= new CogsBinaryForest_AE();
+		_A.initMixed();
 		//拿到中文数据
-		pos= analyzer.getPosCnToCn();
+		pos= _A.getPosCnToCn();
 		indexResult= new ArrayList<String[]>();
 		System.out.println("runed"+ value); 
 		//SQ_OSU_MSQ_OSU_AVQ_ASQ_AVQ_ASQ_OVQ_OSQ_VSQ.path= new String(filepath); 
@@ -47,7 +47,7 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 			return;
 		}
 		String[] fileList= category.list();
-		List<String> list= analyzer.parserMixedString(searchString);
+		List<String> list= _A.parserMixedString(searchString);
 		//list to map
 		indexWords= new HashMap<String, String>(); 
 		for(String string: list) {
@@ -90,7 +90,7 @@ public class ReadOSU_MSQ_OPE_OPC_ECI extends OSU_AVQ_ASQ_OPE_OPC_ECI{
 			BufferedReader reader= new BufferedReader(new FileReader(file));
 			String tempString;
 			while ((tempString= reader.readLine())!= null) {
-				List<String> list= analyzer.parserMixedString(tempString);
+				List<String> list= _A.parserMixedString(tempString);
 				Iterator<String> iterator= list.iterator();
 				while(iterator.hasNext()) {
 					String value= iterator.next();

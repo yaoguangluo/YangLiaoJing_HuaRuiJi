@@ -11,9 +11,9 @@ import static java.lang.System.*;
 
 public class DemoPOS {
 	public static void main(String[] args) throws IOException {
-		A analyzer = new CogsBinaryForest_AE();
-		analyzer.initMixed();//.init();
-		Map<String, String> nlp = analyzer.getPosCnToCn();
+		A _A = new CogsBinaryForest_AE();
+		_A.initMixed();//.init();
+		Map<String, String> nlp = _A.getPosCnToCn();
 		List<String> sets = new ArrayList<>();
 		String[] ss = new String[37];
 		String[] ss1 = new String[37];
@@ -94,7 +94,7 @@ public class DemoPOS {
 		ss1[36] = " �????? 用户 发现";
 		for (int i = 0; i < ss.length; i++) {
 			System.out.println("超级变�?�复杂病�?????-->" + ss[i]);
-			sets = analyzer.parserString(ss[i].replace(" ", ""));//词�?�分�?????
+			sets = _A.parserString(ss[i].replace(" ", ""));//词�?�分�?????
 			out.print("分析处理真实结果-->");
 			for (int j = 0; j < sets.size(); j++) {
 				if (!sets.get(j).replaceAll("\\s+", "").equals("")) {

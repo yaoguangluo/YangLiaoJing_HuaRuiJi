@@ -54,7 +54,7 @@ public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, M
 	public App u;
 	public Map<String, Object> dic_li ;
 	public Map<String, Object> dic_yl;
-	public A analyzer;
+	public A _A;
 	public int c = 0;
 	private static final long serialVersionUID = 1L;
 	public FPSAnimator animator = null;  
@@ -112,7 +112,7 @@ public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, M
 	public double t = 1.0d;
 	public String rootWord;
 	public CMS cms;  
-	public CoDNAAuthorForWord(App u, A analyzer
+	public CoDNAAuthorForWord(App u, A _A
 			, Map<String, String> pos) throws HeadlessException, InterruptedException  {  
 		Thread.sleep(100);
 		rootWord="";
@@ -120,7 +120,7 @@ public class CoDNAAuthorForWord extends JPanel implements MouseMotionListener, M
 		findLeaf = new ConcurrentHashMap<>();
 		frequencyLeaf = new ConcurrentHashMap<>();
 		didLeaf= new ConcurrentHashMap<>();
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.u = u;
 		this.setLayout(null);

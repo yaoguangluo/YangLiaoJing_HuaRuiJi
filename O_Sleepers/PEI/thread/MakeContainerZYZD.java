@@ -16,17 +16,17 @@ public class MakeContainerZYZD extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerZYZD(A analyzer,App u2, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
+	public MakeContainerZYZD(A _A,App u2, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
 		this.u = u2;
 		this.tabNames = tabNames2;
 		this.jTabbedpane = jTabbedpane;
-		this.analyzer=analyzer;
+		this._A=_A;
 		this.pos = pos;
 		this.pose = pose;
 		this.etc = etc;
@@ -36,7 +36,7 @@ public class MakeContainerZYZD extends Thread implements Runnable{
 		try {
 			jTabbedpane.validate();
 			Thread.sleep(1000*1);
-			u.zyzdxPage= new ZyzdxPage(u.text, this.analyzer, pos, pose, etc, cte, u, jTabbedpane);
+			u.zyzdxPage= new ZyzdxPage(u.text, this._A, pos, pose, etc, cte, u, jTabbedpane);
 			u.zyzdxPage.setName(tabNames.get(7));
 			jTabbedpane.addTab(tabNames.get(7),new ImageIcon() , u.zyzdxPage, "中医诊断学");// 加入第一个页面  
 			Color[] colors= new Color[3];

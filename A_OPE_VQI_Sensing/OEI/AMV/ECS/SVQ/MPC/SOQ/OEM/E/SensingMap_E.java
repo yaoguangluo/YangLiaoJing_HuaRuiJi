@@ -20,10 +20,10 @@ public class SensingMap_E implements SensingMap{
 	}
 
 	@Override
-	public void initLenovoMap(A analyzer) throws IOException {
+	public void initLenovoMap(A _A) throws IOException {
 		lenovoMap= new HashMap<>();
-		Map<String, String> CnToEnMap= analyzer.getFullCnToEn();
-		Map<String, String> EnToCnMap= analyzer.getEnToCn();
+		Map<String, String> CnToEnMap= _A.getFullCnToEn();
+		Map<String, String> EnToCnMap= _A.getEnToCn();
 		Iterator<String> iterator= CnToEnMap.keySet().iterator();
 		Here:
 		while(iterator.hasNext()) {

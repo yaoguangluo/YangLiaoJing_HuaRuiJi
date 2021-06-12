@@ -17,18 +17,18 @@ public class Translator_E implements Translator{
 	public Map<String, String> cte;
 	public Map<String, String> fulletc;
 	public Map<String, String> fullcte;
-	public void init(A analyzer) throws IOException {
-		posec = analyzer.getPosEnToCn();
-		posee = analyzer.getPosEnToEn();
-		poscc = analyzer.getPosCnToCn();
-		etc = analyzer.getEnToCn();
-		cte = analyzer.getCnToEn();
-		fulletc = analyzer.getFullEnToCn();
-		fullcte = analyzer.getFullCnToEn();
+	public void init(A _A) throws IOException {
+		posec = _A.getPosEnToCn();
+		posee = _A.getPosEnToEn();
+		poscc = _A.getPosCnToCn();
+		etc = _A.getEnToCn();
+		cte = _A.getCnToEn();
+		fulletc = _A.getFullEnToCn();
+		fullcte = _A.getFullCnToEn();
 	}
 
-	public String EnglishStringToChineseString(A analyzer, String EnglishString) {
-		String[] nodes = analyzer.parserEnglishString(EnglishString);
+	public String EnglishStringToChineseString(A _A, String EnglishString) {
+		String[] nodes = _A.parserEnglishString(EnglishString);
 		StringBuilder sb = new StringBuilder();
 		for(String temp:nodes) {
 			char[] caseTemp = temp.toCharArray();
@@ -46,8 +46,8 @@ public class Translator_E implements Translator{
 		return sb.toString();
 	}
 	
-	public String ChineseStringToEnglishString(A analyzer, String ChineseString) {
-		List<String> nodes = analyzer.parserString(ChineseString);
+	public String ChineseStringToEnglishString(A _A, String ChineseString) {
+		List<String> nodes = _A.parserString(ChineseString);
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
 		while(it.hasNext()) {
@@ -64,8 +64,8 @@ public class Translator_E implements Translator{
 		return sb.toString();
 	}
 
-	public String MixedStringToChineseString(A analyzer, String mixedString) {
-		List<String> nodes = analyzer.parserMixedString(mixedString.toLowerCase());
+	public String MixedStringToChineseString(A _A, String mixedString) {
+		List<String> nodes = _A.parserMixedString(mixedString.toLowerCase());
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
 		while(it.hasNext()) {
@@ -73,7 +73,7 @@ public class Translator_E implements Translator{
 			if(poscc.containsKey(temp)) {
 				sb.append(temp);
 			}else {
-				String[] strings = analyzer.parserEnglishString(temp);
+				String[] strings = _A.parserEnglishString(temp);
 				for(String string:strings) {
 					if(string == null || string.length() < StableData.INT_ONE) {
 						string = StableData.EMPTY_STRING;
@@ -91,8 +91,8 @@ public class Translator_E implements Translator{
 		return sb.toString();
 	}
 
-	public String ChineseStringToEnglishStringWithPOS(A analyzer, String ChineseString) {
-		List<String> nodes = analyzer.parserString(ChineseString);
+	public String ChineseStringToEnglishStringWithPOS(A _A, String ChineseString) {
+		List<String> nodes = _A.parserString(ChineseString);
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = nodes.iterator();
 		while(it.hasNext()) {
@@ -113,9 +113,9 @@ public class Translator_E implements Translator{
 		return sb.toString();
 	}
 
-	public List<Verbal> index(A analyzer, String mixedString) {
+	public List<Verbal> index(A _A, String mixedString) {
 		List<Verbal> verbals = new CopyOnWriteArrayList<>();
-		List<String> nodes = analyzer.parserMixedString(mixedString.toLowerCase());
+		List<String> nodes = _A.parserMixedString(mixedString.toLowerCase());
 		Iterator<String> it = nodes.iterator();
 		while(it.hasNext()) {
 			String word = it.next();

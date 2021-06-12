@@ -15,34 +15,34 @@ public class BootVPCSBackEnd extends Thread{
 	private static ServerSocket server;
 	@SuppressWarnings("unused")
 	private static Properties properties;
-	private A analyzer;
+	private A _A;
 	private EmotionMap emotionMap;
 	private int port;
 	static {
 		properties = new Properties();
 	}
 
-	public BootVPCSBackEnd(A analyzer) throws IOException {
-		if(null== analyzer) {
-			this.analyzer = new CogsBinaryForest_AE();
-			this.analyzer.initMixed();
+	public BootVPCSBackEnd(A _A) throws IOException {
+		if(null== _A) {
+			this._A = new CogsBinaryForest_AE();
+			this._A.initMixed();
 		}else {
-			this.analyzer= analyzer;
+			this._A= _A;
 		}
 		
 	}
 	public BootVPCSBackEnd() throws IOException {	
 	}
 	
-    // 因为首页已经init了,我之后会改成analyzer带入就是了. 罗瑶光20210420
+    // 因为首页已经init了,我之后会改成_A带入就是了. 罗瑶光20210420
 	public void init() {
 		try {
 			//port = Integer.parseInt(properties.getProperty("port"));
 			port= Config.detaVPCSBackEndPort;
 			server = new ServerSocket(port);
-			if(null== this.analyzer) {
-				this.analyzer = new CogsBinaryForest_AE();
-				this.analyzer.initMixed();
+			if(null== this._A) {
+				this._A = new CogsBinaryForest_AE();
+				this._A.initMixed();
 			}
 			emotionMap = new EmotionMap_E(); 
 			emotionMap.initNegativeMap();
@@ -73,7 +73,7 @@ public class BootVPCSBackEnd extends Thread{
 		System.out.println("----德塔VPCS后端服务器启动一切正常-总耗时:"+ (now- before)+ "毫秒");
 		while(true){
 			if(socketThreadPool.getThreadsCount() < 300){
-				SocketThread clientSocket= new SocketThread(emotionMap, analyzer, socketThreadPool, server.accept()
+				SocketThread clientSocket= new SocketThread(emotionMap, _A, socketThreadPool, server.accept()
 						, System.currentTimeMillis()+ "" + new Random().nextLong());
 				socketThreadPool.addE_Socket(clientSocket.getSid(), clientSocket);
 				clientSocket.start();

@@ -19,10 +19,10 @@ public class DemoEX {
 	
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		A analyzer = new CogsBinaryForest_AE();
-		//analyzer.init();
-		analyzer.initMixed();
-		Map<String, String> pos = analyzer.getPosCnToCn();
+		A _A = new CogsBinaryForest_AE();
+		//_A.init();
+		_A.initMixed();
+		Map<String, String> pos = _A.getPosCnToCn();
 		List<String> sets = new ArrayList<>();
 		Map<String, WordFrequency> seta = new ConcurrentHashMap<>();
 		TimeCheck t = new TimeCheck();
@@ -30,7 +30,7 @@ public class DemoEX {
 		DemoEX demoEX=new DemoEX();
 		t.begin();
 		for (int i = 0; i < 10; i++) { //重复500万次�????? 相当于处�????? 1.6亿字  耗费 �????? 7.280�????? 
-				sets= analyzer.parserMixedString(ss);
+				sets= _A.parserMixedString(ss);
 		}
 		t.end();
 		t.duration();
@@ -74,7 +74,7 @@ public class DemoEX {
 		System.out.println("");
 		System.out.println("词频分析-->");
 //		t.begin();
-		Map<Integer, WordFrequency> fwa = analyzer.getWordFrequencyByReturnSortMap(sets);
+		Map<Integer, WordFrequency> fwa = _A.getWordFrequencyByReturnSortMap(sets);
 //		t.end();
 		for (int i = fwa.size() - 1; i >= 0; i--) {
 			System.out.print(fwa.get(i).getWord() + ":" + fwa.get(i).getFrequency() + "----");

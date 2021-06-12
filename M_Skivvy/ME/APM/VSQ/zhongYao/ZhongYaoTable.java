@@ -152,7 +152,7 @@ public class ZhongYaoTable implements MouseListener {
 		try {
 			String value = app.table.getValueAt(app.row, app.col).toString();
 			app.data.setSize(500, 800);
-			app.sets = app.analyzer.parserMixedString(value);//词性分析
+			app.sets = app._A.parserMixedString(value);//词性分析
 			app.data.setContentType("text/html");
 			String page="";
 			Iterator<String> iterator = app.sets.iterator();

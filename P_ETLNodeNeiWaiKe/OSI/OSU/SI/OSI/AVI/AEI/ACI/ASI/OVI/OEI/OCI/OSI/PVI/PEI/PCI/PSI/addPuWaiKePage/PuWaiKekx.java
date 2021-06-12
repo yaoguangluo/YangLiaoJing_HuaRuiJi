@@ -72,7 +72,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 	public Map<String, Object> dic_yh;
 	public Map<String, Object> dic_yf;
 	public Map<String, Object> dic_yx;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -88,14 +88,14 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 	public App app;
 	public ReadChinese readChinese;
 	private int row;
-	public PuWaiKekx(JTextPane text, A analyzer, Map<String, String> pos, Map<String, String> pose
+	public PuWaiKekx(JTextPane text, A _A, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, JTabbedPane jTabbedpane, App app) throws IOException{
 		this.text = text;
 		this.app= app;
 		this.pose = pose;
 		this.etc = etc;
 		this.cte = cte;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.setLayout(null);
 		this.setBounds(0, 0, 1490, 980);	
@@ -187,7 +187,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -285,7 +285,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -601,7 +601,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 				//
 				try {
 					statistic.setSize(500, 800);
-					//Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					//Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder stringBuilder = new StringBuilder();
 					String[] fwa= response.replace("\r\n", "<br/>").split("<br/>");
@@ -745,7 +745,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 				//
 				try {
 					statistic.setSize(500, 800);
-					//Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					//Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder stringBuilder = new StringBuilder();
 					String[] fwa= response.replace("\r\n", "<br/>").split("<br/>");
@@ -779,7 +779,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 			}
 		});
 		
-		readChinese= new ReadChinese(app, analyzer);
+		readChinese= new ReadChinese(app, _A);
 		buttonCTV= new DetaButton("语音阅读关");
 		buttonCTV.setBounds(740, 0, 100, 30);
 		buttonCTV.addActionListener(new ActionListener() {
@@ -792,7 +792,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readChinese.isAlive()) {
 					buttonCTV.setLabel("语音阅读开");
-					readChinese= new ReadChinese(app, analyzer);
+					readChinese= new ReadChinese(app, _A);
 					readChinese.setPreReadList(sets);
 					readChinese.start();
 				}else {
@@ -925,7 +925,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 			int col= table.getSelectedColumn();
 			String value= (String) table.getValueAt(row, col);
 			data.setSize(500, 800);
-			sets= analyzer.parserMixedString(value);//词性分析		
+			sets= _A.parserMixedString(value);//词性分析		
 			data.setContentType("text/html");
 			StringBuilder page = new StringBuilder().append("");
 			currentPage= 0;
@@ -986,7 +986,7 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 		}   
 		try {
 			statistic.setSize(500, 800);
-			Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+			Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 			statistic.setContentType("text/html");
 			StringBuilder page = new StringBuilder();
 			Here:
@@ -1048,10 +1048,10 @@ public class PuWaiKekx extends Container implements MouseListener, KeyListener{
 		int count = 0;
 		Map<String, WordFrequency> mapSearchWithoutSort = null;
 		Map<Integer, WordFrequency> mapSearchWithSort = null;
-		mapSearchWithoutSort = analyzer.parserMixStringByReturnFrequencyMap(key);
+		mapSearchWithoutSort = _A.parserMixStringByReturnFrequencyMap(key);
 		Iterator<String> iteratorForCopy = copy.iterator();	
 		int copyCount = 0;
-		List<String> list= analyzer.parserMixedString(key);
+		List<String> list= _A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];

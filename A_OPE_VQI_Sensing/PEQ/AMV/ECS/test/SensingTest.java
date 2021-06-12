@@ -49,16 +49,16 @@ public class SensingTest{
 				"一些成瘾的受体，普遍有某种倾向: 奢靡，闭塞，强迫，空虚 等等。这里不是贬义，只是因为长期的环境\r\n" + 
 				"因素不是那么美好导致了一些思维误差。所以引导是非常重要的。改变人的不是能力，而是选择和环境。\r\n" + 
 				"如果环境不是很完美，那么选择一个健康的生活方式，是非常重要的。";
-		A analyzer = new CogsBinaryForest_AE();
-		analyzer.initMixed();
-		pos = analyzer.getPosCnToCn();
+		A _A = new CogsBinaryForest_AE();
+		_A.initMixed();
+		pos = _A.getPosCnToCn();
 		Map<String, Object> positive= emotionMap.getPositiveMap();
 		Map<String, Object> negative= emotionMap.getNegativeMap();
 		Map<String, Object> motivation= emotionMap.getMotivationMap();
 		Map<String, Object> trending= emotionMap.getTrendingMap();
 		Map<String, Object> prediction= emotionMap.getPredictionMap();
-		sets = analyzer.parserString(text);
-		Map<Integer, WordFrequency> wordFrequencyMap= analyzer.getWordFrequencyByReturnSortMap(sets);
+		sets = _A.parserString(text);
+		Map<Integer, WordFrequency> wordFrequencyMap= _A.getWordFrequencyByReturnSortMap(sets);
 		RatioMap rationMap= new RatioMap_E();
 		Map<String, EmotionSample> emotionSampleMap= rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		double positiveCount= rationMap.findTotalPositiveCount(emotionSampleMap);
@@ -108,16 +108,16 @@ public class SensingTest{
 		sensingTest.getMatrix();
 	}
 
-	public String[][] getMatrix(String text, A analyzer) throws IOException {
-		pos= analyzer.getPosCnToCn();
-		EmotionMap emotionMap= analyzer.getEmotionMap();
+	public String[][] getMatrix(String text, A _A) throws IOException {
+		pos= _A.getPosCnToCn();
+		EmotionMap emotionMap= _A.getEmotionMap();
 		Map<String, Object> positive= emotionMap.getPositiveMap();
 		Map<String, Object> negative= emotionMap.getNegativeMap();
 		Map<String, Object> motivation= emotionMap.getMotivationMap();
 		Map<String, Object> trending= emotionMap.getTrendingMap();
 		Map<String, Object> prediction= emotionMap.getPredictionMap();
-		sets= analyzer.parserString(text);
-		Map<Integer, WordFrequency> wordFrequencyMap= analyzer.getWordFrequencyByReturnSortMap(sets);
+		sets= _A.parserString(text);
+		Map<Integer, WordFrequency> wordFrequencyMap= _A.getWordFrequencyByReturnSortMap(sets);
 		RatioMap rationMap= new RatioMap_E();
 		Map<String, EmotionSample> emotionSampleMap= rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		double positiveCount= rationMap.findTotalPositiveCount(emotionSampleMap);

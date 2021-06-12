@@ -23,13 +23,13 @@ public class NLPTopicMatch{
 	public static String NLPBestSentenceMatch(String searchString
 			, String[] sampleSentences) throws IOException {
 		//init the deta mixed parser engine.
-		A analyzer= new CogsBinaryForest_AE();
-		analyzer.initMixed();
+		A _A= new CogsBinaryForest_AE();
+		_A.initMixed();
 		//init the nlp POS(part of speech) functions.
-		Map<String, String> nlp = analyzer.getPosCnToCn();
-		List<String> keys= analyzer.parserMixedString(searchString);
+		Map<String, String> nlp = _A.getPosCnToCn();
+		List<String> keys= _A.parserMixedString(searchString);
 		//find a appear frequency from the keys of search string.
-		Map<String, WordFrequency> keyMap= analyzer.getWordFrequencyMap(keys);
+		Map<String, WordFrequency> keyMap= _A.getWordFrequencyMap(keys);
 		//get a POS score rights array from keyMap.
 		String[] stringKeys= List_ESU.listToArray(keys);
 		// I create a new algorithm of 'list to array' in my Data Swap Project. 20191228 Yaoguang. Luo
@@ -43,14 +43,14 @@ public class NLPTopicMatch{
 		//		return output;
 		//	}
 		double[] scoreRights= getNLPBestSentencesMatchScoreRights(searchString
-				, sampleSentences, analyzer, nlp, keyMap);
+				, sampleSentences, _A, nlp, keyMap);
 		//loop score array
 		double[] matchScore= new double[sampleSentences.length];
 		double max= 0;
 		int maxPoint= 0;
 		for(int i= 0; i< sampleSentences.length; i++) {
-			List<String> matchList= analyzer.parserMixedString(sampleSentences[i]);
-			Map<String, WordFrequency> matchMap= analyzer.getWordFrequencyMap(matchList);
+			List<String> matchList= _A.parserMixedString(sampleSentences[i]);
+			Map<String, WordFrequency> matchMap= _A.getWordFrequencyMap(matchList);
 			for(int j= 0; j< stringKeys.length; j++) {
 				if(matchMap.containsKey(stringKeys[j])) {
 					matchScore[i]+= scoreRights[j]* matchMap.get(stringKeys[j]).getFrequency();
@@ -109,22 +109,22 @@ public class NLPTopicMatch{
 	private static double[] getNLPBestSentencesMatchScore(String searchString
 			, String[] sampleSentences) throws IOException {
 		//init the deta mixed parser engine.
-		A analyzer= new CogsBinaryForest_AE();
-		analyzer.initMixed();
+		A _A= new CogsBinaryForest_AE();
+		_A.initMixed();
 		//init the nlp POS(part of speech) functions.
-		Map<String, String> nlp = analyzer.getPosCnToCn();
-		List<String> keys= analyzer.parserMixedString(searchString);
+		Map<String, String> nlp = _A.getPosCnToCn();
+		List<String> keys= _A.parserMixedString(searchString);
 		//find a appear frequency from the keys of search string.
-		Map<String, WordFrequency> keyMap= analyzer.getWordFrequencyMap(keys);
+		Map<String, WordFrequency> keyMap= _A.getWordFrequencyMap(keys);
 		//get a POS score rights array from keyMap.
 		String[] stringKeys= List_ESU.listToArray(keys);
 		double[] scoreRights= getNLPBestSentencesMatchScoreRights(searchString
-				, sampleSentences, analyzer, nlp, keyMap);
+				, sampleSentences, _A, nlp, keyMap);
 		//loop score array
 		double[] matchScore= new double[sampleSentences.length];
 		for(int i= 0; i< sampleSentences.length; i++) {
-			List<String> matchList= analyzer.parserMixedString(sampleSentences[i]);
-			Map<String, WordFrequency> matchMap= analyzer.getWordFrequencyMap(matchList);
+			List<String> matchList= _A.parserMixedString(sampleSentences[i]);
+			Map<String, WordFrequency> matchMap= _A.getWordFrequencyMap(matchList);
 			for(int j= 0; j< stringKeys.length; j++) {
 				if(matchMap.containsKey(stringKeys[j])) {
 					matchScore[i]+= scoreRights[j]* matchMap.get(stringKeys[j]).getFrequency();
@@ -135,7 +135,7 @@ public class NLPTopicMatch{
 	}
 
 	private static double[] getNLPBestSentencesMatchScoreRights(String searchString
-			, String[] sampleSentences, A analyzer, Map<String, String> nlp
+			, String[] sampleSentences, A _A, Map<String, String> nlp
 			, Map<String, WordFrequency> keyMap) throws IOException {
 		double[] scoreRights= new double[keyMap.size()];
 		int scoreRightsPoint= 0;

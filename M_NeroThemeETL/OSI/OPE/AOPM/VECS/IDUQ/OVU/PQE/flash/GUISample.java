@@ -106,7 +106,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 	private Object[][] tableData_old; 
 	public U_RelatedLineVPS updateRelatedLine;
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public void run() {
 		try {
@@ -304,7 +304,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 							//return;
 						}
 						nodeReflection.put(OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS, null);
-						OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.register(tableData_old, text, u, analyzer, pos);
+						OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.register(tableData_old, text, u, _A, pos);
 						try {
 							//search register need add the information
 							if(OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS.contains("Ìí¼Ó")
@@ -678,12 +678,12 @@ public class GUISample extends JApplet implements MouseMotionListener
 	}
 
 	public void init(Object[][] tableData_old,JTextPane text, App u
-			, A analyzer, Map<String, String> pos){
+			, A _A, Map<String, String> pos){
 		try {
 			this.text= text;
 			this.tableData_old= tableData_old;
 			this.u= u;
-			this.analyzer= analyzer;
+			this._A= _A;
 			this.pos= pos;
 			CreatMap();
 		} catch (IOException e) {
@@ -711,7 +711,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 		popupMenu.add(menuItem);
 		
 		nodeInfo= new NodeInfo();
-		nodeView= new NodeShow(this, this.tableData_old, this.text, popupMenu, this.u, this.analyzer, this.pos);
+		nodeView= new NodeShow(this, this.tableData_old, this.text, popupMenu, this.u, this._A, this.pos);
 		nodeView.tree.setBackground(Color.white);
 		nodeView.setBounds(10, 168, 137, 222);
 		nodeProject= new NodeProject();
@@ -1064,7 +1064,7 @@ public class GUISample extends JApplet implements MouseMotionListener
 						//return;
 					}
 					nodeReflection.put(OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS, null);
-				    OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.register(tableData_old, text, u, analyzer, pos);
+				    OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.register(tableData_old, text, u, _A, pos);
 				  
 				    try {
 				    	if(OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI.SQ_OSU_MSQ_OSU_AVQ_ASQ_SQ_VPC_PCS.contains("Ìí¼Ó")

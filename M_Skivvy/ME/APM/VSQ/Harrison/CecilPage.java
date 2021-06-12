@@ -57,7 +57,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 	public List<String> dic_list;
 	public Map<String, String> dic_map;
 	public Object[] columnTitle = {"ID", "打分", "书名", "段落"};
-	public A analyzer; 
+	public A _A; 
 	public Map<String, String> pos;
 	public DetaButton buttonCTE;
 	public DetaButton buttonFRS;
@@ -71,13 +71,13 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 	public JTextPane text ;
 	public List<Verbal> verbals;
 	public App app;
-	public CecilPage(JTextPane text,A analyzer, Map<String, String> pos, Map<String, String> pose
+	public CecilPage(JTextPane text,A _A, Map<String, String> pos, Map<String, String> pose
 			, Map<String, String> etc, Map<String, String> cte, Map<String, String> posec
 			, Map<String, String> posFullec, App app) throws IOException{
 		this.text = text;	this.pose = pose;
 		this.etc = etc;
 		this.cte = cte;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.posec = posec;
 		this.posFullec = posFullec;
@@ -179,7 +179,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -285,7 +285,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 				}   
 				try {
 					statistic.setSize(500, 800);
-					Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+					Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 					statistic.setContentType("text/html");
 					StringBuilder page = new StringBuilder();
 					Here:
@@ -427,7 +427,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			data.validate();
 			}
 		});
-		readEnglish= new ReadChinese(app, analyzer);
+		readEnglish= new ReadChinese(app, _A);
 		buttonETC = new DetaButton("语音阅读关");
 		buttonETC.setBounds(740, 0, 100, 30);
 		buttonETC.addActionListener(new ActionListener() {
@@ -443,7 +443,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 //						? (currentPage + 1)*2000: sets.size());
 				if(!readEnglish.isAlive()) {
 					buttonETC.setLabel("语音阅读开");
-					readEnglish= new ReadChinese(app, analyzer);
+					readEnglish= new ReadChinese(app, _A);
 					readEnglish.setPreReadList(sets);
 					readEnglish.start();
 				}else {
@@ -556,7 +556,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			int col = table.getSelectedColumn();
 			String value = (String) table.getValueAt(row, col);
 			data.setSize(500, 800);
-			sets = analyzer.parserMixedString(value);//词性分析		
+			sets = _A.parserMixedString(value);//词性分析		
 			data.setContentType("text/html");
 			StringBuilder page = new StringBuilder().append("");
 			currentPage = 0;
@@ -621,7 +621,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 		}   
 		try {
 			statistic.setSize(500, 800);
-			Map<Integer, WordFrequency> fwa = analyzer.sortWordFrequencyMapToSortMap(map);
+			Map<Integer, WordFrequency> fwa = _A.sortWordFrequencyMapToSortMap(map);
 			statistic.setContentType("text/html");
 			StringBuilder page = new StringBuilder();
 			Here:
@@ -693,7 +693,7 @@ public class CecilPage extends Container implements MouseListener, KeyListener{
 			String mapSearchaAtII = iteratorWordFrequencyVerbal.getEnglish()==null?" ":iteratorWordFrequencyVerbal.getEnglish().replaceAll("\\s+", " ");
 			this.key += mapSearchaAtII;
 		}
-		List<String> list= analyzer.parserMixedString(key);
+		List<String> list= _A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 		
 		String[] stringReg= new String[key.length()/3];

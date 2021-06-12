@@ -15,15 +15,15 @@ import OEI.ME.analysis.E.CogsBinaryForest_AE;
 public class DemoTSLT {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
-		A analyzer = new CogsBinaryForest_AE();
-		analyzer.init();
-		Map<String, String> ce = analyzer.getCnToEn();
-		Map<String, String> ec = analyzer.getEnToCn();
-		Map<String, String> poscc = analyzer.getPosCnToCn();
-		Map<String, String> posec = analyzer.getPosEnToCn();
-		Map<String, String> posee = analyzer.getPosEnToEn();
-		Map<String, String> fce = analyzer.getFullCnToEn();
-		Map<String, String> fec = analyzer.getFullEnToCn();
+		A _A = new CogsBinaryForest_AE();
+		_A.init();
+		Map<String, String> ce = _A.getCnToEn();
+		Map<String, String> ec = _A.getEnToCn();
+		Map<String, String> poscc = _A.getPosCnToCn();
+		Map<String, String> posec = _A.getPosEnToCn();
+		Map<String, String> posee = _A.getPosEnToEn();
+		Map<String, String> fce = _A.getFullCnToEn();
+		Map<String, String> fec = _A.getFullEnToCn();
 		System.out.println("输入");
 		 String v = "如流枫之回雪，若浣花洗月";
 ////		 //String v = "数据一直在更新中";
@@ -32,10 +32,10 @@ public class DemoTSLT {
 //		String v = "他也一直在奔跑，他同样需要一双翅膀！";
 		System.out.println(v);
 		Translator ts = new Translator_E();
-		ts.init(analyzer); 
+		ts.init(_A); 
 //		TimeCheck t = new TimeCheck();
 //		t.begin();
-		List<Verbal> verbals = ts.index(analyzer, v);
+		List<Verbal> verbals = ts.index(_A, v);
 		String ch = ts.getChineseSentenseFromVerbalList(verbals);
 //		t.end();
 		System.out.println("中文");

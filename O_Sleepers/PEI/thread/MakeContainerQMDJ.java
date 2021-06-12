@@ -29,12 +29,12 @@ public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionLi
 	public int dice= 0;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public JPanel panel_bg;
 	public Map<String, String> pos;
 	private int currentX;
 	private int currentY;
-	public MakeContainerQMDJ(A analyzer,Container jpanel5, App u2, JTabbedPane jTabbedpane
+	public MakeContainerQMDJ(A _A,Container jpanel5, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2,  Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -42,7 +42,7 @@ public class MakeContainerQMDJ extends Thread implements Runnable, MouseMotionLi
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
 		this.jpanel5= jpanel5;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 	}
 	public void run(){ 

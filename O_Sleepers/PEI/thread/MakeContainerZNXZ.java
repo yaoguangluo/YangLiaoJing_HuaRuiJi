@@ -36,13 +36,13 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Thread thread;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public MakeContainerZNXZ(A analyzer, Container jpanelThird, App u2
+	public MakeContainerZNXZ(A _A, Container jpanelThird, App u2
 			, JTabbedPane jTabbedpane, List<String> tabNames2, Map<String, String> pos
 			, Map<String, String> pose, Map<String, String> etc, Map<String, String> cte) {
 		super();
@@ -50,7 +50,7 @@ public class MakeContainerZNXZ extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;

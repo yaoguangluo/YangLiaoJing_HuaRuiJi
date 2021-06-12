@@ -18,13 +18,13 @@ public class MakeContainerXYNanKe extends Thread implements Runnable{
 	public App u;
 	public JTabbedPane jTabbedpane;
 	public List<String> tabNames;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
 	
-	public MakeContainerXYNanKe(A analyzer, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
+	public MakeContainerXYNanKe(A _A, Container jpanelSecond, App u2, JTabbedPane jTabbedpane
 			, List<String> tabNames2, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc
 			, Map<String, String> cte) {
 		super();
@@ -32,7 +32,7 @@ public class MakeContainerXYNanKe extends Thread implements Runnable{
 		this.u= u2;
 		this.tabNames= tabNames2;
 		this.jTabbedpane= jTabbedpane;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.pose= pose;
 		this.etc= etc;
@@ -44,9 +44,9 @@ public class MakeContainerXYNanKe extends Thread implements Runnable{
 			jTabbedpane.validate();
 			Thread.sleep(1000*3);
 			tabNames.add("西医男科");
-			nanKekx= new NanKekx(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+			nanKekx= new NanKekx(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 			nanKekx.setName("西医男科");
-//			u.jpanel11= new MakeContainerXYNanKe(u.text, this.analyzer, pos, pose, etc, cte, jTabbedpane, u);
+//			u.jpanel11= new MakeContainerXYNanKe(u.text, this._A, pos, pose, etc, cte, jTabbedpane, u);
 //			u.jpanel11.setName(tabNames.get(10));
 			jTabbedpane.addTab("西医男科", new ImageIcon(), nanKekx, "添加西医男科页");// �����һ��ҳ��  
 			Color[] colors= new Color[3];

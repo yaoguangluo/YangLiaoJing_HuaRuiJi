@@ -27,7 +27,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	public Map<String, Object> root;
 	public Map<String, Integer> findLeaf;
 	public Map<String,Object> dic_li ;
-	public A analyzer;
+	public A _A;
 	public int c=0;
 	public int []array;
 	private static final long serialVersionUID = 1L;
@@ -63,9 +63,9 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	public double t = 1.0d;
 	public String rootWord;
 	// timeCheck ch=new timeCheck();    
-	public CoAuthor(Map<String, Object> dic_li, A analyzer
+	public CoAuthor(Map<String, Object> dic_li, A _A
 			, Map<String, String> pos) throws HeadlessException  {  
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.dic_li = dic_li;
 		this.setLayout(null);
 		GLProfile glp = GLProfile.getDefault();
@@ -328,7 +328,7 @@ public class CoAuthor extends JPanel implements GLEventListener {
 	private void kerner(String temp, Map<String, Object> root, Map<String, Integer> findLeaf) {
 		if(dic_li.containsKey(temp)) {
 			Map<String, Object> leaf = new ConcurrentHashMap<String, Object>();
-			Map<String, WordFrequency> map = analyzer.parserMixStringByReturnFrequencyMap(dic_li.get(rootWord).toString());
+			Map<String, WordFrequency> map = _A.parserMixStringByReturnFrequencyMap(dic_li.get(rootWord).toString());
 			Iterator<String> it = map.keySet().iterator();
 			while(it.hasNext()) {
 				String tempRec = it.next();

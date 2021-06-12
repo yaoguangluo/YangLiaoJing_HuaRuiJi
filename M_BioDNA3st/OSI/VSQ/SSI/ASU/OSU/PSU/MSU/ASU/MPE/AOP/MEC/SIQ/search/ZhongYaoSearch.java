@@ -42,18 +42,18 @@ public class ZhongYaoSearch{
 		int count= 0;
 		Map<String, WordFrequency> mapSearchWithoutSort= null;
 		if(app.dic_map.containsKey(zhongyao.replaceAll(" ", ""))) {
-			mapSearchWithoutSort= app.analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
+			mapSearchWithoutSort= app._A.parserMixStringByReturnFrequencyMap(zhongyao);	
 		}else {
 			String[] strings= key.split(" ");
 			if(strings.length> 1&& key.split(" ")[0].length()> 5) {
-				mapSearchWithoutSort= app.analyzer.parserMixStringByReturnFrequencyMap(key);
+				mapSearchWithoutSort= app._A.parserMixStringByReturnFrequencyMap(key);
 			}else {
-				mapSearchWithoutSort= app.analyzer.parserMixStringByReturnFrequencyMap(zhongyao);	
+				mapSearchWithoutSort= app._A.parserMixStringByReturnFrequencyMap(zhongyao);	
 			}
 		}	
 		Iterator<String> iteratorForCopy= app.copy.iterator();	
 		int copyCount= 0;
-		List<String> list= app.analyzer.parserMixedString(key);
+		List<String> list= app._A.parserMixedString(key);
 		String[] string= List_ESU.listToArray(list);
 
 		String[] stringReg= new String[forE.length()/ 3];

@@ -18,7 +18,7 @@ public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{
 	public Object[][] tableData_old;
 	public JTextPane text;
 	public App u;
-	public A analyzer;
+	public A _A;
 	public Map<String, String> pos;
 	//
 	public ImageIcon thisIcon;
@@ -67,10 +67,10 @@ public class OSU_AVQ_ASQ_ASQ_OCQ_OSI_PCI_PCU_MCI_MCU_MSI implements Cloneable{
 	public void AVQ_ASQ_OVQ_OSQ_VSQ(JTextPane rightBotJTextPane) throws Exception{
 	}
 	
-	public void register(Object[][] tableData_old, JTextPane text, App u, A analyzer, Map<String, String> pos) {
+	public void register(Object[][] tableData_old, JTextPane text, App u, A _A, Map<String, String> pos) {
 		// TODO Auto-generated method stub
 		this.u= u;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.pos= pos;
 		this.text= text;
 		this.tableData_old= tableData_old;

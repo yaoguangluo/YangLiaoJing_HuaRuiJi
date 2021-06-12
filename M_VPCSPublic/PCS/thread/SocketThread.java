@@ -12,15 +12,15 @@ import OSI.AOP.PCS.rest.RestMap;
 
 public class SocketThread extends Thread implements Runnable{
 	private Socket socket;
-	private A analyzer;
+	private A _A;
 	private EmotionMap emotionMap;
 	private String sid;
 	private SocketThreadPool socketThreadPool;
-	public SocketThread(EmotionMap emotionMap, A analyzer, SocketThreadPool socketThreadPool
+	public SocketThread(EmotionMap emotionMap, A _A, SocketThreadPool socketThreadPool
 			, Socket socket, String id){
 		this.socket= socket;
 		this.sid= id;
-		this.analyzer= analyzer;
+		this._A= _A;
 		this.emotionMap= emotionMap;
 		this.socketThreadPool= socketThreadPool;
 	}
@@ -46,7 +46,7 @@ public class SocketThread extends Thread implements Runnable{
 			if(content[1]==null){
 				error500();
 			}
-			RestMap.P(content, socket, this.analyzer, this.emotionMap);
+			RestMap.P(content, socket, this._A, this.emotionMap);
 			socket.close();
 		}catch(Exception e){
 			try {

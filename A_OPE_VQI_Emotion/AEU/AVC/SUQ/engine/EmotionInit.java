@@ -23,11 +23,11 @@ public class EmotionInit{
 	}
 
 	public A getAnalyzer() {
-		return analyzer;
+		return _A;
 	}
 
-	public void setAnalyzer(A analyzer) {
-		this.analyzer = analyzer;
+	public void setAnalyzer(A _A) {
+		this._A = _A;
 	}
 
 	public Map<String, Object> getPositive() {
@@ -127,7 +127,7 @@ public class EmotionInit{
 	}
 
 	private EmotionMap emotionMap;
-	private A analyzer;
+	private A _A;
 	private Map<String, Object> positive;
 	private Map<String, Object> negative;
 	private Map<String, Object> motivation;
@@ -163,12 +163,12 @@ public class EmotionInit{
 		emotionMap = new EmotionMap_E(); 
 		emotionMap.initNegativeMap();
 		emotionMap.initPositiveMap();
-		analyzer = new CogsBinaryForest_AE();
-		analyzer.init();
+		_A = new CogsBinaryForest_AE();
+		_A.init();
 		positive = emotionMap.getPositiveMap();
 		negative = emotionMap.getNegativeMap();
-		sets = analyzer.parserString(text);
-		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
+		sets = _A.parserString(text);
+		wordFrequencyMap = _A.getWordFrequencyByReturnSortMap(sets);
 		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		positiveCount = rationMap.findTotalPositiveCount(emotionSampleMap);
@@ -176,13 +176,13 @@ public class EmotionInit{
 		totalCount = rationMap.findTotalKeyCount(emotionSampleMap);
 	}
 
-	public void initExcludeAnalyzer(String text, A analyzerInput, EmotionMap emotionMapInput) throws IOException {
+	public void initExcludeAnalyzer(String text, A _AInput, EmotionMap emotionMapInput) throws IOException {
 		emotionMap = emotionMapInput;
-		analyzer = analyzerInput;
+		_A = _AInput;
 		positive = emotionMap.getPositiveMap();
 		negative = emotionMap.getNegativeMap();
-		sets = analyzer.parserString(text);
-		wordFrequencyMap = analyzer.getWordFrequencyByReturnSortMap(sets);
+		sets = _A.parserString(text);
+		wordFrequencyMap = _A.getWordFrequencyByReturnSortMap(sets);
 		rationMap = new RatioMap_E();
 		emotionSampleMap = rationMap.getEmotionSampleMap(wordFrequencyMap, positive, negative);
 		positiveCount = rationMap.findTotalPositiveCount(emotionSampleMap);

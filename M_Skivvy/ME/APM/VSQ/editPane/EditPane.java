@@ -27,7 +27,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	public Map<String, String> pose;
 	public Map<String, String> etc;
 	public Map<String, String> cte;
-	public A analyzer; 
+	public A _A; 
 	public Map<String, String> pos;
 	public JTextPane data;
 	public JTextPane text;
@@ -37,7 +37,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 	private Map<String, String> ctk;
 	private Map<String, String> ctt;
 	private Map<String, String> ctr;
-	public EditPane(JTextPane text, A analyzer, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc,
+	public EditPane(JTextPane text, A _A, Map<String, String> pos, Map<String, String> pose, Map<String, String> etc,
 			Map<String, String> cte, Map<String, String> pinyin, Map<String, String> ctk
 			, Map<String, String> ctt, Map<String, String> ctj, Map<String, String> ctr) {
 		this.text = text;
@@ -49,7 +49,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 		this.ctk = ctk;
 		this.ctt = ctt;
 		this.ctr = ctr;
-		this.analyzer = analyzer;
+		this._A = _A;
 		this.pos = pos;
 		this.pinyin= pinyin;
 		this.setLayout(null);
@@ -84,9 +84,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -153,9 +153,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -222,9 +222,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -292,9 +292,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -362,9 +362,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -420,7 +420,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 		MVQ.button.DetaButton button= new MVQ.button.DetaButton("ÔÄ¶Á");
 		button.setBounds(5+ 105+ 105+ 105+ 105+ 105+ 105, 3, 100, 20);
 		button.addActionListener(new ActionListener(){
-			ReadChinese readChinese= new ReadChinese(null, analyzer);
+			ReadChinese readChinese= new ReadChinese(null, _A);
 			@SuppressWarnings("deprecation")
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -428,7 +428,7 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				if(!readChinese.isAlive()) {
-					readChinese= new ReadChinese(null, analyzer);
+					readChinese= new ReadChinese(null, _A);
 					readChinese.setPreReadText(text.getText());
 					readChinese.start();
 				}else {
@@ -533,9 +533,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -589,9 +589,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -645,9 +645,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
@@ -701,9 +701,9 @@ public class EditPane extends Container implements MouseListener, KeyListener{
 					return;
 				}
 				StringBuilder page = new StringBuilder();
-				Iterator<String> iterator = analyzer.parserMixedString(text.getText().trim()).iterator();
+				Iterator<String> iterator = _A.parserMixedString(text.getText().trim()).iterator();
 				if(text.getSelectedText()!=null && !text.getSelectedText().trim().isEmpty()) {
-					iterator = analyzer.parserMixedString(text.getSelectedText().trim()).iterator();
+					iterator = _A.parserMixedString(text.getSelectedText().trim()).iterator();
 				}
 				text.setSelectionStart(0);
 				text.setSelectionEnd(0);
