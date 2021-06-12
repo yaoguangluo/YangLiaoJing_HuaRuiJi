@@ -42,5 +42,12 @@ M_UnicornNeroThemeETL\OSI\OPE\SI\MCI\OEI\OVU\PQE\extOSGI\OSI_OSU_ASQ_OCQ_OSI_PCI
 IRE 是 未来数据分类的 一个产业趋势. 作用 分类精简, 数据代谢, 数据生长,
 我猜测生物的生长过程也是这样的.共用一种模式.
 
+
+今天开始我把 代码中的analyzer 进行整体替换 为A, 我定义下规则 为 1 函数名 A, 2 定义域名 _A, 3 固定名的后缀 _A. 关于2和3的区别通过观察测前缀是否为开头即可.
+例子如下:
+A 函数
+_A 变量
+A_A 函数
+ 
 罗瑶光
 浏阳  
